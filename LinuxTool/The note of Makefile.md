@@ -30,5 +30,5 @@ test: yemu
 >
 >在没有 makefile 的时候, 我们只能对先对每一个不依赖于其他文件的源文件进行编译, 然后再编译那些依赖于已经编译过的文件的文件. 本质上就是对一个有向无环图进行拓扑排序, 并依次进行编译. 当项目体量不断增加的情况下, 可想而知这是一个非常繁杂而无意义的工作.
 
-![Makefile示例.svg](Makefile%E7%A4%BA%E4%BE%8B.svg)
+![Excalidraw/Makefile示例.svg](Excalidraw/Makefile%E7%A4%BA%E4%BE%8B.svg)
 
