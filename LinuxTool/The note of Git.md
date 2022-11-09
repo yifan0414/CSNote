@@ -2,3 +2,7 @@ https://git-scm.com/book/en/v2
 
 https://learngitbranching.js.org/?locale=zh_CN
 
+
+>[!note] git commit --amend
+>本意是修改上一个提交, 但只能作用于本地, 如果你已经 push 到远程分支, 那么这个命令还需要与远程分支进行合并
+>[7.6 Git 工具 - 重写历史](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E9%87%8D%E5%86%99%E5%8E%86%E5%8F%B2)
