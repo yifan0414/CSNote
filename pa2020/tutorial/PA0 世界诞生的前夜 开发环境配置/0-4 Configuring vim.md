@@ -33,24 +33,24 @@ You are going to be asked to modify a file using `vim`. For most of you, this i
 >
 >The first example is to generate the following file:
 >```
-1
-2
-3
-.....
-98
-99
-100
+>1
+>2
+>3
+>.....
+>98
+>99
+>100
 >```
 >
 >This file contains 100 lines, and each line contains a number. What will you do? In `vim`, this is a piece of cake. First change `vim` into normal state (when `vim` is just opened, it is in normal state), then press the following keys sequentially:
 >```
-i1<ESC>q1yyp<C-a>q98@1
+>i1<ESC>q1yyp<C-a>q98@1
 >```
 >
 >where `<ESC>` means the ESC key, and `<C-a>` means "Ctrl + a" here. You only press no more than 15 keys to generate this file. Is it amazing? What about a file with 1000 lines? What you do is just to press one more key:
 >
 >```
-i1<ESC>q1yyp<C-a>q998@1
+>i1<ESC>q1yyp<C-a>q998@1
 >```
 >
 >The magic behind this example is recording and replaying. You initial the file with the first line. Then record the generation of the second. After that, you replay the generation for 998 times to obtain the file.
@@ -58,33 +58,33 @@ i1<ESC>q1yyp<C-a>q998@1
 >The second example is to modify a file. Suppose you have such a file:
 >
 >```
-aaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbb
-cccccccccccccccccccccccccddddddddddddddddddddddddd
-eeeeeeeeeeeeeeeeeeeeeeeeefffffffffffffffffffffffff
-ggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhh
-iiiiiiiiiiiiiiiiiiiiiiiiijjjjjjjjjjjjjjjjjjjjjjjjj
+>aaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbb
+>cccccccccccccccccccccccccddddddddddddddddddddddddd
+>eeeeeeeeeeeeeeeeeeeeeeeeefffffffffffffffffffffffff
+>ggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhhh
+>iiiiiiiiiiiiiiiiiiiiiiiiijjjjjjjjjjjjjjjjjjjjjjjjj
 >```
 >
 >You want to modify it into:
 >
 >```
-bbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaa
-dddddddddddddddddddddddddccccccccccccccccccccccccc
-fffffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeeeeee
-hhhhhhhhhhhhhhhhhhhhhhhhhggggggggggggggggggggggggg
-jjjjjjjjjjjjjjjjjjjjjjjjjiiiiiiiiiiiiiiiiiiiiiiiii
+>bbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaa
+>dddddddddddddddddddddddddccccccccccccccccccccccccc
+>fffffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeeeeee
+>hhhhhhhhhhhhhhhhhhhhhhhhhggggggggggggggggggggggggg
+>jjjjjjjjjjjjjjjjjjjjjjjjjiiiiiiiiiiiiiiiiiiiiiiiii
 >```
 >
 >What will you do? In `vim`, this is a piece of cake, too. First locate the cursor to first "a" in the first line. And change `vim` into normal state, then press the following keys sequentially:
 >
 >```
-<C-v>24l4jd$p
+><C-v>24l4jd$p
 >```
 >
 >where `<C-v>` means "Ctrl + v" here. What about a file with 100 such lines? What you do is just to press one more key:
 >
 >```
-<C-v>24l99jd$p
+><C-v>24l99jd$p
 >```
 >
 >Although these two examples are artificial, they display the powerful functionality of `vim`, comparing with other editors you have used.
