@@ -15,14 +15,16 @@
 ## The UNIX-Hater's Handbook (and Beyond)
 写于 1994 年
 
--   Simson Garfinkel 的主页有[电子版](https://web.mit.edu/~simsong/www/ugh.pdf)
+![3V969r|inlR|150](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/3V969r.jpg)
+
+-   Simson Garfinkel 的主页有[电子版](https://web.mit.edu/~simsong/www/ugh.pdf) (里面有很多好玩的图片)
     -   说有道理也有道理
     -   说没道理也没道理
 -   至少指出了 UNIX 的一些缺陷
     -   user friendly
     -   命令行/系统工具的缺陷
 -   但今天 UNIX/Linux 已经成熟多了！
-![3V969r|200](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/3V969r.jpg)
+
 
 >[!note] 如何在 linux 上删除文件名为 -rf 的文件
 
@@ -194,15 +196,14 @@ Git: 代码快照管理工具
 
 
 
-思考题：如何管理自己的代码快照？
-
--   提示：分支/HEAD/... 只是指向快照的指针 (references)
+>[!question] 思考题：如何管理自己的代码快照？
+ >提示：分支/HEAD/... 只是指向快照的指针 (references)
 
 # 项目构建
 
 ## Make 工具
 
-回顾：[YEMU 模拟器](http://jyywiki.cn/pages/ICS/2020/demos/yemu.tar.gz)
+回顾：[YEMU 模拟器](http://jyywiki.cn/pages/ICS/2020/demos/yemu.tar.gz), [[The note of Makefile]]
 
 -   Makefile 是一段 “declarative” 的代码
     -   描述了构建目标之间的依赖关系和更新方法
@@ -210,11 +211,22 @@ Git: 代码快照管理工具
         -   能够生成各种字符串
         -   支持 “元编程” (`#include`, `#define`, ...)
 
->[!note] make
->![[Makefile示例.svg]]
+>[!danger] 为什么还要在大学里面交C语言
+> C 语言与 Unix 的各种工具紧密相关, 理解了 C 就意味着理解了 Unix 命令行世界的体系
 
 ## Lab 代码的构建
+
+>[!abstract] 如果你首次开始《计算机系统基础》Labs 系列实验
+>请从 Github 获取 ics-workbench:
+>
+> `git clone https://github.com/NJU-ProjectN/ics-workbench.git`
+>
+>进入 `ics-workbench` 后，在终端中执行 
+>
+>`git pull origin lab1`
+
 顶层 (top-level) Makefile:
+
 ```makefile
 # := -> C #define
        NAME   := $(shell basename $(PWD))
@@ -223,11 +235,45 @@ export MODULE := Lab1
 # 变量 -> 字面替换
 all: $(NAME)-64 $(NAME)-32
 
-# include -> C #include
+# include -> C #include 和预处理的过程差不多, 可以通过copy-paste得到同样的结果
 include ../Makefile
 ```
 
 ## Lab 代码的构建 (cont'd)
+```makefile
+# **DO NOT MODIFY**
+
+ifeq ($(NAME),)
+$(error Should make in each lab's directory)
+endif
+
+SRCS   := $(shell find . -maxdepth 1 -name "*.c")
+DEPS   := $(shell find . -maxdepth 1 -name "*.h") $(SRCS)
+CFLAGS += -O1 -std=gnu11 -ggdb -Wall -Werror -Wno-unused-result -Wno-unused-value -Wno-unused-variable
+
+.PHONY: all git test clean commit-and-make
+
+.DEFAULT_GOAL := commit-and-make
+commit-and-make: git all
+
+$(NAME)-64: $(DEPS) # 64bit binary
+	gcc -m64 $(CFLAGS) $(SRCS) -o $@ $(LDFLAGS)
+
+$(NAME)-32: $(DEPS) # 32bit binary
+	gcc -m32 $(CFLAGS) $(SRCS) -o $@ $(LDFLAGS)
+
+$(NAME)-64.so: $(DEPS) # 64bit shared library
+	gcc -fPIC -shared -m64 $(CFLAGS) $(SRCS) -o $@ $(LDFLAGS)
+
+$(NAME)-32.so: $(DEPS) # 32bit shared library
+	gcc -fPIC -shared -m32 $(CFLAGS) $(SRCS) -o $@ $(LDFLAGS)
+
+clean:
+	rm -f $(NAME)-64 $(NAME)-32 $(NAME)-64.so $(NAME)-32.so
+
+# include ../Makefile.lab
+```
+
 构建目标
 
 -   总目标
@@ -243,21 +289,27 @@ include ../Makefile
     -   删除构建的代码
 
 ## NEMU 代码构建
-Makefile 真复杂
+
+[[NEMU-Makefile]] 真复杂
 
 -   ~~放弃~~
 
-一个小诀窍
+[一个小诀窍](https://www.bilibili.com/video/BV1qa4y1j7xk/?p=3&share_source=copy_web&vd_source=587965785c97101d90acb761204e6795) 
 
--   先观察 make 命令实际执行了什么 (trace)
--   RTFM/STFW: make 提供的两个有用的选项
+-   先观察 make 命令实际执行了什么 (trace) 
+	- ![Eky2kb](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Eky2kb.png)执行了一堆 + CC 是什么意思?
+-   <span style="background:#fff88f">RTFM/STFW: make 提供的两个有用的选项</span>
     -   `-n` 只打印命令不运行
     -   `-B` 强制 make 所有目标
-```
+
+
+```makefile
 make -nB \
  | grep -ve '^\(\#\|echo\|mkdir\)' \
  | vim -
 ```
+
+#todo 还没有看明白这个正则表达式, 不过其作用就是去掉以 echo 和 mkdir 开头的行
 
 ## NEMU 代码构建 (cont'd)
 
