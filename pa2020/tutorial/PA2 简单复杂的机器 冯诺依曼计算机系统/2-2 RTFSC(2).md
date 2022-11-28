@@ -235,70 +235,70 @@ imm = inst_fetch(pc, 4);
 >过去有同学通过如下代码实现`isa_reg_str2val()`函数:
 >
 >```c
-if (strcmp(s, "$0") == 0)
-  return cpu.gpr[0]._64;
-else if (strcmp(s, "ra") == 0)
-  return cpu.gpr[1]._64;
-else if (strcmp(s, "sp") == 0)
-  return cpu.gpr[2]._64;
-else if (strcmp(s, "gp") == 0)
-  return cpu.gpr[3]._64;
-else if (strcmp(s, "tp") == 0)
-  return cpu.gpr[4]._64;
-else if (strcmp(s, "t0") == 0)
-  return cpu.gpr[5]._64;
-else if (strcmp(s, "t1") == 0)
-  return cpu.gpr[6]._64;
-else if (strcmp(s, "s2") == 0)
-  return cpu.gpr[7]._64;
-else if (strcmp(s, "s0") == 0)
-  return cpu.gpr[8]._64;
-else if (strcmp(s, "s1") == 0)
-  return cpu.gpr[9]._64;
-else if (strcmp(s, "a0") == 0)
-  return cpu.gpr[10]._64;
-else if (strcmp(s, "a1") == 0)
-  return cpu.gpr[11]._64;
-else if (strcmp(s, "a2") == 0)
-  return cpu.gpr[12]._64;
-else if (strcmp(s, "a3") == 0)
-  return cpu.gpr[13]._64;
-else if (strcmp(s, "a4") == 0)
-  return cpu.gpr[14]._64;
-else if (strcmp(s, "a5") == 0)
-  return cpu.gpr[15]._64;
-else if (strcmp(s, "a6") == 0)
-  return cpu.gpr[16]._64;
-else if (strcmp(s, "a7") == 0)
-  return cpu.gpr[17]._64;
-else if (strcmp(s, "s2") == 0)
-  return cpu.gpr[18]._64;
-else if (strcmp(s, "s3") == 0)
-  return cpu.gpr[19]._64;
-else if (strcmp(s, "s4") == 0)
-  return cpu.gpr[20]._64;
-else if (strcmp(s, "s5") == 0)
-  return cpu.gpr[21]._64;
-else if (strcmp(s, "s6") == 0)
-  return cpu.gpr[22]._64;
-else if (strcmp(s, "s7") == 0)
-  return cpu.gpr[23]._64;
-else if (strcmp(s, "s8") == 0)
-  return cpu.gpr[24]._64;
-else if (strcmp(s, "s8") == 0)
-  return cpu.gpr[25]._64;
-else if (strcmp(s, "s10") == 0)
-  return cpu.gpr[26]._64;
-else if (strcmp(s, "t2") == 0)
-  return cpu.gpr[27]._64;
-else if (strcmp(s, "t3") == 0)
-  return cpu.gpr[28]._64;
-else if (strcmp(s, "t4") == 0)
-  return cpu.gpr[29]._64;
-else if (strcmp(s, "t5") == 0)
-  return cpu.gpr[30]._64;
-else if (strcmp(s, "t5") == 0)
-  return cpu.gpr[31]._64;
+>if (strcmp(s, "$0") == 0)
+>  return cpu.gpr[0]._64;
+>else if (strcmp(s, "ra") == 0)
+>  return cpu.gpr[1]._64;
+>else if (strcmp(s, "sp") == 0)
+>  return cpu.gpr[2]._64;
+>else if (strcmp(s, "gp") == 0)
+>  return cpu.gpr[3]._64;
+>else if (strcmp(s, "tp") == 0)
+>  return cpu.gpr[4]._64;
+>else if (strcmp(s, "t0") == 0)
+>  return cpu.gpr[5]._64;
+>else if (strcmp(s, "t1") == 0)
+>  return cpu.gpr[6]._64;
+>else if (strcmp(s, "s2") == 0)
+>  return cpu.gpr[7]._64;
+>else if (strcmp(s, "s0") == 0)
+>  return cpu.gpr[8]._64;
+>else if (strcmp(s, "s1") == 0)
+>  return cpu.gpr[9]._64;
+>else if (strcmp(s, "a0") == 0)
+>  return cpu.gpr[10]._64;
+>else if (strcmp(s, "a1") == 0)
+>  return cpu.gpr[11]._64;
+>else if (strcmp(s, "a2") == 0)
+>  return cpu.gpr[12]._64;
+>else if (strcmp(s, "a3") == 0)
+>  return cpu.gpr[13]._64;
+>else if (strcmp(s, "a4") == 0)
+>  return cpu.gpr[14]._64;
+>else if (strcmp(s, "a5") == 0)
+>  return cpu.gpr[15]._64;
+>else if (strcmp(s, "a6") == 0)
+>  return cpu.gpr[16]._64;
+>else if (strcmp(s, "a7") == 0)
+>  return cpu.gpr[17]._64;
+>else if (strcmp(s, "s2") == 0)
+>  return cpu.gpr[18]._64;
+>else if (strcmp(s, "s3") == 0)
+>  return cpu.gpr[19]._64;
+>else if (strcmp(s, "s4") == 0)
+>  return cpu.gpr[20]._64;
+>else if (strcmp(s, "s5") == 0)
+>  return cpu.gpr[21]._64;
+>else if (strcmp(s, "s6") == 0)
+>  return cpu.gpr[22]._64;
+>else if (strcmp(s, "s7") == 0)
+>  return cpu.gpr[23]._64;
+>else if (strcmp(s, "s8") == 0)
+>  return cpu.gpr[24]._64;
+>else if (strcmp(s, "s8") == 0)
+>  return cpu.gpr[25]._64;
+>else if (strcmp(s, "s10") == 0)
+>  return cpu.gpr[26]._64;
+>else if (strcmp(s, "t2") == 0)
+>  return cpu.gpr[27]._64;
+>else if (strcmp(s, "t3") == 0)
+>  return cpu.gpr[28]._64;
+>else if (strcmp(s, "t4") == 0)
+>  return cpu.gpr[29]._64;
+>else if (strcmp(s, "t5") == 0)
+>  return cpu.gpr[30]._64;
+>else if (strcmp(s, "t5") == 0)
+>  return cpu.gpr[31]._64;
 >```
 >
 >你应该能想象到这位同学是如何编写上述代码的. 现在问题来了, 你能快速检查上述代码是否正确吗?
@@ -356,7 +356,7 @@ make ARCH=$ISA-nemu ALL=dummy run
 >如果你选择的是riscv32, 并在编译`dummy`程序时报告了如下错误:
 >
 >```
-/usr/riscv64-linux-gnu/include/bits/wordsize.h:28:3: error: #error "rv32i-based targets are not supported"
+>/usr/riscv64-linux-gnu/include/bits/wordsize.h:28:3: error: #error "rv32i-based targets are not supported"
 >```
 >
 >则需要使用sudo权限修改以下文件:
@@ -376,7 +376,7 @@ make ARCH=$ISA-nemu ALL=dummy run
 >如果报告的是如下错误:
 >
 >```
-/usr/riscv64-linux-gnu/include/gnu/stubs.h:8:11: fatal error: gnu/stubs-ilp32.h: No such file or directory
+>/usr/riscv64-linux-gnu/include/gnu/stubs.h:8:11: fatal error: gnu/stubs-ilp32.h: No such file or directory
 >```
 >
 >则需要使用sudo权限修改以下文件:
@@ -485,13 +485,13 @@ make ARCH=$ISA-nemu ALL=xxx gdb
 >为了提升处理器的性能, mips使用了一种叫[分支延迟槽](https://en.wikipedia.org/wiki/Delay_slot)的技术. 采用这种技术之后, 程序的执行顺序会发生一些改变: 我们把紧跟在跳转指令(包括有条件和无条件)之后的静态指令称为延迟槽, 那么程序在执行完跳转指令后, 会先执行延迟槽中的指令, 再执行位于跳转目标的指令. 例如
 >
 >```
-100: beq 200
-101: add
-102: xor
-...
-200: sub
-201: j   102
-202: slt
+>100: beq 200
+>101: add
+>102: xor
+>...
+>200: sub
+>201: j   102
+>202: slt
 >```
 >
 >若`beq`指令的执行结果为跳转, 则相应的动态指令流为`100 -> 101 -> 200`; 若`beq`指令的执行结果为不跳转, 则相应的动态指令流为`100 -> 101 -> 102`; 而对于`j`指令, 相应的动态指令流为`201 -> 202 -> 102`.

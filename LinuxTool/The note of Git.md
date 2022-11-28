@@ -12,3 +12,5 @@ https://learngitbranching.js.org/?locale=zh_CN
 >可以返回当前HEAD所在的commit, 常用于撤销所有的本地更改(不论是在暂存区还是在工作目录的修改)
 
 
+>[!note] git log -p filename
+>查看单个文件的 diff 历史

@@ -5,10 +5,10 @@
 >在进行本PA前, 请在工程目录下执行以下命令进行分支整理, 否则将影响你的成绩:
 >
 >```
-git commit --allow-empty -am "before starting pa2"
-git checkout master
-git merge pa1
-git checkout -b pa2
+>git commit --allow-empty -am "before starting pa2"
+>git checkout master
+>git merge pa1
+>git checkout -b pa2
 >```
 
 >[!must] 提交要求(请认真阅读以下内容, 若有违反, 后果自负)
