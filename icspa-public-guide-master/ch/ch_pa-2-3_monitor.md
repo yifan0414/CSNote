@@ -355,12 +355,6 @@ Section Headers:
 
 从`Section Headers`的信息可以看到, 字符串表在ELF文件偏移为`0x1458`的位置开始存放. 在`shell`中可以通过以下命令直接输出ELF文件的十六进制形式:
 
->[!success]
->  hd add
-
-> [!question] 
-> Lorem ipsum dolor sit amet
-
 
 查看输出结果的最后几行, 我们可以看到, 字符串表只不过是把标识符的字符串拼接起来而已. 现在我们就可以厘清符号表和字符串表之间的关系了:
 
