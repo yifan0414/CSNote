@@ -21,3 +21,11 @@ wget
 
 #### chmod 改变了谁的权限
 通过 [[1 Lecture overview and Shell#^lmmcdg | 改变文件的权限]] 可以知道, chmod 可以让用户不允许访问文件, 修改文件夹内容等等. 但是如果我再通过 chmod 改变回来不就行了吗, 通过测试 `chmod +rwx` 并不会使用用户密码验证. #todo 
+
+#### 一个神奇的命令
+
+```
+wget -r -p -U Mozilla <url>
+```
+
+这个命令可以下载一个博客网站所有的内容, 包括源代码
