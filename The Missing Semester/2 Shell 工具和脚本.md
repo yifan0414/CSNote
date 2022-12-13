@@ -241,7 +241,7 @@ Fasd 基于 [_frecency_](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/
 
 # 课后练习
 
-[习题解答](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions//shell-tools-solution)
+[[Solution2-Shell 工具和脚本]]
 
 1.  阅读 [`man ls`](https://man7.org/linux/man-pages/man1/ls.1.html) ，然后使用`ls` 命令进行如下操作：
     

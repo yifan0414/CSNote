@@ -14,3 +14,6 @@ https://learngitbranching.js.org/?locale=zh_CN
 
 >[!note] git log -p filename
 >查看单个文件的 diff 历史
+
+>[!question] git怎么删除已经删除文件的跟踪呢?
+>就比如我在 1st commit 中有 1.pdf, 然后在 3rd commit 中直接删除了1.pdf. 那么怎么删除.git中的该文件追踪呢?
