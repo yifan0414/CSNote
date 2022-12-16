@@ -1,0 +1,146 @@
+{
+  "main": {
+    "id": "e533d582edbd6ec2",
+    "type": "split",
+    "children": [
+      {
+        "id": "df466a2ed8d4b5cd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6da3eea666480198",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The Missing Semester/5 命令行环境.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7cd7f37c334f7f0a",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "0ae1841683830e34",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "0a615d2b703d78cf",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "819b4a0be8b9709d",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "047ee8173769d722",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "9f1994f828960e8f",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "d951cc662bf10678",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "The Missing Semester/5 命令行环境.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "d794e281c7041551",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "The Missing Semester/5 命令行环境.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "88b3e2b5cfbf7e21",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "The Missing Semester/5 命令行环境.md"
+          }
+        }
+      },
+      {
+        "id": "5fc476fd145609a1",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "active": "6da3eea666480198",
+  "lastOpenFiles": [
+    "The Missing Semester/4 数据整理.md",
+    "LittleProject/数码管绘图.excalidraw.md",
+    "LittleProject/数码管绘图.excalidraw.png",
+    "Excalidraw/Drawing 2022-12-13 19.28.19.excalidraw.svg",
+    "Excalidraw/Drawing 2022-12-13 19.28.19.excalidraw.md",
+    "The Missing Semester/习题解答/Solution4-数据清洗.md",
+    "The Missing Semester/2 Shell 工具和脚本.md",
+    "The Missing Semester/3 编辑器 (Vim).md",
+    "The Missing Semester/5 命令行环境.md",
+    "pa2020/manual/i386 2.3 Registers.md"
+  ]
+}

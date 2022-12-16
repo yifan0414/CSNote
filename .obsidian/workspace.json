@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "9578adbec0afc5b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bcc1cb420a99909",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36c69d0e4988fad9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pa2020/lab/Lab1 大整数运算.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "5a9569a76ff1b473",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "The Missing Semester/5 命令行环境.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "44c334809e1b0082",
+    "type": "split",
+    "children": [
+      {
+        "id": "890e19d61646196f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bf178dff9f426baa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f8b50e12f701171c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#important",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "539eef4d04534f97",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 283.5
+  },
+  "right": {
+    "id": "3a153ac8983db304",
+    "type": "split",
+    "children": [
+      {
+        "id": "c87440566f5123e1",
+        "type": "tabs",
+        "dimension": 25,
+        "children": [
+          {
+            "id": "ef3b7f2c6df00cf0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "The Missing Semester/5 命令行环境.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "aa933b58d0a6c5ae",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6b01905c357db7f1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "001d31554c7f2bac",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "ec1ce9afb0ad6835",
+        "type": "tabs",
+        "dimension": 21.022727272727273,
+        "children": [
+          {
+            "id": "5cbfcd350af9b62e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "The Missing Semester/5 命令行环境.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "c8bf216c9c77d4e7",
+        "type": "tabs",
+        "dimension": 53.97727272727273,
+        "children": [
+          {
+            "id": "1a8a2d36901663aa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "The Missing Semester/5 命令行环境.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 274.5
+  },
+  "active": "5a9569a76ff1b473",
+  "lastOpenFiles": [
+    "The Missing Semester/6 版本控制(Git).md",
+    "The Missing Semester/8 元编程.md",
+    "pa2020/code/monitor/ui.c.md",
+    "pa2020/code/NEMU-Makefile.md",
+    "pa2020/lab/Lab1 大整数运算.md",
+    "pa2020/manual/i386 2.3 Registers.md",
+    "pa2020/code/parse_args().md",
+    "pa2020/code/一些辅助函数.md",
+    "pa2020/tutorial/PA4 虚实交错的魔法 分时多任务/4-5 编写不朽的传奇.md",
+    "pa2020/tutorial/PA4 虚实交错的魔法 分时多任务/4-3 超越容量的界限.md"
+  ]
+}

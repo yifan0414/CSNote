@@ -116,4 +116,6 @@ void ui_mainloop() {
   }
 }
 
+#define RTYPE(i) u8 rt = (i)->rtype.rt, rs = (i)->rtype.rs;
+#define MTYPE(i) u8 addr = (i)->mtype.addr;
 ```

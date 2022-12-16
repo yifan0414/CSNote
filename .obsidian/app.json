@@ -1,0 +1,23 @@
+{
+  "readableLineLength": true,
+  "livePreview": false,
+  "promptDelete": false,
+  "showLineNumber": false,
+  "showIndentGuide": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Tabloid",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "attachmentFolderPath": "attachment",
+  "defaultViewMode": "preview",
+  "newFileLocation": "current",
+  "showUnsupportedFiles": true,
+  "useMarkdownLinks": false,
+  "newLinkFormat": "shortest",
+  "alwaysUpdateLinks": true,
+  "vimMode": true,
+  "trashOption": "local"
+}

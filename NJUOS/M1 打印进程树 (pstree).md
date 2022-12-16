@@ -298,4 +298,12 @@ close(6)                                             = 0
 
 写出正确的代码远比想象中困难——目前地球上还没人能保证复杂的系统没有 bug 和漏洞。我个人热切盼望着没有 bug 的那一天的到来，不过似乎遥不可及。不过也不用太绝望，这门课里会教给大家一些有关 “写代码” 的知识，更重要的是正确的思维方式 (“世界观”)：操作系统会提供什么、该提供什么、不该提供什么、应该怎么提供。
 
-\$sdfsd + \$asdfs
+```java
+private static void sort(Comparable[] a, Comparable[] aux, int lo, int hi) {
+    if (hi <= lo) return;
+    int mid = lo + (hi - lo) / 2;
+    sort(a, aux, lo, mid);     // divide
+    sort(a, aux, mid + 1, hi); // divide
+    merge(a, aux, lo, mid, hi);// conquer
+}
+```
