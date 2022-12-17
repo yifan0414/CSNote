@@ -82,6 +82,7 @@ PA实验使用`GNU/Linux`平台开展实验，项目代码使用C语言编写并
 > sudo apt-get install build-essential libreadline-dev libsdl1.2-dev vim git tmux dialog python python-rsa openssl curl
 
 以下为关键环境和软件包的版本，供参照：
+
 | **类型** |**名称** |**版本** |**查看命令** |
 | ---------| ----- | ----- | ------------------------------------ |
 |客户操作系统	|Debian 10 buster	|OS: Debian 10 buster<br>Kernel: i686 Linux 4.19.0-5-686	|uname -a|

@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6da3eea666480198",
+            "id": "bdce5c39cb365d09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Missing Semester/5 命令行环境.md",
+                "file": "LinuxTool/The note of Git.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "The Missing Semester/5 命令行环境.md",
+            "file": "LinuxTool/The note of Git.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "The Missing Semester/5 命令行环境.md",
+            "file": "LinuxTool/The note of Git.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "The Missing Semester/5 命令行环境.md"
+            "file": "LinuxTool/The note of Git.md"
           }
         }
       },
@@ -130,17 +130,17 @@
     ],
     "currentTab": 0
   },
-  "active": "6da3eea666480198",
+  "active": "bdce5c39cb365d09",
   "lastOpenFiles": [
-    "The Missing Semester/4 数据整理.md",
-    "LittleProject/数码管绘图.excalidraw.md",
-    "LittleProject/数码管绘图.excalidraw.png",
-    "Excalidraw/Drawing 2022-12-13 19.28.19.excalidraw.svg",
-    "Excalidraw/Drawing 2022-12-13 19.28.19.excalidraw.md",
-    "The Missing Semester/习题解答/Solution4-数据清洗.md",
-    "The Missing Semester/2 Shell 工具和脚本.md",
-    "The Missing Semester/3 编辑器 (Vim).md",
+    "Excalidraw/Makefile示例.svg",
+    "Excalidraw/Makefile示例.md",
+    "Excalidraw/Makefile示例.png",
+    "Untitled.md",
+    "Excalidraw/Drawing 2022-12-17 09.47.55.excalidraw.png",
+    "Excalidraw/Drawing 2022-12-17 09.47.55.excalidraw.md",
+    "Excalidraw/Drawing 2022-12-17 09.47.55.excalidraw.svg",
     "The Missing Semester/5 命令行环境.md",
+    "LinuxTool/vim/Ascii Draw In Vim.md",
     "pa2020/manual/i386 2.3 Registers.md"
   ]
 }

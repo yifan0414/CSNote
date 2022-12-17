@@ -1,6 +1,6 @@
 #### curl 和 wget 的区别
 根据 `tldr` 的显示, curl 是用来向服务器发送数据或者从服务器获得数据, wget是从服务器上下载文件.
-```
+```txt
 curl
 
   Transfers data from or to a server.

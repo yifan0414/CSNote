@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8bcc1cb420a99909",
+        "id": "3143597c8dc3b83e",
         "type": "tabs",
         "children": [
           {
-            "id": "36c69d0e4988fad9",
+            "id": "43dd809b1eec821a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pa2020/lab/Lab1 大整数运算.md",
+                "file": "pa2020/note/PA1/Monitor.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -21,12 +21,25 @@
             }
           },
           {
-            "id": "5a9569a76ff1b473",
+            "id": "58f946d07c9bad87",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Missing Semester/5 命令行环境.md",
+                "file": "LinuxTool/vim/0 The art of Vim.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "6cb282be27d951f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pa2020/code/parse_args().md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -34,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -84,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 200
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -101,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Missing Semester/5 命令行环境.md",
+                "file": "pa2020/code/parse_args().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,8 +152,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "ec1ce9afb0ad6835",
@@ -153,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Missing Semester/5 命令行环境.md",
+                "file": "pa2020/code/parse_args().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Missing Semester/5 命令行环境.md"
+                "file": "pa2020/code/parse_args().md"
               }
             }
           }
@@ -180,19 +192,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5
+    "width": 210.5,
+    "collapsed": true
   },
-  "active": "5a9569a76ff1b473",
+  "active": "6cb282be27d951f3",
   "lastOpenFiles": [
-    "The Missing Semester/6 版本控制(Git).md",
-    "The Missing Semester/8 元编程.md",
-    "pa2020/code/monitor/ui.c.md",
+    "pa2020/01-C 语言拾遗 (1) 机制.md",
+    "pa2020/code/vscode configuration.md",
     "pa2020/code/NEMU-Makefile.md",
-    "pa2020/lab/Lab1 大整数运算.md",
-    "pa2020/manual/i386 2.3 Registers.md",
+    "LinuxTool/Fantastic ideas.md",
+    "LinuxTool/命令行的艺术.md",
+    "LinuxTool/The note of Git.md",
+    "LinuxTool/tmux/0 The art of Tmux.md",
     "pa2020/code/parse_args().md",
-    "pa2020/code/一些辅助函数.md",
-    "pa2020/tutorial/PA4 虚实交错的魔法 分时多任务/4-5 编写不朽的传奇.md",
-    "pa2020/tutorial/PA4 虚实交错的魔法 分时多任务/4-3 超越容量的界限.md"
+    "LinuxTool/vim/0 The art of Vim.md",
+    "LinuxTool/Useful Sed.md"
   ]
 }

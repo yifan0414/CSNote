@@ -17,7 +17,6 @@
   "blue-topaz-theme@@remove-external-link-icon": false,
   "blue-topaz-theme@@text-color-code@@light": "#EC7474",
   "blue-topaz-theme@@background-code-2@@light": "#EDEDEB",
-  "blue-topaz-theme@@font-weight-inline-code": "normal",
   "Blue-Topaz-Codebox-Highlight@@code-keyword@@light": "#0077AA",
   "Blue-Topaz-Codebox-Highlight@@code-string@@light": "#669900",
   "Blue-Topaz-Codebox-Highlight@@background-code@@dark": "#272727",
@@ -34,5 +33,16 @@
   "Blue-Topaz-Codebox-Highlight@@code-important@@light": "#131114",
   "Blue-Topaz-Codebox-Highlight@@code-property@@light": "#37352F",
   "Blue-Topaz-Codebox-Highlight@@code-property@@dark": "#D0D0D0",
-  "Blue-Topaz-Codebox-Highlight@@code-operator@@dark": "#F5B83D"
+  "Blue-Topaz-Codebox-Highlight@@code-operator@@dark": "#F5B83D",
+  "blue-topaz-theme@@blockquote-style-change-options": "blockquote-style-default",
+  "blue-topaz-theme@@background-image-settings-markdown-page-options": "background-image-settings-markdown-page-sea-and-sky",
+  "blue-topaz-theme@@brightness-4-bg": 0.9,
+  "blue-topaz-theme@@saturate-4-bg": 1,
+  "blue-topaz-theme@@blur-depth": 10,
+  "blue-topaz-theme@@toggle-divider-lines": false,
+  "blue-topaz-theme@@bt-status-on": false,
+  "blue-topaz-theme@@left-ribbon-style": "default-left-ribbon-style",
+  "blue-topaz-theme@@layout-style-options": "layout-style-options-rectangle",
+  "blue-topaz-theme@@font-size-code": "0.95em",
+  "blue-topaz-theme@@nowrap-outline": false
 }

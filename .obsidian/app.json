@@ -19,5 +19,6 @@
   "newLinkFormat": "shortest",
   "alwaysUpdateLinks": true,
   "vimMode": true,
-  "trashOption": "local"
+  "trashOption": "local",
+  "showFrontmatter": false
 }
