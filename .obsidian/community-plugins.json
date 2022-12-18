@@ -7,5 +7,7 @@
   "obsidian-outliner",
   "obsidian-image-toolkit",
   "calendar",
-  "editing-toolbar"
+  "editing-toolbar",
+  "obsidian-memos",
+  "obsidian-vimrc-support"
 ]

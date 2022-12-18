@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LinuxTool/The note of Git.md",
+                "file": "LinuxTool/tmux/Getting-Started.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "LinuxTool/The note of Git.md",
+            "file": "LinuxTool/tmux/Getting-Started.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "LinuxTool/The note of Git.md",
+            "file": "LinuxTool/tmux/Getting-Started.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "LinuxTool/The note of Git.md"
+            "file": "LinuxTool/tmux/Getting-Started.md"
           }
         }
       },
@@ -132,15 +132,15 @@
   },
   "active": "bdce5c39cb365d09",
   "lastOpenFiles": [
+    "LinuxTool/tmux/1 The art of Tmux.md",
+    "The Missing Semester/4 数据整理.md",
+    "LinuxTool/vim/The code browse in Vim.md",
+    "LinuxTool/tmux/0 The art of Tmux.md",
+    "LinuxTool/The note of Git.md",
     "Excalidraw/Makefile示例.svg",
     "Excalidraw/Makefile示例.md",
     "Excalidraw/Makefile示例.png",
     "Untitled.md",
-    "Excalidraw/Drawing 2022-12-17 09.47.55.excalidraw.png",
-    "Excalidraw/Drawing 2022-12-17 09.47.55.excalidraw.md",
-    "Excalidraw/Drawing 2022-12-17 09.47.55.excalidraw.svg",
-    "The Missing Semester/5 命令行环境.md",
-    "LinuxTool/vim/Ascii Draw In Vim.md",
-    "pa2020/manual/i386 2.3 Registers.md"
+    "Excalidraw/Drawing 2022-12-17 09.47.55.excalidraw.png"
   ]
 }

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3143597c8dc3b83e",
+        "id": "26956da6a772572f",
         "type": "tabs",
         "children": [
           {
-            "id": "43dd809b1eec821a",
+            "id": "4239b45f84061178",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pa2020/note/PA1/Monitor.md",
+                "file": "LinuxTool/tmux/0 The notes of Tmux.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -21,33 +21,16 @@
             }
           },
           {
-            "id": "58f946d07c9bad87",
+            "id": "8e9404818fcc1335",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "LinuxTool/vim/0 The art of Vim.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "6cb282be27d951f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "pa2020/code/parse_args().md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": true
+                "file": "LinuxTool/tmux/Tmux.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -76,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#important",
+                "query": "tag:#Fantastic",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 292.5
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -106,7 +89,7 @@
       {
         "id": "c87440566f5123e1",
         "type": "tabs",
-        "dimension": 25,
+        "dimension": 27.083333333333332,
         "children": [
           {
             "id": "ef3b7f2c6df00cf0",
@@ -114,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pa2020/code/parse_args().md",
+                "file": "LinuxTool/tmux/0 The notes of Tmux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,12 +135,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "ec1ce9afb0ad6835",
         "type": "tabs",
-        "dimension": 21.022727272727273,
+        "dimension": 20.170454545454543,
         "children": [
           {
             "id": "5cbfcd350af9b62e",
@@ -165,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pa2020/code/parse_args().md",
+                "file": "LinuxTool/tmux/0 The notes of Tmux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +160,7 @@
       {
         "id": "c8bf216c9c77d4e7",
         "type": "tabs",
-        "dimension": 53.97727272727273,
+        "dimension": 52.746212121212125,
         "children": [
           {
             "id": "1a8a2d36901663aa",
@@ -184,28 +168,35 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pa2020/code/parse_args().md"
+                "file": "LinuxTool/tmux/0 The notes of Tmux.md"
               }
+            }
+          },
+          {
+            "id": "c89a7aff2ee22579",
+            "type": "leaf",
+            "state": {
+              "type": "memos_view",
+              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 210.5,
-    "collapsed": true
+    "width": 323.5
   },
-  "active": "6cb282be27d951f3",
+  "active": "4239b45f84061178",
   "lastOpenFiles": [
-    "pa2020/01-C 语言拾遗 (1) 机制.md",
-    "pa2020/code/vscode configuration.md",
-    "pa2020/code/NEMU-Makefile.md",
-    "LinuxTool/Fantastic ideas.md",
-    "LinuxTool/命令行的艺术.md",
-    "LinuxTool/The note of Git.md",
-    "LinuxTool/tmux/0 The art of Tmux.md",
-    "pa2020/code/parse_args().md",
-    "LinuxTool/vim/0 The art of Vim.md",
-    "LinuxTool/Useful Sed.md"
+    "LinuxTool/tmux/1 The art of Tmux.md",
+    "LinuxTool/vim/1 The note of Vim.md",
+    "LinuxTool/tmux/0 The notes of Tmux.md",
+    "diary/2022-12-07.md",
+    "LinuxTool/tmux/Tmux.excalidraw.md",
+    "LinuxTool/tmux/Tmux-Getting-Started.md",
+    "LinuxTool/tmux/未命名.md",
+    "LinuxTool/dotfiles/0 The note of chezomi.md",
+    "LinuxTool/dotfiles/2 What does chezmoi do?.md",
+    "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md"
   ]
 }
