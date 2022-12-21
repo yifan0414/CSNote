@@ -1,15 +1,10 @@
 {
 	"nodes":[
-		{"id":"a06b61b5b627a469","x":-119,"y":209,"width":492,"height":167,"type":"file","file":"LinuxTool/vim/this is REad.md"},
-		{"id":"8234a41c76a15b97","x":-347,"y":-18,"width":228,"height":50,"color":"1","type":"file","file":"LinuxTool/vim/Vim map.md"},
-		{"id":"e5042a95a0b96a79","x":-1139,"y":174,"width":930,"height":403,"type":"file","file":"LinuxTool/tmux/Tmux.excalidraw.md"},
-		{"id":"4129e1481efa1643","x":525,"y":60,"width":745,"height":566,"type":"link","url":"https://forum.obsidian.md/t/canvas-add-toggle-to-disable-adding-web-pages/50143"},
-		{"id":"169bf7763e2a7c3c","x":-995,"y":-794,"width":642,"height":449,"type":"file","file":"attachment/Vim路线图.png"},
-		{"id":"f38681c049747fbc","x":361,"y":-856,"width":537,"height":473,"color":"1","type":"file","file":"LinuxTool/vim/Ascii Draw In Vim.md"}
+		{"id":"f393aa8a8786c22c","x":859,"y":-673,"width":468,"height":262,"type":"text","text":">[!note] This is a bug\n>"},
+		{"id":"08045b2e50cf0904","x":-877,"y":-1400,"width":759,"height":440,"type":"file","file":"The Missing Semester/2 Shell 工具和脚本.md"},
+		{"id":"fbc29ede855079bc","x":99,"y":-1380,"width":718,"height":400,"type":"file","file":"LinuxTool/vim/Ascii Draw In Vim.md"},
+		{"id":"597fcc95be73fedf","x":169,"y":-688,"width":617,"height":784,"color":"#ededed","type":"text","text":"In terms of Security, Obsidian is a Electron App, and so far as my knowledge goes Electron isn’t strictly designed for web security in the manner a web browser is designed. (Correct me if I’m wrong.)\n\n> Currently, with the release of version 1.1, Obsidian’s new Canvas plugin allows for adding in webpages.\n### Proposed solution\nAdd a settings area for the Canvas Plugin, with a toggle that disables the adding web-pages feature.\n$$\na \\cdot b \\bmod m=\\left(\\sum_{0 \\leq i<64} a_i \\cdot b \\cdot 2^i \\bmod m\\right) \\bmod m\n$$\n```c\n#include <stdio.h>\nusing namespace std;\n\nint main() {\n\tint a = 10;\n\tfor (int i = 1; i < 10; i++) {\n\t\tprintf(\"10\");\n\t}\n\treturn 0;\n}\n```"},
+		{"id":"c41b42a39c37a0e6","x":-650,"y":-688,"width":532,"height":400,"type":"file","file":"LinuxTool/tmux/0 The notes of Tmux.md"}
 	],
-	"edges":[
-		{"id":"63cc528aa3822d00","fromNode":"8234a41c76a15b97","fromSide":"bottom","toNode":"a06b61b5b627a469","toSide":"top"},
-		{"id":"818e30d2d9c454f5","fromNode":"f38681c049747fbc","fromSide":"bottom","toNode":"a06b61b5b627a469","toSide":"top"},
-		{"id":"edec87219b2f887b","fromNode":"169bf7763e2a7c3c","fromSide":"right","toNode":"8234a41c76a15b97","toSide":"top","color":"2","label":"nice job"}
-	]
+	"edges":[]
 }

@@ -25,7 +25,7 @@
 >
 >Often times it seems I have a list of items, and I need to add numbers in front of them. For example:
 >
->```
+>```text
 >Item one
 >Item two
 >Item three
@@ -33,7 +33,7 @@
 >
 >Which should be:
 >
->```
+>```text
 >1. Item one
 >2. Item two
 >3. Item three
@@ -49,7 +49,7 @@
 >
 >Press the following key sequence:
 >
->```
+>```text
 >i                         # insert mode
 ><ctrl-Y><ctrl-Y><ctrl-Y>  # copy the first few characters from the line above  
 ><ESC>                     # back to normal mode
@@ -80,5 +80,3 @@
 >6. { keys: 'z-', type: 'action', action: 'scrollToCursor', actionArgs: { position: 'bottom' }, motion: 'moveToFirstNonWhiteSpaceCharacter' },
 >```
 >
-
-- [ ] #task 完成 VIM 的任务 ⏫ 🛫 2022-12-20 ✅ 2022-12-20

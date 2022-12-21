@@ -3,6 +3,7 @@
   "theme": "system",
   "baseFontSize": 17,
   "cssTheme": "Blue Topaz",
-  "translucency": true,
-  "monospaceFontFamily": ""
+  "translucency": false,
+  "monospaceFontFamily": "",
+  "nativeMenus": true
 }

@@ -1,5 +1,4 @@
 [
-  "obsidian-admonition",
   "table-editor-obsidian",
   "calendar",
   "obsidian-copy-block-link",
@@ -12,5 +11,6 @@
   "obsidian-image-toolkit",
   "obsidian-icon-folder",
   "obsidian-excalidraw-plugin",
-  "editing-toolbar"
+  "editing-toolbar",
+  "obsidian-admonition"
 ]

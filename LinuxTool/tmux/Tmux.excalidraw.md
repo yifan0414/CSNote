@@ -27,10 +27,6 @@ Copy-Paste ^LD62usGG
 iterm2 -> General -> selection -> 
 Applaction in ... may access clipboard ^CEfUpnVz
 
-
-# Embedded files
-69e4bd5aa0fa7a6efba1bd764a96da07e6e41eed: [[LinuxTool/tmux/1 The art of Tmux]]
-
 %%
 # Drawing
 ```json
@@ -567,8 +563,8 @@ Applaction in ... may access clipboard ^CEfUpnVz
 		},
 		{
 			"type": "arrow",
-			"version": 283,
-			"versionNonce": 294830265,
+			"version": 284,
+			"versionNonce": 1621799341,
 			"isDeleted": false,
 			"id": "5Hck9zs-WQPtmqb_0_ps8",
 			"fillStyle": "hachure",
@@ -589,7 +585,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1671354879778,
+			"updated": 1671607933543,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -597,11 +593,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 				"gap": 12.124470554547212,
 				"focus": -0.018382827484977136
 			},
-			"endBinding": {
-				"elementId": "zfMLnpWu",
-				"gap": 30.935635650788157,
-				"focus": -0.06378495536023397
-			},
+			"endBinding": null,
 			"lastCommittedPoint": null,
 			"startArrowhead": null,
 			"endArrowhead": "triangle",
@@ -618,9 +610,9 @@ Applaction in ... may access clipboard ^CEfUpnVz
 		},
 		{
 			"type": "image",
-			"version": 157,
-			"versionNonce": 1241687001,
-			"isDeleted": false,
+			"version": 158,
+			"versionNonce": 109429763,
+			"isDeleted": true,
 			"id": "zfMLnpWu",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
@@ -643,7 +635,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 					"type": "arrow"
 				}
 			],
-			"updated": 1671354879777,
+			"updated": 1671607933543,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -652,88 +644,6 @@ Applaction in ... may access clipboard ^CEfUpnVz
 				1,
 				1
 			]
-		},
-		{
-			"id": "UIphHodaL8VRnU4Ul9eDp",
-			"type": "arrow",
-			"x": 37.89133676466599,
-			"y": 471.81068974595667,
-			"width": 20.177221754434868,
-			"height": 142.92198742724713,
-			"angle": 0,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"groupIds": [],
-			"roundness": {
-				"type": 2
-			},
-			"seed": 785138073,
-			"version": 26,
-			"versionNonce": 14972247,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1671360818317,
-			"link": null,
-			"locked": false,
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					-20.177221754434868,
-					-142.92198742724713
-				]
-			],
-			"lastCommittedPoint": null,
-			"startBinding": null,
-			"endBinding": {
-				"elementId": "CEfUpnVz",
-				"focus": -0.4776379842971286,
-				"gap": 7.416463097796623
-			},
-			"startArrowhead": null,
-			"endArrowhead": "triangle"
-		},
-		{
-			"id": "iFNPKg3J",
-			"type": "text",
-			"x": 2.581198694404975,
-			"y": 490.39508723140625,
-			"width": 14,
-			"height": 24,
-			"angle": 0,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 0,
-			"opacity": 100,
-			"groupIds": [],
-			"roundness": null,
-			"seed": 1598478585,
-			"version": 3,
-			"versionNonce": 382947801,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1671360817180,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 20,
-			"fontFamily": 3,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 20,
-			"containerId": null,
-			"originalText": ""
 		}
 	],
 	"appState": {
@@ -751,10 +661,10 @@ Applaction in ... may access clipboard ^CEfUpnVz
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "triangle",
-		"scrollX": 1422.4022471823614,
-		"scrollY": 520.2163421956402,
+		"scrollX": 1328.8303127322458,
+		"scrollY": 383.1785315399228,
 		"zoom": {
-			"value": 0.5947300449013713
+			"value": 1
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

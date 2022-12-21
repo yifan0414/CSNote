@@ -1,7 +1,7 @@
 {
   "readableLineLength": true,
-  "livePreview": true,
-  "promptDelete": false,
+  "livePreview": false,
+  "promptDelete": true,
   "showLineNumber": false,
   "showIndentGuide": false,
   "pdfExportSettings": {
@@ -12,13 +12,13 @@
     "downscalePercent": 100
   },
   "attachmentFolderPath": "attachment",
-  "defaultViewMode": "source",
+  "defaultViewMode": "preview",
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
   "useMarkdownLinks": false,
   "newLinkFormat": "shortest",
   "alwaysUpdateLinks": true,
   "vimMode": true,
-  "trashOption": "local",
+  "trashOption": "none",
   "showFrontmatter": false
 }

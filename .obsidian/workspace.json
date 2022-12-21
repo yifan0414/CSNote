@@ -4,19 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "d565f958b32a6d8f",
+        "id": "079c3eb20fe1e874",
         "type": "tabs",
         "children": [
           {
-            "id": "ccaf4200167c14d3",
+            "id": "61c5bdc9975a6a03",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "LinuxTool/vim/Vim路线图.canvas",
+                "viewState": {
+                  "x": -55.86598941146519,
+                  "y": -905.622098643513,
+                  "zoom": -0.29524538417657215,
+                  "snapToGrid": false
+                }
+              }
+            }
+          },
+          {
+            "id": "f9ea6b0b9009bca3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pa2020/lab/Lab1 大整数运算.md",
+                "file": "pa2020/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
                 "mode": "preview",
                 "backlinks": true,
-                "source": false
+                "source": true
               }
             }
           }
@@ -70,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.5
+    "width": 289.5
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -87,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pa2020/lab/Lab1 大整数运算.md",
+                "file": "LinuxTool/vim/Vim路线图.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +150,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "ec1ce9afb0ad6835",
@@ -147,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pa2020/lab/Lab1 大整数运算.md",
+                "file": "LinuxTool/vim/Vim路线图.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pa2020/lab/Lab1 大整数运算.md"
+                "file": "LinuxTool/vim/Vim路线图.canvas"
               }
             }
           }
@@ -174,33 +190,32 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5,
-    "collapsed": true
+    "width": 314.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
       "canvas:Create new canvas": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false,
       "obsidian-memos:Memos": false
     }
   },
-  "active": "ccaf4200167c14d3",
+  "active": "61c5bdc9975a6a03",
   "lastOpenFiles": [
-    "LinuxTool/tmux/1 The art of Tmux.md",
-    "LinuxTool/tmux/Tmux-Getting-Started.md",
-    "LinuxTool/vim/Vim路线图.canvas",
-    "LinuxTool/tmux/Tmux.excalidraw.md",
-    "LinuxTool/vim/Vim map.md",
-    "LinuxTool/vim/this is REad.md",
-    "LinuxTool/tmux/0 The notes of Tmux.md",
-    "LinuxTool/vim/Ascii Draw In Vim.md",
-    "LinuxTool/vim/1 The note of Vim.md",
-    "LinuxTool/vim/未命名 1.canvas"
+    "pa2020/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-4 基础设施-简易调试器.md",
+    "pa2020/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-5 表达式求值.md",
+    "pa2020/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC 2020.md",
+    "pa2020/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC.md",
+    "pa2020/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-2 开天辟地的篇章.md",
+    "pa2020/code/vscode configuration.md",
+    "pa2020/code/parse_args().md",
+    "pa2020/lab/Lab1 大整数运算.md",
+    "icspa-public-guide-master/intro.md",
+    "The Missing Semester/1 Lecture overview and Shell.md"
   ]
 }
