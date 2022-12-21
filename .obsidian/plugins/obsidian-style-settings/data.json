@@ -44,5 +44,14 @@
   "blue-topaz-theme@@left-ribbon-style": "default-left-ribbon-style",
   "blue-topaz-theme@@layout-style-options": "layout-style-options-rectangle",
   "blue-topaz-theme@@font-size-code": "0.95em",
-  "blue-topaz-theme@@nowrap-outline": false
+  "blue-topaz-theme@@nowrap-outline": false,
+  "blue-topaz-theme@@hide-vault-name": true,
+  "blue-topaz-theme@@search-bar-style-option": "default-search-bar",
+  "blue-topaz-theme@@tab-title-bar-position": false,
+  "blue-topaz-theme@@toggle-header-bottom-line": false,
+  "blue-topaz-theme@@toggle-bg-panel-page": false,
+  "blue-topaz-theme@@bg-panel-page-option": "panel-page-bg-theme-light-cloud",
+  "blue-topaz-theme@@hide-titlebar-close-btn": false,
+  "blue-topaz-theme@@setting-etc-pane-style": "setting-style-traditional",
+  "blue-topaz-theme@@stack-tabs-background-blur-depth": 40
 }

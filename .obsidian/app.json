@@ -1,6 +1,6 @@
 {
   "readableLineLength": true,
-  "livePreview": false,
+  "livePreview": true,
   "promptDelete": false,
   "showLineNumber": false,
   "showIndentGuide": false,
@@ -12,7 +12,7 @@
     "downscalePercent": 100
   },
   "attachmentFolderPath": "attachment",
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
   "useMarkdownLinks": false,

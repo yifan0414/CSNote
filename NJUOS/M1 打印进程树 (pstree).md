@@ -43,7 +43,7 @@ Windows API 就是这么设计的——没毛病。不过这么做也会使操�
 UNIX 操作系统的设计者用另一种方法使应用程序能访问进程列表：提供一个操作系统的对象 (文本文件)，这样应用程序就能用文件 API (open, read, close) 来获取进程列表。例如，创建一个名为 `/system/processes.yaml` 的文件:
 
 
-```
+```txt
 - pid: 1
   parent: -1
   command: /bin/init
@@ -73,7 +73,7 @@ UNIX 操作系统的设计者用另一种方法使应用程序能访问进程列
 
 Linux 系统自带了 `pstree` 命令，进程树会以非常漂亮的格式排版 (每个进程的第一个孩子都与它处在同一行，之后的孩子保持相同的缩进)：
 
-```
+```txt
 systemd─┬─accounts-daemon─┬─{gdbus}
         │                 └─{gmain}
         ├─acpid
@@ -128,7 +128,7 @@ Linux 的 psmisc 中 `pstree` 的实现大约有 1,300 行，支持多种命�
 
 **如果不知道这些约定，使用 Linux/Unix 的时候就会举步维艰。Unix 世界有一套自己定义的 “游戏规则”。**也难怪会有笑话：
 
-```
+```txt
 Unix is _user-friendly_ — it's just choosy about who its friends are.
 ```
 
@@ -139,7 +139,7 @@ Unix is _user-friendly_ — it's just choosy about who its friends are.
 
 你可以任意选择树的形态，以下输出都是合法的：
 
-```
+```txt
 $ ./pstree-64
 systemd─┬─accounts-daemon─┬─
         │

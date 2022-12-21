@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"a06b61b5b627a469","x":-119,"y":209,"width":492,"height":167,"type":"file","file":"LinuxTool/vim/this is REad.md"},
+		{"id":"8234a41c76a15b97","x":-347,"y":-18,"width":228,"height":50,"color":"1","type":"file","file":"LinuxTool/vim/Vim map.md"},
+		{"id":"e5042a95a0b96a79","x":-1139,"y":174,"width":930,"height":403,"type":"file","file":"LinuxTool/tmux/Tmux.excalidraw.md"},
+		{"id":"4129e1481efa1643","x":525,"y":60,"width":745,"height":566,"type":"link","url":"https://forum.obsidian.md/t/canvas-add-toggle-to-disable-adding-web-pages/50143"},
+		{"id":"169bf7763e2a7c3c","x":-995,"y":-794,"width":642,"height":449,"type":"file","file":"attachment/Vim路线图.png"},
+		{"id":"f38681c049747fbc","x":361,"y":-856,"width":537,"height":473,"color":"1","type":"file","file":"LinuxTool/vim/Ascii Draw In Vim.md"}
+	],
+	"edges":[
+		{"id":"63cc528aa3822d00","fromNode":"8234a41c76a15b97","fromSide":"bottom","toNode":"a06b61b5b627a469","toSide":"top"},
+		{"id":"818e30d2d9c454f5","fromNode":"f38681c049747fbc","fromSide":"bottom","toNode":"a06b61b5b627a469","toSide":"top"},
+		{"id":"edec87219b2f887b","fromNode":"169bf7763e2a7c3c","fromSide":"right","toNode":"8234a41c76a15b97","toSide":"top","color":"2","label":"nice job"}
+	]
+}

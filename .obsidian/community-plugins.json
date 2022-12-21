@@ -1,13 +1,16 @@
 [
-  "table-editor-obsidian",
   "obsidian-admonition",
-  "obsidian-style-settings",
-  "obsidian-copy-block-link",
-  "obsidian-excalidraw-plugin",
-  "obsidian-outliner",
-  "obsidian-image-toolkit",
+  "table-editor-obsidian",
   "calendar",
-  "editing-toolbar",
+  "obsidian-copy-block-link",
+  "easy-typing-obsidian",
+  "obsidian-vimrc-support",
+  "obsidian-tasks-plugin",
+  "obsidian-style-settings",
+  "obsidian-reminder-plugin",
   "obsidian-memos",
-  "obsidian-vimrc-support"
+  "obsidian-image-toolkit",
+  "obsidian-icon-folder",
+  "obsidian-excalidraw-plugin",
+  "editing-toolbar"
 ]

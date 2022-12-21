@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LinuxTool/tmux/Getting-Started.md",
+                "file": "LinuxTool/tmux/Tmux-Getting-Started.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "LinuxTool/tmux/Getting-Started.md",
+            "file": "LinuxTool/tmux/Tmux-Getting-Started.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "LinuxTool/tmux/Getting-Started.md",
+            "file": "LinuxTool/tmux/Tmux-Getting-Started.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "LinuxTool/tmux/Getting-Started.md"
+            "file": "LinuxTool/tmux/Tmux-Getting-Started.md"
           }
         }
       },
@@ -132,15 +132,15 @@
   },
   "active": "bdce5c39cb365d09",
   "lastOpenFiles": [
+    "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
+    "LinuxTool/vim/1 The note of Vim.md",
+    "LinuxTool/tmux/0 The notes of Tmux.md",
+    "LinuxTool/tmux/Tmux-Getting-Started.md",
+    "LinuxTool/tmux/Getting-Started.md",
     "LinuxTool/tmux/1 The art of Tmux.md",
     "The Missing Semester/4 数据整理.md",
     "LinuxTool/vim/The code browse in Vim.md",
     "LinuxTool/tmux/0 The art of Tmux.md",
-    "LinuxTool/The note of Git.md",
-    "Excalidraw/Makefile示例.svg",
-    "Excalidraw/Makefile示例.md",
-    "Excalidraw/Makefile示例.png",
-    "Untitled.md",
-    "Excalidraw/Drawing 2022-12-17 09.47.55.excalidraw.png"
+    "LinuxTool/The note of Git.md"
   ]
 }
