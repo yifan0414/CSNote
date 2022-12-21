@@ -41,7 +41,7 @@ Firstly, use `\di` to enter the Drawit mode in Vim, and you can use `\ds` to qui
 In this mode, your `arrow key` transfer to a pen, when you move the `arrow key`, the  trace will be left on the screen. But you can use `hjkl` to move the cursor dangingly.
 
 ## All features
-```
+```txt
    <left>       move and draw left  
    <right>      move and draw right, inserting lines/space as needed  
    <up>         move and draw up, inserting lines/space as needed  

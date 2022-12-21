@@ -4,7 +4,7 @@
   "blue-topaz-theme@@hr-for-pagination": true,
   "blue-topaz-theme@@transparent-setting-panel": false,
   "blue-topaz-theme@@color-scheme-options": "color-scheme-options-default",
-  "blue-topaz-theme@@background-settings-workplace-background-image": false,
+  "blue-topaz-theme@@background-settings-workplace-background-image": true,
   "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-waves2-light",
   "blue-topaz-theme@@background-settings-workplace-theme-dark": "background-settings-workplace-waves2",
   "blue-topaz-theme@@background-image-settings-switch": false,
@@ -98,5 +98,6 @@
   "minimal-style@@row-hover": true,
   "minimal-advanced@@styled-scrollbars": false,
   "minimal-advanced@@cursor": "pointer",
-  "minimal-advanced@@folding-offset": 10
+  "minimal-advanced@@folding-offset": 10,
+  "blue-topaz-theme@@admonition-bg-color-same": false
 }
