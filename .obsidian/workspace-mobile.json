@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LinuxTool/tmux/Tmux-Getting-Started.md",
+                "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": true
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "LinuxTool/tmux/Tmux-Getting-Started.md",
+            "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "LinuxTool/tmux/Tmux-Getting-Started.md",
+            "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "LinuxTool/tmux/Tmux-Getting-Started.md"
+            "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md"
           }
         }
       },
@@ -126,21 +126,29 @@
           "type": "calendar",
           "state": {}
         }
+      },
+      {
+        "id": "f238cf2829de6b1d",
+        "type": "leaf",
+        "state": {
+          "type": "reminder-list",
+          "state": {}
+        }
       }
     ],
     "currentTab": 0
   },
   "active": "bdce5c39cb365d09",
   "lastOpenFiles": [
+    "LinuxTool/tmux/1 The art of Tmux.md",
     "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
+    "LinuxTool/tmux/Tmux-Getting-Started.md",
+    "LinuxTool/gcc&gdb/The note of Makefile.md",
+    "NJUOS/M1 打印进程树 (pstree).md",
+    "pa2020/02-C 语言拾遗 (2) 编程实践.md",
     "LinuxTool/vim/1 The note of Vim.md",
     "LinuxTool/tmux/0 The notes of Tmux.md",
-    "LinuxTool/tmux/Tmux-Getting-Started.md",
     "LinuxTool/tmux/Getting-Started.md",
-    "LinuxTool/tmux/1 The art of Tmux.md",
-    "The Missing Semester/4 数据整理.md",
-    "LinuxTool/vim/The code browse in Vim.md",
-    "LinuxTool/tmux/0 The art of Tmux.md",
-    "LinuxTool/The note of Git.md"
+    "The Missing Semester/4 数据整理.md"
   ]
 }

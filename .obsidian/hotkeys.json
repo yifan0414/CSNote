@@ -15,5 +15,29 @@
       ],
       "key": "T"
     }
+  ],
+  "obsidian-hover-editor:open-new-popover": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "H"
+    }
+  ],
+  "app:toggle-left-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ],
+  "app:toggle-right-sidebar": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
   ]
 }

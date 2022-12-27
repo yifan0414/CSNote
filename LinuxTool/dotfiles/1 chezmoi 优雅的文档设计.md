@@ -90,8 +90,7 @@ $ exit
 
 These commands are summarized in this sequence diagram:
 
-![CZuHJg](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/CZuHJg.png)
-
+![Summary](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/CZuHJg.png)
 
 ## Using chezmoi across multiple machines
 

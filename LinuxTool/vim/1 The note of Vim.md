@@ -25,7 +25,7 @@
 >
 >Often times it seems I have a list of items, and I need to add numbers in front of them. For example:
 >
->```text
+>```
 >Item one
 >Item two
 >Item three
@@ -55,7 +55,7 @@
 ><ESC>                     # back to normal mode
 >|                         # go back to the start of the line
 ><ctrl-A>                  # increment the number
->j                         # down to the next line
+>j0                         # down to the next line, if there is no 0, when the number increase upon 10, cause a bug
 >q                         # stop recording
 >```
 >
@@ -66,7 +66,7 @@
 > [VIM学习笔记 增减数值(CTRL-A/CTRL-X) - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/146498017)
 
 >[!note] Vim 中的 scrollToCursor
->```
+>```txt
 >1. { keys: 'zz', type: 'action', action: 'scrollToCursor', actionArgs: { position: 'center' }},
 >
 >2. { keys: 'z.', type: 'action', action: 'scrollToCursor', actionArgs: { position: 'center' }, motion: 'moveToFirstNonWhiteSpaceCharacter' },
@@ -79,4 +79,5 @@
 >
 >6. { keys: 'z-', type: 'action', action: 'scrollToCursor', actionArgs: { position: 'bottom' }, motion: 'moveToFirstNonWhiteSpaceCharacter' },
 >```
->
+
+>[!note] A test

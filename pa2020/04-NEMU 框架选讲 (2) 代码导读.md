@@ -309,7 +309,7 @@ Folding (浏览大代码)
     -   因为 Code 并知道 NEMU 是怎么编译的
     -   IDE “编译运行” 背后没有魔法
 
--   另一方面，这些东西一定是可以[[vscode configuration | 配置]]的
+-   另一方面，这些东西一定是可以[[vscode configuration |配置]]的
     -   配置解析选项: `c_cpp_properties.json`
         -   解锁正确的代码解析
     -   配置构建选项: `tasks.json`

@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": "#4b88d8",
     "recentlyUsedIcons": [
+      "⛰",
+      "SiCodemirror",
       "SiVim",
       "Fab42Group",
-      "RiToolsFill",
-      "SiCoursera",
-      "📕"
+      "RiToolsFill"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -25,5 +25,6 @@
   "pa2020": "SiCodeigniter",
   "The Missing Semester": "SiCoursera",
   "LinuxTool": "RiToolsFill",
-  "LinuxTool/vim/Vim map.md": "SiVim"
+  "LinuxTool/vim/Vim map.md": "SiVim",
+  "CMU-CSAPP": "⛰"
 }

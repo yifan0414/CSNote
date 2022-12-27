@@ -38,6 +38,8 @@ $vim DrawIt.vba.gz
 
 Firstly, use `\di` to enter the Drawit mode in Vim, and you can use `\ds` to quit this mode.
 
+>[!note] 应该是 `<leader>di`
+
 In this mode, your `arrow key` transfer to a pen, when you move the `arrow key`, the  trace will be left on the screen. But you can use `hjkl` to move the cursor dangingly.
 
 ## All features

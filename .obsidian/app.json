@@ -1,6 +1,6 @@
 {
   "readableLineLength": true,
-  "livePreview": false,
+  "livePreview": true,
   "promptDelete": true,
   "showLineNumber": false,
   "showIndentGuide": false,
@@ -12,13 +12,15 @@
     "downscalePercent": 100
   },
   "attachmentFolderPath": "attachment",
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
   "useMarkdownLinks": false,
   "newLinkFormat": "shortest",
   "alwaysUpdateLinks": true,
   "vimMode": true,
-  "trashOption": "none",
-  "showFrontmatter": false
+  "trashOption": "system",
+  "showFrontmatter": false,
+  "legacyEditor": false,
+  "spellcheck": false
 }
