@@ -20,11 +20,11 @@
       "left": 0
     }
   },
-  "attachment": "RiAttachment2",
   "diary": "RiMagicLine",
   "pa2020": "SiCodeigniter",
   "The Missing Semester": "SiCoursera",
   "LinuxTool": "RiToolsFill",
   "LinuxTool/vim/Vim map.md": "SiVim",
-  "CMU-CSAPP": "⛰"
+  "CMU-CSAPP": "⛰",
+  "attachments": "RiAttachment2"
 }

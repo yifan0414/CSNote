@@ -1,7 +1,7 @@
 {
   "readableLineLength": true,
   "livePreview": true,
-  "promptDelete": true,
+  "promptDelete": false,
   "showLineNumber": false,
   "showIndentGuide": false,
   "pdfExportSettings": {
@@ -11,7 +11,7 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "attachmentFolderPath": "attachment",
+  "attachmentFolderPath": "attachments",
   "defaultViewMode": "source",
   "newFileLocation": "current",
   "showUnsupportedFiles": true,

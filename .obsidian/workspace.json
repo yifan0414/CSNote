@@ -4,52 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "d148661b951ebf72",
+        "id": "3d442a4129b1e441",
         "type": "tabs",
         "children": [
           {
-            "id": "a788045661282b22",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "b143750d55130fe7",
+            "id": "fa38cc48ad98b4dd",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_1.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "c3cfec9cbbc3c19d",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_1.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "92b5c395fef4ddd6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LinuxTool/gcc&gdb/The note of Makefile.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
+                "file": "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -116,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_1.excalidraw.md",
+                "file": "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_1.excalidraw.md",
+                "file": "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -195,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_1.excalidraw.md"
+                "file": "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md"
               }
             }
           }
@@ -208,6 +176,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "daily-notes:Open today's daily note": false,
@@ -215,21 +184,20 @@
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
       "obsidian-memos:Memos": false
     }
   },
-  "active": "bf178dff9f426baa",
+  "active": "fa38cc48ad98b4dd",
   "lastOpenFiles": [
-    "CMU-CSAPP/Untitled.md",
-    "diary/2022-12-27.md",
+    "CMU-CSAPP/2 bomblab/svgAndpng/phase_5.excalidraw.png",
+    "CMU-CSAPP/2 bomblab/svgAndpng/phase_5.excalidraw.svg",
+    "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md",
+    "CMU-CSAPP/2 bomblab/phase_4.excalidraw.md",
+    "CMU-CSAPP/2 bomblab/phase_3.excalidraw.md",
+    "CMU-CSAPP/2 bomblab/phase_2.excalidraw.md",
     "CMU-CSAPP/2 bomblab/phase_1.excalidraw.md",
-    "CMU-CSAPP/2 bomblab/The note of bomblab.md",
-    "bomb.md",
-    "CMU-CSAPP/2 bomblab/Drawing 2022-12-27 22.10.44.excalidraw.md",
-    "CMU-CSAPP/2 bomblab/Drawing 2022-12-27 20.34.22.excalidraw.svg",
-    "CMU-CSAPP/2 bomblab/Drawing 2022-12-27 22.16.21.excalidraw.md",
-    "CMU-CSAPP/2 bomblab/Drawing 2022-12-27 20.34.22.excalidraw.png",
-    "LinuxTool/gcc&gdb/The note of Makefile.md"
+    "CMU-CSAPP/2 bomblab/csapp2p.excalidraw.md",
+    "pa2020/02-C 语言拾遗 (2) 编程实践.md",
+    "pa2020/03-NEMU 框架选讲 (1) 编译运行.md"
   ]
 }
