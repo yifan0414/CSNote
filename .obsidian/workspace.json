@@ -13,7 +13,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md"
+                "file": "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md"
               }
             }
           }
@@ -84,7 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md",
+                "file": "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md",
+                "file": "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md"
+                "file": "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md"
               }
             }
           }
@@ -189,15 +189,15 @@
   },
   "active": "fa38cc48ad98b4dd",
   "lastOpenFiles": [
+    "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md",
+    "CMU-CSAPP/2 bomblab/csapp2p.excalidraw.md",
+    "pa2020/tutorial/PA3 穿越时空的旅程 批处理系统/3-4 文件系统.md",
+    "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md",
+    "attachments/Pasted Image 20221229194822_535.png",
+    "attachments/Pasted Image 20221229200956_738.png",
+    "pa2020/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md",
     "CMU-CSAPP/2 bomblab/svgAndpng/phase_5.excalidraw.png",
     "CMU-CSAPP/2 bomblab/svgAndpng/phase_5.excalidraw.svg",
-    "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md",
-    "CMU-CSAPP/2 bomblab/phase_4.excalidraw.md",
-    "CMU-CSAPP/2 bomblab/phase_3.excalidraw.md",
-    "CMU-CSAPP/2 bomblab/phase_2.excalidraw.md",
-    "CMU-CSAPP/2 bomblab/phase_1.excalidraw.md",
-    "CMU-CSAPP/2 bomblab/csapp2p.excalidraw.md",
-    "pa2020/02-C 语言拾遗 (2) 编程实践.md",
-    "pa2020/03-NEMU 框架选讲 (1) 编译运行.md"
+    "CMU-CSAPP/2 bomblab/phase_4.excalidraw.md"
   ]
 }

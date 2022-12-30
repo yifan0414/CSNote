@@ -55,8 +55,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "image",
-			"version": 269,
-			"versionNonce": 1444575621,
+			"version": 329,
+			"versionNonce": 520957456,
 			"isDeleted": false,
 			"id": "1QKZu5EjOKqp7jrYxyiH7",
 			"fillStyle": "hachure",
@@ -65,8 +65,8 @@ tags: [excalidraw]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 619.4242674729431,
-			"y": -471.98174963471615,
+			"x": -48.58584282117431,
+			"y": -553.8429628700103,
 			"strokeColor": "transparent",
 			"backgroundColor": "transparent",
 			"width": 601.1542268131712,
@@ -75,7 +75,7 @@ tags: [excalidraw]
 			"groupIds": [],
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1672219704170,
+			"updated": 1672401293111,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -83,85 +83,6 @@ tags: [excalidraw]
 			"scale": [
 				1,
 				1
-			]
-		},
-		{
-			"type": "image",
-			"version": 383,
-			"versionNonce": 2068151819,
-			"isDeleted": true,
-			"id": "2CzSlBP-sBj_sBt4mjO2q",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -474.51570366164594,
-			"y": -435.3008313584568,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 649.0459579682762,
-			"height": 128.00628615485448,
-			"seed": 1229120747,
-			"groupIds": [],
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1672237507036,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "f2db06590fc39eaabeb6736459523ba4b18d4a53",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"type": "arrow",
-			"version": 350,
-			"versionNonce": 698320043,
-			"isDeleted": true,
-			"id": "b_v_AC3Py06vA9uGbeR6s",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 86.3251385725763,
-			"y": -168.09045248920518,
-			"strokeColor": "#c92a2a",
-			"backgroundColor": "transparent",
-			"width": 172.85478737505196,
-			"height": 217.3751271502491,
-			"seed": 985088421,
-			"groupIds": [],
-			"roundness": {
-				"type": 2
-			},
-			"boundElements": [],
-			"updated": 1672237509836,
-			"link": null,
-			"locked": false,
-			"startBinding": null,
-			"endBinding": null,
-			"lastCommittedPoint": null,
-			"startArrowhead": null,
-			"endArrowhead": "triangle",
-			"points": [
-				[
-					0,
-					0
-				],
-				[
-					114.14932900013787,
-					-125.72197447723283
-				],
-				[
-					-58.70545837491409,
-					-217.3751271502491
-				]
 			]
 		}
 	],
