@@ -1,6 +1,6 @@
 # PA 3-1 Cache的模拟
 
-![pa-3-1](../PIC/pa/pa-3-1.png)
+![pa-3-1](pa-3-1.png)
 
 图3-1 PA 3-1 Cache模拟路线图
 

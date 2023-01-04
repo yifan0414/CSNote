@@ -43,7 +43,6 @@
   "blue-topaz-theme@@bt-status-on": false,
   "blue-topaz-theme@@left-ribbon-style": "default-left-ribbon-style",
   "blue-topaz-theme@@layout-style-options": "layout-style-options-rectangle",
-  "blue-topaz-theme@@font-size-code": "0.95em",
   "blue-topaz-theme@@nowrap-outline": false,
   "blue-topaz-theme@@hide-vault-name": true,
   "blue-topaz-theme@@search-bar-style-option": "default-search-bar",
@@ -54,7 +53,7 @@
   "blue-topaz-theme@@hide-titlebar-close-btn": false,
   "blue-topaz-theme@@setting-etc-pane-style": "setting-style-traditional",
   "blue-topaz-theme@@stack-tabs-background-blur-depth": 40,
-  "blue-topaz-theme@@tab-head-style": "safari-tab-style",
+  "blue-topaz-theme@@tab-head-style": "default-tab",
   "minimal-style@@callouts-style": "callouts-outlined",
   "minimal-style@@active-line-on": true,
   "shimmering-focus@@hide-settings-button": true,
@@ -99,5 +98,6 @@
   "minimal-advanced@@folding-offset": 10,
   "blue-topaz-theme@@admonition-bg-color-same": false,
   "shimmering-focus@@disable-vim-cursor-blink": true,
-  "shimmering-focus@@use-relative-line-numbers": false
+  "shimmering-focus@@use-relative-line-numbers": false,
+  "blue-topaz-theme@@font-size-code": "0.9em"
 }

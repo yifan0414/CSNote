@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"68407d530de69a6e","x":-1402,"y":-508,"width":560,"height":352,"type":"file","file":"attachments/Pasted image 20230103222209.png"},
+		{"id":"a814723eaa6b55a9","x":-723,"y":-1027,"width":416,"height":200,"color":"4","type":"text","text":"In fast recovery, the value of cwnd is increased by 1 MSS for every duplicate ACK received for the **missing segment** that caused TCP to enter the fast-recovery state. Eventually, when an ACK arrives for the missing segment, TCP enters the"},
+		{"id":"a6d00c06258e7286","x":-307,"y":79,"width":1128,"height":726,"type":"file","file":"LinuxTool/tmux/Tmux.excalidraw.md"},
+		{"id":"cea4cdb23c165596","x":-1832,"y":-357,"width":186,"height":50,"type":"text","text":"# 网络层"},
+		{"id":"b53fe32aeaeb9211","x":1,"y":-1221,"width":749,"height":1150,"color":"2","type":"group","label":"time"},
+		{"id":"d27f61e734546efc","x":21,"y":-1168,"width":589,"height":316,"color":"1","type":"file","file":"attachments/Pasted image 20230103222644.png"},
+		{"id":"6aaab841e60882cd","x":21,"y":-676,"width":709,"height":558,"type":"file","file":"attachments/Pasted image 20230103222324.png"}
+	],
+	"edges":[
+		{"id":"95ed9e1a77cbd699","fromNode":"68407d530de69a6e","fromSide":"right","toNode":"a814723eaa6b55a9","toSide":"left"},
+		{"id":"a75f9b996d4b3a1a","fromNode":"68407d530de69a6e","fromSide":"right","toNode":"6aaab841e60882cd","toSide":"left"},
+		{"id":"ecccfac9fa68deea","fromNode":"a814723eaa6b55a9","fromSide":"right","toNode":"d27f61e734546efc","toSide":"left"},
+		{"id":"75d9055f87087f98","fromNode":"68407d530de69a6e","fromSide":"right","toNode":"a6d00c06258e7286","toSide":"left"},
+		{"id":"cfcf93ffabb4bf87","fromNode":"cea4cdb23c165596","fromSide":"right","toNode":"68407d530de69a6e","toSide":"left"}
+	]
+}

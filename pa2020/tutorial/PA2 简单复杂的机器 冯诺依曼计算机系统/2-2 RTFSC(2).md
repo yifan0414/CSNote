@@ -36,23 +36,23 @@
 
 具体地,  `exec_once()` 接受一个 `Decode` 类型的结构体指针 `s` , 这个结构体用于存放在执行一条指令过程中所需的信息, 包括指令的PC, 下一条指令的PC等. 还有一些信息是ISA相关的, NEMU用一个结构类型 `ISADecodeInfo` 来对这些信息进行抽象, 具体的定义在 `nemu/src/isa/$ISA/include/isa-def.h` 中.  `exec_once()` 会先把当前的PC保存到 `s` 的成员 `pc` 和 `snpc` 中, 其中 `s->pc` 就是当前指令的PC, 而 `s->snpc` 则是下一条指令的PC, 这里的 `snpc` 是"static next PC"的意思.
 
-然后代码会调用 `isa_exec_once()` 函数(在`nemu/src/isa/$ISA/inst.c`中定义), 这是因为执行指令的具体过程是和ISA相关的, 在这里我们先不深究`isa_exec_once()`的细节. 但可以说明的是, 它会随着取指的过程修改`s->snpc`的值, 使得从`isa_exec_once()`返回后`s->snpc`正好为下一条指令的PC. 接下来代码将会通过`s->dnpc`来更新PC, 这里的`dnpc`是"dynamic next PC"的意思. 关于`snpc`和`dnpc`的区别, 我们会在下文进行说明.
+然后代码会调用 `isa_exec_once()` 函数 (在 `nemu/src/isa/$ISA/inst.c` 中定义), 这是因为执行指令的具体过程是和 ISA 相关的, 在这里我们先不深究 `isa_exec_once()` 的细节. 但可以说明的是, 它会随着取指的过程修改 `s->snpc` 的值, 使得从 `isa_exec_once()` 返回后 `s->snpc` 正好为下一条指令的 PC. 接下来代码将会通过 `s->dnpc` 来更新 PC, 这里的 `dnpc` 是"dynamic next PC"的意思. 关于 `snpc` 和 `dnpc` 的区别, 我们会在下文进行说明.
 
-忽略`exec_once()`中剩下与trace相关的代码, 我们就返回到`execute()`中. 代码会对一个用于记录客户指令的计数器加1, 然后进行一些trace和difftest相关的操作(此时先忽略), 然后检查NEMU的状态是否为`NEMU_RUNNING`, 若是, 则继续执行下一条指令, 否则则退出执行指令的循环.
+忽略 `exec_once()` 中剩下与 trace 相关的代码, 我们就返回到 `execute()` 中. 代码会对一个用于记录客户指令的计数器加 1, 然后进行一些 trace 和 difftest 相关的操作 (此时先忽略), 然后检查 NEMU 的状态是否为 `NEMU_RUNNING`, 若是, 则继续执行下一条指令, 否则则退出执行指令的循环.
 
 事实上, `exec_once()`函数覆盖了指令周期的所有阶段: 取指, 译码, 执行, 更新PC, 接下来我们来看看NEMU是如何实现指令周期的每一个阶段的.
 
 ## 取指(instruction fetch, IF)
 
-`isa_exec_once()`做的第一件事情就是取指令. 在NEMU中, 有一个函数`inst_fetch()`(在`nemu/include/cpu/ifetch.h`中定义)专门负责取指令的工作. `inst_fetch()`最终会根据参数`len`来调用`vaddr_ifetch()`(在`nemu/src/memory/vaddr.c`中定义), 而目前`vaddr_ifetch()`又会通过`paddr_read()`来访问物理内存中的内容. 因此, 取指操作的本质只不过就是一次内存的访问而已.
+`isa_exec_once()` 做的第一件事情就是取指令. 在 NEMU 中, 有一个函数 `inst_fetch()` (在 `nemu/include/cpu/ifetch.h` 中定义) 专门负责取指令的工作. `inst_fetch()` 最终会根据参数 `len` 来调用 `vaddr_ifetch()` (在 `nemu/src/memory/vaddr.c` 中定义), 而目前 `vaddr_ifetch()` 又会通过 `paddr_read()` 来访问物理内存中的内容. 因此, 取指操作的本质只不过就是一次内存的访问而已.
 
-`isa_exec_once()`在调用`inst_fetch()`的时候传入了`s->snpc`的地址, 因此`inst_fetch()`最后还会根据`len`来更新`s->snpc`, 从而让`s->snpc`指向下一条指令.
+`isa_exec_once()` 在调用 `inst_fetch()` 的时候传入了 `s->snpc` 的地址, 因此 `inst_fetch()` 最后还会根据 `len` 来更新 `s->snpc`, 从而让 `s->snpc` 指向下一条指令.
 
 ## 译码(instruction decode, ID)
 
-接下来代码会进入`decode_exec()`函数, 它首先进行的是译码相关的操作. 译码的目的是得到指令的操作和操作对象, 这主要是通过查看指令的`opcode`来决定的. 不同ISA的`opcode`会出现在指令的不同位置, 我们只需要根据指令的编码格式, 从取出的指令中识别出相应的`opcode`即可.
+接下来代码会进入 `decode_exec()` 函数, 它首先进行的是译码相关的操作. 译码的目的是得到指令的操作和操作对象, 这主要是通过查看指令的 `opcode` 来决定的. 不同 ISA 的 `opcode` 会出现在指令的不同位置, 我们只需要根据指令的编码格式, 从取出的指令中识别出相应的 `opcode` 即可.
 
-和YEMU相比, NEMU使用一种抽象层次更高的译码方式: 模式匹配, NEMU可以通过一个模式字符串来指定指令中`opcode`, 例如在riscv32中有如下模式:
+和 YEMU 相比, NEMU 使用一种抽象层次更高的译码方式: 模式匹配, NEMU 可以通过一个模式字符串来指定指令中 `opcode`, 例如在 riscv32 中有如下模式:
 
 ```c
 INSTPAT_START();
@@ -69,14 +69,14 @@ INSTPAT(模式字符串, 指令名称, 指令类型, 指令执行操作);
 
 `模式字符串`中只允许出现4种字符:
 
--   `0`表示相应的位只能匹配`0`
--   `1`表示相应的位只能匹配`1`
--   `?`表示相应的位可以匹配`0`或`1`
+-   `0` 表示相应的位只能匹配 `0`
+-   `1` 表示相应的位只能匹配 `1`
+-   `?` 表示相应的位可以匹配 `0` 或 `1`
 -   空格是分隔符, 只用于提升模式字符串的可读性, 不参与匹配
 
 `指令名称`在代码中仅当注释使用, 不参与宏展开; `指令类型`用于后续译码过程; 而`指令执行操作`则是通过C代码来模拟指令执行的真正行为.
 
-此外, `nemu/include/cpu/decode.h`中还定义了宏`INSTPAT_START`和`INSTPAT_END`. `INSTPAT`又使用了另外两个宏`INSTPAT_INST`和`INSTPAT_MATCH`, 它们在`nemu/src/isa/$ISA/inst.c`中定义. 对上述代码进行宏展开并简单整理代码之后, 最后将会得到:
+此外, `nemu/include/cpu/decode.h` 中还定义了宏 `INSTPAT_START` 和 `INSTPAT_END`. `INSTPAT` 又使用了另外两个宏 `INSTPAT_INST` 和 `INSTPAT_MATCH`, 它们在 `nemu/src/isa/$ISA/inst.c` 中定义. 对上述代码进行宏展开并简单整理代码之后, 最后将会得到:
 
 ```c
 { const void ** __instpat_end = &&__instpat_end_;
@@ -95,9 +95,9 @@ do {
 __instpat_end_: ; }
 ```
 
-上述代码中的`&&__instpat_end_`使用了GCC提供的[标签地址](https://gcc.gnu.org/onlinedocs/gcc/Labels-as-Values.html)扩展功能, `goto`语句将会跳转到最后的`__instpat_end_`标签. 此外, `pattern_decode()`函数在`nemu/include/cpu/decode.h`中定义, 它用于将模式字符串转换成3个整型变量.
+上述代码中的 `&&__instpat_end_` 使用了 GCC 提供的[标签地址](https://gcc.gnu.org/onlinedocs/gcc/Labels-as-Values.html)扩展功能, `goto` 语句将会跳转到最后的 `__instpat_end_` 标签. 此外, `pattern_decode()` 函数在 `nemu/include/cpu/decode.h` 中定义, 它用于将模式字符串转换成 3 个整型变量.
 
-`pattern_decode()`函数将模式字符串中的`0`和`1`抽取到整型变量`key`中, `mask`表示`key`的掩码, 而`shift`则表示`opcode`距离最低位的比特数量, 用于帮助编译器进行优化. 具体地, 上述例子中:
+`pattern_decode()` 函数将模式字符串中的 `0` 和 `1` 抽取到整型变量 `key` 中, `mask` 表示 `key` 的掩码, 而 `shift` 则表示 `opcode` 距离最低位的比特数量, 用于帮助编译器进行优化. 具体地, 上述例子中:
 
 ```c
 key   = 0x37;
@@ -111,16 +111,16 @@ shift = 0;
 0x800002b7   lui t0,0x80000
 ```
 
-NEMU取指令的时候会把指令记录到`s->isa.inst.val`中, 此时指令满足上述宏展开的`if`语句, 表示匹配到`lui`指令的编码, 因此将会进行进一步的译码操作.
+NEMU 取指令的时候会把指令记录到 `s->isa.inst.val` 中, 此时指令满足上述宏展开的 `if` 语句, 表示匹配到 `lui` 指令的编码, 因此将会进行进一步的译码操作.
 
-刚才我们只知道了指令的具体操作(比如`lui`是读入一个立即数到寄存器的高位), 但我们还是不知道操作对象(比如立即数是多少, 读入到哪个寄存器). 为了解决这个问题, 代码需要进行进一步的译码工作, 这是通过调用`decode_operand()`函数来完成的. 这个函数将会根据传入的指令类型`type`来进行操作数的译码, 译码结果将记录到函数参数`dest`, `src1`, `src2`和`imm`中, 它们分别代表目的操作数, 两个源操作数和立即数.
+刚才我们只知道了指令的具体操作 (比如 `lui` 是读入一个立即数到寄存器的高位), 但我们还是不知道操作对象 (比如立即数是多少, 读入到哪个寄存器). 为了解决这个问题, 代码需要进行进一步的译码工作, 这是通过调用 `decode_operand()` 函数来完成的. 这个函数将会根据传入的指令类型 `type` 来进行操作数的译码, 译码结果将记录到函数参数 `dest`, `src1`, `src2` 和 `imm` 中, 它们分别代表目的操作数, 两个源操作数和立即数.
 
 我们会发现, 类似寄存器和立即数这些操作数, 其实是非常常见的操作数类型. 为了进一步实现操作数译码和指令译码的解耦, 我们对这些操作数的译码进行了抽象封装:
 
--   框架代码定义了`src1R()`和`src2R()`两个辅助宏, 用于寄存器的读取结果记录到相应的操作数变量中
--   框架代码还定义了`immI`等辅助宏, 用于从指令中抽取出立即数
+-   框架代码定义了 `src1R()` 和 `src2R()` 两个辅助宏, 用于寄存器的读取结果记录到相应的操作数变量中
+-   框架代码还定义了 `immI` 等辅助宏, 用于从指令中抽取出立即数
 
-有了这些辅助宏, 我们就可以用它们来方便地编写`decode_operand()`了, 例如riscv中I-型指令的译码过程可以通过如下代码实现:
+有了这些辅助宏, 我们就可以用它们来方便地编写 `decode_operand()` 了, 例如 riscv 中 I-型指令的译码过程可以通过如下代码实现:
 
 ```c
 case TYPE_I: src1R(); immI(); break;
@@ -128,9 +128,9 @@ case TYPE_I: src1R(); immI(); break;
 
 另外补充几点说明:
 
--   `decode_operand`中用到了宏`BITS`和`SEXT`, 它们均在`nemu/include/macro.h`中定义, 分别用于位抽取和符号扩展
--   `decode_operand`会首先统一对目标操作数进行寄存器操作数的译码, 即调用`*dest = rd`, 不同的指令类型可以视情况使用`dest`
--   在模式匹配过程的最后有一条`inv`的规则, 表示"若前面所有的模式匹配规则都无法成功匹配, 则将该指令视为非法指令
+-   `decode_operand` 中用到了宏 `BITS` 和 `SEXT`, 它们均在 `nemu/include/macro.h` 中定义, 分别用于位抽取和符号扩展
+-   `decode_operand` 会首先统一对目标操作数进行寄存器操作数的译码, 即调用 `*dest = rd`, 不同的指令类型可以视情况使用 `dest`
+-   在模式匹配过程的最后有一条 `inv` 的规则, 表示"若前面所有的模式匹配规则都无法成功匹配, 则将该指令视为非法指令
 
 >[!cloud] x86的变长指令
 >由于CISC指令变长的特性, x86指令长度和指令形式需要一边取指一边译码来确定, 而不像RISC指令集那样可以泾渭分明地处理取指和译码阶段, 因此你会在x86的译码过程中看到`inst_fetch()`的操作.
@@ -475,11 +475,11 @@ make ARCH=$ISA-nemu ALL=xxx gdb
 >你毕业后进入公司/课题组, 不会再有讲义具体地告诉你应该做什么, 总有一天你需要在脱离讲义的情况下完成任务. 我们希望你现在就放弃"讲义和框架代码会把我应该做的一切细节清楚地告诉我"的幻想, 为自己承担起"理解整个系统工作原理"的责任, 而不是成为框架代码的奴仆. 因此, 当你疑惑一个功能是否需要实现时, 你不应该通过框架代码中是否有`TODO`来进行判断, 而是应该根据你对代码的理解和当下的需求来做决定.
 
 >[!must]  x86指令相关的注意事项
->-   `push imm8`指令行为补充. `push imm8`指令需要对立即数进行符号扩展, 这一点在i386手册中并没有明确说明. 在[IA-32手册](http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-manual-325462.pdf)中关于`push`指令有如下说明:
+>-   `push imm8` 指令行为补充. `push imm8` 指令需要对立即数进行符号扩展, 这一点在 i386 手册中并没有明确说明. 在 [IA-32手册](http://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-manual-325462.pdf)中关于 `push` 指令有如下说明:
 >> If the source operand is an immediate and its size is less than the operand size, a sign-extended value is pushed on the stack.
 >
->-   字符串操作指令. 如`movsb`等, 这些指令需要用到段寄存器`DS`, `ES`以及EFLAGS寄存器中的`DF`标志. 在PA中无需实现这些寄存器, RTFM时认为这些寄存器的值恒为`0`来理解指令的语义即可.
->-   `endbr32`指令. 具体见[这里](https://nju-projectn.github.io/ics-pa-gitbook/ics2022/2.2.html#%E5%8E%BB%E9%99%A4endbr32%E6%8C%87%E4%BB%A4)
+>-   字符串操作指令. 如 `movsb` 等, 这些指令需要用到段寄存器 `DS`, `ES` 以及 EFLAGS 寄存器中的 `DF` 标志. 在 PA 中无需实现这些寄存器, RTFM 时认为这些寄存器的值恒为 `0` 来理解指令的语义即可.
+>-   `endbr32` 指令. 具体见[这里](https://nju-projectn.github.io/ics-pa-gitbook/ics2022/2.2.html#%E5%8E%BB%E9%99%A4endbr32%E6%8C%87%E4%BB%A4)
 
 >[!sq] mips32的分支延迟槽
 >为了提升处理器的性能, mips使用了一种叫[分支延迟槽](https://en.wikipedia.org/wiki/Delay_slot)的技术. 采用这种技术之后, 程序的执行顺序会发生一些改变: 我们把紧跟在跳转指令(包括有条件和无条件)之后的静态指令称为延迟槽, 那么程序在执行完跳转指令后, 会先执行延迟槽中的指令, 再执行位于跳转目标的指令. 例如
@@ -494,20 +494,20 @@ make ARCH=$ISA-nemu ALL=xxx gdb
 >202: slt
 >```
 >
->若`beq`指令的执行结果为跳转, 则相应的动态指令流为`100 -> 101 -> 200`; 若`beq`指令的执行结果为不跳转, 则相应的动态指令流为`100 -> 101 -> 102`; 而对于`j`指令, 相应的动态指令流为`201 -> 202 -> 102`.
+>若 `beq` 指令的执行结果为跳转, 则相应的动态指令流为 `100 -> 101 -> 200`; 若 `beq` 指令的执行结果为不跳转, 则相应的动态指令流为 `100 -> 101 -> 102`; 而对于 `j` 指令, 相应的动态指令流为 `201 -> 202 -> 102`.
 >
->你一定会对这种反直觉的技术如何提升处理器性能而感到疑惑. 不过这需要你先了解一些微结构的知识, 例如[处理器流水线](http://en.wikipedia.org/wiki/Classic_RISC_pipeline), 但这已经超出了ICS的课程范围了, 所以我们也不详细解释了, 感兴趣的话可以STFW.
+>你一定会对这种反直觉的技术如何提升处理器性能而感到疑惑. 不过这需要你先了解一些微结构的知识, 例如[处理器流水线](http://en.wikipedia.org/wiki/Classic_RISC_pipeline), 但这已经超出了 ICS 的课程范围了, 所以我们也不详细解释了, 感兴趣的话可以 STFW.
 >
 >但我们可以知道, 延迟槽技术需要软硬件协同才能正确工作: mips手册中描述了这一约定, 处理器设计者按照这一约定设计处理器, 而编译器开发者则会让编译器负责在延迟槽中放置一条有意义的指令, 使得无论是否跳转, 按照这一约定的执行顺序都能得到正确的执行结果.
 >
 >如果你是编译器开发者, 你将会如何寻找合适的指令放到延迟槽中呢?
 
 >[!cloud] mips32-NEMU的分支延迟槽
->既然mips有这样的约定, 而编译器也已经遵循这一约定, 那么对于mips32编译器生成的程序, 我们也应该遵循这一约定来解释其语义. 这意味着, mips32-NEMU作为一个模拟的mips32 CPU, 也需要实现分支延迟槽技术, 才能正确地支撑mips32程序的运行.
+>既然 mips 有这样的约定, 而编译器也已经遵循这一约定, 那么对于 mips32 编译器生成的程序, 我们也应该遵循这一约定来解释其语义. 这意味着, mips32-NEMU 作为一个模拟的 mips32 CPU, 也需要实现分支延迟槽技术, 才能正确地支撑 mips32 程序的运行.
 >
->事实上, gcc为mips32程序的生成提供了一个`-fno-delayed-branch`的编译选项, 让mips32程序中的延迟槽中都放置`nop`指令. 这样以后, 执行跳转指令之后, 接下来就可以直接执行跳转目标的指令了, 因为延迟槽中都是`nop`指令, 就算不执行它, 也不会影响程序的正确性.
+>事实上, gcc 为 mips32 程序的生成提供了一个 `-fno-delayed-branch` 的编译选项, 让 mips32 程序中的延迟槽中都放置 `nop` 指令. 这样以后, 执行跳转指令之后, 接下来就可以直接执行跳转目标的指令了, 因为延迟槽中都是 `nop` 指令, 就算不执行它, 也不会影响程序的正确性.
 >
->我们已经在编译mips32程序的命令中添加了这一编译选项, 于是我们在实现mips32-NEMU的时候就可以进行简化, 无需实现分支延迟槽了.
+>我们已经在编译 mips32 程序的命令中添加了这一编译选项, 于是我们在实现 mips32-NEMU 的时候就可以进行简化, 无需实现分支延迟槽了.
 >
 >对PA来说, 去掉延迟槽还有其它的好处, 我们会在后续内容中进行讨论.
 

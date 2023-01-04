@@ -34,7 +34,7 @@
 
 本章讲解了配置实验环境的详细过程
 
-* [PA 0 实验环境配置](ch/ch_pa-0_setup.md)
+* [PA 0 实验环境配置](ch_pa-0_setup.md)
 
 ----------------------------------------------------------------
 
@@ -52,11 +52,11 @@
 
 #### 各阶段划分
 
-* [PA 1-1 数据在计算机内的存储](ch/ch_pa-1-1_reg.md)
+* [PA 1-1 数据在计算机内的存储](ch_pa-1-1_reg.md)
 
-* [PA 1-2 整数的表示、存储和运算](ch/ch_pa-1-2_alu.md)
+* [PA 1-2 整数的表示、存储和运算](ch_pa-1-2_alu.md)
 
-* [PA 1-3 浮点数的表示和运算](ch/ch_pa-1-3_fpu.md)
+* [PA 1-3 浮点数的表示和运算](ch_pa-1-3_fpu.md)
 
 #### 与课本的对应关系
 
@@ -76,11 +76,11 @@ PA 1三个阶段都对应课本第2章：数据的机器级表示与处理。此
 
 #### 各阶段划分
 
-* [PA 2-1 指令解码与执行](ch/ch_pa-2-1_instruction.md)
+* [PA 2-1 指令解码与执行](ch_pa-2-1_instruction.md)
 
-* [PA 2-2 装载ELF文件](ch/ch_pa-2-2_load_elf.md)
+* [PA 2-2 装载ELF文件](ch_pa-2-2_load_elf.md)
 
-* [PA 2-3 可选任务：完善调试器](ch/ch_pa-2-3_monitor.md)
+* [PA 2-3 可选任务：完善调试器](ch_pa-2-3_monitor.md)
 
 #### 与课本的对应关系
 
@@ -98,9 +98,9 @@ PA 2-1对应课本第3章：程序的转换及机器级表示（部分包括第5
 
 #### 各阶段划分
 
-* [PA 3-1 Cache的模拟](ch/ch_pa-3-1_cache.md)
-* [PA 3-2 保护模式（分段机制）](ch/ch_pa-3-2_protect_mode.md)
-* [PA 3-3 分页机制 & 虚拟地址转换](ch/ch_pa-3-3_paging.md)
+* [PA 3-1 Cache的模拟](ch_pa-3-1_cache.md)
+* [PA 3-2 保护模式（分段机制）](ch_pa-3-2_protect_mode.md)
+* [PA 3-3 分页机制 & 虚拟地址转换](ch_pa-3-3_paging.md)
 
 #### 与课本的对应关系
 
@@ -116,11 +116,11 @@ PA 2-1对应课本第3章：程序的转换及机器级表示（部分包括第5
 
 #### 各阶段划分
 
-* [PA 4-1 异常和中断的响应](ch/ch_pa-4-1-interrupt.md)
+* [PA 4-1 异常和中断的响应](ch_pa-4-1-interrupt.md)
 
-* [PA 4-2 外设与I/O](ch/ch_pa-4-2-device_io.md)
+* [PA 4-2 外设与I/O](ch_pa-4-2-device_io.md)
 
-* [PA 4-3 可选任务：游戏移植](ch/ch_pa-4-3-games.md)
+* [PA 4-3 可选任务：游戏移植](ch_pa-4-3-games.md)
 
 #### 与课本的对应关系
 
@@ -137,8 +137,8 @@ PA 4-1对应课本第7章：异常控制流；PA 4-2对应课本第8章：I/O操
 
 ----------------------------------------------------------------
 
-[附录A. I386手册勘误](ch/ch_appendix_A_i386_correction.md)
+[附录A. I386手册勘误](ch_appendix_A_i386_correction.md)
 
-[附录B. Git入门教程](ch/ch_appendix_B_git_manual.md)
+[附录B. Git入门教程](ch_appendix_B_git_manual.md)
 
-[附录C. 安装Debian操作系统的图片示意](ch/ch_appendix_C_local_vm.md)
+[附录C. 安装Debian操作系统的图片示意](ch_appendix_C_local_vm.md)

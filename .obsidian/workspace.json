@@ -11,9 +11,25 @@
             "id": "fa38cc48ad98b4dd",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "canvas",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md"
+                "file": "Reading/computer network/Chpater1.canvas",
+                "viewState": {
+                  "x": 257,
+                  "y": 442,
+                  "zoom": 0,
+                  "snapToGrid": false
+                }
+              }
+            }
+          },
+          {
+            "id": "819c817f4dfc203b",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "attachments/Pasted Image 20221230213400_356.png"
               }
             }
           }
@@ -67,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 262.5
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -84,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md",
+                "file": "Reading/computer network/Chpater1.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md",
+                "file": "Reading/computer network/Chpater1.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md"
+                "file": "Reading/computer network/Chpater1.canvas"
               }
             }
           }
@@ -190,14 +206,14 @@
   "active": "fa38cc48ad98b4dd",
   "lastOpenFiles": [
     "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md",
-    "CMU-CSAPP/2 bomblab/csapp2p.excalidraw.md",
-    "pa2020/tutorial/PA3 穿越时空的旅程 批处理系统/3-4 文件系统.md",
-    "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md",
-    "attachments/Pasted Image 20221229194822_535.png",
-    "attachments/Pasted Image 20221229200956_738.png",
-    "pa2020/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md",
-    "CMU-CSAPP/2 bomblab/svgAndpng/phase_5.excalidraw.png",
-    "CMU-CSAPP/2 bomblab/svgAndpng/phase_5.excalidraw.svg",
-    "CMU-CSAPP/2 bomblab/phase_4.excalidraw.md"
+    "Reading/computer network/Chpater1.canvas",
+    "LinuxTool/vim/Vim路线图.canvas",
+    "pa2020/tutorial/PA3 穿越时空的旅程 批处理系统/3-3 用户程序和系统调用.md",
+    "LinuxTool/tmux/Tmux.excalidraw.md",
+    "LinuxTool/tmux/0 The notes of Tmux.md",
+    "diary/2022-11-28.md",
+    "diary/2022-11-29.md",
+    "diary/2022-12-09.md",
+    "diary/2022-12-08.md"
   ]
 }
