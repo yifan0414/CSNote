@@ -4,36 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "3d442a4129b1e441",
+        "id": "6c5dcfb0fcbc2571",
         "type": "tabs",
         "children": [
           {
-            "id": "fa38cc48ad98b4dd",
+            "id": "f40173467a68cfdd",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Reading/computer network/Chpater1.canvas",
-                "viewState": {
-                  "x": 257,
-                  "y": 442,
-                  "zoom": 0,
-                  "snapToGrid": false
-                }
+                "file": "CS61A/composingprograms/1.7   Recursive Functions.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
               }
             }
           },
           {
-            "id": "819c817f4dfc203b",
+            "id": "cf54fe1803c7f6b9",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "attachments/Pasted Image 20221230213400_356.png"
+                "file": "CS61A/composingprograms/1.1 Getting Started.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -100,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reading/computer network/Chpater1.canvas",
+                "file": "CS61A/composingprograms/1.1 Getting Started.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reading/computer network/Chpater1.canvas",
+                "file": "CS61A/composingprograms/1.1 Getting Started.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reading/computer network/Chpater1.canvas"
+                "file": "CS61A/composingprograms/1.1 Getting Started.md"
               }
             }
           }
@@ -187,8 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5,
-    "collapsed": true
+    "width": 268.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -203,17 +203,17 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "fa38cc48ad98b4dd",
+  "active": "cf54fe1803c7f6b9",
   "lastOpenFiles": [
-    "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md",
-    "Reading/computer network/Chpater1.canvas",
-    "LinuxTool/vim/Vim路线图.canvas",
-    "pa2020/tutorial/PA3 穿越时空的旅程 批处理系统/3-3 用户程序和系统调用.md",
-    "LinuxTool/tmux/Tmux.excalidraw.md",
-    "LinuxTool/tmux/0 The notes of Tmux.md",
-    "diary/2022-11-28.md",
-    "diary/2022-11-29.md",
-    "diary/2022-12-09.md",
-    "diary/2022-12-08.md"
+    "CS61A/composingprograms/sol-disc04_index.html",
+    "CS61A/composingprograms/1.3   Defining New Functions.md",
+    "CS61A/composingprograms/1.7   Recursive Functions.md",
+    "CS61A/composingprograms/Untitled.md",
+    "CS61A/composingprograms/1.6   Higher-Order Functions.md",
+    "CS61A/composingprograms/1.5   Control.md",
+    "CS61A/composingprograms/1.2 Elements of Programming.md",
+    "CS61A/composingprograms/1.4   Designing Functions.md",
+    "CS61A/composingprograms/1.1 Getting Started.md",
+    "attachments/Pasted Image 20221230213400_356.png"
   ]
 }

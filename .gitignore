@@ -4,3 +4,5 @@
 *.pdf
 *.docx
 /attachments
+*.pptx
+*.doc

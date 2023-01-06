@@ -89,7 +89,7 @@
   "shimmering-focus@@mac-os-native": false,
   "shimmering-focus@@no-dimmed-inactive-pane": false,
   "shimmering-focus@@hide-trailing-whitespace": false,
-  "shimmering-focus@@no-active-line-highlight": true,
+  "shimmering-focus@@no-active-line-highlight": false,
   "minimal-style@@minimal-code-scroll": true,
   "minimal-style@@row-lines": false,
   "minimal-style@@row-hover": true,
@@ -99,5 +99,6 @@
   "blue-topaz-theme@@admonition-bg-color-same": false,
   "shimmering-focus@@disable-vim-cursor-blink": true,
   "shimmering-focus@@use-relative-line-numbers": false,
-  "blue-topaz-theme@@font-size-code": "0.9em"
+  "blue-topaz-theme@@font-size-code": "0.9em",
+  "shimmering-focus@@wordcount-only-when-writing": false
 }

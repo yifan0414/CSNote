@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": "#4b88d8",
     "recentlyUsedIcons": [
-      "⛰",
-      "SiCodemirror",
-      "SiVim",
-      "Fab42Group",
-      "RiToolsFill"
+      "FabLinux",
+      "SiCodeproject",
+      "SiMinds",
+      "SiAwslambda",
+      "SiCmake"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -25,6 +25,11 @@
   "The Missing Semester": "SiCoursera",
   "LinuxTool": "RiToolsFill",
   "LinuxTool/vim/Vim map.md": "SiVim",
-  "CMU-CSAPP": "⛰",
-  "attachments": "RiAttachment2"
+  "CMU-CSAPP": "SiCmake",
+  "attachments": "RiAttachment2",
+  "computer networking": "SiFurrynetwork",
+  "CS61A": "SiAwslambda",
+  "Excalidraw": "SiMinds",
+  "LittleProject": "SiCodeproject",
+  "NJUOS": "FabLinux"
 }
