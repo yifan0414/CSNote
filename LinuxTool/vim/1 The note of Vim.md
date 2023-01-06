@@ -80,4 +80,36 @@
 >6. { keys: 'z-', type: 'action', action: 'scrollToCursor', actionArgs: { position: 'bottom' }, motion: 'moveToFirstNonWhiteSpaceCharacter' },
 >```
 
->[!note] A test
+>[!note] 在 Obsidian 的 vimrc 中使用 surround
+>使用了插件 `vimrc support`，配置如下：
+>```vimrc
+>exmap surround_wiki surround [[ ]]
+>exmap surround_double_quotes surround " "
+>exmap surround_single_quotes surround ' '
+>exmap surround_brackets surround ( )
+>exmap surround_square_brackets surround [ ]
+>exmap surround_curly_brackets surround { }
+>exmap surround_equal surround == ==
+>exmap surround_code surround ` `
+>exmap surround_italic surround * *
+>exmap surround_bold surround ** **
+>exmap surround_underline surround <u> </u>
+>
+>" NOTE: must use 'map' and not 'nmap'
+>map [[ :surround_wiki
+>nunmap s
+>vunmap s
+>map s" :surround_double_quotes
+>map s' :surround_single_quotes
+>map s ( :surround_brackets
+>map s) :surround_brackets
+>map s[ :surround_square_brackets
+>map s] :surround_square_brackets
+>map s{ :surround_curly_brackets
+>map s} :surround_curly_brackets
+>map s= :surround_equal
+>map s` :surround_code
+>map si :surround_italic
+>map sb :surround_bold
+>map su :surround_underline
+>```

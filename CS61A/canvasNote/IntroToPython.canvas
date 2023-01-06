@@ -1,0 +1,30 @@
+{
+	"nodes":[
+		{"id":"6445244e0eb34c63","x":-463,"y":123,"width":250,"height":60,"type":"text","text":"# Python"},
+		{"id":"06b8eae30c1782e7","x":-562,"y":427,"width":97,"height":60,"type":"text","text":"**beauty**"},
+		{"id":"3510783071510673","x":-400,"y":427,"width":125,"height":60,"type":"text","text":"**simplicity**"},
+		{"id":"bd996672a0a1ec4b","x":-203,"y":427,"width":142,"height":60,"type":"text","text":"**readability**"},
+		{"id":"47b812d7b4b32382","x":-582,"y":407,"width":541,"height":100,"type":"group","label":"Zen of Python"},
+		{"id":"9ab34bbe5983f4f6","x":390,"y":-308,"width":427,"height":148,"type":"text","text":"All computing begins with ==representing information==, ==specifying logic to process it==, and ==designing abstractions== that manage the complexity of that logic."},
+		{"id":"3cbde66d303bf144","x":-254,"y":-308,"width":386,"height":110,"type":"text","text":"When you learn Python, you join a million-person-strong community of developers."},
+		{"id":"7d59a1d9f40a4d16","x":-850,"y":-315,"width":387,"height":125,"type":"text","text":"Python is a widely used programming language that has recruited enthusiasts（招募爱好者） from many professions"},
+		{"id":"92a5aa08ee5d80a0","x":181,"y":21,"width":747,"height":265,"type":"text","text":">[!quote] \n> The fundamental equation of computers is:\n> \n> *computer = powerful + stupid*\n> \n> Programming is about a person using their real insight to build something useful, constructed out of these teeny, simple little operations that the computer can do.\n> \n> <p align=\"right\">—Francisco Cai and Nick Parlante, Stanford CS101</p>"},
+		{"id":"cb60defd347cd957","x":-256,"y":774,"width":250,"height":60,"type":"text","text":"**Test incrementally**"},
+		{"id":"eed4e1d5a3cca6cf","x":-256,"y":901,"width":250,"height":60,"type":"text","text":"**Isolate errors**"},
+		{"id":"61d1b255af732b18","x":-271,"y":1038,"width":279,"height":62,"type":"text","text":"**Check your assumptions**"},
+		{"id":"3119f15ba06a197d","x":-256,"y":1172,"width":250,"height":60,"type":"text","text":"**Consult others**"},
+		{"id":"1ab20226628c7334","x":-687,"y":978,"width":250,"height":60,"type":"text","text":"# debugging"}
+	],
+	"edges":[
+		{"id":"cef22bbdf08ff0e6","fromNode":"6445244e0eb34c63","fromSide":"top","toNode":"7d59a1d9f40a4d16","toSide":"bottom"},
+		{"id":"1f1fa79bf18e7e65","fromNode":"6445244e0eb34c63","fromSide":"top","toNode":"3cbde66d303bf144","toSide":"bottom"},
+		{"id":"69372ec3da4e57f3","fromNode":"6445244e0eb34c63","fromSide":"bottom","toNode":"06b8eae30c1782e7","toSide":"top"},
+		{"id":"f7227a2019076f0c","fromNode":"6445244e0eb34c63","fromSide":"bottom","toNode":"3510783071510673","toSide":"top"},
+		{"id":"57b1dc4d9015ab64","fromNode":"6445244e0eb34c63","fromSide":"bottom","toNode":"bd996672a0a1ec4b","toSide":"top"},
+		{"id":"3759aada1aee9bbb","fromNode":"6445244e0eb34c63","fromSide":"right","toNode":"92a5aa08ee5d80a0","toSide":"left"},
+		{"id":"151d7718feb98037","fromNode":"1ab20226628c7334","fromSide":"right","toNode":"cb60defd347cd957","toSide":"left"},
+		{"id":"37218cbff1424691","fromNode":"1ab20226628c7334","fromSide":"right","toNode":"eed4e1d5a3cca6cf","toSide":"left"},
+		{"id":"8d5050f25addeb5b","fromNode":"1ab20226628c7334","fromSide":"right","toNode":"61d1b255af732b18","toSide":"left"},
+		{"id":"678f03fbf121f54f","fromNode":"1ab20226628c7334","fromSide":"right","toNode":"3119f15ba06a197d","toSide":"left"}
+	]
+}

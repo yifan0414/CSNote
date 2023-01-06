@@ -23,6 +23,10 @@ exmap surround_square_brackets surround [ ]
 exmap surround_curly_brackets surround { }
 exmap surround_equal surround == ==
 exmap surround_code surround ` `
+exmap surround_italic surround * *
+exmap surround_bold surround ** **
+exmap surround_underline surround <u> </u>
+exmap surround_red surround <font\ color="#ff0000"> </font>
 
 " NOTE: must use 'map' and not 'nmap'
 map [[ :surround_wiki
@@ -30,12 +34,15 @@ nunmap s
 vunmap s
 map s" :surround_double_quotes
 map s' :surround_single_quotes
-map sb :surround_brackets
 map s( :surround_brackets
 map s) :surround_brackets
 map s[ :surround_square_brackets
-map s[ :surround_square_brackets
+map s] :surround_square_brackets
 map s{ :surround_curly_brackets
 map s} :surround_curly_brackets
 map s= :surround_equal
 map s` :surround_code
+map si :surround_italic
+map sb :surround_bold
+map su :surround_underline
+map sr :surround_red
