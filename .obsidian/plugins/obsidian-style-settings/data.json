@@ -100,5 +100,6 @@
   "shimmering-focus@@disable-vim-cursor-blink": true,
   "shimmering-focus@@use-relative-line-numbers": false,
   "blue-topaz-theme@@font-size-code": "0.9em",
-  "shimmering-focus@@wordcount-only-when-writing": false
+  "shimmering-focus@@wordcount-only-when-writing": false,
+  "shimmering-focus@@no-image-alttext-caption": true
 }

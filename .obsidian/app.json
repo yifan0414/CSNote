@@ -2,7 +2,7 @@
   "readableLineLength": true,
   "livePreview": true,
   "promptDelete": false,
-  "showLineNumber": false,
+  "showLineNumber": true,
   "showIndentGuide": false,
   "pdfExportSettings": {
     "includeName": true,

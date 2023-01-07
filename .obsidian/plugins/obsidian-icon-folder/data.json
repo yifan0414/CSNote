@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": "#4b88d8",
     "recentlyUsedIcons": [
+      "RiBookFill",
+      "IbArchive",
       "FabLinux",
       "SiCodeproject",
-      "SiMinds",
-      "SiAwslambda",
-      "SiCmake"
+      "SiMinds"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -31,5 +31,7 @@
   "CS61A": "SiAwslambda",
   "Excalidraw": "SiMinds",
   "LittleProject": "SiCodeproject",
-  "NJUOS": "FabLinux"
+  "NJUOS": "FabLinux",
+  "Archive": "IbArchive",
+  "READING": "RiBookFill"
 }
