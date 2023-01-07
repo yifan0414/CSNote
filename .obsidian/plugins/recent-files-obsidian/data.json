@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "1.5   Control",
+      "path": "CS61A/composingprograms/1.5   Control.md"
+    },
+    {
+      "basename": "1.4   Designing Functions",
+      "path": "CS61A/composingprograms/1.4   Designing Functions.md"
+    },
+    {
+      "basename": "3.3 Modeling with Mutable Data",
+      "path": "READING/SICP/3.3 Modeling with Mutable Data.md"
+    },
+    {
+      "basename": "1.1 The Elements of Programming",
+      "path": "READING/SICP/1.1 The Elements of Programming.md"
+    },
+    {
+      "basename": "2.4 Multiple Representations for Abstract Data",
+      "path": "READING/SICP/2.4 Multiple Representations for Abstract Data.md"
+    },
+    {
+      "basename": "References.xhtml",
+      "path": "READING/SICP/References.xhtml.md"
+    },
+    {
+      "basename": "2.5 Systems with Generic Operations",
+      "path": "READING/SICP/2.5 Systems with Generic Operations.md"
+    },
+    {
+      "basename": "4.4 Logic Programming",
+      "path": "READING/SICP/4.4 Logic Programming.md"
+    },
+    {
+      "basename": "4.3 Variations on a Scheme — Nondeterministic Computing",
+      "path": "READING/SICP/4.3 Variations on a Scheme — Nondeterministic Computing.md"
+    },
+    {
+      "basename": "3.2 The Environment Model of Evaluation",
+      "path": "READING/SICP/3.2 The Environment Model of Evaluation.md"
+    },
+    {
       "basename": "2.2 Hierarchical Data and the Closure Property",
       "path": "READING/SICP/2.2 Hierarchical Data and the Closure Property.md"
     },
