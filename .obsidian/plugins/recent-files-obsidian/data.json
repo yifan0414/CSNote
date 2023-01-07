@@ -1,8 +1,76 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-01-07",
+      "path": "diary/2023-01-07.md"
+    },
+    {
+      "basename": "04-NEMU 框架选讲 (2) 代码导读",
+      "path": "pa2020/lecture/04-NEMU 框架选讲 (2) 代码导读.md"
+    },
+    {
+      "basename": "1.6   Higher-Order Functions",
+      "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
+    },
+    {
+      "basename": "1.7   Recursive Functions",
+      "path": "CS61A/composingprograms/1.7   Recursive Functions.md"
+    },
+    {
+      "basename": "1.3   Defining New Functions",
+      "path": "CS61A/composingprograms/1.3   Defining New Functions.md"
+    },
+    {
       "basename": "1.5   Control",
       "path": "CS61A/composingprograms/1.5   Control.md"
+    },
+    {
+      "basename": "01-C 语言拾遗 (1) 机制",
+      "path": "pa2020/lecture/01-C 语言拾遗 (1) 机制.md"
+    },
+    {
+      "basename": "2.2 Hierarchical Data and the Closure Property",
+      "path": "READING/SICP/2.2 Hierarchical Data and the Closure Property.md"
+    },
+    {
+      "basename": "2.1 Introduction to Data Abstraction",
+      "path": "READING/SICP/2.1 Introduction to Data Abstraction.md"
+    },
+    {
+      "basename": "1.3 Formulating Abstractions with Higher-Order Procedures",
+      "path": "READING/SICP/1.3 Formulating Abstractions with Higher-Order Procedures.md"
+    },
+    {
+      "basename": "M1 打印进程树 (pstree)",
+      "path": "NJUOS/M1 打印进程树 (pstree).md"
+    },
+    {
+      "basename": "Lab1 大整数运算",
+      "path": "pa2020/lab/Lab1 大整数运算.md"
+    },
+    {
+      "basename": "数码管显示",
+      "path": "LittleProject/数码管显示.md"
+    },
+    {
+      "basename": "1.2 Procedures and the Processes They Generate",
+      "path": "READING/SICP/1.2 Procedures and the Processes They Generate.md"
+    },
+    {
+      "basename": "1.1 The Elements of Programming",
+      "path": "READING/SICP/1.1 The Elements of Programming.md"
+    },
+    {
+      "basename": "4.2 Variations on a Scheme — Lazy Evaluation",
+      "path": "READING/SICP/4.2 Variations on a Scheme — Lazy Evaluation.md"
+    },
+    {
+      "basename": "3.2 The Environment Model of Evaluation",
+      "path": "READING/SICP/3.2 The Environment Model of Evaluation.md"
+    },
+    {
+      "basename": "2.4 Multiple Representations for Abstract Data",
+      "path": "READING/SICP/2.4 Multiple Representations for Abstract Data.md"
     },
     {
       "basename": "1.4   Designing Functions",
@@ -11,14 +79,6 @@
     {
       "basename": "3.3 Modeling with Mutable Data",
       "path": "READING/SICP/3.3 Modeling with Mutable Data.md"
-    },
-    {
-      "basename": "1.1 The Elements of Programming",
-      "path": "READING/SICP/1.1 The Elements of Programming.md"
-    },
-    {
-      "basename": "2.4 Multiple Representations for Abstract Data",
-      "path": "READING/SICP/2.4 Multiple Representations for Abstract Data.md"
     },
     {
       "basename": "References.xhtml",
@@ -35,18 +95,6 @@
     {
       "basename": "4.3 Variations on a Scheme — Nondeterministic Computing",
       "path": "READING/SICP/4.3 Variations on a Scheme — Nondeterministic Computing.md"
-    },
-    {
-      "basename": "3.2 The Environment Model of Evaluation",
-      "path": "READING/SICP/3.2 The Environment Model of Evaluation.md"
-    },
-    {
-      "basename": "2.2 Hierarchical Data and the Closure Property",
-      "path": "READING/SICP/2.2 Hierarchical Data and the Closure Property.md"
-    },
-    {
-      "basename": "1.3 Formulating Abstractions with Higher-Order Procedures",
-      "path": "READING/SICP/1.3 Formulating Abstractions with Higher-Order Procedures.md"
     }
   ],
   "omittedPaths": [],

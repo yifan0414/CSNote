@@ -8,7 +8,7 @@
 
 ### 2.1 实验内容
 
-给定 64 位无符号整数 $\large{a, b, m}$ (类型为 `uint64_t` , 即 $\large{1 \leq a, b, m<2^{64}}$ )。你的任务是求出 $\large{a \times b(\bmod m)}$ 的数值, 即最小的非负整数 $\large{t}$, 满足 $\large{a \times b \equiv t(\bmod m)}$ 。
+给定 64 位无符号整数 $a, b, m$ (类型为 `uint64_t` , 即 $1 \leq a, b, m<2^{64}$ )。你的任务是求出 $a \times b(\bmod m)$ 的数值, 即最小的非负整数 $t$, 满足 $a \times b \equiv t(\bmod m)$ 。
 
 在这个实验中，你的任务是根据你所掌握的知识，实现功能正确的 `multimod`，并且只使用分支、循环、局部变量 (使用整数的位宽至多为 64-bit，即不得作弊使用 128 位整数)、赋值语句、位运算和加减法。允许定义额外的辅助函数。
 
@@ -111,18 +111,18 @@ int add(int a, int b) {
 
 ### 3.5 实现 `multimod`
 
-盯着 “ $\large{a \cdot b \bmod m}$ ” 看是没办法解决问题的。正确的解题方法是把式子写出来，然后尝试做一些公式变形。这个例子里的公式变形是很直观的：
+盯着 “ $a \cdot b \bmod m$ ” 看是没办法解决问题的。正确的解题方法是把式子写出来，然后尝试做一些公式变形。这个例子里的公式变形是很直观的：
 
 $$
 a \cdot b=\left(a_0 \cdot 2^0+a_1 \cdot 2^1+\ldots+a_{63} \cdot 2^{63}\right) \cdot b
 $$
 
-对于上面表达式括号中的每一项, 都是形如 $\large{2^i \cdot b}$ 的形式 (因为 $\large{a_i \in\{0,1\}}$ ) 一因此
+对于上面表达式括号中的每一项, 都是形如 $2^i \cdot b$ 的形式 (因为 $a_i \in\{0,1\}$ ) 一因此
 $$
 a \cdot b \bmod m=\left(\sum_{0 \leq i<64} a_i \cdot b \cdot 2^i \bmod m\right) \bmod m
 $$
 
-因此, 你只要能实现 $\large{\bmod m}$ 的加法即 $\large{(x+y) \bmod m}$, 就能实现 $\large{\left(b \cdot 2^i\right) \bmod m}$, 进而实现 $\large{a \cdot b \bmod m}$ 。在这里你要小心 $\large{x+y}$ 溢出 64-bit 整数的问题: 当 $\large{x+y=t+2^{64}}$ 发生溢出 $\large{\left(0 \leq t<2^{64}-1\right)}$ 时, 注意加法 wraparound 后得到的结果是
+因此, 你只要能实现 $\bmod m$ 的加法即 $(x+y) \bmod m$, 就能实现 $\left(b \cdot 2^i\right) \bmod m$, 进而实现 $a \cdot b \bmod m$ 。在这里你要小心 $x+y$ 溢出 64-bit 整数的问题: 当 $x+y=t+2^{64}$ 发生溢出 $\left(0 \leq t<2^{64-1}\right)$ 时, 注意加法 wraparound 后得到的结果是
 $$
 (x+y) \bmod 2^{64}=t .
 $$
@@ -137,7 +137,7 @@ $$
 
 ## 4. 补充：一段神秘代码
 
-求 $\large{a\cdot b \bmod m}$ 是程序设计竞赛中的一个常见操作。在 ICPC 圈子中存在一份广为流传的一段神奇代码，出处和年代太久远已经很难考证 (我们保留了这份代码本来的样子)：
+求 $a\cdot b \bmod m$ 是程序设计竞赛中的一个常见操作。在 ICPC 圈子中存在一份广为流传的一段神奇代码，出处和年代太久远已经很难考证 (我们保留了这份代码本来的样子)：
 
 ```c
 int64_t multimod_fast(int64_t a, int64_t b, int64_t m) {
@@ -147,7 +147,7 @@ int64_t multimod_fast(int64_t a, int64_t b, int64_t m) {
 ```
 
 
-这段代码直接使用了 $\large{a * b}$, 并且直接假设整数溢出时 wraparound (可以通过 -fwrapv 编译选项实现)。然后, 这段代码竟然神奇地在 $\large{O(1)}$ 的时间里就解决了 $\large{a \cdot b \bmod m}$ 的求解? 其中最精髓的一段在于:
+这段代码直接使用了 $a * b$, 并且直接假设整数溢出时 wraparound (可以通过 -fwrapv 编译选项实现)。然后, 这段代码竟然神奇地在 $O(1)$ 的时间里就解决了 $a \cdot b \bmod m$ 的求解? 其中最精髓的一段在于:
 
 ```c
 (int64_t)((double)a * b / m)
