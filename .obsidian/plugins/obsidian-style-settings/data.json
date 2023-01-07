@@ -1,5 +1,5 @@
 {
-  "blue-topaz-theme@@file-line-width": 53,
+  "blue-topaz-theme@@file-line-width": 58,
   "blue-topaz-theme@@fancy-hr": "fancy-hr-number",
   "blue-topaz-theme@@hr-for-pagination": true,
   "blue-topaz-theme@@transparent-setting-panel": false,
@@ -10,7 +10,7 @@
   "blue-topaz-theme@@background-image-settings-switch": false,
   "blue-topaz-theme@@tag-style-option": "rainbow-tag",
   "blue-topaz-theme@@loading-page-style-option": "default-loading-page",
-  "blue-topaz-theme@@image-border": true,
+  "blue-topaz-theme@@image-border": false,
   "blue-topaz-theme@@image-zoom": true,
   "Blue-Topaz-Codebox-Highlight@@whole-code-wrap": false,
   "blue-topaz-theme@@link-underline-external": true,
@@ -76,7 +76,7 @@
   "shimmering-focus@@trim-long-filenames": true,
   "shimmering-focus@@overlaying-right-sidebar": false,
   "shimmering-focus@@show-starred-nav-buttons": true,
-  "shimmering-focus@@hide-backlinks-status-bar": false,
+  "shimmering-focus@@hide-backlinks-status-bar": true,
   "shimmering-focus@@hide-pane-relief-focus-lock-status-bar": false,
   "shimmering-focus@@hide-languagetool-status-bar": false,
   "shimmering-focus@@hide-electron-window-tweaker-status-bar": false,
@@ -101,5 +101,8 @@
   "shimmering-focus@@use-relative-line-numbers": false,
   "blue-topaz-theme@@font-size-code": "0.9em",
   "shimmering-focus@@wordcount-only-when-writing": false,
-  "shimmering-focus@@no-image-alttext-caption": true
+  "shimmering-focus@@no-image-alttext-caption": true,
+  "shimmering-focus@@image-size": 70,
+  "shimmering-focus@@hidden-sidebars-hidden-statusbar": false,
+  "blue-topaz-theme@@image-max-width": "80%"
 }
