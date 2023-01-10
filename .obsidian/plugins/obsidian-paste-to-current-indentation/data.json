@@ -1,0 +1,11 @@
+{
+  "blockquotePrefix": "> ",
+  "mode": "Markdown",
+  "saveBase64EncodedFiles": false,
+  "saveFilesLocation": "Attachments",
+  "saveFilesOverrideLocations": [],
+  "apiVersion": 5,
+  "escapeCharactersInBlockquotes": false,
+  "blockquoteEscapeCharactersRegex": "(==|<)",
+  "srcAttributeCopyRegex": ""
+}

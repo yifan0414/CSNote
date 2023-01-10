@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": "#4b88d8",
     "recentlyUsedIcons": [
+      "FarStar",
+      "🌟",
       "RiBookFill",
       "IbArchive",
-      "FabLinux",
-      "SiCodeproject",
-      "SiMinds"
+      "FabLinux"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -33,5 +33,6 @@
   "LittleProject": "SiCodeproject",
   "NJUOS": "FabLinux",
   "Archive": "IbArchive",
-  "READING": "RiBookFill"
+  "READING": "RiBookFill",
+  "CS61A/composingprograms/1.6   Higher-Order Functions.md": "FarStar"
 }

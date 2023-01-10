@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "2023-01-07",
-      "path": "diary/2023-01-07.md"
+      "basename": "1 chezmoi 优雅的文档设计",
+      "path": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md"
     },
     {
-      "basename": "04-NEMU 框架选讲 (2) 代码导读",
-      "path": "pa2020/lecture/04-NEMU 框架选讲 (2) 代码导读.md"
+      "basename": "2 What does chezmoi do?",
+      "path": "LinuxTool/dotfiles/2 What does chezmoi do?.md"
+    },
+    {
+      "basename": "0 The note of chezomi",
+      "path": "LinuxTool/dotfiles/0 The note of chezomi.md"
+    },
+    {
+      "basename": "2023-01-10",
+      "path": "diary/2023-01-10.md"
+    },
+    {
+      "basename": "获取shell命令行上一次命令的参数",
+      "path": "LinuxTool/command line/获取shell命令行上一次命令的参数.md"
+    },
+    {
+      "basename": "shell 命令行快捷键",
+      "path": "LinuxTool/command line/shell 命令行快捷键.md"
+    },
+    {
+      "basename": "1 The note of Vim",
+      "path": "LinuxTool/vim/1 The note of Vim.md"
+    },
+    {
+      "basename": "Vim map",
+      "path": "LinuxTool/vim/Vim map.md"
     },
     {
       "basename": "1.6   Higher-Order Functions",
@@ -17,16 +41,76 @@
       "path": "CS61A/composingprograms/1.7   Recursive Functions.md"
     },
     {
-      "basename": "1.3   Defining New Functions",
-      "path": "CS61A/composingprograms/1.3   Defining New Functions.md"
+      "basename": "2023-01-09",
+      "path": "diary/2023-01-09.md"
+    },
+    {
+      "basename": "04-NEMU 框架选讲 (2) 代码导读",
+      "path": "pa2020/lecture/04-NEMU 框架选讲 (2) 代码导读.md"
+    },
+    {
+      "basename": "vscode configuration",
+      "path": "pa2020/code/vscode configuration.md"
+    },
+    {
+      "basename": "NEMU-Makefile",
+      "path": "pa2020/code/NEMU-Makefile.md"
+    },
+    {
+      "basename": "M1 打印进程树 (pstree)",
+      "path": "NJUOS/M1 打印进程树 (pstree).md"
+    },
+    {
+      "basename": "callout of obsidian",
+      "path": "diary/callout of obsidian.md"
     },
     {
       "basename": "1.5   Control",
       "path": "CS61A/composingprograms/1.5   Control.md"
     },
     {
+      "basename": "1.4   Designing Functions",
+      "path": "CS61A/composingprograms/1.4   Designing Functions.md"
+    },
+    {
+      "basename": "2023-01-08",
+      "path": "diary/2023-01-08.md"
+    },
+    {
+      "basename": "02-C 语言拾遗 (2) 编程实践",
+      "path": "pa2020/lecture/02-C 语言拾遗 (2) 编程实践.md"
+    },
+    {
+      "basename": "03-NEMU 框架选讲 (1) 编译运行",
+      "path": "pa2020/lecture/03-NEMU 框架选讲 (1) 编译运行.md"
+    },
+    {
       "basename": "01-C 语言拾遗 (1) 机制",
       "path": "pa2020/lecture/01-C 语言拾遗 (1) 机制.md"
+    },
+    {
+      "basename": "4.3 Variations on a Scheme — Nondeterministic Computing",
+      "path": "READING/SICP/4.3 Variations on a Scheme — Nondeterministic Computing.md"
+    },
+    {
+      "basename": "2022-12-10",
+      "path": "diary/2022-12-10.md"
+    },
+    {
+      "basename": "2.3 Symbolic Data",
+      "path": "READING/SICP/2.3 Symbolic Data.md"
+    },
+    {
+      "basename": "1.2 Procedures and the Processes They Generate",
+      "path": "READING/SICP/1.2 Procedures and the Processes They Generate.md"
+    },
+    {
+      "basename": "2023-01-07",
+      "path": "diary/2023-01-07.md"
+    },
+    {
+      "basename": "1.3   Defining New Functions",
+      "path": "CS61A/composingprograms/1.3   Defining New Functions.md"
     },
     {
       "basename": "2.2 Hierarchical Data and the Closure Property",
@@ -41,20 +125,12 @@
       "path": "READING/SICP/1.3 Formulating Abstractions with Higher-Order Procedures.md"
     },
     {
-      "basename": "M1 打印进程树 (pstree)",
-      "path": "NJUOS/M1 打印进程树 (pstree).md"
-    },
-    {
       "basename": "Lab1 大整数运算",
       "path": "pa2020/lab/Lab1 大整数运算.md"
     },
     {
       "basename": "数码管显示",
       "path": "LittleProject/数码管显示.md"
-    },
-    {
-      "basename": "1.2 Procedures and the Processes They Generate",
-      "path": "READING/SICP/1.2 Procedures and the Processes They Generate.md"
     },
     {
       "basename": "1.1 The Elements of Programming",
@@ -73,10 +149,6 @@
       "path": "READING/SICP/2.4 Multiple Representations for Abstract Data.md"
     },
     {
-      "basename": "1.4   Designing Functions",
-      "path": "CS61A/composingprograms/1.4   Designing Functions.md"
-    },
-    {
       "basename": "3.3 Modeling with Mutable Data",
       "path": "READING/SICP/3.3 Modeling with Mutable Data.md"
     },
@@ -91,10 +163,6 @@
     {
       "basename": "4.4 Logic Programming",
       "path": "READING/SICP/4.4 Logic Programming.md"
-    },
-    {
-      "basename": "4.3 Variations on a Scheme — Nondeterministic Computing",
-      "path": "READING/SICP/4.3 Variations on a Scheme — Nondeterministic Computing.md"
     }
   ],
   "omittedPaths": [],

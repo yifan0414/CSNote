@@ -4,23 +4,50 @@
     "type": "split",
     "children": [
       {
-        "id": "6c5dcfb0fcbc2571",
+        "id": "90441dffe7f7fd35",
         "type": "tabs",
         "children": [
           {
-            "id": "cf54fe1803c7f6b9",
+            "id": "3ceda1a8407a6707",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "diary/2023-01-07.md",
+                "file": "diary/2023-01-10.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "21ea476790b912d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "97727b7cbcb9897b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LinuxTool/command line/shell 命令行快捷键.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#seedling",
+                "query": "chezmoi ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "diary/2023-01-07.md",
+                "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,20 +145,12 @@
             }
           },
           {
-            "id": "5017c9a1df1fe8c0",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "5cbfcd350af9b62e",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "diary/2023-01-07.md",
+                "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +165,23 @@
             }
           },
           {
-            "id": "d52f912cc84eed41",
+            "id": "ffd1726d2b2cd731",
+            "type": "leaf",
+            "state": {
+              "type": "QUICKSHARE_SIDE_VIEW",
+              "state": {}
+            }
+          },
+          {
+            "id": "0ace97976dd561df",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "7d9778f1cfdb7644",
             "type": "leaf",
             "state": {
               "type": "reminder-list",
@@ -154,7 +189,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "96b89bb3f88f3b65",
@@ -167,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "diary/2023-01-07.md"
+                "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md"
               }
             }
           }
@@ -175,11 +210,10 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 238.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": true,
       "switcher:打开快速切换": true,
       "graph:查看关系图谱": false,
       "daily-notes:打开/创建今天的日记": false,
@@ -187,20 +221,21 @@
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "canvas:Create new canvas": true,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "obsidian-memos:Memos": false
     }
   },
-  "active": "cf54fe1803c7f6b9",
+  "active": "21ea476790b912d6",
   "lastOpenFiles": [
-    "pa2020/lecture/04-NEMU 框架选讲 (2) 代码导读.md",
+    "LinuxTool/dotfiles/2 What does chezmoi do?.md",
+    "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
+    "LinuxTool/dotfiles/0 The note of chezomi.md",
+    "diary/2023-01-10.md",
+    "LinuxTool/command line/获取shell命令行上一次命令的参数.md",
+    "LinuxTool/command line/shell 命令行快捷键.md",
+    "LinuxTool/vim/1 The note of Vim.md",
+    "LinuxTool/vim/Vim map.md",
     "CS61A/composingprograms/1.6   Higher-Order Functions.md",
-    "CS61A/composingprograms/1.7   Recursive Functions.md",
-    "CS61A/composingprograms/1.3   Defining New Functions.md",
-    "CS61A/composingprograms/1.5   Control.md",
-    "pa2020/lecture/01-C 语言拾遗 (1) 机制.md",
-    "READING/SICP/2.2 Hierarchical Data and the Closure Property.md",
-    "READING/SICP/2.1 Introduction to Data Abstraction.md",
-    "READING/SICP/1.3 Formulating Abstractions with Higher-Order Procedures.md",
-    "diary/2023-01-07.md"
+    "CS61A/composingprograms/1.7   Recursive Functions.md"
   ]
 }

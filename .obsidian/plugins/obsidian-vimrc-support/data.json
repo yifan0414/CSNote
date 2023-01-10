@@ -1,6 +1,6 @@
 {
   "vimrcFileName": ".obsidian.vimrc",
-  "displayChord": true,
+  "displayChord": false,
   "displayVimMode": true,
   "fixedNormalModeLayout": false,
   "capturedKeyboardMap": {

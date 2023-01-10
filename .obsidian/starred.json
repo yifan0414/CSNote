@@ -4,6 +4,11 @@
       "type": "file",
       "title": "2022-12-10",
       "path": "diary/2022-12-10.md"
+    },
+    {
+      "type": "file",
+      "title": "1.6   Higher-Order Functions",
+      "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
     }
   ]
 }

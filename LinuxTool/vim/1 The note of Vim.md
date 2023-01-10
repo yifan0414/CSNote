@@ -113,3 +113,47 @@
 >map sb :surround_bold
 >map su :surround_underline
 >```
+
+>[!note] indent in Vim
+> [Indent multiple lines quickly in vi](https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi)
+>
+>![](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/ivGwBQ.png)
+>
+>```txt
+>>>   Indent line by shiftwidth spaces
+><<   De-indent line by shiftwidth spaces
+>5>>  Indent 5 lines
+>5==  Re-indent 5 lines
+>
+>>%   Increase indent of a braced or bracketed block (place cursor on brace first)
+>=%   Reindent a braced or bracketed block (cursor on brace)
+><%   Decrease indent of a braced or bracketed block (cursor on brace)
+>]p   Paste text, aligning indentation with surroundings
+>
+>=i{  Re-indent the 'inner block', i.e. the contents of the block
+>=a{  Re-indent 'a block', i.e. block and containing braces
+>=2a{ Re-indent '2 blocks', i.e. this block and containing block
+>
+>>i{  Increase inner block indent
+><i{  Decrease inner block indent
+>```
+
+>[!note] 缩进的一点内容
+> 当我们选中几行后，可以使用 `>` 进行缩进，然后使用 `.` 去重复这个操作
+
+>[!dange] 有关 inclusive 和 exclusive 的内容还部熟悉
+>比如怎么删除一个前面的单词且不保留这个字符呢？
+>![](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/rdVb8i.png)
+>直接使用 `db` 的话会留下一个字符，这时可以使用 `dvb`
+>这种操作也可以用到 `dt<>` `df<>`
+>这是我现在的配置
+>```txt
+>" delete backwards fully
+>nmap db dvb
+>nmap dT dvT
+>nmap dF dvF
+>nmap cb cvb
+>nmap cT cvT
+>nmap cF cvF
+>```
+

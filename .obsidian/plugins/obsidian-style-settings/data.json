@@ -104,5 +104,7 @@
   "shimmering-focus@@no-image-alttext-caption": true,
   "shimmering-focus@@image-size": 70,
   "shimmering-focus@@hidden-sidebars-hidden-statusbar": false,
-  "blue-topaz-theme@@image-max-width": "80%"
+  "blue-topaz-theme@@image-max-width": "80%",
+  "supercharged-links@@ced2-6a2e-before": "⭐️",
+  "supercharged-links@@ced2-6a2e-color": "#434870"
 }
