@@ -1,8 +1,48 @@
 {
   "recentFiles": [
     {
+      "basename": "1.6   Higher-Order Functions",
+      "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
+    },
+    {
+      "basename": "IntroToPython",
+      "path": "CS61A/canvasNote/IntroToPython.canvas"
+    },
+    {
+      "basename": "2023-01-10",
+      "path": "diary/2023-01-10.md"
+    },
+    {
+      "basename": "1.7   Recursive Functions",
+      "path": "CS61A/composingprograms/1.7   Recursive Functions.md"
+    },
+    {
+      "basename": "0 The notes of Tmux",
+      "path": "LinuxTool/tmux/0 The notes of Tmux.md"
+    },
+    {
+      "basename": "shell 命令行快捷键",
+      "path": "LinuxTool/command line/shell 命令行快捷键.md"
+    },
+    {
+      "basename": "The note of Shell Command Line",
+      "path": "LinuxTool/command line/The note of Shell Command Line.md"
+    },
+    {
+      "basename": "2023-01-11",
+      "path": "diary/2023-01-11.md"
+    },
+    {
       "basename": "1 chezmoi 优雅的文档设计",
       "path": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md"
+    },
+    {
+      "basename": "3.1 Assignment and Local State",
+      "path": "READING/SICP/3.1 Assignment and Local State.md"
+    },
+    {
+      "basename": "1 The note of Vim",
+      "path": "LinuxTool/vim/1 The note of Vim.md"
     },
     {
       "basename": "2 What does chezmoi do?",
@@ -13,32 +53,12 @@
       "path": "LinuxTool/dotfiles/0 The note of chezomi.md"
     },
     {
-      "basename": "2023-01-10",
-      "path": "diary/2023-01-10.md"
-    },
-    {
       "basename": "获取shell命令行上一次命令的参数",
       "path": "LinuxTool/command line/获取shell命令行上一次命令的参数.md"
     },
     {
-      "basename": "shell 命令行快捷键",
-      "path": "LinuxTool/command line/shell 命令行快捷键.md"
-    },
-    {
-      "basename": "1 The note of Vim",
-      "path": "LinuxTool/vim/1 The note of Vim.md"
-    },
-    {
       "basename": "Vim map",
       "path": "LinuxTool/vim/Vim map.md"
-    },
-    {
-      "basename": "1.6   Higher-Order Functions",
-      "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
-    },
-    {
-      "basename": "1.7   Recursive Functions",
-      "path": "CS61A/composingprograms/1.7   Recursive Functions.md"
     },
     {
       "basename": "2023-01-09",

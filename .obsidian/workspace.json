@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "90441dffe7f7fd35",
+        "id": "6473a7bf28601fb6",
         "type": "tabs",
         "children": [
           {
-            "id": "3ceda1a8407a6707",
+            "id": "90e7efe08b803456",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "diary/2023-01-10.md",
+                "file": "CS61A/composingprograms/1.6   Higher-Order Functions.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -21,33 +21,19 @@
             }
           },
           {
-            "id": "21ea476790b912d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97727b7cbcb9897b",
+            "id": "736116e6c50128d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "LinuxTool/command line/shell 命令行快捷键.md",
-                "mode": "preview",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -76,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "chezmoi ",
+                "query": "dracula",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,11 +79,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 244.5
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -114,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
+                "file": "CS61A/composingprograms/1.6   Higher-Order Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
+                "file": "CS61A/composingprograms/1.6   Higher-Order Functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -202,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md"
+                "file": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
               }
             }
           }
@@ -210,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 238.5
+    "width": 238.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,17 +213,17 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "21ea476790b912d6",
+  "active": "90e7efe08b803456",
   "lastOpenFiles": [
-    "LinuxTool/dotfiles/2 What does chezmoi do?.md",
-    "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
-    "LinuxTool/dotfiles/0 The note of chezomi.md",
+    "CS61A/canvasNote/IntroToPython.canvas",
     "diary/2023-01-10.md",
-    "LinuxTool/command line/获取shell命令行上一次命令的参数.md",
-    "LinuxTool/command line/shell 命令行快捷键.md",
-    "LinuxTool/vim/1 The note of Vim.md",
-    "LinuxTool/vim/Vim map.md",
     "CS61A/composingprograms/1.6   Higher-Order Functions.md",
-    "CS61A/composingprograms/1.7   Recursive Functions.md"
+    "CS61A/composingprograms/1.7   Recursive Functions.md",
+    "LinuxTool/tmux/0 The notes of Tmux.md",
+    "LinuxTool/command line/shell 命令行快捷键.md",
+    "LinuxTool/command line/The note of Shell Command Line.md",
+    "diary/2023-01-11.md",
+    "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
+    "READING/SICP/3.1 Assignment and Local State.md"
   ]
 }

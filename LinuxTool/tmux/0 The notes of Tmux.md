@@ -79,3 +79,5 @@
 |       C-Up, C-Down, C-Left, C-Right       | Resize the current pane in steps of one cell.                                                                              |
 |       M-Up, M-Down, M-Left, M-Right       | Resize the current pane in steps of five cells.                                                                            |
 
+>[!note] swap two pane
+> Use the `Ctrl-a + `

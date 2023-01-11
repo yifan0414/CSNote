@@ -1,8 +1,8 @@
 {
 	"nodes":[
 		{"id":"6445244e0eb34c63","x":-463,"y":123,"width":250,"height":60,"type":"text","text":"# Python"},
-		{"id":"06b8eae30c1782e7","x":-562,"y":427,"width":97,"height":60,"type":"text","text":"**beauty**"},
-		{"id":"3510783071510673","x":-400,"y":427,"width":125,"height":60,"type":"text","text":"**simplicity**"},
+		{"id":"06b8eae30c1782e7","x":-562,"y":427,"width":99,"height":60,"type":"text","text":"**beauty**"},
+		{"id":"3510783071510673","x":-400,"y":427,"width":144,"height":60,"type":"text","text":"**simplicity**"},
 		{"id":"bd996672a0a1ec4b","x":-203,"y":427,"width":142,"height":60,"type":"text","text":"**readability**"},
 		{"id":"47b812d7b4b32382","x":-582,"y":407,"width":541,"height":100,"type":"group","label":"Zen of Python"},
 		{"id":"9ab34bbe5983f4f6","x":390,"y":-308,"width":427,"height":148,"type":"text","text":"All computing begins with ==representing information==, ==specifying logic to process it==, and ==designing abstractions== that manage the complexity of that logic."},
