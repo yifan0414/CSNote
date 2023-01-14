@@ -5,16 +5,32 @@
       "path": "pa2020/lecture/05-数据的机器级表示.md"
     },
     {
+      "basename": "What every computer scientist should know about floating-point arithmetic",
+      "path": "pa2020/lecture/attachment/What every computer scientist should know about floating-point arithmetic.pdf"
+    },
+    {
+      "basename": "Notes-Lab1 大整数运算",
+      "path": "pa2020/lab/Notes-Lab1 大整数运算.md"
+    },
+    {
+      "basename": "log.py",
+      "path": "pa2020/lecture/attachment/log.py.md"
+    },
+    {
+      "basename": "计算bit串中1的个数",
+      "path": "pa2020/lecture/attachment/计算bit串中1的个数.pdf"
+    },
+    {
+      "basename": "Lab1 大整数运算",
+      "path": "pa2020/lab/Lab1 大整数运算.md"
+    },
+    {
       "basename": "04-NEMU 框架选讲 (2) 代码导读",
       "path": "pa2020/lecture/04-NEMU 框架选讲 (2) 代码导读.md"
     },
     {
       "basename": "未命名",
       "path": "pa2020/lecture/未命名.md"
-    },
-    {
-      "basename": "Notes-Lab1 大整数运算",
-      "path": "pa2020/lab/Notes-Lab1 大整数运算.md"
     },
     {
       "basename": "03-NEMU 框架选讲 (1) 编译运行",
@@ -27,10 +43,6 @@
     {
       "basename": "01-C 语言拾遗 (1) 机制",
       "path": "pa2020/lecture/01-C 语言拾遗 (1) 机制.md"
-    },
-    {
-      "basename": "Lab1 大整数运算",
-      "path": "pa2020/lab/Lab1 大整数运算.md"
     },
     {
       "basename": "Vim map",
@@ -187,18 +199,6 @@
     {
       "basename": "1.2 Procedures and the Processes They Generate",
       "path": "READING/SICP/1.2 Procedures and the Processes They Generate.md"
-    },
-    {
-      "basename": "2023-01-07",
-      "path": "diary/2023-01-07.md"
-    },
-    {
-      "basename": "1.3   Defining New Functions",
-      "path": "CS61A/composingprograms/1.3   Defining New Functions.md"
-    },
-    {
-      "basename": "2.2 Hierarchical Data and the Closure Property",
-      "path": "READING/SICP/2.2 Hierarchical Data and the Closure Property.md"
     }
   ],
   "omittedPaths": [],
