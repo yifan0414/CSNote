@@ -157,3 +157,5 @@
 >nmap cF cvF
 >```
 
+>[!note] Search and replace in a visual selection
+>[Search and replace in a visual selection | Vim Tips Wiki | Fandom](https://vim.fandom.com/wiki/Search_and_replace_in_a_visual_selection)

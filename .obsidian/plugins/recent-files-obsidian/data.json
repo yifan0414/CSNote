@@ -1,8 +1,104 @@
 {
   "recentFiles": [
     {
+      "basename": "05-数据的机器级表示",
+      "path": "pa2020/lecture/05-数据的机器级表示.md"
+    },
+    {
+      "basename": "04-NEMU 框架选讲 (2) 代码导读",
+      "path": "pa2020/lecture/04-NEMU 框架选讲 (2) 代码导读.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "pa2020/lecture/未命名.md"
+    },
+    {
+      "basename": "Notes-Lab1 大整数运算",
+      "path": "pa2020/lab/Notes-Lab1 大整数运算.md"
+    },
+    {
+      "basename": "03-NEMU 框架选讲 (1) 编译运行",
+      "path": "pa2020/lecture/03-NEMU 框架选讲 (1) 编译运行.md"
+    },
+    {
+      "basename": "02-C 语言拾遗 (2) 编程实践",
+      "path": "pa2020/lecture/02-C 语言拾遗 (2) 编程实践.md"
+    },
+    {
+      "basename": "01-C 语言拾遗 (1) 机制",
+      "path": "pa2020/lecture/01-C 语言拾遗 (1) 机制.md"
+    },
+    {
+      "basename": "Lab1 大整数运算",
+      "path": "pa2020/lab/Lab1 大整数运算.md"
+    },
+    {
+      "basename": "Vim map",
+      "path": "LinuxTool/vim/Vim map.md"
+    },
+    {
+      "basename": "Ascii Draw In Vim",
+      "path": "LinuxTool/vim/Ascii Draw In Vim.md"
+    },
+    {
+      "basename": "1 The note of Vim",
+      "path": "LinuxTool/vim/1 The note of Vim.md"
+    },
+    {
+      "basename": "6 版本控制(Git)",
+      "path": "The Missing Semester/6 版本控制(Git).md"
+    },
+    {
+      "basename": "0 The note of dotfile",
+      "path": "LinuxTool/dotfiles/0 The note of dotfile.md"
+    },
+    {
+      "basename": "5 命令行环境",
+      "path": "The Missing Semester/5 命令行环境.md"
+    },
+    {
+      "basename": "9 安全与密码学",
+      "path": "The Missing Semester/9 安全与密码学.md"
+    },
+    {
+      "basename": "8 元编程",
+      "path": "The Missing Semester/8 元编程.md"
+    },
+    {
+      "basename": "7 调试及性能分析",
+      "path": "The Missing Semester/7 调试及性能分析.md"
+    },
+    {
+      "basename": "4 数据整理",
+      "path": "The Missing Semester/4 数据整理.md"
+    },
+    {
+      "basename": "3 编辑器 (Vim)",
+      "path": "The Missing Semester/3 编辑器 (Vim).md"
+    },
+    {
+      "basename": "从泰勒公式到欧拉公式",
+      "path": "math/从泰勒公式到欧拉公式.md"
+    },
+    {
       "basename": "1.6   Higher-Order Functions",
       "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
+    },
+    {
+      "basename": "2022-12-06-对软件使用的考虑",
+      "path": "diary/2022-12-06-对软件使用的考虑.md"
+    },
+    {
+      "basename": "2022-11-29",
+      "path": "diary/2022-11-29.md"
+    },
+    {
+      "basename": "2022-11-28",
+      "path": "diary/2022-11-28.md"
+    },
+    {
+      "basename": "1.7   Recursive Functions",
+      "path": "CS61A/composingprograms/1.7   Recursive Functions.md"
     },
     {
       "basename": "IntroToPython",
@@ -11,10 +107,6 @@
     {
       "basename": "2023-01-10",
       "path": "diary/2023-01-10.md"
-    },
-    {
-      "basename": "1.7   Recursive Functions",
-      "path": "CS61A/composingprograms/1.7   Recursive Functions.md"
     },
     {
       "basename": "0 The notes of Tmux",
@@ -41,32 +133,16 @@
       "path": "READING/SICP/3.1 Assignment and Local State.md"
     },
     {
-      "basename": "1 The note of Vim",
-      "path": "LinuxTool/vim/1 The note of Vim.md"
-    },
-    {
       "basename": "2 What does chezmoi do?",
       "path": "LinuxTool/dotfiles/2 What does chezmoi do?.md"
-    },
-    {
-      "basename": "0 The note of chezomi",
-      "path": "LinuxTool/dotfiles/0 The note of chezomi.md"
     },
     {
       "basename": "获取shell命令行上一次命令的参数",
       "path": "LinuxTool/command line/获取shell命令行上一次命令的参数.md"
     },
     {
-      "basename": "Vim map",
-      "path": "LinuxTool/vim/Vim map.md"
-    },
-    {
       "basename": "2023-01-09",
       "path": "diary/2023-01-09.md"
-    },
-    {
-      "basename": "04-NEMU 框架选讲 (2) 代码导读",
-      "path": "pa2020/lecture/04-NEMU 框架选讲 (2) 代码导读.md"
     },
     {
       "basename": "vscode configuration",
@@ -97,18 +173,6 @@
       "path": "diary/2023-01-08.md"
     },
     {
-      "basename": "02-C 语言拾遗 (2) 编程实践",
-      "path": "pa2020/lecture/02-C 语言拾遗 (2) 编程实践.md"
-    },
-    {
-      "basename": "03-NEMU 框架选讲 (1) 编译运行",
-      "path": "pa2020/lecture/03-NEMU 框架选讲 (1) 编译运行.md"
-    },
-    {
-      "basename": "01-C 语言拾遗 (1) 机制",
-      "path": "pa2020/lecture/01-C 语言拾遗 (1) 机制.md"
-    },
-    {
       "basename": "4.3 Variations on a Scheme — Nondeterministic Computing",
       "path": "READING/SICP/4.3 Variations on a Scheme — Nondeterministic Computing.md"
     },
@@ -135,54 +199,6 @@
     {
       "basename": "2.2 Hierarchical Data and the Closure Property",
       "path": "READING/SICP/2.2 Hierarchical Data and the Closure Property.md"
-    },
-    {
-      "basename": "2.1 Introduction to Data Abstraction",
-      "path": "READING/SICP/2.1 Introduction to Data Abstraction.md"
-    },
-    {
-      "basename": "1.3 Formulating Abstractions with Higher-Order Procedures",
-      "path": "READING/SICP/1.3 Formulating Abstractions with Higher-Order Procedures.md"
-    },
-    {
-      "basename": "Lab1 大整数运算",
-      "path": "pa2020/lab/Lab1 大整数运算.md"
-    },
-    {
-      "basename": "数码管显示",
-      "path": "LittleProject/数码管显示.md"
-    },
-    {
-      "basename": "1.1 The Elements of Programming",
-      "path": "READING/SICP/1.1 The Elements of Programming.md"
-    },
-    {
-      "basename": "4.2 Variations on a Scheme — Lazy Evaluation",
-      "path": "READING/SICP/4.2 Variations on a Scheme — Lazy Evaluation.md"
-    },
-    {
-      "basename": "3.2 The Environment Model of Evaluation",
-      "path": "READING/SICP/3.2 The Environment Model of Evaluation.md"
-    },
-    {
-      "basename": "2.4 Multiple Representations for Abstract Data",
-      "path": "READING/SICP/2.4 Multiple Representations for Abstract Data.md"
-    },
-    {
-      "basename": "3.3 Modeling with Mutable Data",
-      "path": "READING/SICP/3.3 Modeling with Mutable Data.md"
-    },
-    {
-      "basename": "References.xhtml",
-      "path": "READING/SICP/References.xhtml.md"
-    },
-    {
-      "basename": "2.5 Systems with Generic Operations",
-      "path": "READING/SICP/2.5 Systems with Generic Operations.md"
-    },
-    {
-      "basename": "4.4 Logic Programming",
-      "path": "READING/SICP/4.4 Logic Programming.md"
     }
   ],
   "omittedPaths": [],

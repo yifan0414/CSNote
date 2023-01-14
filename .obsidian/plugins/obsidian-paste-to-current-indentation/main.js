@@ -4347,11 +4347,12 @@ var PastetoIndentationPlugin = class extends import_obsidian.Plugin {
         const files = evt.clipboardData.files;
         const fileLinks = [];
         const activeFile = this.app.workspace.getActiveFile();
-        let filesTargetLocation = this.settings.saveFilesLocation;
+        const activeFilePath = activeFile == null ? void 0 : activeFile.path;
+        let filesTargetLocation = this.settings.saveFilesLocation.replace("{current}", activeFile.parent.path);
         let longestMatchingCursorFilePattern = 0;
         this.settings.saveFilesOverrideLocations.forEach((location) => {
-          if (activeFile.path.startsWith(location.cursorFilePattern) && location.cursorFilePattern.length > longestMatchingCursorFilePattern) {
-            filesTargetLocation = location.targetLocation;
+          if (activeFilePath && activeFilePath.startsWith(location.cursorFilePattern) && location.cursorFilePattern.length > longestMatchingCursorFilePattern) {
+            filesTargetLocation = location.targetLocation.replace("{current}", activeFile.parent.path);
             longestMatchingCursorFilePattern = location.cursorFilePattern.length;
           }
         });
@@ -4367,7 +4368,7 @@ var PastetoIndentationPlugin = class extends import_obsidian.Plugin {
           if (tfileObject === void 0) {
             continue;
           }
-          const link = this.app.fileManager.generateMarkdownLink(tfileObject, this.app.workspace.getActiveFile().path);
+          const link = this.app.fileManager.generateMarkdownLink(tfileObject, activeFilePath);
           fileLinks.push(link);
         }
         if (mode === Mode.Markdown || mode === Mode.MarkdownBlockquote) {
@@ -4384,9 +4385,9 @@ var PastetoIndentationPlugin = class extends import_obsidian.Plugin {
               }
               const srcIsLocalFile = src.startsWith("file://");
               if (srcIsLocalFile) {
-                let urlForDownloading = src;
-                if (src.startsWith("file:///")) {
-                  urlForDownloading = src.replace(/^file:\/\/\//, "");
+                let urlForDownloading = src.replace(/^file:\/{2}/, "");
+                if (/^\/[A-Za-z]:/.test(urlForDownloading)) {
+                  urlForDownloading = urlForDownloading.replace(/^\//, "");
                 }
                 dataBlob = new Blob([
                   yield import_obsidian.FileSystemAdapter.readLocalFile(urlForDownloading)
@@ -4397,6 +4398,9 @@ var PastetoIndentationPlugin = class extends import_obsidian.Plugin {
                 })).then((blob) => __async(this, null, function* () {
                   dataBlob = blob;
                 }));
+              }
+              if (!(yield app2.vault.adapter.exists(filesTargetLocation))) {
+                yield app2.vault.createFolder(filesTargetLocation);
               }
               if (dataBlob) {
                 const fileName = yield createImageFileName(filesTargetLocation, src.split(".")[src.split(".").length - 1]);
@@ -4647,10 +4651,10 @@ var SettingTab = class extends import_obsidian.PluginSettingTab {
     containerEl.createEl("h2", { text: "Paste Mode" });
     if (!this.plugin.clipboardReadWorks) {
       const noticeDiv = containerEl.createDiv();
-      noticeDiv.createEl("span", { text: "Notice: " }).addClass("paste-to-current-indentation-settings-notice");
+      noticeDiv.createEl("span", { text: "Notice: " }).addClass("paste-mode-settings-notice");
       noticeDiv.createEl("span", {
         text: `The "Paste in Markdown Mode" and "Paste in Markdown (Blockquote) Mode" attachmentOverrideLocations have been disabled, because reading non-text data from the clipboad does not work with this version of Obsidian.`
-      }).addClass("paste-to-current-indentation-settings-notice-text");
+      }).addClass("paste-mode-settings-notice-text");
     }
     new import_obsidian.Setting(containerEl).setName("Paste Mode").setDesc("Mode that the paste attachmentLocation will invoke.").addDropdown((dropdown) => dropdown.addOption(Mode.Text, "Plain Text").addOption(Mode.TextBlockquote, "Plain Text (Blockquote)").addOption(Mode.Markdown, "Markdown").addOption(Mode.MarkdownBlockquote, "Markdown (Blockquote)").addOption(Mode.Passthrough, "Passthrough").setValue(this.plugin.settings.mode || DEFAULT_SETTINGS.mode).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.mode = value || DEFAULT_SETTINGS.mode;
@@ -4680,7 +4684,7 @@ var SettingTab = class extends import_obsidian.PluginSettingTab {
         yield this.plugin.saveSettings();
       }));
     });
-    new import_obsidian.Setting(containerEl).setName("src attribute copy regex").setDesc(`If set, when pasting in Markdown or Markdown (Blockquote) mode, watch for any HTML elements that contain a src attribute. If the src value matches this Regular Expression, copy the file being referenced into the Obsidian vault, and replace the src attribute with a reference to that now-local copy of the file.`).setDisabled(!this.plugin.settings.escapeCharactersInBlockquotes).addText((text) => {
+    new import_obsidian.Setting(containerEl).setName("src attribute copy regex").setDesc(`If set, when pasting in Markdown or Markdown (Blockquote) mode, watch for any HTML elements that contain a src attribute. If the src value matches this Regular Expression, copy the file being referenced into the Obsidian vault, and replace the src attribute with a reference to that now-local copy of the file.`).addText((text) => {
       text.setValue(this.plugin.settings.srcAttributeCopyRegex || defaultSrcAttributeCopyRegex).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.srcAttributeCopyRegex = value || defaultSrcAttributeCopyRegex;
         yield this.plugin.saveSettings();
@@ -4691,7 +4695,7 @@ var SettingTab = class extends import_obsidian.PluginSettingTab {
     attachmentsEl.createEl("h3", {
       text: "Attachments"
     });
-    new import_obsidian.Setting(attachmentsEl).setName("Default attachment folder path").setDesc(`When saving files from the clipboard, place them in this folder.`).addText((text) => {
+    new import_obsidian.Setting(attachmentsEl).setName("Default attachment folder path").setDesc(`When saving files from the clipboard, place them in this folder. ("{current}" will insert the directory of the currently-open note.)`).addText((text) => {
       text.setValue(this.plugin.settings.saveFilesLocation || DEFAULT_SETTINGS.saveFilesLocation).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.saveFilesLocation = value;
         yield this.plugin.saveSettings();
@@ -4717,14 +4721,14 @@ var SettingTab = class extends import_obsidian.PluginSettingTab {
           yield this.plugin.saveSettings();
         }));
       });
-      new import_obsidian.Setting(attachmentLocationEl).setName("Saved file target location").setDesc("...Save a pasted file into this directory:").addText((text) => {
+      new import_obsidian.Setting(attachmentLocationEl).setName("Saved file target location").setDesc('...Save a pasted file into this directory. ("{current}" will insert the directory of the currently-open note.)').addText((text) => {
         text.setValue(attachmentLocation.targetLocation).onChange((value) => __async(this, null, function* () {
           this.plugin.settings.saveFilesOverrideLocations[attachmentLocationIndex].targetLocation = value;
           yield this.plugin.saveSettings();
         }));
       });
       new import_obsidian.Setting(attachmentLocationEl).setName("Delete location rule").addButton((button) => {
-        button.setButtonText("Delete").setClass("paste-to-current-indentation-settings-delete-button").setTooltip("Delete override location").onClick(() => __async(this, null, function* () {
+        button.setButtonText("Delete").setClass("paste-mode-settings-delete-button").setTooltip("Delete override location").onClick(() => __async(this, null, function* () {
           if (attachmentLocationDeletePrimerTimer) {
             clearTimeout(attachmentLocationDeletePrimerTimer);
           }

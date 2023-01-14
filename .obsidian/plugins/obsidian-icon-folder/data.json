@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": "#4b88d8",
     "recentlyUsedIcons": [
+      "RiHeart2Fill",
       "FarStar",
       "🌟",
       "RiBookFill",
-      "IbArchive",
-      "FabLinux"
+      "IbArchive"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -35,5 +35,7 @@
   "NJUOS": "FabLinux",
   "Archive": "IbArchive",
   "READING": "RiBookFill",
-  "CS61A/composingprograms/1.6   Higher-Order Functions.md": "FarStar"
+  "CS61A/composingprograms/1.6   Higher-Order Functions.md": "FarStar",
+  "math": "RiHeart2Fill",
+  "The Missing Semester/7 调试及性能分析.md": "FarStar"
 }
