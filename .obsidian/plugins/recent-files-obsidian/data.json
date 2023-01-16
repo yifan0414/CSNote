@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Notes-Lab1 大整数运算",
+      "path": "pa2020/lab/Notes-Lab1 大整数运算.md"
+    },
+    {
       "basename": "05-数据的机器级表示",
       "path": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md"
     },
@@ -9,12 +13,28 @@
       "path": "pa2020/lecture/L5 数据的机器级表示/log.py.md"
     },
     {
-      "basename": "What every computer scientist should know about floating-point arithmetic",
-      "path": "pa2020/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf"
+      "basename": "M1 打印进程树 (pstree)",
+      "path": "NJUOS/M1 打印进程树 (pstree).md"
     },
     {
-      "basename": "Notes-Lab1 大整数运算",
-      "path": "pa2020/lab/Notes-Lab1 大整数运算.md"
+      "basename": "从泰勒公式到欧拉公式",
+      "path": "math/从泰勒公式到欧拉公式.md"
+    },
+    {
+      "basename": "README",
+      "path": "CS61B/README.md"
+    },
+    {
+      "basename": "IntroToPython",
+      "path": "CS61A/canvasNote/IntroToPython.canvas"
+    },
+    {
+      "basename": "2023-01-16",
+      "path": "diary/2023-01-16.md"
+    },
+    {
+      "basename": "What every computer scientist should know about floating-point arithmetic",
+      "path": "pa2020/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf"
     },
     {
       "basename": "计算bit串中1的个数",
@@ -89,10 +109,6 @@
       "path": "The Missing Semester/3 编辑器 (Vim).md"
     },
     {
-      "basename": "从泰勒公式到欧拉公式",
-      "path": "math/从泰勒公式到欧拉公式.md"
-    },
-    {
       "basename": "1.6   Higher-Order Functions",
       "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
     },
@@ -111,10 +127,6 @@
     {
       "basename": "1.7   Recursive Functions",
       "path": "CS61A/composingprograms/1.7   Recursive Functions.md"
-    },
-    {
-      "basename": "IntroToPython",
-      "path": "CS61A/canvasNote/IntroToPython.canvas"
     },
     {
       "basename": "2023-01-10",
@@ -165,10 +177,6 @@
       "path": "pa2020/code/NEMU-Makefile.md"
     },
     {
-      "basename": "M1 打印进程树 (pstree)",
-      "path": "NJUOS/M1 打印进程树 (pstree).md"
-    },
-    {
       "basename": "callout of obsidian",
       "path": "diary/callout of obsidian.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "2022-12-10",
       "path": "diary/2022-12-10.md"
-    },
-    {
-      "basename": "2.3 Symbolic Data",
-      "path": "READING/SICP/2.3 Symbolic Data.md"
-    },
-    {
-      "basename": "1.2 Procedures and the Processes They Generate",
-      "path": "READING/SICP/1.2 Procedures and the Processes They Generate.md"
     }
   ],
   "omittedPaths": [],

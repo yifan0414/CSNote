@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c06cfa90b619b271",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pa2020/lab/Notes-Lab1 大整数运算.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -70,8 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5,
-    "collapsed": true
+    "width": 244.5
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -88,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
+                "file": "pa2020/lab/Notes-Lab1 大整数运算.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
+                "file": "pa2020/lab/Notes-Lab1 大整数运算.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md"
+                "file": "pa2020/lab/Notes-Lab1 大整数运算.md"
               }
             }
           }
@@ -196,21 +209,21 @@
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "canvas:Create new canvas": true,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "obsidian-memos:Memos": false
+      "obsidian-memos:Memos": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "62f5dc26202deaca",
+  "active": "c06cfa90b619b271",
   "lastOpenFiles": [
-    "pa2020/lecture/L5 数据的机器级表示/log.py.md",
     "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
+    "pa2020/lecture/L5 数据的机器级表示/log.py.md",
+    "NJUOS/M1 打印进程树 (pstree).md",
+    "math/从泰勒公式到欧拉公式.md",
+    "CS61B/README.md",
+    "CS61A/canvasNote/IntroToPython.canvas",
+    "diary/2023-01-16.md",
     "pa2020/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf",
     "pa2020/lab/Notes-Lab1 大整数运算.md",
-    "pa2020/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf",
-    "pa2020/lab/Lab1 大整数运算.md",
-    "pa2020/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md",
-    "pa2020/lecture/未命名.md",
-    "pa2020/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md",
-    "pa2020/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md"
+    "pa2020/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf"
   ]
 }
