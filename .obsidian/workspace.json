@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pa2020/lecture/05-数据的机器级表示.md",
+                "file": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -70,7 +70,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5
+    "width": 244.5,
+    "collapsed": true
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -79,7 +80,7 @@
       {
         "id": "c87440566f5123e1",
         "type": "tabs",
-        "dimension": 22.632575757575758,
+        "dimension": 26.824644549763033,
         "children": [
           {
             "id": "ef3b7f2c6df00cf0",
@@ -87,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pa2020/lecture/05-数据的机器级表示.md",
+                "file": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pa2020/lecture/05-数据的机器级表示.md",
+                "file": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +168,7 @@
       {
         "id": "96b89bb3f88f3b65",
         "type": "tabs",
-        "dimension": 77.36742424242425,
+        "dimension": 73.17535545023696,
         "children": [
           {
             "id": "1a8a2d36901663aa",
@@ -175,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pa2020/lecture/05-数据的机器级表示.md"
+                "file": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md"
               }
             }
           }
@@ -183,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 265.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -200,15 +202,15 @@
   },
   "active": "62f5dc26202deaca",
   "lastOpenFiles": [
-    "pa2020/lecture/05-数据的机器级表示.md",
-    "pa2020/lecture/attachment/What every computer scientist should know about floating-point arithmetic.pdf",
+    "pa2020/lecture/L5 数据的机器级表示/log.py.md",
+    "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
+    "pa2020/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf",
     "pa2020/lab/Notes-Lab1 大整数运算.md",
-    "pa2020/lecture/attachment/log.py.md",
-    "pa2020/lecture/attachment/计算bit串中1的个数.pdf",
+    "pa2020/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf",
     "pa2020/lab/Lab1 大整数运算.md",
-    "pa2020/lecture/04-NEMU 框架选讲 (2) 代码导读.md",
+    "pa2020/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md",
     "pa2020/lecture/未命名.md",
-    "pa2020/lecture/03-NEMU 框架选讲 (1) 编译运行.md",
-    "pa2020/lecture/02-C 语言拾遗 (2) 编程实践.md"
+    "pa2020/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md",
+    "pa2020/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md"
   ]
 }

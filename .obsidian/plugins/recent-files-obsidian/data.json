@@ -2,23 +2,23 @@
   "recentFiles": [
     {
       "basename": "05-数据的机器级表示",
-      "path": "pa2020/lecture/05-数据的机器级表示.md"
+      "path": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md"
+    },
+    {
+      "basename": "log.py",
+      "path": "pa2020/lecture/L5 数据的机器级表示/log.py.md"
     },
     {
       "basename": "What every computer scientist should know about floating-point arithmetic",
-      "path": "pa2020/lecture/attachment/What every computer scientist should know about floating-point arithmetic.pdf"
+      "path": "pa2020/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf"
     },
     {
       "basename": "Notes-Lab1 大整数运算",
       "path": "pa2020/lab/Notes-Lab1 大整数运算.md"
     },
     {
-      "basename": "log.py",
-      "path": "pa2020/lecture/attachment/log.py.md"
-    },
-    {
       "basename": "计算bit串中1的个数",
-      "path": "pa2020/lecture/attachment/计算bit串中1的个数.pdf"
+      "path": "pa2020/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf"
     },
     {
       "basename": "Lab1 大整数运算",
@@ -26,7 +26,7 @@
     },
     {
       "basename": "04-NEMU 框架选讲 (2) 代码导读",
-      "path": "pa2020/lecture/04-NEMU 框架选讲 (2) 代码导读.md"
+      "path": "pa2020/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md"
     },
     {
       "basename": "未命名",
@@ -34,15 +34,15 @@
     },
     {
       "basename": "03-NEMU 框架选讲 (1) 编译运行",
-      "path": "pa2020/lecture/03-NEMU 框架选讲 (1) 编译运行.md"
+      "path": "pa2020/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md"
     },
     {
       "basename": "02-C 语言拾遗 (2) 编程实践",
-      "path": "pa2020/lecture/02-C 语言拾遗 (2) 编程实践.md"
+      "path": "pa2020/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md"
     },
     {
       "basename": "01-C 语言拾遗 (1) 机制",
-      "path": "pa2020/lecture/01-C 语言拾遗 (1) 机制.md"
+      "path": "pa2020/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md"
     },
     {
       "basename": "Vim map",
