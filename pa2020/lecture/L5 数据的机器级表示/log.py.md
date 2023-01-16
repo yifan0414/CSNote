@@ -100,3 +100,7 @@ Out[28]: '"-01W2?XG3<@kYCHf4-=:AnlLZNDcI\\\\g_5P-V>F;jBeo9mKMb[^OUEid8Ja]Th7`S6R
 ```c
 #define LOG2(x) ("-01W2?XG3<@kYCHf4-=:AnlLZNDcI\g_5P-V>F;jBeo9mKMb[^OUEid8Ja]Th7`S6RQ"[(x) % 67] - '0')
 ```
+
+**More Reading**
+
+[算法-求二进制数中1的个数 - 翰墨小生 - 博客园 (cnblogs.com)](https://www.cnblogs.com/graphics/archive/2010/06/21/1752421.html)

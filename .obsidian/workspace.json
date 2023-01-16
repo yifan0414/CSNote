@@ -26,7 +26,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pa2020/lab/Notes-Lab1 大整数运算.md",
+                "file": "CS61B/README.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0e57d84351543658",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pa2020/theory/02 数据的机器级表示与运算/数据表示知识点.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -34,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
       {
         "id": "c87440566f5123e1",
         "type": "tabs",
-        "dimension": 26.824644549763033,
+        "dimension": 42.843601895734594,
         "children": [
           {
             "id": "ef3b7f2c6df00cf0",
@@ -101,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pa2020/lab/Notes-Lab1 大整数运算.md",
+                "file": "pa2020/theory/02 数据的机器级表示与运算/数据表示知识点.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pa2020/lab/Notes-Lab1 大整数运算.md",
+                "file": "pa2020/theory/02 数据的机器级表示与运算/数据表示知识点.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -176,12 +189,12 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       },
       {
         "id": "96b89bb3f88f3b65",
         "type": "tabs",
-        "dimension": 73.17535545023696,
+        "dimension": 57.156398104265406,
         "children": [
           {
             "id": "1a8a2d36901663aa",
@@ -189,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pa2020/lab/Notes-Lab1 大整数运算.md"
+                "file": "pa2020/theory/02 数据的机器级表示与运算/数据表示知识点.md"
               }
             }
           }
@@ -197,8 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5,
-    "collapsed": true
+    "width": 265.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,17 +225,17 @@
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "c06cfa90b619b271",
+  "active": "0e57d84351543658",
   "lastOpenFiles": [
+    "pa2020/lecture/L5 数据的机器级表示/理论笔记.md",
+    "pa2020/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf",
     "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
-    "pa2020/lecture/L5 数据的机器级表示/log.py.md",
-    "NJUOS/M1 打印进程树 (pstree).md",
-    "math/从泰勒公式到欧拉公式.md",
     "CS61B/README.md",
-    "CS61A/canvasNote/IntroToPython.canvas",
-    "diary/2023-01-16.md",
-    "pa2020/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf",
-    "pa2020/lab/Notes-Lab1 大整数运算.md",
-    "pa2020/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf"
+    "pa2020/code/monitor/ui.c.md",
+    "pa2020/code/一些辅助函数.md",
+    "pa2020/code/NEMU-Makefile.md",
+    "pa2020/code/parse_args().md",
+    "pa2020/code/vscode configuration.md",
+    "pa2020/manual/i386 2.3 Registers.md"
   ]
 }

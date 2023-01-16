@@ -1,56 +1,72 @@
 {
   "recentFiles": [
     {
-      "basename": "Notes-Lab1 大整数运算",
-      "path": "pa2020/lab/Notes-Lab1 大整数运算.md"
-    },
-    {
-      "basename": "05-数据的机器级表示",
-      "path": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md"
-    },
-    {
-      "basename": "log.py",
-      "path": "pa2020/lecture/L5 数据的机器级表示/log.py.md"
-    },
-    {
-      "basename": "M1 打印进程树 (pstree)",
-      "path": "NJUOS/M1 打印进程树 (pstree).md"
-    },
-    {
-      "basename": "从泰勒公式到欧拉公式",
-      "path": "math/从泰勒公式到欧拉公式.md"
-    },
-    {
-      "basename": "README",
-      "path": "CS61B/README.md"
-    },
-    {
-      "basename": "IntroToPython",
-      "path": "CS61A/canvasNote/IntroToPython.canvas"
-    },
-    {
-      "basename": "2023-01-16",
-      "path": "diary/2023-01-16.md"
-    },
-    {
-      "basename": "What every computer scientist should know about floating-point arithmetic",
-      "path": "pa2020/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf"
+      "basename": "数据表示知识点",
+      "path": "pa2020/theory/02 数据的机器级表示与运算/数据表示知识点.md"
     },
     {
       "basename": "计算bit串中1的个数",
       "path": "pa2020/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf"
     },
     {
-      "basename": "Lab1 大整数运算",
-      "path": "pa2020/lab/Lab1 大整数运算.md"
+      "basename": "05-数据的机器级表示",
+      "path": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md"
+    },
+    {
+      "basename": "README",
+      "path": "CS61B/README.md"
+    },
+    {
+      "basename": "ui.c",
+      "path": "pa2020/code/monitor/ui.c.md"
+    },
+    {
+      "basename": "一些辅助函数",
+      "path": "pa2020/code/一些辅助函数.md"
+    },
+    {
+      "basename": "NEMU-Makefile",
+      "path": "pa2020/code/NEMU-Makefile.md"
+    },
+    {
+      "basename": "parse_args()",
+      "path": "pa2020/code/parse_args().md"
+    },
+    {
+      "basename": "vscode configuration",
+      "path": "pa2020/code/vscode configuration.md"
+    },
+    {
+      "basename": "i386 2.3 Registers",
+      "path": "pa2020/manual/i386 2.3 Registers.md"
+    },
+    {
+      "basename": "What every computer scientist should know about floating-point arithmetic",
+      "path": "pa2020/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf"
+    },
+    {
+      "basename": "M1 打印进程树 (pstree)",
+      "path": "NJUOS/M1 打印进程树 (pstree).md"
+    },
+    {
+      "basename": "Monitor",
+      "path": "pa2020/note/PA1/Monitor.md"
+    },
+    {
+      "basename": "Drawing 2022-11-28 16.50.15.excalidraw",
+      "path": "pa2020/note/PA1/Drawing 2022-11-28 16.50.15.excalidraw.md"
+    },
+    {
+      "basename": "IEEE754 Float",
+      "path": "attachments/IEEE754 Float.png"
+    },
+    {
+      "basename": "log.py",
+      "path": "pa2020/lecture/L5 数据的机器级表示/log.py.md"
     },
     {
       "basename": "04-NEMU 框架选讲 (2) 代码导读",
       "path": "pa2020/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "pa2020/lecture/未命名.md"
     },
     {
       "basename": "03-NEMU 框架选讲 (1) 编译运行",
@@ -63,6 +79,34 @@
     {
       "basename": "01-C 语言拾遗 (1) 机制",
       "path": "pa2020/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md"
+    },
+    {
+      "basename": "L2 Description",
+      "path": "pa2020/lab/Lab2 x86-64 内联汇编/L2 Description.md"
+    },
+    {
+      "basename": "L1 Description",
+      "path": "pa2020/lab/Lab1 大整数运算/L1 Description.md"
+    },
+    {
+      "basename": "Notes-Lab1 大整数运算",
+      "path": "pa2020/lab/Lab1 大整数运算/Notes-Lab1 大整数运算.md"
+    },
+    {
+      "basename": "从泰勒公式到欧拉公式",
+      "path": "math/从泰勒公式到欧拉公式.md"
+    },
+    {
+      "basename": "IntroToPython",
+      "path": "CS61A/canvasNote/IntroToPython.canvas"
+    },
+    {
+      "basename": "2023-01-16",
+      "path": "diary/2023-01-16.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "pa2020/lecture/未命名.md"
     },
     {
       "basename": "Vim map",
@@ -155,50 +199,6 @@
     {
       "basename": "3.1 Assignment and Local State",
       "path": "READING/SICP/3.1 Assignment and Local State.md"
-    },
-    {
-      "basename": "2 What does chezmoi do?",
-      "path": "LinuxTool/dotfiles/2 What does chezmoi do?.md"
-    },
-    {
-      "basename": "获取shell命令行上一次命令的参数",
-      "path": "LinuxTool/command line/获取shell命令行上一次命令的参数.md"
-    },
-    {
-      "basename": "2023-01-09",
-      "path": "diary/2023-01-09.md"
-    },
-    {
-      "basename": "vscode configuration",
-      "path": "pa2020/code/vscode configuration.md"
-    },
-    {
-      "basename": "NEMU-Makefile",
-      "path": "pa2020/code/NEMU-Makefile.md"
-    },
-    {
-      "basename": "callout of obsidian",
-      "path": "diary/callout of obsidian.md"
-    },
-    {
-      "basename": "1.5   Control",
-      "path": "CS61A/composingprograms/1.5   Control.md"
-    },
-    {
-      "basename": "1.4   Designing Functions",
-      "path": "CS61A/composingprograms/1.4   Designing Functions.md"
-    },
-    {
-      "basename": "2023-01-08",
-      "path": "diary/2023-01-08.md"
-    },
-    {
-      "basename": "4.3 Variations on a Scheme — Nondeterministic Computing",
-      "path": "READING/SICP/4.3 Variations on a Scheme — Nondeterministic Computing.md"
-    },
-    {
-      "basename": "2022-12-10",
-      "path": "diary/2022-12-10.md"
     }
   ],
   "omittedPaths": [],

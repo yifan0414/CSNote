@@ -9,6 +9,11 @@
       "type": "file",
       "title": "1.6   Higher-Order Functions",
       "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
+    },
+    {
+      "type": "file",
+      "title": "05-数据的机器级表示",
+      "path": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md"
     }
   ]
 }

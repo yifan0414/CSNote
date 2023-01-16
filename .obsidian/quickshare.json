@@ -25,5 +25,14 @@
     "secret_token": "kDdFdAxb6w1Y7PtMCBTdC9aOFWzKTKXJ+JNllyRJFoo=",
     "note_id": "clcmrl5h3396001pjly9rin9n",
     "basename": "02-C 语言拾遗 (2) 编程实践"
+  },
+  "pa2020/theory/02 数据的机器级表示与运算/数据表示知识点.md": {
+    "shared_datetime": "2023-01-16T16:05:26.646Z",
+    "updated_datetime": null,
+    "expire_datetime": "2023-02-15T16:05:26.663Z",
+    "view_url": "https://noteshare.space/note/clcyzzhu0827501pj4qhbmbp6#Ugsh5zQeZDRBDS9WLUs1zWdzMoKozrfPs1sw7B8YoJ0",
+    "secret_token": "YtjoMbRM8pHTgHGUQ6Qg5jFEFMqBYJj3bsvh/aiEqGQ=",
+    "note_id": "clcyzzhu0827501pj4qhbmbp6",
+    "basename": "数据表示知识点"
   }
 }
