@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
+                "file": "NJUICS/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/README.md",
+                "file": "LinuxTool/gcc&gdb/The cheatsheet of gdb.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -34,12 +34,38 @@
             }
           },
           {
-            "id": "0e57d84351543658",
+            "id": "7c0bc3c439c73869",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pa2020/theory/02 数据的机器级表示与运算/数据表示知识点.md",
+                "file": "READING/编程心得.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3e8420ff2bbbd243",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NJUICS/theory/02 数据的机器级表示与运算/数据表示常见问题解答.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "728a72134b616cb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NJUICS/theory/02 数据的机器级表示与运算/The cheatsheet of Data Representation.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -97,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5
+    "width": 230.5
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -106,7 +132,7 @@
       {
         "id": "c87440566f5123e1",
         "type": "tabs",
-        "dimension": 42.843601895734594,
+        "dimension": 43.03317535545024,
         "children": [
           {
             "id": "ef3b7f2c6df00cf0",
@@ -114,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pa2020/theory/02 数据的机器级表示与运算/数据表示知识点.md",
+                "file": "READING/编程心得.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +158,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -150,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pa2020/theory/02 数据的机器级表示与运算/数据表示知识点.md",
+                "file": "READING/编程心得.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,14 +187,6 @@
             "type": "leaf",
             "state": {
               "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
-            "id": "ffd1726d2b2cd731",
-            "type": "leaf",
-            "state": {
-              "type": "QUICKSHARE_SIDE_VIEW",
               "state": {}
             }
           },
@@ -189,12 +207,12 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       },
       {
         "id": "96b89bb3f88f3b65",
         "type": "tabs",
-        "dimension": 57.156398104265406,
+        "dimension": 56.96682464454976,
         "children": [
           {
             "id": "1a8a2d36901663aa",
@@ -202,15 +220,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pa2020/theory/02 数据的机器级表示与运算/数据表示知识点.md"
+                "file": "READING/编程心得.md"
               }
+            }
+          },
+          {
+            "id": "ffd1726d2b2cd731",
+            "type": "leaf",
+            "state": {
+              "type": "QUICKSHARE_SIDE_VIEW",
+              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 282.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -221,21 +248,21 @@
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "canvas:Create new canvas": true,
-      "obsidian-memos:Memos": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "obsidian-memos:Memos": false
     }
   },
-  "active": "0e57d84351543658",
+  "active": "bf178dff9f426baa",
   "lastOpenFiles": [
-    "pa2020/lecture/L5 数据的机器级表示/理论笔记.md",
-    "pa2020/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf",
-    "pa2020/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
-    "CS61B/README.md",
-    "pa2020/code/monitor/ui.c.md",
-    "pa2020/code/一些辅助函数.md",
-    "pa2020/code/NEMU-Makefile.md",
-    "pa2020/code/parse_args().md",
-    "pa2020/code/vscode configuration.md",
-    "pa2020/manual/i386 2.3 Registers.md"
+    "LinuxTool/gcc&gdb/The cheatsheet of gdb.md",
+    "NJUOS/M1 打印进程树 (pstree).md",
+    "Archive/icspa-public-guide-master/ch/ch_pa-1-3_fpu.md",
+    "Archive/icspa-public-guide-master/ch/ch_pa-2-1_instruction.md",
+    "Archive/icspa-public-guide-master/ch/ch_pa-1-2_alu.md",
+    "Archive/icspa-public-guide-master/ch/ch_pa-1-1_reg.md",
+    "NJUICS/theory/02 数据的机器级表示与运算/数据表示知识点清单.md",
+    "NJUICS/theory/02 数据的机器级表示与运算/The cheatsheet of Data Representation.md",
+    "LinuxTool/gcc&gdb/The note of Makefile.md",
+    "NJUICS/theory/02 数据的机器级表示与运算/数据表示常见问题解答.md"
   ]
 }
