@@ -8,52 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "62f5dc26202deaca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NJUICS/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c06cfa90b619b271",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LinuxTool/gcc&gdb/The cheatsheet of gdb.md",
+                "file": "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md",
                 "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7c0bc3c439c73869",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "READING/编程心得.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "913ebb6340377e0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -65,20 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/theory/02 数据的机器级表示与运算/数据表示常见问题解答.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "728a72134b616cb4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NJUICS/theory/02 数据的机器级表示与运算/The cheatsheet of Data Representation.md",
+                "file": "NJUICS/lab/Lab1 大整数运算/L1 Description.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -86,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -115,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#define",
+                "query": "tag:#todo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -136,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 230.5
+    "width": 221.5
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -153,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "NJUICS/lab/Lab1 大整数运算/L1 Description.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "NJUICS/lab/Lab1 大整数运算/L1 Description.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -233,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "NJUICS/lab/Lab1 大整数运算/L1 Description.md"
               }
             }
           },
@@ -265,17 +213,17 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "bf178dff9f426baa",
+  "active": "3e8420ff2bbbd243",
   "lastOpenFiles": [
-    "READING/READEME.md",
-    "READING/编程心得.md",
-    "LinuxTool/gcc&gdb/The cheatsheet of gdb.md",
-    "NJUOS/M1 打印进程树 (pstree).md",
-    "Archive/icspa-public-guide-master/ch/ch_pa-1-3_fpu.md",
-    "Archive/icspa-public-guide-master/ch/ch_pa-2-1_instruction.md",
-    "Archive/icspa-public-guide-master/ch/ch_pa-1-2_alu.md",
-    "Archive/icspa-public-guide-master/ch/ch_pa-1-1_reg.md",
-    "NJUICS/theory/02 数据的机器级表示与运算/数据表示知识点清单.md",
-    "NJUICS/theory/02 数据的机器级表示与运算/The cheatsheet of Data Representation.md"
+    "NJUICS/lecture/README.md",
+    "NJUICS/lecture/L5 数据的机器级表示/log.py.md",
+    "NJUICS/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
+    "NJUICS/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md",
+    "NJUICS/theory/02 数据的机器级表示与运算/数据表示常见问题解答.md",
+    "NJUICS/theory/02 数据的机器级表示与运算/The cheatsheet of Data Representation.md",
+    "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md",
+    "CS61A/composingprograms/1.6   Higher-Order Functions.md",
+    "NJUICS/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md",
+    "diary/2022-12-10.md"
   ]
 }

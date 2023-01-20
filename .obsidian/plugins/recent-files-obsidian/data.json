@@ -1,120 +1,116 @@
 {
   "recentFiles": [
     {
+      "basename": "L1 Description",
+      "path": "NJUICS/lab/Lab1 大整数运算/L1 Description.md"
+    },
+    {
       "basename": "README",
-      "path": "README.md"
+      "path": "NJUICS/lecture/README.md"
     },
     {
-      "basename": "编程心得",
-      "path": "READING/编程心得.md"
-    },
-    {
-      "basename": "The cheatsheet of gdb",
-      "path": "LinuxTool/gcc&gdb/The cheatsheet of gdb.md"
-    },
-    {
-      "basename": "M1 打印进程树 (pstree)",
-      "path": "NJUOS/M1 打印进程树 (pstree).md"
-    },
-    {
-      "basename": "数据表示知识点清单",
-      "path": "NJUICS/theory/02 数据的机器级表示与运算/数据表示知识点清单.md"
-    },
-    {
-      "basename": "The cheatsheet of Data Representation",
-      "path": "NJUICS/theory/02 数据的机器级表示与运算/The cheatsheet of Data Representation.md"
-    },
-    {
-      "basename": "The note of Makefile",
-      "path": "LinuxTool/gcc&gdb/The note of Makefile.md"
-    },
-    {
-      "basename": "数据表示常见问题解答",
-      "path": "NJUICS/theory/02 数据的机器级表示与运算/数据表示常见问题解答.md"
+      "basename": "log.py",
+      "path": "NJUICS/lecture/L5 数据的机器级表示/log.py.md"
     },
     {
       "basename": "05-数据的机器级表示",
       "path": "NJUICS/lecture/L5 数据的机器级表示/05-数据的机器级表示.md"
     },
     {
-      "basename": "03-NEMU 框架选讲 (1) 编译运行",
-      "path": "NJUICS/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md"
-    },
-    {
       "basename": "04-NEMU 框架选讲 (2) 代码导读",
       "path": "NJUICS/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md"
     },
     {
-      "basename": "What every computer scientist should know about floating-point arithmetic",
-      "path": "NJUICS/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf"
+      "basename": "数据表示常见问题解答",
+      "path": "NJUICS/theory/02 数据的机器级表示与运算/数据表示常见问题解答.md"
     },
     {
-      "basename": "计算bit串中1的个数",
-      "path": "NJUICS/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf"
+      "basename": "The cheatsheet of Data Representation",
+      "path": "NJUICS/theory/02 数据的机器级表示与运算/The cheatsheet of Data Representation.md"
     },
     {
-      "basename": "start",
-      "path": "CMU-CSAPP/3 attacklab/start.md"
+      "basename": "01-C 语言拾遗 (1) 机制",
+      "path": "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md"
     },
     {
-      "basename": "csapp2p.excalidraw",
-      "path": "CMU-CSAPP/2 bomblab/csapp2p.excalidraw.md"
+      "basename": "1.6   Higher-Order Functions",
+      "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
     },
     {
-      "basename": "phase_5.excalidraw",
-      "path": "CMU-CSAPP/2 bomblab/phase_5.excalidraw.md"
+      "basename": "03-NEMU 框架选讲 (1) 编译运行",
+      "path": "NJUICS/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md"
     },
     {
-      "basename": "phase_2.excalidraw",
-      "path": "CMU-CSAPP/2 bomblab/phase_2.excalidraw.md"
+      "basename": "2022-12-10",
+      "path": "diary/2022-12-10.md"
     },
     {
-      "basename": "phase_3.excalidraw",
-      "path": "CMU-CSAPP/2 bomblab/phase_3.excalidraw.md"
+      "basename": "2022-12-11",
+      "path": "diary/2022-12-11.md"
     },
     {
-      "basename": "phase_4.excalidraw",
-      "path": "CMU-CSAPP/2 bomblab/phase_4.excalidraw.md"
-    },
-    {
-      "basename": "phase_1.excalidraw",
-      "path": "CMU-CSAPP/2 bomblab/phase_1.excalidraw.md"
+      "basename": "2023-01-16",
+      "path": "diary/2023-01-16.md"
     },
     {
       "basename": "datalab-note",
       "path": "CMU-CSAPP/1 datalab/datalab-note.md"
     },
     {
-      "basename": "README",
-      "path": "CS61B/README.md"
-    },
-    {
-      "basename": "datalab",
-      "path": "CMU-CSAPP/1 datalab/datalab.pdf"
-    },
-    {
-      "basename": "ui.c",
-      "path": "NJUICS/code/monitor/ui.c.md"
-    },
-    {
-      "basename": "一些辅助函数",
-      "path": "NJUICS/code/一些辅助函数.md"
+      "basename": "SICP-TODO",
+      "path": "READING/SICP/SICP-TODO.md"
     },
     {
       "basename": "NEMU-Makefile",
       "path": "NJUICS/code/NEMU-Makefile.md"
     },
     {
-      "basename": "parse_args()",
-      "path": "NJUICS/code/parse_args().md"
+      "basename": "Fantastic ideas",
+      "path": "LinuxTool/Fantastic ideas.md"
     },
     {
-      "basename": "vscode configuration",
-      "path": "NJUICS/code/vscode configuration.md"
+      "basename": "数据表示知识点清单",
+      "path": "NJUICS/theory/02 数据的机器级表示与运算/数据表示知识点清单.md"
     },
     {
-      "basename": "i386 2.3 Registers",
-      "path": "NJUICS/manual/i386 2.3 Registers.md"
+      "basename": "3-2 穿越时空的旅程",
+      "path": "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md"
+    },
+    {
+      "basename": "ch_pa-1-3_fpu",
+      "path": "Archive/NJUICS2016/ch/ch_pa-1-3_fpu.md"
+    },
+    {
+      "basename": "ch_pa-1-2_alu",
+      "path": "Archive/NJUICS2016/ch/ch_pa-1-2_alu.md"
+    },
+    {
+      "basename": "7 调试及性能分析",
+      "path": "The Missing Semester/7 调试及性能分析.md"
+    },
+    {
+      "basename": "编程心得",
+      "path": "READING/编程心得.md"
+    },
+    {
+      "basename": "README",
+      "path": "NJUICS/README.md"
+    },
+    {
+      "basename": "Notes-Lab1 大整数运算",
+      "path": "NJUICS/lab/Lab1 大整数运算/Notes-Lab1 大整数运算.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "README",
+      "path": "NJUICS/tutorial/README.md"
+    },
+    {
+      "basename": "ReadMe",
+      "path": "Archive/NJUICS2016/ReadMe.md"
     },
     {
       "basename": "Monitor",
@@ -125,64 +121,84 @@
       "path": "NJUICS/note/PA1/Drawing 2022-11-28 16.50.15.excalidraw.md"
     },
     {
-      "basename": "IEEE754 Float",
-      "path": "attachments/IEEE754 Float.png"
+      "basename": "vscode configuration",
+      "path": "NJUICS/code/vscode configuration.md"
     },
     {
-      "basename": "log.py",
-      "path": "NJUICS/lecture/L5 数据的机器级表示/log.py.md"
+      "basename": "parse_args()",
+      "path": "NJUICS/code/parse_args().md"
     },
     {
-      "basename": "02-C 语言拾遗 (2) 编程实践",
-      "path": "NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md"
+      "basename": "一些辅助函数",
+      "path": "NJUICS/code/一些辅助函数.md"
     },
     {
-      "basename": "01-C 语言拾遗 (1) 机制",
-      "path": "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md"
+      "basename": "ui.c",
+      "path": "NJUICS/code/monitor/ui.c.md"
     },
     {
-      "basename": "L2 Description",
-      "path": "NJUICS/lab/Lab2 x86-64 内联汇编/L2 Description.md"
+      "basename": "README",
+      "path": "CS61A/README.md"
     },
     {
-      "basename": "L1 Description",
-      "path": "NJUICS/lab/Lab1 大整数运算/L1 Description.md"
+      "basename": "datalab",
+      "path": "CMU-CSAPP/1 datalab/datalab.pdf"
     },
     {
-      "basename": "Notes-Lab1 大整数运算",
-      "path": "NJUICS/lab/Lab1 大整数运算/Notes-Lab1 大整数运算.md"
+      "basename": "ch_pa-1-1_reg",
+      "path": "Archive/NJUICS2016/ch/ch_pa-1-1_reg.md"
     },
     {
-      "basename": "从泰勒公式到欧拉公式",
-      "path": "math/从泰勒公式到欧拉公式.md"
+      "basename": "ch_appendix_C_local_vm",
+      "path": "Archive/NJUICS2016/ch/ch_appendix_C_local_vm.md"
     },
     {
-      "basename": "IntroToPython",
-      "path": "CS61A/canvasNote/IntroToPython.canvas"
+      "basename": "CSAPP扩展与截断",
+      "path": "NJUICS/theory/02 数据的机器级表示与运算/CSAPP扩展与截断.pdf"
     },
     {
-      "basename": "2023-01-16",
-      "path": "diary/2023-01-16.md"
+      "basename": "ch_pa-2-2_load_elf",
+      "path": "Archive/NJUICS2016/ch/ch_pa-2-2_load_elf.md"
     },
     {
-      "basename": "未命名",
-      "path": "NJUICS/lecture/未命名.md"
+      "basename": "ch_pa-3-2_protect_mode",
+      "path": "Archive/NJUICS2016/ch/ch_pa-3-2_protect_mode.md"
     },
     {
-      "basename": "Vim map",
-      "path": "LinuxTool/vim/Vim map.md"
+      "basename": "ch_pa-4-2-device_io",
+      "path": "Archive/NJUICS2016/ch/ch_pa-4-2-device_io.md"
     },
     {
-      "basename": "Ascii Draw In Vim",
-      "path": "LinuxTool/vim/Ascii Draw In Vim.md"
+      "basename": "ch_pa-4-1-interrupt",
+      "path": "Archive/NJUICS2016/ch/ch_pa-4-1-interrupt.md"
     },
     {
-      "basename": "1 The note of Vim",
-      "path": "LinuxTool/vim/1 The note of Vim.md"
+      "basename": "ch_pa-3-3_paging",
+      "path": "Archive/NJUICS2016/ch/ch_pa-3-3_paging.md"
     },
     {
-      "basename": "6 版本控制(Git)",
-      "path": "The Missing Semester/6 版本控制(Git).md"
+      "basename": "ch_pa-3-1_cache",
+      "path": "Archive/NJUICS2016/ch/ch_pa-3-1_cache.md"
+    },
+    {
+      "basename": "ch_pa-2-3_monitor",
+      "path": "Archive/NJUICS2016/ch/ch_pa-2-3_monitor.md"
+    },
+    {
+      "basename": "ch_pa-2-1_instruction",
+      "path": "Archive/NJUICS2016/ch/ch_pa-2-1_instruction.md"
+    },
+    {
+      "basename": "The cheatsheet of gdb",
+      "path": "LinuxTool/gcc&gdb/The cheatsheet of gdb.md"
+    },
+    {
+      "basename": "1.2 Procedures and the Processes They Generate",
+      "path": "READING/SICP/1.2 Procedures and the Processes They Generate.md"
+    },
+    {
+      "basename": "README",
+      "path": "CS61B/README.md"
     }
   ],
   "omittedPaths": [],
