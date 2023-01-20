@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "编程心得",
       "path": "READING/编程心得.md"
     },
@@ -11,22 +15,6 @@
     {
       "basename": "M1 打印进程树 (pstree)",
       "path": "NJUOS/M1 打印进程树 (pstree).md"
-    },
-    {
-      "basename": "ch_pa-1-3_fpu",
-      "path": "Archive/icspa-public-guide-master/ch/ch_pa-1-3_fpu.md"
-    },
-    {
-      "basename": "ch_pa-2-1_instruction",
-      "path": "Archive/icspa-public-guide-master/ch/ch_pa-2-1_instruction.md"
-    },
-    {
-      "basename": "ch_pa-1-2_alu",
-      "path": "Archive/icspa-public-guide-master/ch/ch_pa-1-2_alu.md"
-    },
-    {
-      "basename": "ch_pa-1-1_reg",
-      "path": "Archive/icspa-public-guide-master/ch/ch_pa-1-1_reg.md"
     },
     {
       "basename": "数据表示知识点清单",
@@ -195,10 +183,6 @@
     {
       "basename": "6 版本控制(Git)",
       "path": "The Missing Semester/6 版本控制(Git).md"
-    },
-    {
-      "basename": "0 The note of dotfile",
-      "path": "LinuxTool/dotfiles/0 The note of dotfile.md"
     }
   ],
   "omittedPaths": [],
