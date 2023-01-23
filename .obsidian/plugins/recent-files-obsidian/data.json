@@ -1,6 +1,70 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "CS61B/README.md"
+    },
+    {
+      "basename": "L4 Single linked list",
+      "path": "CS61B/notes/L4 Single linked list.md"
+    },
+    {
+      "basename": "cs61b lec5 2021 lists2, sllists",
+      "path": "CS61B/attachments/cs61b lec5 2021 lists2, sllists.pdf"
+    },
+    {
+      "basename": "L3 Testing Philosophy",
+      "path": "CS61B/notes/L3 Testing Philosophy.md"
+    },
+    {
+      "basename": "project0",
+      "path": "CS61B/projects/project0.md"
+    },
+    {
+      "basename": "01-C 语言拾遗 (1) 机制",
+      "path": "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md"
+    },
+    {
+      "basename": "phase_6.excalidraw",
+      "path": "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md"
+    },
+    {
+      "basename": "7 调试及性能分析",
+      "path": "The Missing Semester/7 调试及性能分析.md"
+    },
+    {
+      "basename": "从泰勒公式到欧拉公式",
+      "path": "math/从泰勒公式到欧拉公式.md"
+    },
+    {
+      "basename": "Pasted image 20230121202959",
+      "path": "attachments/Pasted image 20230121202959.png"
+    },
+    {
+      "basename": "Pasted image 20230121203029",
+      "path": "attachments/Pasted image 20230121203029.png"
+    },
+    {
+      "basename": "1.6   Higher-Order Functions",
+      "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
+    },
+    {
+      "basename": "parse_args()",
+      "path": "NJUICS/code/parse_args().md"
+    },
+    {
+      "basename": "vscode configuration",
+      "path": "NJUICS/code/vscode configuration.md"
+    },
+    {
+      "basename": "数据表示知识点清单",
+      "path": "NJUICS/theory/02 数据的机器级表示与运算/数据表示知识点清单.md"
+    },
+    {
+      "basename": "1.7   Recursive Functions",
+      "path": "CS61A/composingprograms/1.7   Recursive Functions.md"
+    },
+    {
       "basename": "L1 Description",
       "path": "NJUICS/lab/Lab1 大整数运算/L1 Description.md"
     },
@@ -27,14 +91,6 @@
     {
       "basename": "The cheatsheet of Data Representation",
       "path": "NJUICS/theory/02 数据的机器级表示与运算/The cheatsheet of Data Representation.md"
-    },
-    {
-      "basename": "01-C 语言拾遗 (1) 机制",
-      "path": "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md"
-    },
-    {
-      "basename": "1.6   Higher-Order Functions",
-      "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
     },
     {
       "basename": "03-NEMU 框架选讲 (1) 编译运行",
@@ -69,10 +125,6 @@
       "path": "LinuxTool/Fantastic ideas.md"
     },
     {
-      "basename": "数据表示知识点清单",
-      "path": "NJUICS/theory/02 数据的机器级表示与运算/数据表示知识点清单.md"
-    },
-    {
       "basename": "3-2 穿越时空的旅程",
       "path": "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md"
     },
@@ -83,10 +135,6 @@
     {
       "basename": "ch_pa-1-2_alu",
       "path": "Archive/NJUICS2016/ch/ch_pa-1-2_alu.md"
-    },
-    {
-      "basename": "7 调试及性能分析",
-      "path": "The Missing Semester/7 调试及性能分析.md"
     },
     {
       "basename": "编程心得",
@@ -121,14 +169,6 @@
       "path": "NJUICS/note/PA1/Drawing 2022-11-28 16.50.15.excalidraw.md"
     },
     {
-      "basename": "vscode configuration",
-      "path": "NJUICS/code/vscode configuration.md"
-    },
-    {
-      "basename": "parse_args()",
-      "path": "NJUICS/code/parse_args().md"
-    },
-    {
       "basename": "一些辅助函数",
       "path": "NJUICS/code/一些辅助函数.md"
     },
@@ -159,46 +199,6 @@
     {
       "basename": "ch_pa-2-2_load_elf",
       "path": "Archive/NJUICS2016/ch/ch_pa-2-2_load_elf.md"
-    },
-    {
-      "basename": "ch_pa-3-2_protect_mode",
-      "path": "Archive/NJUICS2016/ch/ch_pa-3-2_protect_mode.md"
-    },
-    {
-      "basename": "ch_pa-4-2-device_io",
-      "path": "Archive/NJUICS2016/ch/ch_pa-4-2-device_io.md"
-    },
-    {
-      "basename": "ch_pa-4-1-interrupt",
-      "path": "Archive/NJUICS2016/ch/ch_pa-4-1-interrupt.md"
-    },
-    {
-      "basename": "ch_pa-3-3_paging",
-      "path": "Archive/NJUICS2016/ch/ch_pa-3-3_paging.md"
-    },
-    {
-      "basename": "ch_pa-3-1_cache",
-      "path": "Archive/NJUICS2016/ch/ch_pa-3-1_cache.md"
-    },
-    {
-      "basename": "ch_pa-2-3_monitor",
-      "path": "Archive/NJUICS2016/ch/ch_pa-2-3_monitor.md"
-    },
-    {
-      "basename": "ch_pa-2-1_instruction",
-      "path": "Archive/NJUICS2016/ch/ch_pa-2-1_instruction.md"
-    },
-    {
-      "basename": "The cheatsheet of gdb",
-      "path": "LinuxTool/gcc&gdb/The cheatsheet of gdb.md"
-    },
-    {
-      "basename": "1.2 Procedures and the Processes They Generate",
-      "path": "READING/SICP/1.2 Procedures and the Processes They Generate.md"
-    },
-    {
-      "basename": "README",
-      "path": "CS61B/README.md"
     }
   ],
   "omittedPaths": [],

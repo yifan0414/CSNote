@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md",
+                "file": "CS61B/README.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,25 @@
             }
           },
           {
-            "id": "3e8420ff2bbbd243",
+            "id": "6f456888ea8074d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/lab/Lab1 大整数运算/L1 Description.md",
+                "file": "CS61B/notes/L3 Testing Philosophy.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "03dab1ad137839df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS61B/README.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -34,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -101,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NJUICS/lab/Lab1 大整数运算/L1 Description.md",
+                "file": "CS61B/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NJUICS/lab/Lab1 大整数运算/L1 Description.md",
+                "file": "CS61B/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NJUICS/lab/Lab1 大整数运算/L1 Description.md"
+                "file": "CS61B/README.md"
               }
             }
           },
@@ -209,21 +222,21 @@
       "command-palette:打开命令面板": false,
       "workspaces:管理工作区布局": false,
       "canvas:Create new canvas": true,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "obsidian-memos:Memos": false
+      "obsidian-memos:Memos": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "3e8420ff2bbbd243",
+  "active": "03dab1ad137839df",
   "lastOpenFiles": [
-    "NJUICS/lecture/README.md",
-    "NJUICS/lecture/L5 数据的机器级表示/log.py.md",
-    "NJUICS/lecture/L5 数据的机器级表示/05-数据的机器级表示.md",
-    "NJUICS/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md",
-    "NJUICS/theory/02 数据的机器级表示与运算/数据表示常见问题解答.md",
-    "NJUICS/theory/02 数据的机器级表示与运算/The cheatsheet of Data Representation.md",
+    "CS61B/notes/L4 Single linked list.md",
+    "CS61B/attachments/cs61b lec5 2021 lists2, sllists.pdf",
+    "CS61B/README.md",
+    "CS61B/notes/L3 Testing Philosophy.md",
+    "CS61B/projects/project0.md",
     "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md",
-    "CS61A/composingprograms/1.6   Higher-Order Functions.md",
-    "NJUICS/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md",
-    "diary/2022-12-10.md"
+    "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md",
+    "The Missing Semester/7 调试及性能分析.md",
+    "math/从泰勒公式到欧拉公式.md",
+    "CS61B/未命名.canvas"
   ]
 }

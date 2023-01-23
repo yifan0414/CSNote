@@ -30,3 +30,26 @@
 
 然后就会看到 Spring 2021 的 CS 61B (Public) 的课程入口，进入后就可以看到待评测的 Lab 和 Project 了。
 
+# 三、Process record
+
+## 3. 1 Labs
+
+- [x] Lab01 ✅ 2023-01-21
+- [x] Lab02 ✅ 2023-01-23
+- [ ] Lab03
+- [ ] Lab04
+- [ ] Lab05
+- [ ] Lab06
+- [ ] Lab07
+- [ ] Lab10
+- [ ] Lab11
+- [ ] Lab12
+- [ ] Lab13
+- [ ] Lab14
+
+## 3.2 Projects
+
+- [x] Project0 ✅ 2023-01-22
+- [ ] Project1
+- [ ] Project2
+- [ ] Project3
