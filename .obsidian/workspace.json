@@ -4,42 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "692aff4529524eb9",
+        "id": "be63c295cbc189dc",
         "type": "tabs",
         "children": [
           {
-            "id": "c06cfa90b619b271",
+            "id": "4ca77a7cc029cbb9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/README.md",
-                "mode": "preview",
+                "file": "CS61A/notes/Python中的判断.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           },
           {
-            "id": "6f456888ea8074d6",
+            "id": "d03fbd156990f828",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS61B/notes/L3 Testing Philosophy.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "03dab1ad137839df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CS61B/README.md",
+                "file": "CS61B/notes/L6 DLLists, Arrays.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -47,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -76,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#todo",
+                "query": "$@",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 221.5
+    "width": 227.5
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -114,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS61B/README.md",
+                "file": "CS61B/notes/L6 DLLists, Arrays.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS61B/README.md",
+                "file": "CS61B/notes/L6 DLLists, Arrays.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +181,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS61B/README.md"
+                "file": "CS61B/notes/L6 DLLists, Arrays.md"
               }
             }
           },
@@ -226,17 +213,17 @@
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "03dab1ad137839df",
+  "active": "d03fbd156990f828",
   "lastOpenFiles": [
-    "CS61B/notes/L4 Single linked list.md",
-    "CS61B/attachments/cs61b lec5 2021 lists2, sllists.pdf",
+    "CS61B/notes/L5 Single linked list.md",
+    "CS61B/notes/L6 DLLists, Arrays.md",
+    "CS61A/notes/Python中的判断.md",
+    "CS61A/canvasNote/IntroToPython.canvas",
+    "The Missing Semester/2 Shell 工具和脚本.md",
     "CS61B/README.md",
     "CS61B/notes/L3 Testing Philosophy.md",
+    "CS61B/attachments/cs61b lec5 2021 lists2, sllists.pdf",
     "CS61B/projects/project0.md",
-    "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md",
-    "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md",
-    "The Missing Semester/7 调试及性能分析.md",
-    "math/从泰勒公式到欧拉公式.md",
-    "CS61B/未命名.canvas"
+    "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md"
   ]
 }

@@ -1,20 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "L6 DLLists, Arrays",
+      "path": "CS61B/notes/L6 DLLists, Arrays.md"
+    },
+    {
+      "basename": "L5 Single linked list",
+      "path": "CS61B/notes/L5 Single linked list.md"
+    },
+    {
+      "basename": "Python中的判断",
+      "path": "CS61A/notes/Python中的判断.md"
+    },
+    {
+      "basename": "IntroToPython",
+      "path": "CS61A/canvasNote/IntroToPython.canvas"
+    },
+    {
+      "basename": "2 Shell 工具和脚本",
+      "path": "The Missing Semester/2 Shell 工具和脚本.md"
+    },
+    {
       "basename": "README",
       "path": "CS61B/README.md"
     },
     {
-      "basename": "L4 Single linked list",
-      "path": "CS61B/notes/L4 Single linked list.md"
+      "basename": "L3 Testing Philosophy",
+      "path": "CS61B/notes/L3 Testing Philosophy.md"
     },
     {
       "basename": "cs61b lec5 2021 lists2, sllists",
       "path": "CS61B/attachments/cs61b lec5 2021 lists2, sllists.pdf"
-    },
-    {
-      "basename": "L3 Testing Philosophy",
-      "path": "CS61B/notes/L3 Testing Philosophy.md"
     },
     {
       "basename": "project0",
@@ -183,22 +199,6 @@
     {
       "basename": "datalab",
       "path": "CMU-CSAPP/1 datalab/datalab.pdf"
-    },
-    {
-      "basename": "ch_pa-1-1_reg",
-      "path": "Archive/NJUICS2016/ch/ch_pa-1-1_reg.md"
-    },
-    {
-      "basename": "ch_appendix_C_local_vm",
-      "path": "Archive/NJUICS2016/ch/ch_appendix_C_local_vm.md"
-    },
-    {
-      "basename": "CSAPP扩展与截断",
-      "path": "NJUICS/theory/02 数据的机器级表示与运算/CSAPP扩展与截断.pdf"
-    },
-    {
-      "basename": "ch_pa-2-2_load_elf",
-      "path": "Archive/NJUICS2016/ch/ch_pa-2-2_load_elf.md"
     }
   ],
   "omittedPaths": [],

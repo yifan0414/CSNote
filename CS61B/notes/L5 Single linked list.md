@@ -5,7 +5,7 @@
 - Slide: https://docs.google.com/presentation/d/1q6p0spGPmj8rFrQnWKp_QZJRFHg-IkHE1L9BfZc0f0Q/edit#slide=id.g5f6f34a2e_131
 - Guide: https://sp21.datastructur.es/materials/lectures/lec4/lec4
 
-![[cs61b lec5 2021 lists2, sllists.pdf]]
+![[cs61b lec5 2021 lists2, sllists.pdf#page=36]]
 
 # 2 Overview
 
@@ -47,3 +47,46 @@
 
 
 在实现内部，我们必须考虑其可复用性，可维护性，性能等一系列东西。因此如何组织数据结构变得尤为重要。
+
+
+# 4 Exercise
+
+## 4.1 Osmosis (10 pts) 
+
+We want to add a method to IntList so that if 2 numbers in a row are the same, we add them together and make one large node. For example: 1 → 1 → 2 → 3 becomes 2 → 2 → 3 which becomes 4 → 3
+
+```java
+public class IntList {
+	public int first;
+	public IntList rest;
+
+	public IntList(int f, IntList r) {
+		first = f;
+		rest = r;
+	}
+
+	/* If the adjacent node value are same, add them together to become a large node */
+	public void addAdjacent() {
+		IntList index = this;
+		while (index.rest != null) {
+			if (index.rest.first == index.first) {
+				index.first = 2 * index.first;
+				index.rest = index.rest.rest;
+			} else {
+				index = index.rest;
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		IntList L = new IntList(2, null);
+		L = new IntList(2, L);
+		L = new IntList(2, L);
+		L = new IntList(4, L);
+		L = new IntList(4, L);
+		L = new IntList(0, L);
+		L = new IntList(-1, L);
+		L.addAdjacent();
+	}
+} 
+```
