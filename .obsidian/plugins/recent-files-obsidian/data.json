@@ -1,8 +1,36 @@
 {
   "recentFiles": [
     {
+      "basename": "cprogramminglab note",
+      "path": "CMU-CSAPP/0 cprogramminglab/cprogramminglab note.md"
+    },
+    {
+      "basename": "cprogramminglab",
+      "path": "CMU-CSAPP/0 cprogramminglab/cprogramminglab.pdf"
+    },
+    {
+      "basename": "csapp2p.excalidraw",
+      "path": "CMU-CSAPP/2 bomblab/csapp2p.excalidraw.md"
+    },
+    {
       "basename": "L6 DLLists, Arrays",
       "path": "CS61B/notes/L6 DLLists, Arrays.md"
+    },
+    {
+      "basename": "attacklab",
+      "path": "CMU-CSAPP/3 attacklab/attacklab.pdf"
+    },
+    {
+      "basename": "start",
+      "path": "CMU-CSAPP/3 attacklab/start.md"
+    },
+    {
+      "basename": "README",
+      "path": "CS61B/README.md"
+    },
+    {
+      "basename": "L7 ALists, Resizing, vs. SLists",
+      "path": "CS61B/notes/L7 ALists, Resizing, vs. SLists.md"
     },
     {
       "basename": "L5 Single linked list",
@@ -19,10 +47,6 @@
     {
       "basename": "2 Shell 工具和脚本",
       "path": "The Missing Semester/2 Shell 工具和脚本.md"
-    },
-    {
-      "basename": "README",
-      "path": "CS61B/README.md"
     },
     {
       "basename": "L3 Testing Philosophy",
@@ -175,30 +199,6 @@
     {
       "basename": "ReadMe",
       "path": "Archive/NJUICS2016/ReadMe.md"
-    },
-    {
-      "basename": "Monitor",
-      "path": "NJUICS/note/PA1/Monitor.md"
-    },
-    {
-      "basename": "Drawing 2022-11-28 16.50.15.excalidraw",
-      "path": "NJUICS/note/PA1/Drawing 2022-11-28 16.50.15.excalidraw.md"
-    },
-    {
-      "basename": "一些辅助函数",
-      "path": "NJUICS/code/一些辅助函数.md"
-    },
-    {
-      "basename": "ui.c",
-      "path": "NJUICS/code/monitor/ui.c.md"
-    },
-    {
-      "basename": "README",
-      "path": "CS61A/README.md"
-    },
-    {
-      "basename": "datalab",
-      "path": "CMU-CSAPP/1 datalab/datalab.pdf"
     }
   ],
   "omittedPaths": [],
