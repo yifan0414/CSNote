@@ -1,6 +1,86 @@
 {
   "recentFiles": [
     {
+      "basename": "L1 Description",
+      "path": "NJUICS/lab/Lab1 大整数运算/L1 Description.md"
+    },
+    {
+      "basename": "Notes-Lab1 大整数运算",
+      "path": "NJUICS/lab/Lab1 大整数运算/Notes-Lab1 大整数运算.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "2022-11-29 2",
+      "path": "diary/2022-11-29 2.md"
+    },
+    {
+      "basename": "2022-11-29",
+      "path": "diary/2022-11-29.md"
+    },
+    {
+      "basename": "2022-11-28",
+      "path": "diary/2022-11-28.md"
+    },
+    {
+      "basename": "L8 Inheritance",
+      "path": "CS61B/notes/L8 Inheritance.md"
+    },
+    {
+      "basename": "L7 ALists, Resizing, vs. SLists",
+      "path": "CS61B/notes/L7 ALists, Resizing, vs. SLists.md"
+    },
+    {
+      "basename": "L3 Testing Philosophy",
+      "path": "CS61B/notes/L3 Testing Philosophy.md"
+    },
+    {
+      "basename": "L5 Single linked list",
+      "path": "CS61B/notes/L5 Single linked list.md"
+    },
+    {
+      "basename": "L6 DLLists, Arrays",
+      "path": "CS61B/notes/L6 DLLists, Arrays.md"
+    },
+    {
+      "basename": "5 命令行环境",
+      "path": "The Missing Semester/5 命令行环境.md"
+    },
+    {
+      "basename": "2 Shell 工具和脚本",
+      "path": "The Missing Semester/2 Shell 工具和脚本.md"
+    },
+    {
+      "basename": "3 编辑器 (Vim)",
+      "path": "The Missing Semester/3 编辑器 (Vim).md"
+    },
+    {
+      "basename": "4 数据整理",
+      "path": "The Missing Semester/4 数据整理.md"
+    },
+    {
+      "basename": "6 版本控制(Git)",
+      "path": "The Missing Semester/6 版本控制(Git).md"
+    },
+    {
+      "basename": "8 元编程",
+      "path": "The Missing Semester/8 元编程.md"
+    },
+    {
+      "basename": "9 安全与密码学",
+      "path": "The Missing Semester/9 安全与密码学.md"
+    },
+    {
+      "basename": "10 大杂烩",
+      "path": "The Missing Semester/10 大杂烩.md"
+    },
+    {
+      "basename": "1 Lecture overview and Shell",
+      "path": "The Missing Semester/1 Lecture overview and Shell.md"
+    },
+    {
       "basename": "cprogramminglab note",
       "path": "CMU-CSAPP/0 cprogramminglab/cprogramminglab note.md"
     },
@@ -11,10 +91,6 @@
     {
       "basename": "csapp2p.excalidraw",
       "path": "CMU-CSAPP/2 bomblab/csapp2p.excalidraw.md"
-    },
-    {
-      "basename": "L6 DLLists, Arrays",
-      "path": "CS61B/notes/L6 DLLists, Arrays.md"
     },
     {
       "basename": "attacklab",
@@ -29,28 +105,12 @@
       "path": "CS61B/README.md"
     },
     {
-      "basename": "L7 ALists, Resizing, vs. SLists",
-      "path": "CS61B/notes/L7 ALists, Resizing, vs. SLists.md"
-    },
-    {
-      "basename": "L5 Single linked list",
-      "path": "CS61B/notes/L5 Single linked list.md"
-    },
-    {
       "basename": "Python中的判断",
       "path": "CS61A/notes/Python中的判断.md"
     },
     {
       "basename": "IntroToPython",
       "path": "CS61A/canvasNote/IntroToPython.canvas"
-    },
-    {
-      "basename": "2 Shell 工具和脚本",
-      "path": "The Missing Semester/2 Shell 工具和脚本.md"
-    },
-    {
-      "basename": "L3 Testing Philosophy",
-      "path": "CS61B/notes/L3 Testing Philosophy.md"
     },
     {
       "basename": "cs61b lec5 2021 lists2, sllists",
@@ -105,10 +165,6 @@
       "path": "CS61A/composingprograms/1.7   Recursive Functions.md"
     },
     {
-      "basename": "L1 Description",
-      "path": "NJUICS/lab/Lab1 大整数运算/L1 Description.md"
-    },
-    {
       "basename": "README",
       "path": "NJUICS/lecture/README.md"
     },
@@ -143,62 +199,6 @@
     {
       "basename": "2022-12-11",
       "path": "diary/2022-12-11.md"
-    },
-    {
-      "basename": "2023-01-16",
-      "path": "diary/2023-01-16.md"
-    },
-    {
-      "basename": "datalab-note",
-      "path": "CMU-CSAPP/1 datalab/datalab-note.md"
-    },
-    {
-      "basename": "SICP-TODO",
-      "path": "READING/SICP/SICP-TODO.md"
-    },
-    {
-      "basename": "NEMU-Makefile",
-      "path": "NJUICS/code/NEMU-Makefile.md"
-    },
-    {
-      "basename": "Fantastic ideas",
-      "path": "LinuxTool/Fantastic ideas.md"
-    },
-    {
-      "basename": "3-2 穿越时空的旅程",
-      "path": "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md"
-    },
-    {
-      "basename": "ch_pa-1-3_fpu",
-      "path": "Archive/NJUICS2016/ch/ch_pa-1-3_fpu.md"
-    },
-    {
-      "basename": "ch_pa-1-2_alu",
-      "path": "Archive/NJUICS2016/ch/ch_pa-1-2_alu.md"
-    },
-    {
-      "basename": "编程心得",
-      "path": "READING/编程心得.md"
-    },
-    {
-      "basename": "README",
-      "path": "NJUICS/README.md"
-    },
-    {
-      "basename": "Notes-Lab1 大整数运算",
-      "path": "NJUICS/lab/Lab1 大整数运算/Notes-Lab1 大整数运算.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "README",
-      "path": "NJUICS/tutorial/README.md"
-    },
-    {
-      "basename": "ReadMe",
-      "path": "Archive/NJUICS2016/ReadMe.md"
     }
   ],
   "omittedPaths": [],

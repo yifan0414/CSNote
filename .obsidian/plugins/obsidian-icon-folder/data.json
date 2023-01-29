@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": "#4b88d8",
     "recentlyUsedIcons": [
+      "FabApple",
       "SiDatadog",
       "RiHeart2Fill",
       "FarStar",
-      "🌟",
-      "RiBookFill"
+      "🌟"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -38,5 +38,6 @@
   "The Missing Semester/7 调试及性能分析.md": "FarStar",
   "CS61B": "SiDatadog",
   "NJUICS": "SiCodeigniter",
-  "NJUICS/lecture/L5 数据的机器级表示": "FarStar"
+  "NJUICS/lecture/L5 数据的机器级表示": "FarStar",
+  "diary": "FabApple"
 }
