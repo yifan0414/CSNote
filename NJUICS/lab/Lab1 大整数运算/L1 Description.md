@@ -66,6 +66,7 @@ $$
 $$
 
 >[!question] 怎么证明呢？
+> $a \cdot b \bmod m = (a \bmod m) \cdot (b \bmod m)$?
 
 ### 3.2 测试建议
 
@@ -126,16 +127,22 @@ $$
 a \cdot b \bmod m=\left(\sum_{0 \leq i<64} a_i \cdot b \cdot 2^i \bmod m\right) \bmod m
 $$
 
-因此, 你只要能实现 $\bmod m$ 的加法即 $(x+y) \bmod m$, 就能实现 $\left(b \cdot 2^i\right) \bmod m$, 进而实现 $a \cdot b \bmod m$ 。在这里你要小心 $x+y$ 溢出 64-bit 整数的问题: 当 $x+y=t+2^{64}$ 发生溢出 $\left(0 \leq t<2^{64-1}\right)$ 时, 注意加法 wraparound 后得到的结果是
+**因此, 你只要能实现 $\bmod m$ 的加法即 $(x+y) \bmod m$, 就能实现 $\left(b \cdot 2^i\right) \bmod m$, 进而实现 $a \cdot b \bmod m$ 。**
+在这里你要小心 $x+y$ 溢出 64-bit 整数的问题: 当 $x+y=t+2^{64}$ 发生溢出 $\left(0 \leq t<2^{64-1}\right)$ 时, 注意加法 wraparound 后得到的结果是
 $$
 (x+y) \bmod 2^{64}=t .
 $$
 我们实际需要求解的是
 $$
-\left(t+2^{64}\right) \bmod m=\left((t \bmod m)+\left(2^{64} \bmod m\right)\right) \bmod m .
+\left(t+2^{64}\right) \bmod m=\left((t \bmod m)+\left(2^{64} \bmod m\right)\right) \bmod m
 $$
 
 这里还有一个潜在的溢出问题——如果这个加法依然溢出怎么办？这个聪明的问题留给你。
+
+>[!note] 一点思考
+> 首先对 $\bmod 1$ 是毫无意义的，所以我们不需要考虑。那么对于 $2 \le m \le 2^{64} - 1$，我们需要仔细考虑 $\left((t \bmod m)+\left(2^{64} \bmod m\right)\right)$ 的范围。其中由于 $x + y = t + 2^{64}$ 中的 $x,y$ 都是 64 位数 (假设溢出)，所以 $1 \le t \le 2^{64} - 2$，所以 $\left((t \bmod m)+\left(2^{64} \bmod m\right)\right)$ 不可能再溢出
+> 
+> #todo 也许可以通过编程来验证这一点 $2 ^ {64} \bmod m$ 的最大值为 $2^{63} - 1$，此时 $m = 2 ^{63} + 1$
 
 ---
 

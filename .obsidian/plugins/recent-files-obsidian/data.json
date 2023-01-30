@@ -1,12 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "L1 Description",
-      "path": "NJUICS/lab/Lab1 大整数运算/L1 Description.md"
+      "basename": "NEMU-Makefile",
+      "path": "NJUICS/code/NEMU-Makefile.md"
+    },
+    {
+      "basename": "L7 ALists, Resizing, vs. SLists",
+      "path": "CS61B/notes/L7 ALists, Resizing, vs. SLists.md"
     },
     {
       "basename": "Notes-Lab1 大整数运算",
       "path": "NJUICS/lab/Lab1 大整数运算/Notes-Lab1 大整数运算.md"
+    },
+    {
+      "basename": "L2 Description",
+      "path": "NJUICS/lab/Lab2 x86-64 内联汇编/L2 Description.md"
+    },
+    {
+      "basename": "L1 Description",
+      "path": "NJUICS/lab/Lab1 大整数运算/L1 Description.md"
+    },
+    {
+      "basename": "05-数据的机器级表示",
+      "path": "NJUICS/lecture/L5 数据的机器级表示/05-数据的机器级表示.md"
+    },
+    {
+      "basename": "csapp2p.excalidraw",
+      "path": "CMU-CSAPP/2 bomblab/csapp2p.excalidraw.md"
+    },
+    {
+      "basename": "datalab-note",
+      "path": "CMU-CSAPP/1 datalab/datalab-note.md"
+    },
+    {
+      "basename": "1 Lecture overview and Shell",
+      "path": "The Missing Semester/1 Lecture overview and Shell.md"
+    },
+    {
+      "basename": "2023-01-07",
+      "path": "diary/2023-01-07.md"
+    },
+    {
+      "basename": "1-1 在开始愉快的PA之旅之前",
+      "path": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md"
     },
     {
       "basename": "README",
@@ -27,10 +63,6 @@
     {
       "basename": "L8 Inheritance",
       "path": "CS61B/notes/L8 Inheritance.md"
-    },
-    {
-      "basename": "L7 ALists, Resizing, vs. SLists",
-      "path": "CS61B/notes/L7 ALists, Resizing, vs. SLists.md"
     },
     {
       "basename": "L3 Testing Philosophy",
@@ -77,20 +109,12 @@
       "path": "The Missing Semester/10 大杂烩.md"
     },
     {
-      "basename": "1 Lecture overview and Shell",
-      "path": "The Missing Semester/1 Lecture overview and Shell.md"
-    },
-    {
       "basename": "cprogramminglab note",
       "path": "CMU-CSAPP/0 cprogramminglab/cprogramminglab note.md"
     },
     {
       "basename": "cprogramminglab",
       "path": "CMU-CSAPP/0 cprogramminglab/cprogramminglab.pdf"
-    },
-    {
-      "basename": "csapp2p.excalidraw",
-      "path": "CMU-CSAPP/2 bomblab/csapp2p.excalidraw.md"
     },
     {
       "basename": "attacklab",
@@ -173,32 +197,8 @@
       "path": "NJUICS/lecture/L5 数据的机器级表示/log.py.md"
     },
     {
-      "basename": "05-数据的机器级表示",
-      "path": "NJUICS/lecture/L5 数据的机器级表示/05-数据的机器级表示.md"
-    },
-    {
       "basename": "04-NEMU 框架选讲 (2) 代码导读",
       "path": "NJUICS/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md"
-    },
-    {
-      "basename": "数据表示常见问题解答",
-      "path": "NJUICS/theory/02 数据的机器级表示与运算/数据表示常见问题解答.md"
-    },
-    {
-      "basename": "The cheatsheet of Data Representation",
-      "path": "NJUICS/theory/02 数据的机器级表示与运算/The cheatsheet of Data Representation.md"
-    },
-    {
-      "basename": "03-NEMU 框架选讲 (1) 编译运行",
-      "path": "NJUICS/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md"
-    },
-    {
-      "basename": "2022-12-10",
-      "path": "diary/2022-12-10.md"
-    },
-    {
-      "basename": "2022-12-11",
-      "path": "diary/2022-12-11.md"
     }
   ],
   "omittedPaths": [],

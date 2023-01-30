@@ -58,13 +58,13 @@ void longjmp(jmp_buf env, int val);
 
 以下摘自手册 setjmp (3):
 
-`setjmp` / `longjmp` functions are used for performing "nonlocal gotos": transferring execution from one function to a predetermined location in another function. The `setjmp()` function dynamically establishes the target to which control will later be transferred, and `longjmp()` performs the transfer of execution.
-
-The `setjmp()` function saves various information about the calling environment (typically, the stack pointer, the instruction pointer, possibly the values of other registers and the signal mask) in the buffer env for later use by `longjmp()`. In this case, `setjmp()` returns 0.
-
-The `longjmp()` function uses the information saved in `env` to transfer control back to the point where `setjmp()` was called and to restore ("rewind") the stack to its state at the time of the `setjmp()` call. In addition, and depending on the implementation (see NOTES), the values of some other registers and the process signal mask may be restored to their state at the time of the `setjmp()` call.
-
-Following a successful `longjmp()`, execution continues as if `setjmp()` had returned for a second time. This "fake" return can be distinguished from a true `setjmp()` call because the "fake" return returns the value provided in `val`. If the programmer mistakenly passes the value `0` in `val`, the "fake" return will instead return `1`.
+>  `setjmp` / `longjmp` functions are used for performing "nonlocal gotos": transferring execution from one function to a predetermined location in another function. The `setjmp()` function dynamically establishes the target to which control will later be transferred, and `longjmp()` performs the transfer of execution.
+>
+>The `setjmp()` function saves various information about the calling environment (typically, the stack pointer, the instruction pointer, possibly the values of other registers and the signal mask) in the buffer env for later use by `longjmp()`. In this case, `setjmp()` returns 0.
+>
+>The `longjmp()` function uses the information saved in `env` to transfer control back to the point where `setjmp()` was called and to restore ("rewind") the stack to its state at the time of the `setjmp()` call. In addition, and depending on the implementation (see NOTES), the values of some other registers and the process signal mask may be restored to their state at the time of the `setjmp()` call.
+>
+>Following a successful `longjmp()`, execution continues as if `setjmp()` had returned for a second time. This "fake" return can be distinguished from a true `setjmp()` call because the "fake" return returns the value provided in `val`. If the programmer mistakenly passes the value `0` in `val`, the "fake" return will instead return `1`.
 
 简单来说，`setjmp` 会在调用时对当前程序的运行状态做一个**轻量级快照** (保存在 `env` 参数中)，并返回 `0`。只要 `setjmp` 时调用的函数不返回，程序在运行过程中可以随时调用 `longjmp` 跳转到 `setjmp` 快照时的程序状态，无论中间间隔了多少函数调用，并且给 `setjmp` 一个特定的返回值。我们可以通过下面的小例子理解 `setjmp` / `longjmp` 的行为：
 
