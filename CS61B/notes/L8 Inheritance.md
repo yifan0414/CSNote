@@ -1,4 +1,5 @@
 # Note
+
 想一下，如果没有继承的话，我的 Library 必须为每一种类型实现这个方法。例如 ALList、SLList。最重要的是如果以后其他人创建了 DLList，我必须修改我的 Library 让其适配 DLList。相反如果实现继承的话，主动权在实现者身上，这是符合逻辑的。
 
 # 1 Resource

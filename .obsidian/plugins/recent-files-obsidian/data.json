@@ -1,6 +1,94 @@
 {
   "recentFiles": [
     {
+      "basename": "L11Exceptions, Iterators, Iterables",
+      "path": "CS61B/notes/L11Exceptions, Iterators, Iterables.md"
+    },
+    {
+      "basename": "L10 Subtype Polymorphism vs. HoFs",
+      "path": "CS61B/notes/L10 Subtype Polymorphism vs. HoFs.md"
+    },
+    {
+      "basename": "L9 Extends, Casting, Higher Order Functions",
+      "path": "CS61B/notes/L9 Extends, Casting, Higher Order Functions.md"
+    },
+    {
+      "basename": "L8 Inheritance",
+      "path": "CS61B/notes/L8 Inheritance.md"
+    },
+    {
+      "basename": "phase_2.excalidraw",
+      "path": "CMU-CSAPP/2 bomblab/phase_2.excalidraw.md"
+    },
+    {
+      "basename": "cprogramminglab note",
+      "path": "CMU-CSAPP/0 cprogramminglab/cprogramminglab note.md"
+    },
+    {
+      "basename": "vscode configuration",
+      "path": "NJUICS/code/vscode configuration.md"
+    },
+    {
+      "basename": "04-NEMU 框架选讲 (2) 代码导读",
+      "path": "NJUICS/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md"
+    },
+    {
+      "basename": "2023-01-30",
+      "path": "diary/2023-01-30.md"
+    },
+    {
+      "basename": "2023-01-16",
+      "path": "diary/2023-01-16.md"
+    },
+    {
+      "basename": "2023-01-11",
+      "path": "diary/2023-01-11.md"
+    },
+    {
+      "basename": "2023-01-10",
+      "path": "diary/2023-01-10.md"
+    },
+    {
+      "basename": "2022-12-17",
+      "path": "diary/2022-12-17.md"
+    },
+    {
+      "basename": "2022-12-27",
+      "path": "diary/2022-12-27.md"
+    },
+    {
+      "basename": "2023-01-08",
+      "path": "diary/2023-01-08.md"
+    },
+    {
+      "basename": "2023-01-07",
+      "path": "diary/2023-01-07.md"
+    },
+    {
+      "basename": "2022-12-10",
+      "path": "diary/2022-12-10.md"
+    },
+    {
+      "basename": "2022-12-11",
+      "path": "diary/2022-12-11.md"
+    },
+    {
+      "basename": "2022-12-18",
+      "path": "diary/2022-12-18.md"
+    },
+    {
+      "basename": "callout of obsidian",
+      "path": "diary/callout of obsidian.md"
+    },
+    {
+      "basename": "2022-12-07",
+      "path": "diary/2022-12-07.md"
+    },
+    {
+      "basename": "ReadMe",
+      "path": "Archive/NJUICS2016/ReadMe.md"
+    },
+    {
       "basename": "NEMU-Makefile",
       "path": "NJUICS/code/NEMU-Makefile.md"
     },
@@ -37,10 +125,6 @@
       "path": "The Missing Semester/1 Lecture overview and Shell.md"
     },
     {
-      "basename": "2023-01-07",
-      "path": "diary/2023-01-07.md"
-    },
-    {
       "basename": "1-1 在开始愉快的PA之旅之前",
       "path": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md"
     },
@@ -49,20 +133,12 @@
       "path": "README.md"
     },
     {
-      "basename": "2022-11-29 2",
-      "path": "diary/2022-11-29 2.md"
-    },
-    {
       "basename": "2022-11-29",
       "path": "diary/2022-11-29.md"
     },
     {
       "basename": "2022-11-28",
       "path": "diary/2022-11-28.md"
-    },
-    {
-      "basename": "L8 Inheritance",
-      "path": "CS61B/notes/L8 Inheritance.md"
     },
     {
       "basename": "L3 Testing Philosophy",
@@ -109,10 +185,6 @@
       "path": "The Missing Semester/10 大杂烩.md"
     },
     {
-      "basename": "cprogramminglab note",
-      "path": "CMU-CSAPP/0 cprogramminglab/cprogramminglab note.md"
-    },
-    {
       "basename": "cprogramminglab",
       "path": "CMU-CSAPP/0 cprogramminglab/cprogramminglab.pdf"
     },
@@ -127,78 +199,6 @@
     {
       "basename": "README",
       "path": "CS61B/README.md"
-    },
-    {
-      "basename": "Python中的判断",
-      "path": "CS61A/notes/Python中的判断.md"
-    },
-    {
-      "basename": "IntroToPython",
-      "path": "CS61A/canvasNote/IntroToPython.canvas"
-    },
-    {
-      "basename": "cs61b lec5 2021 lists2, sllists",
-      "path": "CS61B/attachments/cs61b lec5 2021 lists2, sllists.pdf"
-    },
-    {
-      "basename": "project0",
-      "path": "CS61B/projects/project0.md"
-    },
-    {
-      "basename": "01-C 语言拾遗 (1) 机制",
-      "path": "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md"
-    },
-    {
-      "basename": "phase_6.excalidraw",
-      "path": "CMU-CSAPP/2 bomblab/phase_6.excalidraw.md"
-    },
-    {
-      "basename": "7 调试及性能分析",
-      "path": "The Missing Semester/7 调试及性能分析.md"
-    },
-    {
-      "basename": "从泰勒公式到欧拉公式",
-      "path": "math/从泰勒公式到欧拉公式.md"
-    },
-    {
-      "basename": "Pasted image 20230121202959",
-      "path": "attachments/Pasted image 20230121202959.png"
-    },
-    {
-      "basename": "Pasted image 20230121203029",
-      "path": "attachments/Pasted image 20230121203029.png"
-    },
-    {
-      "basename": "1.6   Higher-Order Functions",
-      "path": "CS61A/composingprograms/1.6   Higher-Order Functions.md"
-    },
-    {
-      "basename": "parse_args()",
-      "path": "NJUICS/code/parse_args().md"
-    },
-    {
-      "basename": "vscode configuration",
-      "path": "NJUICS/code/vscode configuration.md"
-    },
-    {
-      "basename": "数据表示知识点清单",
-      "path": "NJUICS/theory/02 数据的机器级表示与运算/数据表示知识点清单.md"
-    },
-    {
-      "basename": "1.7   Recursive Functions",
-      "path": "CS61A/composingprograms/1.7   Recursive Functions.md"
-    },
-    {
-      "basename": "README",
-      "path": "NJUICS/lecture/README.md"
-    },
-    {
-      "basename": "log.py",
-      "path": "NJUICS/lecture/L5 数据的机器级表示/log.py.md"
-    },
-    {
-      "basename": "04-NEMU 框架选讲 (2) 代码导读",
-      "path": "NJUICS/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md"
     }
   ],
   "omittedPaths": [],
