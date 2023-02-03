@@ -1,5 +1,21 @@
 # Note
 
+概念：
+- **Static Type** VS **Dynamic Type**
+- **Override** VS **Overload**
+- **向上转型** VS **向下转型**
+- 父类对象调用子类方法（多态）
+- 子类对象调用父类方法（继承）
+
+多态只发生在父类对象调用被子类重构的方法时（只能是重构，重载都不行）。也就是静态类型是父类，动态类型是子类时且子类重构了父类的方法。
+
+举例：
+
+![huGhOW](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/huGhOW.png)
+
+![GGXwS8](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/GGXwS8.png)
+
+
 
 
 # 1 Resource

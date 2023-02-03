@@ -128,6 +128,9 @@ clean:
 通过使用 `make -nB` 查看make过程中的信息
 这里使用的是 `make -nB | sed G` 为每一个行后添加空白行
 
+>[!note] 同样的，我们可以使用 `make run -nB` 查看运行参数
+> ![VCks6c](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/VCks6c.png) ^tdabqo
+
 Building x86-nemu-interpreter
 
 <span style="background:#fff88f">echo + CC src/monitor/debug/ui.c</span>
@@ -320,7 +323,7 @@ gcc -O2 -rdynamic  -o build/x86-nemu-interpreter build/obj-x86-interpreter/monit
 # 冗余信息的优化
 
 但是这样会有大量的冗余信息, 因此我们通过执行命令删除掉以echo和mkdir开头的行并传入到vim中
-```
+```bash
 make -nB \
  | grep -ve '^\(\#\|echo\|mkdir\)' \
  | vim -
