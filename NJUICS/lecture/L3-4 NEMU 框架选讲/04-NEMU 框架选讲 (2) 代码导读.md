@@ -167,6 +167,17 @@ The friendly source code
 
 ![2HDKBM](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/2HDKBM.png)
 
+>[!question] 这里为什么会出现 Makefile: 110 test Error 1?
+> 这里是 main 函数返回值，由于我们没有执行 NEMU 模拟代码执行而是直接退出了，所以 nemu 的状态没有得到更新。
+>```c
+>int is_exit_status_bad() {
+>  int good = (nemu_state.state == NEMU_END && nemu_state.halt_ret == 0) ||
+>    (nemu_state.state == NEMU_QUIT);
+>  return !good;
+>}
+>```
+
+
 >[!danger] 工业界的测试
 >这种自动化测试的作用不仅仅是为了减少浪费的时间, 更重要的是当我们为我们的项目添加了新的 feature 后, 我们还可以根据之前的自动化测试代码一键重新测试.
 
@@ -196,6 +207,7 @@ static inline void parse_args(int argc, char *argv[]) { ... }
 
 b.c:(.text+0x0): multiple definition of <em>f</em>; a.c:(.text+0xb): first defined here
 
+>[!note] 一个函数能是 static 就尽量设置为 static
 
 这也是为什么不在头文件里定义函数的原因
 
@@ -219,7 +231,10 @@ int check_reg_index(int index);
 ```
 
 -   但这样会导致在编译时，编译出一条额外的 call 指令 (假设没有 [LTO](http://gcc.gnu.org/wiki/LinkTimeOptimization))
--   使用 inline 可以在调用 `check_reg_index(0)` 编译优化成<font color="#ff0000">零开销</font>
+-   使用 inline 可以在调用 `check_reg_index(0)` 编译优化成<font color=" #ff0000 ">零开销</font>
+
+>[!note] 关于 GCC 为什么会给没有使用的变量或者函数 wranning
+> 防止手滑
 
 ## 新的问题：啥是 assert？
 
