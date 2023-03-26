@@ -47,7 +47,7 @@ We can do the same for `SLList`. Now, going back to our `largestNumber` metho
 public Item get(int i) { ... }
 ```
 
-This is not technically necessary, but is good style and thus we will require it. Also, it allows us to check against typos. If we mistype our method name, the compiler will prevent our compilation if we have the @Override tag.
+This is not technically necessary, but is good style and thus we will require it. Also, it allows us to check against typos. If we mistype our method name, the compiler will prevent our compilation if we have the `@Override` tag.
 
 **Interface Inheritance** Formally, we say that subclasses inherit from the superclass. Interfaces contain all the method signatures, and each subclass must implement every single signature; think of it as a contract. In addition, relationships can span multiple generations. For example, C can inherit from B, which can inherit from A.
 
