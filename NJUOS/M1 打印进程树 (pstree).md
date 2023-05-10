@@ -31,7 +31,7 @@
 
 一个可行的想法是操作系统可以提供类似迭代器的 API，可以在某个时刻对进程列表进行 “快照”，然后程序可以通过 API 迭代快照里的进程。
 
-```c
+```c hl:1-2
 Snapshot *CreateProcessSnapshot(); // 迭代开始
 Process *FirstProcess(Snapshot *snapshot); // 取得第一个进程
 Process *NextProcess(Process *process); // 获得下一个进程
@@ -139,7 +139,7 @@ Unix is _user-friendly_ — it's just choosy about who its friends are.
 
 你可以任意选择树的形态，以下输出都是合法的：
 
-```txt
+```txt hl:1,3,5,7
 $ ./pstree-64
 systemd─┬─accounts-daemon─┬─
         │
@@ -188,7 +188,7 @@ systemd
 
 获取命令行参数的一小段代码：
 
-```c
+```c hl:1-5
 #include <stdio.h>
 #include <assert.h>
 
@@ -252,7 +252,7 @@ if (fp) {
 
 procfs 里的信息足够让你写一个非常不错的任务管理器。也许有同学在实验开始的时候就已经想到——如果你想实现一个任务管理器并且不太会的话，我们可以看一看系统的任务管理器是怎么实现的嘛！我们在课堂上已经演示过 gcc 和 xedit 的例子，就用 strace 工具就能查看进程运行时的系统调用序列：
 
-```
+```txt hl:1,3,5,7
 $ strace ps
 ...
 openat(AT_FDCWD, "/proc/1/stat", O_RDONLY)           = 6
@@ -297,13 +297,3 @@ close(6)                                             = 0
 当你的程序越来越复杂，这些问题也许将会成为你挥之不去的阴影。这就对了——从 Intel 的 CPU 到 Linux Kernel 都有数不清的 bug。你也许听说过 “形式化验证”，但事实也证明，经过验证正确的编译器 (CertComp) 和操作系统 (seL4, FSCQ, ...) 都依然存在 bug，尽管它们的可靠性依然比程序员手写的高得多。
 
 写出正确的代码远比想象中困难——目前地球上还没人能保证复杂的系统没有 bug 和漏洞。我个人热切盼望着没有 bug 的那一天的到来，不过似乎遥不可及。不过也不用太绝望，这门课里会教给大家一些有关 “写代码” 的知识，更重要的是正确的思维方式 (“世界观”)：操作系统会提供什么、该提供什么、不该提供什么、应该怎么提供。
-
-```java
-private static void sort(Comparable[] a, Comparable[] aux, int lo, int hi) {
-    if (hi <= lo) return;
-    int mid = lo + (hi - lo) / 2;
-    sort(a, aux, lo, mid);     // divide
-    sort(a, aux, mid + 1, hi); // divide
-    merge(a, aux, lo, mid, hi);// conquer
-}
-```

@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"b7dcf727c3867603","x":60,"y":-539,"width":532,"height":579,"type":"file","file":"math/从泰勒公式到欧拉公式.md"},
+		{"id":"7e652a2168ca474e","x":-740,"y":-640,"width":600,"height":260,"color":"1","type":"text","text":"一个更好的一元二次方程求根公式\n- $\\frac{(-b)^2-\\left(\\sqrt{b^2-4 a c}\\right)^2}{(-b)+\\sqrt{b^2-4 a c}} / 2 a=\\frac{4 a c}{(-b)+\\sqrt{b^2-4 a c}} / 2 a(b<0)$\n- $\\left(-b-\\sqrt{b^2-4 a c}\\right) \\cdot \\frac{1}{2 a}\\left(0 \\leq b \\leq 10^{127}\\right)$\n- $-\\frac{b}{a}+\\frac{c}{b}\\left(b>10^{127}\\right)$\n- P. Panchekha, et al. Automatically improving accuracy for floating point expressions. In Proc. of PLDI, 2015."}
+	],
+	"edges":[
+		{"id":"1f0fcfd9486827cf","fromNode":"7e652a2168ca474e","fromSide":"right","toNode":"b7dcf727c3867603","toSide":"left"}
+	]
+}

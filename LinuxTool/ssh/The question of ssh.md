@@ -11,6 +11,3 @@
 ![b8ttND](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/b8ttND.png)
 
 然后使用 `sudo iw wlp2s0 set power_save off`
-
-
-
