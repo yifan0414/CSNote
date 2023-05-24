@@ -429,7 +429,7 @@ If it is the second case, remember:
 要实现哪些指令才能让 `dummy` 在NEMU中运行起来呢? 答案就在其反汇编结果( `am-kernels/tests/cpu-tests/build/dummy-$ISA-nemu.txt` )中: 你只需实现那些目前还没实现的指令就可以了. 框架代码引入的模式匹配规则, 对在NEMU中实现客户指令提供了很大的便利, 为了实现一条新指令, 你只需要在 `nemu/src/isa/$ISA/inst.c` 中添加正确的模式匹配规则即可.
 
 >[!info] 交叉编译工具链
->如果你选择的ISA不是x86, 在查看客户程序的二进制信息(如`objdump`, `readelf`等)时, 需要使用相应的交叉编译版本, 如`mips-linux-gnu-objdump`, `riscv64-linux-gnu-readelf`等. 特别地, 如果你选择的ISA是riscv32, 也可以使用riscv64为前缀的交叉编译工具链.
+>如果你选择的 ISA 不是 x86, 在查看客户程序的二进制信息 (如 `objdump`, `readelf` 等)时, 需要使用相应的交叉编译版本, 如 `mips-linux-gnu-objdump`, `riscv64-linux-gnu-readelf` 等. 特别地, 如果你选择的 ISA 是 riscv32, 也可以使用 riscv64为前缀的交叉编译工具链.
 
 这里要再次强调, <font color="#ff0000">你务必通过RTFM来查阅指令的功能, 不能想当然. 手册中给出了指令功能的完整描述(包括做什么事, 怎么做的, 有什么影响), 一定要仔细阅读其中的每一个单词, 对指令功能理解错误和遗漏都会给以后的调试带来巨大的麻烦.</font>
 
