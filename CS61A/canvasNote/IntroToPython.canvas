@@ -1,19 +1,22 @@
 {
 	"nodes":[
-		{"type":"group","label":"Zen of Python","id":"47b812d7b4b32382","x":-582,"y":407,"width":602,"height":93},
+		{"type":"group","id":"47b812d7b4b32382","x":-582,"y":407,"width":602,"height":93,"label":"Zen of Python"},
 		{"type":"text","text":"**beauty**","id":"06b8eae30c1782e7","x":-562,"y":427,"width":122,"height":60},
 		{"type":"text","text":"**simplicity**","id":"3510783071510673","x":-400,"y":427,"width":144,"height":60},
 		{"type":"text","text":"**readability**","id":"bd996672a0a1ec4b","x":-203,"y":427,"width":163,"height":60},
 		{"type":"text","text":"All computing begins with ==representing information==, ==specifying logic to process it==, and ==designing abstractions== that manage the complexity of that logic.","id":"9ab34bbe5983f4f6","x":390,"y":-308,"width":427,"height":148},
 		{"type":"text","text":"When you learn Python, you join a million-person-strong community of developers.","id":"3cbde66d303bf144","x":-254,"y":-308,"width":386,"height":110,"color":"2"},
 		{"type":"text","text":"Python is a widely used programming language that has recruited enthusiasts（招募爱好者） from many professions","id":"7d59a1d9f40a4d16","x":-850,"y":-315,"width":387,"height":125},
-		{"type":"text","text":">[!quote] \n> The fundamental equation of computers is:\n> \n> *computer = powerful + stupid*\n> \n> Programming is about a person using their real insight to build something useful, constructed out of these teeny, simple little operations that the computer can do.\n> \n> <p align=\"right\">—Francisco Cai and Nick Parlante, Stanford CS101</p>","id":"92a5aa08ee5d80a0","x":181,"y":21,"width":759,"height":299},
 		{"type":"text","text":"**Test incrementally**","id":"cb60defd347cd957","x":-256,"y":774,"width":250,"height":60},
+		{"type":"text","text":"# Python","id":"6445244e0eb34c63","x":-463,"y":141,"width":250,"height":60},
 		{"type":"text","text":"**Isolate errors**","id":"eed4e1d5a3cca6cf","x":-256,"y":901,"width":250,"height":60},
 		{"type":"text","text":"**Check your assumptions**","id":"61d1b255af732b18","x":-271,"y":1038,"width":279,"height":62},
 		{"type":"text","text":"**Consult others**","id":"3119f15ba06a197d","x":-256,"y":1172,"width":250,"height":60},
 		{"type":"text","text":"# debugging","id":"1ab20226628c7334","x":-687,"y":978,"width":250,"height":60},
-		{"type":"text","text":"# Python","id":"6445244e0eb34c63","x":-463,"y":141,"width":250,"height":60}
+		{"id":"d705ccfc556a2cc8","x":713,"y":591,"width":400,"height":50,"type":"file","file":"CS61A/composingprograms/1.1 Getting Started.md"},
+		{"id":"0e6a7d82d95971b2","x":713,"y":740,"width":647,"height":520,"type":"file","file":"README.md"},
+		{"id":"cdb10455d5b78294","x":1671,"y":671,"width":589,"height":529,"type":"link","url":"https://obsidian-publisher.netlify.app/changelog/sync%20template%20v2.2.0/"},
+		{"type":"text","text":">[!quote] \n> The fundamental equation of computers is:\n> \n> *computer = powerful + stupid*\n> \n> Programming is about a person using their real insight to build something useful, constructed out of these teeny, simple little operations that the computer can do.\n> \n> <p align=\"right\">—Francisco Cai and Nick Parlante, Stanford CS101</p>","id":"92a5aa08ee5d80a0","x":601,"y":140,"width":759,"height":299}
 	],
 	"edges":[
 		{"id":"cef22bbdf08ff0e6","fromNode":"6445244e0eb34c63","fromSide":"top","toNode":"7d59a1d9f40a4d16","toSide":"bottom"},

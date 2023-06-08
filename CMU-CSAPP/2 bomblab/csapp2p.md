@@ -19,12 +19,12 @@ tags: [excalidraw]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://excalidraw.com",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/1.9.3",
 	"elements": [
 		{
 			"type": "image",
-			"version": 44,
-			"versionNonce": 469178347,
+			"version": 47,
+			"versionNonce": 421333290,
 			"isDeleted": false,
 			"id": "397AZQFvK7B8yLqLl5hrd",
 			"fillStyle": "hachure",
@@ -43,8 +43,8 @@ tags: [excalidraw]
 			"groupIds": [],
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1672219700056,
-			"link": null,
+			"updated": 1686046297742,
+			"link": "",
 			"locked": false,
 			"status": "pending",
 			"fileId": "141014f380c5ac66426f6173e0bf23aaa172478f",
@@ -101,14 +101,16 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "triangle",
-		"scrollX": 565.5638372036622,
-		"scrollY": 714.5491238982404,
+		"scrollX": 621.4684021546425,
+		"scrollY": 587.347262685005,
 		"zoom": {
-			"value": 0.8500000000000001
+			"value": 1.2000000000000002
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
-		"colorPalette": {}
+		"colorPalette": {},
+		"currentStrokeOptions": null,
+		"previousGridSize": null
 	},
 	"files": {}
 }
