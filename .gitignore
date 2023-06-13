@@ -3,8 +3,8 @@
 /.trash
 *.pdf
 *.docx
-/attachments
+# /attachments
 *.pptx
 *.doc
-/diary
-/.obsidian
+# /diary
+# /.obsidian

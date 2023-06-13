@@ -1,0 +1,132 @@
+{
+  "userAdmonitions": {
+    "cloud": {
+      "type": "cloud",
+      "color": "117, 89, 217",
+      "icon": {
+        "type": "obsidian",
+        "name": "cloud"
+      },
+      "command": false,
+      "title": "cloud",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "sq": {
+      "type": "sq",
+      "color": "117, 89, 217",
+      "icon": {
+        "type": "obsidian",
+        "name": "question-mark-glyph"
+      },
+      "command": false,
+      "title": "sq",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "sc": {
+      "type": "sc",
+      "color": "104, 60, 185",
+      "icon": {
+        "type": "obsidian",
+        "name": "codeblock-glyph"
+      },
+      "command": false,
+      "title": "sc",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "must": {
+      "type": "must",
+      "color": "250, 20, 67",
+      "icon": {
+        "name": "headset",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "must",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "command": {
+      "type": "command",
+      "color": "230, 81, 81",
+      "icon": {
+        "name": "code",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "command",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "answer": {
+      "type": "answer",
+      "color": "22, 192, 51",
+      "icon": {
+        "type": "obsidian",
+        "name": "check-small"
+      },
+      "command": false,
+      "title": "answer",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "chatgpt": {
+      "type": "chatgpt",
+      "color": "149, 150, 150",
+      "icon": {
+        "name": "robot",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "ChatGPT",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "demo": {
+      "type": "demo",
+      "color": "151, 145, 145",
+      "icon": {
+        "type": "obsidian",
+        "name": "experiment"
+      },
+      "command": false,
+      "title": "demo",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": false,
+  "version": "9.3.1",
+  "autoCollapse": true,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": false,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": true
+  },
+  "icons": [
+    "rpg",
+    "octicons"
+  ],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": true,
+  "snippetPath": "custom-admonitions.8ba8b2"
+}

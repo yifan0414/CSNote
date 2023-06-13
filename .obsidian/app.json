@@ -1,0 +1,16 @@
+{
+  "defaultViewMode": "preview",
+  "vimMode": true,
+  "showIndentGuide": false,
+  "focusNewTab": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Tabloid",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "promptDelete": false,
+  "attachmentFolderPath": "attachments",
+  "showUnsupportedFiles": true
+}

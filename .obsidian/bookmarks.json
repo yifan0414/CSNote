@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "ctime": 1683052510832,
+      "path": "NJUICS/code/NEMU-Makefile.md",
+      "subpath": "#源文件"
+    },
+    {
+      "type": "group",
+      "ctime": 1683052583986,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1683052563708,
+          "path": "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2).md",
+          "subpath": "#^71dbc4",
+          "title": "实现更多的指令"
+        }
+      ],
+      "title": "TODO"
+    }
+  ]
+}

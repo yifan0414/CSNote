@@ -1,0 +1,19 @@
+{
+  "accentColor": "",
+  "theme": "moonstone",
+  "baseFontSize": 18,
+  "cssTheme": "Shimmering Focus",
+  "translucency": false,
+  "monospaceFontFamily": "",
+  "nativeMenus": false,
+  "baseFontSizeAction": false,
+  "showViewHeader": true,
+  "enabledCssSnippets": [
+    "supercharged-links-gen",
+    "coffebean-按文件类型显示对应图标",
+    "code1",
+    "code",
+    "custom-admonitions.8ba8b2",
+    "custom_callouts"
+  ]
+}
