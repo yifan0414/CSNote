@@ -57,6 +57,64 @@
       "openFileInMode": "source",
       "fileExistsMode": "Increment the file name",
       "setFileExistsBehavior": false
+    },
+    {
+      "id": "e4460500-651d-49d0-ba29-91fb58060d23",
+      "name": "weather",
+      "type": "Template",
+      "command": true,
+      "templatePath": "Templates/weather.md",
+      "fileNameFormat": {
+        "enabled": false,
+        "format": ""
+      },
+      "folder": {
+        "enabled": false,
+        "folders": [],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
+    },
+    {
+      "id": "f50134c0-a257-4d10-8931-15df6a693a20",
+      "name": "diary",
+      "type": "Template",
+      "command": true,
+      "templatePath": "Templates/diary.md",
+      "fileNameFormat": {
+        "enabled": true,
+        "format": "{{DATE:YYYY-MM-DD}}"
+      },
+      "folder": {
+        "enabled": true,
+        "folders": [
+          "Diary/2023"
+        ],
+        "chooseWhenCreatingNote": false,
+        "createInSameFolderAsActiveFile": false,
+        "chooseFromSubfolders": false
+      },
+      "appendLink": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": true,
+      "openFileInMode": "default",
+      "fileExistsMode": "Increment the file name",
+      "setFileExistsBehavior": false
     }
   ],
   "macros": [],
@@ -64,7 +122,7 @@
   "devMode": false,
   "templateFolderPath": "Templates",
   "announceUpdates": true,
-  "version": "1.0.2",
+  "version": "1.1.0",
   "disableOnlineFeatures": true,
   "ai": {
     "OpenAIApiKey": "",

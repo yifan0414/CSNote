@@ -33,10 +33,6 @@ doi: https://doi.org/10.48550/arXiv.1512.03385
 ## Persistant notes 
 %% begin notes %%
 
-
-
-
-
 %% end notes %%
 
 ---

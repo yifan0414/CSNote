@@ -8,7 +8,7 @@
     ]
   ],
   "trigger_on_file_creation": true,
-  "auto_jump_to_cursor": false,
+  "auto_jump_to_cursor": true,
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "",
@@ -21,6 +21,10 @@
     {
       "folder": "CS61B/notes",
       "template": "Templates/CS61B.md"
+    },
+    {
+      "folder": "Diary/2023",
+      "template": "Templates/diary.md"
     }
   ],
   "syntax_highlighting": true,

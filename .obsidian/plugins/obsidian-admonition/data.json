@@ -4,8 +4,8 @@
       "type": "cloud",
       "color": "117, 89, 217",
       "icon": {
-        "type": "obsidian",
-        "name": "cloud"
+        "name": "lucide-cloud",
+        "type": "obsidian"
       },
       "command": false,
       "title": "cloud",
@@ -43,8 +43,8 @@
       "type": "must",
       "color": "250, 20, 67",
       "icon": {
-        "name": "headset",
-        "type": "font-awesome"
+        "type": "rpg",
+        "name": "x-mark"
       },
       "command": false,
       "title": "must",
@@ -107,10 +107,10 @@
   },
   "syntaxHighlight": false,
   "copyButton": false,
-  "version": "9.3.1",
+  "version": "9.3.2",
   "autoCollapse": true,
   "defaultCollapseType": "open",
-  "injectColor": true,
+  "injectColor": false,
   "parseTitles": false,
   "dropShadow": true,
   "hideEmpty": false,
@@ -127,6 +127,6 @@
   "useFontAwesome": true,
   "rpgDownloadedOnce": false,
   "msDocConverted": false,
-  "useSnippet": true,
+  "useSnippet": false,
   "snippetPath": "custom-admonitions.8ba8b2"
 }
