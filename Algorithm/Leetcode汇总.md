@@ -6,9 +6,6 @@ tag:
 ---
 
 ```dataviewjs
-
-```
-```dataviewjs
 var y = "2023"
 var m = Array(12).fill(0).map(function(v,i){return i});
 var d = [31,29,31,30,31,30,31,31,30,31,30,31]

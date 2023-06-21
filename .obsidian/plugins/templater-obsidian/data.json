@@ -25,6 +25,10 @@
     {
       "folder": "Diary/2023",
       "template": "Templates/diary.md"
+    },
+    {
+      "folder": "Algorithm/acwing",
+      "template": "Templates/Acwing.md"
     }
   ],
   "syntax_highlighting": true,

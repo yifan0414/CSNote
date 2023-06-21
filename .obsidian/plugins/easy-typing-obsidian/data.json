@@ -14,7 +14,7 @@
   "AutoCapital": true,
   "AutoCapitalMode": "typing",
   "PunctuationSpaceMode": "global",
-  "InlineCodeSpaceMode": 0,
+  "InlineCodeSpaceMode": 1,
   "InlineFormulaSpaceMode": 1,
   "InlineLinkSpaceMode": 1,
   "InlineLinkSmartSpace": true,

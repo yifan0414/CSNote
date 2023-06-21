@@ -72,9 +72,21 @@ static inline void parse_args(int argc, char *argv[]) {
 
 ```
 
+```ad-chatgpt
+这段代码是C语言中对命令行参数进行解析的一种常见方式。它使用了`getopt_long()`函数，这个函数是GNU C库提供的用于解析命令行选项参数的函数。这段代码定义了一个`parse_args()`函数，用于解析传入的命令行参数。
+
+在函数内部，首先定义了一个`option`结构体的数组`table`，用于指定期望的命令行参数。在这个例子中，表格指定了`batch`、`log`、`diff`、`port`和`help`这五个选项。然后，使用`getopt_long()`函数来读取命令行参数并进行解析。
+
+`getopt_long()`函数会返回解析到的选项的字符，未定义的选项会返回-1。在这里，使用`while`循环来持续解析选项，直到所有的选项都被解析完毕。
+
+在每次循环中，通过`switch`语句根据返回的选项字符来进行相应的处理。例如，如果返回的选项字符是'b'，则将`batch_mode`设置为`true`。如果返回的选项字符是'p'，则将`difftest_port`的值设置为选项参数（`optarg`）所指定的值。
+
+如果选项参数是无法识别的，或者用户指定了`help`选项，则会输出帮助信息，并退出程序。如果用户输入了多个未指定的参数，则会打印警告信息，并只保存第一个参数。
+```
+
 ## 1.2 参数传递过程
 
-作为程序启动后的第一个函数，`parse_args` 顾名思义是对命令行参数进行解析的函数，其参数是由命令行传递到 `main` 函数中然后传递到 `parse_args`。
+作为程序启动后的**第一个函数**，`parse_args` 顾名思义是对命令行参数进行解析的函数，其参数是由命令行传递到 `main` 函数中然后传递到 `parse_args`。
 
 NEMU 是通过 Makefile 进行构建的，所以所有的命令都在 Makefile 中。
 
@@ -156,7 +168,7 @@ void init_isa() {
 
 # 5 load_img ()
 
-这个函数是用来加载客户端程序，目前还没用到，等 PA2 再说 #todo
+- [x] 这个函数是用来加载客户端程序，目前还没用到，等 PA2 再说 #todo ✅ 2023-06-20
 
 ![Qpxk86](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Qpxk86.png)
 

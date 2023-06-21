@@ -2,7 +2,9 @@
 ```makefile
 NAME = nemu
 
-ISA ?= x86
+ISA ?= x86 
+# ?= 是 Makefile 中的一个操作符，它的意思是，如果这个变量没有被定义过，
+# 那么就赋值为等号后面的内容。如果变量已经定义了，那么就沿用之前的值不变。
 ISAS = $(shell ls src/isa/)
 ifeq ($(filter $(ISAS), $(ISA)), ) # ISA must be valid
 $(error Invalid ISA. Supported: $(ISAS))
@@ -15,6 +17,7 @@ $(error Invalid ENGINE. Supported: $(ENGINES))
 endif
 
 $(info Building $(ISA)-$(NAME)-$(ENGINE))
+# 向命令行中输出信息
 
 INC_DIR += ./include ./src/engine/$(ENGINE)
 BUILD_DIR ?= ./build
@@ -54,6 +57,20 @@ else
 $(error invalid DIFF. Supported: qemu kvm nemu)
 endif
 endif
+
+# 这段代码是用GNU make工具编写的，它是一种自动构建工具，可以解析Makefile文件来自动化软件编译和测试过程。下面是对这段代码的解释：
+
+# 这段代码首先检查是否定义了名为`SHARE`的变量，如果没有定义（`ifndef SHARE`），那么就会执行括号内的代码。
+
+# - 这里首先设置一个默认的`DIFF`值为`kvm`，这是假设没有明确设置`DIFF`的情况下的默认值。
+
+# - 接下来，如果`ISA`不是`x86`，并且`DIFF`被设置为`kvm`，那么将`DIFF`设置为`qemu`，并输出信息"KVM is only supported with ISA=x86, use QEMU instead"，表明只有在`ISA`是`x86`的情况下才支持使用`kvm`，否则建议使用`qemu`。
+
+# - 在之后的代码中，根据`DIFF`的值分别设定`DIFF_REF_PATH`，`DIFF_REF_SO`以及`CFLAGS`的值。这里主要处理了三种情况，即`DIFF`为`qemu`、`kvm`、`nemu`的情况。
+
+# - 最后，如果`DIFF`的值不在`qemu`、`kvm`、`nemu`这三个中，那么将会触发一个错误，错误信息为："invalid DIFF. Supported: qemu kvm nemu"，表示`DIFF`的值不正确，只支持`qemu`、`kvm`、`nemu`这三种。
+
+# 这段代码的主要作用是根据不同的设定来设定不同的编译参数。如果你使用了不支持的选项，那么这段代码就会引发错误。
 
 OBJ_DIR ?= $(BUILD_DIR)/obj-$(ISA)-$(ENGINE)$(SO)
 BINARY ?= $(BUILD_DIR)/$(ISA)-$(NAME)-$(ENGINE)$(SO)

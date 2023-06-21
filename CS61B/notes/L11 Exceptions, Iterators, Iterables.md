@@ -20,7 +20,7 @@ Typically, an `Iterable` should be able to produce any number of valid `Itera
 
 ## 2.1 Exceptions
 
-Most likely you have encountered an exception in your code such as a `NullPointerException` or an `IndexOutOfBoundsException`. Now we will learn about how we can “throw” exceptions ourselves, and also handle thrown exceptions. Here is an example of an exception that we throw:
+翻译：Most likely you have encountered an exception in your code such as a `NullPointerException` or an `IndexOutOfBoundsException`. Now we will learn about how we can “throw” exceptions ourselves, and also handle thrown exceptions. Here is an example of an exception that we throw:
 
 ```java
 throw new RuntimeException("For no reason.");

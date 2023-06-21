@@ -29,33 +29,6 @@ doi:
 > 这是一个测试
 > 
 
-
-> [!note] Notes (1)
-> ### 注释  
-(2023/6/6 上午3:03:17)
-
-[Go to annotation](zotero://open-pdf/library/items/8VBVTWY6?page=1&annotation=9DPR6P6D)“Complexity arises because detection requires the accurate localization of objects, creating two primary challenges. First, numerous candidate object locations (often called “proposals”) must be processed. Second, these candidates provide only rough localization that must be refined to achieve precise localization. Solutions to these problems often compromise speed, accuracy, or simplicity.” ([Girshick, 2015, p. 1](zotero://select/library/items/5C7LSXPE))
-
- [Go to annotation](zotero://open-pdf/library/items/8VBVTWY6?page=2&annotation=837H4LNI) Figure 1. Fast R-CNN architecture.  
-
-$$L_{\mathrm{loc}}\left(t^u, v\right)=\sum_{i \in\{\mathrm{x}, \mathrm{y}, \mathrm{w}, \mathrm{h}\}} \operatorname{smooth}_{L_1}\left(t_i^u-v_i\right),$$
-
-> 这是一个不错的选择
-
- [Go to annotation](zotero://open-pdf/library/items/8VBVTWY6?page=2&annotation=QRYGMGDT)  
-([Girshick, 2015, p. 2](zotero://select/library/items/5C7LSXPE))
-
-[Go to annotation](zotero://open-pdf/library/items/8VBVTWY6?page=2&annotation=K7AH77XD)“First, the last max pooling layer is replaced by a RoI pooling layer that is configured by setting H and W to be compatible with the net’s first fully connected layer (e.g., H = W = 7 for VGG16).” ([Girshick, 2015, p. 2](zotero://select/library/items/5C7LSXPE))
-
-([Girshick, 2015, p. 3](zotero://select/library/items/5C7LSXPE)) 这里是一个不错的选择，但是我并不理解
-
- [Go to annotation](zotero://open-pdf/library/items/8VBVTWY6?page=6&annotation=3ES8ESFA)  
-([Girshick, 2015, p. 6](zotero://select/library/items/5C7LSXPE)) 这里说明了一个好的选择
->> 
-> <small>📝️ (modified: 2023-06-06) [link](zotero://select/library/items/8RBRUXL4) - [web](http://zotero.org/users/9245962/items/8RBRUXL4)</small>
->  
-> ---
-
 ---
 ## Persistant notes 
 %% begin notes %%
