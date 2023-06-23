@@ -43,7 +43,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LinuxTool/gcc&gdb/The note of Makefile.md",
+                "file": "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "88bdb1204853ad63",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md"
+              }
+            }
+          },
+          {
+            "id": "77d8b75f1a5c2b8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -80,7 +103,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "objcopy",
+                "query": "ssss",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -118,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LinuxTool/gcc&gdb/The note of Makefile.md",
+                "file": "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LinuxTool/gcc&gdb/The note of Makefile.md",
+                "file": "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +189,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "LinuxTool/gcc&gdb/The note of Makefile.md",
+                "file": "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -209,7 +232,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LinuxTool/gcc&gdb/The note of Makefile.md"
+                "file": "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md"
               }
             }
           }
@@ -234,12 +257,20 @@
   },
   "active": "c68697574d992cac",
   "lastOpenFiles": [
-    "LinuxTool/gcc&gdb/The cheatsheet of gdb.md",
-    "NJUICS/lecture/L7 链接与加载选讲/L7 Note.md",
-    "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
+    "NJUICS/lecture/README.md",
+    "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
+    "NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md",
     "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
-    "NJUICS/lecture/L7 链接与加载选讲/L7jyy.pdf",
+    "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
+    "NJUICS/lecture/L7 链接与加载选讲/L7 Note.md",
     "NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
+    "attachments/Pasted Image 20230622193215_829.png",
+    "NJUICS/lecture/L7 链接与加载选讲/Drawing 2023-06-22 10.49.46.png",
+    "attachments/Pasted Image 20230622172301_184.png",
+    "NJUICS/lecture/L7 链接与加载选讲/NJU链接.pdf",
+    "NJUICS/lecture/L7 链接与加载选讲/L7jyy.pdf",
+    "LinuxTool/gcc&gdb/The note of Makefile.md",
+    "LinuxTool/gcc&gdb/The cheatsheet of gdb.md",
     "NJUICS/lecture/L7 链接与加载选讲/命令行工具.md",
     "NJUICS/note/PA1/0 init_monitor结构.md",
     "NJUICS/note/PA1/1 engine_start结构.md",
@@ -264,23 +295,15 @@
     "Templates/diary.md",
     "Diary/2023/2023-01-10.md",
     "Diary/2023/2023-01-08.md",
-    "Diary/2023/2023-01-11.md",
-    "Diary/2023/2023-01-16.md",
-    "Diary/2023/2023-01-30.md",
-    "Diary/2023/2023-02-07.md",
     "NJUICS/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf",
     "NJUICS/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf",
     "computer networking/programming assignment/WebServer_programming_lab_only.pdf",
-    "computer networking/programming assignment/Web_Proxy_programming_only.pdf",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/figure1.svg",
     "attachments/Pasted image 20230611205844.png",
     "attachments/Pasted Image 20230121203221_983.png",
     "attachments/Pasted Image 20230121204038_115.png",
     "attachments/Pasted image 20230609025239.png",
     "attachments/Pasted image 20230609024708.png",
-    "attachments/Pasted image 20230609023954.png",
-    "Pasted image 20230609012007.png",
-    "attachments/Pasted image 20230609011914.png",
     "CS61A/canvasNote/IntroToPython.canvas",
     "CMU-CSAPP/未命名.canvas",
     "未命名.canvas"

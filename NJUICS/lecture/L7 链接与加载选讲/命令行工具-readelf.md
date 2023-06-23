@@ -1,4 +1,3 @@
-
 ```ad-chatgpt
 title: 简单介绍下readelf
 `readelf`是一种在Unix和类Unix系统中用来查看ELF（Executable and Linkable Format）文件信息的工具。ELF文件是一种在这些系统中用来表示程序或者库的标准文件格式。`readelf`能够用来查看ELF文件的多种信息，例如它的段头（Section Header）、程序头（Program Header）等等。
@@ -31,5 +30,4 @@ title: 简单介绍下readelf
 在命令行中，通过输入`man readelf`或者`readelf --help`可以查看更多关于`readelf`的详细信息和使用帮助。
 ```
 
-^38c9d0
 
