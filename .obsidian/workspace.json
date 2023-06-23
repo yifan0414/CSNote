@@ -4,77 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "44579b0be196f786",
+        "id": "9d30cd6ad352ad88",
         "type": "tabs",
         "children": [
           {
-            "id": "8ba6cb6ce01e998e",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "4d385aa25bb1ffa1",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "c68697574d992cac",
+            "id": "dbdd2d27750c7b05",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "88bdb1204853ad63",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md"
-              }
-            }
-          },
-          {
-            "id": "77d8b75f1a5c2b8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
+                "file": "Diary/2023-06-24.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -141,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
+                "file": "Diary/2023-06-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
+                "file": "Diary/2023-06-24.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +135,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
+                "file": "Diary/2023-06-24.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -219,7 +165,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "96b89bb3f88f3b65",
@@ -232,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md"
+                "file": "Diary/2023-06-24.md"
               }
             }
           }
@@ -255,49 +201,48 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "c68697574d992cac",
+  "active": "dbdd2d27750c7b05",
   "lastOpenFiles": [
-    "NJUICS/lecture/README.md",
-    "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
-    "NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md",
-    "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
-    "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
+    "Diary/2023/2023-06-19.md",
+    "Diary/2023-06-24.md",
+    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/什么是操作系统.pdf",
+    "NJUICS/note/PA2/更为详细的PA启动过程.md",
     "NJUICS/lecture/L7 链接与加载选讲/L7 Note.md",
+    "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
+    "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
+    "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
+    "NJUICS/lecture/L7 链接与加载选讲/未命名.md",
+    "NJUICS/lecture/L7 链接与加载选讲/未命名.pdf",
+    "Templates/marp/pbcopy",
+    "Templates/marp/academic.css",
+    "Templates/marp",
+    "NJUICS/lecture/L7 链接与加载选讲/NJU链接.pdf",
+    "NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md",
+    "NJUICS/lecture/L7 链接与加载选讲/L7why.pdf",
+    "NJUICS/lecture/L7 链接与加载选讲/L7jyy.pdf",
+    "NJUICS/lecture/README.md",
     "NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
     "attachments/Pasted Image 20230622193215_829.png",
     "NJUICS/lecture/L7 链接与加载选讲/Drawing 2023-06-22 10.49.46.png",
     "attachments/Pasted Image 20230622172301_184.png",
-    "NJUICS/lecture/L7 链接与加载选讲/NJU链接.pdf",
-    "NJUICS/lecture/L7 链接与加载选讲/L7jyy.pdf",
     "LinuxTool/gcc&gdb/The note of Makefile.md",
     "LinuxTool/gcc&gdb/The cheatsheet of gdb.md",
     "NJUICS/lecture/L7 链接与加载选讲/命令行工具.md",
     "NJUICS/note/PA1/0 init_monitor结构.md",
     "NJUICS/note/PA1/1 engine_start结构.md",
-    "NJUICS/lecture/L7 链接与加载选讲/L7why.pdf",
     "readelf.md",
-    "NJUICS/note/PA2/更为详细的PA启动过程.md",
     "00-Archive/NJUICS2016/ch/ch_pa-2-2_load_elf.md",
     "attachments/Pasted image 20230620173411.png",
     "NJUICS/code/NEMU-Makefile.md",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md",
     "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2).md",
     "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC.md",
-    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/什么是操作系统.pdf",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/怎样学操作系统.pdf",
     "NJUOS/Lecture/L2 应用视角的操作系统 (程序的状态机模型；编译优化)/L2 应用视角的操作系统.md",
     "NJUICS/lecture/L7 链接与加载选讲/09.pdf",
     "NJUICS/lecture/L6 汇编&内联汇编选讲x86-64/L6 汇编&内联汇编选讲；x86-64.md",
-    "NJUICS/lecture/L7 链接与加载选讲",
     "NJUOS/M1 打印进程树 (pstree).md",
-    "Diary/2023/2023-06-19.md",
     "Diary/2023/2023-06-18.md",
-    "Templates/diary.md",
-    "Diary/2023/2023-01-10.md",
-    "Diary/2023/2023-01-08.md",
-    "NJUICS/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf",
-    "NJUICS/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf",
-    "computer networking/programming assignment/WebServer_programming_lab_only.pdf",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/figure1.svg",
     "attachments/Pasted image 20230611205844.png",
     "attachments/Pasted Image 20230121203221_983.png",
