@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diary/2023-06-24.md",
+                "file": "NJUICS/note/PA2/AM中的Makefile.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "528dc7bb368e99c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NJUICS/note/PA2/AM中的Makefile.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -49,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ssss",
+                "query": "makefile",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -87,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diary/2023-06-24.md",
+                "file": "NJUICS/note/PA2/AM中的Makefile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diary/2023-06-24.md",
+                "file": "NJUICS/note/PA2/AM中的Makefile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +149,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Diary/2023-06-24.md",
+                "file": "NJUICS/note/PA2/AM中的Makefile.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -165,7 +179,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "96b89bb3f88f3b65",
@@ -178,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diary/2023-06-24.md"
+                "file": "NJUICS/note/PA2/AM中的Makefile.md"
               }
             }
           }
@@ -186,7 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 356.5
+    "width": 394.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,54 +215,56 @@
       "graph:查看关系图谱": false
     }
   },
-  "active": "dbdd2d27750c7b05",
+  "active": "528dc7bb368e99c7",
   "lastOpenFiles": [
-    "Diary/2023/2023-06-19.md",
-    "Diary/2023-06-24.md",
-    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/什么是操作系统.pdf",
     "NJUICS/note/PA2/更为详细的PA启动过程.md",
-    "NJUICS/lecture/L7 链接与加载选讲/L7 Note.md",
-    "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
-    "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
-    "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
-    "NJUICS/lecture/L7 链接与加载选讲/未命名.md",
+    "NJUICS/note/PA2/AM中的Makefile.md",
+    "NJUICS/note/PA2/AM中的Makefile依赖关系.md",
+    "LinuxTool/gcc&gdb/The note of Makefile.md",
+    "NJUICS/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md",
+    "NJUICS/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md",
+    "NJUICS/code/NEMU-Makefile.md",
+    "NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md",
+    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-3 程序, 运行时环境与AM.md",
+    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2).md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-7 如何阅读手册.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-4 基础设施-简易调试器.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC 2020.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC.md",
+    "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-6 Getting Source Code for PAs.md",
+    "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-5 More Exploration.md",
+    "NJUICS/note/PA1/0 init_monitor结构.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-2 开天辟地的篇章.md",
+    "attachments/Pasted Image 20230624121823_932.png",
+    "attachments/Pasted Image 20230624121753_914.png",
+    "NJUICS/note/PA2/未命名.canvas",
+    "NJUICS/note/PA2/指令执行过程.md",
+    "NJUICS/note/PA2/AM中的Makefile~.md",
+    "NJUICS/note/PA2/abstract-machine中的Makefile.md",
+    "Diary/2023-06-24.md",
+    "Templates/diary.md",
+    "Templates/Leetcode.md",
+    "CS61B/README.md",
+    "NJUICS/theory/02 数据的机器级表示与运算/数据表示知识点清单.md",
+    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/什么是操作系统.pdf",
     "NJUICS/lecture/L7 链接与加载选讲/未命名.pdf",
     "Templates/marp/pbcopy",
     "Templates/marp/academic.css",
     "Templates/marp",
     "NJUICS/lecture/L7 链接与加载选讲/NJU链接.pdf",
-    "NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md",
     "NJUICS/lecture/L7 链接与加载选讲/L7why.pdf",
     "NJUICS/lecture/L7 链接与加载选讲/L7jyy.pdf",
-    "NJUICS/lecture/README.md",
     "NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
     "attachments/Pasted Image 20230622193215_829.png",
     "NJUICS/lecture/L7 链接与加载选讲/Drawing 2023-06-22 10.49.46.png",
     "attachments/Pasted Image 20230622172301_184.png",
-    "LinuxTool/gcc&gdb/The note of Makefile.md",
-    "LinuxTool/gcc&gdb/The cheatsheet of gdb.md",
-    "NJUICS/lecture/L7 链接与加载选讲/命令行工具.md",
-    "NJUICS/note/PA1/0 init_monitor结构.md",
-    "NJUICS/note/PA1/1 engine_start结构.md",
-    "readelf.md",
-    "00-Archive/NJUICS2016/ch/ch_pa-2-2_load_elf.md",
     "attachments/Pasted image 20230620173411.png",
-    "NJUICS/code/NEMU-Makefile.md",
-    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md",
-    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2).md",
-    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC.md",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/怎样学操作系统.pdf",
-    "NJUOS/Lecture/L2 应用视角的操作系统 (程序的状态机模型；编译优化)/L2 应用视角的操作系统.md",
     "NJUICS/lecture/L7 链接与加载选讲/09.pdf",
-    "NJUICS/lecture/L6 汇编&内联汇编选讲x86-64/L6 汇编&内联汇编选讲；x86-64.md",
-    "NJUOS/M1 打印进程树 (pstree).md",
-    "Diary/2023/2023-06-18.md",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/figure1.svg",
     "attachments/Pasted image 20230611205844.png",
     "attachments/Pasted Image 20230121203221_983.png",
     "attachments/Pasted Image 20230121204038_115.png",
-    "attachments/Pasted image 20230609025239.png",
-    "attachments/Pasted image 20230609024708.png",
     "CS61A/canvasNote/IntroToPython.canvas",
     "CMU-CSAPP/未命名.canvas",
     "未命名.canvas"

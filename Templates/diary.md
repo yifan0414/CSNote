@@ -41,3 +41,9 @@ due before {{date+14d:YYYY-MM-DD}}
 ```tasks
 done on {{date:YYYY-MM-DD}}
 ```
+
+### Not Done
+```tasks
+not done
+tags include #todo
+```

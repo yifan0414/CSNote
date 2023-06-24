@@ -35,6 +35,16 @@ clean:
 latest:
 ```
 
+```ad-command
+~~~txt
+❯ make ARCH=x86-nemu ALL=dummy run -n
+/bin/echo -e "NAME = dummy\nSRCS = tests/dummy.c\nLIBS += klib\ninclude ${AM_HOME}/Makefile" > Makefile.dummy
+make -s -f Makefile.dummy ARCH=x86-nemu run -nB
+# -@rm -f Makefile.dummy
+echo "" dummy
+~~~
+```
+
 ```ad-chatgpt
 这是一个GNU make的Makefile文件，用于管理和自动化代码的编译、链接等过程。下面是对代码的详细解释：
 
@@ -50,17 +60,20 @@ latest:
 - `$(ALL): %: Makefile.%`
 	- 一个模式规则，定义了如何生成`ALL`中的每一个目标，这些目标依赖于对应的`Makefile.*`文件。
 
+~~~ad-important
 - `Makefile.%: tests/%.c latest`
-	- 定义了如何生成`Makefile.*`文件，这些文件的依赖是对应的`tests/*.c`源文件和`latest`目标。
+	- 这是一个模式规则，其中 `%` 是一个通配符，它可以匹配任何字符串。此规则表明，如果存在一个 `Makefile.xxx` 文件，而且在 `tests/` 目录下也存在一个名为 `xxx.c` 的文件，且 `latest` 是最新的（即没有任何依赖项比它新），那么就可以执行后面的命令。
 
 - `@/bin/echo -e "NAME = $*\nSRCS = $<\nLIBS += klib\ninclude $${AM_HOME}/Makefile" > $@`
-	- 在`Makefile.*`文件中写入一些变量定义和规则，`$*`表示模式中的`%`，`$<`表示依赖列表中的第一个文件。
+	- 这个命令使用 `echo` 生成一个新的 Makefile 文件，文件名是当前目标（`$@`）。在这个新的 Makefile 中，`NAME` 被设置为当前模式的 `%` 部分（`$*`），`SRCS` 被设置为依赖项（`$<`，即 `tests/%.c`），`LIBS` 添加了一个库 `klib`，然后包含了一个位于 `$AM_HOME` 目录下的 Makefile。
 
 - `-@make -s -f $@ ARCH=$(ARCH) $(MAKECMDGOALS)`
 	- 使用生成的`Makefile.*`文件运行另一个make进程，`-s`参数使make进程静默运行，`-f`参数指定使用的Makefile文件，`$(ARCH)`和`$(MAKECMDGOALS)`是传递给新make进程的变量。
+	- 这个命令执行 `make`，用新生成的 Makefile（`$@`）作为文件，并设置 `ARCH` 变量和目标。`-s` 参数使 `make` 在执行时不输出任何信息。`-f` 参数用于指定 Makefile 文件。
 
 - `-@rm -f Makefile.$*`
 	- 删除生成的`Makefile.*`文件。
+~~~
 
 - `image: ; default $(MAKECMDGOALS): all ;`
 	- 定义了`image`和`default`目标，这两个目标没有命令和依赖，目的是取消在`$(AM_HOME)/Makefile.check`文件中定义的同名规则。
@@ -71,10 +84,14 @@ latest:
 - `latest:`
 	- 定义了一个`latest`目标，没有提供命令或依赖，可能在其他地方使用。
 
-这个Makefile文件的主要目的是从`tests/`目录中找出所有的`.c`文件，并为每个`.c`文件生成一个对应的Makefile，然后使用这个Makefile来编译和链接`.c`文件。这样可以方便地对多个`.c`文件进行并行编译，并且每个`.c`文件
-
-都可以有自己的编译和链接选项。
 ```
+
+
+通过上面的分析我们可以知道这个 Makefile 文件的主要目的是从 `tests/` 目录中找出所有的 `.c` 文件，并为每个 `.c` 文件生成一个对应的 Makefile，然后使用这个 Makefile 来编译和链接 `.c` 文件。这样可以方便地对多个 `.c` 文件进行并行编译，并且每个 `.c` 文件都可以有自己的编译和链接选项。因此我们可以把 `-@rm -f Makefile.$*` 注释掉来观察 `Makefile.$*` 的内容，如下图所示：
+
+![EUbr1d](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/EUbr1d.png)
+
+我们可以看到重点在第 4 行包含了 `abstract-machine` 的 Makefile。
 
 为了更清晰的看到 Makefile 执行过程中发生了什么，我们在**child make** 命令后加入 `-nB` 选项
 

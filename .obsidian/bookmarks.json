@@ -19,6 +19,13 @@
         }
       ],
       "title": "TODO"
+    },
+    {
+      "type": "file",
+      "ctime": 1687582442948,
+      "path": "LinuxTool/gcc&gdb/The note of Makefile.md",
+      "subpath": "#^10ad09",
+      "title": "makefile example"
     }
   ]
 }
