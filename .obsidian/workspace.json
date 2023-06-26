@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-4 基础设施-简易调试器.md",
+                "file": "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-4 基础设施-简易调试器.md",
+                "file": "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-4 基础设施-简易调试器.md",
+                "file": "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-4 基础设施-简易调试器.md",
+                "file": "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-4 基础设施-简易调试器.md"
+                "file": "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md"
               }
             }
           }
@@ -186,7 +186,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.5
+    "width": 394.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,33 +205,34 @@
   },
   "active": "ea4da11fd6502a51",
   "lastOpenFiles": [
+    "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
+    "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
+    "NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md",
+    "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md",
+    "NJUICS/lab/Lab2 x86-64 内联汇编/L2 Description.md",
+    "NJUICS/lab/Lab1 大整数运算/L1 Description.md",
+    "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-4 基础设施-简易调试器.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC.md",
+    "NJUICS/lecture/L8 AbstractMachine 选讲/source.css",
     "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
     "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1 Intro.md",
     "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-2 开天辟地的篇章.md",
     "READING/SICP/2.5 Systems with Generic Operations.md",
     "Diary/2023-06-26.md",
     "Diary/2023-06-25.md",
-    "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
-    "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
     "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-5 表达式求值.md",
     "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-6 监视点.md",
     "NJUICS/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md",
     "READING/WeiXin/逆天邪神-火星引力.md",
     "NJUICS/lecture/L8 AbstractMachine 选讲/Abstract Machine 选讲.md",
-    "NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md",
     "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2).md",
     "Algorithm/Acwing 汇总.md",
-    "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
     "Algorithm/Leetcode汇总.md",
-    "NJUICS/lab/Lab1 大整数运算/L1 Description.md",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/怎样学操作系统.pdf",
     "NJUOS/Lecture/L2 应用视角的操作系统 (程序的状态机模型；编译优化)/L2 应用视角的操作系统.md",
     "READING/WeiXin/中国经济2023：基本盘与新动力（独家首发）-王德培.md",
     "READING/SICP/2.4 Multiple Representations for Abstract Data.md",
-    "READING/WeiXin/龙族Ⅴ：悼亡者的归来-江南.md",
-    "NJUICS/lab/Lab1 大整数运算/Notes-Lab1 大整数运算.md",
-    "Algorithm/leetcode/3无重复字符的最长子串.md",
-    "NJUICS/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md",
     "READING/WeiXin",
     "attachments/Pasted Image 20230626131927_597.png",
     "NJUICS/lecture/L8 AbstractMachine 选讲/AbstractMachine 选讲.pdf",
@@ -243,7 +245,6 @@
     "Templates/marp/pbcopy",
     "Templates/marp/academic.css",
     "Templates/marp",
-    "NJUICS/lecture/L7 链接与加载选讲/NJU链接.pdf",
     "NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
     "attachments/Pasted Image 20230622193215_829.png",
     "NJUICS/lecture/L7 链接与加载选讲/Drawing 2023-06-22 10.49.46.png",
