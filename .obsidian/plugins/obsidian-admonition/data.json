@@ -43,8 +43,8 @@
       "type": "must",
       "color": "250, 20, 67",
       "icon": {
-        "type": "obsidian",
-        "name": "lucide-brain-cog"
+        "type": "rpg",
+        "name": "biohazard"
       },
       "command": false,
       "title": "must",
@@ -83,7 +83,7 @@
       "color": "149, 150, 150",
       "icon": {
         "type": "obsidian",
-        "name": "lucide-brain"
+        "name": "lucide-bot"
       },
       "command": false,
       "title": "ChatGPT",
@@ -100,6 +100,19 @@
       },
       "command": false,
       "title": "demo",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "inspiration": {
+      "type": "inspiration",
+      "color": "76, 214, 129",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-sprout"
+      },
+      "command": false,
+      "title": "Inspiration",
       "injectColor": true,
       "noTitle": false,
       "copy": false
@@ -121,10 +134,10 @@
     "advanced": true
   },
   "icons": [
-    "rpg",
-    "octicons"
+    "octicons",
+    "rpg"
   ],
-  "useFontAwesome": true,
+  "useFontAwesome": false,
   "rpgDownloadedOnce": false,
   "msDocConverted": false,
   "useSnippet": false,

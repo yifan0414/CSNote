@@ -12122,8 +12122,8 @@ body.fancy-hr-number .markdown-source-view.mod-cm6 .hr::after {
   border-color: var(--theme-color);
   background-color: var(--background-blockquote);
   border-radius: var(--radius-s);
-  margin-inline-start: 2.5%;
-  margin-inline-end: 2.5%;
+  /* margin-inline-start: 2.5%; */
+  /* margin-inline-end: 2.5%; */
 }
 
 :is(.markdown-preview-view,.markdown-rendered) blockquote p {
@@ -12309,7 +12309,7 @@ body.theme-dark {
 }
 body {
   --code-selection-background: var(--text-selection);
-  --code-selection-color: var(--code-normal);
+  /* --code-selection-color: var(--code-normal); */
   --code-type: var(--code-function);
   --code-qualifier: var(--aqua);
   --code-property: var(--blue);
@@ -23475,7 +23475,7 @@ body.blockquote-style-quotation-mark :is(.markdown-preview-view,.markdown-render
 body.blockquote-style-quotation-mark :is(.markdown-preview-view,.markdown-rendered) blockquote {
   padding-left: 35px;
   padding-right: 10px;
-  margin-inline-start: 1%;
+  /* margin-inline-start: 1%; */
   margin-inline-end: 1%;
   border-left-width: 0px;
 }
@@ -23489,12 +23489,12 @@ body.blockquote-style-quotation-mark :is(.markdown-preview-view,.markdown-render
 
 body.blockquote-style-quotation-mark :is(.markdown-preview-view,.markdown-rendered) blockquote p:first-of-type::before {
   content: '\ee81';
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: boxicons;
   color: var(--text-folder-file-icon);
   position: absolute;
-  top: -0.4em;
-  left: -1.2em;
+  top: -0.2em;
+  left: -1.3em;
 }
 
 /*style settings blockquote quotation marks for cm6 live preview*/

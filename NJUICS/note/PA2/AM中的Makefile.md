@@ -20,7 +20,11 @@ include /home/suyi/ics2020/abstract-machine/Makefile
 
 我们会依次进行下面的步骤
 
-```
+>[!chatgpt] sss
+>Ssss
+
+
+```txt
 1. Building dummy-run [x86-nemu]
 2. Building am-archive [x86-nemu] # 在 am 的递归 makefile 中
 3. Building klib-archive [x86-nemu] # 在 klib 的递归 makefile 中

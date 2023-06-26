@@ -4,7 +4,7 @@
   "blue-topaz-theme@@hr-for-pagination": false,
   "blue-topaz-theme@@transparent-setting-panel": false,
   "blue-topaz-theme@@color-scheme-options": "color-scheme-options-default",
-  "blue-topaz-theme@@background-settings-workplace-background-image": false,
+  "blue-topaz-theme@@background-settings-workplace-background-image": true,
   "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-waves2-light",
   "blue-topaz-theme@@background-settings-workplace-theme-dark": "background-settings-workplace-waves2",
   "blue-topaz-theme@@background-image-settings-switch": false,
@@ -34,7 +34,7 @@
   "Blue-Topaz-Codebox-Highlight@@code-property@@light": "#37352F",
   "Blue-Topaz-Codebox-Highlight@@code-property@@dark": "#D0D0D0",
   "Blue-Topaz-Codebox-Highlight@@code-operator@@dark": "#F5B83D",
-  "blue-topaz-theme@@blockquote-style-change-options": "blockquote-style-default",
+  "blue-topaz-theme@@blockquote-style-change-options": "blockquote-style-quotation-mark",
   "blue-topaz-theme@@background-image-settings-markdown-page-options": "background-image-settings-markdown-page-transparent",
   "blue-topaz-theme@@brightness-4-bg": 0.9,
   "blue-topaz-theme@@saturate-4-bg": 1,
@@ -69,8 +69,8 @@
   "shimmering-focus@@show-file-explorer-navigation": true,
   "shimmering-focus@@annotation-tags-off": false,
   "shimmering-focus@@file-line-width": 900,
-  "shimmering-focus@@uncolored-bold": false,
-  "shimmering-focus@@uncolored-italic": false,
+  "shimmering-focus@@uncolored-bold": true,
+  "shimmering-focus@@uncolored-italic": true,
   "shimmering-focus@@clean-embeds": true,
   "shimmering-focus@@trim-long-filenames": true,
   "shimmering-focus@@overlaying-right-sidebar": false,
@@ -145,5 +145,8 @@
   "blue-topaz-theme@@titlebar-close-button": "default-titlebar",
   "blue-topaz-theme@@prompt-options": "default-prompt-style",
   "blue-topaz-theme@@callout-style-settings": "shade-callout-style",
-  "blue-topaz-theme@@clutter-free-headings": true
+  "blue-topaz-theme@@clutter-free-headings": true,
+  "blue-topaz-theme@@list-indent": 1.5,
+  "blue-topaz-theme@@status-bar-bg@@light": "#C4CDE6",
+  "blue-topaz-theme@@status-bar-text-color@@light": "#525252"
 }

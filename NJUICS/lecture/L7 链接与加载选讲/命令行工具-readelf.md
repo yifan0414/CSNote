@@ -6,12 +6,12 @@ title: 简单介绍下readelf
 
 | 选项             | 含义                                                                     |
 |------------------|--------------------------------------------------------------------------|
-| `-a` 或 `--all`       | 相当于设置了`-h`, `-l`, `-S`, `-s`, `-r`, `-d`, `-V`, `-A`和`-I`等所有选项    |
-| `-h` 或 `--file-header`  | 显示ELF文件的头部信息                                                       |
-| `-l` 或 `--program-headers` 或 `--segments` | 显示程序头（也就是段信息）                                                     |
-| `-S` 或 `--section-headers` 或 `--sections`   | 显示节头信息（每个节的名称、大小、地址等）                                        |
-| `-g` 或 `--section-groups` | 显示节组信息                                                           |
-| `-t` 或 `--section-details` | 显示节的详细信息                                                         |
+| `-a` 或 `--all`| 相当于设置了`-h`, `-l`, `-S`, `-s`, `-r`, `-d`, `-V`, `-A`和`-I`等所有选项    |
+| `-h` 或 `--file-header`| 显示ELF文件的头部信息                                                |
+| `-l` 或 `--program-headers` 或 `--segments` | 显示程序头（也就是段信息）                       |
+| `-S` 或 `--section-headers` 或 `--sections`   | 显示节头信息（每个节的名称、大小、地址等）        |
+| `-g` 或 `--section-groups` | 显示节组信息                                                    |
+| `-t` 或 `--section-details` | 显示节的详细信息                                               |
 | `-e` 或 `--headers`        | 等同于`-h -l -S`                                                         |
 | `-s` 或 `--symbols`        | 显示符号表信息                                                         |
 | `-n` 或 `--notes`          | 显示note段信息                                                         |
