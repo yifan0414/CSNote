@@ -1,0 +1,59 @@
+{
+  "cookies": [
+    {
+      "name": "wr_fp",
+      "value": "4247080354"
+    },
+    {
+      "name": "wr_gid",
+      "value": "240362297"
+    },
+    {
+      "name": "wr_vid",
+      "value": "292160158"
+    },
+    {
+      "name": "wr_skey",
+      "value": "AwbHSzT3"
+    },
+    {
+      "name": "wr_pf",
+      "value": "0"
+    },
+    {
+      "name": "wr_rt",
+      "value": "web@5HoGq6nH0Lo8YXAVy7y_AL"
+    },
+    {
+      "name": "wr_localvid",
+      "value": "3bf32ed08116a029e3bfc8f"
+    },
+    {
+      "name": "wr_name",
+      "value": "SuY"
+    },
+    {
+      "name": "wr_avatar",
+      "value": "https://thirdwx.qlogo.cn/mmopen/vi_32/5x3MyM3TZDoRvU7GfFpKAYvXnGKH5vvsmS6ylL4Mm47Kcea9rYZ2jGicGCJOc9oz3KKzficib4Rb3s6FRe4gwMKibg/132"
+    },
+    {
+      "name": "wr_gender",
+      "value": "0"
+    }
+  ],
+  "noteLocation": "READING/WeiXin",
+  "dailyNotesLocation": "Diary",
+  "insertAfter": "<!--start of weread-->",
+  "insertBefore": "<!--end of weread-->",
+  "dailyNotesFormat": "YYYY-MM-DD",
+  "lastCookieTime": 1687762553162,
+  "isCookieValid": true,
+  "user": "SuY",
+  "userVid": "292160158",
+  "template": "---\nisbn: {{metaData.isbn}}\ncategory: {{metaData.category}}\n---\n### 元数据\n> [!abstract] {{metaData.title}}\n> - ![ {{metaData.title}}|200]({{metaData.cover}})\n> - 书名： {{metaData.title}}\n> - 作者： {{metaData.author}}\n> - 简介： {{metaData.intro}}\n> - 出版时间： {{metaData.publishTime}}\n> - ISBN： {{metaData.isbn}}\n> - 分类： {{metaData.category}}\n> - 出版社： {{metaData.publisher}}\n### 高亮划线\n{% for chapter in chapterHighlights %}\n#### {{chapter.chapterTitle}}{% for highlight in chapter.highlights %}{% if highlight.reviewContent %}{% else %}\n> [!quote] {{highlight.createTime}}\n> {{ highlight.markText |trim }}{% endif %}\n{% endfor %}{% endfor %}\n### 读书笔记\n{% for chapter in bookReview.chapterReviews %}{% if chapter.reviews or chapter.chapterReview %}\n#### {{chapter.chapterTitle}}\n##### 章节评论\n{% if  chapter.chapterReviews %}{% for chapterReview in chapter.chapterReviews %}> [!note] {{chapterReview.createTime}}\n> {{chapterReview.content}}\n\n{% endfor%}{%endif %}\n##### 划线评论\n{% if chapter.reviews %}{%for review in chapter.reviews %}> [!note] {{review.createTime}}\n> **原文：**\n>    {{review.abstract |trim }}\n> **评论：**\n>        {{review.content}}\n\n{% endfor %}{%endif %}{% endif %}{% endfor %}\n### 本书评论\n{% if bookReview.bookReviews %}{% for bookReview in bookReview.bookReviews %}#### 书评 No.{{loop.index}}\n{{bookReview.mdContent}}\n{{bookReview.createTime}}\n{% endfor%}{% endif %}",
+  "noteCountLimit": -1,
+  "subFolderType": "-1",
+  "fileNameType": "BOOK_NAME-AUTHOR",
+  "dailyNotesToggle": true,
+  "notesBlacklist": ""
+}

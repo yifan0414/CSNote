@@ -43,8 +43,8 @@
       "type": "must",
       "color": "250, 20, 67",
       "icon": {
-        "type": "rpg",
-        "name": "x-mark"
+        "type": "obsidian",
+        "name": "lucide-brain-cog"
       },
       "command": false,
       "title": "must",
@@ -56,8 +56,8 @@
       "type": "command",
       "color": "230, 81, 81",
       "icon": {
-        "name": "code",
-        "type": "font-awesome"
+        "type": "obsidian",
+        "name": "lucide-code-2"
       },
       "command": false,
       "title": "command",
@@ -82,8 +82,8 @@
       "type": "chatgpt",
       "color": "149, 150, 150",
       "icon": {
-        "name": "robot",
-        "type": "font-awesome"
+        "type": "obsidian",
+        "name": "lucide-brain"
       },
       "command": false,
       "title": "ChatGPT",

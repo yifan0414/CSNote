@@ -15,12 +15,12 @@
   "tableGroupColumnName": "Group",
   "showResultCount": true,
   "allowHtml": true,
-  "inlineQueryPrefix": "=",
+  "inlineQueryPrefix": "\\=",
   "inlineJsQueryPrefix": "$=",
   "inlineQueriesInCodeblocks": true,
   "enableInlineDataview": true,
   "enableDataviewJs": true,
-  "enableInlineDataviewJs": true,
-  "prettyRenderInlineFields": true,
+  "enableInlineDataviewJs": false,
+  "prettyRenderInlineFields": false,
   "dataviewJsKeyword": "dataviewjs"
 }

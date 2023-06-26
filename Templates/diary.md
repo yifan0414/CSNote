@@ -9,8 +9,12 @@ data = r.exec(data)
 let weather='菏泽'+data[2]+data[1]
 if (data[1]=='晴') weather=weather+'🔆';
 else if (data[1]=='阴') weather=weather+'☁️';
+else if (data[1]=='阴转小雨') weather=weather+'🌧️';
 -%>
 <% weather %>
+
+## Daily Quote
+
 ## Insight
 
 
