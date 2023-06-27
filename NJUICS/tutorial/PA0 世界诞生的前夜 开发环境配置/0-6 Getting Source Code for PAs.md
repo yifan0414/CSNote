@@ -14,7 +14,7 @@ Usually, all works unrelated to system should be performed under the home direct
 >如果你仍然不理解为什么要这样做, 你可以阅读这个页面: [Why is it bad to login as root?](http://askubuntu.com/questions/16178/why-is-it-bad-to-login-as-root) 正确的做法是: 永远使用你的普通账号做那些安分守己的事情(例如写代码), 当你需要进行一些需要root权限才能进行的操作时, 使用`sudo`.
 
 
->[!warning] 在github上添加ssh key
+>[!edit] 在github上添加ssh key
 >在获取框架代码之前, 首先请你在github上添加一个ssh key, 具体操作请STFW.
 
 Now get the source code for PA by the following command:
@@ -380,7 +380,7 @@ To filter out the commit logs corresponding to your manual commit, use `--autho
 
 # Submission
 
->[!info] 如果你参加"一生一芯", 请忽略这里的提交要求
+>[!idea] 如果你参加"一生一芯", 请忽略这里的提交要求
 >具体请参考"一生一芯"讲义中的要求.
 
 Finally, you should submit your project to the submission website (具体提交方式请咨询ICS实验课程老师). To submit PA0, put your report file (ONLY `.pdf` file is accepted) under the project directory.
@@ -398,11 +398,11 @@ ics2022
 
 Double check whether everything is fine. In particular, you should check whether your `.pdf` file can be opened with a PDF reader.
 
->[!info] 如何打开PDF文件?
+>[!idea] 如何打开PDF文件?
 >STFW.
 
 
->[!info] 又报错了
+>[!idea] 又报错了
 >我知道, 那你说该怎么办呢?
 
 
@@ -426,7 +426,7 @@ Finally, enjoy the journey of PAs, and you will find hardware is not mysterious,
 -   <font color="#ff0000">RTFM</font>
 -   <font color="#ff0000">RTFSC</font>
 
->[!warning] 必答题
+>[!edit] 必答题
 >独立解决问题是作为码农的一项十分重要的生存技能. 往届有同学在群里提出如下问题:
 >
 >-   su认证失败是怎么回事?

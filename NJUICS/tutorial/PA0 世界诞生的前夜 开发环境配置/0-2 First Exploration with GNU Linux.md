@@ -4,7 +4,7 @@ Open `terminal`, you will see the following prompt:
 username@hostname:~$
 ```
 
->[!info] 找不到终端?
+>[!idea] 找不到终端?
 >如果你不知道如何打开`terminal`(终端), 你需要在互联网上搜索一些Ubuntu的使用教程来学习.
 
 This prompt shows your username, host name, and the current working directory. The username should be the same as you set during the installation. The current working directory is `~` now. As you switching to another directory, the prompt will change as well. You are going to code under this environment, so try to make friends with terminal!

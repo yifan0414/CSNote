@@ -68,3 +68,16 @@ body:not(.pt-disable-callout-styling) .callout:is([data-callout=idea]) > .callou
   background-color: hsla(var(--color-green-base-hsl), var(--callout-background-alpha));
   border-color: var(--color-green-tint);
 }
+
+body:not(.pt-disable-callout-styling) .callout:is([data-callout=edit]) > .callout-title {
+  color: var(--color-yellow-text);
+  background-color: var(--color-yellow-base);
+  border-color: var(--color-yellow-tint);
+}
+body:not(.pt-disable-callout-styling) .callout:is([data-callout=edit]) > .callout-title .callout-icon .svg-icon {
+  color: var(--color-yellow-text);
+}
+body:not(.pt-disable-callout-styling) .callout:is([data-callout=edit]) > .callout-content {
+  background-color: hsla(var(--color-yellow-base-hsl), var(--callout-background-alpha));
+  border-color: var(--color-yellow-tint);
+}

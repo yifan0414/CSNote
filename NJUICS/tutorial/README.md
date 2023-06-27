@@ -2,7 +2,7 @@
 
 ## 实验前阅读
 
-> [!info] 最新消息(请每天至少关注一次)
+> [!idea] 最新消息(请每天至少关注一次)
 > -   [学术诚信(什么事情能做, 什么不能)](http://integrity.mit.edu/)
 > -   [常见问题(对PA的各种困惑)](https://nju-projectn.github.io/ics-pa-gitbook/ics2022/FAQ.html)
 > -   如何正确求助: [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)和[别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
@@ -17,7 +17,7 @@
 >		-   2021 秋季学期, [王慧妍](https://cocowhy1013.github.io/)老师: [课程资料](http://jyywiki.cn/ICS/2021/)
 >		-   2020 秋季学期, [蒋炎岩](http://ics.nju.edu.cn/~jyy)老师: [课程资料](http://jyywiki.cn/ICS/2020/), [B站录播](https://www.bilibili.com/video/BV1qa4y1j7xk/)
 
-> [!info] 离线阅读实验讲义
+> [!idea] 离线阅读实验讲义
 > 实验讲义页面通过github page发布, 但其网络可能不稳定. 你可以把[这个仓库](https://github.com/NJU-ProjectN/ics-pa-gitbook)克隆到本地, 然后通过浏览器来离线阅读讲义.
 > 
 > 但随着讲义内容的更新, 你将无法自动地阅读到最新版本的内容. 你需要在仓库路径中手动执行 `bash update.sh` 来将最新版本的内容同步到本地. 再次强调, 如果你选择了离线阅读方式, 将由你来负责获取最新的讲义内容.

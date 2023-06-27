@@ -4,8 +4,8 @@
       "type": "cloud",
       "color": "117, 89, 217",
       "icon": {
-        "name": "lucide-cloud",
-        "type": "obsidian"
+        "type": "obsidian",
+        "name": "lucide-message-circle"
       },
       "command": false,
       "title": "cloud",
@@ -18,7 +18,7 @@
       "color": "117, 89, 217",
       "icon": {
         "type": "obsidian",
-        "name": "question-mark-glyph"
+        "name": "lucide-edit"
       },
       "command": false,
       "title": "sq",
@@ -103,6 +103,18 @@
       "injectColor": true,
       "noTitle": false,
       "copy": false
+    },
+    "edit": {
+      "type": "edit",
+      "color": "#7d7d7d",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-edit"
+      },
+      "command": false,
+      "title": "edit",
+      "injectColor": true,
+      "noTitle": false
     }
   },
   "syntaxHighlight": false,

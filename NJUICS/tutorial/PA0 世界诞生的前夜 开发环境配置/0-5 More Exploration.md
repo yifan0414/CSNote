@@ -15,15 +15,15 @@ After installing tools for PAs, it is time to explore GNU/Linux again! [Here](h
 >
 >最重要的是, 当你尝试了上述方法而又无法解决问题的时候, 你需要明确"我刚才只是在尝试走捷径, 看来我需要试试RTFM了".
 
->[!warning] Write a "Hello World" program under GNU/Linux
+>[!edit] Write a "Hello World" program under GNU/Linux
 >   Write a "Hello World" program, compile it, then run it under GNU/Linux. If you do not know what to do, refer to the GNU/Linux tutorial above.
 
->[!warning] Write a Makefile to compile the "Hello World" program
+>[!edit] Write a Makefile to compile the "Hello World" program
 >Write a Makefile to compile the "Hello World" program above. If you do not know what to do, refer to the GNU/Linux tutorial above.
 
 Now, stop here. [Here](http://www.cprogramming.com/gdb.html) is a small tutorial for GDB. GDB is the most common used debugger under GNU/Linux. If you have not used a debugger yet (even in Visual Studio), blame the 程序设计基础 course first, then blame yourself, and finally, <font color="#ff0000">read the tutorial to learn to use GDB.</font>
 
->[!warning] Learn to use GDB
+>[!edit] Learn to use GDB
 >Read the GDB tutorial above and use GDB following the tutorial. In PA1, you will be required to implement a simplified version of GDB. If you have not used GDB, you may have no idea to finish PA1.
 
 >[!must] 嘿! 别偷懒啊!
@@ -156,5 +156,5 @@ The following picture shows a scene working with multiple terminals within singl
 >
 >这套教程有中文版, 去看看吧.
 
->[!info] 克服恐惧, 累积最初的信心
+>[!idea] 克服恐惧, 累积最初的信心
 >事实上, 学习使用Linux是一个低成本, 高成功率的锻炼机会. 只要你愿意STFW和RTFM, 就能解决绝大部分的问题. 相比较而言, 你之后(后续PA中/后续课程中/工作中)遇到的问题只会更加困难. 因此, 独立解决这些简单的小问题, 你就会开始积累最初的信心, 从而也慢慢相信自己有能力解决更难的问题.

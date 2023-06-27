@@ -10,7 +10,7 @@ PA0 is a guide to GNU/Linux development environment configuration. You are guide
 > 
 > >[!sc] 选做编程题
 > 
-> >[!warning] 实验必做内容
+> >[!edit] 实验必做内容
 > 
 > >[!must] 实验进度相关的必读信息
 > 
@@ -36,14 +36,14 @@ It is also OK to use virtual machines, such as VMWare or VirtualBox. If you deci
 >[!must] 必须使用带GUI的64位GNU/Linux
 >如果你打算使用已有的GNU/Linux平台, 请确保它是64位版本. PA的某些特性会依赖于64位平台和图形显示.
 
->[!info] 使用GNU/Linux真机的一些原因
+>[!idea] 使用GNU/Linux真机的一些原因
 > -   真机的稳定性会比虚拟机相对高一些(比如[crash consistency](https://en.wikipedia.org/wiki/Data_consistency)之类的).
 > -   真机的性能会比虚拟机相对高一些(但不影响实验分数), 如果你希望在实验后期获得比较流畅的游戏体验, 真机是一个不错的选择
 
->[!info] 建议体验真机的安装
+>[!idea] 建议体验真机的安装
 >虽然学习计算机专业不是为了修电脑装系统, 但如果你连系统都没装过, 也确实不太好意思跟亲戚说你是学计算机的. 现在机会来了, 如果你以前真的从来没有安装过操作系统, 我们强烈建议你装一下真机, 来了解一下安装操作系统都需要经历些什么.
 
->[!info] Mac用户的不幸
+>[!idea] Mac用户的不幸
 >与ICS同时开设的数字电路实验课程需要安装`Vivado/Quartus`工具来进行实验, 然而非常不幸的是, 这两款工具皆不提供Mac版本. 为了使用它们, 你必须安装Windows或者GNU/Linux操作系统. 那么, 还不如一石二鸟, 现在装个GNU/Linux真机, 就可以解决上述所有问题了.
 >
 >如果你不必修读南京大学的课程, 可以忽略这个问题.
@@ -64,7 +64,7 @@ Please reserve at least one partitions (20GB ~ 50GB) on the disk for Ubuntu to i
 # Installing Ubuntu
 Please search the Internet for "Ubuntu 22.04 安装教程" and follow the tutorial.
 
->[!info] 我可以选择其它Ubuntu的版本吗? 
+>[!idea] 我可以选择其它Ubuntu的版本吗? 
 >可以. 不过不同版本的Ubuntu中的工具版本会稍有差异, 尤其是编译器GCC. 如果你选择了其它版本, 可能会遇到因此带来的少量问题, 不过这不会对实验内容产生大幅的影响.
 
 > [!must] 选择语言时选择English, 不要选择中文
