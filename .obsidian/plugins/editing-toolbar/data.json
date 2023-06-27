@@ -217,6 +217,11 @@
       "id": "editing-toolbar:workplace-fullscreen-focus",
       "name": "workplace-Fullscreen ",
       "icon": "remix-SplitCellsHorizontal"
+    },
+    {
+      "id": "workspace:split-vertical",
+      "name": "左右分屏",
+      "icon": "lucide-separator-vertical"
     }
   ],
   "appendMethod": "workspace",
@@ -224,7 +229,7 @@
   "cMenuVisibility": true,
   "cMenuBottomValue": 4.25,
   "cMenuNumRows": 12,
-  "cMenuWidth": 502,
+  "cMenuWidth": 554,
   "cMenuFontColor": "#ff0000",
   "cMenuBackgroundColor": "#ff4d4f",
   "autohide": false,

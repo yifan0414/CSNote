@@ -1203,6 +1203,7 @@ body:not(.show-urls) .cm-s-obsidian:not(.is-live-preview) .cm-line:not(.cm-activ
 /* <<< Inline Code
 ──────────────────────────────────────────────────── */
 
+
 /* "*:not(pre) > code" targets inline code
 (i.e. code that is not in a pre (= block) ) */
 .is-live-preview code,
@@ -1351,10 +1352,10 @@ body .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
 	background-color: var(--hover-accent);
 }
 
-/* .markdown-reading-view pre:not([class^="language-"]) code { */
-/* 	display: block; /1* prevents bad multiline-indentation *1/ */
-/* 	color: var(--text-normal); */
-/* } */
+.markdown-reading-view pre:not([class^="language-"]) code {
+	display: block; /* prevents bad multiline-indentation */
+	color: var(--text-normal);
+}
 
 /* <<< language labels */
 /* pre[class*="language-"]::after { */

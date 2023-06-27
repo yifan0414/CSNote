@@ -84,7 +84,7 @@ nemu
     └── spike-diff
 ```
 
-为了支持不同的ISA, 框架代码把NEMU分成两部分: ISA无关的基本框架和ISA相关的具体实现. NEMU把ISA相关的代码专门放在`nemu/src/isa/`目录下, 并通过`nemu/include/isa.h`提供ISA相关API的声明. 这样以后, `nemu/src/isa/`之外的其它代码就展示了NEMU的基本框架. 这样做有两点好处:
+为了支持不同的 ISA, 框架代码把 NEMU 分成两部分: ISA 无关的基本框架和 ISA 相关的具体实现. NEMU 把 ISA 相关的代码专门放在 `nemu/src/isa/` 目录下, 并通过 `nemu/include/isa.h` 提供 ISA 相关 API 的声明. 这样以后, `nemu/src/isa/` 之外的其它代码就展示了 NEMU 的基本框架. 这样做有两点好处:
 
 -   有助于我们认识不同ISA的共同点: 无论是哪种ISA的客户计算机, 它们都具有相同的基本框架
 -   体现抽象的思想: 框架代码将ISA之间的差异抽象成API, 基本框架会调用这些API, 从而无需关心ISA的具体细节. 如果你将来打算选择一个不同的ISA来进行二周目的攻略, 你就能明显体会到抽象的好处了: 基本框架的代码完全不用修改!
@@ -114,15 +114,15 @@ NEMU中的配置系统位于`nemu/tools/kconfig`, 它来源于GNU/Linux项目中
 
 在NEMU项目中, "配置描述文件"的文件名都为`Kconfig`, 如`nemu/Kconfig`. 当你键入`make menuconfig`的时候, 背后其实发生了如下事件:
 
--   检查`nemu/tools/kconfig/build/mconf`程序是否存在, 若不存在, 则编译并生成`mconf`
--   检查`nemu/tools/kconfig/build/conf`程序是否存在, 若不存在, 则编译并生成`conf`
--   运行命令`mconf nemu/Kconfig`, 此时`mconf`将会解析`nemu/Kconfig`中的描述, 以菜单树的形式展示各种配置选项, 供开发者进行选择
--   退出菜单时, `mconf`会把开发者选择的结果记录到`nemu/.config`文件中
--   运行命令`conf --syncconfig nemu/Kconfig`, 此时`conf`将会解析`nemu/Kconfig`中的描述, 并读取选择结果`nemu/.config`, 结合两者来生成如下文件:
-    -   可以被包含到C代码中的宏定义(`nemu/include/generated/autoconf.h`), 这些宏的名称都是形如`CONFIG_xxx`的形式
-    -   可以被包含到Makefile中的变量定义(`nemu/include/config/auto.conf`)
-    -   可以被包含到Makefile中的, 和"配置描述文件"相关的依赖规则(`nemu/include/config/auto.conf.cmd`), 为了阅读代码, 我们可以不必关心它
-    -   通过时间戳来维护配置选项变化的目录树`nemu/include/config/`, 它会配合另一个工具`nemu/tools/fixdep`来使用, 用于在更新配置选项后节省不必要的文件编译, 为了阅读代码, 我们可以不必关心它
+-   检查 `nemu/tools/kconfig/build/mconf` 程序是否存在, 若不存在, 则编译并生成 `mconf`
+-   检查 `nemu/tools/kconfig/build/conf` 程序是否存在, 若不存在, 则编译并生成 `conf`
+-   运行命令 `mconf nemu/Kconfig`, 此时 `mconf` 将会解析 `nemu/Kconfig` 中的描述, 以菜单树的形式展示各种配置选项, 供开发者进行选择
+-   退出菜单时, `mconf` 会把开发者选择的结果记录到 `nemu/.config` 文件中
+-   运行命令 `conf --syncconfig nemu/Kconfig`, 此时 `conf` 将会解析 `nemu/Kconfig` 中的描述, 并读取选择结果 `nemu/.config`, 结合两者来生成如下文件:
+    -   可以被包含到 C 代码中的宏定义 (`nemu/include/generated/autoconf.h`), 这些宏的名称都是形如 `CONFIG_xxx` 的形式
+    -   可以被包含到 Makefile 中的变量定义 (`nemu/include/config/auto.conf`)
+    -   可以被包含到 Makefile 中的, 和"配置描述文件"相关的依赖规则 (`nemu/include/config/auto.conf.cmd`), 为了阅读代码, 我们可以不必关心它
+    -   通过时间戳来维护配置选项变化的目录树 `nemu/include/config/`, 它会配合另一个工具 `nemu/tools/fixdep` 来使用, 用于在更新配置选项后节省不必要的文件编译, 为了阅读代码, 我们可以不必关心它
 
 所以, 目前我们只需要关心配置系统生成的如下文件:
 

@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md",
-                "mode": "source",
+                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
+                "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "在宏观",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md",
+                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md",
+                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md",
+                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -165,7 +165,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "96b89bb3f88f3b65",
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md"
+                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md"
               }
             }
           }
@@ -186,8 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392.5,
-    "collapsed": true
+    "width": 334.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,35 +203,37 @@
   },
   "active": "ea4da11fd6502a51",
   "lastOpenFiles": [
-    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
     "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1 Intro.md",
-    "NJUICS/lab/Lab2 x86-64 内联汇编/L2 Description.md",
-    "Diary/2023-06-26.md",
-    "README.md",
-    "NJUICS/note/PA2/AM中的Makefile.md",
-    "NJUICS/lecture/L8 AbstractMachine 选讲/robot.svg",
-    "NJUICS/lecture/L8 AbstractMachine 选讲/未确认 311220.crdownload",
-    "NJUICS/note/PA2/AM中的Makefile依赖关系.md",
-    "Diary/2023-06-24.md",
-    "Diary/2023-06-25.md",
-    "NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md",
-    "NJUICS/lab/Lab1 大整数运算/Notes-Lab1 大整数运算.md",
-    "NJUICS/lab/Lab1 大整数运算/L1 Description.md",
-    "NJUICS/code/vscode configuration.md",
-    "Algorithm/acwing/785快速排序.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
+    "LinuxTool/gcc&gdb/The note of Makefile.md",
+    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2).md",
+    "NJUICS/lecture/L6 汇编&内联汇编选讲x86-64/L6 汇编&内联汇编选讲；x86-64.md",
     "Algorithm/Acwing 汇总.md",
-    "Algorithm/leetcode/3无重复字符的最长子串.md",
     "Algorithm/Leetcode汇总.md",
+    "00-Archive/NJUICS2016/ch/ch_pa-3-3_paging.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC.md",
+    "Diary/2023-06-25.md",
+    "Diary/2023-06-24.md",
+    "Diary/2023-06-28.md",
+    "NJUICS/lab/Lab2 x86-64 内联汇编/L2 Description.md",
+    "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
+    "NJUICS/lecture/L7 链接与加载选讲/NJU链接.pdf",
     "NJUICS/lecture/L8 AbstractMachine 选讲/Abstract Machine 选讲.md",
+    "NJUICS/lecture/L5 数据的机器级表示/log.py.md",
+    "NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md",
+    "NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
+    "NJUICS/lecture/README.md",
     "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
     "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
-    "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
-    "NJUICS/lecture/L7 链接与加载选讲/L7 Note.md",
-    "NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md",
+    "NJUICS/note/PA2/AM中的Makefile依赖关系.md",
     "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-4 基础设施-简易调试器.md",
-    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC.md",
+    "README.md",
+    "NJUICS/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md",
+    "NJUICS/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md",
+    "LittleProject/数码管显示.md",
+    "NJUICS/lecture/L8 AbstractMachine 选讲/robot.svg",
+    "NJUICS/lecture/L8 AbstractMachine 选讲/未确认 311220.crdownload",
     "NJUICS/lecture/L8 AbstractMachine 选讲/source.css",
-    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-2 开天辟地的篇章.md",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/怎样学操作系统.pdf",
     "READING/WeiXin",
     "attachments/Pasted Image 20230626131927_597.png",
@@ -244,8 +245,6 @@
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/什么是操作系统.pdf",
     "NJUICS/lecture/L7 链接与加载选讲/未命名.pdf",
     "Templates/marp/pbcopy",
-    "Templates/marp/academic.css",
-    "NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
     "attachments/Pasted Image 20230622193215_829.png",
     "NJUICS/lecture/L7 链接与加载选讲/Drawing 2023-06-22 10.49.46.png",
     "attachments/Pasted Image 20230622172301_184.png",

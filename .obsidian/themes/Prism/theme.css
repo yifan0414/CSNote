@@ -3084,7 +3084,7 @@ ul > li.task-list-item .task-list-item-checkbox {
 }
 
 body:not(.pt-disable-callout-styling) {
-  --callout-padding: 4px;
+  --callout-padding: 0px;
   --callout-radius: var(--radius-m);
   --callout-background-alpha: 20%;
 }
