@@ -8,19 +8,46 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ea4da11fd6502a51",
+            "id": "f109339ef16619ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
+                "file": "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "16267d52a0b8dd27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/Note/girshick2015fast.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "062e43b95313f1c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -49,7 +76,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[!info]",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -66,7 +93,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -87,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
+                "file": "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
+                "file": "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +163,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
+                "file": "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -178,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md"
+                "file": "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md"
               }
             }
           }
@@ -201,40 +229,42 @@
       "obsidian-weread-plugin:Weread": false
     }
   },
-  "active": "ea4da11fd6502a51",
+  "active": "f8b50e12f701171c",
   "lastOpenFiles": [
+    "Paper/Note/girshick2015fast.md",
+    "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
+    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md",
+    "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-5 精彩纷呈的应用程序.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-5 表达式求值.md",
+    "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-6 Getting Source Code for PAs.md",
+    "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-2 First Exploration with GNU Linux.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC.md",
+    "README.md",
+    "READING/SICP/1.2 Procedures and the Processes They Generate.md",
     "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1 Intro.md",
-    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
-    "LinuxTool/gcc&gdb/The note of Makefile.md",
-    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2).md",
-    "NJUICS/lecture/L6 汇编&内联汇编选讲x86-64/L6 汇编&内联汇编选讲；x86-64.md",
+    "LinuxTool/tmux/1 The art of Tmux.md",
+    "LinuxTool/dotfiles/1 chezmoi 优雅的文档设计.md",
+    "LinuxTool/dotfiles/2 What does chezmoi do.md",
+    "CMU-CSAPP/3 attacklab/The note of Attacklab.md",
+    "CMU-CSAPP/3 attacklab/rop-level2.md",
     "Algorithm/Acwing 汇总.md",
     "Algorithm/Leetcode汇总.md",
-    "00-Archive/NJUICS2016/ch/ch_pa-3-3_paging.md",
-    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC.md",
-    "Diary/2023-06-25.md",
     "Diary/2023-06-24.md",
     "Diary/2023-06-28.md",
-    "NJUICS/lab/Lab2 x86-64 内联汇编/L2 Description.md",
-    "NJUICS/lecture/L7 链接与加载选讲/ELF文件格式.md",
-    "NJUICS/lecture/L7 链接与加载选讲/NJU链接.pdf",
-    "NJUICS/lecture/L8 AbstractMachine 选讲/Abstract Machine 选讲.md",
-    "NJUICS/lecture/L5 数据的机器级表示/log.py.md",
-    "NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md",
-    "NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
-    "NJUICS/lecture/README.md",
-    "NJUICS/lecture/L7 链接与加载选讲/L7 链接与加载选讲.md",
-    "NJUICS/lecture/L7 链接与加载选讲/命令行工具-readelf.md",
-    "NJUICS/note/PA2/AM中的Makefile依赖关系.md",
-    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-4 基础设施-简易调试器.md",
-    "README.md",
-    "NJUICS/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md",
+    "Diary/2023-06-26.md",
+    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 Note.md",
+    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/figure2.svg",
+    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/figure1.svg",
+    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/怎样学操作系统.pdf",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-2 开天辟地的篇章.md",
     "NJUICS/lecture/L3-4 NEMU 框架选讲/04-NEMU 框架选讲 (2) 代码导读.md",
-    "LittleProject/数码管显示.md",
+    "NJUICS/lecture/L3-4 NEMU 框架选讲/03-NEMU 框架选讲 (1) 编译运行.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
+    "NJUICS/lecture/L7 链接与加载选讲/NJU链接.pdf",
+    "NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
     "NJUICS/lecture/L8 AbstractMachine 选讲/robot.svg",
     "NJUICS/lecture/L8 AbstractMachine 选讲/未确认 311220.crdownload",
     "NJUICS/lecture/L8 AbstractMachine 选讲/source.css",
-    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/怎样学操作系统.pdf",
     "READING/WeiXin",
     "attachments/Pasted Image 20230626131927_597.png",
     "NJUICS/lecture/L8 AbstractMachine 选讲/AbstractMachine 选讲.pdf",
@@ -249,8 +279,6 @@
     "NJUICS/lecture/L7 链接与加载选讲/Drawing 2023-06-22 10.49.46.png",
     "attachments/Pasted Image 20230622172301_184.png",
     "attachments/Pasted image 20230620173411.png",
-    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/figure1.svg",
-    "attachments/Pasted image 20230611205844.png",
     "CS61A/canvasNote/IntroToPython.canvas",
     "CMU-CSAPP/未命名.canvas",
     "未命名.canvas"

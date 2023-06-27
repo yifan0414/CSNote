@@ -30,8 +30,8 @@
       "type": "sc",
       "color": "104, 60, 185",
       "icon": {
-        "type": "obsidian",
-        "name": "codeblock-glyph"
+        "type": "octicons",
+        "name": "code"
       },
       "command": false,
       "title": "sc",
@@ -43,8 +43,8 @@
       "type": "must",
       "color": "250, 20, 67",
       "icon": {
-        "type": "rpg",
-        "name": "biohazard"
+        "type": "obsidian",
+        "name": "lucide-siren"
       },
       "command": false,
       "title": "must",
@@ -54,26 +54,13 @@
     },
     "command": {
       "type": "command",
-      "color": "230, 81, 81",
+      "color": "117, 89, 217",
       "icon": {
         "type": "obsidian",
-        "name": "lucide-code-2"
+        "name": "lucide-terminal"
       },
       "command": false,
       "title": "command",
-      "injectColor": true,
-      "noTitle": false,
-      "copy": false
-    },
-    "answer": {
-      "type": "answer",
-      "color": "22, 192, 51",
-      "icon": {
-        "type": "obsidian",
-        "name": "check-small"
-      },
-      "command": false,
-      "title": "answer",
       "injectColor": true,
       "noTitle": false,
       "copy": false
@@ -82,8 +69,8 @@
       "type": "chatgpt",
       "color": "149, 150, 150",
       "icon": {
-        "type": "obsidian",
-        "name": "lucide-bot"
+        "type": "octicons",
+        "name": "dependabot"
       },
       "command": false,
       "title": "ChatGPT",
@@ -104,15 +91,15 @@
       "noTitle": false,
       "copy": false
     },
-    "inspiration": {
-      "type": "inspiration",
-      "color": "76, 214, 129",
+    "idea": {
+      "type": "idea",
+      "color": "79, 151, 7",
       "icon": {
         "type": "obsidian",
-        "name": "lucide-sprout"
+        "name": "lucide-lightbulb"
       },
       "command": false,
-      "title": "Inspiration",
+      "title": "idea",
       "injectColor": true,
       "noTitle": false,
       "copy": false

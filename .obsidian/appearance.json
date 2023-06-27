@@ -4,7 +4,7 @@
   "baseFontSize": 18,
   "cssTheme": "Prism",
   "translucency": false,
-  "monospaceFontFamily": "",
+  "monospaceFontFamily": "Fira Code",
   "nativeMenus": false,
   "baseFontSizeAction": false,
   "showViewHeader": true,
@@ -18,5 +18,6 @@
     "callout",
     "img",
     "image"
-  ]
+  ],
+  "textFontFamily": ""
 }

@@ -1,6 +1,6 @@
 PA0 is a guide to GNU/Linux development environment configuration. You are guided to install a GNU/Linux development environment. All PAs and Labs are done in this environment. <font color="#ff0000">If you are new to GNU/Linux, and you encounter some troubles during the configuration, which are not mentioned in this lecture note (such as "No such file or directory"), that is your fault.</font> Go back to read this lecture note carefully. <font color="#ff0000">Remember, the machine is always right!</font>
 
->[!info] 信息框说明
+>[!idea] 信息框说明
 > 讲义中会出现一些信息框, 根据其颜色和左上角的图标可以得知信息的类别. 例如本信息框就是一些提示相关的内容. 其它类别主要还有
 > >[!abstract] 实验进度相关的提示
 > 
