@@ -2970,9 +2970,9 @@ a.tag:hover {
   padding: 0 var(--size-4-2);
 }
 
-:is(.markdown-source-view.mod-cm6.is-live-preview .cm-content .HyperMD-quote, .markdown-rendered blockquote) {
-  padding: var(--size-4-2) var(--size-4-4);
-}
+/* :is(.markdown-source-view.mod-cm6.is-live-preview .cm-content .HyperMD-quote, .markdown-rendered blockquote) { */
+/*   padding: var(--size-4-2) var(--size-4-4); */
+/* } */
 
 :is(.theme-light.pt-highlight-text-color-lt, .theme-dark.pt-highlight-text-color-dt) span.cm-link {
   color: var(--link-external-color);
@@ -3124,8 +3124,8 @@ body:not(.pt-disable-callout-styling) .callout .callout-title-inner {
   margin: 0 var(--size-4-1);
 }
 body:not(.pt-disable-callout-styling) .callout .callout-icon {
-  align-self: unset;
-  margin: 0 var(--size-4-1) 0 var(--size-4-2);
+  /* align-self: unset; */
+  margin: 7px var(--size-4-1) 0 var(--size-4-2);
   border-radius: var(--radius-m);
 }
 body:not(.pt-disable-callout-styling) .callout .callout-fold {
