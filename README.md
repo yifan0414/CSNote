@@ -4,17 +4,10 @@
 
 This is my study notes. For the best viewing experience, please download Obsidian and the files from this repository, then open the repository in Obsidian.
 
-```c
-#include <stdio.h>
-int main() {
-}
-```
-
-
 >[!note] note
 
 ```ad-note
-ss**ssssss**
+
 ```
 
 

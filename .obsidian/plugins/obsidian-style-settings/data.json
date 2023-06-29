@@ -108,7 +108,7 @@
   "obsidian-prism-theme@@pt-disable-blur": false,
   "obsidian-prism-theme@@pt-disable-callout-styling": false,
   "obsidian-prism-theme@@pt-disable-mark-highlight-styling": false,
-  "obsidian-prism-theme@@color-schemes-lt": "pt-color-scheme-periwinkle-lt",
+  "obsidian-prism-theme@@color-schemes-lt": "pt-color-scheme-swan-lt",
   "obsidian-prism-theme@@pt-font-alt-a": false,
   "obsidian-prism-theme@@pt-font-alt-g": false,
   "obsidian-prism-theme@@pt-font-slashed-zero": false,
@@ -150,7 +150,7 @@
   "blue-topaz-theme@@status-bar-bg@@light": "#C4CDE6",
   "blue-topaz-theme@@status-bar-text-color@@light": "#525252",
   "obsidian-prism-theme@@pt-icons-accent": false,
-  "obsidian-prism-theme@@pt-status-bar-style": "pt-status-bar-position-floating",
+  "obsidian-prism-theme@@pt-status-bar-style": "pt-status-bar-position-hidden",
   "obsidian-prism-theme@@pt-fixed-status-bar-align": "pt-fixed-status-bar-align-center",
   "obsidian-prism-theme@@status-bar-preset-lt": "pt-status-bar-default-lt",
   "obsidian-prism-theme@@status-bar-text-color-lt": "pt-status-bar-text-dark-lt",
@@ -158,5 +158,10 @@
   "obsidian-prism-theme@@pt-file-explorer-folder-icon": true,
   "obsidian-prism-theme@@pt-file-explorer-folder-icon-color": "pt-file-explorer-folder-icon-default",
   "obsidian-prism-theme@@color-scheme-style-lt": "pt-color-scheme-style-two-tone-and-border-lt",
-  "obsidian-prism-theme@@pt-focused-mode": false
+  "obsidian-prism-theme@@pt-focused-mode": false,
+  "obsidian-prism-theme@@text-bold-color-lt": "var(--interactive-accent-text)",
+  "obsidian-prism-theme@@text-italic-color-lt": "var(--interactive-accent-text)",
+  "obsidian-prism-theme@@text-italic-bold-color-lt": "var(--interactive-accent-text)",
+  "obsidian-prism-theme@@graph-fill-color-lt": "var(--color-blue-text)",
+  "obsidian-prism-theme@@graph-line-color-lt": "var(--color-blue-text)"
 }

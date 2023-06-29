@@ -18,7 +18,7 @@
       "color": "117, 89, 217",
       "icon": {
         "type": "obsidian",
-        "name": "lucide-edit"
+        "name": "question-mark-glyph"
       },
       "command": false,
       "title": "sq",
@@ -30,8 +30,8 @@
       "type": "sc",
       "color": "104, 60, 185",
       "icon": {
-        "type": "octicons",
-        "name": "code"
+        "type": "obsidian",
+        "name": "lucide-code-2"
       },
       "command": false,
       "title": "sc",
