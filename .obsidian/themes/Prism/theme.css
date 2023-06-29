@@ -3132,7 +3132,7 @@ body:not(.pt-disable-callout-styling) .callout .callout-fold {
   display: flex;
   align-self: unset;
   margin-top: unset;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 body:not(.pt-disable-callout-styling) .callout .callout-content {
   padding: var(--size-4-5) var(--size-4-3) var(--size-4-1) var(--size-4-3);
