@@ -43,15 +43,15 @@ body:not(.pt-disable-callout-styling) .callout:is([data-callout=note]) > .callou
 
 
 
-body:not(.pt-disable-callout-styling) .callout:is([data-callout=must]) > .callout-title {
+body:not(.pt-disable-callout-styling) .callout:is([data-callout=must], [data-callout=notice]) > .callout-title {
   color: var(--color-red-text);
   background-color: var(--color-red-base);
   border-color: var(--color-red-tint);
 }
-body:not(.pt-disable-callout-styling) .callout:is([data-callout=must]) > .callout-title .callout-icon .svg-icon {
+body:not(.pt-disable-callout-styling) .callout:is([data-callout=must], [data-callout=notice]) > .callout-title .callout-icon .svg-icon {
   color: var(--color-red-text);
 }
-body:not(.pt-disable-callout-styling) .callout:is([data-callout=must]) > .callout-content {
+body:not(.pt-disable-callout-styling) .callout:is([data-callout=must], [data-callout=notice]) > .callout-content {
   background-color: hsla(var(--color-red-base-hsl), var(--callout-background-alpha));
   border-color: var(--color-red-tint);
 }

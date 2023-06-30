@@ -115,6 +115,19 @@
       "title": "edit",
       "injectColor": true,
       "noTitle": false
+    },
+    "notice": {
+      "type": "notice",
+      "color": "#7d7d7d",
+      "icon": {
+        "type": "rpg",
+        "name": "horn-call"
+      },
+      "command": false,
+      "title": "notice",
+      "injectColor": false,
+      "noTitle": false,
+      "copy": false
     }
   },
   "syntaxHighlight": false,

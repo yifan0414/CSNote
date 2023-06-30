@@ -1,4 +1,4 @@
-# QuickLook
+****# QuickLook
 ```txt
 功能：
     (1) 分屏。
@@ -41,7 +41,7 @@
 |                     -                     | Delete the most recently copied buffer of text.                                                                            |
 |                     .                     | Prompt for an index to move the current window.                                                                            |
 |                  0 to 9                   | Select windows 0 to 9.                                                                                                     |
-|                     :                     | Enter the tmux command prompt.                                                                                             |
+|                     **:**                     | **Enter the tmux command prompt.**                                                                                             |
 |                     ;                     | Move to the previously active pane.                                                                                        |
 |                     =                     | Choose which buffer to paste interactively from a list.                                                                    |
 |                     ***?***                     | ***List all key bindings.***                                                                                                     |

@@ -41,7 +41,7 @@
       "新建 Excalidraw 绘图"
     ]
   },
-  "spacing": 8,
+  "spacing": "9",
   "advancedToolbar": {
     "rowHeight": 48,
     "rowCount": 1,

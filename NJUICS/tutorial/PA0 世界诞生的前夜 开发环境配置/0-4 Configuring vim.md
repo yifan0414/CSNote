@@ -14,7 +14,7 @@ You are going to be asked to modify a file using `vim`. For most of you, this i
 
 <font color="#ff0000">PRACTICE IS VERY IMPORTANT. You can not learn anything by only reading the tutorials.</font>
 
->[!danger] 为什么上课不讲GNU/Linux的使用? 
+>[!notice] 为什么上课不讲GNU/Linux的使用? 
 >你可能会想: 这是我第一次接触GNU/Linux, 为什么上课不讲讲怎么用?
 >
 >因为说明书不是用来讲的, 是用来一边看一边操作的; 你也不能光靠道听途说来掌握这些工具, 而是要自己去动手尝试. 你在大学课堂上应该学习到的是那些一脉相承的知识, 然后去思考这些知识背后的原则和思想, 将来有能力将这些原则和思想应用到新的领域.
@@ -131,7 +131,7 @@ After you learn some basic operations in `vim` (such as moving, inserting text
 
 We present the modification with [GNU diff format](http://www.gnu.org/software/diffutils/manual/html_node/Unified-Format.html). If you do not understand the diff format, please search the Internet for more information.
 
->[!danger] 为什么要STFW?
+>[!notice] 为什么要STFW?
 >你或许会想, 我问别人是为了节省我的时间.
 >
 >但现在是互联网时代了, 在网上你能得到各种信息: 比如diff格式这种标准信息, 网上是100%能搜到的; 就包括你遇到的问题, 很大概率也是别人在网上求助过的. 如果对于一个你本来只需要在搜索引擎上输入几个关键字就能找到解决方案的问题, 你都没有付出如此微小的努力, 而是首先想着找人来帮你解决, 占用别人宝贵的时间, 你将是这个时代的<font color="#ff0000">失败者</font>.
@@ -146,7 +146,7 @@ We present the modification with [GNU diff format](http://www.gnu.org/software/
 >
 >如果你没有使用上述方式来STFW, 请不要抱怨找不到解决方案而开始向别人求助, 你应该想, "噢我刚才用的是百度, 接下来我应该试试Google". 关于使用Google, 在学校可以尝试设置IPv6, 或者设置"科学上网", 具体设置方式请STFW.
 
->[!danger] 为什么不要用百度?
+>[!notice] 为什么不要用百度?
 >相信大家都用过百度来搜索一些非技术问题, 而且一般很容易找到答案. 但随着问题技术含量的提高, 百度的搜索结果会变得越来越不靠谱. 坚持使用百度搜索技术问题, 你将很有可能会碰到以下情况之一:
 >
 >-   搜不到相关结果, 你感到挫败
@@ -159,7 +159,7 @@ We present the modification with [GNU diff format](http://www.gnu.org/software/
 
 After you are done, you should save your modification. Exit `vim` and open the `.vimrc` file again, you should see the syntax highlight feature is enabled.
 
->[!danger] 为什么要这么麻烦?
+>[!notice] 为什么要这么麻烦?
 >搞了半天, 你发现其实也就是改动一个字符而已, 为什么不直接说清楚呢?
 >
 >这是为了"入乡随俗": 我们希望你了解怎么用计算机思维精简准确地表达我们想做的事情. diff格式是一种描述文件改动的常用方式. 实际上, 计算机的世界里面有很多约定俗成的"规矩", 当你慢慢去接触去了解这些规矩的时候, 你就会在不知不觉中明白计算机世界是怎么运转的.
@@ -234,7 +234,7 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR> " 用空格�
 
 ^mfs5ov
 
->[!danger] 提高开发效率的编辑器
+>[!notice] 提高开发效率的编辑器
 >程序设计课上你学会了使用Visual Studio, 然后你可能会认为, 程序员就是这样写代码的了. 其实并不是, 程序员会追求那些提高效率的方法. 不是GUI不好, 而是你只是用记事本的操作方式来写代码. 所以你需要改变, 去尝试一些可以帮助你提高开发效率的工具.
 >
 >在GNU/Linux中, 与记事本的操作方式相比, 学会`vim`的基本操作就已经可以大大提高开发效率. 还有各种插件来增强`vim`的功能, 比如可以在代码中变量跳转的`ctags`等等. 你可以花点时间去配置一下`vim`, 具体配置方式请STFW. 总之, "编辑器之神"可不是浪得虚名的. ^zxcif3

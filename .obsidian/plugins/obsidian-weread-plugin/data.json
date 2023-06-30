@@ -14,7 +14,7 @@
     },
     {
       "name": "wr_skey",
-      "value": "czAm8zhS"
+      "value": "PlTEsu42"
     },
     {
       "name": "wr_pf",
@@ -42,11 +42,11 @@
     }
   ],
   "noteLocation": "READING/WeiXin",
-  "dailyNotesLocation": "Diary",
-  "insertAfter": "<!--start of weread-->",
-  "insertBefore": "<!--end of weread-->",
+  "dailyNotesLocation": "Diary/2023",
+  "insertAfter": "<!--start of read-->",
+  "insertBefore": "<!--end of read-->",
   "dailyNotesFormat": "YYYY-MM-DD",
-  "lastCookieTime": 1687882360783,
+  "lastCookieTime": 1688024586416,
   "isCookieValid": true,
   "user": "SuY",
   "userVid": "292160158",

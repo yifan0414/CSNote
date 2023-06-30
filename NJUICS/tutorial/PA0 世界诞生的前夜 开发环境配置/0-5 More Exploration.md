@@ -1,10 +1,10 @@
 # Learning to use basic tools
 After installing tools for PAs, it is time to explore GNU/Linux again! [Here](https://nju-projectn.github.io/ics-pa-gitbook/ics2022/linux.html) is a small tutorial for GNU/Linux written by jyy. If you are new to GNU/Linux, read the tutorial carefully, and most important, try every command mentioned in the tutorial. <font color="#ff0000">Remember, you can not learn anything by only reading the tutorial.</font> Besides, [鸟哥的Linux私房菜](http://linux.vbird.org/linux_basic) is a book suitable for freshman in GNU/Linux. Another book recommended by us is [Harley Hahn's Guide to Unix and Linux](http://www.harley.com/books/sg3.html).
 
->[!danger] RTFM
+>[!notice] RTFM
 >The most important command in GNU/Linux is `man` - the on-line manual pager. This is because `man` can tell you how to use other commands. [Here](https://nju-projectn.github.io/ics-pa-gitbook/ics2022/man.html) is a small tutorial for `man`. Remember, learn to use `man`, learn to use everything. Therefore, if you want to know something about GNU/Linux (such as shell commands, system calls, library functions, device files, configuration files...), [RTFM](http://en.wikipedia.org/wiki/RTFM).
 
->[!danger] 为什么要RTFM?
+>[!notice] 为什么要RTFM?
 >RTFM是STFW的长辈, 在互联网还不是很流行的年代, RTFM是解决问题的一种有效方法. 这是因为手册包含了查找对象的所有信息, 关于查找对象的一切问题都可以在手册中找到答案.
 >
 >你或许会觉得翻阅手册太麻烦了, 所以可能会在百度上随便搜一篇博客来尝试寻找解决方案. 但是, 你需要明确以下几点:
@@ -61,14 +61,14 @@ These three lines of settings make `tmux` "remember" the current working direc
 
 Maximize the terminal windows size, then use `tmux` to create multiple normal-size terminals within single screen. For example, you may edit different files in different directories simultaneously. You can edit them in different terminals, compile them or execute other commands in another terminal, without opening and closing source files back and forth. You can scroll the content in a `tmux` terminal up and down. For how to use `tmux`, please STFW.
 
->[!danger] 又要没完没了地STFW了? 
+>[!notice] 又要没完没了地STFW了? 
 >对.
 >
 >PA除了让大家巩固ICS理论课的知识之外, 还承担着一个重要的任务: 把大家培养成一个素质合格的CSer. 事实上, 一个素质合格的CSer, 需要具备独立搜索解决方案的能力. 这是IT企业和科研机构对程序员的一个基本要求: 你将来的老板很可能会把一个任务直接丢给你, 如果你一遇到困难就找人帮忙, 老板就会认为你没法创造价值.
 >
 >PA在尝试让你重视这些业界和学术界都看重的基本要求, 从而让你锻炼这些能力和心态: 遇到问题了, 第一反应不是赶紧找个大神帮忙搞定, 而是"我来试试STFW和RTFM, 看能不能自己解决". 所以PA不是按部就班的中学实验, 不要抱怨讲义没写清楚导致你走了弯路, 我们就是故意的: 我们会尽量控制路不会太弯, 只要你摆正心态, 你是有能力去独立解决这些问题的. 重要的是, 你得接受现实: 你走的弯路, 都在说明你的能力有待提升, 以后少走弯路的唯一方法, 就是你现在认真把路走下去.
 
->[!danger] 提问的智慧/别像弱智一样提问
+>[!notice] 提问的智慧/别像弱智一样提问
 >一个素质合格的CSer需要具备的另一个标准是, 懂得如何提问.
 >
 >相信大家作为CSer, 被问如何修电脑的事情应该不会少. 比如你有一个文科小伙伴, 他QQ跟你说一句"我的电脑出问题了", 让你帮他修. 然后你得问东问西才了解具体的问题, 接着你让他尝试各种方案, 让他给你尝试的反馈. 如果你有10个这样的小伙伴, 相信你肯定受不了了. 这下你多少能体会到助教的心情了吧.
@@ -95,7 +95,7 @@ Maximize the terminal windows size, then use `tmux` to create multiple normal-
 The following picture shows a scene working with multiple terminals within single screen. Is it COOL?
 ![J0QEhC](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/J0QEhC.jpg)
 
->[!danger] 为什么要使用tmux?
+>[!notice] 为什么要使用tmux?
 >这其实是一个"使用正确的工具做事情"的例子.
 >
 >计算机天生就是为用户服务的, 只要你有任何需求, 你都可以想, "有没有工具能帮我实现?". 我们希望每个终端做不同的事情, 能够在屏幕上一览无余的同时, 还能在终端之间快速切换. 事实上, 通过STFW和RTFM你就可以掌握如何使用一款正确的工具: 你只要在搜索引擎上搜索"Linux 终端 分屏", 就可以搜到`tmux`这个工具; 然后再搜索"tmux 使用教程", 就可以学习到`tmux`的基本使用方法; 在终端中输入`man tmux`, 就可以查阅关于`tmux`的任何疑问.
@@ -110,7 +110,7 @@ The following picture shows a scene working with multiple terminals within singl
 >GUI is not something mysterious. Remember, behind every elements in GUI, there is a story about it. Learn the story, and you will learn a lot. You may say "I just use GUI, and it is unnecessary to learn the story." Yes, you are right. The appearance of GUI is to hide the story for users. But almost everyone uses GUI in the world, and that is why you can not tell the difference between you and them.
 
 # Why GNU/Linux and How to
->[!danger] 为什么要使用Linux?
+>[!notice] 为什么要使用Linux?
 >我们先来看两个例子.
 >
 >**如何比较两个文件是否完全相同?** 这个例子看上去非常简单, 在Linux下使用`diff`命令就可以实现. 如果文件很大, 那不妨用`md5sum`来计算并比较它们的MD5. 对一个Linux用户来说, 键入这些命令只需要花费大约3秒的时间. 但在Windows下, 这件事要做起来就不那么容易了. 也许你下载了一个MD5计算工具, 但你需要点击多少次鼠标才能完成比较呢? 也许你觉得一次好像也省不了多少时间, 然而真相是, <font color="#ff0000">你的开发效率就是这样一点点降低的.</font>
@@ -132,7 +132,7 @@ The following picture shows a scene working with multiple terminals within singl
 >
 >所以, 你应该使用Linux的原因非常简单: <font color="#ff0000">作为一个码农, Windows一直在阻碍你思想, 能力和效率的提升.</font>
 
->[!danger] 如何用好Linux?
+>[!notice] 如何用好Linux?
 >1.  ~~卸载Windows~~, 解放思想, 摆脱Windows对你的阻碍. 与其默认"没办法, 也只能这样了", 你应该去尝试"<font color="#76923c">看看能不能把这件事做好</font>".
 >	-   Linux下也有相应的常用软件, 如Chrome, WPS, 中文输入法, mplayer...
 >	-   没有Windows你也可以活下去
@@ -151,7 +151,7 @@ The following picture shows a scene working with multiple terminals within singl
 > 	   -   心态上, 相信<font color="#0070c0">总有对的工具能帮助我做得更好</font>
 > 	   -   行动上, 愿意付出时间去<font color="#0070c0">找到它, 学它, 用它</font>
 
->[!danger] 强裂推荐: The Missing Semester of Your CS Education
+>[!notice] 强裂推荐: The Missing Semester of Your CS Education
 >[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)是jyy墙裂推荐的Linux工具系列教程, 教你如何使用各种工具来帮助你在计算机上高效地完成各种任务, 让你终身收益.
 >
 >这套教程有中文版, 去看看吧.

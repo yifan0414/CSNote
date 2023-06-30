@@ -190,7 +190,7 @@ Now enter `nemu/` directory. Before the first time to compile NEMU, a configur
 make menuconfig
 ```
 
->[!danger] 编译报错了
+>[!notice] 编译报错了
 >你有可能会遇到这个错误信息, 好吧确实是讲义疏忽了. 那就正好当作一个练习吧: 你需要把缺少的工具装上.
 >
 >至于怎么装, 当然是STFW了.
