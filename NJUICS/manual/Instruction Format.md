@@ -276,16 +276,18 @@ The "Opcode" column gives the complete object code produced for each form of the
 
 - **/digit**:
 	- (digit is between 0 and 7) indicates that the ModR/M byte of the instruction uses only the r/m (register or memory) operand. The reg field contains the digit that provides an extension to the instruction's opcode.
+	- （数字介于 0 和 7 之间）表示指令的 ModR/M 字节仅使用 r/m（寄存器或内存）操作数。reg 字段包含提供指令操作码扩展的数字。
+	- ![Ttng2E|600](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Ttng2E.png)
 - **/r**:
-	- indicates that the ModR/M byte of the instruction contains both a register operand and an r/m operand.
+	- indicates that the ModR/M byte of the instruction contains both a register operand and an r/m operand.（表示指令的 ModR/M 字节同时包含寄存器操作数和 r/m 操作数。）
+	- 寄存器操作数由 reg/opcode 指示，r/m 操作数由 MOD 和 R/M 指示。
 - **cb, cw, cd, cp**:
 	- a 1-byte (cb), 2-byte (cw), 4-byte (cd) or 6-byte (cp) value following the opcode that is used to specify a code offset and possibly a new value for the code segment register.
 - **ib, iw, id**:
-	- a 1-byte (ib), 2-byte (iw), or 4-byte (id) immediate operand to the instruction that follows the opcode, ModR/M bytes or scale-indexing bytes. The opcode determines if the operand is a signed value. All words and doublewords are given with the low-order byte first.
+	- a 1-byte (ib), 2-byte (iw), or 4-byte (id) immediate operand to the instruction that follows the opcode, ModR/M bytes or scale-indexing bytes. The opcode determines if the operand is a signed value. All words and doublewords are given with the low-order byte first.（一个1字节（ib），2字节（iw）或4字节（id）的立即操作数，用于跟随操作码、ModR/M 字节或比例索引字节的指令。操作码确定操作数是否为有符号值。所有单词和双字都以低位字节优先顺序给出。）
 - **+rb, +rw, +rd**:
 	- a register code, from 0 through 7, added to the hexadecimal byte given at the left of the plus sign to form a single opcode byte. The codes are
-
-```txt
+	```txt
       rb         rw         rd
     AL = 0     AX = 0     EAX = 0
     CL = 1     CX = 1     ECX = 1
@@ -295,5 +297,5 @@ The "Opcode" column gives the complete object code produced for each form of the
     CH = 5     BP = 5     EBP = 5
     DH = 6     SI = 6     ESI = 6
     BH = 7     DI = 7     EDI = 7
-```
-
+	```
+	- 直接由 opcode 的低三位给出。

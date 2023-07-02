@@ -27,6 +27,7 @@
 即 `e8 05 00 00 00` 对应汇编指令 `call 100014`，也就是说 `e8` 是 opcode，我们通过查询 x86 手册可以知道后面是 32 位的偏移量（因为这是 32 位模拟器）。
 ```
 
+Opcode    Instruction     Clocks          Description
 E8  cd    CALL rel32       7+m            Call near, displacement relative
                                           to next instruction
 IF rel16 or rel32 type of call
@@ -42,7 +43,7 @@ THEN (* near relative call *)
 FI;
 ```
 
-根据上面的规则，我们可以知道该命令是跳转到 `EIP + rel32` 的地方，也就是 PA 中 `s->seq_pc + rel32` 的地方。
+根据上面的规则，我们可以知道该命令是首先将**返回地址 push 到栈**中，然后跳转到 `EIP + rel32` 的地方，也就是 PA 中 `s->seq_pc + rel32` 的地方。
 
 ## 实践
 
@@ -134,6 +135,7 @@ index 089fb00..8fd682e 100644
  static inline def_EHelper(call) {
    // the target address is calculated at the decode stage
 -  TODO();
++  rtl_push(s, &s->seq_pc);
 +  rtl_j(s, s->seq_pc + id_dest->imm);
    print_asm("call %x", s->jmp_pc);
  }

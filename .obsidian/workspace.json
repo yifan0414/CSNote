@@ -8,13 +8,28 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2cf936194656db7d",
+            "id": "bebb893b48a96c4a",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2) 2020.md",
+                "file": "NJUICS/tutorial/杂项/x86指令系统简介.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "807622395a2d2e95",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NJUICS/manual/Instruction Format.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -28,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/note/PA2/指令实现/Push 指令.md",
+                "file": "NJUICS/note/PA2/指令实现/Sub 指令.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -36,12 +51,12 @@
             }
           },
           {
-            "id": "403aa3b189237a3a",
+            "id": "8ba4a632051c1e79",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/note/PA2/更为详细的PA启动过程.md",
+                "file": "00-Archive/NJUICS2016/ch/ch_pa-1-2_alu.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -49,12 +64,12 @@
             }
           },
           {
-            "id": "b684cd73de0e667a",
+            "id": "cef2fa2cd85c30c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/manual/Instruction Format.md",
+                "file": "Diary/2023/2023-01-16.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -62,25 +77,27 @@
             }
           },
           {
-            "id": "93fbabdd6ae51de3",
+            "id": "b3a5ce96fcf9a525",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-1 最简单的操作系统.md",
+                "file": "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-3 程序，运行时环境与AM 2020.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "f30ef15f4ca23d65",
+            "id": "83df90ee83c8454f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NJUICS/tutorial/杂项/x86指令系统简介.md",
+                "file": "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -88,7 +105,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -117,7 +134,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Grp1",
+                "query": "bear",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -155,13 +172,25 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NJUICS/tutorial/杂项/x86指令系统简介.md",
+                "file": "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5cbfcd350af9b62e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md",
+                "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
@@ -174,18 +203,6 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": false
-              }
-            }
-          },
-          {
-            "id": "5cbfcd350af9b62e",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "NJUICS/tutorial/杂项/x86指令系统简介.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
               }
             }
           },
@@ -203,7 +220,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "NJUICS/tutorial/杂项/x86指令系统简介.md",
+                "file": "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -226,14 +243,14 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.9649251023224925,
+                  "scale": 1.461265027746706,
                   "close": true
                 }
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       },
       {
         "id": "96b89bb3f88f3b65",
@@ -246,7 +263,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NJUICS/tutorial/杂项/x86指令系统简介.md"
+                "file": "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md"
               }
             }
           }
@@ -267,41 +284,43 @@
       "templater-obsidian:Templater": false,
       "graph:查看关系图谱": false,
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "obsidian-weread-plugin:Weread": false,
-      "obsidian-memos:Memos": false
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false
     }
   },
-  "active": "f30ef15f4ca23d65",
+  "active": "83df90ee83c8454f",
   "lastOpenFiles": [
-    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2) 2020.md",
-    "NJUICS/manual/Instruction Format.md",
-    "NJUICS/note/PA2/更为详细的PA启动过程.md",
-    "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-1 最简单的操作系统.md",
-    "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
-    "NJUICS/tutorial/杂项/x86指令系统简介.md",
-    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-4 基础设施(2) 2020.md",
-    "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-3 用户程序和系统调用.md",
+    "Diary/2023/2023-01-16.md",
     "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md",
+    "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-1 最简单的操作系统.md",
+    "NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3 intro.md",
+    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-5 输入输出 2020.md",
     "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-3 程序，运行时环境与AM 2020.md",
-    "NJUICS/note/PA2/指令实现/Push 指令.md",
-    "NJUICS/note/PA2/AM中的Makefile依赖关系.md",
-    "NJUICS/note/PA2/AM中的Makefile.md",
-    "NJUICS/note/PA2/指令实现/PA中的第一个指令 call-rel.md",
-    "未命名.canvas",
-    "NJUICS/manual/Call.md",
-    "NJUICS/manual/i386 2.3 Registers.md",
-    "NJUICS/tutorial/杂项/x86的mov指令执行例子剖析.md",
-    "NJUICS/code/RTL辅助函数.md",
-    "NJUICS/code/一些辅助函数和结构体.md",
-    "NJUICS/tutorial/杂项",
+    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2) 2020.md",
+    "NJUICS/tutorial/杂项/x86指令系统简介.md",
+    "NJUICS/manual/Instruction Format.md",
+    "NJUICS/note/PA2/指令实现/Sub 指令.md",
+    "READING/SICP/1.3 Formulating Abstractions with Higher-Order Procedures.md",
+    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-3 程序, 运行时环境与AM.md",
+    "00-Archive/NJUICS2016/ch/ch_pa-1-2_alu.md",
+    "00-Archive/NJUICS2016/ch/ch_pa-3-2_protect_mode.md",
+    "00-Archive/NJUICS2016/ch/ch_pa-4-1-interrupt.md",
+    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-4 基础设施(2) 2020.md",
+    "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-4 基础设施(2).md",
     "NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2).md",
-    "CS61A/composingprograms/1.3   Defining New Functions.md",
-    "READING/SICP/1.1 The Elements of Programming.md",
+    "NJUICS/note/PA1/2 表达式求值.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-7 如何阅读手册.md",
+    "00-Archive/NJUICS2016/ch/ch_pa-1-3_fpu.md",
+    "NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC 2020.md",
+    "NJUICS/note/PA2/RTL/RTL.md",
+    "NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-5 More Exploration.md",
+    "NJUICS/note/PA2/RTL",
+    "NJUICS/manual/i386 2.3 Registers.md",
+    "NJUICS/note/PA2/指令实现/Push 指令.md",
+    "Templates/LXGWWenKai-Regular.ttf",
+    "未命名.canvas",
+    "NJUICS/tutorial/杂项",
     "NJUICS/note/PA2/指令实现",
-    "Diary/2023/2023-06-29.md",
-    "READING/WeiXin/明朝那些事儿5：增补版-当年明月.md",
-    "READING/WeiXin/毛泽东传：名著珍藏版（插图本）-罗斯·特里尔.md",
-    "READING/WeiXin/逆天邪神-火星引力.md",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/figure2.svg",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/figure1.svg",
     "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/怎样学操作系统.pdf",
@@ -313,11 +332,9 @@
     "READING/WeiXin",
     "attachments/Pasted Image 20230626131927_597.png",
     "NJUICS/lecture/L8 AbstractMachine 选讲/AbstractMachine 选讲.pdf",
-    "NJUICS/lecture/L8 AbstractMachine 选讲",
     "attachments/Pasted Image 20230624121823_932.png",
     "attachments/Pasted Image 20230624121753_914.png",
     "NJUICS/note/PA2/未命名.canvas",
-    "NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/什么是操作系统.pdf",
     "attachments/Pasted Image 20230622193215_829.png",
     "NJUICS/lecture/L7 链接与加载选讲/Drawing 2023-06-22 10.49.46.png",
     "attachments/Pasted Image 20230622172301_184.png",
