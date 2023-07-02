@@ -8,3 +8,4 @@
 *.doc
 # /diary
 # /.obsidian
+.obsidian/workspace.json
