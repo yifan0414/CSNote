@@ -13,5 +13,6 @@
   "promptDelete": true,
   "attachmentFolderPath": "attachments",
   "showUnsupportedFiles": true,
-  "trashOption": "none"
+  "trashOption": "none",
+  "alwaysUpdateLinks": true
 }

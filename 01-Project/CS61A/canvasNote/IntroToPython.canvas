@@ -13,7 +13,7 @@
 		{"type":"text","text":"**Check your assumptions**","id":"61d1b255af732b18","x":-271,"y":1038,"width":279,"height":62},
 		{"type":"text","text":"**Consult others**","id":"3119f15ba06a197d","x":-256,"y":1172,"width":250,"height":60},
 		{"type":"text","text":"# debugging","id":"1ab20226628c7334","x":-687,"y":978,"width":250,"height":60},
-		{"id":"d705ccfc556a2cc8","x":713,"y":591,"width":400,"height":50,"type":"file","file":"CS61A/composingprograms/1.1 Getting Started.md"},
+		{"id":"d705ccfc556a2cc8","x":713,"y":591,"width":400,"height":50,"type":"file","file":"01-Project/CS61A/composingprograms/1.1 Getting Started.md"},
 		{"id":"0e6a7d82d95971b2","x":713,"y":740,"width":647,"height":520,"type":"file","file":"README.md"},
 		{"id":"cdb10455d5b78294","x":1671,"y":671,"width":589,"height":529,"type":"link","url":"https://obsidian-publisher.netlify.app/changelog/sync%20template%20v2.2.0/"},
 		{"type":"text","text":">[!quote] \n> The fundamental equation of computers is:\n> \n> *computer = powerful + stupid*\n> \n> Programming is about a person using their real insight to build something useful, constructed out of these teeny, simple little operations that the computer can do.\n> \n> <p align=\"right\">—Francisco Cai and Nick Parlante, Stanford CS101</p>","id":"92a5aa08ee5d80a0","x":601,"y":140,"width":759,"height":299}

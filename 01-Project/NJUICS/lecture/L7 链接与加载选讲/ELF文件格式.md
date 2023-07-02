@@ -10,7 +10,7 @@
 
 
 
-![[NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md#^group=YqCMhfGkRGIm6RYEzqHvK|150]]
+![[可重定位文件格式视图#^group=YqCMhfGkRGIm6RYEzqHvK|150]]
 
 ## 2 ELF 头
 
