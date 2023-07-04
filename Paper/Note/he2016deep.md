@@ -50,6 +50,6 @@ doi: https://doi.org/10.48550/arXiv.1512.03385
 📝️ 这是一个新的评论
  <small>([page-1](zotero://open-pdf/library/items/ZIVWRUPE?page=1&annotation=ZPTGA5PK)) edited:[[2023-06-06]]</small> ^zptga5pk
 
-
+“First, the last max pooling layer is replaced by a RoI pooling layer that is configured by setting H and W to be compatible with the net’s first fully connected layer (e.g., H = W = 7 for VGG16).” ([Girshick, 2015, p. 2](zotero://select/library/items/5C7LSXPE)) ([pdf](zotero://open-pdf/library/items/8VBVTWY6?page=2&annotation=K7AH77XD))
 
 %% Import Date: 2023-06-06T04:56:58.976+08:00 %%

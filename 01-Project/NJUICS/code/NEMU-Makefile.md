@@ -379,7 +379,7 @@ make -nB \
 >![V9RCj8](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/V9RCj8.png)
 
 
-我们通过正则表达式把最后一行的空格换成换行符号 `:'<,'>s/ /\r \g`
+我们通过正则表达式把最后一行的空格换成换行符号 `:'<,'>s/ /\r /g`
 
 ![MbH1RC](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/MbH1RC.png)
 

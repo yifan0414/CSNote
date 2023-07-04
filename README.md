@@ -97,3 +97,4 @@ f_{n 1} & f_{n 2} & \cdots & f_{n n}
 \end{array}\right)=\boldsymbol{H}\left(\boldsymbol{x}^*\right)
 $$
 ```
+

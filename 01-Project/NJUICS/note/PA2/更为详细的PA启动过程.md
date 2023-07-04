@@ -144,6 +144,11 @@ gcc -std=gnu11 -O2 -MMD -Wall -Werror -ggdb
 make -s -C /home/suyi/ics2020/abstract-machine/am archive
 ```
 
+```ad-sq 
+title: 自己的运行时环境
+通过上面那么多的编译选项生成的 dummy.o 和直接在 Linux 平台上生成的 dummy.o 有什么不同？
+```
+
 ### am 的静态库归档
 
 ```ad-chatgpt
@@ -179,7 +184,6 @@ title: ar rcs 是什么意思
 
 ![gKliRA](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/gKliRA.png)
 
-
 ```ad-chatgpt
 title: 链接的过程
 这是一个链接命令，用于将三个对象文件链接起来生成一个可执行文件：`/home/suyi/ics2020/am-kernels/tests/cpu-tests/build/dummy-x86-nemu.elf`。具体参数含义如下：
@@ -192,5 +196,8 @@ title: 链接的过程
 - `-o` 表示输出的可执行文件路径和名称
 - 最后三个参数是要链接的三个对象文件（.o 文件）、am-x86-nemu 库文件和 klib-x86-nemu 库文件。
 ```
+
+>[!abstract] 目的是什么 #todo
+> 宏观来看，我们通过一系列的编译选项使得 `dummy.c -> dummy.o`，然后打包了两个待链接的静态库，最后通过链接脚本将这三者链接起来生成 `dummy.elf` 文件。那么我们为什么要这样做呢？目前我只知道两个静态库是为了提供更多的功能
 
 后面的过程与 NEMU-Makefile 中类似。在这个过程中，我们可以看到静态库以及 `ELF` 文件的生成过程。

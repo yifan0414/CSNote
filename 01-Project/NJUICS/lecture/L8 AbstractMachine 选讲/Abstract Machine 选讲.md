@@ -172,7 +172,10 @@ void interrupt_handler() {
 
 # 3 演化视角的 AbstractMachine
 
+<br>
 <center>如果我们只是为了<font color=" #ff0000 ">使用</font>计算机系统，而不关心它的<font color=" #ff0000 ">实现</font>？</center>
+<br>
+
 
 ## 3.1 Turing Machine (TRM)
 

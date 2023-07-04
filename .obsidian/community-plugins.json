@@ -12,7 +12,6 @@
   "table-editor-obsidian",
   "obsidian-admonition",
   "obsidian-outliner",
-  "obsidian-zotero-desktop-connector",
   "pseudocode-in-obs",
   "settings-search",
   "obsidian-hover-editor",
@@ -21,5 +20,6 @@
   "quickadd",
   "obsidian-charts",
   "easy-typing-obsidian",
-  "darlal-switcher-plus"
+  "darlal-switcher-plus",
+  "obsidian-zotero-desktop-connector"
 ]
