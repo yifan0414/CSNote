@@ -143,6 +143,7 @@ Figure 17-2.  ModR/M and SIB Byte Formats
 >EDI/DI/BH            111   C7    CF    D7    DF    E7    EF    F7    FF
 >```
 
+
 ### Notes
 
 _disp8 denotes an 8-bit displacement following the ModR/M byte, to be sign-extended and added to the index. disp16 denotes a 16-bit displacement following the ModR/M byte, to be added to the index. Default segment register is SS for the effective addresses containing a BP index, DS for other effective addresses._
@@ -200,6 +201,15 @@ EDI/DI/BH            111   C7    CF    D7    DF    E7    EF    F7    FF
 ### Notes
 
 _\[--\] \[--\] means a SIB follows the ModR/M byte. disp8 denotes an 8-bit displacement following the SIB byte, to be sign-extended and added to the index. disp32 denotes a 32-bit displacement following the ModR/M byte, to be added to the index._
+
+
+```ad-abstract
+
+$$
+SIB.base + SIB.index * SIB.scale + displacement
+$$
+```
+
 
 Table 17-4. 32-Bit Addressing Forms with the SIB Byte
 

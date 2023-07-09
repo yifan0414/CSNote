@@ -14,5 +14,6 @@
   "attachmentFolderPath": "attachments",
   "showUnsupportedFiles": true,
   "trashOption": "none",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showFrontmatter": false
 }

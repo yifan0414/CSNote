@@ -1,4 +1,4 @@
-我们在 [[0 init_monitor结构]] 和 [[NEMU-Makefile]] 中详细分析了 NEMU 的启动过程。但这只是普通的 NEMU 启动过程，解释执行的的是程序内部的默认镜像文件（[[0 init_monitor结构#5 load_img]]），我们下面要分析的是给定镜像文件的 NEMU 启动过程。
+我们在 [[0 init_monitor结构]] 和 [[NEMU-Makefile]] 中详细分析了 NEMU 的启动过程。但这只是普通的 NEMU 启动过程，解释执行的的是程序内部的默认镜像文件（[[0 init_monitor结构#5 load_img]]），我们下面要分析的是给定镜像文件的 NEMU 启动过程。 
 
 我们知道 PA 已经给出了大量的测试程序，在 `am-kernels/tests/cpu-tests/` 中  ([[2-2 RTFSC(2)#运行更多的程序]]），我们可以使用下面的命令执行这些程序：
 
