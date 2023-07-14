@@ -5,10 +5,10 @@
   "focusNewTab": true,
   "pdfExportSettings": {
     "includeName": true,
-    "pageSize": "Tabloid",
+    "pageSize": "A4",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 100
+    "downscalePercent": 71
   },
   "promptDelete": true,
   "attachmentFolderPath": "attachments",

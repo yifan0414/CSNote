@@ -131,3 +131,14 @@ As these examples illustrate, the value of the program counter when performing P
 ![cmdLwh|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/cmdLwh.png)
 
 ![Kemars|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Kemars.png)
+
+### 7 C语言链接过程中，如果标准静态库和自定义静态库函数同名冲突，那么符号解析会链接哪里的函数呢？
+
+```ad-chatgpt
+在链接过程中，如果你的程序中有一个函数名与标准库或自定义库中的函数名相同，链接器（linker）通常会按照库在**链接命令中的顺序**来解决这个冲突。
+
+如果你首先链接了你自定义的库，然后再链接标准库，链接器在搜索符号时首先查找你的自定义库。如果它在你的自定义库中找到了这个符号（函数），它就会停止搜索，并将此符号链接到你的程序中。这就意味着，如果一个函数在自定义库和标准库中都存在，而自定义库被首先链接，那么自定义库中的函数将被使用。
+
+但是，请注意，这种行为可能会因编译器或链接器的具体实现而有所不同，可能也会受到一些链接选项的影响。在实际编程中，最好避免此类冲突，因为这可能会导致程序行为难以预测或理解。如果无法避免这种冲突，你应该查阅你所使用的编译器和链接器的文档，了解它们如何处理此类情况。
+```
+

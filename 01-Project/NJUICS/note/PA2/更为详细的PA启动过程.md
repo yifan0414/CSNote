@@ -8,7 +8,7 @@ make ARCH=$ISA-nemu ALL=xxx run
 
 仅仅如此，我们并不清楚具体的细节，包括但不限于镜像文件的处理等。因此我们使用了分析 NEMU-Makefile 的同样的方法分析了`am-kernels/tests/cpu-tests/`中的 Makefile。
 
-## cpu-test 的 Makefile 分析
+## 1 cpu-test 的 Makefile 分析（x86-nemu）
 
 ```makefile
 .PHONY: all run clean latest $(ALL)
@@ -201,3 +201,139 @@ title: 链接的过程
 > 宏观来看，我们通过一系列的编译选项使得 `dummy.c -> dummy.o`，然后打包了两个待链接的静态库，最后通过链接脚本将这三者链接起来生成 `dummy.elf` 文件。那么我们为什么要这样做呢？目前我只知道两个静态库是为了提供更多的功能
 
 后面的过程与 NEMU-Makefile 中类似。在这个过程中，我们可以看到静态库以及 `ELF` 文件的生成过程。
+
+
+## 2 native 的启动过程
+
+```ad-command
+我们这次使用的是 `make ARCH=native SRC=dummy -B` 命令来观察 native 架构下的启动过程
+```
+
+
+### Building dummy.o
+
+```bash
+gcc
+-std=gnu11
+-O2
+-MMD
+-Wall
+-Werror
+-ggdb
+-I/home/yifansu/ics2020/am-kernels/tests/cpu-tests/include
+-I/home/yifansu/ics2020/abstract-machine/am/include/
+-I/home/yifansu/ics2020/abstract-machine/klib/include/
+-D__ISA__=\"native\"   //注意这里不同
+-D__ISA_NATIVE__
+-D__ARCH__=native
+-D__ARCH_NATIVE
+-D__PLATFORM__=
+-D__PLATFORM_
+-DISA_H=\"native.h\"
+-DARCH_H=\"arch/native.h\"
+-fno-asynchronous-unwind-tables
+-fno-builtin
+-fno-stack-protector
+-Wno-main
+-fpie
+-c
+-o
+/home/yifansu/ics2020/am-kernels/tests/cpu-tests/build/native/tests/dummy.o
+/home/yifansu/ics2020/am-kernels/tests/cpu-tests/tests/dummy.c
+```
+
+### am 的静态库归档
+
+```makefile
+### Rule (recursive make): build a dependent library (am, klib, ...)
+$(LIBS): %:
+	@$(MAKE) -s -C $(AM_HOME)/$* archive
+
+archive: $(ARCHIVE)
+
+### Rule (archive): objects (`*.o`) -> `ARCHIVE.a` (ar)
+$(ARCHIVE): $(OBJS)
+	@echo + AR "->" $(shell realpath $@ --relative-to .)
+	@ar rcs $(ARCHIVE) $(OBJS)
+
+AM_SRCS := native/trm.c \
+           native/ioe.c \
+           native/cte.c \
+           native/trap.S \
+           native/vme.c \
+           native/mpe.c \
+           native/platform.c \
+           native/native-input.c \
+           native/native-timer.c \
+           native/native-gpu.c \
+           native/native-audio.c \
+
+CFLAGS  += -fpie
+ASFLAGS += -fpie -pie
+```
+
+```bash
+ar
+rcs
+/home/yifansu/ics2020/abstract-machine/am/build/am-native.a
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/trm.o
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/ioe.o
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/cte.o
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/trap.o
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/vme.o
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/mpe.o
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/platform.o
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/native-input.o
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/native-timer.o
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/native-gpu.o
+/home/yifansu/ics2020/abstract-machine/am/build/native/src/native/native-audio.o
+```
+
+
+### klib 的静态库归档
+
+![AYyum3](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/AYyum3.png)
+
+
+### 链接&运行
+
+```bash
+g++
+-pie
+-o
+/home/yifansu/ics2020/am-kernels/tests/cpu-tests/build/string-native
+-Wl,--whole-archive
+/home/yifansu/ics2020/am-kernels/tests/cpu-tests/build/native/tests/string.o
+/home/yifansu/ics2020/abstract-machine/am/build/am-native.a
+/home/yifansu/ics2020/abstract-machine/klib/build/klib-native.a
+-Wl,-no-whole-archive
+-lSDL2
+
+/home/yifansu/ics2020/am-kernels/tests/cpu-tests/build/add-native ## 绝对路径直接执行
+```
+
+```ad-chatgpt
+这个命令行语句使用的是g++编译器来链接生成一个可执行文件。具体来说，这个命令做了以下几件事情：
+
+1. `g++`：这是C++的编译器，但在这里它被用来做链接操作。
+
+2. `-pie`：这是一个编译器选项，它会生成一个位置无关的可执行文件（Position-Independent Executable），这样的文件可以被加载到内存的任何位置。
+
+3. `-o /home/suyi/ics2020/am-kernels/tests/cpu-tests/build/string-native`：这个选项指定了输出的文件名和位置。
+
+4. `-Wl,--whole-archive /home/suyi/ics2020/am-kernels/tests/cpu-tests/build/native/tests/string.o /home/suyi/ics2020/abstract-machine/am/build/am-native.a /home/suyi/ics2020/abstract-machine/klib/build/klib-native.a -Wl,-no-whole-archive`：这个选项用来链接对象文件和库。`-Wl,--whole-archive` 选项告诉链接器将之后的静态库文件中的所有对象文件都链接进来，直到遇到 `-Wl,-no-whole-archive` 为止。**即使这些对象文件中的某些符号没有被使用到。**
+
+5. `-lSDL2`：这是一个库链接选项，用来链接名为 `SDL2` 的库。
+
+所以这个命令的整体目标是链接指定的对象文件和库，生成一个位置无关的可执行文件。**特别注意的是📢，这里使用的是g++链接命令，与ld链接不同的是，其可以链接c++标准库。而ld是更底层的命令，可以通过链接脚本处理更为复杂的链接情况或者自制自己想要的链接文件**
+```
+
+
+```ad-chatgpt
+title: 其中 klib-native.a 中实现了自己库函数，那么这个编译命令是调用自己的库函数还是调用glibc的库函数
+这个链接命令会优先链接你的`klib-native.a`中的函数，只有当需要的函数在你的库中找不到时，才会去链接glibc中的函数。
+
+原因如下：链接器在解析符号时，会按照它们在命令行中出现的顺序进行。当链接器遇到一个未解析的符号时，它会查找在此符号之后出现的库中是否有相应的符号。如果在后面的库中找到了这个符号，链接器就会使用这个符号的定义。如果在后面的库中找不到这个符号，链接器就会报错。
+
+在你的命令中，`-Wl,--whole-archive`告诉链接器，`am-native.a`和`klib-native.a`中的所有对象文件都会被链接到最终的可执行文件中。因此，你的库函数会被优先链接，只有当你的库中找不到所需的函数时，链接器才会去链接glibc中的函数。
+```
