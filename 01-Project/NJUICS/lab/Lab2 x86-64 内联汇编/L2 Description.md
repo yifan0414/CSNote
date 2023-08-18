@@ -69,16 +69,14 @@ void longjmp(jmp_buf env, int val);
 >
 >Following a successful `longjmp()`, execution continues as if `setjmp()` had returned for a second time. This "fake" return can be distinguished from a true `setjmp()` call because the "fake" return returns the value provided in `val`. If the programmer mistakenly passes the value `0` in `val`, the "fake" return will instead return `1`.
 
-```ad-chatgpt
-title: 翻译
-`setjmp` / `longjmp` 函数用于执行“非本地跳转”：从一个函数传输执行到另一个函数中的预定位置。setjmp() 函数动态地建立将来控制将要转移到的目标，而 longjmp() 执行执行的转移。
-
-`setjmp()` 函数将调用环境的各种信息（通常是栈指针、指令指针，可能还包括其他寄存器的值和信号掩码）保存在缓冲区 `env` 中，以供 `longjmp()` 后续使用。在这种情况下，`setjmp()` 返回 `0`。
-
-`longjmp()`函数使用保存在`env`中的信息，将控制权转移到调用`setjmp()`时的位置，并将堆栈恢复（"倒回"）到`setjmp()`调用时的状态。此外，根据实现方式（请参阅NOTES），一些其他寄存器和进程信号屏蔽可能会被恢复为其在`setjmp()`调用时的状态。
-
-在成功的`longjmp()`之后，执行将继续，就像`setjmp()`第二次返回一样。这个“伪”返回可以通过提供的`val`值来区分于真正的`setjmp()`调用。如果程序员错误地传递了值为0的`val`，那么“伪”返回将会返回1。
-```
+> [!chatgpt] 翻译
+> `setjmp` / `longjmp` 函数用于执行“非本地跳转”：从一个函数传输执行到另一个函数中的预定位置。setjmp() 函数动态地建立将来控制将要转移到的目标，而 longjmp() 执行执行的转移。
+> 
+> `setjmp()` 函数将调用环境的各种信息（通常是栈指针、指令指针，可能还包括其他寄存器的值和信号掩码）保存在缓冲区 `env` 中，以供 `longjmp()` 后续使用。在这种情况下，`setjmp()` 返回 `0`。
+> 
+> `longjmp()`函数使用保存在`env`中的信息，将控制权转移到调用`setjmp()`时的位置，并将堆栈恢复（"倒回"）到`setjmp()`调用时的状态。此外，根据实现方式（请参阅NOTES），一些其他寄存器和进程信号屏蔽可能会被恢复为其在`setjmp()`调用时的状态。
+> 
+> 在成功的`longjmp()`之后，执行将继续，就像`setjmp()`第二次返回一样。这个“伪”返回可以通过提供的`val`值来区分于真正的`setjmp()`调用。如果程序员错误地传递了值为0的`val`，那么“伪”返回将会返回1。
 
 简单来说，`setjmp` 会在调用时对当前程序的运行状态做一个**轻量级快照** (保存在 `env` 参数中)，并返回 `0`。只要 `setjmp` 时调用的函数不返回，程序在运行过程中可以随时调用 `longjmp` 跳转到 `setjmp` 快照时的程序状态，无论中间间隔了多少函数调用，并且给 `setjmp` 一个特定的返回值。我们可以通过下面的小例子理解 `setjmp` / `longjmp` 的行为：
 

@@ -51,9 +51,8 @@ typedef struct {
 
 ### 2.2 readelf 读
 
-```ad-command
-title: readelf -h xxx.o
-```
+> [!command] readelf -h xxx.o
+> 
 
 ```txt
 ELF Header:
@@ -110,9 +109,8 @@ typedef struct {
 
 ## 3.2 readelf 读
 
-```ad-command
-title: readelf -s xxx.o
-```
+> [!command] readelf -s xxx.o
+> 
 
 ```txt
 Symbol table '.symtab' contains 15 entries:

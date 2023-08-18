@@ -66,13 +66,11 @@
 
 值得注意的是，像线程操作这样的功能并不是标准的 C 语言运行库的一部分，但是 glibc 和 MSVCRT 都包含了线程操作的库函数。比如 glibc 有一个可选的 pthread 库中的 `pthread_create()` 函数可以用来创建线程；而 MSVCRT 中可以使用 `_beginthread()` 函数来创建线程。所以 glibc 和 MSVCRT 事实上是标准 C 语言运行库的**超集**，它们各自对 C 标准库进行了一些扩展。
 
-```ad-must
-title: glibc 和 C 标准库的关系
-
-glibc 是 C 运行库，其提供了 C 标准规定的所有库函数，同时也提供了 C 语言的运行时环境中的一些基础服务，比如程序启动时的初始化工作、调用main函数等等。
-
-类比来说，C 标准库是一个接口，glibc 是 Linux 下的一个实例，并添加了自己的函数。
-```
+> [!must] glibc 和 C 标准库的关系
+> 
+> glibc 是 C 运行库，其提供了 C 标准规定的所有库函数，同时也提供了 C 语言的运行时环境中的一些基础服务，比如程序启动时的初始化工作、调用main函数等等。
+> 
+> 类比来说，C 标准库是一个接口，glibc 是 Linux 下的一个实例，并添加了自己的函数。
 
 gibc 的发布版本主要由两部分组成，一部分是头文件，比如 `stdio.h`、`stdlib.h` 等，它们往往位于 `usr/include`：另外一部分则是库的二进制文件部分。二进制部分主要的就是 C 语言标准库，它有静态和动态两个版本。动态的标准库我们及在本书的前面章节中碰到过了，它位于 `lib/libc.so.6`；而静态标准库位于 `usr/lib/libc.a`。事实上 glibc 除了 C 标准库之外，还有几个辅助程序运行的**运行库**，这几个文件可以称得上是真正的“运行库”。它们就是 `/usr/lib/crt1.o`、`usr/lib/cti.o` 和 `usr/lib/crtn.o`。是不是对这几个文件还有点印象呢？我们在第 2 章讲到静态库链接的时候已经碰到过它们了，虽然它们都很小，但这几个文件都是程序运行的最关键的文件。
 
@@ -128,70 +126,66 @@ Disassembly of section .fini:
    4:   c3                      retq
 ```
 
-```ad-idea
-title: 为什么gcc输出的文件路径是 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/ 而不是 /usr/lib/x86_64-linux-gnu/
+> [!idea] 为什么gcc输出的文件路径是 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/ 而不是 /usr/lib/x86_64-linux-gnu/
+> 
+> 在Linux中，`/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/` 实际上是一个相对路径，`..` 表示父目录，`../../../` 就表示向上回溯三级目录。这个路径最终会被解析成 `/usr/lib/x86_64-linux-gnu/`。使用这种相对路径的方式可以让路径在文件系统结构发生改变时保持正确。
+> 
+> 那么，为什么GCC会输出这样看起来比较复杂的路径呢？这是因为在链接库文件时，GCC需要考虑库文件可能存放在不同的位置，包括系统目录、GCC自身的库目录以及用户指定的目录等。而这些目录之间的相对位置可能会因系统配置或GCC版本不同而有所差异。
+> 
+> 例如，在这个路径中，`/usr/lib/gcc/x86_64-linux-gnu/9/` 可能是GCC自身的库文件目录，`/usr/lib/x86_64-linux-gnu/` 是系统的库文件目录。当GCC需要从系统的库文件目录加载库时，它会通过**相对路径**来引用，而不是硬编码绝对路径。这样可以在GCC库文件目录和系统库文件目录相对位置改变时仍能正确找到库文件。
+> 
+> 总的来说，GCC使用这种看起来复杂的路径是为了在文件系统结构变化时能够正确地找到库文件。
 
-在Linux中，`/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/` 实际上是一个相对路径，`..` 表示父目录，`../../../` 就表示向上回溯三级目录。这个路径最终会被解析成 `/usr/lib/x86_64-linux-gnu/`。使用这种相对路径的方式可以让路径在文件系统结构发生改变时保持正确。
-
-那么，为什么GCC会输出这样看起来比较复杂的路径呢？这是因为在链接库文件时，GCC需要考虑库文件可能存放在不同的位置，包括系统目录、GCC自身的库目录以及用户指定的目录等。而这些目录之间的相对位置可能会因系统配置或GCC版本不同而有所差异。
-
-例如，在这个路径中，`/usr/lib/gcc/x86_64-linux-gnu/9/` 可能是GCC自身的库文件目录，`/usr/lib/x86_64-linux-gnu/` 是系统的库文件目录。当GCC需要从系统的库文件目录加载库时，它会通过**相对路径**来引用，而不是硬编码绝对路径。这样可以在GCC库文件目录和系统库文件目录相对位置改变时仍能正确找到库文件。
-
-总的来说，GCC使用这种看起来复杂的路径是为了在文件系统结构变化时能够正确地找到库文件。
-```
-
-```ad-sc
-title: 解释下 crti.o 的反汇编代码
-
-在你提供的反汇编代码中，包含了两个部分：`.init`和`.fini`。这两部分分别代表了初始化和结束，它们是由编译器自动生成的，并插入到生成的对象文件（在这个例子中是`crti.o`）中。`crti.o`（C Runtime Initialization Object）是C运行时库的一部分，它包含了程序开始和结束时需要运行的代码。
-
-让我们来一部分一部分地看：
-
-**.init段**
-
-~~~asm
-0000000000000000 <_init>:
-   0:   f3 0f 1e fa             endbr64
-   4:   48 83 ec 08             sub    $0x8,%rsp
-   8:   48 8b 05 00 00 00 00    mov    0x0(%rip),%rax        # f <_init+0xf>
-                        b: R_X86_64_REX_GOTPCRELX       __gmon_start__-0x4
-   f:   48 85 c0                test   %rax,%rax
-  12:   74 02                   je     16 <_init+0x16>
-  14:   ff d0                   callq  *%rax
-~~~
-
-这部分代码在程序开始执行时运行，具体步骤如下：
-
-1. `endbr64`：这是Intel Control-flow Enforcement Technology (CET)的一部分，用于防止不合法的间接跳转，提高程序的安全性。
-
-2. `sub $0x8,%rsp`：从栈指针`%rsp`中减去8，即在栈上分配8字节的空间。这是为了保持栈的对齐。
-
-3. `mov 0x0(%rip),%rax`：这是一个位置无关的代码（Position-Independent Code，PIC），它从`__gmon_start__`符号处读取一个地址并存放到寄存器`%rax`中。`__gmon_start__`是GNU gprof工具用来启动分析的函数。
-
-4. `test %rax,%rax`：测试`%rax`的值是否为0。
-
-5. `je 16 <_init+0x16>`：如果`%rax`的值为0（即`__gmon_start__`未定义或为空），则跳转到地址16处，跳过下面的`callq`指令。
-
-6. `callq *%rax`：调用`%rax`寄存器中的地址指向的函数，即调用`__gmon_start__`。
-
-**.fini段**
-
-~~~asm
-0000000000000000 <_fini>:
-   0:   f3 0f 1e fa             endbr64
-   4:   48 83 ec 08             sub    $0x8,%rsp
-~~~
-
-这部分代码在程序结束时运行。这段代码相对简单：
-
-1. `endbr64`：同上。
-
-2. `sub $0x8,%rsp`：同上。
-
-以上就是你给出的反汇编
-
-代码的解释。总的来说，这部分代码是为C程序的启动和结束提供支持的，包括调用`__gmon_start__`以启动GNU gprof分析（如果有的话）。
-```
+> [!sc] 解释下 crti.o 的反汇编代码
+> 
+> 在你提供的反汇编代码中，包含了两个部分：`.init`和`.fini`。这两部分分别代表了初始化和结束，它们是由编译器自动生成的，并插入到生成的对象文件（在这个例子中是`crti.o`）中。`crti.o`（C Runtime Initialization Object）是C运行时库的一部分，它包含了程序开始和结束时需要运行的代码。
+> 
+> 让我们来一部分一部分地看：
+> 
+> **.init段**
+> 
+> ~~~asm
+> 0000000000000000 <_init>:
+>    0:   f3 0f 1e fa             endbr64
+>    4:   48 83 ec 08             sub    $0x8,%rsp
+>    8:   48 8b 05 00 00 00 00    mov    0x0(%rip),%rax        # f <_init+0xf>
+>                         b: R_X86_64_REX_GOTPCRELX       __gmon_start__-0x4
+>    f:   48 85 c0                test   %rax,%rax
+>   12:   74 02                   je     16 <_init+0x16>
+>   14:   ff d0                   callq  *%rax
+> ~~~
+> 
+> 这部分代码在程序开始执行时运行，具体步骤如下：
+> 
+> 1. `endbr64`：这是Intel Control-flow Enforcement Technology (CET)的一部分，用于防止不合法的间接跳转，提高程序的安全性。
+> 
+> 2. `sub $0x8,%rsp`：从栈指针`%rsp`中减去8，即在栈上分配8字节的空间。这是为了保持栈的对齐。
+> 
+> 3. `mov 0x0(%rip),%rax`：这是一个位置无关的代码（Position-Independent Code，PIC），它从`__gmon_start__`符号处读取一个地址并存放到寄存器`%rax`中。`__gmon_start__`是GNU gprof工具用来启动分析的函数。
+> 
+> 4. `test %rax,%rax`：测试`%rax`的值是否为0。
+> 
+> 5. `je 16 <_init+0x16>`：如果`%rax`的值为0（即`__gmon_start__`未定义或为空），则跳转到地址16处，跳过下面的`callq`指令。
+> 
+> 6. `callq *%rax`：调用`%rax`寄存器中的地址指向的函数，即调用`__gmon_start__`。
+> 
+> **.fini段**
+> 
+> ~~~asm
+> 0000000000000000 <_fini>:
+>    0:   f3 0f 1e fa             endbr64
+>    4:   48 83 ec 08             sub    $0x8,%rsp
+> ~~~
+> 
+> 这部分代码在程序结束时运行。这段代码相对简单：
+> 
+> 1. `endbr64`：同上。
+> 
+> 2. `sub $0x8,%rsp`：同上。
+> 
+> 以上就是你给出的反汇编
+> 
+> 代码的解释。总的来说，这部分代码是为C程序的启动和结束提供支持的，包括调用`__gmon_start__`以启动GNU gprof分析（如果有的话）。
 
 于是在最终链接完成之后，输出的目标文件中的 `.init` 段只包含了一个函数 `_init()`， 这个函数的开始部分来自于 `crti.o` 的 `.init` 段，结束部分来自于 `crtn.o` 的 `.init` 段。为了保证最终输出文件中 `.init` 和 `.finit` 的正确性，我们必须保证在链接时，`crti.o` 必须在用户目标文件和系统库之前，而`crtn.o` 必须在用户目标文件和系统库之后。链接器的输入文件顺序一般是：
 
@@ -199,12 +193,10 @@ title: 解释下 crti.o 的反汇编代码
 ld crt1.o crti.o [user_objects] [system_libraries] crtn.o
 ```
 
-```ad-sc
-title: 使用 `gcc -Wl,--verbose a.o b.o main.o`
-
-![vCcOLW](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/vCcOLW.png)
-
-中间许多许多 libc.a 的库函数
-
-![n8CmPu](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/n8CmPu.png)
-```
+> [!sc] 使用 `gcc -Wl,--verbose a.o b.o main.o`
+> 
+> ![vCcOLW](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/vCcOLW.png)
+> 
+> 中间许多许多 libc.a 的库函数
+> 
+> ![n8CmPu](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/n8CmPu.png)
