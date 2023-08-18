@@ -6,6 +6,7 @@
 ![ZJHqpU](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/ZJHqpU.png)
 
 
+
 首先在 Ubuntu 上使用 `iw dev` 查看设备名
 
 ![b8ttND](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/b8ttND.png)

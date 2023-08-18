@@ -9,15 +9,15 @@
   "baseFontSizeAction": false,
   "showViewHeader": true,
   "enabledCssSnippets": [
-    "supercharged-links-gen",
     "coffebean-按文件类型显示对应图标",
     "code1",
     "code",
     "custom-admonitions.8ba8b2",
     "custom_callouts",
-    "callout",
     "img",
-    "image"
+    "image",
+    "supercharged-links-gen",
+    "callout"
   ],
   "textFontFamily": ""
 }

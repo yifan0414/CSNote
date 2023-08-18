@@ -67,3 +67,9 @@ bool queue_insert_head(queue_t *q, const char *s) {
     return true;
 }
 ```
+
+
+[[cprogramminglab.pdf#page=1&offset=70.56,283.153|Overview]]
+
+
+不错的选择 [[cprogramminglab.pdf#page=2&selection=124,0,129,23]]

@@ -3124,8 +3124,8 @@ body:not(.pt-disable-callout-styling) .callout .callout-title-inner {
   margin: 0 var(--size-4-1);
 }
 body:not(.pt-disable-callout-styling) .callout .callout-icon {
-  /* align-self: unset; */
-  margin: 7px var(--size-4-1) 0 var(--size-4-2);
+  align-self: auto;
+  margin: 0px var(--size-4-1) 0 var(--size-4-2);
   border-radius: var(--radius-m);
 }
 body:not(.pt-disable-callout-styling) .callout .callout-fold {

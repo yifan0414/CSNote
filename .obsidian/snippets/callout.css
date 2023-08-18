@@ -81,3 +81,4 @@ body:not(.pt-disable-callout-styling) .callout:is([data-callout=edit]) > .callou
   background-color: hsla(var(--color-yellow-base-hsl), var(--callout-background-alpha));
   border-color: var(--color-yellow-tint);
 }
+

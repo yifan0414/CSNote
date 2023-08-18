@@ -42,7 +42,7 @@
 |                     .                     | Prompt for an index to move the current window.                                                                            |
 |                  0 to 9                   | Select windows 0 to 9.                                                                                                     |
 |                     **:**                     | **Enter the tmux command prompt.**                                                                                             |
-|                     ;                     | Move to the previously active pane.                                                                                        |
+|                     **;**                     | **Move to the previously active pane.**                                                                                        |
 |                     =                     | Choose which buffer to paste interactively from a list.                                                                    |
 |                     ***?***                     | ***List all key bindings.***                                                                                                     |
 |                     D                     | Choose a client to detach.                                                                                                 |
@@ -80,4 +80,6 @@
 |       M-Up, M-Down, M-Left, M-Right       | Resize the current pane in steps of five cells.                                                                            |
 
 >[!note] swap two pane
-> Use the `Ctrl-a + `
+> 
+> - 将当前窗格移动到左侧窗格的位置：`Ctrl-a + {`
+> - 将当前窗格移动到右侧窗格的位置：`Ctrl-b + {`

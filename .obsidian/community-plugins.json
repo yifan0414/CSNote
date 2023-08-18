@@ -10,7 +10,6 @@
   "obsidian-copy-block-link",
   "calendar",
   "table-editor-obsidian",
-  "obsidian-admonition",
   "obsidian-outliner",
   "pseudocode-in-obs",
   "settings-search",
@@ -21,5 +20,7 @@
   "obsidian-charts",
   "easy-typing-obsidian",
   "darlal-switcher-plus",
-  "obsidian-zotero-desktop-connector"
+  "obsidian-zotero-desktop-connector",
+  "better-comment-toggle",
+  "obsidian-admonition"
 ]
