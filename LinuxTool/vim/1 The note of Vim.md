@@ -141,7 +141,7 @@
 >[!note] 缩进的一点内容
 > 当我们选中几行后，可以使用 `>` 进行缩进，然后使用 `.` 去重复这个操作
 
->[!dange] 有关 inclusive 和 exclusive 的内容还部熟悉
+>[!danger] 有关 inclusive 和 exclusive 的内容还部熟悉
 >比如怎么删除一个前面的单词且不保留这个字符呢？
 >![](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/rdVb8i.png)
 >直接使用 `db` 的话会留下一个字符，这时可以使用 `dvb`

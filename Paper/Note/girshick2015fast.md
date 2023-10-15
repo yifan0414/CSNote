@@ -44,10 +44,11 @@ doi:
 
 
 
+
 %% end notes %%
 
 ---
-# Annotations <small>(Exported: [[2023-08-13]]</small>)
+# Annotations <small>(Exported: [[2023-09-11]]</small>)
 
 ## ⛔ Disagree With Author
 ⛔ First, the last max pooling layer is replaced by a RoI pooling layer that is configured by setting H and W to be compatible with the net’s first fully connected layer (e.g., H = W = 7 for VGG16).
@@ -86,4 +87,4 @@ doi:
 
 
 
-%% Import Date: 2023-08-13T16:31:56.448+08:00 %%
+%% Import Date: 2023-09-11T10:58:48.839+08:00 %%

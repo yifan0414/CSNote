@@ -1,5 +1,5 @@
-/*蓝色托帕石，适合Obsidian v1.2.8。uid [20230802] flying fly flies制作。如果喜欢，可以在Github里给我星星 https://github.com/whyt-byte */
-/*Blue Topaz for Obsidian v1.2.8, uid [20230802] created by flying fly flies. Feel free to use, share and modify. If you like the theme, please star me on GitHub https://github.com/whyt-byte */
+/*蓝色托帕石，适合Obsidian v1.2.8。uid [20231014] flying fly flies制作。如果喜欢，可以在Github里给我星星 https://github.com/whyt-byte */
+/*Blue Topaz for Obsidian v1.2.8, uid [20231014] created by flying fly flies. Feel free to use, share and modify. If you like the theme, please star me on GitHub https://github.com/whyt-byte */
 
 /* 致谢 Credits：
 thanks pkmer.cn
@@ -4521,7 +4521,19 @@ settings:
     title.zh: 感谢Topaz社区支持😁，欢迎来访，QQ群:908688452
     type: heading
     level: 1
-    collapsed: true
+    collapsed: false
+  -
+    id: bt-buyacoffe
+    title: Support me
+    description: "[https://www.buymeacoffee.com/whyi](https://www.buymeacoffee.com/whyi)"
+    type: info-text
+    markdown: true
+  -
+    id: bt-github
+    title: Star the theme
+    description: "[https://github.com/PKM-er/Blue-Topaz_Obsidian-css](https://github.com/PKM-er/Blue-Topaz_Obsidian-css)"
+    type: info-text
+    markdown: true
 */
 
 /* @settings
@@ -9619,6 +9631,13 @@ body.reduce-bottom-padding:not(.plugin-cm-typewriter-scroll) .cm-s-obsidian .cm-
 /*===============================*/
 /*=============YAML==============*/
 /*===============================*/
+
+input[type='text'].metadata-property-key-input
+{
+  background:transparent;
+}
+
+
 /* cssclass: inline-list */
 /* can change list from block to inline; can be used with inline images */
 .inline-list ul,
@@ -16740,17 +16759,24 @@ pre.frontmatter.language-yaml::before {
   color: var(--color-specification);
 }
 
-.frontmatter-container {
+:is(.metadata-container,.frontmatter-container) {
   margin: 0 0 1.2em 0;
   background-color: transparent;
 }
-.frontmatter-container .frontmatter-alias {
+:is(.metadata-container,.frontmatter-container) .frontmatter-alias {
   line-height: 1.2;
   white-space: initial;
 }
-.frontmatter-container .frontmatter-section-label
+:is(.metadata-container,.frontmatter-container) .frontmatter-section-label
 {
   flex-basis: 8em;
+}
+
+.workspace-split.mod-root .metadata-container .metadata-add-button {
+
+    position: absolute;
+    top: 0;
+    left: 10em;
 }
 
 /*====================*/
@@ -25389,7 +25415,7 @@ body.theme-dark .popover.hover-popover:not(.is-loaded) {
 :is(.markdown-preview-view,.markdown-rendered).noyaml div>.language-yaml {
   display: none;
 }
-:is(.markdown-preview-view,.markdown-rendered).noyaml div>.frontmatter-container {
+:is(.markdown-preview-view,.markdown-rendered).noyaml div>:is(.metadata-container,.frontmatter-container) {
   display: none;
 }
 /*隐藏滚动条*/
@@ -29300,27 +29326,24 @@ body.canvas-card-focus-mode .canvas:has(.is-focused.mod-canvas-color-custom) .ca
 }
 
 /* ================================== */
-.show-full-metadata  .frontmatter-container:not(.is-collapsed) .frontmatter-section {
+.show-full-metadata  :is(.metadata-container,.frontmatter-container):not(.is-collapsed) .frontmatter-section {
   display: flex!important;
 }
-body:not(.show-full-metadata) .frontmatter-container  .frontmatter-container-header  ~ .frontmatter-section:not(:is(.mod-aliases,.mod-tags)) {
+ 
+body:not(.show-full-metadata) .markdown-preview-view .metadata-property:not(:has(:is(.multi-select-pill,.metadata-input-longtext:not(:empty))))
+{
   display: none;
 }
 
-body:not(.show-full-metadata) .frontmatter-container:has(.frontmatter-container-header + .frontmatter-section:not(:is(.mod-aliases,.mod-tags))) {
-  display: none;
-}
-body:not(.show-full-metadata) .frontmatter-container:not(:has(.frontmatter-container-header + .frontmatter-section)) {
-  display: none;
+body:not(.show-full-metadata) .markdown-preview-view .metadata-property:has(.metadata-property-key-input[aria-label=""])
+{
+  display: flex!important;
 }
 
 
-.markdown-preview-view.show-full-metadata .frontmatter-container {
-  display: block !important;
-}
 
-
-.workspace-split.mod-horizontal:is(.mod-left-split,.mod-right-split) .workspace-tab-container .frontmatter-container {
+.workspace-split.mod-horizontal:is(.mod-left-split,.mod-right-split) .workspace-tab-container .workspace-leaf-content:not([data-type="file-properties"]) 
+:is(.metadata-container,.frontmatter-container) {
   display: none;
 }
 

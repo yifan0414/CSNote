@@ -60,6 +60,8 @@ uint64_t multimod(uint64_t a, uint64_t b, uint64_t m) {
 $$
 \left(a \cdot b \bmod 2^{64}\right) \bmod m
 $$
+
+^aa112f
 你很容易能举出一个反例，使得
 $$
 \left(a \cdot b \bmod 2^{64}\right) \bmod m \neq a \cdot b \bmod m
