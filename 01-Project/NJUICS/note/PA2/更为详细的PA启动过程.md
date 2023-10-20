@@ -174,8 +174,17 @@ make -s -C /home/suyi/ics2020/abstract-machine/am archive
 
 ### 链接&运行
 
-![gKliRA](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/gKliRA.png)
+![[gKliRA.png]]
 
+>[!hint] 生成 dummy-x86-nemu.bin
+> 可以看到我们使用 `objcopy -S --set-section-flags .bss=alloc,contents -O binary xx.elf xx.bin` 来生成 `dummy-x86-nemu.bin` 文件。**这是直接作用于裸机上的二进制文件**。
+>>[!chatgpt]
+>> `objcopy` 命令的目标是将 ELF 文件转换为二进制文件。默认情况下，`--set-section-flags` 标志用于控制节（section）的属性。在你的命令中，`--set-section-flags .bss=alloc,contents` 用于将 `.bss` 节的属性更改为 "alloc" 和 "contents"。
+>>
+>>请注意，`objcopy` 不仅会更改 `.bss` 节的属性，它还会删除 ELF 头部和其他节的信息，生成的二进制文件将只包含节中的原始数据，而不包括 ELF 头部信息或其他元数据。
+>>
+>>因此，生成的 `dummy.bin` 文件将不包含 ELF 头部。它只包含 `.bss` 节的内容以及其他节的内容（如果存在其他节），但没有包括 ELF 文件的元数据。这是因为 `objcopy` 通常用于生成可以直接加载和执行的裸二进制文件，而不需要 ELF 元信息。
+ 
 > [!chatgpt] 链接的过程
 > 这是一个链接命令，用于将三个对象文件链接起来生成一个可执行文件：`/home/suyi/ics2020/am-kernels/tests/cpu-tests/build/dummy-x86-nemu.elf`。具体参数含义如下：
 > 
