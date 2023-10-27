@@ -25,5 +25,7 @@
   "obsidian-admonition",
   "math-booster",
   "mathlinks",
-  "obsidian-latex-suite"
+  "obsidian-latex-suite",
+  "metadata-extractor",
+  "obsidian-advanced-uri"
 ]
