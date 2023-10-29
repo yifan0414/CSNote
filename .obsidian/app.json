@@ -1,7 +1,7 @@
 {
   "defaultViewMode": "preview",
   "vimMode": true,
-  "showIndentGuide": false,
+  "showIndentGuide": true,
   "focusNewTab": true,
   "pdfExportSettings": {
     "includeName": true,
