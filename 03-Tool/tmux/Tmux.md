@@ -33,12 +33,12 @@ Applaction in ... may access clipboard ^CEfUpnVz
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://excalidraw.com",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.13",
 	"elements": [
 		{
 			"type": "text",
-			"version": 100,
-			"versionNonce": 1945629030,
+			"version": 104,
+			"versionNonce": 2052699183,
 			"isDeleted": false,
 			"id": "M7xJKFcf",
 			"fillStyle": "hachure",
@@ -51,29 +51,31 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"y": -280.6902502899228,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 60,
+			"width": 57.63996887207031,
 			"height": 25,
 			"seed": 1136207226,
 			"groupIds": [],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1671341446948,
+			"updated": 1704094554549,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "TMUX",
 			"rawText": "TMUX",
-			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "TMUX"
+			"originalText": "TMUX",
+			"lineHeight": 1.25,
+			"baseline": 17
 		},
 		{
 			"type": "text",
-			"version": 265,
-			"versionNonce": 1573674234,
+			"version": 269,
+			"versionNonce": 946743873,
 			"isDeleted": false,
 			"id": "MRoR2GmF",
 			"fillStyle": "hachure",
@@ -86,10 +88,11 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"y": 118.3097497100772,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 155,
+			"width": 153.07986450195312,
 			"height": 25,
 			"seed": 2021926906,
 			"groupIds": [],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -97,23 +100,27 @@ Applaction in ... may access clipboard ^CEfUpnVz
 					"type": "arrow"
 				}
 			],
-			"updated": 1671341655960,
+			"updated": 1704094554550,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "Basic operation",
 			"rawText": "Basic operation",
-			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Basic operation"
+			"originalText": "Basic operation",
+			"lineHeight": 1.25,
+			"baseline": 17
 		},
 		{
 			"type": "text",
-			"version": 370,
-			"versionNonce": 287341498,
+			"version": 374,
+			"versionNonce": 1821464143,
 			"isDeleted": false,
 			"id": "vIP6aUh3",
 			"fillStyle": "hachure",
@@ -126,10 +133,11 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"y": -176.30781333709461,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 113,
+			"width": 111.07987976074219,
 			"height": 25,
 			"seed": 1536618554,
 			"groupIds": [],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -137,18 +145,22 @@ Applaction in ... may access clipboard ^CEfUpnVz
 					"type": "arrow"
 				}
 			],
-			"updated": 1671341505724,
+			"updated": 1704094554551,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "Copy-Paste",
 			"rawText": "Copy-Paste",
-			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Copy-Paste"
+			"originalText": "Copy-Paste",
+			"lineHeight": 1.25,
+			"baseline": 17
 		},
 		{
 			"type": "ellipse",
@@ -172,6 +184,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"groupIds": [
 				"ty-xT9WcaPn0_gfyBvHUE"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1671341446948,
@@ -200,6 +213,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"groupIds": [
 				"ty-xT9WcaPn0_gfyBvHUE"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
 			"updated": 1671341446948,
@@ -208,8 +222,8 @@ Applaction in ... may access clipboard ^CEfUpnVz
 		},
 		{
 			"type": "text",
-			"version": 200,
-			"versionNonce": 1050960678,
+			"version": 204,
+			"versionNonce": 1620130337,
 			"isDeleted": false,
 			"id": "8N9CwEGY",
 			"fillStyle": "hachure",
@@ -222,31 +236,33 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"y": -246.6902502899228,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 135,
+			"width": 132.2799072265625,
 			"height": 25,
 			"seed": 332420218,
 			"groupIds": [
 				"ty-xT9WcaPn0_gfyBvHUE"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1671341446948,
+			"updated": 1704094554551,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "Local machine",
 			"rawText": "Local machine",
-			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Local machine"
+			"originalText": "Local machine",
+			"lineHeight": 1.25,
+			"baseline": 17
 		},
 		{
 			"type": "text",
-			"version": 257,
-			"versionNonce": 916671034,
+			"version": 261,
+			"versionNonce": 399488111,
 			"isDeleted": false,
 			"id": "43vA76VD",
 			"fillStyle": "hachure",
@@ -259,31 +275,33 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"y": 466.8097497100772,
 			"strokeColor": "#a61e4d",
 			"backgroundColor": "transparent",
-			"width": 156,
+			"width": 153.71987915039062,
 			"height": 25,
 			"seed": 1040902502,
 			"groupIds": [
 				"ty-xT9WcaPn0_gfyBvHUE"
 			],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1671341446948,
+			"updated": 1704094554551,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "Remote Machine",
 			"rawText": "Remote Machine",
-			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Remote Machine"
+			"originalText": "Remote Machine",
+			"lineHeight": 1.25,
+			"baseline": 17
 		},
 		{
 			"type": "text",
-			"version": 193,
-			"versionNonce": 606438694,
+			"version": 197,
+			"versionNonce": 1434930689,
 			"isDeleted": false,
 			"id": "sKW4YVd3",
 			"fillStyle": "hachure",
@@ -296,10 +314,11 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"y": -244.23095458888034,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 505,
+			"width": 503.90625,
 			"height": 72,
 			"seed": 1221173350,
 			"groupIds": [],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -311,23 +330,27 @@ Applaction in ... may access clipboard ^CEfUpnVz
 					"type": "arrow"
 				}
 			],
-			"updated": 1671341513485,
+			"updated": 1704094554552,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
 			"fontSize": 20,
 			"fontFamily": 3,
 			"text": "set -g @plugin 'tmux-plugins/tpm'\nset -g @plugin 'tmux-plugins/tmux-sensible'\nset -g @plugin 'tmux-plugins/tmux-yank'",
 			"rawText": "set -g @plugin 'tmux-plugins/tpm'\nset -g @plugin 'tmux-plugins/tmux-sensible'\nset -g @plugin 'tmux-plugins/tmux-yank'",
-			"baseline": 68,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "set -g @plugin 'tmux-plugins/tpm'\nset -g @plugin 'tmux-plugins/tmux-sensible'\nset -g @plugin 'tmux-plugins/tmux-yank'"
+			"originalText": "set -g @plugin 'tmux-plugins/tpm'\nset -g @plugin 'tmux-plugins/tmux-sensible'\nset -g @plugin 'tmux-plugins/tmux-yank'",
+			"lineHeight": 1.2,
+			"baseline": 67
 		},
 		{
 			"type": "text",
-			"version": 410,
-			"versionNonce": 102653434,
+			"version": 414,
+			"versionNonce": 601706127,
 			"isDeleted": false,
 			"id": "LD62usGG",
 			"fillStyle": "hachure",
@@ -340,10 +363,11 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"y": 383.84066046400585,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 113,
+			"width": 111.07987976074219,
 			"height": 25,
 			"seed": 1578589498,
 			"groupIds": [],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -355,18 +379,22 @@ Applaction in ... may access clipboard ^CEfUpnVz
 					"type": "arrow"
 				}
 			],
-			"updated": 1671341608757,
+			"updated": 1704094554552,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
 			"fontSize": 20,
 			"fontFamily": 1,
 			"text": "Copy-Paste",
 			"rawText": "Copy-Paste",
-			"baseline": 18,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "Copy-Paste"
+			"originalText": "Copy-Paste",
+			"lineHeight": 1.25,
+			"baseline": 17
 		},
 		{
 			"type": "arrow",
@@ -388,6 +416,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"height": 54.67582696221919,
 			"seed": 1052969274,
 			"groupIds": [],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -439,6 +468,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"height": 551.7864845208314,
 			"seed": 365753466,
 			"groupIds": [],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -472,8 +502,8 @@ Applaction in ... may access clipboard ^CEfUpnVz
 		},
 		{
 			"type": "text",
-			"version": 148,
-			"versionNonce": 1170829209,
+			"version": 152,
+			"versionNonce": 240117217,
 			"isDeleted": false,
 			"id": "CEfUpnVz",
 			"fillStyle": "hachure",
@@ -486,10 +516,11 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"y": 273.4722392209129,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
-			"width": 448,
+			"width": 445.3125,
 			"height": 48,
 			"seed": 1811276538,
 			"groupIds": [],
+			"frameId": null,
 			"roundness": null,
 			"boundElements": [
 				{
@@ -497,18 +528,22 @@ Applaction in ... may access clipboard ^CEfUpnVz
 					"type": "arrow"
 				}
 			],
-			"updated": 1671360818317,
+			"updated": 1704094554553,
 			"link": null,
 			"locked": false,
+			"customData": {
+				"legacyTextWrap": true
+			},
 			"fontSize": 20,
 			"fontFamily": 3,
 			"text": "iterm2 -> General -> selection -> \nApplaction in ... may access clipboard",
 			"rawText": "iterm2 -> General -> selection -> \nApplaction in ... may access clipboard",
-			"baseline": 44,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
-			"originalText": "iterm2 -> General -> selection -> \nApplaction in ... may access clipboard"
+			"originalText": "iterm2 -> General -> selection -> \nApplaction in ... may access clipboard",
+			"lineHeight": 1.2,
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
@@ -530,6 +565,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"height": 123.29437925777825,
 			"seed": 1052053370,
 			"groupIds": [],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -581,6 +617,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"height": 3.0518334488949392,
 			"seed": 1834258106,
 			"groupIds": [],
+			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
@@ -607,43 +644,6 @@ Applaction in ... may access clipboard ^CEfUpnVz
 					3.0518334488949392
 				]
 			]
-		},
-		{
-			"type": "image",
-			"version": 158,
-			"versionNonce": 109429763,
-			"isDeleted": true,
-			"id": "zfMLnpWu",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -1558.9468442424575,
-			"y": -92.77332160756711,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"width": 399.9266729363889,
-			"height": 495.1092210952495,
-			"seed": 34647,
-			"groupIds": [],
-			"roundness": null,
-			"boundElements": [
-				{
-					"id": "5Hck9zs-WQPtmqb_0_ps8",
-					"type": "arrow"
-				}
-			],
-			"updated": 1671607933543,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "69e4bd5aa0fa7a6efba1bd764a96da07e6e41eed",
-			"scale": [
-				1,
-				1
-			]
 		}
 	],
 	"appState": {
@@ -661,14 +661,26 @@ Applaction in ... may access clipboard ^CEfUpnVz
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "triangle",
-		"scrollX": 1328.8303127322458,
-		"scrollY": 383.1785315399228,
+		"scrollX": 1161.464353385115,
+		"scrollY": 441.4678238193345,
 		"zoom": {
-			"value": 1
+			"value": 0.8500000000000001
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
-		"colorPalette": {}
+		"gridColor": {
+			"Bold": "#C9C9C9FF",
+			"Regular": "#EDEDEDFF"
+		},
+		"colorPalette": {},
+		"currentStrokeOptions": null,
+		"previousGridSize": null,
+		"frameRendering": {
+			"enabled": true,
+			"clip": true,
+			"name": true,
+			"outline": true
+		}
 	},
 	"files": {}
 }

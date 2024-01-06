@@ -3,7 +3,6 @@
   "global-search",
   "switcher",
   "graph",
-  "backlink",
   "canvas",
   "outgoing-link",
   "tag-pane",
@@ -16,7 +15,5 @@
   "editor-status",
   "bookmarks",
   "outline",
-  "word-count",
-  "file-recovery",
-  "sync"
+  "file-recovery"
 ]

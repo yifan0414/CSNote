@@ -11,7 +11,7 @@ RAMDISK_H = build/ramdisk.h
 $(RAMDISK): fsimg
 	$(eval FSIMG_FILES := $(shell find -L ./fsimg -type f))
 	@mkdir -p $(@D)
-	@cat $(FSIMG_FILES) > $@
+	@cat $(FSIMG_FILES) > $@ # 将二进制文件序列依次输出到ramdisk
 	@truncate -s \%512 $@
 	@echo "// file path, file size, offset in disk" > $(RAMDISK_H)
 	@wc -c $(FSIMG_FILES) | grep -v 'total$$' | sed -e 's+ ./fsimg+ +' | awk -v sum=0 '{print "\x7b\x22" $$2 "\x22\x2c " $$1 "\x2c " sum "\x7d\x2c";sum += $$1}' >> $(RAMDISK_H)
@@ -20,6 +20,85 @@ ramdisk: $(RAMDISK)
 
 .PHONY: fsimg ramdisk
 
+```
+
+```ad-note
+这个脚本会产生一个如下图布局的 ramdisk 文件，包含了 fsimg 文件夹下的文件，以及位置信息（ramdisk.h）。
+
+```
+
+```
+navy-apps/fsimg
+├── bin
+│   ├── bmp-test
+│   ├── dummy
+│   ├── event-test
+│   ├── file-test
+│   ├── hello
+│   └── timer-test
+└── share
+    ├── files
+    │   └── num
+    ├── fonts
+    │   ├── Courier-10.bdf
+    │   ├── Courier-11.bdf
+    │   ├── Courier-12.bdf
+    │   ├── Courier-13.bdf
+    │   ├── Courier-7.bdf                             
+    │   ├── Courier-8.bdf
+    │   └── Courier-9.bdf
+    ├── games
+    ├── music
+    │   ├── little-star.ogg
+    │   └── rhythm
+    │       ├── Do.ogg
+    │       ├── Fa.ogg
+    │       ├── La.ogg
+    │       ├── Mi.ogg
+    │       ├── Re.ogg
+    │       ├── Si.ogg
+    │       ├── So.ogg
+    │       └── empty.ogg
+    └── pictures
+        └── projectn.bmp
+
+8 directories, 24 files
+
+{"/bin/event-test", 56296, 0},
+{"/bin/hello", 33324, 56296},
+{"/bin/file-test", 46832, 89620},
+{"/bin/bmp-test", 56376, 136452},
+{"/bin/dummy", 28632, 192828},
+{"/bin/timer-test", 56300, 221460},
+{"/share/music/rhythm/Fa.ogg", 6625, 277760},
+{"/share/music/rhythm/La.ogg", 6542, 284385},
+{"/share/music/rhythm/empty.ogg", 4071, 290927},
+{"/share/music/rhythm/Si.ogg", 6647, 294998},
+{"/share/music/rhythm/Do.ogg", 6473, 301645},
+{"/share/music/rhythm/Re.ogg", 6503, 308118},
+{"/share/music/rhythm/Mi.ogg", 6611, 314621},
+{"/share/music/rhythm/So.ogg", 6538, 321232},
+{"/share/music/little-star.ogg", 140946, 327770},
+{"/share/files/num", 5000, 468716},
+{"/share/pictures/projectn.bmp", 49290, 473716},
+{"/share/fonts/Courier-13.bdf", 25677, 523006},
+{"/share/fonts/Courier-12.bdf", 24339, 548683},
+{"/share/fonts/Courier-9.bdf", 20488, 573022},
+{"/share/fonts/Courier-11.bdf", 23272, 593510},
+{"/share/fonts/Courier-7.bdf", 19567, 616782},
+{"/share/fonts/Courier-10.bdf", 21440, 636349},
+{"/share/fonts/Courier-8.bdf", 20114, 657789},
+
+```
+
+
+```
+0
++-------------+---------+----------+-----------+--
+|    file0    |  file1  |  ......  |   filen   |
++-------------+---------+----------+-----------+--
+ \           / \       /            \         /
+  +  size0  +   +size1+              + sizen +
 ```
 
 这是一个 Makefile 脚本，用于构建一个名为 `ramdisk` 的目标，并依赖于其他目标。这个 Makefile 脚本看起来是为某个嵌入式系统或操作系统的构建过程编写的，其中包含了一些应用程序（APPS）和测试程序（TESTS），以及一个 RAM 磁盘镜像文件（`ramdisk.img`）的构建。

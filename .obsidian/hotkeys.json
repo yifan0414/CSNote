@@ -64,5 +64,9 @@
       ],
       "key": "H"
     }
-  ]
+  ],
+  "editor:delete-paragraph": [],
+  "editor:insert-link": [],
+  "editor:follow-link": [],
+  "editor:save-file": []
 }
