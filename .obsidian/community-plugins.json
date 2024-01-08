@@ -2,7 +2,6 @@
   "obsidian-vimrc-support",
   "obsidian-tasks-plugin",
   "supercharged-links-obsidian",
-  "obsidian-style-settings",
   "obsidian-paste-image-rename",
   "obsidian-image-toolkit",
   "obsidian-excalidraw-plugin",
@@ -25,5 +24,9 @@
   "metadata-extractor",
   "obsidian-advanced-uri",
   "vscode-editor",
-  "easy-typing-obsidian"
+  "easy-typing-obsidian",
+  "thino-beta",
+  "periodic-notes",
+  "obsidian-day-planner",
+  "obsidian-style-settings"
 ]

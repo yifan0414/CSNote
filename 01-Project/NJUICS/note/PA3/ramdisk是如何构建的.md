@@ -22,12 +22,11 @@ ramdisk: $(RAMDISK)
 
 ```
 
-```ad-note
-这个脚本会产生一个如下图布局的 ramdisk 文件，包含了 fsimg 文件夹下的文件，以及位置信息（ramdisk.h）。
+> [!note]
+> 这个脚本会产生一个如下图布局的 ramdisk 文件，包含了 fsimg 文件夹下的文件，以及位置信息（ramdisk.h）。
+> 
 
-```
-
-```
+```txt
 navy-apps/fsimg
 ├── bin
 │   ├── bmp-test
@@ -92,7 +91,7 @@ navy-apps/fsimg
 ```
 
 
-```
+```txt
 0
 +-------------+---------+----------+-----------+--
 |    file0    |  file1  |  ......  |   filen   |

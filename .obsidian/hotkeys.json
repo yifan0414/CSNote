@@ -1,13 +1,5 @@
 {
   "editor:toggle-checklist-status": [],
-  "app:toggle-right-sidebar": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "L"
-    }
-  ],
   "app:toggle-left-sidebar": [
     {
       "modifiers": [
@@ -25,14 +17,6 @@
     }
   ],
   "switcher:open": [],
-  "darlal-switcher-plus:switcher-plus:open-headings": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "H"
-    }
-  ],
   "darlal-switcher-plus:switcher-plus:open": [
     {
       "modifiers": [
@@ -49,24 +33,17 @@
       "key": "W"
     }
   ],
-  "editor:focus-right": [
+  "editor:delete-paragraph": [],
+  "editor:insert-link": [],
+  "editor:follow-link": [],
+  "editor:save-file": [],
+  "app:toggle-right-sidebar": [
     {
       "modifiers": [
-        "Ctrl"
+        "Mod"
       ],
       "key": "L"
     }
   ],
-  "editor:focus-left": [
-    {
-      "modifiers": [
-        "Ctrl"
-      ],
-      "key": "H"
-    }
-  ],
-  "editor:delete-paragraph": [],
-  "editor:insert-link": [],
-  "editor:follow-link": [],
-  "editor:save-file": []
+  "file-explorer:new-file-in-new-pane": []
 }
