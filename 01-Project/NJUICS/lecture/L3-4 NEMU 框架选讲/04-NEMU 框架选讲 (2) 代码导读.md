@@ -24,7 +24,7 @@
 > ```bash
 > find . -name "*.c" -o -name "*.h" | xargs cat | wc -l
 > ```
-> nemu: 5,000+ 行 (其实很小了)
+> nemu: 5,000+ 行 (其实很小了) ^qkeeer
 
 
 

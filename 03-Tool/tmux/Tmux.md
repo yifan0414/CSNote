@@ -33,7 +33,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.13",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.14",
 	"elements": [
 		{
 			"type": "text",
@@ -70,7 +70,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"containerId": null,
 			"originalText": "TMUX",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "text",
@@ -115,7 +115,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"containerId": null,
 			"originalText": "Basic operation",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "text",
@@ -160,7 +160,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"containerId": null,
 			"originalText": "Copy-Paste",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "ellipse",
@@ -257,7 +257,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"containerId": null,
 			"originalText": "Local machine",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "text",
@@ -296,7 +296,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"containerId": null,
 			"originalText": "Remote Machine",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "text",
@@ -394,7 +394,7 @@ Applaction in ... may access clipboard ^CEfUpnVz
 			"containerId": null,
 			"originalText": "Copy-Paste",
 			"lineHeight": 1.25,
-			"baseline": 17
+			"baseline": 18
 		},
 		{
 			"type": "arrow",
@@ -661,10 +661,10 @@ Applaction in ... may access clipboard ^CEfUpnVz
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "triangle",
-		"scrollX": 1161.464353385115,
-		"scrollY": 441.4678238193345,
+		"scrollX": 1170.1860291559203,
+		"scrollY": 422.0249670867978,
 		"zoom": {
-			"value": 0.8500000000000001
+			"value": 1.1
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
