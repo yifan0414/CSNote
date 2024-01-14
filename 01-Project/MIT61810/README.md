@@ -5,10 +5,10 @@
 
 ## 3. 1 Labs
 
-- [ ] Lab01
-- [ ] Lab02
-- [ ] Lab03
-- [ ] Lab04
+- [x] Lab0 ✅ 2024-01-15
+- [ ] Lab1
+- [ ] Lab2
+- [ ] Lab3
 
 ## 3.2 Projects
 
