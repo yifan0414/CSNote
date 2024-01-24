@@ -1,31 +1,16 @@
 {
   "items": [
     {
-      "type": "file",
-      "ctime": 1683052510832,
-      "path": "01-Project/NJUICS/code/NEMU-Makefile.md",
-      "subpath": "#源文件"
-    },
-    {
       "type": "group",
-      "ctime": 1683052583986,
+      "ctime": 1705733824800,
       "items": [
         {
           "type": "file",
-          "ctime": 1683052563708,
-          "path": "01-Project/NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2).md",
-          "subpath": "#^71dbc4",
-          "title": "实现更多的指令"
+          "ctime": 1705733835439,
+          "path": "01-Project/NJUICS/note/PA3/Makefile for Navy⭐.md"
         }
       ],
-      "title": "TODO"
-    },
-    {
-      "type": "file",
-      "ctime": 1687582442948,
-      "path": "03-Tool/gcc&gdb/The note of Makefile.md",
-      "subpath": "#^10ad09",
-      "title": "makefile example"
+      "title": "icspa"
     }
   ]
 }

@@ -30,6 +30,10 @@ fscanf一次性调用为什么是1024 ^GidyVKXQ
 
 ○fscanf内部是如何处理缓冲区的， 从文件读， 一次读多少？ ^EHw7NdPd
 
+fscanf是libs/libc/src/stdio/fscanf.c中定义的，也就是说，这是标准库函数 ^5k88UU8u
+
+修复bug🐛 ^yDn75KM2
+
 
 # Embedded files
 721678aa1c8f01a3eb709062c40bdd44a5871f56: [[Pasted Image 20231022162951_758.png]]
@@ -39,6 +43,7 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 3e5c7594b2d7af295ede5f9ec0af8e21fb1448a1: [[Pasted Image 20231022235709_598.png]]
 3b311dd93e138116e699ba8de53f270996af32cd: [[Pasted Image 20231023000009_671.png]]
 573e0d68b251a6879a7d2dddf0aed15e876fb8e2: [[Pasted Image 20231023000057_719.png]]
+737754646876933cdc2e9685700730cf1d7f225f: [[Pasted Image 20240120175308_293.png]]
 
 %%
 # Drawing
@@ -46,7 +51,7 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.14",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.17",
 	"elements": [
 		{
 			"type": "text",
@@ -83,7 +88,7 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 			"containerId": null,
 			"originalText": "PA中的软链接",
 			"lineHeight": 1.2,
-			"baseline": 25
+			"baseline": 26
 		},
 		{
 			"type": "image",
@@ -190,7 +195,7 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 			"containerId": null,
 			"originalText": "ramdisk.img中dummy的位置",
 			"lineHeight": 1.2,
-			"baseline": 25
+			"baseline": 26
 		},
 		{
 			"type": "image",
@@ -433,8 +438,8 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 		},
 		{
 			"type": "text",
-			"version": 93,
-			"versionNonce": 301974052,
+			"version": 94,
+			"versionNonce": 1298168890,
 			"isDeleted": false,
 			"id": "hrFtObSe",
 			"fillStyle": "hachure",
@@ -454,7 +459,7 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1704529174095,
+			"updated": 1705895916236,
 			"link": "[[ramdisk是如何构建的]]",
 			"locked": false,
 			"fontSize": 16,
@@ -503,7 +508,7 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 			"containerId": null,
 			"originalText": "file相关系统调用遇到的问题",
 			"lineHeight": 1.2,
-			"baseline": 25
+			"baseline": 26
 		},
 		{
 			"type": "image",
@@ -738,8 +743,8 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 		},
 		{
 			"type": "image",
-			"version": 172,
-			"versionNonce": 1306655535,
+			"version": 227,
+			"versionNonce": 1150740703,
 			"isDeleted": false,
 			"id": "xls-dH9T0GnxNnouuJ0N3",
 			"fillStyle": "hachure",
@@ -748,8 +753,8 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 729.3905309540203,
-			"y": -181.47870238055677,
+			"x": 759.637519886312,
+			"y": -204.93549627161585,
 			"strokeColor": "transparent",
 			"backgroundColor": "transparent",
 			"width": 456.8551623533187,
@@ -759,7 +764,7 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1697990478281,
+			"updated": 1705802120707,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -771,8 +776,8 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 		},
 		{
 			"type": "text",
-			"version": 293,
-			"versionNonce": 1617945116,
+			"version": 294,
+			"versionNonce": 337640550,
 			"isDeleted": false,
 			"id": "EHw7NdPd",
 			"fillStyle": "hachure",
@@ -792,7 +797,7 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1704529174095,
+			"updated": 1705895916240,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -805,6 +810,113 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 			"originalText": "○fscanf内部是如何处理缓冲区的， 从文件读， 一次读多少？",
 			"lineHeight": 1.2,
 			"baseline": 14
+		},
+		{
+			"type": "text",
+			"version": 173,
+			"versionNonce": 1231247985,
+			"isDeleted": false,
+			"id": "5k88UU8u",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 349.1608745833974,
+			"y": -51.8816808626392,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"width": 564.70703125,
+			"height": 24,
+			"seed": 1798596287,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1705744282283,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 4,
+			"text": "fscanf是libs/libc/src/stdio/fscanf.c中定义的，也就是说，这是标准库函数",
+			"rawText": "fscanf是libs/libc/src/stdio/fscanf.c中定义的，也就是说，这是标准库函数",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "fscanf是libs/libc/src/stdio/fscanf.c中定义的，也就是说，这是标准库函数",
+			"lineHeight": 1.2,
+			"baseline": 18
+		},
+		{
+			"type": "text",
+			"version": 40,
+			"versionNonce": 1127144433,
+			"isDeleted": false,
+			"id": "yDn75KM2",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 374.26688494002343,
+			"y": 1.7942232557903708,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"width": 88.53515625,
+			"height": 24,
+			"seed": 1985741183,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1705802123006,
+			"link": null,
+			"locked": false,
+			"fontSize": 20,
+			"fontFamily": 4,
+			"text": "修复bug🐛",
+			"rawText": "修复bug🐛",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "修复bug🐛",
+			"lineHeight": 1.2,
+			"baseline": 18
+		},
+		{
+			"type": "image",
+			"version": 193,
+			"versionNonce": 1974506705,
+			"isDeleted": false,
+			"id": "SuETX1qBwr_ceej9DMgES",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": 477.99708468261827,
+			"y": 47.47688920171365,
+			"strokeColor": "transparent",
+			"backgroundColor": "transparent",
+			"width": 542.8104179453533,
+			"height": 320.78587893853864,
+			"seed": 1133426751,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1705802123769,
+			"link": null,
+			"locked": false,
+			"status": "pending",
+			"fileId": "737754646876933cdc2e9685700730cf1d7f225f",
+			"scale": [
+				1,
+				1
+			]
 		}
 	],
 	"appState": {
@@ -822,10 +934,10 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": null,
-		"scrollX": 424.9893946846284,
-		"scrollY": 817.6088138979121,
+		"scrollX": 681.93331087158,
+		"scrollY": 524.6629413735839,
 		"zoom": {
-			"value": 0.6000000000000001
+			"value": 0.9500000000000001
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
