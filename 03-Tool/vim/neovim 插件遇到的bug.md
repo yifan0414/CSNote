@@ -15,3 +15,22 @@
 
 ![Rck4Nt](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Rck4Nt.png)
 
+
+## Neovim 中的 copy-paste
+
+可以参考 [Provider - Neovim docs](https://neovim.io/doc/user/provider.html#provider-paste)
+
+```lua
+vim.g.clipboard = {
+  name = "TmuxClipboard",
+  copy = {
+    ["+"] = "tmux load-buffer -w -",
+    ["*"] = "tmux load-buffer -w -",
+  },
+  paste = {
+    ["+"] = "tmux save-buffer -",
+    ["*"] = "tmux save-buffer -",
+  },
+  cache_enabled = 1,
+}
+```
