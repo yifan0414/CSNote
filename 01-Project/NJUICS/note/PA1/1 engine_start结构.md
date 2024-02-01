@@ -253,3 +253,5 @@ static int cmd_info(char *args) {
   return 0;
 }
 ```
+
+![image.png](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/20240201052506.png)
