@@ -10,12 +10,15 @@
     "margin": "0",
     "downscalePercent": 71
   },
-  "promptDelete": true,
+  "promptDelete": false,
   "attachmentFolderPath": "attachments",
   "showUnsupportedFiles": true,
   "trashOption": "none",
   "alwaysUpdateLinks": true,
   "showFrontmatter": false,
   "useTab": true,
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "showLineNumber": false,
+  "spellcheck": false,
+  "tabSize": 2
 }

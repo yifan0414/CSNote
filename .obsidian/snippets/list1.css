@@ -1,0 +1,24 @@
+/* Changes ordered list style when nested under ordered lists (preview mode only). */
+/* "list-style-type" values (e.g. "i., ii."; "a., b." etc.) can be changed. See e.g. https://www.w3schools.com/cssref/pr_list-style-type.asp (scroll down) for a list of possible signs.*/
+
+/* decimal = "1., 2.", lower-latin = "a., b.", lower-roman = "i., ii." */
+ol {
+  list-style-type: decimal;
+}
+ol ol {
+  list-style-type: lower-latin;
+}
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/* Restarts count when nested in between one unordered list. */
+ul ol ul ol {
+  list-style-type: decimal;
+}
+ul ol ul ol ol {
+  list-style-type: lower-latin;
+}
+ul ol ul ol ol ol {
+  list-style-type: lower-roman;
+}

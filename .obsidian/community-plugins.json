@@ -9,7 +9,6 @@
   "obsidian-copy-block-link",
   "calendar",
   "table-editor-obsidian",
-  "obsidian-outliner",
   "pseudocode-in-obs",
   "settings-search",
   "dataview",
@@ -22,10 +21,9 @@
   "obsidian-admonition",
   "metadata-extractor",
   "obsidian-advanced-uri",
-  "vscode-editor",
   "easy-typing-obsidian",
-  "thino-beta",
-  "periodic-notes",
   "obsidian-style-settings",
-  "obsidian-image-auto-upload-plugin"
+  "obsidian-image-auto-upload-plugin",
+  "obsidian-list-callouts",
+  "obsidian-outliner"
 ]

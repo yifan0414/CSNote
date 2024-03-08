@@ -1,8 +1,3 @@
-/*
-
-```javascript
-*/
-
 let settings = ea.getScriptSettings();
 //set default values on first run
 if (!settings["Zotero Library Path"]) settings["Zotero Library Path"] = { value: false };
