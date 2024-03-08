@@ -438,8 +438,8 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 		},
 		{
 			"type": "text",
-			"version": 96,
-			"versionNonce": 1160447962,
+			"version": 97,
+			"versionNonce": 519115226,
 			"isDeleted": false,
 			"id": "hrFtObSe",
 			"fillStyle": "hachure",
@@ -459,7 +459,7 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1706513037999,
+			"updated": 1707063538784,
 			"link": "[[ramdisk是如何构建的]]",
 			"locked": false,
 			"fontSize": 16,
@@ -776,8 +776,8 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 		},
 		{
 			"type": "text",
-			"version": 296,
-			"versionNonce": 1020099270,
+			"version": 297,
+			"versionNonce": 1371869382,
 			"isDeleted": false,
 			"id": "EHw7NdPd",
 			"fillStyle": "hachure",
@@ -797,7 +797,7 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1706513038000,
+			"updated": 1707063538787,
 			"link": null,
 			"locked": false,
 			"fontSize": 16,
@@ -934,10 +934,10 @@ daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": null,
-		"scrollX": 681.93331087158,
-		"scrollY": 524.6629413735839,
+		"scrollX": 575.730303352783,
+		"scrollY": 520.5651970126814,
 		"zoom": {
-			"value": 0.9500000000000001
+			"value": 0.7000000000000001
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

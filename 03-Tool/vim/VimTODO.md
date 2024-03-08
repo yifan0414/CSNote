@@ -1,0 +1,1 @@
+- [ ] 尝试使用`overseer`, 并尝试为其适配 `floaterm`

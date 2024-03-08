@@ -1,4 +1,5 @@
-****# QuickLook
+****
+# QuickLook
 ```txt
 功能：
     (1) 分屏。
@@ -64,7 +65,7 @@
 |                     s                     | Select a new session for the attached client interactively.                                                                |
 |                     t                     | Show the time.                                                                                                             |
 |                     w                     | Choose the current window interactively.                                                                                   |
-|                     x                     | <font color="#ff0000">Kill</font> the current pane.                                                                                                     |
+|                     x                     | <font color="#ff0000">Kill</font> the current pane.                                                                        |
 | <span style="background:#d2cbff">z</span> | <span style="background:#d2cbff">Toggle zoom state of the current pane.</span>                                             |
 |                     {                     | Swap the current pane with the previous pane.                                                                              |
 |                     }                     | Swap the current pane with the next pane.                                                                                  |

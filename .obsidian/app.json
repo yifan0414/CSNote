@@ -15,5 +15,7 @@
   "showUnsupportedFiles": true,
   "trashOption": "none",
   "alwaysUpdateLinks": true,
-  "showFrontmatter": false
+  "showFrontmatter": false,
+  "useTab": true,
+  "showInlineTitle": true
 }
