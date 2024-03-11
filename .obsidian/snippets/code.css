@@ -1,17 +1,26 @@
-
 .theme-light {
   --code-size: var(--font-smaller);
   --code-background: var(--background-primary-alt);
   --code-normal: #000000;
-  --code-comment: #008000;
-  --code-function: #795E26;
+  /* --code-comment: #008000; */
+  --code-function: #795e26;
   --code-important: var(--color-orange);
   --code-keyword: #0000ff;
   --code-property: var(--color-cyan);
   /* --code-punctuation: #319331; */
   /* --code-operator: #000000; */
-  --code-string: #a31515;
+  --code-string: #008000;
   --code-tag: var(--color-red);
   /* --code-value: var(--color-purple); */
   --code-value: #098658;
 }
+
+/* .cm-s-obsidian pre.HyperMD-codeblock {      */
+/*   font-family: "FiraCode Nerd Font"; */
+/*   font-weight: 700; */
+/* } */
+/**/
+/* .markdown-preview-view code { */
+/*   font-family: "FiraCode Nerd Font"; */
+/*   font-weight: 700; */
+/* } */
