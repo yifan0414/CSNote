@@ -76,7 +76,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 {
 	"type": "excalidraw",
 	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/1.9.24",
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23",
 	"elements": [
 		{
 			"type": "text",
@@ -150,7 +150,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"containerId": null,
 			"originalText": "1. 从IDTR中读出IDT的首地址\n2. 根据异常号在IDT中进行索引, 找到一个门描述符\n3. 将门描述符中的offset域组合成异常入口地址\n4. 依次将eflags, cs(代码段寄存器), eip(也就是PC)寄存器的值压栈\n5. 跳转到异常入口地址",
 			"lineHeight": 1.2,
-			"baseline": 115
+			"baseline": 114
 		},
 		{
 			"type": "image",
@@ -301,7 +301,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"containerId": null,
 			"originalText": "因此可得, size == 0x800, base == 0x10b020",
 			"lineHeight": 1.2,
-			"baseline": 19
+			"baseline": 18
 		},
 		{
 			"type": "line",
@@ -382,7 +382,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"containerId": null,
 			"originalText": "从此为止开始就是idt表的内容了",
 			"lineHeight": 1.2,
-			"baseline": 19
+			"baseline": 18
 		},
 		{
 			"type": "image",
@@ -452,7 +452,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"containerId": null,
 			"originalText": "那么 0x81 的地址就是\n0x10b020 + 8 * 0x81\n= 0x10b020 + 0x408\n= 0x10b428",
 			"lineHeight": 1.2,
-			"baseline": 91
+			"baseline": 90
 		},
 		{
 			"type": "image",
@@ -537,8 +537,8 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 		},
 		{
 			"type": "text",
-			"version": 42,
-			"versionNonce": 880617526,
+			"version": 79,
+			"versionNonce": 973621585,
 			"isDeleted": false,
 			"id": "j0cZZWgS",
 			"fillStyle": "hachure",
@@ -547,8 +547,8 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -228.6484375,
-			"y": -170.01171875,
+			"x": -265.3150634765624,
+			"y": -173.34503173828125,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 133.212890625,
@@ -560,7 +560,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1697878632811,
+			"updated": 1710462892551,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -572,12 +572,12 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"containerId": null,
 			"originalText": "实现int指令之前：",
 			"lineHeight": 1.2,
-			"baseline": 19
+			"baseline": 18
 		},
 		{
 			"type": "image",
-			"version": 107,
-			"versionNonce": 2023323909,
+			"version": 144,
+			"versionNonce": 901052209,
 			"isDeleted": false,
 			"id": "TjnNTj4VzGotoZ5VB-ZNV",
 			"fillStyle": "hachure",
@@ -586,8 +586,8 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -227.68335459183675,
-			"y": -133.77734375,
+			"x": -264.34998056839913,
+			"y": -137.11065673828125,
 			"strokeColor": "transparent",
 			"backgroundColor": "transparent",
 			"width": 403.9540816326531,
@@ -599,7 +599,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1697724136137,
+			"updated": 1710462892551,
 			"link": null,
 			"locked": false,
 			"status": "pending",
@@ -611,8 +611,8 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 		},
 		{
 			"type": "text",
-			"version": 131,
-			"versionNonce": 997269034,
+			"version": 168,
+			"versionNonce": 1464920337,
 			"isDeleted": false,
 			"id": "UrkUefRl",
 			"fillStyle": "hachure",
@@ -621,8 +621,8 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -223.7360679516682,
-			"y": 140.7403182496532,
+			"x": -260.4026939282306,
+			"y": 137.40700526137195,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 338.134765625,
@@ -634,7 +634,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1697878632812,
+			"updated": 1710462892551,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -646,12 +646,12 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"containerId": null,
 			"originalText": "difftest的eip跳转到0x00008f02，这个地址是\n异常处理函数的入口地址",
 			"lineHeight": 1.2,
-			"baseline": 43
+			"baseline": 42
 		},
 		{
 			"type": "freedraw",
-			"version": 212,
-			"versionNonce": 795742309,
+			"version": 249,
+			"versionNonce": 676568817,
 			"isDeleted": false,
 			"id": "ghzY_B-BS24STBwuXP1D8",
 			"fillStyle": "hachure",
@@ -660,8 +660,8 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 193.45624554689837,
-			"y": 139.17896560930444,
+			"x": 156.789619570336,
+			"y": 135.8456526210232,
 			"strokeColor": "#c92a2a",
 			"backgroundColor": "#fa5252",
 			"width": 61.31581340428577,
@@ -676,7 +676,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1697724136137,
+			"updated": 1710462892551,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -779,8 +779,8 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 		},
 		{
 			"type": "freedraw",
-			"version": 232,
-			"versionNonce": 1384469611,
+			"version": 269,
+			"versionNonce": 390371537,
 			"isDeleted": false,
 			"id": "OT6BOGLB-pJH5toBxY0bO",
 			"fillStyle": "hachure",
@@ -789,8 +789,8 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 202.51877614818574,
-			"y": 426.935905146776,
+			"x": 165.85215017162335,
+			"y": 423.60259215849476,
 			"strokeColor": "#c92a2a",
 			"backgroundColor": "#fa5252",
 			"width": 48.01811572779399,
@@ -805,7 +805,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1697724136137,
+			"updated": 1710462892551,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -988,8 +988,8 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 		},
 		{
 			"type": "text",
-			"version": 171,
-			"versionNonce": 1180086646,
+			"version": 208,
+			"versionNonce": 1438340785,
 			"isDeleted": false,
 			"id": "5tA1NrCL",
 			"fillStyle": "hachure",
@@ -998,8 +998,8 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 229.3327629941324,
-			"y": 37.123728050916554,
+			"x": 192.66613701757,
+			"y": 33.790415062635304,
 			"strokeColor": "#e03131",
 			"backgroundColor": "transparent",
 			"width": 398.90625,
@@ -1011,7 +1011,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1697878632812,
+			"updated": 1710462892551,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
@@ -1023,7 +1023,7 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 			"containerId": null,
 			"originalText": "这个地址是很明显的错误地址，\n但difftest为什么执行int 0x81 后会到这个地址呢？",
 			"lineHeight": 1.2,
-			"baseline": 43
+			"baseline": 42
 		}
 	],
 	"appState": {
@@ -1041,10 +1041,10 @@ dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 723.9026710065324,
-		"scrollY": 245.85281556817824,
+		"scrollX": 456.7870438663383,
+		"scrollY": 277.1068834226261,
 		"zoom": {
-			"value": 0.7000000000000001
+			"value": 1.0000000000000004
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

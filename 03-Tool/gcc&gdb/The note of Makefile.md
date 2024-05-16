@@ -1,5 +1,7 @@
 Refernence: https://makefiletutorial.com/#getting-started
-# A simple example
+
+# 1 A simple example
+
 ```makefile
 .PHONY: run clean test
 
@@ -34,7 +36,7 @@ test: yemu
 >[!question] 怎么在 makefile 中添加命令行参数选项呢？
 > 比如 `make run xx` 就是执行 `xx`
 
-## the graph of the example
+## 1.1 the graph of the example
 
 ![[Makefile示例.svg]]
 根据上图我们可以得知两个关键的点 ^10ad09

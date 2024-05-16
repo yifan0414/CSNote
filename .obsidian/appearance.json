@@ -2,8 +2,8 @@
   "accentColor": "",
   "theme": "moonstone",
   "baseFontSize": 18,
-  "cssTheme": "Shimmering Focus",
-  "translucency": false,
+  "cssTheme": "Blue Topaz",
+  "translucency": true,
   "monospaceFontFamily": "FiraCode Nerd Font",
   "nativeMenus": false,
   "baseFontSizeAction": false,
@@ -11,12 +11,11 @@
   "enabledCssSnippets": [
     "coffebean-按文件类型显示对应图标",
     "code1",
-    "code",
     "custom_callouts",
     "img",
     "image",
     "supercharged-links-gen",
-    "list1"
+    "code"
   ],
   "textFontFamily": "霞鹜文楷 GB 屏幕阅读版",
   "interfaceFontFamily": "霞鹜文楷 GB 屏幕阅读版"

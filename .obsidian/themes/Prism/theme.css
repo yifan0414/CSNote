@@ -1,8 +1,9 @@
 /*
-    Prism Theme for Obsidian.md (Version: 3.4.4)
+    Prism Theme for Obsidian.md (Version: 3.5.1)
     > A Comprehensive, Highly-Customisable and Elegant Light/Dark Theme for Obsidian.md
 
     Source: https://github.com/damiankorcz/Obsidian-Prism
+    Documentation: https://github.com/damiankorcz/Prism-Theme/wiki
     Support the development: https://www.buymeacoffee.com/DamianKorcz
     Forum Thread: https://forum.obsidian.md/t/theme-prism/36493
 
@@ -20,6 +21,7 @@
     Copyright (c) 2021-2024 Damian Korcz <https://github.com/damiankorcz>
 */
 .theme-light.pt-color-scheme-swan-lt,
+.theme-light.pt-color-scheme-custom-lt,
 .theme-light:not(.css-settings-manager) {
   --color-grey-base-hsl: 0, 0%, 90%;
   --color-red-base-hsl: 7, 90%, 92%;
@@ -65,6 +67,7 @@
 }
 
 .theme-dark.pt-color-scheme-raven-dt,
+.theme-dark.pt-color-scheme-custom-dt,
 .theme-dark:not(.css-settings-manager) {
   --color-grey-base-hsl: 0, 0%, 16%;
   --color-red-base-hsl: 2, 55%, 19%;
@@ -558,6 +561,7 @@ body {
   --divider-color-hover: var(--interactive-accent-tint);
   --file-header-font-size: var(--font-ui-medium);
   --vault-name-font-size: var(--font-ui-medium);
+  --vault-profile-font-size: var(--font-ui-medium);
   --status-bar-font-size: var(--font-ui-small);
   --tab-stacked-font-size: var(--font-ui-medium);
   --modal-border-color: var(--window-border-color);
@@ -1113,7 +1117,6 @@ body.pt-titlebar-hide-text .titlebar .titlebar-text {
   padding: 0 var(--size-4-1) 0 var(--size-4-2);
 }
 
-.workspace-split .workspace-tab-header-spacer,
 .workspace .mod-root .workspace-tab-header-inner::after,
 .workspace-tab-header-inner-close-button::after {
   display: none;
@@ -1310,10 +1313,10 @@ body.pt-titlebar-hide-text .titlebar .titlebar-text {
   z-index: var(--layer-popover);
   min-height: unset;
 }
-.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content),
-.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content),
-.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content),
-.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content) {
+.pt-nav-header-left-sidebar-position-bottom .workspace-drawer.mod-left :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content, .workspace-leaf-content[data-type=outline] .view-content),
+.pt-nav-header-left-sidebar-position-bottom .workspace-split.mod-left-split :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content, .workspace-leaf-content[data-type=outline] .view-content),
+.pt-nav-header-right-sidebar-position-bottom .workspace-drawer.mod-right :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content, .workspace-leaf-content[data-type=outline] .view-content),
+.pt-nav-header-right-sidebar-position-bottom .workspace-split.mod-right-split :is(.nav-files-container, .workspace-leaf-content[data-type=tag] .tag-container, .workspace-leaf-content[data-type=backlink] .backlink-pane, .workspace-leaf-content[data-type=starred] .item-list, .workspace-leaf-content[data-type=dictionary-view] .contents, .workspace-leaf-content[data-type=dangling-links] .view-content .container, .workspace-leaf-content[data-type=bookmarks] .view-content > div, .workspace-leaf-content[data-type=all-properties] .view-content, .workspace-leaf-content[data-type=properties] .view-content, .workspace-leaf-content[data-type=outline] .view-content) {
   padding-bottom: calc(38px + 2 * var(--scroll-bar-size));
 }
 
@@ -1630,7 +1633,7 @@ body.is-mobile .view-header-title-container {
   font-size: 14px;
   font-weight: 600;
   color: var(--interactive-accent-text);
-  content: "Prism 3.4.4";
+  content: "Prism 3.5.1";
   border: 1px solid var(--window-border-color);
   border-radius: var(--radius-s);
 }
@@ -1843,6 +1846,10 @@ body:not(.is-phone) .community-modal-controls .setting-item:first-child {
 .setting-item + div > .setting-item-heading,
 .setting-item + .setting-item-heading {
   margin-top: var(--size-4-1);
+}
+.setting-item + div > .setting-item-heading:not(.style-settings-heading),
+.setting-item + .setting-item-heading:not(.style-settings-heading) {
+  margin-top: var(--size-4-4);
 }
 
 .setting-item-name {
@@ -2164,6 +2171,10 @@ body:not(.is-frameless, .is-hidden-frameless) .workspace-split.mod-right-split >
 
 .workspace-ribbon {
   border-right: var(--window-border);
+}
+
+.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+  padding-left: unset;
 }
 
 .mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
@@ -3885,9 +3896,11 @@ input.prompt-input:hover, input.prompt-input:focus, input.prompt-input:focus-vis
 }
 
 .workspace-leaf-content[data-type=file-explorer] .nav-files-container {
-  padding-top: unset;
-  padding-right: unset;
+  padding-top: var(--size-4-1);
+  padding-right: var(--size-4-1);
+  padding-bottom: unset;
   padding-left: var(--size-4-1);
+  margin-left: var(--size-4-1);
 }
 .workspace-leaf-content[data-type=file-explorer] .nav-folder.mod-root > .nav-folder-children {
   padding: var(--size-4-1);
@@ -3898,6 +3911,8 @@ input.prompt-input:hover, input.prompt-input:focus, input.prompt-input:focus-vis
 }
 
 .tree-item-self {
+  padding-inline-start: none !important;
+  margin-inline-start: none !important;
   border: 2px solid transparent;
 }
 
@@ -3952,11 +3967,11 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
   height: -webkit-fill-available;
   height: fill-available;
   content: " ";
-  stroke-width: unset;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 17px;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2'%3E%3C/path%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 17px;
+  stroke-width: unset;
 }
 .pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon {
   background-color: var(--text-muted);
@@ -3970,12 +3985,12 @@ body:not(.is-grabbing) .nav-folder-title.is-being-dragged,
   height: -webkit-fill-available;
   height: fill-available;
   content: " ";
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'%3E%3C/path%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: 17px;
   stroke-width: unset;
   transform: rotate(0);
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 17px;
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z'%3E%3C/path%3E%3C/svg%3E");
 }
 .pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon, .pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon {
   background-color: var(--text-muted);
@@ -4614,74 +4629,24 @@ body:not(.is-grabbing) .workspace-leaf-content[data-type=bookmarks] .tree-item-s
   mix-blend-mode: screen;
 }
 
-.pt-custom-vault-banner .nav-folder-title[data-path="/"] {
+.pt-custom-vault-banner .workspace-drawer-vault-name {
+  display: flex;
   align-items: center;
-  min-width: -webkit-fill-available;
-  min-width: fill-available;
-  height: var(--header-height);
-  padding: 0 var(--size-4-2);
-  margin-bottom: unset;
-  margin-left: -4px;
-  line-height: 16px;
-  overflow-wrap: break-word;
-  white-space: unset;
-  background: var(--background-secondary-blur);
-  border: unset;
-  border-bottom: var(--window-border);
-  border-radius: unset;
-  -webkit-backdrop-filter: blur(var(--blur-intensity));
-  backdrop-filter: blur(var(--blur-intensity));
 }
-.pt-custom-vault-banner .nav-folder-title[data-path="/"]:hover {
-  color: var(--nav-item-color-hover);
-  background-color: var(--nav-item-background-hover);
-}
-.pt-custom-vault-banner .nav-folder-title[data-path="/"]::before {
-  display: block;
-  width: 28px;
-  height: 28px;
-  margin: 6px;
+.pt-custom-vault-banner .workspace-drawer-vault-name::before {
+  display: inline-flex;
+  min-width: 24px;
+  height: 24px;
+  margin-right: var(--size-4-2);
   content: "";
   background-image: var(--custom-vault-banner-icon-url);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border-radius: unset;
 }
-.pt-custom-vault-banner .nav-folder-title[data-path="/"] .nav-folder-title-content {
-  margin: 0 4px;
-}
-.pt-custom-vault-banner.is-mobile .mod-left .workspace-drawer-header::before {
-  display: block;
-  width: 32px;
-  height: 48px;
-  margin-right: var(--size-4-5);
-  content: "";
-  background-image: var(--custom-vault-banner-icon-url);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border-radius: unset;
-}
-.pt-custom-vault-banner.pt-custom-vault-banner-justify-content-left .nav-folder-title[data-path="/"] {
-  justify-content: flex-start;
-}
-.pt-custom-vault-banner.pt-custom-vault-banner-justify-content-center .nav-folder-title[data-path="/"] {
-  justify-content: center;
-}
-.pt-custom-vault-banner.pt-custom-vault-banner-justify-content-right .nav-folder-title[data-path="/"] {
-  justify-content: flex-end;
-}
-.pt-custom-vault-banner.pt-custom-vault-banner-sticky .nav-folder-title[data-path="/"] {
-  position: sticky;
-  top: 0;
-  z-index: var(--layer-popover);
-}
-.pt-custom-vault-banner.pt-custom-vault-banner-order-ltr .nav-folder-title[data-path="/"] .nav-folder-collapse-indicator.collapse-icon {
-  order: 0;
-}
-.pt-custom-vault-banner.pt-custom-vault-banner-order-rtl .nav-folder-title[data-path="/"] .nav-folder-collapse-indicator.collapse-icon {
-  order: 1;
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  padding: var(--size-4-1) var(--size-4-2);
 }
 
 body:not(.pt-disable-mark-highlight-styling) mark[class] {
@@ -4874,6 +4839,121 @@ body.pt-focused-mode.is-popout-window.pt-focused-style-main-and-popout-only .mob
   transition: opacity 50ms;
 }
 
+.pt-colored-folders.pt-colored-folders-style-accent.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-folder .nav-file-title:not(.is-active, :hover) {
+  color: var(--interactive-accent-text);
+}
+.pt-colored-folders.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder {
+  --nav-indentation-guide-color: var(--interactive-accent-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title {
+  color: var(--interactive-accent-text);
+}
+.pt-colored-folders.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:hover,
+.pt-colored-folders.pt-colored-folders-style-accent .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title:hover {
+  color: var(--interactive-accent-text);
+  background-color: var(--interactive-accent-base);
+}
+.pt-colored-folders.pt-colored-folders-style-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+  color: var(--interactive-accent-text);
+}
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-accent.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+  background-color: var(--interactive-accent-text);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-colored-folders-files-match .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:not(.is-active, :hover) {
+  color: var(--rainbow-text-color);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder {
+  --nav-indentation-guide-color: var(--rainbow-indent-color);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title {
+  color: var(--rainbow-text-color);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-file-title:hover,
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder .nav-folder-title:hover {
+  color: var(--rainbow-text-color);
+  background-color: var(--rainbow-background-color);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+2) {
+  --rainbow-text-color: var(--color-red-text);
+  --rainbow-background-color: var(--color-red-base);
+  --rainbow-indent-color: var(--color-red-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+3) {
+  --rainbow-text-color: var(--color-orange-text);
+  --rainbow-background-color: var(--color-orange-base);
+  --rainbow-indent-color: var(--color-orange-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+4) {
+  --rainbow-text-color: var(--color-yellow-text);
+  --rainbow-background-color: var(--color-yellow-base);
+  --rainbow-indent-color: var(--color-yellow-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+5) {
+  --rainbow-text-color: var(--color-green-text);
+  --rainbow-background-color: var(--color-green-base);
+  --rainbow-indent-color: var(--color-green-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+6) {
+  --rainbow-text-color: var(--color-mint-text);
+  --rainbow-background-color: var(--color-mint-base);
+  --rainbow-indent-color: var(--color-mint-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+7) {
+  --rainbow-text-color: var(--color-cyan-text);
+  --rainbow-background-color: var(--color-cyan-base);
+  --rainbow-indent-color: var(--color-cyan-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+8) {
+  --rainbow-text-color: var(--color-blue-text);
+  --rainbow-background-color: var(--color-blue-base);
+  --rainbow-indent-color: var(--color-blue-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+9) {
+  --rainbow-text-color: var(--color-purple-text);
+  --rainbow-background-color: var(--color-purple-base);
+  --rainbow-indent-color: var(--color-purple-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+10) {
+  --rainbow-text-color: var(--color-pink-text);
+  --rainbow-background-color: var(--color-pink-base);
+  --rainbow-indent-color: var(--color-pink-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .workspace-leaf-content[data-type=file-explorer] .nav-files-container > div > .nav-folder:nth-child(10n+11) {
+  --rainbow-text-color: var(--color-grey-text);
+  --rainbow-background-color: var(--color-grey-base);
+  --rainbow-indent-color: var(--color-grey-tint);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow .nav-folder.is-collapsed .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+  color: var(--rainbow-text-color);
+}
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-active .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-default .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon, .pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder.is-collapsed:hover .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed) .collapse-icon svg.svg-icon,
+.pt-colored-folders.pt-colored-folders-style-rainbow.pt-file-explorer-folder-icon.pt-file-explorer-folder-icon-accent .nav-folder:not(.is-collapsed):hover .collapse-icon svg.svg-icon {
+  background-color: var(--rainbow-text-color);
+}
+
 div.workspace-leaf-content[data-type=style-settings] div.view-content {
   padding: var(--file-margins);
   padding-bottom: calc(48px + var(--scroll-bar-size));
@@ -4886,9 +4966,11 @@ body:not(.is-phone) div.workspace-leaf-content[data-type=style-settings] .view-c
   padding: var(--size-4-2);
 }
 .setting-item.setting-item-heading.style-settings-heading:hover {
-  color: var(--highlight-text-normal);
-  background-color: var(--background-modifier-hover);
+  background-color: var(--interactive-accent-base);
   border-radius: var(--radius-m);
+}
+.setting-item.setting-item-heading.style-settings-heading:hover .setting-item-name {
+  color: var(--interactive-accent-text) !important;
 }
 
 .style-settings-container {
@@ -5044,16 +5126,6 @@ body:not(.is-phone) div.workspace-leaf-content[data-type=style-settings] .view-c
 }
 .styleSettingsButton.prism-wiki a:hover {
   color: var(--color-blue-tint);
-}
-.styleSettingsButton.prism-roadmap {
-  background-color: var(--color-green-base);
-  border-color: var(--color-green-tint);
-}
-.styleSettingsButton.prism-roadmap a {
-  color: var(--color-green-text);
-}
-.styleSettingsButton.prism-roadmap a:hover {
-  color: var(--color-green-tint);
 }
 .styleSettingsButton.prism-releases {
   background-color: var(--color-orange-base);
@@ -6336,6 +6408,77 @@ body:not(.is-frameless):not(.qe-hide-breadcrumbs) .status-bar {
 body.is-mobile.is-phone .search-input-container::before {
   top: calc((var(--input-height) - var(--search-icon-size)) / 2);
   left: var(--size-4-3);
+}
+
+.workspace-leaf-content[data-type=dataloom] .view-content {
+  padding: unset;
+}
+.workspace-leaf-content[data-type=dataloom] .dataloom-option-bar .dataloom-padding {
+  height: var(--header-height);
+  padding: var(--size-4-1) var(--size-4-2) !important;
+}
+.workspace-leaf-content[data-type=dataloom] .dataloom-app {
+  border-top: unset;
+}
+.workspace-leaf-content[data-type=dataloom] .dataloom-bubble {
+  color: var(--interactive-accent-text);
+  background-color: var(--interactive-accent-base);
+  border: 1px solid var(--interactive-accent-tint);
+}
+.workspace-leaf-content[data-type=dataloom] .dataloom-cell.dataloom-cell--freeze {
+  background-color: var(--background-secondary);
+}
+.workspace-leaf-content[data-type=dataloom] .dataloom-flex {
+  padding: 0 var(--size-4-2);
+}
+
+.dataloom-button:hover {
+  color: var(--interactive-accent-text);
+}
+.dataloom-button[aria-label="Delete filter"]:hover {
+  color: var(--color-red-text);
+  background-color: var(--color-red-base) !important;
+}
+
+.dataloom-select {
+  background-color: var(--background-secondary-alt);
+  border: var(--window-border);
+}
+
+.dataloom-focusable:focus-visible,
+.dataloom-focusable--focused {
+  outline-color: var(--interactive-accent-tint);
+}
+
+.dataloom-menu {
+  padding: var(--size-4-1);
+  border: 1px solid var(--window-border-color) !important;
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-l) !important;
+}
+.theme-dark .dataloom-menu {
+  background-color: var(--background-secondary-alt);
+}
+.theme-light .dataloom-menu {
+  background-color: var(--background-primary);
+}
+.dataloom-menu .dataloom-padding {
+  padding: unset !important;
+}
+.dataloom-menu .dataloom-menu-item:hover {
+  color: var(--interactive-accent-text);
+  background-color: var(--interactive-accent-base);
+  border-radius: var(--radius-s);
+}
+.dataloom-menu .dataloom-switch {
+  width: var(--toggle-width);
+}
+.dataloom-menu .dataloom-switch::after {
+  width: var(--toggle-thumb-width);
+  height: var(--toggle-thumb-height);
+}
+.dataloom-menu .dataloom-stack {
+  padding: var(--size-2-1) var(--size-4-1);
 }
 
 /* @settings
@@ -7763,43 +7906,6 @@ settings:
         id: pt-custom-vault-banner
         title: Enable Custom Vault Banner
         description: Enables the Custom Vault Banner in the File Explorer.
-        type: class-toggle
-        default: true
-    -
-        id: custom-vault-banner-horizontal-align
-        title: Custom Vault Banner Alignment
-        description: Horizontally aligns the Custom Vault Banner content.
-        type: class-select
-        allowEmpty: false
-        default: pt-custom-vault-banner-justify-content-center
-        options:
-            -
-                label: Left
-                value: pt-custom-vault-banner-justify-content-left
-            -
-                label: Center
-                value: pt-custom-vault-banner-justify-content-center
-            -
-                label: Right
-                value: pt-custom-vault-banner-justify-content-right
-    -
-        id: custom-vault-banner-order
-        title: Custom Vault Banner Order
-        description: Select the order in which the content appears in the Custom Vault Banner.
-        type: class-select
-        allowEmpty: false
-        default: pt-custom-vault-banner-order-ltr
-        options:
-            -
-                label: Left to Right
-                value: pt-custom-vault-banner-order-ltr
-            -
-                label: Right to Left
-                value: pt-custom-vault-banner-order-rtl
-    -
-        id: pt-custom-vault-banner-sticky
-        title: Custom Vault Banner Sticky
-        description: Make the Custom Vault Banner stick to the top of the File Explorer.
         type: class-toggle
         default: true
     -
@@ -9394,10 +9500,10 @@ settings:
         type: heading
         level: 1
         collapsed: true
-    -
-        id: window-adjustments
-        title: Window Adjustments
-        description: Settings for changing the gaps between windows and border radius around all UI elements.
+    -   
+        id: sidebar-and-main-workspace
+        title: Sidebar and Main Workspace
+        description: Settings for positioning, alignment, etc. of different UI elements within the Sidebars and the Main Workspace.
         type: heading
         level: 2
         collapsed: true
@@ -9423,13 +9529,6 @@ settings:
         min: 0
         max: 20
         step: 1
-    -
-        id: sidebar-and-main-workspace-elements
-        title: Sidebar and Main Workspace Elements
-        description: Settings for positioning, alignment, etc. of different UI elements within the Sidebars and the Main Workspace.
-        type: heading
-        level: 2
-        collapsed: true
     -
         id: tab-label
         title: Tab Label
@@ -9594,6 +9693,38 @@ settings:
             -
                 label: Accent Color on Open Folders
                 value: pt-file-explorer-folder-icon-active
+    -
+        id: colored-folders
+        title: Colored Folders
+        description: Colors the File Explorer folders.
+        type: heading
+        level: 4
+        collapsed: true
+    -
+        id: pt-colored-folders
+        title: Enable Colored Folders
+        description: This option will overwrite the behaviour of Folder Dropdown Icon Color.
+        type: class-toggle
+        default: false
+    -
+        id: pt-colored-folders-style
+        title: Folder Dropdown Style
+        description: Select the desired style for the Colored Folders.
+        type: class-select
+        allowEmpty: false
+        default: pt-colored-folders-style-rainbow
+        options:
+            -
+                label: Accent Color
+                value: pt-colored-folders-style-accent
+            -
+                label: Rainbow
+                value: pt-colored-folders-style-rainbow
+    -
+        id: pt-colored-folders-files-match
+        title: Apply to Nested Files
+        type: class-toggle
+        default: false
     -
         id: titlebar
         title: Titlebar
@@ -9891,7 +10022,7 @@ settings:
         id: theme-info-buttons
         type: info-text
         markdown: true
-        description: '<div class="styleSettingsButton prism-wiki"><a href="https://github.com/damiankorcz/Prism-Theme/wiki"><span class="styleSettingsButtonEmoji">🏛️</span>Prism Wiki</a></div><div class="styleSettingsButton prism-roadmap"><a href="https://github.com/users/damiankorcz/projects/5"><span class="styleSettingsButtonEmoji">🗺️</span>Prism Roadmap</a></div><div class="styleSettingsButton prism-releases"><a href="https://github.com/damiankorcz/Prism-Theme/releases"><span class="styleSettingsButtonEmoji">📦</span>Prism Releases & Changelog</a></div>'
+        description: '<div class="styleSettingsButton prism-wiki"><a href="https://github.com/damiankorcz/Prism-Theme/wiki"><span class="styleSettingsButtonEmoji">🏛️</span>Prism Wiki</a></div><div class="styleSettingsButton prism-releases"><a href="https://github.com/damiankorcz/Prism-Theme/releases"><span class="styleSettingsButtonEmoji">📦</span>Prism Releases & Changelog</a></div>'
     -
         id: support
         title: Support the Development of Prism
