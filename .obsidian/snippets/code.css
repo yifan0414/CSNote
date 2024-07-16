@@ -15,23 +15,30 @@
   --code-value: #098658;
 }
 
+
+/* 调节行内数学公式字体大小 */
+span.math-inline {
+    font-size: 1.1em; /* 可根据需要调整大小 */
+}
+
+
 /* 使代码块中的字体变为粗体 */
 .markdown-preview-view code {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /* 使行内代码的字体变为粗体 */
 .markdown-preview-view pre code {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /* 使编辑模式下的代码块字体变为粗体 */
 .cm-s-obsidian .cm-inline-code {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .cm-s-obsidian .HyperMD-codeblock {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 
