@@ -1,8 +1,8 @@
 {
   "accentColor": "",
   "theme": "moonstone",
-  "baseFontSize": 18,
-  "cssTheme": "Blue Topaz",
+  "baseFontSize": 16,
+  "cssTheme": "Shimmering Focus",
   "translucency": true,
   "monospaceFontFamily": "FiraCode Nerd Font",
   "nativeMenus": false,
@@ -17,6 +17,6 @@
     "supercharged-links-gen",
     "code"
   ],
-  "textFontFamily": "霞鹜文楷 GB 屏幕阅读版",
+  "textFontFamily": "微软雅黑,霞鹜文楷 GB 屏幕阅读版",
   "interfaceFontFamily": "霞鹜文楷 GB 屏幕阅读版"
 }

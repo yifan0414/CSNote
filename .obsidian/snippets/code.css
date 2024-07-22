@@ -8,7 +8,7 @@
   --code-keyword: #0000ff;
   --code-property: var(--color-cyan);
   /* --code-punctuation: #319331; */
-  /* --code-operator: #000000; */
+  --code-operator: #000000;
   --code-string: #008000;
   --code-tag: var(--color-red);
   /* --code-value: var(--color-purple); */
@@ -16,9 +16,23 @@
 }
 
 
+
+.markdown-preview-view h1, 
+.markdown-preview-view h2, 
+.markdown-preview-view h3, 
+.markdown-preview-view h4, 
+.markdown-preview-view h5, 
+.markdown-preview-view h6 {
+    margin-top: 0 !important;
+}
+
 /* 调节行内数学公式字体大小 */
 span.math-inline {
     font-size: 1.1em; /* 可根据需要调整大小 */
+}
+
+.math-block {
+    font-size: 1.2em;
 }
 
 
