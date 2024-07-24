@@ -144,7 +144,7 @@ Disassembly of section .fini:
 > 
 > **.init 段**
 > 
-> ~~~asm
+> ``` asm
 > 0000000000000000 <_init>:
 >    0:   f3 0f 1e fa             endbr64
 >    4:   48 83 ec 08             sub    $0x8,%rsp
@@ -153,7 +153,7 @@ Disassembly of section .fini:
 >    f:   48 85 c0                test   %rax,%rax
 >   12:   74 02                   je     16 <_init+0x16>
 >   14:   ff d0                   callq  *%rax
-> ~~~
+> ```
 > 
 > 这部分代码在程序开始执行时运行，具体步骤如下：
 > 

@@ -378,7 +378,7 @@ make -nB \
 
 好像最后一行还是不如人意
 
->[!tips] vim 中可以只对选中的文本进行处理
+>[!tip] vim 中可以只对选中的文本进行处理
 >![V9RCj8](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/V9RCj8.png)
 
 

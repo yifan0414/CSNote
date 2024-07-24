@@ -9,9 +9,7 @@ find . -type f \( -name "*.c" -o -name "*.h" \) -exec wc -l {} + | sort -nr
 或者使用下面的命令只统计行数 ![[04-NEMU 框架选讲 (2) 代码导读#^qkeeer]]
 
 > [!summary]- 结果
-> 
-> 
-> ~~~
+> ```txt
 >   6146 total
 >    697 ./fs.c
 >    688 ./proc.c
@@ -53,4 +51,4 @@ find . -type f \( -name "*.c" -o -name "*.h" \) -exec wc -l {} + | sort -nr
 >     10 ./sleeplock.h
 >      9 ./spinlock.h
 >      5 ./fcntl.h
-> ~~~
+> ```

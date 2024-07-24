@@ -3,7 +3,6 @@ author: kepano
 source: https://gist.github.com/kepano/cde61ac7db1afd3f173a16157c627f93
 */
 
-
 /*
 author: Adonis, Anubis
 source: https://discord.com/channels/686053708261228577/702656734631821413/1040275500297375856
@@ -14,16 +13,19 @@ support Anubis: https://www.buymeacoffee.com/anubisnekhet
   padding: 0px;
 }
 .callout:not(.is-collapsible) .callout-content {
-  padding: 0 var(--callout-title-padding) var(--callout-title-padding) var(--callout-title-padding);
+  padding: 0 var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding);
 }
+
 .callout:not(.is-collapsible) .callout-title {
   background-color: rgba(var(--callout-color), 0 0.5);
   padding: var(--callout-title-padding);
   cursor: pointer;
 }
-.callout:not(.is-collapsible) .callout-title .callout-title-inner {
-  font-weight: normal;
-}
+
+/* .callout:not(.is-collapsible) .callout-title .callout-title-inner { */
+/*   font-weight: normal; */
+/* } */
 
 .callout:not(.is-collapsible) {
   border-color: rgba(var(--callout-color), 0.4);
@@ -33,9 +35,8 @@ support Anubis: https://www.buymeacoffee.com/anubisnekhet
 }
 
 .callout-content {
-  padding: var(--callout-title-padding) var(--callout-title-padding) var(
-      --callout-title-padding
-    ) calc(var(--callout-title-padding) * 1.5);
+  padding: var(--callout-title-padding) var(--callout-title-padding)
+    var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
   border-top: 1px dashed rgba(var(--callout-color), 0.4);
 }
 
@@ -52,7 +53,7 @@ support Anubis: https://www.buymeacoffee.com/anubisnekhet
 }
 .callout.is-collapsible {
   border-color: rgba(var(--callout-color), 0.4);
-  border-width: 1px;
+  border-width: 1.5px;
   border-radius: var(--callout-radius);
   background-color: rgba(var(--ctp-mantle), 0.4);
   --bold-weight: bolder;
@@ -83,10 +84,10 @@ support Anubis: https://www.buymeacoffee.com/anubisnekhet
   border-color: rgba(var(--callout-color), 0.4);
   cursor: pointer;
 }
+
 .callout.is-collapsible:not(.is-collapsed) .callout-content {
-  padding: var(--callout-title-padding) var(--callout-title-padding) 0 calc(var(
-          --callout-title-padding
-        ) * 1.5);
+  padding: var(--callout-title-padding) var(--callout-title-padding) 0
+    calc(var(--callout-title-padding) * 1.5);
   border-top: 1px dashed rgba(var(--callout-color), 0.4);
 }
 .callout:not(.is-collapsible) {

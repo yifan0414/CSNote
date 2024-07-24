@@ -31,7 +31,7 @@
 
 一个可行的想法是操作系统可以提供类似迭代器的 API，可以在某个时刻对进程列表进行 “快照”，然后程序可以通过 API 迭代快照里的进程。
 
-```c hl:1-2
+```c
 Snapshot *CreateProcessSnapshot(); // 迭代开始
 Process *FirstProcess(Snapshot *snapshot); // 取得第一个进程
 Process *NextProcess(Process *process); // 获得下一个进程
@@ -139,7 +139,7 @@ Unix is _user-friendly_ — it's just choosy about who its friends are.
 
 你可以任意选择树的形态，以下输出都是合法的：
 
-```txt hl:1,3,5,7
+```txt
 $ ./pstree-64
 systemd─┬─accounts-daemon─┬─
         │
@@ -188,7 +188,7 @@ systemd
 
 获取命令行参数的一小段代码：
 
-```c hl:1-5
+```c
 #include <stdio.h>
 #include <assert.h>
 
@@ -252,7 +252,7 @@ if (fp) {
 
 procfs 里的信息足够让你写一个非常不错的任务管理器。也许有同学在实验开始的时候就已经想到——如果你想实现一个任务管理器并且不太会的话，我们可以看一看系统的任务管理器是怎么实现的嘛！我们在课堂上已经演示过 gcc 和 xedit 的例子，就用 strace 工具就能查看进程运行时的系统调用序列：
 
-```txt hl:1,3,5,7
+```txt
 $ strace ps
 ...
 openat(AT_FDCWD, "/proc/1/stat", O_RDONLY)           = 6
