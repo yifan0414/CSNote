@@ -16,7 +16,7 @@ v.push_back({1, 2});
 `emplace_back` 方法则是直接在 `vector` 的末尾构造元素，而不是先构造一个临时元素再将其复制或移动到 `vector` 中。这通过接收构造函数的参数，而不是元素本身，来达到更直接的构造。
 
 例如：
-```cpp
+```py
 std::vector<std::pair<int, int>> v;
 v.emplace_back(1, 2);
 ```

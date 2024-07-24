@@ -148,192 +148,195 @@ clean:
 >[!note] 同样的，我们可以使用 `make run -nB` 查看运行参数
 > ![VCks6c](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/VCks6c.png) ^tdabqo
 
+
+```shell hl:echo
 Building x86-nemu-interpreter
 
-<span style="background:#fff88f">echo + CC src/monitor/debug/ui.c</span>
+echo + CC src/monitor/debug/ui.c
 
 mkdir -p build/obj-x86-interpreter/monitor/debug/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/monitor/debug/ui.o src/monitor/debug/ui.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/monitor/debug/ui.o src/monitor/debug/ui.c
 
-<span style="background:#fff88f">echo + CC src/monitor/debug/watchpoint.c</span>
-
-mkdir -p build/obj-x86-interpreter/monitor/debug/
-
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/monitor/debug/watchpoint.o src/monitor/debug/watchpoint.c
-
-<span style="background:#fff88f">echo + CC src/monitor/debug/log.c</span>
+echo + CC src/monitor/debug/watchpoint.c
 
 mkdir -p build/obj-x86-interpreter/monitor/debug/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/monitor/debug/log.o src/monitor/debug/log.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/monitor/debug/watchpoint.o src/monitor/debug/watchpoint.c
 
-<span style="background:#fff88f">echo + CC src/monitor/debug/expr.c</span>
+echo + CC src/monitor/debug/log.c
 
 mkdir -p build/obj-x86-interpreter/monitor/debug/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/monitor/debug/expr.o src/monitor/debug/expr.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/monitor/debug/log.o src/monitor/debug/log.c
 
-<span style="background:#fff88f">echo + CC src/monitor/monitor.c</span>
+echo + CC src/monitor/debug/expr.c
+
+mkdir -p build/obj-x86-interpreter/monitor/debug/
+
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/monitor/debug/expr.o src/monitor/debug/expr.c
+
+echo + CC src/monitor/monitor.c
 
 mkdir -p build/obj-x86-interpreter/monitor/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/monitor/monitor.o src/monitor/monitor.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/monitor/monitor.o src/monitor/monitor.c
 
-<span style="background:#fff88f">echo + CC src/monitor/difftest/dut.c</span>
+echo + CC src/monitor/difftest/dut.c
 
 mkdir -p build/obj-x86-interpreter/monitor/difftest/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/monitor/difftest/dut.o src/monitor/difftest/dut.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/monitor/difftest/dut.o src/monitor/difftest/dut.c
 
-<span style="background:#fff88f">echo + CC src/monitor/cpu-exec.c</span>
+echo + CC src/monitor/cpu-exec.c
 
 mkdir -p build/obj-x86-interpreter/monitor/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/monitor/cpu-exec.o src/monitor/cpu-exec.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/monitor/cpu-exec.o src/monitor/cpu-exec.c
 
-<span style="background:#fff88f">echo + CC src/main.c</span>
+echo + CC src/main.c
 
 mkdir -p build/obj-x86-interpreter/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/main.o src/main.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/main.o src/main.c
 
-<span style="background:#fff88f">echo + CC src/memory/paddr.c</span>
+echo + CC src/memory/paddr.c
 
 mkdir -p build/obj-x86-interpreter/memory/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/memory/paddr.o src/memory/paddr.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/memory/paddr.o src/memory/paddr.c
 
-<span style="background:#fff88f">echo + CC src/device/device.c</span>
-
-mkdir -p build/obj-x86-interpreter/device/
-
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/device/device.o src/device/device.c
-
-<span style="background:#fff88f">echo + CC src/device/alarm.c</span>
+echo + CC src/device/device.c
 
 mkdir -p build/obj-x86-interpreter/device/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/device/alarm.o src/device/alarm.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/device.o src/device/device.c
 
-<span style="background:#fff88f">echo + CC src/device/serial.c</span>
-
-mkdir -p build/obj-x86-interpreter/device/
-
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/device/serial.o src/device/serial.c
-
-<span style="background:#fff88f">echo + CC src/device/vga.c</span>
+echo + CC src/device/alarm.c
 
 mkdir -p build/obj-x86-interpreter/device/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/device/vga.o src/device/vga.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/alarm.o src/device/alarm.c
 
-<span style="background:#fff88f">echo + CC src/device/intr.c</span>
-
-mkdir -p build/obj-x86-interpreter/device/
-
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/device/intr.o src/device/intr.c
-
-<span style="background:#fff88f">echo + CC src/device/keyboard.c</span>
+echo + CC src/device/serial.c
 
 mkdir -p build/obj-x86-interpreter/device/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/device/keyboard.o src/device/keyboard.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/serial.o src/device/serial.c
 
-<span style="background:#fff88f">echo + CC src/device/io/port-io.c</span>
+echo + CC src/device/vga.c
+
+mkdir -p build/obj-x86-interpreter/device/
+
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/vga.o src/device/vga.c
+
+echo + CC src/device/intr.c
+
+mkdir -p build/obj-x86-interpreter/device/
+
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/intr.o src/device/intr.c
+
+echo + CC src/device/keyboard.c
+
+mkdir -p build/obj-x86-interpreter/device/
+
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/keyboard.o src/device/keyboard.c
+
+echo + CC src/device/io/port-io.c
 
 mkdir -p build/obj-x86-interpreter/device/io/
 
-gcc <span style="background:#d2cbff">-D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"</span>  -c -o <span style="background:#affad1">build/obj-x86-interpreter/device/io/port-io.o src/device/io/port-io.c</span>
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/io/port-io.o src/device/io/port-io.c
 
-<span style="background:#fff88f">echo + CC src/device/io/map.c</span>
-
-mkdir -p build/obj-x86-interpreter/device/io/
-
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/device/io/map.o src/device/io/map.c
-
-<span style="background:#fff88f">echo + CC src/device/io/mmio.c</span>
+echo + CC src/device/io/map.c
 
 mkdir -p build/obj-x86-interpreter/device/io/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/device/io/mmio.o src/device/io/mmio.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/io/map.o src/device/io/map.c
 
-<span style="background:#fff88f">echo + CC src/device/timer.c</span>
+echo + CC src/device/io/mmio.c
+
+mkdir -p build/obj-x86-interpreter/device/io/
+
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/io/mmio.o src/device/io/mmio.c
+
+echo + CC src/device/timer.c
 
 mkdir -p build/obj-x86-interpreter/device/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/device/timer.o src/device/timer.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/timer.o src/device/timer.c
 
-<span style="background:#fff88f">echo + CC src/device/audio.c</span>
+echo + CC src/device/audio.c
 
 mkdir -p build/obj-x86-interpreter/device/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/device/audio.o src/device/audio.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/device/audio.o src/device/audio.c
 
-<span style="background:#fff88f">echo + CC src/isa/x86/exec/exec.c</span>
+echo + CC src/isa/x86/exec/exec.c
 
 mkdir -p build/obj-x86-interpreter/isa/x86/exec/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/isa/x86/exec/exec.o src/isa/x86/exec/exec.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/isa/x86/exec/exec.o src/isa/x86/exec/exec.c
 
-<span style="background:#fff88f">echo + CC src/isa/x86/exec/special.c</span>
+echo + CC src/isa/x86/exec/special.c
 
 mkdir -p build/obj-x86-interpreter/isa/x86/exec/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/isa/x86/exec/special.o src/isa/x86/exec/special.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/isa/x86/exec/special.o src/isa/x86/exec/special.c
 
-<span style="background:#fff88f">echo + CC src/isa/x86/decode.c</span>
-
-mkdir -p build/obj-x86-interpreter/isa/x86/
-
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/isa/x86/decode.o src/isa/x86/decode.c
-
-<span style="background:#fff88f">echo + CC src/isa/x86/logo.c</span>
+echo + CC src/isa/x86/decode.c
 
 mkdir -p build/obj-x86-interpreter/isa/x86/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/isa/x86/logo.o src/isa/x86/logo.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/isa/x86/decode.o src/isa/x86/decode.c
 
-<span style="background:#fff88f">echo + CC src/isa/x86/mmu.c</span>
-
-mkdir -p build/obj-x86-interpreter/isa/x86/
-
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/isa/x86/mmu.o src/isa/x86/mmu.c
-
-<span style="background:#fff88f">echo + CC src/isa/x86/intr.c</span>
+echo + CC src/isa/x86/logo.c
 
 mkdir -p build/obj-x86-interpreter/isa/x86/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/isa/x86/intr.o src/isa/x86/intr.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/isa/x86/logo.o src/isa/x86/logo.c
 
-<span style="background:#fff88f">echo + CC src/isa/x86/reg.c</span>
-
-mkdir -p build/obj-x86-interpreter/isa/x86/
-
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/isa/x86/reg.o src/isa/x86/reg.c
-
-<span style="background:#fff88f">echo + CC src/isa/x86/init.c</span>
+echo + CC src/isa/x86/mmu.c
 
 mkdir -p build/obj-x86-interpreter/isa/x86/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/isa/x86/init.o src/isa/x86/init.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/isa/x86/mmu.o src/isa/x86/mmu.c
 
-<span style="background:#fff88f">echo + CC src/isa/x86/difftest/dut.c</span>
+echo + CC src/isa/x86/intr.c
+
+mkdir -p build/obj-x86-interpreter/isa/x86/
+
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/isa/x86/intr.o src/isa/x86/intr.c
+
+echo + CC src/isa/x86/reg.c
+
+mkdir -p build/obj-x86-interpreter/isa/x86/
+
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/isa/x86/reg.o src/isa/x86/reg.c
+
+echo + CC src/isa/x86/init.c
+
+mkdir -p build/obj-x86-interpreter/isa/x86/
+
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/isa/x86/init.o src/isa/x86/init.c
+
+echo + CC src/isa/x86/difftest/dut.c
 
 mkdir -p build/obj-x86-interpreter/isa/x86/difftest/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/isa/x86/difftest/dut.o src/isa/x86/difftest/dut.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/isa/x86/difftest/dut.o src/isa/x86/difftest/dut.c
 
-<span style="background:#fff88f">echo + CC src/engine/interpreter/init.c</span>
+echo + CC src/engine/interpreter/init.c
 
 mkdir -p build/obj-x86-interpreter/engine/interpreter/
 
-gcc -D\_\_DIFF\_REF\_KVM\_\_ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D\_\_ENGINE\_interpreter\_\_ -D\_\_ISA\_\_=x86 -D\_\_ISA\_x86\_\_ -D\_ISA\_H\_=\"isa/x86.h\"  -c -o build/obj-x86-interpreter/engine/interpreter/init.o src/engine/interpreter/init.c
+gcc -D__DIFF_REF_KVM__ -O2 -MMD -Wall -Werror -ggdb3 -I./include -I./src/engine/interpreter -D__ENGINE_interpreter__ -D__ISA__=x86 -D__ISA_x86__ -D_ISA_H_="isa/x86.h" -c -o build/obj-x86-interpreter/engine/interpreter/init.o src/engine/interpreter/init.c
 
-<span style="background:#fff88f">echo + LD build/x86-nemu-interpreter</span>
+echo + LD build/x86-nemu-interpreter
 
-gcc -O2 -rdynamic  -o build/x86-nemu-interpreter build/obj-x86-interpreter/monitor/debug/ui.o build/obj-x86-interpreter/monitor/debug/watchpoint.o build/obj-x86-interpreter/monitor/debug/log.o build/obj-x86-interpreter/monitor/debug/expr.o build/obj-x86-interpreter/monitor/monitor.o build/obj-x86-interpreter/monitor/difftest/dut.o build/obj-x86-interpreter/monitor/cpu-exec.o build/obj-x86-interpreter/main.o build/obj-x86-interpreter/memory/paddr.o build/obj-x86-interpreter/device/device.o build/obj-x86-interpreter/device/alarm.o build/obj-x86-interpreter/device/serial.o build/obj-x86-interpreter/device/vga.o build/obj-x86-interpreter/device/intr.o build/obj-x86-interpreter/device/keyboard.o build/obj-x86-interpreter/device/io/port-io.o build/obj-x86-interpreter/device/io/map.o build/obj-x86-interpreter/device/io/mmio.o build/obj-x86-interpreter/device/timer.o build/obj-x86-interpreter/device/audio.o build/obj-x86-interpreter/isa/x86/exec/exec.o build/obj-x86-interpreter/isa/x86/exec/special.o build/obj-x86-interpreter/isa/x86/decode.o build/obj-x86-interpreter/isa/x86/logo.o build/obj-x86-interpreter/isa/x86/mmu.o build/obj-x86-interpreter/isa/x86/intr.o build/obj-x86-interpreter/isa/x86/reg.o build/obj-x86-interpreter/isa/x86/init.o build/obj-x86-interpreter/isa/x86/difftest/dut.o build/obj-x86-interpreter/engine/interpreter/init.o -lSDL2 -lreadline -ldl
+gcc -O2 -rdynamic -o build/x86-nemu-interpreter build/obj-x86-interpreter/monitor/debug/ui.o build/obj-x86-interpreter/monitor/debug/watchpoint.o build/obj-x86-interpreter/monitor/debug/log.o build/obj-x86-interpreter/monitor/debug/expr.o build/obj-x86-interpreter/monitor/monitor.o build/obj-x86-interpreter/monitor/difftest/dut.o build/obj-x86-interpreter/monitor/cpu-exec.o build/obj-x86-interpreter/main.o build/obj-x86-interpreter/memory/paddr.o build/obj-x86-interpreter/device/device.o build/obj-x86-interpreter/device/alarm.o build/obj-x86-interpreter/device/serial.o build/obj-x86-interpreter/device/vga.o build/obj-x86-interpreter/device/intr.o build/obj-x86-interpreter/device/keyboard.o build/obj-x86-interpreter/device/io/port-io.o build/obj-x86-interpreter/device/io/map.o build/obj-x86-interpreter/device/io/mmio.o build/obj-x86-interpreter/device/timer.o build/obj-x86-interpreter/device/audio.o build/obj-x86-interpreter/isa/x86/exec/exec.o build/obj-x86-interpreter/isa/x86/exec/special.o build/obj-x86-interpreter/isa/x86/decode.o build/obj-x86-interpreter/isa/x86/logo.o build/obj-x86-interpreter/isa/x86/mmu.o build/obj-x86-interpreter/isa/x86/intr.o build/obj-x86-interpreter/isa/x86/reg.o build/obj-x86-interpreter/isa/x86/init.o build/obj-x86-interpreter/isa/x86/difftest/dut.o build/obj-x86-interpreter/engine/interpreter/init.o -lSDL2 -lreadline -ldl
 
+```
 
 通过查看make过程中信息, 我们可以发现+ CC 和+ LD是通过echo命令打印出来的.
 

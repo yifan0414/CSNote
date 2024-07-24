@@ -275,7 +275,7 @@ The following example illustrates xarg's behavior:
 
 而 cat 的实现是这样的
 
-```c
+```c file:cat.c
 #include "kernel/types. h"
 #include "kernel/stat. h"
 #include "kernel/fcntl. h"

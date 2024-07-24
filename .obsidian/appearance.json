@@ -13,9 +13,10 @@
     "code1",
     "custom_callouts",
     "img",
-    "code",
     "image",
-    "supercharged-links-gen"
+    "code",
+    "supercharged-links-gen",
+    "callout"
   ],
   "textFontFamily": "Bookerly,苹方-简",
   "interfaceFontFamily": "Bookerly,苹方-简"

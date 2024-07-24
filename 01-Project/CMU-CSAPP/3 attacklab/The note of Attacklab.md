@@ -6,7 +6,8 @@
 
 攻击分为两种，一种是 Code Inject Attack（CI），另一种是 Return-Oriented Programming（ROP）。
 
->[!note] 执行目标位置的代码，使用 ret 指令
+>[!chatgpt] 
+>执行目标位置的代码，使用 ret 指令
 
 
 - Code Inject Attack (CI)

@@ -1,6 +1,5 @@
 [
   "obsidian-vimrc-support",
-  "obsidian-tasks-plugin",
   "supercharged-links-obsidian",
   "obsidian-paste-image-rename",
   "obsidian-image-toolkit",
@@ -15,7 +14,6 @@
   "templater-obsidian",
   "quickadd",
   "darlal-switcher-plus",
-  "obsidian-zotero-desktop-connector",
   "obsidian-admonition",
   "metadata-extractor",
   "obsidian-advanced-uri",
@@ -23,5 +21,8 @@
   "obsidian-image-auto-upload-plugin",
   "easy-typing-obsidian",
   "tabs",
-  "obsidian-latex-suite"
+  "obsidian-latex-suite",
+  "obsidian-minimal-settings",
+  "codeblock-customizer",
+  "callout-manager"
 ]

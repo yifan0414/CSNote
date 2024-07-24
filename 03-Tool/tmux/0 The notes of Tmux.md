@@ -81,6 +81,5 @@
 |       M-Up, M-Down, M-Left, M-Right       | Resize the current pane in steps of five cells.                                                                            |
 
 >[!note] swap two pane
-> 
 > - 将当前窗格移动到左侧窗格的位置：`Ctrl-a + {`
 > - 将当前窗格移动到右侧窗格的位置：`Ctrl-b + {`

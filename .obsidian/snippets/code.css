@@ -34,6 +34,11 @@
   font-size: 1.1em;
 }
 
+.callout[data-callout="democallouts"] {
+    --callout-color: 195, 0, 47;
+    --callout-icon: airplay
+}
+
 /* reading mode */
 .markdown-preview-view p {
 	text-align: justify;

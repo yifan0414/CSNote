@@ -1,10 +1,10 @@
 {
   "accentColor": "",
-  "theme": "obsidian",
+  "theme": "moonstone",
   "baseFontSize": 16,
   "cssTheme": "Shimmering Focus",
   "translucency": true,
-  "monospaceFontFamily": "FiraCode Nerd Font",
+  "monospaceFontFamily": "FiraCode Nerd Font,苹方-简",
   "nativeMenus": false,
   "baseFontSizeAction": false,
   "showViewHeader": true,
@@ -13,10 +13,10 @@
     "code1",
     "custom_callouts",
     "img",
+    "code",
     "image",
-    "supercharged-links-gen",
-    "code"
+    "supercharged-links-gen"
   ],
   "textFontFamily": "Bookerly,苹方-简",
-  "interfaceFontFamily": "微软雅黑"
+  "interfaceFontFamily": "Bookerly,苹方-简"
 }

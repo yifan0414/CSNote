@@ -1,15 +1,10 @@
 # Reference
 
-https://www.quora.com/How-can-I-execute-A-*-B-mod-C-without-overflow-if-A-and-B-are-lesser-than-C
-
-https://www.luogu.com.cn/problem/U203580
-
-
-https://en.wikipedia.org/wiki/Modular_arithmetic#Example_implementations
-
-https://www.quora.com/How-can-I-execute-A-*-B-mod-C-without-overflow-if-A-and-B-are-lesser-than-C/answer/Dana-Jacobsen
-
-https://oi-wiki.org/math/bignum/#%E9%AB%98%E7%B2%BE%E5%BA%A6%E9%AB%98%E7%B2%BE%E5%BA%A6
+-  https://www.quora.com/How-can-I-execute-A-*-B-mod-C-without-overflow-if-A-and-B-are-lesser-than-C
+- https://www.luogu.com.cn/problem/U203580
+- https://en.wikipedia.org/wiki/Modular_arithmetic#Example_implementations
+- https://www.quora.com/How-can-I-execute-A-*-B-mod-C-without-overflow-if-A-and-B-are-lesser-than-C/answer/Dana-Jacobsen
+- https://oi-wiki.org/math/bignum/#%E9%AB%98%E7%B2%BE%E5%BA%A6%E9%AB%98%E7%B2%BE%E5%BA%A6
 
 # Note
 

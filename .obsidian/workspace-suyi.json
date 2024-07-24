@@ -4,34 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "e9634e9a01e6edd4",
+        "id": "8c8647b03b6faa0c",
         "type": "tabs",
         "children": [
           {
-            "id": "cb889d6630b7034f",
+            "id": "836021864dcfaa45",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Project/NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md",
+                "file": "Algorithm/01基础/排序/桶排序.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
               }
             }
-          },
-          {
-            "id": "552890af2605485f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.7"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +88,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-Project/NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md",
+                "file": "Algorithm/01基础/排序/桶排序.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +119,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01-Project/NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md",
+                "file": "Algorithm/01基础/排序/桶排序.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -177,7 +166,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "01-Project/NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md"
+                "file": "Algorithm/01基础/排序/桶排序.md"
               }
             }
           }
@@ -195,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-Project/NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md"
+                "file": "Algorithm/01基础/排序/桶排序.md"
               }
             }
           }
@@ -220,45 +209,45 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "552890af2605485f",
+  "active": "836021864dcfaa45",
   "lastOpenFiles": [
-    "01-Project/NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-2 穿越时空的旅程.md",
-    "01-Project/NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC 2020.md",
-    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-5 More Exploration.md",
-    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-4 Configuring vim.md",
-    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-3 Installing Tools.md",
-    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-2 First Exploration with GNU Linux.md",
-    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
-    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0 intro.md",
-    "01-Project/MIT61810/lab/0 Lab util Unix utilities.md",
-    "01-Project/MIT61810/code/xv6中的ls.md",
-    "01-Project/MIT61810/code/xv6中的open.md",
-    "01-Project/MIT61810/code/xv6中一些应用程序的例子.md",
-    "01-Project/MIT61810/draw/管道.md",
-    "01-Project/MIT61810/code/xv6的Makefile.md",
-    "01-Project/NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md",
-    "01-Project/00-LittleProject/数码管/数码管显示.md",
-    "01-Project/NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 Note.md",
-    "01-Project/NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/什么是操作系统.pdf",
+    "Algorithm/01基础/差分.md",
+    "Algorithm/01基础/排序/桶排序.md",
+    "Algorithm/01基础/高精度/大数相乘.md",
+    "Algorithm/01基础/高精度/大数类.md",
     "Algorithm/02提高/分形/分形之城/分形之城.md",
-    "Algorithm/03算法分析/快速排序/分治排序其一：快速排序（一）.md",
+    "04-CPP/内存/emplace_back和push_back.md",
+    "04-CPP/内存/拷贝赋值和移动赋值.md",
+    "Algorithm/leetcode/LCR 089. 打家劫舍.md",
+    "Algorithm/leetcode/2427. 公因子的数目.md",
+    "Algorithm/leetcode/3164. 优质数对的总数 II.md",
+    "Algorithm/leetcode/100306. 不包含相邻元素的子序列的最大和.md",
     "Algorithm/leetcode/932 快速排序.md",
-    "Algorithm/leetcode/822 堆排序.md",
-    "Algorithm/leetcode/3无重复字符的最长子串.md",
-    "01-Project/NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md",
-    "01-Project/NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md",
-    "Master/English/未命名.md",
-    "Algorithm/acwing/785快速排序.md",
+    "Algorithm/少儿编程/信息素养大赛C++小学组.md",
+    "Algorithm/少儿编程/讲义/递归与递推.md",
+    "Algorithm/汇总/题单.md",
+    "Algorithm/汇总/数学/因子.md",
+    "Algorithm/汇总/数学/坐标转换.md",
+    "Algorithm/02提高/排列和组合/permutation.md",
+    "Algorithm/02提高/排列和组合/test-suyifan.md",
+    "Algorithm/02提高/排列和组合/test.md",
+    "Algorithm/02提高/排列和组合/组合型枚举.md",
+    "Algorithm/02提高/排列和组合/枚举元组.md",
+    "Algorithm/01基础/递推与递归/弹球距离.svg",
+    "Algorithm/01基础/递推与递归/Drawing 2024-07-18 20.09.38.md",
+    "04-CPP/00基础/构造函数/移动构造函数.md",
+    "04-CPP/00基础/构造函数/push_back和emplace_back.md",
+    "04-CPP/00基础/构造函数/复制构造函数.md",
+    "01-Project/NJUICS/lecture/L8 AbstractMachine 选讲/AbstractMachine 选讲.pdf",
+    "01-Project/computer network/programming assignment/UDP_Pinger_programming_lab_only.pdf",
+    "01-Project/NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/什么是操作系统.pdf",
     "Algorithm/03算法分析/快速排序",
     "Algorithm/03算法分析",
-    "Algorithm/01基础/递推与递归/弹球距离.svg",
     "Algorithm/少儿编程/讲义",
     "Algorithm/01基础/递推与递归",
     "Algorithm/01基础/高精度",
     "Algorithm/01基础/树",
     "Algorithm/01基础/排序",
-    "Algorithm/01基础",
-    "Algorithm/02提高/分形/分形之城",
     "Algorithm/leetcode_mini.svg",
     "attachments/Pasted Image 20240715144331_843.png",
     "attachments/Pasted Image 20240624205554_737.png",

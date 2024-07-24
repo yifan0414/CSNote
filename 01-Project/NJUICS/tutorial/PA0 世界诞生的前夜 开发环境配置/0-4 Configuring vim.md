@@ -201,7 +201,7 @@ Modify the `.vimrc` file mentioned above as the following:
 
 You can append the following content at the end of the `.vimrc` file to enable more features. Note that contents after a double quotation mark `"` are comments, and you do not need to include them. Of course, you can inspect every features to determine to enable or not.
 
-```
+``` hl:28
 setlocal noswapfile " 不要生成swap文件
 set bufhidden=hide " 当buffer被丢弃的时候隐藏它
 colorscheme evening " 设定配色方案
