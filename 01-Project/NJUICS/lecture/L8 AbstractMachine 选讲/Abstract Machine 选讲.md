@@ -28,19 +28,21 @@
 
 理解/构造一个复杂系统 (操作系统/处理器/航母)？
 
-- USS Midway (CV-41); 1945 年首航，“沙漠风暴” 行动后退役
-    - 舰船配置；资源管理/调度；容错……
+~~~tabs
 
-![Aircraft carrier | 500](http://www.seaforces.org/usnships/cv/CV-41_DAT/CV-41-USS-Midway-003.jpg)
-
+tab: 现代航母
+USS Midway (CV-41); 1945 年首航，“沙漠风暴” 行动后退役
+- 舰船配置；资源管理/调度；容错……
+![Aircraft carrier|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/CV-41-USS-Midway-003.jpg)
+tab: 初代航母
 > 航母不是一天造成的。
 
-![|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/gY53mv.jpg)
-
+![|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/gY53mv.jpg)
+tab: 小帆船
 > 采矿船继承了航海时代的设计。
 
-![FD7649|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/FD7649.jpg)
-
+![FD7649|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/FD7649.jpg)
+~~~
 ## 1.3 复杂中隐藏的秩序 (cont'd)
 
 > 复杂系统的演化通常是 _evolutionary_ 的而不是 _revolutionary_ 的。

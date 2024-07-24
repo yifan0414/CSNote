@@ -6,7 +6,7 @@
   --code-function: #795e26;
   --code-important: var(--color-orange);
   --code-keyword: #0000ff;
-  --code-property: var(--color-cyan);
+  --code-property: #0451a5;
   /* --code-punctuation: #319331; */
   --code-operator: #000000;
   --code-string: #008000;
@@ -15,53 +15,57 @@
   --code-value: #098658;
 }
 
-
-
-.markdown-preview-view h1, 
-.markdown-preview-view h2, 
-.markdown-preview-view h3, 
-.markdown-preview-view h4, 
-.markdown-preview-view h5, 
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
 .markdown-preview-view h6 {
-    margin-top: 0 !important;
+  margin-top: 1em !important;
 }
 
 /* 调节行内数学公式字体大小 */
-span.math-inline {
-    font-size: 1.1em; /* 可根据需要调整大小 */
+
+/* span.math-inline { */
+/*   font-size: 1.1em; */
+/* } */
+
+.math {
+  font-size: 1.1em;
 }
 
-.math-block {
-    font-size: 1.2em;
+/* reading mode */
+.markdown-preview-view p {
+	text-align: justify;
+	text-justify: inter-word;	
 }
 
+/* source view and live preview */
+.markdown-source-view.mod-cm6 .cm-line {
+	text-align: justify;
+	text-justify: inter-word;	
+}
+
+
+.markdown-preview-view {
+  font-weight: 400;
+}
 
 /* 使代码块中的字体变为粗体 */
 .markdown-preview-view code {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* 使行内代码的字体变为粗体 */
 .markdown-preview-view pre code {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* 使编辑模式下的代码块字体变为粗体 */
 .cm-s-obsidian .cm-inline-code {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .cm-s-obsidian .HyperMD-codeblock {
-    font-weight: 500;
+  font-weight: 500;
 }
-
-
-/* .cm-s-obsidian pre.HyperMD-codeblock {      */
-/*   font-family: "FiraCode Nerd Font"; */
-/*   font-weight: 700; */
-/* } */
-/**/
-/* .markdown-preview-view code { */
-/*   font-family: "FiraCode Nerd Font"; */
-/*   font-weight: 700; */
-/* } */

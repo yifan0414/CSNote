@@ -14,14 +14,14 @@
   "dataview",
   "templater-obsidian",
   "quickadd",
-  "obsidian-charts",
   "darlal-switcher-plus",
   "obsidian-zotero-desktop-connector",
-  "better-comment-toggle",
   "obsidian-admonition",
   "metadata-extractor",
   "obsidian-advanced-uri",
   "obsidian-style-settings",
   "obsidian-image-auto-upload-plugin",
-  "easy-typing-obsidian"
+  "easy-typing-obsidian",
+  "tabs",
+  "obsidian-latex-suite"
 ]

@@ -6,7 +6,7 @@
 - [ ] 为什么使用 `Ctrl-p` 可以显示每个进程的信息^[xv6 has no ps command, but, if you type Ctrl-p, the kernel will print information about each process. If you try it now, you'll see two lines: one for init, and one for sh.] 
 - [ ] xv6 中文件描述符的定义在哪？换句话说，我应用程序中的 `write() ` 是如何通过系统调用并被 kernel 解析的呢？（xv6 和编译器的交互） ⏫ ^[在 PA 中，我们是通过定义了一个 ` file_table `，其中包含了 ` stdin `, ` stdout `, ` stderror `, 以及通过暴力拼接得到的 file 列表]
 - [x] xv6 中的文件重定向是如何实现的？ ✅ 2024-01-14
-- [ ] **xv6 中 user 程序是如何加载的？首先，xv6 是如何运行 shell 的？shell 是不是第一个用户程序？程序运行是完成用户空间和内核空间的切换的？**⏫ 
+- [ ] **xv6 中 user 程序是如何加载的？首先，xv6 是如何运行 shell 的？shell 是不是第一个用户程序？程序运行是完成用户空间和内核空间的切换的？** ⏫
 - [ ] 为什么每次 make clean 会清除创建的文件
 # 2 Trace
 
@@ -154,28 +154,26 @@ int main () {
 
 ![image.png|600](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/20240114163317.png)
 
-```ad-chatgpt
-collapse: always
-程序陷入死循环并持续输出 "prime 0" 的原因在于管道的写端没有被及时关闭，导致 `read` 函数无法正确地检测到管道末尾（EOF），进而无法退出读取循环。让我们详细分析下代码中的关键部分：
-
-* 关于 `sieve` 函数
-
-在 `sieve` 函数中，您注释掉了子进程中关闭写端管道的代码 (`close (right_fd[1])`)。这意味着即使父进程已经完成了写入并关闭了它的写端，子进程中的写端仍然是打开的。由于管道的写端没有完全关闭（即在所有进程中都关闭），`read` 函数将不会返回 0 来指示管道末尾，即使没有更多的数据可读。
-
-* 关于 `main` 函数
-
-在 `main` 函数中，您也注释掉了父进程中关闭读端管道的代码 (`close (fd[0])`)。通常，这个操作不是必需的，因为父进程只负责写入数据。但是，关键在于子进程中相应的写端需要被关闭。
-
-* 结果
-
-由于在 `sieve` 函数的递归调用中，每个子进程都保持着它的写端打开，这就造成了一个情况：`read` 函数在等待可能永远不会到来的数据，因为它预期管道的写端最终会关闭。然而，由于写端从未关闭，`read` 函数继续等待数据，导致程序无法正常退出循环。
-
-当 `read` 在管道中不再有新数据时返回 0 字节，意味着它已经读到了管道末尾。但在您的代码中，由于写端一直开着，`read` 始终等待新数据，导致它一直在读取状态，即使实际上没有数据。这可能导致它读取到未初始化的内存，或者简单地返回一个不正确的值（如 0），这就是为什么程序一直输出 "prime 0"。
-
-* 解决方法
-
-要解决这个问题，您需要确保每个子进程在不需要写入数据时关闭其写端文件描述符。这将允许 `read` 函数正确地接收到 EOF 信号，从而避免死循环。即，在 `sieve` 函数中取消注释 `close (right_fd[1])`，确保每个递归调用的子进程都关闭了它们不需要的写端。
-```
+> [!chatgpt]-
+> 程序陷入死循环并持续输出 "prime 0" 的原因在于管道的写端没有被及时关闭，导致 `read` 函数无法正确地检测到管道末尾（EOF），进而无法退出读取循环。让我们详细分析下代码中的关键部分：
+> 
+> * 关于 `sieve` 函数
+> 
+> 在 `sieve` 函数中，您注释掉了子进程中关闭写端管道的代码 (`close (right_fd[1])`)。这意味着即使父进程已经完成了写入并关闭了它的写端，子进程中的写端仍然是打开的。由于管道的写端没有完全关闭（即在所有进程中都关闭），`read` 函数将不会返回 0 来指示管道末尾，即使没有更多的数据可读。
+> 
+> * 关于 `main` 函数
+> 
+> 在 `main` 函数中，您也注释掉了父进程中关闭读端管道的代码 (`close (fd[0])`)。通常，这个操作不是必需的，因为父进程只负责写入数据。但是，关键在于子进程中相应的写端需要被关闭。
+> 
+> * 结果
+> 
+> 由于在 `sieve` 函数的递归调用中，每个子进程都保持着它的写端打开，这就造成了一个情况：`read` 函数在等待可能永远不会到来的数据，因为它预期管道的写端最终会关闭。然而，由于写端从未关闭，`read` 函数继续等待数据，导致程序无法正常退出循环。
+> 
+> 当 `read` 在管道中不再有新数据时返回 0 字节，意味着它已经读到了管道末尾。但在您的代码中，由于写端一直开着，`read` 始终等待新数据，导致它一直在读取状态，即使实际上没有数据。这可能导致它读取到未初始化的内存，或者简单地返回一个不正确的值（如 0），这就是为什么程序一直输出 "prime 0"。
+> 
+> * 解决方法
+> 
+> 要解决这个问题，您需要确保每个子进程在不需要写入数据时关闭其写端文件描述符。这将允许 `read` 函数正确地接收到 EOF 信号，从而避免死循环。即，在 `sieve` 函数中取消注释 `close (right_fd[1])`，确保每个递归调用的子进程都关闭了它们不需要的写端。
 
 - [ ] 为什么最后会出现 `usertrap` 错误 #xv6 
 
@@ -266,9 +264,8 @@ main(int argc, char* argv[])
 
 ## 2.5 xargs
 
-```ad-target
-Write a simple version of the UNIX xargs program for xv6: its arguments describe a command to run, it reads lines from the standard input, and it runs the command for each line, appending the line to the command's arguments. Your solution should be in the file user/xargs.c.
-```
+> [!target]
+> Write a simple version of the UNIX xargs program for xv6: its arguments describe a command to run, it reads lines from the standard input, and it runs the command for each line, appending the line to the command's arguments. Your solution should be in the file user/xargs.c.
 
 The following example illustrates xarg's behavior:
 

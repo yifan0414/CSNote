@@ -1,0 +1,22 @@
+{
+  "accentColor": "",
+  "theme": "obsidian",
+  "baseFontSize": 16,
+  "cssTheme": "Shimmering Focus",
+  "translucency": true,
+  "monospaceFontFamily": "FiraCode Nerd Font",
+  "nativeMenus": false,
+  "baseFontSizeAction": false,
+  "showViewHeader": true,
+  "enabledCssSnippets": [
+    "coffebean-按文件类型显示对应图标",
+    "code1",
+    "custom_callouts",
+    "img",
+    "image",
+    "supercharged-links-gen",
+    "code"
+  ],
+  "textFontFamily": "Bookerly,苹方-简",
+  "interfaceFontFamily": "微软雅黑"
+}
