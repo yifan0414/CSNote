@@ -126,6 +126,7 @@ Disassembly of section .fini:
    4:   c3                      retq
 ```
 
+
 > [!idea] 为什么 gcc 输出的文件路径是 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/ 而不是 /usr/lib/x86_64-linux-gnu/
 > 
 > 在Linux中，`/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/` 实际上是一个相对路径，`..` 表示父目录，`../../../` 就表示向上回溯三级目录。这个路径最终会被解析成 `/usr/lib/x86_64-linux-gnu/`。使用这种相对路径的方式可以让路径在文件系统结构发生改变时保持正确。

@@ -9,6 +9,28 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/10402
 support Anubis: https://www.buymeacoffee.com/anubisnekhet
 */
 
+.callout-content {
+	padding: 2px 8px;
+}
+.callout-content :is(ul, p, ol) {
+	margin: 6px 0;
+	line-height: 1.4em;
+}
+
+.callout-content li {
+	margin: 5px 0;
+	line-height: 1.1em;
+}
+
+.callout-content.callout-content ul {
+	padding-left: 20px;
+	margin-top: 5px;
+}
+
+.callout-content p + p {
+	margin-top: 12px;
+}
+
 .callout:not(.is-collapsible) {
   padding: 0px;
 }
@@ -37,7 +59,7 @@ support Anubis: https://www.buymeacoffee.com/anubisnekhet
 .callout-content {
   padding: var(--callout-title-padding) var(--callout-title-padding)
     var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
-  border-top: 1px dashed rgba(var(--callout-color), 0.4);
+  border-top: 1px  rgba(var(--callout-color), 0.4);
 }
 
 .callout-fold {
@@ -88,7 +110,7 @@ support Anubis: https://www.buymeacoffee.com/anubisnekhet
 .callout.is-collapsible:not(.is-collapsed) .callout-content {
   padding: var(--callout-title-padding) var(--callout-title-padding) 0
     calc(var(--callout-title-padding) * 1.5);
-  border-top: 1px dashed rgba(var(--callout-color), 0.4);
+  border-top: 1px  rgba(var(--callout-color), 0.4);
 }
 .callout:not(.is-collapsible) {
   padding: 0px;

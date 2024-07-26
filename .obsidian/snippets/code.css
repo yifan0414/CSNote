@@ -1,18 +1,122 @@
-.theme-light {
-  --code-size: var(--font-smaller);
-  --code-background: var(--background-primary-alt);
-  --code-normal: #000000;
-  /* --code-comment: #008000; */
-  --code-function: #795e26;
-  --code-important: var(--color-orange);
-  --code-keyword: #0000ff;
-  --code-property: #0451a5;
-  /* --code-punctuation: #319331; */
-  --code-operator: #000000;
-  --code-string: #008000;
-  --code-tag: var(--color-red);
-  /* --code-value: var(--color-purple); */
-  --code-value: #098658;
+.theme-light,
+body.theme-light.is-mobile {
+  color-scheme: light;
+  --atom-gray-1: #383a42;
+  --atom-gray-2: #383a42;
+  --atom-red: #e75545;
+  --atom-green: #4ea24c;
+  --atom-blue: #3d74f6;
+  --atom-purple: #a625a4;
+  --atom-aqua: #0084bc;
+  --atom-yellow: #e35649;
+  --atom-orange: #986800;
+}
+
+.theme-dark,
+body.theme-dark.is-mobile {
+  color-scheme: dark;
+  --atom-gray-1: #5c6370;
+  --atom-gray-2: #abb2bf;
+  --atom-red: #e06c75;
+  --atom-orange: #d19a66;
+  --atom-green: #98c379;
+  --atom-aqua: #56b6c2;
+  --atom-purple: #c678dd;
+  --atom-blue: #61afef;
+  --atom-yellow: #e5c07b;
+}
+.theme-light .token.comment .theme-light .cm-comment {
+  color: #ababab;
+}
+.theme-dark .token.comment,
+.theme-dark .cm-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--atom-gray-1);
+}
+.token.punctuation,
+.token.plain-text,
+.token.dom.variable,
+.cm-hmd-codeblock.cm-bracket {
+  color: var(--atom-gray-2);
+}
+
+code[class*='language-'],
+.token.selector,
+.cm-tag,
+.token.dom.variable,
+.token.tag,
+.cm-def,
+.token.parameter,
+.cm-property,
+.cm-qualifier {
+  /* color: var(--atom-red); */
+}
+
+.token.class-name,
+.token.maybe-class-name,
+.token.property-access,
+.token.constant,
+.token.builtin,
+.cm-variable-2,
+.cm-type,
+.cm-atom,
+code .cm-tag {
+  color: var(--atom-yellow);
+}
+.token.property,
+.token.boolean,
+.token.number,
+.token.symbol,
+.token.attr-name,
+.token.deleted,
+.cm-attribute,
+.cm-number,
+.cm-property.cm-string {
+  color: var(--atom-orange);
+}
+.token.string,
+.token.char,
+.token.attr-value,
+.token.inserted,
+.cm-hmd-codeblock.cm-string,
+.cm-hmd-codeblock.cm-string-2 {
+  color: var(--atom-green);
+}
+.token.operator,
+.cm-operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: var(--atom-aqua);
+}
+.token.atrule,
+.token.keyword,
+.cm-keyword {
+  color: var(--atom-purple);
+}
+.cm-variable,
+.token.function,
+.token.method,
+.token.macro.property {
+  color: var(--atom-blue);
+}
+.token.regex,
+.token.important,
+.token.variable {
+  color: var(--atom-purple);
+}
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
 }
 
 .markdown-preview-view h1,
@@ -32,11 +136,6 @@
 
 .math {
   font-size: 1.1em;
-}
-
-.callout[data-callout="democallouts"] {
-    --callout-color: 195, 0, 47;
-    --callout-icon: airplay
 }
 
 /* reading mode */

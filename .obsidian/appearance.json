@@ -2,7 +2,7 @@
   "accentColor": "",
   "theme": "moonstone",
   "baseFontSize": 16,
-  "cssTheme": "Shimmering Focus",
+  "cssTheme": "Prism",
   "translucency": true,
   "monospaceFontFamily": "FiraCode Nerd Font,苹方-简",
   "nativeMenus": false,
@@ -10,12 +10,10 @@
   "showViewHeader": true,
   "enabledCssSnippets": [
     "coffebean-按文件类型显示对应图标",
-    "code1",
     "custom_callouts",
     "img",
-    "image",
-    "code",
-    "callout"
+    "callout",
+    "image"
   ],
   "textFontFamily": "Bookerly,苹方-简",
   "interfaceFontFamily": "Bookerly,苹方-简"

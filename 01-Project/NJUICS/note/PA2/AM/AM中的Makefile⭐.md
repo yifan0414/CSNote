@@ -376,7 +376,7 @@ $(LIBS): %:
 
 根据上面的 `LIBS := $(sort $(LIBS) am klib) # lazy evaluation ("=") causes infinite recursions` 可以得知 `$(LIBS) = [am, klib]`。
 因此这里分别在 am 和 klib 中进行 make archive
-```
+```shell
 make -s -C $(AM_HOME)/am archive
 
 make -s -C $(AM_HOME)/klib archive

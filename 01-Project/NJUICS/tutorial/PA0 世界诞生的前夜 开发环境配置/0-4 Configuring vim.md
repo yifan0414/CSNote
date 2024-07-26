@@ -32,6 +32,7 @@ You are going to be asked to modify a file using `vim`. For most of you, this i
 >You may never consider what can be done in such a "BAD" editor. Let's see two examples.
 >
 >The first example is to generate the following file:
+>
 >```
 >1
 >2

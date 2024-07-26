@@ -350,6 +350,7 @@ make -nB \
 ```
 
 可以得到以下结果
+
 ![gNBfeL](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/gNBfeL.png)
 
 仍然看的不爽. 可以用 `set nowrap` 关掉换行

@@ -8,7 +8,7 @@
 
 ### 2.1 实验内容
 
-给定 64 位无符号整数 $a, b, m$ (类型为 `uint64_t` , 即 $1 \leq a, b, m<2^{64}$ )。你的任务是求出 $a \times b(\bmod m)$ 的数值, 即最小的非负整数 $t$, 满足 $a \times b \equiv t(\bmod m)$ 。
+给定 64 位无符号整数 $a, b, m$ (类型为 `uint64_t` , 即 $1 \leq a, b, m<2^{64}$ )。你的任务是求出 $a \times b (\bmod m)$ 的数值, 即最小的非负整数 $t$, 满足 $a \times b \equiv t(\bmod m)$ 。
 
 在这个实验中，你的任务是根据你所掌握的知识，实现功能正确的 `multimod`，并且只使用**分支、循环、局部变量** (使用整数的位宽至多为 64-bit，即不得作弊使用 128 位整数)、**赋值语句、位运算和加减法**。允许定义额外的辅助函数。
 
@@ -65,8 +65,68 @@ $$
 \left(a \cdot b \bmod 2^{64}\right) \bmod m \neq a \cdot b \bmod m
 $$
 
+~~~tabs
+tab: 问题
 >[!question] 怎么证明呢？
-> $a \cdot b \bmod m = (a \bmod m) \cdot (b \bmod m)$?
+> $a \cdot b \bmod m = ((a \bmod m) \cdot (b \bmod m)) \bmod m$?
+tab: 证明
+要证明 $a \cdot b \bmod m = (a \bmod m) \cdot (b \bmod m)$，我们可以从模运算的性质出发。模运算有一些基本性质，其中之一就是乘法的分配性。具体证明如下：
+
+设 $a$ 和 $b$ 是两个整数，$m$ 是一个正整数。
+
+1. **表示 $a$ 和 $b$**
+
+   我们可以将 $a$ 和 $b$ 分别表示为：
+   $$
+   a = q_1 \cdot m + r_1 \quad \text{和} \quad b = q_2 \cdot m + r_2
+$$
+   其中 $q_1$ 和 $q_2$ 是整数，而 $r_1$ 和 $r_2$ 是余数，满足 $0 \leqslant r_1 < m$ 和 $0 \leqslant r_2 < m$。
+
+   因此，
+   $$
+   a \bmod m = r_1 \quad \text{和} \quad b \bmod m = r_2
+$$
+
+2. **计算 $a \cdot b$**
+
+   我们可以计算 $a \cdot b$：
+   $$
+   a \cdot b = (q_1 \cdot m + r_1) \cdot (q_2 \cdot m + r_2)
+$$
+   展开并简化得到：
+   $$
+   a \cdot b = q_1 q_2 m^2 + q_1 m r_2 + q_2 m r_1 + r_1 r_2
+$$
+
+3. **计算 $a \cdot b \bmod m$**
+
+   根据模运算的性质，任何包含 $m$ 的项在取模 $m$ 时都会消失，因为它们是 $m$ 的整数倍。因此，我们只需要关注最后一项 $r_1 r_2$：
+   $$
+   a \cdot b \bmod m = (q_1 q_2 m^2 + q_1 m r_2 + q_2 m r_1 + r_1 r_2) \bmod m
+$$
+   $$
+   = (r_1 r_2) \bmod m
+$$
+
+4. **计算 $(a \bmod m) \cdot (b \bmod m)$**
+
+   现在，我们计算 $(a \bmod m) \cdot (b \bmod m)$：
+   $$
+   (a \bmod m) \cdot (b \bmod m) = r_1 \cdot r_2
+$$
+
+   由于 $r_1 \cdot r_2$ 本身就是一个整数，我们可以直接取模 $m$：
+   $$
+   (r_1 \cdot r_2) \bmod m
+$$
+
+因此，我们证明了：
+$$
+a \cdot b \bmod m = ((a \bmod m) \cdot (b \bmod m)) \bmod m
+$$
+
+这个证明利用了模运算的性质，尤其是模运算在乘法中的分配性。
+~~~
 
 ### 3.2 测试建议
 
@@ -117,14 +177,16 @@ int add(int a, int b) {
 ### 3.5 实现 `multimod`
 
 盯着 “ $a \cdot b \bmod m$ ” 看是没办法解决问题的。正确的解题方法是把式子写出来，然后尝试做一些公式变形。这个例子里的公式变形是很直观的：
-
 $$
-a \cdot b=\left(a_0 \cdot 2^0+a_1 \cdot 2^1+\ldots+a_{63} \cdot 2^{63}\right) \cdot b
+\begin{align}
+a \cdot b & =\left(a_0 \cdot 2^0+a_1 \cdot 2^1+\ldots+a_{63} \cdot 2^{63}\right) \cdot b \\
+& = a_{0} \cdot 2^0 \cdot b + a_{1} \cdot 2^1 \cdot b+ \dots + a_{63} \cdot 2^{63} \cdot b
+\end{align}
 $$
 
 对于上面表达式括号中的每一项, 都是形如 $2^i \cdot b$ 的形式 (因为 $a_i \in\{0,1\}$ ) 一因此
 $$
-a \cdot b \bmod m=\left(\sum_{0 \leq i<64} a_i \cdot b \cdot 2^i \bmod m\right) \bmod m
+a \cdot b \bmod m=\left(\sum_{0 \leq i<64} a_i \cdot b \cdot 2^i \bmod m \right) \bmod m
 $$
 
 **因此, 你只要能实现 $\bmod m$ 的加法即 $(x+y) \bmod m$, 就能实现 $\left(b \cdot 2^i\right) \bmod m$, 进而实现 $a \cdot b \bmod m$ 。**
@@ -140,7 +202,7 @@ $$
 这里还有一个潜在的溢出问题——如果这个加法依然溢出怎么办？这个聪明的问题留给你。
 
 >[!note] 一点思考
-> 首先对 $\bmod 1$ 是毫无意义的，所以我们不需要考虑。那么对于 $2 \le m \le 2^{64} - 1$，我们需要仔细考虑 $\left((t \bmod m)+\left(2^{64} \bmod m\right)\right)$ 的范围。其中由于 $x + y = t + 2^{64}$ 中的 $x,y$ 都是 64 位数 (假设溢出)，所以 $1 \le t \le 2^{64} - 2$，所以 $\left((t \bmod m)+\left(2^{64} \bmod m\right)\right)$ 不可能再溢出
+> 首先对 $\bmod 1$ 是毫无意义的，所以我们不需要考虑。那么对于 $2 \leqslant m \leqslant 2^{64} - 1$，我们需要仔细考虑 $\left((t \bmod m)+\left(2^{64} \bmod m\right)\right)$ 的范围。其中由于 $x + y = t + 2^{64}$ 中的 $x,y$ 都是 64 位数 (假设溢出)，所以 $1 \leqslant t \leqslant 2^{64} - 2$，所以 $\left((t \bmod m)+\left(2^{64} \bmod m\right)\right)$ 不可能再溢出
 > 
 > #todo 也许可以通过编程来验证这一点 $2 ^ {64} \bmod m$ 的最大值为 $2^{63} - 1$，此时 $m = 2 ^{63} + 1$
 
@@ -153,7 +215,7 @@ $$
 ```c
 int64_t multimod_fast(int64_t a, int64_t b, int64_t m) {
   int64_t t = (a * b - (int64_t)((double)a * b / m) * m) % m;
-  return t < 0 ? t + m : t;
+  return t < 0 ? t + m : t; // 补充
 }
 ```
 
@@ -168,4 +230,4 @@ int64_t multimod_fast(int64_t a, int64_t b, int64_t m) {
 
 如果你对这一段代码有兴趣，请你利用学习过的数据的机器表示知识，理解 `multimod_fast` 中每一个子表达式的含义，并且分析其正确性 (完全处于自愿目的，不计分，也不需要提交任何代码)。
 
-
+[multimod_fast 真的是对的吗？ | 现充|junyu33](https://blog.junyu33.me/2024/03/20/multimod.html) 
