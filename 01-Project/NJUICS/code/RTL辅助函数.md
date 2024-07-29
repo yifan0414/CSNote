@@ -1,6 +1,6 @@
 ## 代码
 
-```c
+```c frame="auto" {"1":1} {"1":10} {"2":14-20}
 
 #define def_rtl(name, ...) void concat(rtl_, name)(DecodeExecState *s, __VA_ARGS__)
 
@@ -42,9 +42,10 @@ def_rtl_compute_reg_imm(sar)
 
 ## 展开 def_rtl_compute_reg_imm(add)
 
-我们以其中的一个函数为例子展开 `def_rtl_compute_reg_imm(add)`。
+我们以其中的一个函数为例子展开  `{cpp} def_rtl_compute_reg_imm(add)`。
 
-```c
+```c {10-15}
+//def_rtl_compute_reg_immadd.c
 def_rtl_compute_reg_imm(add)
 
 //***************************

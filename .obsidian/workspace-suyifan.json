@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Project/NJUICS/code/NEMU-Makefile.md",
+                "file": "READING/SICP/1.1 The Elements of Programming.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
@@ -21,12 +21,38 @@
             }
           },
           {
-            "id": "dfb44c65896cd2f5",
+            "id": "ff9d254b074daf0d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Project/NJUICS/lab/Lab1 大整数运算/L1 Description.md",
+                "file": "Algorithm/acwing/785快速排序.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eec3471478f3b496",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm/leetcode/932 快速排序.md",
+                "mode": "preview",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "848eb5a0c88905e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algorithm/03算法分析/快速排序/分治排序其一：快速排序（一）.md",
                 "mode": "preview",
                 "backlinks": false,
                 "source": false
@@ -34,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,8 +111,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228.5,
-    "collapsed": true
+    "width": 291.5
   },
   "right": {
     "id": "3a153ac8983db304",
@@ -103,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-Project/NJUICS/lab/Lab1 大整数运算/L1 Description.md",
+                "file": "Algorithm/03算法分析/快速排序/分治排序其一：快速排序（一）.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +159,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "01-Project/NJUICS/lab/Lab1 大整数运算/L1 Description.md",
+                "file": "Algorithm/03算法分析/快速排序/分治排序其一：快速排序（一）.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -181,7 +206,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "01-Project/NJUICS/lab/Lab1 大整数运算/L1 Description.md"
+                "file": "Algorithm/03算法分析/快速排序/分治排序其一：快速排序（一）.md"
               }
             }
           }
@@ -199,7 +224,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-Project/NJUICS/lab/Lab1 大整数运算/L1 Description.md"
+                "file": "Algorithm/03算法分析/快速排序/分治排序其一：快速排序（一）.md"
               }
             }
           }
@@ -226,45 +251,47 @@
       "math-indicator-changer:Change math indicator": false
     }
   },
-  "active": "dfb44c65896cd2f5",
+  "active": "848eb5a0c88905e8",
   "lastOpenFiles": [
-    "01-Project/NJUICS/code/NEMU-Makefile.md",
-    "01-Project/NJUICS/lab/Lab1 大整数运算/L1 Description.md",
-    "01-Project/NJUICS/lab/Lab1 大整数运算/Notes-Lab1 大整数运算.md",
-    "01-Project/NJUICS/lecture/L8 AbstractMachine 选讲/Abstract Machine 选讲.md",
-    "01-Project/NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/L1 操作系统概述.md",
-    "Algorithm/少儿编程/信息素养大赛C++小学组.md",
-    "Algorithm/汇总/题单.md",
-    "Algorithm/03算法分析/快速排序/分治排序其一：快速排序（一）.md",
-    "01-Project/NJUICS/code/一些辅助函数和结构体.md",
-    "01-Project/NJUICS/code/RTL辅助函数.md",
-    "01-Project/NJUICS/code/vscode configuration.md",
-    "01-Project/NJUICS/note/杂项/入口函数和程序初始化.md",
-    "READING/learn linux the hard way/练习 17：任务调度：cron，at.md",
-    "01-Project/NJUICS/note/杂项/C Runtime Library 和 C Standard Library.md",
-    "01-Project/NJUICS/manual/Instruction Format.md",
-    "01-Project/NJUICS/manual/i386 2.3 Registers.md",
-    "01-Project/NJUOS/M1 打印进程树 (pstree).md",
-    "01-Project/NJUOS/补充资料/未命名.md",
-    "01-Project/MIT 6.824/MapReduce/MapReduce.md",
-    "01-Project/MIT 6.824/MapReduce/Drawing 2024-04-14 14.26.04.md",
-    "01-Project/CS144/checkout 0.md",
-    "01-Project/MIT61810/lab/0 Lab util Unix utilities.md",
-    "01-Project/MIT61810/note/Lec1.md",
-    "01-Project/MIT61810/README.md",
-    "Algorithm/01基础/树/树的遍历.md",
-    "01-Project/MIT61810/code/xv6中的ls.md",
-    "01-Project/CMU-CSAPP/1 datalab/datalab.pdf",
+    "Tags",
+    "01-Project/01-Project.md",
+    "Algorithm/少儿编程/杂项/Drawing 2024-06-24 20.55.39.png",
+    "Algorithm/01基础/二分查找.md",
+    "Algorithm/leetcode/932 快速排序.md",
+    "Algorithm/acwing/785快速排序.md",
+    "READING/SICP/1.1 The Elements of Programming.md",
+    "READING/SICP/1.2 Procedures and the Processes They Generate.md",
+    "READING/SICP/2.2 Hierarchical Data and the Closure Property.md",
+    "04-CPP/模板/使用模板实现类似装饰器的功能.md",
+    "04-CPP/00基础/构造函数/push_back和emplace_back.md",
+    "04-CPP/00基础/构造函数/移动构造函数.md",
+    "04-CPP/00基础/构造函数/复制构造函数.md",
+    "04-CPP/00基础/运算符重载.md",
+    "04-CPP/概念型问题/防御式头文件.md",
+    "05-Work/左耳朵耗子的话.md",
+    "Algorithm/00数据生成/二维数组.md",
     "Algorithm/01基础/递推与递归/弹球距离.svg",
+    "Algorithm/01基础/递推与递归/Drawing 2024-07-18 20.09.38.md",
+    "Algorithm/01基础/树/树的遍历.md",
+    "Algorithm/01基础/树/未命名.md",
+    "Algorithm/03算法分析/快速排序/分治排序其一：快速排序（一）.md",
+    "Algorithm/01基础/离散化.md",
+    "Algorithm/01基础/差分.md",
+    "Algorithm/01基础/kmp.md",
+    "Algorithm/01基础/高精度/大数类.md",
+    "Algorithm/01基础/高精度/大数相乘.md",
+    "01-Project/NJUICS/lecture/L6 汇编&内联汇编选讲x86-64/L6 汇编&内联汇编选讲；x86-64.md",
+    "01-Project/CS61B/attachments/cs61b lec5 2021 lists2, sllists.pdf",
+    "01-Project/CS61A/canvasNote/IntroToPython.canvas",
+    "01-Project/computer network/programming assignment/VideoStreaming_programming_lab_only.pdf",
+    "01-Project/NJUICS/lecture/L5 数据的机器级表示/计算bit串中1的个数.pdf",
+    "01-Project/NJUICS/lecture/L5 数据的机器级表示/What every computer scientist should know about floating-point arithmetic.pdf",
+    "01-Project/CMU-CSAPP/1 datalab/datalab.pdf",
     "01-Project/NJUICS/lecture/L8 AbstractMachine 选讲/AbstractMachine 选讲.pdf",
     "01-Project/computer network/programming assignment/UDP_Pinger_programming_lab_only.pdf",
     "01-Project/NJUOS/Lecture/L1 操作系统概述 (操作系统的历史&学习建议)/什么是操作系统.pdf",
     "Algorithm/03算法分析/快速排序",
     "Algorithm/03算法分析",
-    "Algorithm/少儿编程/讲义",
-    "Algorithm/01基础/递推与递归",
-    "Algorithm/01基础/高精度",
-    "Algorithm/01基础/树",
     "Algorithm/leetcode_mini.svg",
     "attachments/Pasted Image 20240715144331_843.png",
     "attachments/Pasted Image 20240624205554_737.png",
@@ -273,11 +300,9 @@
     "attachments/Pasted Image 20240414142906_419.png",
     "attachments/Pasted Image 20231027203149_619.png",
     "attachments/Pasted Image 20240121075033_775.png",
-    "attachments/Pasted Image 20240121113700_284.png",
     "未命名.canvas",
     "01-Project/NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
     "NJUICS/note/PA2/未命名.canvas",
-    "01-Project/CS61A/canvasNote/IntroToPython.canvas",
     "CMU-CSAPP/未命名.canvas"
   ]
 }

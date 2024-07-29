@@ -46,9 +46,9 @@ Here are several places to find documentation and help about tmux:
 
 - <img src="https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/man_tmux.png" align="right" width=376 height=243>[The manual page](https://man.openbsd.org/tmux) has detailed reference documentation on tmux and a description of every command, flag and option. Once tmux is installed it is also available in section 1:
 
-  ~~~~
+  ```
   $ man 1 tmux
-  ~~~~
+  ```
 
 - The FAQ has solutions to commonly asked questions, mostly about specific configuration issues.
 
@@ -116,9 +116,9 @@ Window layout|The size and position of the panes in a window
 
 To create the first tmux session, tmux is run from the shell. A new session is created using the `new-session` command - `new` for short:
 
-~~~~
+```
 $ tmux new
-~~~~
+```
 
 Without arguments, `new-session` creates a new session and attaches it. Because this is the first session, the tmux server is started and the tmux run from the shell becomes the first client and attaches to it.
 
@@ -126,27 +126,27 @@ The new session will have one window (at index 0) with a single pane containing 
 
 By default, the first session will be called `0`, the second `1` and so on. `new-session` allows a name to be specified for the session with the `-s` flag:
 
-~~~~
+```
 $ tmux new -smysession
-~~~~
+```
 
 This creates a new session called `mysession`. A command may be given instead of running a shell by passing additional arguments. If one argument is given, tmux will pass it to the shell, if more than one it runs the command directly. For example these run *emacs(1)*:
 
-~~~~
+```
 $ tmux new 'emacs ~/.tmux.conf'
-~~~~
+```
 
 Or:
 
-~~~~
+```
 $ tmux new -- emacs ~/.tmux.conf
-~~~~
+```
 
 By default, tmux calls the first window in the session after whatever is running in it. The `-n` flag gives a name to use instead, in this case a window `mytopwindow` running *top(1)*:
 
-~~~~
+```
 $ tmux new -nmytopwindow top
-~~~~
+```
 
 `new-session` has other flags - some are covered below. A full list is [in the tmux manual](https://man.openbsd.org/tmux#new-session).
 
@@ -182,15 +182,15 @@ Every default tmux key binding has a short description to help remember what the
 
 `C-b ?` enters view mode to show text. A pane in view mode has its own key bindings which do not need the prefix key. These broadly follow *emacs(1)*. The most important are `Up`, `Down`, `C-Up`, `C-Down` to scroll up and down, and `q` to exit the mode. The line number of the top visible line together with the total number of lines is shown in the top right. Alternatively, the same list can be seen from the shell by running:
 
-~~~~
+```
 $ tmux lsk -N|more
-~~~~
+```
 
 `C-b /` shows the description of a single key - a prompt at the bottom of the terminal appears. Pressing a key will show its description in the same place. For example, pressing `C-b /` then `?` shows:
 
-~~~~
+```
 C-b ? List key bindings
-~~~~
+```
 
 #### Commands and flags
 
@@ -202,9 +202,9 @@ Commands can also be used from the shell, as with `new-session` and `list-keys` 
 
 Each command has zero or more flags, in the same way as standard Unix commands. Flags may or may not take a single argument themselves. In addition, commands may take additional arguments after the flags. Flags are passed after the command, for example to run the `new-session` command (alias `new`) with flags `-d` and `-n`:
 
-~~~~
+```
 $ tmux new-session -d -nmysession
-~~~~
+```
 
 All commands and their flags are documented in the tmux manual page.
 
@@ -226,33 +226,33 @@ Multiple commands may be entered together at the command prompt by separating th
 
 Detaching from tmux means that the client exits and detaches from the outside terminal, returning to the shell and leaving the tmux session and any programs inside it running in the background. To detach tmux, the `C-b d` key binding is used. When tmux detaches, it will print a message with the session name: 
 
-~~~~
+```
 [detached (from session mysession)]
-~~~~
+```
 
 The `attach-session` command attaches to an existing session. Without arguments, it will attach to the most recently used session that is not already attached:
 
-~~~~
+```
 $ tmux attach
-~~~~
+```
 
 Or `-t` gives the name of a session to attach to:
 
-~~~~
+```
 $ tmux attach -tmysession
-~~~~
+```
 
 By default, attaching to a session does not detach any other clients attached to the same session. The `-d` flag does this:
 
-~~~~
+```
 $ tmux attach -dtmysession
-~~~~
+```
 
 The `new-session` command has a `-A` flag to attach to an existing session if it exists, or create a new one if it does not. For a session named `mysession`:
 
-~~~~
+```
 $ tmux new -Asmysession
-~~~~
+```
 
 The `-D` flag may be added to make `new-session` also behave like `attach-session` with `-d` and detach any other clients attached to the session.
 
@@ -260,21 +260,21 @@ The `-D` flag may be added to make `new-session` also behave like `attach-sessio
 
 The `list-session` command (alias `ls`) shows a list of available sessions that can be attached. This shows four sessions called `1`, `2`, `myothersession` and `mysession`:
 
-~~~~
+```
 $ tmux ls
 1: 3 windows (created Sat Feb 22 11:44:51 2020)
 2: 1 windows (created Sat Feb 22 11:44:51 2020)
 myothersession: 2 windows (created Sat Feb 22 11:44:51 2020)
 mysession: 1 windows (created Sat Feb 22 11:44:51 2020)
-~~~~
+```
 
 #### Killing tmux entirely
 
 If there are no sessions, windows or panes inside tmux, the server will exit. It can also be entirely killed using the `kill-server` command. For example, at the command prompt:
 
-~~~~
+```
 :kill-server
-~~~~
+```
 
 #### Creating new windows
 
@@ -290,21 +290,21 @@ The `new-window` command has some useful flags which can be used with the comman
 
 * `-n` allows a name for the new window to be given. For example using the command prompt to create a window called `mynewwindow` without making it the current window:
 
-  ~~~~
+  ```
   :neww -dnmynewwindow
-  ~~~~
+  ```
 
 * The `-t` flag specifies a target for the window. Command targets have a special syntax, but for simple use with `new-window` it is enough just to give a window index. This creates a window at index 999:
 
-  ~~~~
+  ```
   :neww -t999
-  ~~~~
+  ```
 
 A command to be run in the new window may be given to `new-window` in the same way as `new-session`. For example to create a new window running *top(1)*:
 
-~~~~
+```
 :neww top
-~~~~
+```
 
 #### Splitting the window
 
@@ -451,23 +451,23 @@ To make swapping easy, a single pane can be marked. There is one marked pane acr
 
 Once a pane is marked, it can be swapped with the active pane in the current window with the `swap-pane` command, or the window containing the marked pane can be swapped with the current window using the `swap-window` command. For example, using the command prompt:
 
-~~~~
+```
 :swap-pane
-~~~~
+```
 
 Panes can additionally be swapped with the pane above or below using the `C-b {` and `C-b }` key bindings.
 
 Moving windows uses the `move-window` command or the `C-b .` key binding. Pressing `C-b .` will prompt for a new index for the current window. If a window already exists at the given index, an error will be shown. An existing window can be replaced by using the `-k` flag - to move a window to index 999:
 
-~~~~
+```
 :move-window -kt999
-~~~~
+```
 
 If there are gaps in the window list, the indexes can be renumbered with the `-r` flag to `move-window`. For example, this will change a window list of 0, 1, 3, 999 into 0, 1, 2, 3:
 
-~~~~
+```
 :movew -r
-~~~~
+```
 
 #### Resizing and zooming panes
 
@@ -534,29 +534,29 @@ Key|Function
 
 A buffer may be renamed using the `set-buffer` command. The `-b` flag gives the existing buffer name and `-n` the new name. This converts it into a named buffer. For example, to rename `buffer0` to `mybuffer` from the command prompt:
 
-~~~~
+```
 :setb -bbuffer0 -nmybuffer
-~~~~
+```
 
 `set-buffer` can also be used to create buffers. To create a buffer called `foo` with text `bar`:
 
-~~~~
+```
 :setb -bfoo bar
-~~~~
+```
 
 `load-buffer` will load a buffer from a file:
 
-~~~~
+```
 :loadb -bbuffername ~/a/file
-~~~~
+```
 
 `set-buffer` or `load-buffer` without `-b` creates an automatic buffer.
 
 An existing buffer can be saved to a file with `save-buffer`:
 
-~~~~
+```
 :saveb -bbuffer0 ~/saved_buffer
-~~~~
+```
 
 #### Finding windows and panes
 
@@ -571,9 +571,9 @@ tmux has rich support for the mouse. It can be used to change the active pane or
 
 Support for the mouse is enabled with the `mouse` option; options and the configuration file are described in detail in the next section. To turn the mouse on from the command prompt, use the `set-option` command:
 
-~~~~
+```
 :set -g mouse on
-~~~~
+```
 
 Once the mouse is enabled:
 
@@ -604,42 +604,42 @@ When the tmux server is started, tmux runs a file called `.tmux.conf` in the use
 
 A different configuration file may be run from `.tmux.conf` or from a running tmux server using the `source-file` command, for example to run `.tmux.conf` again from a running server using the command prompt:
 
-~~~~
+```
 :source ~/.tmux.conf
-~~~~
+```
 
 Commands in a configuration file appear one per line. Any lines starting with `#` are comments and are ignored:
 
-~~~~
+```
 # This is a comment - the command below turns the status line off
 set -g status off
-~~~~
+```
 
 Lines in the configuration file are processed similar to the shell, for example:
 
 - Arguments may be enclosed in `'` or `"` to include spaces, or spaces may be escaped. These four lines do the same thing:
-  ~~~~
+  ```
   set -g status-left "hello word"
   set -g status-left "hello\ word"
   set -g status-left 'hello word'
   set -g status-left hello\ word
-  ~~~~
+  ```
 
 - But escaping doesn't happen inside `'`s. The string here is `hello\ world` not `hello world`:
-  ~~~~
+  ```
   set -g status-left 'hello\ word'
-  ~~~~
+  ```
 
 - `~` is expanded to the home directory (except inside `'`s):
-  ~~~~
+  ```
   source ~/myfile
-  ~~~~
+  ```
 
 - Environment variables can be set and are also expanded (but not inside `'`s):
-  ~~~~
+  ```
   MYFILE=myfile
   source "~/$MYFILE"
-  ~~~~
+  ```
   Any variables set in the configuration file will be passed on to new panes created inside tmux.
 
 - A few special characters like `\n` (newline) and `\t` (tab) are replaced. A literal `\` must be given as `\\`.
@@ -662,83 +662,83 @@ All the key bindings or those for a single table can be listed with the `list-ke
 
 For example to list only keys in the `prefix` table:
 
-~~~~
+```
 $ tmux lsk -Tprefix
 bind-key    -T prefix C-b     send-prefix
 bind-key    -T prefix C-o     rotate-window
 ...
-~~~~
+```
 
 Or:
 
-~~~~
+```
 $ tmux lsk -Tprefix -N
 C-b     Send the prefix key
 C-o     Rotate through the panes
 ...
-~~~~
+```
 
 `bind-key` commands can be used to set a key binding, either interactively or most commonly from the configuration file. Like `list-keys`, `bind-key` has a `-T` flag for the key table to use. If `-T` is not given, the key is put in the `prefix` table; the `-n` flag is a shorthand for `-Troot` to use the `root` table.
 
 For example, the `list-keys` command shows that `C-b 9` changes to window 9 using the `select-window` command:
 
-~~~~
+```
 $ tmux lsk -Tprefix 9
 bind-key -T prefix 9 select-window -t :=9
-~~~~
+```
 
 A similar key binding to make `C-b M-0` change to window 10 can be added like this:
 
-~~~~
+```
 bind M-0 selectw -t:=10
-~~~~
+```
 
 The `-t` flag to `select-window` specifies the target window. In this example, the `:` means the target is a window and `=` means the name must match `10` exactly. Targets are documented further in the [COMMANDS section of the manual page](https://man.openbsd.org/tmux#COMMANDS).
 
 The `unbind-key` command removes a key binding. Like `bind-key` it has `-T` and `-n` flags for the key table. It is not necessary to remove a key binding before binding it again, `bind-key` will replace any existing key binding. `unbind-key` is necessary only to completely remove a key binding: 
 
-~~~~
+```
 unbind M-0
-~~~~
+```
 
 #### Copy mode key bindings
 
 Copy mode key bindings are set in the `copy-mode` and `copy-mode-vi` key tables. Copy mode has a separate set of commands which are passed using the `-X` flag to the `send-keys` command, for example the copy mode `start-of-line` command moves the cursor to the start of the line and is bound to `C-a` in the `copy-mode` key table:
 
-~~~~
+```
 $ tmux lsk -Tcopy-mode C-a
 bind-key -T copy-mode C-a send-keys -X start-of-line
-~~~~
+```
 
 A full list of copy mode commands is [available in the manual page](https://man.openbsd.org/tmux#WINDOWS_AND_PANES). Here is a selection:
 
-Command|*emacs(1)*|*vi(1)*|Description
----|---|---|---
-begin-selection|C-Space|Space|Start selection
-cancel|q|q|Exit copy mode
-clear-selection|C-g|Escape|Clear selection
-copy-pipe|||Copy and pipe to the command in the first argument
-copy-selection-and-cancel|M-w|Enter|Copy the selection and exit copy mode
-cursor-down|Down|j|Move the cursor down
-cursor-left|Left|h|Move the cursot left
-cursor-right|Right|l|Move the cursor right
-cursor-up|Up|k|Move the cursor up
-end-of-line|C-e|$|Move the cursor to the end of the line
-history-bottom|M->|G|Move to the bottom of the history
-history-top|M-<|g|Move to the top of the history
-middle-line|M-r|M|Move to middle line
-next-word-end|M-f|e|Move to the end of the next word
-page-down|PageDown|C-f|Page down
-page-up|PageUp|C-b|Page up
-previous-word|M-b|b|Move to the previous word
-rectangle-toggle|R|v|Toggle rectangle selection
-search-again|n|n|Repeat the last search
-search-backward||?|Search backwards, the first argument is the search term
-search-backward-incremental|C-r||Search backwards incrementally, usually used with the `-i` flag to `command-prompt`
-search-forward||/|Search forwards, the first argument is the search term
-search-forward-incremental|C-s||Search forwards incrementally
-search-reverse|N|N|Repeat the last search but reverse the direction
-start-of-line|C-a|0|Move to the start of the line
+| Command                     | *emacs(1)* | *vi(1)* | Description                                                                         |
+| --------------------------- | ---------- | ------- | ----------------------------------------------------------------------------------- |
+| begin-selection             | C-Space    | Space   | Start selection                                                                     |
+| cancel                      | q          | q       | Exit copy mode                                                                      |
+| clear-selection             | C-g        | Escape  | Clear selection                                                                     |
+| copy-pipe                   |            |         | Copy and pipe to the command in the first argument                                  |
+| copy-selection-and-cancel   | M-w        | Enter   | Copy the selection and exit copy mode                                               |
+| cursor-down                 | Down       | j       | Move the cursor down                                                                |
+| cursor-left                 | Left       | h       | Move the cursot left                                                                |
+| cursor-right                | Right      | l       | Move the cursor right                                                               |
+| cursor-up                   | Up         | k       | Move the cursor up                                                                  |
+| end-of-line                 | C-e        | $       | Move the cursor to the end of the line                                              |
+| history-bottom              | M->        | G       | Move to the bottom of the history                                                   |
+| history-top                 | M-<        | g       | Move to the top of the history                                                      |
+| middle-line                 | M-r        | M       | Move to middle line                                                                 |
+| next-word-end               | M-f        | e       | Move to the end of the next word                                                    |
+| page-down                   | PageDown   | C-f     | Page down                                                                           |
+| page-up                     | PageUp     | C-b     | Page up                                                                             |
+| previous-word               | M-b        | b       | Move to the previous word                                                           |
+| rectangle-toggle            | R          | v       | Toggle rectangle selection                                                          |
+| search-again                | n          | n       | Repeat the last search                                                              |
+| search-backward             |            | ?       | Search backwards, the first argument is the search term                             |
+| search-backward-incremental | C-r        |         | Search backwards incrementally, usually used with the `-i` flag to `command-prompt` |
+| search-forward              |            | /       | Search forwards, the first argument is the search term                              |
+| search-forward-incremental  | C-s        |         | Search forwards incrementally                                                       |
+| search-reverse              | N          | N       | Repeat the last search but reverse the direction                                    |
+| start-of-line               | C-a        | 0       | Move to the start of the line                                                       |
 
 #### Types of option
 
@@ -764,37 +764,37 @@ Options are displayed using the `show-options` command. The `-g` flag shows glob
 
 * `-s` shows server options:
 
-~~~~
+```
 $ tmux show -s
 backspace C-?
 buffer-limit 50
 ...
-~~~~
+```
 
 * `-g` with no other flags shows global session options:
 
-~~~~
+```
 $ tmux show -g
 activity-action other
 assume-paste-time 1
 ...
-~~~~
+```
 
 * `-g` and `-w` together show global window options:
 
-~~~~
+```
 $ tmux show -wg
 aggressive-resize off
 allow-rename off
 ...
-~~~~
+```
 
 An individual option value may be shown by giving its name to `show-option`. When an option name is given, it is not necessary to give `-s` or `-w` because tmux can work it out from the option name. For example, to show the `status` option:
 
-~~~~
+```
 $ tmux show -g status
 status on
-~~~~
+```
 
 #### Changing options
 
@@ -802,30 +802,30 @@ Options are set or unset using the `set-option` command. Like `show-option`, it 
 
 To set the `status` option:
 
-~~~~
+```
 set -g status off
-~~~~
+```
 
 Or the `default-terminal` option:
 
-~~~~
+```
 set -s default-terminal 'tmux-256color'
-~~~~
+```
 
 The `-u` flag unsets an option. Unsetting a global option restores it to its default value, for example:
 
-~~~~
+```
 set -gu status
-~~~~
+```
 
 #### Formats
 
 Many options make use of formats. Formats provide a powerful syntax to configure how text appears, based on various attributes of the tmux server, a session, window or pane. Formats are enclosed in `#{}` in string options or as a single uppercase letter like `#F`. This is the default `status-right` with several formats:
 
-~~~~
+```
 $ tmux show -s status-right
 status-right "#{?window_bigger,[#{window_offset_x}#,#{window_offset_y}] ,}\"#{=21:pane_title}\" %H:%M %d-%b-%y"
-~~~~
+```
 
 Formats are described [in this document](https://github.com/tmux/tmux/wiki/Formats) and [in the manual page](https://man.openbsd.org/tmux#FORMATS).
 
@@ -835,17 +835,17 @@ Some options may contain embedded shell commands. This is limited to the status 
 
 1) Print a line and exit, in which case the line will be shown in the status line and the command run at intervals to update it. For example:
 
-   ~~~~
+   ```
    set -g status-left '#(uptime)'
-   ~~~~
+   ```
 
    The maximum interval is set by the `status-interval` option but commands may also be run sooner if tmux needs. Commands will not be run more than once a second.
 
 2) Stay running and print a line whenever needed, for example:
 
-   ~~~~
+   ```
    set -g status-left '#(while :; do uptime; sleep 1; done)'
-   ~~~~
+   ```
 
 Note that is it not usually necessary to use an embedded command for the date and time since tmux will expand the date formats like `%H` and `%S` itself in the status line options. If a command like *date(1)* is used, any `%`s must be doubled as `%%`.
 
@@ -878,9 +878,9 @@ The remaining style terms are described [in the manual page](https://man.openbsd
 
 For example, to set the status line background to blue using the `status-style` option:
 
-~~~~
+```
 set -g status-style 'bg=blue'
-~~~~
+```
 
 #### Embedded styles
 
@@ -888,21 +888,21 @@ Embedded styles are included inside another option in between `#[` and `]`. Each
 
 For example, to put some text in red and blue in `status-left`:
 
-~~~~
+```
 set -g status-left 'default #[fg=red] red #[fg=blue] blue'
-~~~~
+```
 
 Because this is long it is also necessary to also increase the `status-left-length` option:
 
-~~~~
+```
 set -g status-left-length 100
-~~~~
+```
 
 Or embedded styles can be used conditionally, for example to show `P` in red if the prefix has been pressed or in the default style if not:
 
-~~~~
+```
 set -g status-left '#{?client_prefix,#[bg=red],}P#[default] [#{session_name}] '
-~~~~
+```
 
 #### List of useful options
 
@@ -969,11 +969,11 @@ This section shows examples of some common configuration changes for `.tmux.conf
 
 The prefix key is set by the `prefix` option. The `C-b` key is also bound to the `send-prefix` command in the prefix key table so pressing `C-b` twice sends it through to the active pane. To change to `C-a`:
 
-~~~~
+```
 set -g prefix C-a
 unbind C-b
 bind C-a send-prefix
-~~~~
+```
 
 #### Customizing the status line
 
@@ -993,17 +993,17 @@ There are many options for customizing the status line. The simplest options are
 
 The pane border colours may be set:
 
-~~~~
+```
 set -g pane-border-style fg=red
 set -g pane-active-border-style 'fg=red,bg=yellow'
-~~~~
+```
 
 Each pane may be given a status line with the `pane-border-status` option, for example to show the pane title in bold:
 
-~~~~
+```
 set -g pane-border-status top
 set -g pane-border-format '#[bold]#{pane_title}#[default]'
-~~~~
+```
 
 #### *vi(1)* key bindings
 
@@ -1017,10 +1017,10 @@ If either of the `VISUAL` or `EDITOR` environment variables are set to something
 
 To set both to use *vi(1)* keys:
 
-~~~~
+```
 set -g mode-keys vi
 set -g status-keys vi
-~~~~
+```
 
 #### Mouse copying behaviour
 
@@ -1028,21 +1028,21 @@ When dragging the mouse to copy text, tmux copies and exits copy mode when the m
 
 1) Do not copy or clear the selection or exit copy mode when the mouse is released. The keyboard must be used to copy the selection:
 
-~~~~
+```
 unbind -Tcopy-mode MouseDragEnd1Pane
-~~~~
+```
 
 2) Copy and clear the selection but do not exit copy mode:
 
-~~~~
+```
 bind -Tcopy-mode MouseDragEnd1Pane send -X copy-selection
-~~~~
+```
 
 3) Copy but do not clear the selection:
 
-~~~~
+```
 bind -Tcopy-mode MouseDragEnd1Pane send -X copy-selection-no-clear
-~~~~
+```
 
 ### Other features
 

@@ -11,45 +11,45 @@ If the instruction specifies an immediate operand, the immediate operand always 
 
 The following are the allowable instruction prefix codes:
 ```txt
-   F3H    REP prefix (used only with string instructions)
-   F3H    REPE/REPZ prefix (used only with string instructions
-   F2H    REPNE/REPNZ prefix (used only with string instructions)
-   F0H    LOCK prefix
+F3H    REP prefix (used only with string instructions)
+F3H    REPE/REPZ prefix (used only with string instructions
+F2H    REPNE/REPNZ prefix (used only with string instructions)
+F0H    LOCK prefix
 ```
 
 The following are the segment override prefixes:
 
 ```txt
-   2EH    CS segment override prefix
-   36H    SS segment override prefix
-   3EH    DS segment override prefix
-   26H    ES segment override prefix
-   64H    FS segment override prefix
-   65H    GS segment override prefix
-   66H    Operand-size override
-   67H    Address-size override
+2EH    CS segment override prefix
+36H    SS segment override prefix
+3EH    DS segment override prefix
+26H    ES segment override prefix
+64H    FS segment override prefix
+65H    GS segment override prefix
+66H    Operand-size override
+67H    Address-size override
 ```
 
 Figure 17-1.  80386 Instruction Format
 
 ```txt
-      +---------------+---------------+---------------+---------------+
-      |  INSTRUCTION  |   ADDRESS-    |    OPERAND-   |   SEGMENT     |
-      |    PREFIX     |  SIZE PREFIX  |  SIZE PREFIX  |   OVERRIDE    |
-      |---------------+---------------+---------------+---------------|
-      |     0 OR 1         0 OR 1           0 OR 1         0 OR 1     |
-      |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
-      |                        NUMBER OF BYTES                        |
-      +---------------------------------------------------------------+
++---------------+---------------+---------------+---------------+
+|  INSTRUCTION  |   ADDRESS-    |    OPERAND-   |   SEGMENT     |
+|    PREFIX     |  SIZE PREFIX  |  SIZE PREFIX  |   OVERRIDE    |
+|---------------+---------------+---------------+---------------|
+|     0 OR 1         0 OR 1           0 OR 1         0 OR 1     |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
+|                        NUMBER OF BYTES                        |
++---------------------------------------------------------------+
 
-      +----------+-----------+-------+------------------+-------------+
-      |  OPCODE  |  MODR/M   |  SIB  |   DISPLACEMENT   |  IMMEDIATE  |
-      |          |           |       |                  |             |
-      |----------+-----------+-------+------------------+-------------|
-      |  1 OR 2     0 OR 1    0 OR 1      0,1,2 OR 4       0,1,2 OR 4 |
-      |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
-      |                        NUMBER OF BYTES                        |
-      +---------------------------------------------------------------+
++----------+-----------+-------+------------------+-------------+
+|  OPCODE  |  MODR/M   |  SIB  |   DISPLACEMENT   |  IMMEDIATE  |
+|          |           |       |                  |             |
+|----------+-----------+-------+------------------+-------------|
+|  1 OR 2     0 OR 1    0 OR 1      0,1,2 OR 4       0,1,2 OR 4 |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
+|                        NUMBER OF BYTES                        |
++---------------------------------------------------------------+
 ```
 
 

@@ -176,6 +176,8 @@ int add(int a, int b) {
 
 ### 3.5 实现 `multimod`
 
+```ad-note
+
 盯着 “ $a \cdot b \bmod m$ ” 看是没办法解决问题的。正确的解题方法是把式子写出来，然后尝试做一些公式变形。这个例子里的公式变形是很直观的：
 $$
 \begin{align}
@@ -200,6 +202,9 @@ $$
 $$
 
 这里还有一个潜在的溢出问题——如果这个加法依然溢出怎么办？这个聪明的问题留给你。
+
+```
+
 
 >[!note] 一点思考
 > 首先对 $\bmod 1$ 是毫无意义的，所以我们不需要考虑。那么对于 $2 \leqslant m \leqslant 2^{64} - 1$，我们需要仔细考虑 $\left((t \bmod m)+\left(2^{64} \bmod m\right)\right)$ 的范围。其中由于 $x + y = t + 2^{64}$ 中的 $x,y$ 都是 64 位数 (假设溢出)，所以 $1 \leqslant t \leqslant 2^{64} - 2$，所以 $\left((t \bmod m)+\left(2^{64} \bmod m\right)\right)$ 不可能再溢出

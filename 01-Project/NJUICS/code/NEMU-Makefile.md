@@ -1,5 +1,5 @@
 # 源文件
-```makefile
+```makefile showLineNumbers wrap
 NAME = nemu
 
 ISA ?= x86 
@@ -149,7 +149,7 @@ clean:
 > ![VCks6c](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/VCks6c.png) ^tdabqo
 
 
-```shell hl:echo
+```shell
 Building x86-nemu-interpreter
 
 echo + CC src/monitor/debug/ui.c

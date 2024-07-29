@@ -12,8 +12,13 @@
     "coffebean-按文件类型显示对应图标",
     "custom_callouts",
     "img",
-    "callout",
-    "image"
+    "multi_col",
+    "code1",
+    "callout_aside",
+    "supercharged-links-gen",
+    "basic",
+    "image",
+    "callout1"
   ],
   "textFontFamily": "Bookerly,苹方-简",
   "interfaceFontFamily": "Bookerly,苹方-简"
