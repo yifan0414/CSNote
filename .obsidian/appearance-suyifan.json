@@ -1,0 +1,25 @@
+{
+  "accentColor": "",
+  "theme": "system",
+  "baseFontSize": 16,
+  "cssTheme": "Prism",
+  "translucency": true,
+  "monospaceFontFamily": "FiraCode Nerd Font,苹方-简",
+  "nativeMenus": false,
+  "baseFontSizeAction": false,
+  "showViewHeader": true,
+  "enabledCssSnippets": [
+    "coffebean-按文件类型显示对应图标",
+    "custom_callouts",
+    "img",
+    "multi_col",
+    "code1",
+    "callout_aside",
+    "supercharged-links-gen",
+    "basic",
+    "image",
+    "callout1"
+  ],
+  "textFontFamily": "Bookerly,苹方-简",
+  "interfaceFontFamily": "Bookerly,苹方-简"
+}

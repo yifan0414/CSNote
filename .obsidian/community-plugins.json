@@ -2,9 +2,7 @@
   "obsidian-paste-image-rename",
   "obsidian-admonition",
   "table-editor-obsidian",
-  "better-word-count",
   "calendar",
-  "callout-manager",
   "obsidian-copy-block-link",
   "dataview",
   "easy-typing-obsidian",
@@ -21,8 +19,7 @@
   "tabs",
   "obsidian-tasks-plugin",
   "templater-obsidian",
-  "typing-speed",
   "obsidian-vimrc-support",
-  "obsidian-enhancing-export",
-  "shiki-highlighter"
+  "shiki-highlighter",
+  "obsidian-emoji-toolbar"
 ]
