@@ -8,19 +8,19 @@ cd ~
 
 Usually, all works unrelated to system should be performed under the home directory. Other directories under the root of file system (`/`) are related to system. Therefore, do NOT finish your PAs and Labs under these directories by `sudo`.
 
->[!must] 不要使用root账户做实验!!! 
->使用root账户进行实验, 会改变实验相关文件的权限属性, 可能会导致开发跟踪系统无法正常工作; 更严重的, 你的误操作可能会无意中损坏系统文件, 导致系统无法启动! 往届有若干学长因此而影响了实验进度, 甚至由于损坏了实验相关的文件而影响了分数. 请大家引以为鉴, 不要贪图方便, 否则后果自负!
+>[!must] 不要使用 root 账户做实验!!! 
+>使用 root 账户进行实验, 会改变实验相关文件的权限属性, 可能会导致开发跟踪系统无法正常工作; 更严重的, 你的误操作可能会无意中损坏系统文件, 导致系统无法启动! 往届有若干学长因此而影响了实验进度, 甚至由于损坏了实验相关的文件而影响了分数. 请大家引以为鉴, 不要贪图方便, 否则后果自负!
 >
->如果你仍然不理解为什么要这样做, 你可以阅读这个页面: [Why is it bad to login as root?](http://askubuntu.com/questions/16178/why-is-it-bad-to-login-as-root) 正确的做法是: 永远使用你的普通账号做那些安分守己的事情(例如写代码), 当你需要进行一些需要root权限才能进行的操作时, 使用`sudo`.
+>如果你仍然不理解为什么要这样做, 你可以阅读这个页面: [Why is it bad to login as root?](http://askubuntu.com/questions/16178/why-is-it-bad-to-login-as-root) 正确的做法是: 永远使用你的普通账号做那些安分守己的事情(例如写代码), 当你需要进行一些需要root权限才能进行的操作时, 使用 `sudo`.
 
 
->[!edit] 在github上添加ssh key
->在获取框架代码之前, 首先请你在github上添加一个ssh key, 具体操作请STFW.
+>[!edit] 在 github 上添加 ssh key
+>在获取框架代码之前, 首先请你在 github 上添加一个 ssh key, 具体操作请 STFW.
 
 Now get the source code for PA by the following command:
 
 >[!must] 参加"一生一芯"的同学, 请参考"一生一芯"讲义获取代码链接
->如果你参加"一生一芯", 请勿使用下面的代码链接. 此外, PA讲义中关于作业提交的要求, "一生一芯"的同学可以全部忽略, 但需要关注"一生一芯"讲义中的提交要求.
+>如果你参加"一生一芯", 请勿使用下面的代码链接. 此外, PA 讲义中关于作业提交的要求, "一生一芯"的同学可以全部忽略, 但需要关注"一生一芯"讲义中的提交要求.
 
 
 ```
@@ -50,7 +50,7 @@ bash init.sh abstract-machine
 
 to initialize some subprojects. The script will pull some subprojects from github. We will explain them later.
 
-Besides, the script will also add some environment variables into the bash configuration file `~/.bashrc`. These variables are defined by absolute path to support the compilation of the subprojects. Therefore, <font color="#ff0000">DO NOT move your project to another directory once finishing the initialization</font>, else these variables will become invalid. Particularly, if you use shell other than `bash`, please set these variables in the corresponding configuration file manually.
+Besides, the script will also add some environment variables into the bash configuration file `~/.bashrc`. These variables are defined by absolute path to support the compilation of the subprojects. Therefore, <font color=" #ff0000 ">DO NOT move your project to another directory once finishing the initialization</font>, else these variables will become invalid. Particularly, if you use shell other than `bash`, please set these variables in the corresponding configuration file manually.
 
 To let the environment variables take effect, run
 
@@ -193,7 +193,7 @@ make menuconfig
 >[!notice] 编译报错了
 >你有可能会遇到这个错误信息, 好吧确实是讲义疏忽了. 那就正好当作一个练习吧: 你需要把缺少的工具装上.
 >
->至于怎么装, 当然是STFW了.
+>至于怎么装, 当然是 STFW 了.
 
 A menu will pop up. DO NOT modify anything. Just choose `Exit` and `Yes` to save the new configuration. After that, compile the project by `make`:
 
@@ -203,16 +203,16 @@ make
 
 If nothing goes wrong, NEMU will be compiled successfully.
 
->[!cloud] 确认llvm版本
+>[!cloud] 确认 llvm 版本
 >若编译时遇到如下错误:
 >
 >```
->src/utils/disasm.cc:37:2: error: #error Please use LLVM with major version >= 11
+>src/utils/disasm.cc: 37:2 : error: #error Please use LLVM with major version >= 11
 >```
 >
->请输入`llvm-config --version`查看llvm的版本, 确认其为11或以上的版本. 特别地, 若你使用的发行版为Ubuntu 20.04, 可手动通过`apt-get install llvm-11 llvm-11-dev`安装llvm-11, 然后进行如下改动来指定使用llvm-11的版本:
+>请输入 `llvm-config --version` 查看 llvm 的版本, 确认其为 11 或以上的版本. 特别地, 若你使用的发行版为 Ubuntu 20.04, 可手动通过 `apt-get install llvm-11 llvm-11-dev` 安装 llvm-11, 然后进行如下改动来指定使用 llvm-11 的版本:
 >
->```
+>```diff
 diff --git a/nemu/src/utils/filelist.mk b/nemu/src/utils/filelist.mk
 index c9b1708..b7b2e02 100644
 --- a/nemu/src/utils/filelist.mk
@@ -304,19 +304,19 @@ make
 If the error message above always appears, please contact us as soon as possible.
 
 >[!must] 开发跟踪
->我们使用`git`对你的实验过程进行跟踪, 不合理的跟踪记录会影响你的成绩. 往届有学长"完成"了某部分实验内容, 但我们找不到相应的git log, 最终该部分内容被视为没有完成. git log是独立完成实验的最有力证据, 完成了实验内容却缺少合理的git log, 不仅会损失大量分数, 还会给抄袭判定提供最有力的证据. 因此, 请你注意以下事项:
+>我们使用 `git` 对你的实验过程进行跟踪, 不合理的跟踪记录会影响你的成绩. 往届有学长"完成"了某部分实验内容, 但我们找不到相应的 git log, 最终该部分内容被视为没有完成. git log 是独立完成实验的最有力证据, 完成了实验内容却缺少合理的 git log, 不仅会损失大量分数, 还会给抄袭判定提供最有力的证据. 因此, 请你注意以下事项:
 >
->-   请你不定期查看自己的git log, 检查是否与自己的开发过程相符.
+>-   请你不定期查看自己的 git log, 检查是否与自己的开发过程相符.
 >-   提交往届代码将被视为没有提交.
->-   不要把你的代码上传到公开的地方(现在github个人账号也可以创建私有仓库了).
->-   总是在工程目录下进行开发, 不要在其它地方进行开发, 然后一次性将代码复制到工程目录下, 这样`git`将不能正确记录你的开发过程.
->-   不要修改`Makefile`中与开发跟踪相关的内容.
+>-   不要把你的代码上传到公开的地方(现在 github 个人账号也可以创建私有仓库了).
+>-   总是在工程目录下进行开发, 不要在其它地方进行开发, 然后一次性将代码复制到工程目录下, 这样 `git` 将不能正确记录你的开发过程.
+>-   不要修改 `Makefile` 中与开发跟踪相关的内容.
 >-   不要删除我们要求创建的分支, 否则会影响我们的脚本运行, 从而影响你的成绩
->-   不要清除git log
+>-   不要清除 git log
 >
 >偶然的跟踪失败不会影响你的成绩. 如果上文中的错误信息总是出现, 请尽快联系我们.
 
->[!cloud] 我不是修读本课程的学生, 是否能够关闭开发跟踪?
+>[!cloud]+ 我不是修读本课程的学生, 是否能够关闭开发跟踪?
 >可进行如下修改关闭开发跟踪:
 >
 >```diff
@@ -361,9 +361,9 @@ To filter out the commit logs corresponding to your manual commit, use `--autho
 >[!must] 实验报告内容
 >你必须在实验报告中描述以下内容:
 >
->-   <font color="#ff0000">实验进度. 简单描述即可, 例如"我完成了所有内容", "我只完成了xxx".  </font>
->   <font color="#ff0000">缺少实验进度的描述, 或者描述与实际情况不符, 将被视为没有完成本次实验.</font>
->-   <font color="#ff0000">必答题.</font>
+>-   <font color=" #ff0000 ">实验进度. 简单描述即可, 例如"我完成了所有内容", "我只完成了 xxx".  </font>
+>   <font color=" #ff0000 ">缺少实验进度的描述, 或者描述与实际情况不符, 将被视为没有完成本次实验.</font>
+>-   <font color=" #ff0000 ">必答题.</font>
 >
 >你可以自由选择报告的其它内容. 你不必详细地描述实验过程, 但我们鼓励你在报告中描述如下内容:
 >
@@ -398,7 +398,7 @@ ics2022
 
 Double check whether everything is fine. In particular, you should check whether your `.pdf` file can be opened with a PDF reader.
 
->[!idea] 如何打开PDF文件?
+>[!idea] 如何打开 PDF 文件?
 >STFW.
 
 
@@ -411,7 +411,7 @@ Double check whether everything is fine. In particular, you should check whether
 
 # RTFSC and Enjoy
 
-If you are new to GNU/Linux and finish this tutorial by yourself, congratulations! You have learned a lot! The most important, you have learned STFW and RTFM for using new tools and trouble-shooting. (<font color="#ff0000">反思一下, 你真的做到了吗?</font>) With these skills, you can solve lots of troubles by yourself during PAs, as well as in the future.
+If you are new to GNU/Linux and finish this tutorial by yourself, congratulations! You have learned a lot! The most important, you have learned STFW and RTFM for using new tools and trouble-shooting. (<font color=" #ff0000 ">反思一下, 你真的做到了吗?</font>) With these skills, you can solve lots of troubles by yourself during PAs, as well as in the future.
 
 In PA1, the first thing you will do is to [RTFSC](http://i.linuxtoy.org/docs/guide/ch48s06.html). If you have troubles during reading the source code, go to RTFM:
 
@@ -422,24 +422,24 @@ By the way, you will use C language for programming in all PAs. [Here](http://d
 
 Finally, enjoy the journey of PAs, and you will find hardware is not mysterious, so does the computer system! But remember:
 
--   <font color="#ff0000">STFW</font>
--   <font color="#ff0000">RTFM</font>
--   <font color="#ff0000">RTFSC</font>
+-   <font color=" #ff0000 ">STFW</font>
+-   <font color=" #ff0000 ">RTFM</font>
+-   <font color=" #ff0000 ">RTFSC</font>
 
 >[!edit] 必答题
 >独立解决问题是作为码农的一项十分重要的生存技能. 往届有同学在群里提出如下问题:
 >
->-   su认证失败是怎么回事?
->-   grep提示no such file or directory是什么意思?
->-   请问怎么卸载Ubuntu?
->-   C语言的xxx语法是什么意思?
+>-   su 认证失败是怎么回事?
+>-   grep 提示 no such file or directory 是什么意思?
+>-   请问怎么卸载 Ubuntu?
+>-   C 语言的 xxx 语法是什么意思?
 >-   ignoring return vaule of 'scanf'是什么意思?
->-   出现curl: not found该怎么办?
->-   为什么strtok返回NULL?
->-   为什么会有Segmentation fault这个错误?
->-   什么是busybox?
+>-   出现 curl: not found 该怎么办?
+>-   为什么 strtok 返回 NULL?
+>-   为什么会有 Segmentation fault 这个错误?
+>-   什么是 busybox?
 >
->请仔细阅读[提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)和[别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md) (这篇文章很短, 1分钟就能看完)这两篇文章, 结合自己在大一时提问和被提问, 以及完成PA0的经历, 写一篇不少于800字的读后感, 谈谈你对"好的提问"以及"通过STFW和RTFM独立解决问题"的看法.
+>请仔细阅读[提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)和[别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md) (这篇文章很短, 1 分钟就能看完)这两篇文章, 结合自己在大一时提问和被提问, 以及完成 PA0 的经历, 写一篇不少于 800 字的读后感, 谈谈你对"好的提问"以及"通过 STFW 和 RTFM 独立解决问题"的看法.
 >
 >Hint: 我们设置这道题并不是为了故意浪费大家的时间, 也不是为了禁止大家提出任何问题, 而是为了让大家知道"什么是正确的". 当你愿意为这些"正确的做法"去努力, 并且尝试用专业的方式提出问题的时候, 你就已经迈出了成为"成为专业人士"的第一步.
 

@@ -2,7 +2,7 @@
   "accentColor": "",
   "theme": "moonstone",
   "baseFontSize": 16,
-  "cssTheme": "Prism",
+  "cssTheme": "Border",
   "translucency": true,
   "monospaceFontFamily": "FiraCode Nerd Font,苹方-简",
   "nativeMenus": false,

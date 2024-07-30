@@ -1,59 +1,76 @@
 body {
-    /* Callouts */
-    --callout-border-width: 0px;
-    --callout-border-opacity: 0.25;
-    --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-    --callout-radius: var(--radius-s);
-    --callout-title-color: inherit;
-    --callout-title-padding: 0;
-    --callout-title-size: inherit;
-    --callout-content-padding: 0;
-    --callout-content-background: transparent;
-    --callout-content-radius: 0px;
+  /* Callouts */
+  --callout-border-width: 0px;
+  --callout-border-opacity: 0.25;
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
+  --callout-radius: var(--radius-s);
+  --callout-title-color: inherit;
+  --callout-title-padding: 0;
+  --callout-title-size: inherit;
+  --callout-content-padding: 0;
+  --callout-content-background: transparent;
+  --callout-content-radius: 0px;
 }
 
 .theme-light .callout {
-    --callout-border-width: 0 0 0 4px;
-    --callout-border-opacity: 1;
-    --callout-padding: 0;
-    --callout-radius: var(--radius-s);
-    /* --callout-radius: 0px; */
-    --callout-title-color: inherit;
-    --callout-title-padding: 8px 16px;
-    --callout-title-size: inherit;
-    --callout-content-padding: 8px 16px;
-    --callout-content-background: #FFFFFFBF;
-    --callout-content-radius: 0px;
+  --callout-border-width: 0 0 0 4px;
+  --callout-border-opacity: 1;
+  --callout-padding: 0;
+  /* --callout-radius: var(--radius-s); */
+  --callout-radius: 0px;
+  --callout-title-color: inherit;
+  --callout-title-padding: 8px 16px;
+  --callout-title-size: inherit;
+  --callout-content-padding: 8px 16px;
+  --callout-content-background: #ffffffbf;
+  --callout-content-radius: 0px;
 }
 
 .theme-dark .callout {
-    --callout-border-width: 0 0 0 4px;
-    --callout-border-opacity: 1;
-    --callout-padding: 0;
-    --callout-radius: 0px;
-    --callout-title-color: inherit;
-    --callout-title-padding: 8px 16px;
-    --callout-title-size: inherit;
-    --callout-content-padding: 0px 16px;
-    --callout-content-background: #00000050;
-    --callout-content-radius: 0px;
+  --callout-border-width: 0 0 0 4px;
+  --callout-border-opacity: 1;
+  --callout-padding: 0;
+  /* --callout-radius: var(--radius-s); */
+  --callout-radius: 0px;
+  --callout-title-color: inherit;
+  --callout-title-padding: 8px 16px;
+  --callout-title-size: inherit;
+  --callout-content-padding: 0px 16px;
+  --callout-content-background: #00000050;
+  --callout-content-radius: 0px;
 }
 
 .theme-light .callout-title {
-    /* padding: 8px; */
-    background-color: rgba(var(--callout-color), 0.1) !important;
+  /* padding: 8px; */
+  background-color: rgba(var(--callout-color), 0.05) !important;
 }
-
 
 .callout-content {
-    border-radius: var(--callout-content-radius);
+  border-radius: var(--callout-content-radius);
 }
 
+/* 字体变为黑色 */
 .callout-title-inner {
   color: var(--text-normal);
 }
 
+/* collapse icon right */
 .callout-title > .callout-title-inner {
   flex-grow: 1;
 }
 
+/* 关闭折叠特效 */
+.callout .collapser {
+  transition: none !important;
+}
+
+.callout .callout-content {
+  transition: none !important;
+}
+
+.callout {
+  /* margin-top: var(--admonition-margin-top); */
+  /* margin-bottom: var(--admonition-margin-bottom); */
+  box-shadow: 0 0.2rem 0.5rem var(--background-modifier-box-shadow);
+}
