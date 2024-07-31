@@ -8,18 +8,24 @@ body.theme-light.is-mobile {
   --default-string: #438c27;
   --default-punctuation: #7c3813;
   --default-comment: #aaaaaa;
+  --default-deleted: #c82424;
+  --default-added: #438c27;
+  --default-constant: #9c5d27;
 }
 
 .theme-dark,
 body.theme-dark.is-mobile {
-  --default-variable: #9cdcfe;
+  --default-variable: #cccccc;
   --default-function: #dcdcaa;
   --default-keyword: #c586c0;
   --default-operator: #d4d4d4;
   --default-string: #ce9278;
   --default-number: #b5cea8;
-  --default-punctuation: #d4d4d4;
+  --default-punctuation: #9cdcfe;
   --default-comment: #6a9956;
+  --default-deleted: #c82424;
+  --default-added: #438c27;
+  --default-constant: #4e94ce;
 }
 .theme-light .token.comment .theme-light .cm-comment {
   color: var(--default-comment);
@@ -40,15 +46,15 @@ body.theme-dark.is-mobile {
   color: var(--default-punctuation);
 }
 
-code[class*='language-'],
-.cm-variable,
+code[class*="language-"]:not(.language-txt),
 .token.selector,
-.cm-tag,
 .token.dom.variable,
 .token.tag,
-.cm-def,
 .token.parameter,
 .cm-property,
+.cm-variable,
+.cm-tag,
+.cm-def,
 .cm-qualifier {
   color: var(--default-variable);
 }
@@ -56,7 +62,6 @@ code[class*='language-'],
 .token.class-name,
 .token.maybe-class-name,
 .token.property-access,
-.token.constant,
 .token.builtin,
 .cm-type,
 code .cm-tag {
@@ -64,6 +69,22 @@ code .cm-tag {
   font-weight: bold;
 }
 
+.token.constant {
+  color: var(--default-constant);
+  font-weight: bold;
+}
+
+.token.coord,
+.token.string,
+.token.char,
+.token.attr-value,
+.cm-string,
+.cm-string-2 {
+  color: var(--default-string);
+  font-weight: bold;
+}
+
+.token.expression,
 .token.atrule,
 .token.keyword,
 .cm-keyword,
@@ -72,25 +93,14 @@ code .cm-tag {
   color: var(--default-keyword);
 }
 
-.token.property,
 .token.boolean,
 .token.number,
 .token.symbol,
 .token.attr-name,
-.token.deleted,
 .cm-attribute,
-.cm-number {
+.cm-number,
+.cm-atom {
   color: var(--default-number);
-  font-weight: bold;
-}
-
-.token.string,
-.token.char,
-.token.attr-value,
-.token.inserted,
-.cm-string,
-.cm-string-2 {
-  color: var(--default-string);
   font-weight: bold;
 }
 
@@ -114,10 +124,24 @@ code .cm-tag {
   /* font-style: italic; */
 }
 
+.token.inserted {
+  color: var(--default-added);
+  font-weight: bold;
+}
+
+.token.deleted {
+  color: var(--default-deleted);
+  font-weight: bold;
+}
+
+/* span.token.directive.keyword { */
+/*   color: #4b69c6; */
+/* } */
+
 .token.regex,
 .token.important,
 .token.variable {
-  /* color: var(--atom-purple); */
+  color: var(--default-keyword);
 }
 
 .token.important,

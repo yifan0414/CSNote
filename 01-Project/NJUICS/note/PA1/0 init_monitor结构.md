@@ -1,6 +1,6 @@
 # 0 框架结构图
 
-```higlightAnsi
+```txt
 main(int argc, char *argv[])
   |
   +---init_monitor(argc, argv)
@@ -68,8 +68,6 @@ static inline void parse_args(int argc, char *argv[]) {
     }
   }
 }
-
-
 ```
 
 > [!chatgpt]

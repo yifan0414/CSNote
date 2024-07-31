@@ -86,7 +86,7 @@
             "program": "/home/yifansu/ics2020/nemu/build/x86-nemu-interpreter",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "$  {workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
