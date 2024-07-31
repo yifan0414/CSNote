@@ -1,6 +1,6 @@
 # 0 框架结构图
 
-```c
+```string
 main(int argc, char *argv[])
   |
   +---init_monitor(argc, argv)

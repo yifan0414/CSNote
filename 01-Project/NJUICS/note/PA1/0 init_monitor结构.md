@@ -1,6 +1,6 @@
 # 0 框架结构图
 
-```txt
+```higlightAnsi
 main(int argc, char *argv[])
   |
   +---init_monitor(argc, argv)

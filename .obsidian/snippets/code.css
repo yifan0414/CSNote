@@ -1,48 +1,47 @@
 .theme-light,
 body.theme-light.is-mobile {
-  color-scheme: light;
-  --atom-gray-1: #383a42;
-  --atom-gray-2: #383a42;
-  --atom-red: #e75545;
-  --atom-green: #4ea24c;
-  --atom-blue: #3d74f6;
-  --atom-purple: #a625a4;
-  --atom-aqua: #0084bc;
-  --atom-yellow: #e35649;
-  --atom-orange: #986800;
+  --default-variable: #1b1c23;
+  --default-function: #aa3732;
+  --default-keyword: #7a3e9d;
+  --default-operator: #777777;
+  --default-number: #9c5d27;
+  --default-string: #438c27;
+  --default-punctuation: #7c3813;
+  --default-comment: #aaaaaa;
 }
 
 .theme-dark,
 body.theme-dark.is-mobile {
-  color-scheme: dark;
-  --atom-gray-1: #5c6370;
-  --atom-gray-2: #abb2bf;
-  --atom-red: #e06c75;
-  --atom-orange: #d19a66;
-  --atom-green: #98c379;
-  --atom-aqua: #56b6c2;
-  --atom-purple: #c678dd;
-  --atom-blue: #61afef;
-  --atom-yellow: #e5c07b;
+  --default-variable: #9cdcfe;
+  --default-function: #dcdcaa;
+  --default-keyword: #c586c0;
+  --default-operator: #d4d4d4;
+  --default-string: #ce9278;
+  --default-number: #b5cea8;
+  --default-punctuation: #d4d4d4;
+  --default-comment: #6a9956;
 }
 .theme-light .token.comment .theme-light .cm-comment {
-  color: #ababab;
+  color: var(--default-comment);
 }
+
 .theme-dark .token.comment,
 .theme-dark .cm-comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: var(--atom-gray-1);
+  color: var(--default-comment);
 }
+
 .token.punctuation,
 .token.plain-text,
 .token.dom.variable,
 .cm-hmd-codeblock.cm-bracket {
-  color: var(--atom-gray-2);
+  color: var(--default-punctuation);
 }
 
 code[class*='language-'],
+.cm-variable,
 .token.selector,
 .cm-tag,
 .token.dom.variable,
@@ -51,7 +50,7 @@ code[class*='language-'],
 .token.parameter,
 .cm-property,
 .cm-qualifier {
-  /* color: var(--atom-red); */
+  color: var(--default-variable);
 }
 
 .token.class-name,
@@ -59,12 +58,17 @@ code[class*='language-'],
 .token.property-access,
 .token.constant,
 .token.builtin,
+code .cm-tag {
+  color: var(--default-keyword);
+  font-weight: bold;
+}
+
 .cm-variable-2,
 .cm-type,
-.cm-atom,
-code .cm-tag {
-  color: var(--atom-yellow);
+.cm-atom {
+  color: var(--default-number);
 }
+
 .token.property,
 .token.boolean,
 .token.number,
@@ -72,42 +76,54 @@ code .cm-tag {
 .token.attr-name,
 .token.deleted,
 .cm-attribute,
-.cm-number,
-.cm-property.cm-string {
-  color: var(--atom-orange);
+.cm-number {
+  color: var(--default-number);
 }
+
+.token.property,
+.cm-property.cm-string{
+  color: var(--default-keyword);
+}
+
 .token.string,
 .token.char,
 .token.attr-value,
 .token.inserted,
-.cm-hmd-codeblock.cm-string,
-.cm-hmd-codeblock.cm-string-2 {
-  color: var(--atom-green);
+.cm-string,
+.cm-string-2 {
+  color: var(--default-string);
 }
+
 .token.operator,
 .cm-operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: var(--atom-aqua);
+  color: var(--default-operator);
+  /* font-weight: bold; */
 }
+
 .token.atrule,
 .token.keyword,
 .cm-keyword {
-  color: var(--atom-purple);
+  color : var(--default-keyword);
 }
-.cm-variable,
+
+.cm-builtin,
 .token.function,
 .token.method,
 .token.macro.property {
-  color: var(--atom-blue);
+  color: var(--default-function);
+  font-weight: bold;
 }
+
 .token.regex,
 .token.important,
 .token.variable {
-  color: var(--atom-purple);
+  /* color: var(--atom-purple); */
 }
+
 .token.important,
 .token.bold {
   font-weight: bold;

@@ -1,14 +1,4 @@
-/* .markdown-preview-view h1, */
-/* .markdown-preview-view h2, */
-/* .markdown-preview-view h3, */
-/* .markdown-preview-view h4, */
-/* .markdown-preview-view h5, */
-/* .markdown-preview-view h6 { */
-/*   margin-top: 1em !important; */
-/* } */
-
 /* 调节行内数学公式字体大小 */
-
 /* span.math-inline { */
 /*   font-size: 1.1em; */
 /* } */
@@ -18,75 +8,67 @@
 }
 
 /* reading mode */
-/* .markdown-preview-view p { */
-/* 	text-align: justify; */
-/* 	text-justify: inter-word;	 */
-/* } */
+.markdown-preview-view p {
+	text-align: justify;
+	text-justify: inter-word;	
+}
 
 /* source view and live preview */
-/* .markdown-source-view.mod-cm6 .cm-line { */
-/* 	text-align: justify; */
-/* 	text-justify: inter-word;	 */
+.markdown-source-view.mod-cm6 .cm-line {
+	text-align: justify;
+	text-justify: inter-word;	
+}
+
+/* reading mode */
+/* .markdown-preview-view code { */
+/*   border: 1px solid #e7eaed; */
+/*   background-color: #f5f5f5; */
+/*   font-size: 0.8em !important; */
+/*   font-weight: 500; */
 /* } */
 
-.markdown-preview-view {
-  font-weight: 400;
-}
-
-/* 使代码块中的字体变为粗体 */
+/* 代码块 */
 .markdown-preview-view code {
+  font-size: 0.8em !important;
   font-weight: 500;
 }
 
-/* 使行内代码的字体变为粗体 */
-.markdown-preview-view pre code {
+/* 行内代码 */
+body.theme-light .markdown-preview-view code:not(pre code) {
+  /* color: #1b1c23; */
+  color :var(--text-normal);
+  border: 1px solid #e7eaed;
+  background-color: #f5f5f5;
+  border-radius: var(--radius-s);
   font-weight: 500;
 }
 
-/* 使编辑模式下的代码块字体变为粗体 */
+
+/* .cm-s-obsidian pre.HyperMD-codeblock, */
+/* :is(.markdown-preview-view, .markdown-rendered) code, */
+/* .markdown-rendered code { */
+/*   border: 1px solid #e7eaed; */
+/*   font-size: 0.8em !important; */
+/*   font-weight: 500; */
+/* } */
+
+
+/* edit mode */
 .cm-s-obsidian .cm-inline-code {
+  font-size: 0.8em !important;
   font-weight: 500;
 }
 
-.cm-s-obsidian .HyperMD-codeblock {
+.theme-light .cm-s-obsidian .cm-inline-code {
+  border: 1px solid #e7eaed;
+  background-color: #f5f5f5;
+}
+
+.markdown-source-view.cm-s-obsidian.mod-cm6 .HyperMD-codeblock {
+  font-size: 0.8em;
   font-weight: 500;
 }
 
-:is(.cm-formatting-list-ul, .markdown-rendered ul > li) > .list-bullet::after {
-  border: 1px solid var(--list-marker-color);
-}
-:is(
-    ul:not(li > ul) > li > ul > li,
-    ul:not(li > ul) > li > ul > li > ul > li > ul > li,
-    ul:not(li > ul) > li > ul > li > ul > li > ul > li > ul > li > ul > li,
-    ul:not(li > ul)
-      > li
-      > ul
-      > li
-      > ul
-      > li
-      > ul
-      > li
-      > ul
-      > li
-      > ul
-      > li
-      ul
-      > li
-      > ul
-      > li
-  )
-  > .list-bullet::after,
-:is(
-    .HyperMD-list-line-2,
-    .HyperMD-list-line-4,
-    .HyperMD-list-line-6,
-    .HyperMD-list-line-8
-  )
-  .cm-formatting-list-ul
-  > .list-bullet::after {
-  background-color: transparent;
-}
 
 body {
   /*搜索框边框颜色*/

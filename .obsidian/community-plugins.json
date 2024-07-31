@@ -20,7 +20,8 @@
   "obsidian-tasks-plugin",
   "templater-obsidian",
   "obsidian-vimrc-support",
-  "shiki-highlighter",
   "obsidian-emoji-toolbar",
-  "editing-toolbar"
+  "editing-toolbar",
+  "obsidian-memos",
+  "codeblock-customizer"
 ]
