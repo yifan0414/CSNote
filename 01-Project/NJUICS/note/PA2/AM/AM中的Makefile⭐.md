@@ -263,7 +263,7 @@ LINKAGE   = $(OBJS) \
 ```
 
 > [!question]
-> ~~~
+> ```txt
 > SRCS      = $(addprefix src/, $(AM_SRCS))
 > OBJS      = $(addprefix $(DST_DIR)/, $(addsuffix .o, $(basename $(SRCS))))
 > LIBS     := $(sort $(LIBS) am klib) # lazy evaluation ("=") causes infinite recursions
@@ -278,7 +278,7 @@ LINKAGE   = $(OBJS) \
 > 其中nemu.mk定义了AM_SRCS := nemu/trm.c \
 >            nemu/ioe/ioe.c \
 > 为什么第一次$(info SRCS = $(SRCS)) 中 $(SRCS) 为空，第二次不为空
-> ~~~
+> ```
 > 
 > 这个问题与Makefile的变量延迟评估特性有关。在Makefile中，变量可以有两种赋值方式：立即赋值（使用 `:=`）和延迟赋值（使用 `=`）。
 > 

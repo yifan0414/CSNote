@@ -58,15 +58,18 @@ code[class*='language-'],
 .token.property-access,
 .token.constant,
 .token.builtin,
+.cm-type,
 code .cm-tag {
   color: var(--default-keyword);
   font-weight: bold;
 }
 
-.cm-variable-2,
-.cm-type,
-.cm-atom {
-  color: var(--default-number);
+.token.atrule,
+.token.keyword,
+.cm-keyword,
+.token.property,
+.cm-property.cm-string {
+  color: var(--default-keyword);
 }
 
 .token.property,
@@ -78,11 +81,7 @@ code .cm-tag {
 .cm-attribute,
 .cm-number {
   color: var(--default-number);
-}
-
-.token.property,
-.cm-property.cm-string{
-  color: var(--default-keyword);
+  font-weight: bold;
 }
 
 .token.string,
@@ -92,6 +91,7 @@ code .cm-tag {
 .cm-string,
 .cm-string-2 {
   color: var(--default-string);
+  font-weight: bold;
 }
 
 .token.operator,
@@ -104,18 +104,14 @@ code .cm-tag {
   /* font-weight: bold; */
 }
 
-.token.atrule,
-.token.keyword,
-.cm-keyword {
-  color : var(--default-keyword);
-}
-
-.cm-builtin,
 .token.function,
 .token.method,
-.token.macro.property {
+.token.macro.property,
+.cm-builtin,
+.cm-def {
   color: var(--default-function);
   font-weight: bold;
+  /* font-style: italic; */
 }
 
 .token.regex,
