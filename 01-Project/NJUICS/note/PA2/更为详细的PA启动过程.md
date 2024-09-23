@@ -36,7 +36,7 @@ latest:
 ```
 
 > [!command]
-> ~~~txt
+> ~~~bash
 > ❯ make ARCH=x86-nemu ALL=dummy run -n
 > /bin/echo -e "NAME = dummy\nSRCS = tests/dummy.c\nLIBS += klib\ninclude ${AM_HOME}/Makefile" > Makefile.dummy
 > make -s -f Makefile.dummy ARCH=x86-nemu run -nB

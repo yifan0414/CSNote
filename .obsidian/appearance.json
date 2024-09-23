@@ -1,9 +1,9 @@
 {
   "accentColor": "",
   "theme": "moonstone",
-  "baseFontSize": 18,
-  "cssTheme": "Shimmering Focus",
-  "translucency": false,
+  "baseFontSize": 17,
+  "cssTheme": "Blue Topaz",
+  "translucency": true,
   "monospaceFontFamily": "FiraCode Nerd Font,苹方-简",
   "nativeMenus": false,
   "baseFontSizeAction": false,
@@ -16,11 +16,10 @@
     "code1",
     "callout_aside",
     "supercharged-links-gen",
-    "image",
-    "callout1",
     "basic",
-    "code"
+    "callout1",
+    "image"
   ],
-  "textFontFamily": "Bookerly,LXGW WenKai,LXGW WenKai GB Screen,苹方-简",
+  "textFontFamily": "Bookerly,LXGW WenKai,苹方-简,LXGW WenKai GB Screen,Inter",
   "interfaceFontFamily": "Bookerly,苹方-简"
 }

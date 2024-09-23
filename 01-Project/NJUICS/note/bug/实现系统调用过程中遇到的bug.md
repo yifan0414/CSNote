@@ -14,7 +14,7 @@ static Context* do_event(Event e, Context* c) {
 
 但当我通过 `nanos-lite` 运行 `dummy.c` 程序时，会出现死循环。
 
-- [ ] 如何检查 nemu 中的死循环？ #pa/todo 
+- [ ] 如何检查 nemu 中的死循环？ #pa/todo
 
 ![WrBEvo](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/WrBEvo.png)
 

@@ -1,6 +1,6 @@
 # 0 框架结构图
 
-```string
+```docker
 main(int argc, char *argv[])
   |
   +---init_monitor(argc, argv)
@@ -93,7 +93,7 @@ void ui_mainloop() {
 
 通过名字就可以看出来，这个函数是读取 prompt 的输入内容的。其用到了两个库函数：`readline()` 和 `add_history()`。
 
->[!note] 静态局部变量
+>[!note]  静态局部变量
 > 存放在静态存储区，只在被声明的代码块中可见，生命周期是整个程序运行周期。
 > [static变量及其作用，C语言static变量详解](http://c.biancheng.net/view/301.html)
 >

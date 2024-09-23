@@ -22,6 +22,25 @@ https://stephango.com/flexoki
   --color-blue: #205EA6;
   --color-purple: #5E409D;
   --color-pink: #A02F6F;
+
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
+
+  --color-base-00: #FFFCF0;
+  --color-base-05: #FFFCF0;
+  --color-base-10: #F2F0E5;
+  --color-base-20: #F2F0E5;
+  --color-base-25: #E6E4D9;
+
+  --color-base-30: #E6E4D9;
+  --color-base-35: #DAD8CE;
+  --color-base-40: #CECDC3;
+
+  --color-base-50: #B7B5AC;
+  --color-base-60: #878580;
+  --color-base-70: #6F6E69;
+  --color-base-100: #100F0F;
 }
 .theme-dark {
   --color-red-rgb: 209, 77, 65;
@@ -41,35 +60,10 @@ https://stephango.com/flexoki
   --color-blue: #4385BE;
   --color-purple: #8B7EC8;
   --color-pink: #CE5D97;
-}
-body.theme-light {
+
   --accent-h: 175;
   --accent-s: 57%;
   --accent-l: 33%;
-
-  --color-base-00: #FFFCF0;
-  --color-base-05: #FFFCF0;
-  --color-base-10: #F2F0E5;
-  --color-base-20: #F2F0E5;
-  --color-base-25: #E6E4D9;
-
-  --color-base-30: #E6E4D9;
-  --color-base-35: #DAD8CE;
-  --color-base-40: #CECDC3;
-
-  --color-base-50: #B7B5AC;
-  --color-base-60: #878580;
-  --color-base-70: #6F6E69;
-  --color-base-100: #100F0F;
-
-  --color-accent: var(--color-cyan);
-  --color-accent-1: var(--color-cyan);
-
-}
-body.theme-dark {
-  --accent-h: 175;
-  --accent-s: 49%;
-  --accent-l: 45%;
 
   --color-base-00: #100F0F;
   --color-base-05: #100F0F;
@@ -85,7 +79,4 @@ body.theme-dark {
   --color-base-60: #6F6E69;
   --color-base-70: #878580;
   --color-base-100: #CECDC3;
-
-  --color-accent: #24837B;
-  --color-accent-1: #3AA99F;
 }

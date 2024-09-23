@@ -1,3 +1,61 @@
+
+/* reading mode */
+/* .markdown-preview-view code { */
+/*   border: 1px solid #e7eaed; */
+/*   background-color: #f5f5f5; */
+/*   font-size: 0.8em !important; */
+/*   font-weight: 500; */
+/* } */
+
+/* 代码块 */
+.markdown-preview-view code {
+  font-size: 0.8em !important;
+  font-weight: 500;
+}
+
+/* 行内代码 */
+body.theme-light .markdown-preview-view code:not(pre code) {
+  /* color: #1b1c23; */
+  color : #333333;
+  border: 1px solid #e7eaed;
+  background-color: #f3f4f4;
+  border-radius: var(--radius-s);
+  font-weight: 500;
+}
+
+
+/* .cm-s-obsidian pre.HyperMD-codeblock, */
+/* :is(.markdown-preview-view, .markdown-rendered) code, */
+/* .markdown-rendered code { */
+/*   border: 1px solid #e7eaed; */
+/*   font-size: 0.8em !important; */
+/*   font-weight: 500; */
+/* } */
+
+
+/* edit mode */
+
+.theme-light .cm-s-obsidian .cm-inline-code {
+  font-size: 0.8em !important;
+  font-weight: 500;
+  color : #333333 !important;
+  border: 1px solid #e7eaed !important;
+  background-color: #f3f4f4 !important;
+}
+
+.theme-dark .cm-s-obsidian .cm-inline-code {
+  font-size: 0.8em !important;
+  font-weight: 500;
+  /* border: 1px solid #e7eaed; */
+  /* background-color: #f5f5f5; */
+}
+
+
+.markdown-source-view.cm-s-obsidian.mod-cm6 .HyperMD-codeblock {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
 .theme-light,
 body.theme-light.is-mobile {
   --default-variable: #1b1c23;
@@ -15,13 +73,13 @@ body.theme-light.is-mobile {
 
 .theme-dark,
 body.theme-dark.is-mobile {
-  --default-variable: #cccccc;
+  --default-variable: #9cdcfe;
   --default-function: #dcdcaa;
   --default-keyword: #c586c0;
   --default-operator: #d4d4d4;
   --default-string: #ce9278;
   --default-number: #b5cea8;
-  --default-punctuation: #9cdcfe;
+  --default-punctuation: #cccccc;
   --default-comment: #6a9956;
   --default-deleted: #c82424;
   --default-added: #438c27;
@@ -66,12 +124,12 @@ code[class*="language-"]:not(.language-txt),
 .cm-type,
 code .cm-tag {
   color: var(--default-keyword);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .token.constant {
   color: var(--default-constant);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .token.coord,
@@ -81,7 +139,7 @@ code .cm-tag {
 .cm-string,
 .cm-string-2 {
   color: var(--default-string);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .token.expression,
@@ -101,7 +159,7 @@ code .cm-tag {
 .cm-number,
 .cm-atom {
   color: var(--default-number);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .token.operator,
@@ -120,18 +178,18 @@ code .cm-tag {
 .cm-builtin,
 .cm-def {
   color: var(--default-function);
-  font-weight: bold;
+  font-weight: 600;
   /* font-style: italic; */
 }
 
 .token.inserted {
   color: var(--default-added);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .token.deleted {
   color: var(--default-deleted);
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* span.token.directive.keyword { */
@@ -146,7 +204,7 @@ code .cm-tag {
 
 .token.important,
 .token.bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 .token.italic {
   font-style: italic;

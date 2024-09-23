@@ -33,7 +33,7 @@ void asm_longjmp(asm_jmp_buf env, int val);
 
 前面三个函数的行为非常明确，你只需用汇编实现以下函数的行为即可，通过阅读例子和文档，熟悉内联汇编的写法：
 
-```c
+```c showLineNumbers
 int64_t asm_add(int64_t a, int64_t b) {
   return a + b;
 }
@@ -44,6 +44,7 @@ int asm_popcnt(uint64_t x) {
   }
   return s;
 }
+
 void *asm_memcpy(void *dest, const void *src, size_t n) {
   return memcpy(dest, src, n);
 }
@@ -80,9 +81,7 @@ void longjmp(jmp_buf env, int val);
 
 简单来说，`setjmp` 会在调用时对当前程序的运行状态做一个**轻量级快照** (保存在 `env` 参数中)，并返回 `0`。只要 `setjmp` 时调用的函数不返回，程序在运行过程中可以随时调用 `longjmp` 跳转到 `setjmp` 快照时的程序状态，无论中间间隔了多少函数调用，并且给 `setjmp` 一个特定的返回值。我们可以通过下面的小例子理解 `setjmp` / `longjmp` 的行为：
 
-
-
-```c
+```c showLineNumbers ins={6-10} ins="setjmp"
 #include <setjmp.h>
 #include <stdio.h>
 

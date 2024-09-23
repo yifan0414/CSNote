@@ -8,71 +8,20 @@
 }
 
 /* reading mode */
-.markdown-preview-view p {
-	text-align: justify;
-	text-justify: inter-word;	
-}
+/* .markdown-preview-view p { */
+/* 	text-align: justify; */
+/* 	text-justify: inter-word;	 */
+/* } */
 
 /* source view and live preview */
-.markdown-source-view.mod-cm6 .cm-line {
-	text-align: justify;
-	text-justify: inter-word;	
-}
-
-/* reading mode */
-/* .markdown-preview-view code { */
-/*   border: 1px solid #e7eaed; */
-/*   background-color: #f5f5f5; */
-/*   font-size: 0.8em !important; */
-/*   font-weight: 500; */
+/* .markdown-source-view.mod-cm6 .cm-line { */
+/* 	text-align: justify; */
+/* 	text-justify: inter-word;	 */
 /* } */
-
-/* 代码块 */
-.markdown-preview-view code {
-  font-size: 0.8em !important;
-  font-weight: 500;
-}
-
-/* 行内代码 */
-body.theme-light .markdown-preview-view code:not(pre code) {
-  /* color: #1b1c23; */
-  color :var(--text-normal);
-  border: 1px solid #e7eaed;
-  background-color: #f5f5f5;
-  border-radius: var(--radius-s);
-  font-weight: 500;
-}
-
-
-/* .cm-s-obsidian pre.HyperMD-codeblock, */
-/* :is(.markdown-preview-view, .markdown-rendered) code, */
-/* .markdown-rendered code { */
-/*   border: 1px solid #e7eaed; */
-/*   font-size: 0.8em !important; */
-/*   font-weight: 500; */
-/* } */
-
-
-/* edit mode */
-.cm-s-obsidian .cm-inline-code {
-  font-size: 0.8em !important;
-  font-weight: 500;
-}
-
-.theme-light .cm-s-obsidian .cm-inline-code {
-  border: 1px solid #e7eaed;
-  background-color: #f5f5f5;
-}
-
-.markdown-source-view.cm-s-obsidian.mod-cm6 .HyperMD-codeblock {
-  font-size: 0.8em;
-  font-weight: 500;
-}
-
 
 body {
   /*搜索框边框颜色*/
-  --search-border-color: var(--text-accent);
+  /* --search-border-color: var(--text-accent); */
 
   /*搜索框距离页面顶部距离*/
   --search-top: calc(var(--header-height) + var(--size-4-4));

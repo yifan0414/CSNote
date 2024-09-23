@@ -17,7 +17,7 @@
   "alwaysUpdateLinks": true,
   "showFrontmatter": false,
   "useTab": true,
-  "showInlineTitle": false,
+  "showInlineTitle": true,
   "showLineNumber": false,
   "spellcheck": false,
   "tabSize": 2,
