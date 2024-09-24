@@ -20,5 +20,6 @@
   "templater-obsidian",
   "obsidian-vimrc-support",
   "obsidian-emoji-toolbar",
-  "shiki-highlighter"
+  "shiki-highlighter",
+  "obsidian-textgenerator-plugin"
 ]

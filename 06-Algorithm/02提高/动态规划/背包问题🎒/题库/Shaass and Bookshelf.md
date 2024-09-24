@@ -121,11 +121,11 @@ int main() {
             for (int k = 0; k <= width; k++) {
                 if (j >= v[i]) {
                     f[i % 2][j][k] =
-                        f[i % 2][j][k] or f[(i - 1) % 2][j - v[i]][k];
+                        f[i % 2][j][k] | f[(i - 1) % 2][j - v[i]][k];
                 }
                 if (k >= w[i]) {
                     f[i % 2][j][k] =
-                        f[i % 2][j][k] or f[(i - 1) % 2][j][k - w[i]];
+                        f[i % 2][j][k] | f[(i - 1) % 2][j][k - w[i]];
                 }
             }
         }
