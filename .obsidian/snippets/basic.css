@@ -7,6 +7,80 @@
   font-size: 1.2em;
 }
 
+.cm-active.HyperMD-quote.cm-line:not(.HyperMD-callout) .cm-quote {
+    margin-left: 0 !important;
+}
+
+/* 行内代码 */
+body.theme-light .markdown-preview-view code:not(pre code) {
+  /* color: #1b1c23; */
+  /* color : #333333; */
+  font-size: 0.8em !important;
+  border: 1px solid #e7eaed;
+  /* background-color: #eaedf0aa; */
+  /* background-color: #f9f2f4aa !important; */
+  border-radius: var(--radius-s);
+  /* font-weight: 500; */
+}
+
+.theme-light .cm-s-obsidian .cm-inline-code {
+  font-size: 0.8em !important;
+  /* font-weight: 500; */
+  /* color : #333333 !important; */
+  /* background-color: #f9f2f4aa !important; */
+  /* background-color: #eaedf0aa !important; */
+  /* border: 1px solid #e7eaed !important; */
+  /* background-color: #f3f4f4 !important; */
+}
+
+
+body:not(.tag-default) .tag[href^="#提高"]:not(.token) {
+  background-color: #52c41a !important;
+  font-weight: 600;
+  color: var(--white) !important;
+  filter: hue-rotate(0) !important;
+}
+
+body:not(.tag-default) .tag[href^="#普及"]:not(.token) {
+  background-color: #ffc116 !important;
+  font-weight: 600;
+  color: var(--white) !important;
+  filter: hue-rotate(0) !important;
+}
+
+
+body:not(.tag-default) .tag[href^="#提高进阶"]:not(.token) {
+  background-color: #3498db !important;
+  font-weight: 600;
+  color: var(--white) !important;
+  filter: hue-rotate(0) !important;
+}
+
+body:not(.tag-default) .tag[href^="#提高进阶"]:not(.token) {
+  background-color: #3498db !important;
+  font-weight: 600;
+  color: var(--white) !important;
+  filter: hue-rotate(0) !important;
+}
+
+
+body:not(.tag-default) .tag[href^="#省选"]:not(.token) {
+  background-color: #9d3dcf !important;
+  font-weight: 600;
+  color: var(--white) !important;
+  filter: hue-rotate(0) !important;
+}
+
+
+body:not(.tag-default) .tag[href^="#NOI"]:not(.token) {
+  background-color: #0e1d69 !important;
+  font-weight: 600;
+  font-family: var(--font-family-special-tag) !important;
+  color: var(--white) !important;
+  filter: hue-rotate(0) !important;
+}
+
+
 /* reading mode */
 /* .markdown-preview-view p { */
 /* 	text-align: justify; */

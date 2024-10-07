@@ -176,34 +176,33 @@ int add(int a, int b) {
 
 ### 3.5 实现 `multimod`
 
-```ad-note
-
-盯着 “ $a \cdot b \bmod m$ ” 看是没办法解决问题的。正确的解题方法是把式子写出来，然后尝试做一些公式变形。这个例子里的公式变形是很直观的：
-$$
-\begin{align}
-a \cdot b & =\left(a_0 \cdot 2^0+a_1 \cdot 2^1+\ldots+a_{63} \cdot 2^{63}\right) \cdot b \\
-& = a_{0} \cdot 2^0 \cdot b + a_{1} \cdot 2^1 \cdot b+ \dots + a_{63} \cdot 2^{63} \cdot b
-\end{align}
-$$
-
-对于上面表达式括号中的每一项, 都是形如 $2^i \cdot b$ 的形式 (因为 $a_i \in\{0,1\}$ ) 一因此
-$$
-a \cdot b \bmod m=\left(\sum_{0 \leq i<64} a_i \cdot b \cdot 2^i \bmod m \right) \bmod m
-$$
-
-**因此, 你只要能实现 $\bmod m$ 的加法即 $(x+y) \bmod m$, 就能实现 $\left(b \cdot 2^i\right) \bmod m$, 进而实现 $a \cdot b \bmod m$ 。**
-在这里你要小心 $x+y$ 溢出 64-bit 整数的问题: 当 $x+y=t+2^{64}$ 发生溢出 $\left(0 \leq t<2^{64-1}\right)$ 时, 注意加法 wraparound 后得到的结果是
-$$
-(x+y) \bmod 2^{64}=t .
-$$
-我们实际需要求解的是
-$$
-\left(t+2^{64}\right) \bmod m=\left((t \bmod m)+\left(2^{64} \bmod m\right)\right) \bmod m
-$$
-
-这里还有一个潜在的溢出问题——如果这个加法依然溢出怎么办？这个聪明的问题留给你。
-
-```
+> [!note]
+> 
+> 盯着 “ $a \cdot b \bmod m$ ” 看是没办法解决问题的。正确的解题方法是把式子写出来，然后尝试做一些公式变形。这个例子里的公式变形是很直观的：
+> $
+> \begin{align}
+> a \cdot b & =\left(a_0 \cdot 2^0+a_1 \cdot 2^1+\ldots+a_{63} \cdot 2^{63}\right) \cdot b \\
+> & = a_{0} \cdot 2^0 \cdot b + a_{1} \cdot 2^1 \cdot b+ \dots + a_{63} \cdot 2^{63} \cdot b
+> \end{align}
+> $
+> 
+> 对于上面表达式括号中的每一项, 都是形如 $2^i \cdot b$ 的形式 (因为 $a_i \in\{0,1\}$ ) 一因此
+> $
+> a \cdot b \bmod m=\left(\sum_{0 \leq i<64} a_i \cdot b \cdot 2^i \bmod m \right) \bmod m
+> $
+> 
+> **因此, 你只要能实现 $\bmod m$ 的加法即 $(x+y) \bmod m$, 就能实现 $\left(b \cdot 2^i\right) \bmod m$, 进而实现 $a \cdot b \bmod m$ 。**
+> 在这里你要小心 $x+y$ 溢出 64-bit 整数的问题: 当 $x+y=t+2^{64}$ 发生溢出 $\left(0 \leq t<2^{64-1}\right)$ 时, 注意加法 wraparound 后得到的结果是
+> $
+> (x+y) \bmod 2^{64}=t .
+> $
+> 我们实际需要求解的是
+> $
+> \left(t+2^{64}\right) \bmod m=\left((t \bmod m)+\left(2^{64} \bmod m\right)\right) \bmod m
+> $
+> 
+> 这里还有一个潜在的溢出问题——如果这个加法依然溢出怎么办？这个聪明的问题留给你。
+> 
 
 
 >[!note] 一点思考

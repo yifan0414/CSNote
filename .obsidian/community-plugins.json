@@ -6,11 +6,8 @@
   "obsidian-copy-block-link",
   "dataview",
   "easy-typing-obsidian",
-  "obsidian-image-auto-upload-plugin",
-  "obsidian-image-toolkit",
   "obsidian-excalidraw-plugin",
   "obsidian-latex-suite",
-  "math-indicator-changer",
   "pseudocode-in-obs",
   "darlal-switcher-plus",
   "quickadd",
@@ -19,7 +16,12 @@
   "tabs",
   "templater-obsidian",
   "obsidian-vimrc-support",
-  "obsidian-emoji-toolbar",
   "shiki-highlighter",
-  "obsidian-textgenerator-plugin"
+  "links",
+  "pdf-plus",
+  "obsidian-image-toolkit",
+  "obsidian-image-auto-upload-plugin",
+  "editing-toolbar",
+  "math-indicator-changer",
+  "creases"
 ]
