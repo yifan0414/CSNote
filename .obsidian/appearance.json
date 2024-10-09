@@ -1,6 +1,6 @@
 {
   "accentColor": "",
-  "theme": "moonstone",
+  "theme": "system",
   "baseFontSize": 17,
   "cssTheme": "Blue Topaz",
   "translucency": true,
@@ -15,11 +15,7 @@
     "multi_col",
     "code1",
     "callout_aside",
-    "basic",
-    "supercharged-links-gen",
-    "sample",
-    "image",
-    "callout1"
+    "sample"
   ],
   "textFontFamily": "Bookerly,LXGW WenKai,LXGW WenKai GB Screen,苹方-简,Inter",
   "interfaceFontFamily": "Bookerly,苹方-简"
