@@ -32,7 +32,7 @@ body {
   --callout-border-opacity: 1;
   --callout-padding: 0;
   /* --callout-radius: var(--radius-s); */
-  --callout-radius: 0px;
+  --callout-radius: 4px;
   --callout-title-color: inherit;
   --callout-title-padding: 8px 16px;
   --callout-title-size: inherit;

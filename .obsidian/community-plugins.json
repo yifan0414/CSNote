@@ -19,9 +19,10 @@
   "shiki-highlighter",
   "links",
   "pdf-plus",
-  "obsidian-image-toolkit",
   "obsidian-image-auto-upload-plugin",
   "editing-toolbar",
   "math-indicator-changer",
-  "creases"
+  "creases",
+  "obsidian-list-modified",
+  "obsidian-tasks-plugin"
 ]

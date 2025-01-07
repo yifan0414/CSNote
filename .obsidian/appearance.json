@@ -1,8 +1,8 @@
 {
   "accentColor": "",
-  "theme": "system",
+  "theme": "moonstone",
   "baseFontSize": 17,
-  "cssTheme": "Blue Topaz",
+  "cssTheme": "Shimmering Focus",
   "translucency": true,
   "monospaceFontFamily": "FiraCode Nerd Font,苹方-简",
   "nativeMenus": false,
@@ -15,7 +15,10 @@
     "multi_col",
     "code1",
     "callout_aside",
-    "sample"
+    "sample",
+    "basic",
+    "callout1",
+    "image"
   ],
   "textFontFamily": "Bookerly,LXGW WenKai,LXGW WenKai GB Screen,苹方-简,Inter",
   "interfaceFontFamily": "Bookerly,苹方-简"
