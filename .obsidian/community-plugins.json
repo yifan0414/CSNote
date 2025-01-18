@@ -1,7 +1,6 @@
 [
   "obsidian-paste-image-rename",
   "obsidian-admonition",
-  "table-editor-obsidian",
   "calendar",
   "obsidian-copy-block-link",
   "dataview",
@@ -16,13 +15,10 @@
   "tabs",
   "templater-obsidian",
   "obsidian-vimrc-support",
-  "shiki-highlighter",
   "links",
-  "pdf-plus",
   "obsidian-image-auto-upload-plugin",
-  "editing-toolbar",
   "math-indicator-changer",
-  "creases",
-  "obsidian-list-modified",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "shiki-highlighter",
+  "pdf-plus"
 ]
