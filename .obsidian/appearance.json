@@ -1,7 +1,7 @@
 {
   "accentColor": "",
-  "theme": "obsidian",
-  "baseFontSize": 17,
+  "theme": "system",
+  "baseFontSize": 18,
   "cssTheme": "Shimmering Focus",
   "translucency": false,
   "monospaceFontFamily": "FiraCode Nerd Font,苹方-简",

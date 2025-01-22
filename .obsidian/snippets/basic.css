@@ -8,7 +8,7 @@
 }
 
 .cm-active.HyperMD-quote.cm-line:not(.HyperMD-callout) .cm-quote {
-    margin-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 /* 行内代码 */
@@ -33,7 +33,6 @@ body.theme-light .markdown-preview-view code:not(pre code) {
   /* background-color: #f3f4f4 !important; */
 }
 
-
 body:not(.tag-default) .tag[href^="#提高"]:not(.token) {
   background-color: #52c41a !important;
   font-weight: 600;
@@ -48,7 +47,6 @@ body:not(.tag-default) .tag[href^="#普及"]:not(.token) {
   filter: hue-rotate(0) !important;
 }
 
-
 body:not(.tag-default) .tag[href^="#提高进阶"]:not(.token) {
   background-color: #3498db !important;
   font-weight: 600;
@@ -62,7 +60,6 @@ body:not(.tag-default) .tag[href^="#提高进阶"]:not(.token) {
   color: var(--white) !important;
   filter: hue-rotate(0) !important;
 }
-
 
 body:not(.tag-default) .tag[href^="#省选"]:not(.token) {
   background-color: #9d3dcf !important;
@@ -71,7 +68,6 @@ body:not(.tag-default) .tag[href^="#省选"]:not(.token) {
   filter: hue-rotate(0) !important;
 }
 
-
 body:not(.tag-default) .tag[href^="#NOI"]:not(.token) {
   background-color: #0e1d69 !important;
   font-weight: 600;
@@ -79,7 +75,6 @@ body:not(.tag-default) .tag[href^="#NOI"]:not(.token) {
   color: var(--white) !important;
   filter: hue-rotate(0) !important;
 }
-
 
 /* reading mode */
 /* .markdown-preview-view p { */
