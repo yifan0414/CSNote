@@ -5,10 +5,10 @@
   "focusNewTab": true,
   "pdfExportSettings": {
     "includeName": true,
-    "pageSize": "A4",
+    "pageSize": "A5",
     "landscape": false,
-    "margin": "0",
-    "downscalePercent": 85
+    "margin": "1",
+    "downscalePercent": 100
   },
   "promptDelete": false,
   "attachmentFolderPath": "attachments",
@@ -20,6 +20,5 @@
   "showInlineTitle": true,
   "showLineNumber": false,
   "spellcheck": false,
-  "tabSize": 2,
-  "showRibbon": false
+  "tabSize": 2
 }

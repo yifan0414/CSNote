@@ -1,3 +1,7 @@
+---
+title: xv6的ls
+---
+
 ```c 
 #include "kernel/types.h"
 #include "kernel/stat.h"

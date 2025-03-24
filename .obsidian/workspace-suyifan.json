@@ -1,0 +1,367 @@
+{
+  "main": {
+    "id": "9578adbec0afc5b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "3571eafd352beea7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f36ad25e8bb009ae",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "01-Project/NJUICS/note/PA3/PA架构设计.md"
+              },
+              "pinned": true,
+              "icon": "excalidraw-icon",
+              "title": "PA架构设计"
+            }
+          },
+          {
+            "id": "fba43ffe670f7dcb",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Master/复试/项目问题.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "项目问题"
+            }
+          },
+          {
+            "id": "2c67b3b63cb227c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Master/复试/英语问题.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "英语问题"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "44c334809e1b0082",
+    "type": "split",
+    "children": [
+      {
+        "id": "890e19d61646196f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2da51046074cc99e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "855e6f534d9050ea",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "1feae553c20f0c6f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "串口",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 335.5
+  },
+  "right": {
+    "id": "3a153ac8983db304",
+    "type": "split",
+    "children": [
+      {
+        "id": "c87440566f5123e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8b025324d797ce6b",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Master/复试/计算机网络面试问题.md"
+              },
+              "icon": "lucide-info",
+              "title": "计算机网络面试问题的笔记属性"
+            }
+          },
+          {
+            "id": "aa933b58d0a6c5ae",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "2c5ac69ecbb8d84a",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Master/复试/计算机网络面试问题.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 5,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.0534979423868314,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "计算机网络面试问题 的关系图"
+            }
+          },
+          {
+            "id": "958964b21c435c5e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "16f0a10f6941d9ee",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Master/复试/计算机网络面试问题.md",
+                "linksCollapsed": true,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "计算机网络面试问题 的出链列表"
+            }
+          },
+          {
+            "id": "e33fd6868d416e4b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "eb8390b7abf4589d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Master/复试/计算机网络面试问题.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "计算机网络面试问题 的反向链接列表"
+            }
+          }
+        ],
+        "currentTab": 6
+      },
+      {
+        "id": "5cdbe34d4d7b0cd2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a8a2d36901663aa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Master/复试/计算机网络面试问题.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "计算机网络面试问题 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 310.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "publish:发布更改": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false
+    }
+  },
+  "active": "2c67b3b63cb227c2",
+  "lastOpenFiles": [
+    "Master/复试/Selft-introduction.md",
+    "Master/复试/英语问题.md",
+    "Master/复试/项目问题.md",
+    "01-Project/NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-4 文件系统.md",
+    "00-Archive/NJUICS2016/ch/ch_pa-4-3-games.md",
+    "01-Project/NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-3 程序, 运行时环境与AM.md",
+    "01-Project/NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-3 程序，运行时环境与AM 2020.md",
+    "01-Project/NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-5 输入输出.md",
+    "01-Project/NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-3 用户程序和系统调用.md",
+    "01-Project/NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-5 输入输出 2020.md",
+    "01-Project/NJUICS/note/PA2/输入输出/设备的实现.md",
+    "01-Project/NJUICS/note/PA3/PA架构设计.md",
+    "01-Project/NJUICS/note/PA3/PA3遇到的问题.md",
+    "01-Project/NJUICS/note/杂项/C Runtime Library 和 C Standard Library.md",
+    "01-Project/NJUICS/note/PA2/AM/AM与操作系统的关系.md",
+    "01-Project/NJUICS/lecture/L8 AbstractMachine 选讲/Abstract Machine 选讲.md",
+    "01-Project/NJUICS/lecture/L8 AbstractMachine 选讲/AbstractMachine 选讲.pdf",
+    "01-Project/NJUICS/note/杂项/入口函数和程序初始化.md",
+    "Master/Computer/network/Drawing 2024-10-10 20.12.46.md",
+    "Master/复试/计算机网络面试问题.md",
+    "Master/复试/计算机网络问题.md",
+    "Master/复试/专业课.md",
+    "Master/复试/【计算机网络】-【考研复试面试】-整合_网络工程考研复试-CSDN博客.md",
+    "01-Project/CS61B/attachments/cs61b lec5 2021 lists2, sllists.pdf",
+    "未命名.md",
+    "01-Project/NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-1 不停计算的机器.md",
+    "Master/复试/未命名",
+    "01-Project/NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2-2 RTFSC(2).md",
+    "01-Project/NJUICS/tutorial/PA2 简单复杂的机器 冯诺依曼计算机系统/2 intro.md",
+    "Master/Computer/2023真题及答案(全).pdf",
+    "Master/复试/未命名.canvas",
+    "01-Project/CMU-CSAPP/0 cprogramminglab/cprogramminglab.pdf",
+    "Excalidraw/Scripts/ZoteroToExcalidraw.svg",
+    "Paper/knight.pdf",
+    "07-AI/神经网络",
+    "attachments/formula.png",
+    "attachments/network_disconnected.png",
+    "attachments/corpus.png",
+    "attachments/leastconstrainingvalue.png",
+    "attachments/degree.png",
+    "attachments/mrv.png",
+    "attachments/backtracking.png",
+    "attachments/constraintsatisfaction2.png",
+    "attachments/constraintsatisfaction1.png",
+    "cs50",
+    "07-AI/未命名.canvas",
+    "07-AI",
+    "06-Algorithm/02提高/分形/分形之城/未命名.canvas",
+    "Clippings",
+    "01-Project/CS61A/canvasNote/IntroToPython.canvas",
+    "未命名.canvas",
+    "01-Project/NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
+    "NJUICS/note/PA2/未命名.canvas",
+    "CMU-CSAPP/未命名.canvas"
+  ]
+}

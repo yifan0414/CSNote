@@ -5673,7 +5673,7 @@ body:not(.is-mobile) .embedded-backlinks .nav-header~.search-input-container {
 }
 
 /* document search replace */
-#cMenuToolbarModalBar.top {
+#editingToolbarModalBar.top {
     z-index: var(--layer-status-bar);
 }
 
@@ -5877,6 +5877,8 @@ body:not(.new-tab-text-btn-restore) .workspace-leaf-content[data-type="empty"] .
 body.is-mobile:not(.new-tab-text-btn-restore) .workspace-leaf-content[data-type="empty"] .empty-state-action:before {
     height: 24px !important;
     width: 24px !important;
+    -webkit-mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
 }
 
 body:not(.new-tab-text-btn-restore) .workspace-leaf-content[data-type="empty"] .empty-state-action:nth-child(1):before {
@@ -6792,8 +6794,8 @@ body {
 .menu,
 .suggestion-container.mod-search-suggestion {
     background-color: var(--workspace-background-translucent);
-    backdrop-filter: blur(12px) saturate(190%) contrast(50%) brightness(130%);
-    -webkit-backdrop-filter: blur(12px) saturate(190%) contrast(50%) brightness(130%);
+    backdrop-filter: blur(16px) saturate(190%) contrast(50%) brightness(130%);
+    -webkit-backdrop-filter: blur(16px) saturate(190%) contrast(50%) brightness(130%);
 }
 
 .theme-dark .modal.mod-canvas-help,
@@ -6804,8 +6806,8 @@ body {
 .theme-dark .menu,
 .theme-dark .suggestion-container.mod-search-suggestion {
     background-color: var(--workspace-background-translucent);
-    backdrop-filter: blur(10px) saturate(190%) contrast(70%) brightness(80%);
-    -webkit-backdrop-filter: blur(10px) saturate(190%) contrast(70%) brightness(80%);
+    backdrop-filter: blur(16px) saturate(190%) contrast(70%) brightness(80%);
+    -webkit-backdrop-filter: blur(16px) saturate(190%) contrast(70%) brightness(80%);
 }
 
 .suggestion-container.mod-search-suggestion .suggestion {
@@ -8676,22 +8678,24 @@ body {
     background-color: transparent
 }
 
-body:not(.zoom-off) .view-content div:not(.canvas-node-content) img:not([class]) {
-    max-width: 100%;
+body:not(.zoom-off):not(.is-mobile) .workspace-leaf-content[data-type=markdown] .view-content div:not(.canvas-node-content) img {
     cursor: zoom-in
 }
 
-body:not(.zoom-off) .view-content img:not([class]):active {
+body:not(.zoom-off):not(.is-mobile) .workspace-leaf-content[data-type=markdown] .view-content img:active {
     cursor: zoom-out;
+    max-width: 100%;
+    z-index: 900
 }
 
-body:not(.zoom-off) .view-content .markdown-preview-view img:not([class])[referrerpolicy=no-referrer]:active {
-    background-color: var(--background-primary);
-    padding: 10px;
+body:not(.zoom-off):not(.is-mobile) .workspace-leaf-content[data-type=markdown] .view-content .markdown-preview-view img[referrerpolicy=no-referrer]:active,
+body:not(.zoom-off):not(.is-mobile) .workspace-leaf-content[data-type=markdown] .view-content .markdown-source-view.mod-cm6 .cm-content>img[contenteditable=false]:active {
+    background-color: var(--background-primary)
 }
 
-body:not(.zoom-off) .view-content .image-embed:not(.canvas-node-content):active,
-body:not(.zoom-off) .view-content .markdown-preview-view img:not([class])[referrerpolicy=no-referrer]:active {
+body:not(.zoom-off):not(.is-mobile) .workspace-leaf-content[data-type=markdown] .view-content .image-embed:not(.canvas-node-content):active,
+body:not(.zoom-off):not(.is-mobile) .workspace-leaf-content[data-type=markdown] .view-content .markdown-preview-view img[referrerpolicy=no-referrer]:active,
+body:not(.zoom-off):not(.is-mobile) .workspace-leaf-content[data-type=markdown] .view-content .markdown-source-view.mod-cm6 .cm-content>img[contenteditable=false]:active {
     aspect-ratio: unset;
     cursor: zoom-out;
     display: block;
@@ -8707,10 +8711,10 @@ body:not(.zoom-off) .view-content .markdown-preview-view img:not([class])[referr
     padding: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0
 }
 
-body:not(.zoom-off) .view-content .image-embed:not(.canvas-node-content):active:after {
+body:not(.zoom-off):not(.is-mobile) .workspace-leaf-content[data-type=markdown] .view-content .image-embed:not(.canvas-node-content):active:after {
     background-color: var(--background-primary);
     opacity: .9;
     content: " ";
@@ -8719,14 +8723,12 @@ body:not(.zoom-off) .view-content .image-embed:not(.canvas-node-content):active:
     position: fixed;
     left: 0;
     right: 1px;
-    z-index: 0;
+    z-index: 0
 }
 
-body:not(.zoom-off) .view-content .image-embed:not(.canvas-node-content):active img:not([class]) {
+body:not(.zoom-off):not(.is-mobile) .workspace-leaf-content[data-type=markdown] .view-content .image-embed:not(.canvas-node-content):active img {
     aspect-ratio: unset;
-    top: 50%;
     z-index: 99;
-    transform: translateY(-50%);
     padding: 0;
     margin: 0 auto;
     width: calc(100% - 20px);
@@ -8736,10 +8738,11 @@ body:not(.zoom-off) .view-content .image-embed:not(.canvas-node-content):active 
     right: 0;
     bottom: 0;
     position: absolute;
-    opacity: 1;
-    outline: unset !important;
-    outline-offset: 0px !important;
-    border-radius: 0 !important;
+    opacity: 1
+}
+
+body:not(.zoom-off):not(.is-mobile) .workspace-leaf-content[data-type=markdown] .view-content .markdown-source-view.mod-cm6 .cm-content>.cm-callout[contenteditable=false]:active {
+    contain: unset !important
 }
 
 /* ====== pdf ====== */
@@ -8896,6 +8899,11 @@ svg.sidebar-left {
 
 .is-tablet .workspace-drawer .nav-header {
     border-top: var(--border-width) solid transparent;
+}
+
+.is-phone .mod-root .view-header .view-header-title-container {
+    flex: 10;
+    justify-content: flex-start;
 }
 
 /* tablet card layout */

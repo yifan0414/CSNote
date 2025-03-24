@@ -1,3 +1,7 @@
+---
+title: AM中的Makefile
+---
+
 # Example
 
 在 `am-kernel/test/cpu-tests/` 中执行下面的命令

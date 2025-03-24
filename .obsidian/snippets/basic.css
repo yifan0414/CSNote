@@ -16,7 +16,7 @@ body.theme-light .markdown-preview-view code:not(pre code) {
   /* color: #1b1c23; */
   /* color : #333333; */
   font-size: 0.8em !important;
-  border: 1px solid #e7eaed;
+  /* border: 1px solid #e7eaed; */
   /* background-color: #eaedf0aa; */
   /* background-color: #f9f2f4aa !important; */
   border-radius: var(--radius-s);

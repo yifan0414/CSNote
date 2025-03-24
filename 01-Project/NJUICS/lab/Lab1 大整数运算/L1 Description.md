@@ -1,3 +1,6 @@
+---
+title: L1 Description
+---
 >小实验 (Labs) 是 ICS 这门课程里的一些综合编程题，旨在结合课堂知识解决一些实际中的问题。因为问题来自实际，所以有时候未必能立即在课本上找到相关知识的答案，而是需要 “活学活用”。因此，大家需要利用互联网上的知识解决这些问题，但**不要**试图直接搜索这些问题的答案，即便有也不要点进去 (也请自觉不要公开发布答案)。
 
 ## 1. 背景
@@ -65,68 +68,12 @@ $$
 \left(a \cdot b \bmod 2^{64}\right) \bmod m \neq a \cdot b \bmod m
 $$
 
-~~~tabs
-tab: 问题
 >[!question] 怎么证明呢？
 > $a \cdot b \bmod m = ((a \bmod m) \cdot (b \bmod m)) \bmod m$?
 tab: 证明
 要证明 $a \cdot b \bmod m = (a \bmod m) \cdot (b \bmod m)$，我们可以从模运算的性质出发。模运算有一些基本性质，其中之一就是乘法的分配性。具体证明如下：
 
-设 $a$ 和 $b$ 是两个整数，$m$ 是一个正整数。
-
-1. **表示 $a$ 和 $b$**
-
-   我们可以将 $a$ 和 $b$ 分别表示为：
-   $$
-   a = q_1 \cdot m + r_1 \quad \text{和} \quad b = q_2 \cdot m + r_2
-$$
-   其中 $q_1$ 和 $q_2$ 是整数，而 $r_1$ 和 $r_2$ 是余数，满足 $0 \leqslant r_1 < m$ 和 $0 \leqslant r_2 < m$。
-
-   因此，
-   $$
-   a \bmod m = r_1 \quad \text{和} \quad b \bmod m = r_2
-$$
-
-2. **计算 $a \cdot b$**
-
-   我们可以计算 $a \cdot b$：
-   $$
-   a \cdot b = (q_1 \cdot m + r_1) \cdot (q_2 \cdot m + r_2)
-$$
-   展开并简化得到：
-   $$
-   a \cdot b = q_1 q_2 m^2 + q_1 m r_2 + q_2 m r_1 + r_1 r_2
-$$
-
-3. **计算 $a \cdot b \bmod m$**
-
-   根据模运算的性质，任何包含 $m$ 的项在取模 $m$ 时都会消失，因为它们是 $m$ 的整数倍。因此，我们只需要关注最后一项 $r_1 r_2$：
-   $$
-   a \cdot b \bmod m = (q_1 q_2 m^2 + q_1 m r_2 + q_2 m r_1 + r_1 r_2) \bmod m
-$$
-   $$
-   = (r_1 r_2) \bmod m
-$$
-
-4. **计算 $(a \bmod m) \cdot (b \bmod m)$**
-
-   现在，我们计算 $(a \bmod m) \cdot (b \bmod m)$：
-   $$
-   (a \bmod m) \cdot (b \bmod m) = r_1 \cdot r_2
-$$
-
-   由于 $r_1 \cdot r_2$ 本身就是一个整数，我们可以直接取模 $m$：
-   $$
-   (r_1 \cdot r_2) \bmod m
-$$
-
-因此，我们证明了：
-$$
-a \cdot b \bmod m = ((a \bmod m) \cdot (b \bmod m)) \bmod m
-$$
-
 这个证明利用了模运算的性质，尤其是模运算在乘法中的分配性。
-~~~
 
 ### 3.2 测试建议
 
@@ -179,27 +126,27 @@ int add(int a, int b) {
 > [!note]
 > 
 > 盯着 “ $a \cdot b \bmod m$ ” 看是没办法解决问题的。正确的解题方法是把式子写出来，然后尝试做一些公式变形。这个例子里的公式变形是很直观的：
-> $
+> $$
 > \begin{align}
 > a \cdot b & =\left(a_0 \cdot 2^0+a_1 \cdot 2^1+\ldots+a_{63} \cdot 2^{63}\right) \cdot b \\
 > & = a_{0} \cdot 2^0 \cdot b + a_{1} \cdot 2^1 \cdot b+ \dots + a_{63} \cdot 2^{63} \cdot b
 > \end{align}
-> $
+> $$
 > 
 > 对于上面表达式括号中的每一项, 都是形如 $2^i \cdot b$ 的形式 (因为 $a_i \in\{0,1\}$ ) 一因此
-> $
+> $$
 > a \cdot b \bmod m=\left(\sum_{0 \leq i<64} a_i \cdot b \cdot 2^i \bmod m \right) \bmod m
-> $
+> $$
 > 
 > **因此, 你只要能实现 $\bmod m$ 的加法即 $(x+y) \bmod m$, 就能实现 $\left(b \cdot 2^i\right) \bmod m$, 进而实现 $a \cdot b \bmod m$ 。**
 > 在这里你要小心 $x+y$ 溢出 64-bit 整数的问题: 当 $x+y=t+2^{64}$ 发生溢出 $\left(0 \leq t<2^{64-1}\right)$ 时, 注意加法 wraparound 后得到的结果是
-> $
+> $$
 > (x+y) \bmod 2^{64}=t .
-> $
+> $$
 > 我们实际需要求解的是
-> $
+> $$
 > \left(t+2^{64}\right) \bmod m=\left((t \bmod m)+\left(2^{64} \bmod m\right)\right) \bmod m
-> $
+> $$
 > 
 > 这里还有一个潜在的溢出问题——如果这个加法依然溢出怎么办？这个聪明的问题留给你。
 > 

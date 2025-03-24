@@ -20,6 +20,7 @@ The solution to the above problem is to define a new reference type that represe
 
 **Interfaces** We will use the keyword `interface` instead of `class` to create our `List`. More explicitly, we write:
 
+
 ```java
 public interface List<Item> { ... }
 ```
