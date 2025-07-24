@@ -2,8 +2,7 @@ body {
   /* Callouts */
   --callout-border-width: 0px;
   --callout-border-opacity: 0.25;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-radius: var(--radius-s);
   --callout-title-color: inherit;
   --callout-title-padding: 0;
@@ -16,15 +15,23 @@ body {
 .theme-light .callout {
   --callout-border-width: 0 0 0 4px;
   --callout-border-opacity: 1;
-  --callout-padding: 0;
+  --callout-padding: 0 !important;
   /* --callout-radius: var(--radius-s); */
   --callout-radius: 4px;
   --callout-title-color: inherit;
   --callout-title-padding: 8px 16px;
   --callout-title-size: inherit;
-  --callout-content-padding: 8px 16px;
+  --callout-content-padding: 8px 16px !important;
   --callout-content-background: #ffffffbf;
   --callout-content-radius: 0px;
+}
+.callout .callout-content > *:first-child {
+  margin-top: 5px;
+}
+
+/* 移除 Callout 内容区域最后一个元素的下边距 */
+.callout .callout-content > *:last-child {
+  margin-bottom: 5px;
 }
 
 .theme-dark .callout {

@@ -2,8 +2,8 @@
   "accentColor": "",
   "theme": "system",
   "baseFontSize": 18,
-  "cssTheme": "Blue Topaz",
-  "translucency": true,
+  "cssTheme": "Minimal",
+  "translucency": false,
   "monospaceFontFamily": "FiraCode Nerd Font,苹方-简",
   "nativeMenus": false,
   "baseFontSizeAction": false,
@@ -18,9 +18,10 @@
     "sample",
     "basic",
     "callout1",
-    "image"
+    "image",
+    "scrollbar"
   ],
-  "textFontFamily": "Bookerly,LXGW WenKai GB Screen,LXGW WenKai,苹方-简,Inter",
+  "textFontFamily": "Bookerly,苹方-简,LXGW WenKai,Optima",
   "interfaceFontFamily": "Bookerly,苹方-简",
   "showRibbon": false
 }

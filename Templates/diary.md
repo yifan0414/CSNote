@@ -38,7 +38,7 @@ due on {{date:YYYY-MM-DD}}
 ```tasks
 not done
 due after {{date:YYYY-MM-DD}}
-due before {{date+14d:YYYY-MM-DD}}
+due before in two weeks
 ```
 
 ### Done today

@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"2d29c6d38f53e1cb","type":"text","text":"# 更新参数\n反向传播计算出梯度只是第一步，我们要选择不同的优化算法，利用计算出的梯度更新参数。\n\n> [!chatgpt] \n>  **loss 相对于参数（如权重 W、偏置 b）的梯度** 后，需要使用不同的 **优化算法** 来更新参数。不同的优化算法对参数的更新方式不同，主要体现在 **学习率调整、梯度平滑、动量累积、自适应调整** 等方面。下面介绍几种常见的优化算法及其区别。","x":340,"y":-135,"width":540,"height":375},
+		{"id":"672d9bb432854fd8","type":"text","text":"# 反向传播\n根据计算图，在前向传播过程中已经保存了各连接层的参数数值。通过 pytorch 的自动求导，从最后一层向前求导并代入，通过链式法则，计算出 loss 对第一层参数的梯度","x":435,"y":-488,"width":351,"height":235},
+		{"id":"253672409ac0923b","type":"text","text":"# 前向传播\n\n1. **输入层 → 隐藏层 → 输出层** 逐层计算。\n\n2. **应用激活函数**（如 ReLU、Sigmoid）。","x":-320,"y":-435,"width":450,"height":130},
+		{"id":"13915b5266a6989f","type":"text","text":"# 计算损失\n1. 均方误差（常用于回归）\n2. 交叉熵 CE","x":-255,"y":-101,"width":320,"height":130},
+		{"id":"b237572f05409ccb","type":"text","text":"| **优化算法**                             | **特点**                                  |\n| ------------------------------------ | --------------------------------------- |\n| **SGD（随机梯度下降）**                      | 计算简单，易于理解，但容易陷入局部最优                     |\n| **Momentum**                         | 引入“惯性”概念，使更新更加稳定                        |\n| **Adam（Adaptive Moment Estimation）** | 结合 Momentum 和 RMSProp，自适应调整学习率，适用于大多数场景 |\n| **RMSProp**                          | 主要用于 RNN，抑制梯度爆炸或梯度消失                    |\n| **Adagrad / Adadelta**               | 自适应学习率调整                                |","x":270,"y":340,"width":681,"height":250},
+		{"id":"5a3b7c04d1bd5858","type":"text","text":"| **任务类型**  | **目标**   | **常见损失函数**                                  |\n| --------- | -------- | ------------------------------------------- |\n| **回归任务**  | 预测连续数值   | MSE（均方误差），MAE（平均绝对误差），Huber Loss            |\n| **二分类任务** | 预测属于两类之一 | BCE（Binary Cross Entropy，二元交叉熵）             |\n| **多分类任务** | 预测多个类别   | Categorical Cross Entropy（交叉熵）              |\n| **目标检测**  | 识别目标位置   | Smooth L1 Loss（用于边界框回归），Cross Entropy（用于分类） |\n| **生成任务**  | 生成数据     | GANs 采用 BCE，VAE 采用 KL 散度等                   |\n","x":-730,"y":192,"width":820,"height":240},
+		{"id":"6e23b3a20d52ee45","type":"text","text":"| **任务**                       | **常见损失函数**                     | **常见优化器**           |\n| ---------------------------- | ------------------------------ | ------------------- |\n| **回归任务**                     | MSE / Huber Loss               | SGD / Adam          |\n| **二分类任务**                    | Binary Cross Entropy           | Adam / RMSProp      |\n| **多分类任务**                    | Categorical Cross Entropy      | Adam / Momentum SGD |\n| **目标检测（YOLO, Faster R-CNN）** | Smooth L1 Loss + Cross Entropy | SGD / Adam          |\n| **图像生成（GANs）**               | BCE                            | Adam                |\n| **强化学习**                     | Policy Gradient Loss           | Adam / RMSProp      |","x":-309,"y":700,"width":579,"height":310},
+		{"id":"813168b7bbd2bdde","type":"file","file":"07-AI/Question/损失函数和优化器的选择.md","x":-1100,"y":700,"width":400,"height":305},
+		{"id":"d6cce147e90f85ef","type":"text","text":"# 单层线性回归","x":-2700,"y":282,"width":250,"height":60},
+		{"id":"68e40d37dff69498","type":"text","text":"# 多层感知机","x":-1780,"y":282,"width":250,"height":60},
+		{"id":"75bda76e220b436a","type":"text","text":"# 拟合任意函数","x":-1380,"y":282,"width":250,"height":60},
+		{"id":"43a069ea9f4f09e2","type":"text","text":"# 通用近似定理\n\n定理：一个包含足够多隐层神经元的多层前馈网络，能以任意精度逼近任意的连续函数。\n\n*有点类似泰勒定理*","x":-2260,"y":202,"width":321,"height":220}
+	],
+	"edges":[
+		{"id":"d0287aa0de52a6d1","fromNode":"253672409ac0923b","fromSide":"bottom","toNode":"13915b5266a6989f","toSide":"top"},
+		{"id":"619f9e93ad2efeec","fromNode":"13915b5266a6989f","fromSide":"right","toNode":"672d9bb432854fd8","toSide":"left"},
+		{"id":"213ac0446e37275d","fromNode":"672d9bb432854fd8","fromSide":"bottom","toNode":"2d29c6d38f53e1cb","toSide":"top"},
+		{"id":"686c35c732fe8553","fromNode":"13915b5266a6989f","fromSide":"bottom","toNode":"5a3b7c04d1bd5858","toSide":"top"},
+		{"id":"67661e200ceadd01","fromNode":"2d29c6d38f53e1cb","fromSide":"bottom","toNode":"b237572f05409ccb","toSide":"top"},
+		{"id":"ba221ac2eeee6f91","fromNode":"b237572f05409ccb","fromSide":"bottom","toNode":"6e23b3a20d52ee45","toSide":"top","color":"1"},
+		{"id":"5eef26ca2c20a5e9","fromNode":"5a3b7c04d1bd5858","fromSide":"bottom","toNode":"6e23b3a20d52ee45","toSide":"top","color":"1"},
+		{"id":"054e644a42919f43","fromNode":"813168b7bbd2bdde","fromSide":"right","toNode":"6e23b3a20d52ee45","toSide":"left"},
+		{"id":"c99b254493855460","fromNode":"d6cce147e90f85ef","fromSide":"right","toNode":"43a069ea9f4f09e2","toSide":"left"},
+		{"id":"23f516ff81ba5819","fromNode":"43a069ea9f4f09e2","fromSide":"right","toNode":"68e40d37dff69498","toSide":"left"},
+		{"id":"81e55d07fa56ef88","fromNode":"68e40d37dff69498","fromSide":"right","toNode":"75bda76e220b436a","toSide":"left"}
+	]
+}

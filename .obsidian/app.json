@@ -1,14 +1,14 @@
 {
   "defaultViewMode": "preview",
-  "vimMode": true,
-  "showIndentGuide": false,
+  "vimMode": false,
+  "showIndentGuide": true,
   "focusNewTab": true,
   "pdfExportSettings": {
     "includeName": true,
-    "pageSize": "A5",
+    "pageSize": "A4",
     "landscape": false,
-    "margin": "1",
-    "downscalePercent": 100
+    "margin": "0",
+    "downscalePercent": 85
   },
   "promptDelete": false,
   "attachmentFolderPath": "attachments",
@@ -20,5 +20,7 @@
   "showInlineTitle": true,
   "showLineNumber": false,
   "spellcheck": false,
-  "tabSize": 2
+  "tabSize": 2,
+  "autoConvertHtml": false,
+  "strictLineBreaks": false
 }

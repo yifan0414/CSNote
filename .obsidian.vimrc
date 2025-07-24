@@ -32,17 +32,17 @@ exmap surround_red surround <font\ color="#ff0000"> </font>
 map [[ :surround_wiki
 nunmap s
 vunmap s
-map s" :surround_double_quotes
-map s' :surround_single_quotes
-map s( :surround_brackets
-map s) :surround_brackets
-map s[ :surround_square_brackets
-map s] :surround_square_brackets
-map s{ :surround_curly_brackets
-map s} :surround_curly_brackets
-map s= :surround_equal
-map s` :surround_code
-map si :surround_italic
-map sb :surround_bold
-map su :surround_underline
-map sr :surround_red
+map s" :surround_double_quotes<cr>
+map s' :surround_single_quotes<cr>
+map s( :surround_brackets<cr>
+map s) :surround_brackets<cr>
+map s[ :surround_square_brackets<cr>
+map s] :surround_square_brackets<cr>
+map s{ :surround_curly_brackets<cr>
+map s} :surround_curly_brackets<cr>
+map s= :surround_equal<cr>
+map s` :surround_code<cr>
+map si :surround_italic<cr>
+map sb :surround_bold<cr>
+map su :surround_underline<cr>
+map sr :surround_red<cr>

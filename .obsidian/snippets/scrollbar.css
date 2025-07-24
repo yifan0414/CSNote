@@ -1,0 +1,127 @@
+body {
+  /* 鼠标移入时的颜色 */
+  --scrollbar-color-movein: hsla(var(--color-accent-hsl), 24%);
+  /* 鼠标点击时的颜色 */
+  --scrollbar-color-active: hsla(var(--color-accent-hsl), 64%);
+  --animation: var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+
+/* ! overflow: overlay is deprecated */
+body.scrollbar-gutter-overlay :is(.vertical-tab-header, .vertical-tab-content, .nav-files-container, .view-content, .search-result-container, .git-view-body, .suggestion-container .suggestion, .prompt-results, .community-modal-search-results-wrapper, .community-modal-info, .modal:not(.mod-settings, .mod-community-theme, .mod-community-plugin), .tag-container, .backlink-pane, .workspace-leaf-content[data-type=markdown] .cm-scroller, .markdown-preview-view, .workspace-leaf-content[data-type=calendar] .view-content, .janitor-scan-results, .excalidraw-wrapper :is(.App-mobile-menu, .App-menu .Stack .Island.App-menu__left, .scrollbar), .excalidraw-contextMenuContainer .popover, .kanban-plugin__board, .kanban-plugin__lane-items) {
+  overflow-y: overlay !important;
+}
+body.scrollbar-gutter-overlay .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container, body.scrollbar-gutter-overlay mjx-container, body.scrollbar-gutter-overlay .markdown-embed-content .markdown-rendered, body.scrollbar-gutter-overlay pre code {
+  overflow-x: overlay !important;
+}
+
+body.scrollbar-gutter-reserve {
+  --setting-scrollbar-gutter: stable;
+}
+
+body.scrollbar-hover-accent {
+  --setting-scrollbar-hover: hsla(var(--color-accent-hsl), 40%);
+}
+
+/* https://stackoverflow.com/a/74050413/20058211 */
+/* https://stackoverflow.com/a/46304690/20058211 */
+@property --scrollbar-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar {
+  width: 4px !important;
+  height: 4px !important;
+  background-color: transparent !important;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: var(--size-2-3) !important;
+  border: 3.6px solid transparent !important;
+  background-color: var(--scrollbar-color) !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  --scrollbar-color: var(--setting-scrollbar-hover);
+}
+::-webkit-scrollbar-thumb:active {
+  --scrollbar-color: hsla(var(--color-accent-hsl), 64%);
+}
+
+body:not(.scrollbar-movein-animation) {
+  --scrollbar-color: hsla(var(--color-accent-hsl), 24%);
+}
+
+body.scrollbar-movein-animation :is(.vertical-tab-header, .vertical-tab-content, .nav-files-container, .view-content, .search-result-container, .git-view-body, .suggestion-container .suggestion, .prompt-results, .community-modal-search-results-wrapper, .community-modal-info, .modal:not(.mod-settings, .mod-community-theme, .mod-community-plugin), .tag-container, .backlink-pane, .workspace-leaf-content[data-type=markdown] .cm-scroller, .markdown-preview-view, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container, mjx-container, .markdown-embed-content .markdown-rendered, pre code, .workspace-leaf-content[data-type=calendar] .view-content, .janitor-scan-results, .excalidraw-wrapper :is(.App-mobile-menu, .App-menu .Stack .Island.App-menu__left, .scrollbar), .excalidraw-contextMenuContainer .popover, .kanban-plugin__board, .kanban-plugin__lane-items) {
+  transition: --scrollbar-color var(--animation);
+  scrollbar-gutter: var(--setting-scrollbar-gutter, initial);
+}
+body.scrollbar-movein-animation :is(.vertical-tab-header, .vertical-tab-content, .nav-files-container, .view-content, .search-result-container, .git-view-body, .suggestion-container .suggestion, .prompt-results, .community-modal-search-results-wrapper, .community-modal-info, .modal:not(.mod-settings, .mod-community-theme, .mod-community-plugin), .tag-container, .backlink-pane, .workspace-leaf-content[data-type=markdown] .cm-scroller, .markdown-preview-view, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container, mjx-container, .markdown-embed-content .markdown-rendered, pre code, .workspace-leaf-content[data-type=calendar] .view-content, .janitor-scan-results, .excalidraw-wrapper :is(.App-mobile-menu, .App-menu .Stack .Island.App-menu__left, .scrollbar), .excalidraw-contextMenuContainer .popover, .kanban-plugin__board, .kanban-plugin__lane-items):hover {
+  --scrollbar-color: hsla(var(--color-accent-hsl), 24%);
+}
+body.scrollbar-movein-animation textarea {
+  color: transparent;
+  transition: color var(--animation);
+  -webkit-text-fill-color: var(--text-normal);
+}
+body.scrollbar-movein-animation textarea:hover {
+  color: hsla(var(--color-accent-hsl), 24%);
+}
+body.scrollbar-movein-animation textarea * {
+  -webkit-text-fill-color: initial;
+}
+body.scrollbar-movein-animation textarea::-webkit-scrollbar-thumb {
+  box-shadow: 0 0 0 10px inset;
+  border-width: 3.2px;
+  background-clip: content-box;
+  background-color: transparent !important;
+}
+
+body.scrollbar-smooth.scrollbar-smooth-editor .workspace-leaf-content[data-type=markdown] .cm-scroller, .markdown-preview-view,
+body.scrollbar-smooth :is(.vertical-tab-header, .vertical-tab-content, .nav-files-container, .view-content, .search-result-container, .git-view-body, .suggestion-container .suggestion, .prompt-results, .community-modal-search-results-wrapper, .community-modal-info, .modal:not(.mod-settings, .mod-community-theme, .mod-community-plugin), .tag-container, .backlink-pane, .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container, mjx-container, .markdown-embed-content .markdown-rendered, pre code, .workspace-leaf-content[data-type=calendar] .view-content, .janitor-scan-results, .excalidraw-wrapper :is(.App-mobile-menu, .App-menu .Stack .Island.App-menu__left, .scrollbar), .excalidraw-contextMenuContainer .popover, .kanban-plugin__board, .kanban-plugin__lane-items) {
+  scroll-behavior: smooth;
+}
+
+/* @settings
+
+name: scrollbar snippet
+id: maple-scrollbar
+settings:
+    -
+        id: scrollbar-movein-animation
+        title: enable scrollbar movein animation
+        title.zh: 启用滚动条鼠标移入动画效果
+        type: class-toggle
+        default: true
+    -
+        id: scrollbar-gutter
+        title: scrollbar gutter config
+        description: scroll bar appears without squeezing the parent container❗overlay property is marked as deprecated officially
+        title.zh: 控制滚动条槽
+        description.zh: 使滚动条出现时不会对父容器产生挤压，选项：默认(default) / 悬浮滚动条(overlay) / 预留滚动条位置(reserve)❗overlay可能在后续的版本不支持
+        type: class-select
+        allowEmpty: false
+        default: scrollbar-gutter-default
+        options:
+            -   label: default
+                value: scrollbar-gutter-default
+            -   label: overlay
+                value: scrollbar-gutter-overlay
+            -   label: reserve
+                value: scrollbar-gutter-reserve
+    -
+        id: scrollbar-smooth
+        title: smooth scroll
+        title.zh: 开启顺滑滚动
+        type: class-toggle
+    -
+        id: scrollbar-smooth-editor
+        title: smooth scroll for editor
+        description: may cause bad animation
+        title.zh: 编辑器开启顺滑滚动
+        description.zh: ❗跳转动画可能不太好
+        type: class-toggle
+*/
+

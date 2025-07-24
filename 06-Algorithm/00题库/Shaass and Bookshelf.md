@@ -67,6 +67,7 @@ $(1 \leqslant t[i]\leqslant 2,1\leqslant w[i]\leqslant 100)$
 ## 代码
 
 ### 最优解
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -103,7 +104,7 @@ using namespace std;
 int main() {
     std::ios::sync_with_stdio(false);
     std::cin.tie(nullptr);
-
+    
     int n;
     cin >> n;
     vector<int> v(n + 1), w(n + 1);

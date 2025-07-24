@@ -1,0 +1,23 @@
+{
+  "id": "7d40bbfd-6ff6-4f18-82d7-47bd0408cee7",
+  "name": "vault",
+  "content": [
+    {
+      "type": "folder",
+      "content": "/"
+    }
+  ],
+  "chatHistory": [
+    {
+      "id": "8d54dc6d-4e15-4228-92a5-b64e1609e1ee",
+      "title": "用\\begin{align*} \\end{align*} 包围起来，用=对齐"
+    }
+  ],
+  "metadata": {
+    "isDefault": true,
+    "description": "all vault as workspace"
+  },
+  "createdAt": 1753190815007,
+  "updatedAt": 1753192079154,
+  "schemaVersion": 1
+}
