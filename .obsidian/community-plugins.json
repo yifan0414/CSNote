@@ -4,13 +4,11 @@
   "calendar",
   "obsidian-copy-block-link",
   "dataview",
-  "pseudocode-in-obs",
   "darlal-switcher-plus",
   "quickadd",
   "settings-search",
   "obsidian-style-settings",
   "templater-obsidian",
-  "links",
   "obsidian-tasks-plugin",
   "pdf-plus",
   "tabs",
@@ -20,5 +18,11 @@
   "obsidian-latex-suite",
   "obsidian-image-toolkit",
   "obsidian-image-auto-upload-plugin",
-  "file-explorer-plus"
+  "file-explorer-plus",
+  "obsidian-excalidraw-plugin",
+  "media-extended",
+  "table-editor-obsidian",
+  "fix-math",
+  "claudian",
+  "copilot"
 ]

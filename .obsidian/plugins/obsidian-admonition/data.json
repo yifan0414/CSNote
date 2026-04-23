@@ -1,0 +1,184 @@
+{
+  "userAdmonitions": {
+    "cloud": {
+      "type": "cloud",
+      "color": "117, 89, 217",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-message-circle"
+      },
+      "command": false,
+      "title": "cloud",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "sq": {
+      "type": "sq",
+      "color": "117, 89, 217",
+      "icon": {
+        "type": "obsidian",
+        "name": "question-mark-glyph"
+      },
+      "command": false,
+      "title": "sq",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "sc": {
+      "type": "sc",
+      "color": "104, 60, 185",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-code-2"
+      },
+      "command": false,
+      "title": "sc",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "must": {
+      "type": "must",
+      "color": "250, 20, 67",
+      "icon": {
+        "name": "exclamation",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "must",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "command": {
+      "type": "command",
+      "color": "117, 89, 217",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-terminal"
+      },
+      "command": false,
+      "title": "command",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "chatgpt": {
+      "type": "chatgpt",
+      "color": "149, 150, 150",
+      "icon": {
+        "name": "dependabot",
+        "type": "octicons"
+      },
+      "command": false,
+      "title": "ChatGPT",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "demo": {
+      "type": "demo",
+      "color": "151, 145, 145",
+      "icon": {
+        "type": "obsidian",
+        "name": "experiment"
+      },
+      "command": false,
+      "title": "demo",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "idea": {
+      "type": "idea",
+      "color": "79, 151, 7",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-lightbulb"
+      },
+      "command": false,
+      "title": "idea",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "edit": {
+      "type": "edit",
+      "color": "9, 152, 241",
+      "icon": {
+        "name": "edit",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "edit",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "notice": {
+      "type": "notice",
+      "color": "255, 0, 0",
+      "icon": {
+        "name": "bullhorn",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "notice",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "task": {
+      "type": "task",
+      "color": "117, 89, 217",
+      "icon": {
+        "name": "tasks",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "task",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "math": {
+      "type": "math",
+      "color": "14, 123, 160",
+      "icon": {
+        "name": "infinity",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "math",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": true,
+  "version": "11.0.0",
+  "autoCollapse": true,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": false,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": true
+  },
+  "icons": [
+    "octicons",
+    "rpg"
+  ],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": false,
+  "snippetPath": "custom-admonitions.8ba8b2"
+}

@@ -1,12 +1,27 @@
 .DS_Store
 */.DS_Store
-/.trash
+
+# generated cache
+.obsidian/copilot-index*.json
+
+# binary files
 *.pdf
-*.docx
-# /attachments
-*.pptx
 *.doc
-# /diary
-# /.obsidian
-/.obsidian/workspace.json
-/.obsidian/plugins/
+*.docx
+*.ppt
+*.pptx
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.zip
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.dylib
+*.so
+*.node
+*.exe
+*.bin

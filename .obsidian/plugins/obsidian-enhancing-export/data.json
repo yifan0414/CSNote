@@ -1,0 +1,67 @@
+{
+  "items": [
+    {
+      "name": "Markdown"
+    },
+    {
+      "name": "Markdown (Hugo)"
+    },
+    {
+      "name": "Html",
+      "customArguments": "--mathjax"
+    },
+    {
+      "name": "TextBundle"
+    },
+    {
+      "name": "Typst"
+    },
+    {
+      "name": "PDF",
+      "customArguments": "--pdf-engine=xelatex -V CJKmainfont=\"PingFang SC\"  -V mainfont=\"Times New Roman\"  -V monofont=\"Menlo\" -V fontsize=12pt  -V geometry:margin=1in   -V documentclass=ctexart"
+    },
+    {
+      "name": "Word (.docx)"
+    },
+    {
+      "name": "OpenOffice"
+    },
+    {
+      "name": "RTF"
+    },
+    {
+      "name": "Epub",
+      "customArguments": "--mathml"
+    },
+    {
+      "name": "Latex"
+    },
+    {
+      "name": "Media Wiki"
+    },
+    {
+      "name": "reStructuredText"
+    },
+    {
+      "name": "Textile"
+    },
+    {
+      "name": "OPML"
+    },
+    {
+      "name": "Bibliography"
+    }
+  ],
+  "defaultExportDirectoryMode": "Custom",
+  "openExportedFile": true,
+  "env": {},
+  "showExportProgressBar": true,
+  "lastEditName": "Html",
+  "lastExportDirectory": {
+    "darwin": "/Users/yifansu/Downloads"
+  },
+  "lastExportType": "Epub",
+  "customDefaultExportDirectory": {
+    "darwin": "/Users/yifansu/Downloads"
+  }
+}

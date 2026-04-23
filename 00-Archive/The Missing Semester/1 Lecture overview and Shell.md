@@ -213,7 +213,7 @@ $ echo 3 | sudo tee brightness
 $ echo 1 | sudo tee /sys/class/leds/input6::scrolllock/brightness
 ```
 
-# 接下来…..
+# 接下来...
 
 学到这里，您掌握的 shell 知识已经可以完成一些基础的任务了。您应该已经可以查找感兴趣的文件并使用大多数程序的基本功能了。 在下一场讲座中，我们会探讨如何利用 shell 及其他工具执行并自动化更复杂的任务。
 

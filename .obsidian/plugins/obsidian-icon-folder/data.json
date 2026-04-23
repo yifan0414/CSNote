@@ -1,0 +1,60 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "TiCapture",
+      "OcCopilot16",
+      "TiTemplate",
+      "LiClipboardPen",
+      "TiTypography"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "06-Algorithm": "TiMathMaxMin",
+  "01-Project": "OcProject16",
+  "03-Tool": "FiTool",
+  "04-CPP": "TiBrandCpp",
+  "05-Work": "OcWorkflow16",
+  "07-AI": {
+    "iconName": "LiBrain",
+    "iconColor": "#c73333"
+  },
+  "07-AI/01-数学": "TiMath",
+  "READING": "CoBook",
+  "00-Archive": "LiArchive",
+  "07-MultiModal": "⛰",
+  "07-AI/00-课程": "LiSchool",
+  "07-AI/02-代码": "TiCode",
+  "Diary": "✍",
+  "06-Algorithm/01题单": "LiList",
+  "Paper": "SiPaperspace",
+  "Excalidraw": "TiTypography",
+  "Clippings": "LiClipboardPen",
+  "Templates": "TiTemplate",
+  "copilot": "OcCopilot16",
+  "02-Capture": "TiCapture"
+}

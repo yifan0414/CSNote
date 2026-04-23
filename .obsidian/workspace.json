@@ -1,0 +1,368 @@
+{
+  "main": {
+    "id": "e99ba39ce7bc4a1e",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb33de58d4ca5e30",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6cd56bad9bb8c6d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat"
+            }
+          },
+          {
+            "id": "8ab399944711806a",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "02-Capture/灵感与工具/灵感与工具.base",
+                "viewName": "收件箱"
+              },
+              "icon": "lucide-table",
+              "title": "灵感与工具"
+            }
+          },
+          {
+            "id": "d7f68b16c262e3bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "05-Work/左耳朵耗子的话.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "左耳朵耗子的话"
+            }
+          },
+          {
+            "id": "a97db5a7a6bfde83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-Capture/灵感与工具/Codex 与 Obsidian.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Codex 与 Obsidian"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "aaba78d71c8ab2dd",
+    "type": "split",
+    "children": [
+      {
+        "id": "170ea8c890d0c619",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2b04f60eace3918",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "7d624795f5c482e6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "9760f4e7a478daae",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 252.5
+  },
+  "right": {
+    "id": "8815071129bdee48",
+    "type": "split",
+    "children": [
+      {
+        "id": "510f1a1bc9d53561",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63c787b8f9d7d366",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "07-AI/01-数学/均方误差解析解.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "均方误差解析解 的反向链接列表"
+            }
+          },
+          {
+            "id": "b0f9b3fb47db14d5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "07-AI/01-数学/均方误差解析解.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "均方误差解析解 的出链列表"
+            }
+          },
+          {
+            "id": "5f6b6b46437be253",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "52c748ed029c764d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "036d82e15607bd94",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "7325cf1110f80ae0",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "copilot/copilot-conversations/中文问候@20260424_014734.md"
+              },
+              "icon": "lucide-info",
+              "title": "中文问候@20260424_014734的笔记属性"
+            }
+          },
+          {
+            "id": "bfef37e2369cca96",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Paper/explicit-temporal-semantic-modeling-for-dense-video-captioning-via-context-aware-cross.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "explicit-temporal-semantic-modeling-for-dense-video-captioning-via-context-aware-cross 的大纲"
+            }
+          },
+          {
+            "id": "f13ad54c9e405404",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
+          },
+          {
+            "id": "4a35926727611688",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          }
+        ],
+        "currentTab": 8
+      }
+    ],
+    "direction": "horizontal",
+    "width": 504.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:新建数据库": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "publish:发布更改": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "templater-obsidian:Templater": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "media-extended:Open external media": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "fix-math:Current file": false,
+      "copilot:Open Copilot Chat": false,
+      "claudian:Open Claudian": false
+    }
+  },
+  "active": "d7f68b16c262e3bd",
+  "lastOpenFiles": [
+    "06-Algorithm.md",
+    "README.md",
+    "研究内容.md",
+    "未命名.md",
+    "模拟器是如何实现的.md",
+    "参考文献.md",
+    "本子.md",
+    "Templates/✅ callout-todo.md",
+    "copilot/copilot-conversations/局域网SSH慢排查@20260424_033944.md",
+    "Clippings/输入与输出.md",
+    "Clippings/深度学习把两篇论文的方法拼接在一起，效果实现了新的sota，可以发论文吗？.md",
+    "Clippings/对人工智能毫无了解，导师让看transformer和BERT的两篇论文。好几天了，基本没看懂，何解？ - 知乎.md",
+    "04-CPP/00基础/运算符重载.md",
+    "04-CPP/00基础/构造函数/移动构造函数.md",
+    "04-CPP/00基础/构造函数/复制构造函数.md",
+    "02-Capture/灵感与工具/Codex 与 Obsidian.md",
+    "06-Algorithm/02基础/高精度/大数类.md",
+    "06-Algorithm/02基础/高精度/大数相乘.md",
+    "06-Algorithm/未命名.base",
+    "06-Algorithm/03提高/数据结构/树状数组/树状数组.md",
+    "06-Algorithm/02基础/少儿编程/信息素养大赛/01 勇敢的骑士.md",
+    "06-Algorithm/00题库/怪盗基德的滑翔翼.md",
+    "02-Capture/灵感与工具/灵感与工具.base",
+    "06-Algorithm/01题单/难度分类/难度汇总.md",
+    "06-Algorithm/04算法分析/快速排序/分治排序其一：快速排序（一）.md",
+    "Templates/工具链接收集.md",
+    "Templates/灵感收集.md",
+    "02-Capture/灵感与工具",
+    "02-Capture",
+    "06-Algorithm/Contest/考试/6.md",
+    "03-Tool/gcc&gdb/Makefile示例.svg",
+    "copilot/copilot-conversations",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "ChatGPT-Data/Graphs/daily_activity.png",
+    "ChatGPT-Data/Graphs/conversation_lengths.png",
+    "ChatGPT-Data/Graphs/activity_heatmap.png",
+    "ChatGPT-Data/Markdown/2026/04-April/assets/file_000000007f1071f5baab5acb039c214b.png",
+    "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000fef0722fa8dc2cb842ff8008.png",
+    "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000e20071fd9f3a0284d602ab5b.png",
+    "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000d68071f8a2bb10294c5c00df.png",
+    "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000f1bc71fd9fdbc79494adcd45.png",
+    "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000ccf471f8a6a47120debb48af.png",
+    "ChatGPT-Data/Markdown/2026/04-April/assets",
+    "ChatGPT-Data/Markdown/2026/03-March",
+    "ChatGPT-Data/Markdown/2026/04-April",
+    "07-AI/神经网络/人工神经网络训练过程.canvas",
+    "07-MultiModal/未命名.canvas",
+    "08-Lee/未命名.canvas",
+    "01-Project/NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
+    "Paper/未命名.canvas",
+    "08-Lee/Untitled.canvas"
+  ]
+}

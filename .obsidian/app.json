@@ -1,7 +1,7 @@
 {
   "defaultViewMode": "preview",
   "vimMode": false,
-  "showIndentGuide": true,
+  "showIndentGuide": false,
   "focusNewTab": true,
   "pdfExportSettings": {
     "includeName": true,
@@ -22,5 +22,6 @@
   "spellcheck": false,
   "tabSize": 2,
   "autoConvertHtml": false,
-  "strictLineBreaks": false
+  "strictLineBreaks": false,
+  "readableLineLength": true
 }

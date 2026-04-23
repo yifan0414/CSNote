@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "35be8e7a53313df2",
+        "id": "f1439520c85b8d13",
         "type": "tabs",
         "children": [
           {
-            "id": "3b05ca8b6f34a9dd",
+            "id": "d68d0caeaf7dcac4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-Algorithm/02提高/排列和组合/枚举元组.md",
+                "file": "chatgpt-export_国自然基金综述撰写.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "枚举元组"
+              "title": "chatgpt-export_国自然基金综述撰写"
             }
           }
         ]
@@ -122,8 +122,8 @@
         "state": {
           "type": "calendar",
           "state": {},
-          "icon": "lucide-file",
-          "title": "插件不再活动"
+          "icon": "calendar-with-checkmark",
+          "title": "Calendar"
         }
       },
       {
@@ -179,6 +179,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -186,17 +188,30 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "publish:发布更改": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "darlal-switcher-plus:Open in Headings Mode": false,
       "darlal-switcher-plus:Open Symbols for the active editor": false,
       "templater-obsidian:Templater": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "3b05ca8b6f34a9dd",
+  "active": "d68d0caeaf7dcac4",
   "lastOpenFiles": [
+    "05-Work/左耳朵耗子的话.md",
+    "06-Algorithm/04算法分析/快速排序/分治排序其一：快速排序（一）.md",
+    "Paper/多模态汇报.md",
+    "01-Project/NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-1 最简单的操作系统.md",
+    "01-Project/NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3 intro.md",
+    "07-AI/01-数学/雅克比矩阵.md",
+    "03-Tool/Fantastic ideas.md",
+    "07-AI/机器学习发展.md",
+    "07-AI/计算资源与深度神经网络训练需求的比较.md",
+    "07-AI/01-数学/线性模型.md",
+    "07-AI/01-数学/矩阵求导/矩阵求导术.md",
+    "Diary/2025-07-26.md",
+    "07-AI/人工智能.md",
     "06-Algorithm/02提高/分形/分形之城/Drawing 2024-07-30 18.33.54.md",
     "06-Algorithm/02提高/分形/分形之城/分形之城.md",
     "06-Algorithm/00题库/2320 统计放置房子的方式数.md",
@@ -210,14 +225,6 @@
     "06-Algorithm/02提高/动态规划/三角形模型/NOIP2007 提高组 矩阵取数游戏.md",
     "06-Algorithm/题单/难度分类/难度汇总.md",
     "01-Project/NJUICS/tutorial/PA4 虚实交错的魔法 分时多任务/4-1 多道程序.md",
-    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
-    "07-AI/01-数学/交叉熵.md",
-    "07-AI/01-数学/二阶范数的梯度.md",
-    "07-AI/01-数学/矩阵求导.md",
-    "07-AI/01-数学/矩阵求导/矩阵求导术.md",
-    "07-AI/01-数学/矩阵求导/反向传播.md",
-    "README.md.tacitpart",
-    "Templates/Quick Query.md",
-    "未命名.md"
+    "README.md.tacitpart"
   ]
 }

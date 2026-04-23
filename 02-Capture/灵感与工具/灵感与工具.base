@@ -1,0 +1,78 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("02-Capture/灵感与工具")
+formulas:
+  open: if(note["网址"], link(note["网址"], "打开"))
+properties:
+  file.name:
+    displayName: 条目
+  类型:
+    displayName: 类型
+  状态:
+    displayName: 状态
+  来源:
+    displayName: 来源
+  网址:
+    displayName: 网址
+  发现时间:
+    displayName: 发现时间
+  tags:
+    displayName: 标签
+  formula.open:
+    displayName: 打开
+  file.mtime:
+    displayName: 更新
+views:
+  - type: table
+    name: 收件箱
+    filters:
+      or:
+        - '!note["状态"]'
+        - note["状态"] == "inbox"
+    order:
+      - file.name
+      - 类型
+      - 来源
+      - formula.open
+      - 网址
+      - tags
+      - file.mtime
+  - type: table
+    name: 工具
+    filters:
+      and:
+        - note["类型"] == "tool"
+        - '!note["状态"] || note["状态"] != "archive"'
+    order:
+      - file.name
+      - 状态
+      - 来源
+      - formula.open
+      - 网址
+      - tags
+      - file.mtime
+  - type: table
+    name: 灵感
+    filters:
+      and:
+        - note["类型"] == "idea"
+        - '!note["状态"] || note["状态"] != "archive"'
+    order:
+      - file.name
+      - 状态
+      - 来源
+      - 网址
+      - tags
+      - file.mtime
+  - type: table
+    name: 归档
+    filters: note["状态"] == "archive"
+    order:
+      - file.name
+      - 类型
+      - 来源
+      - formula.open
+      - 网址
+      - tags
+      - file.mtime

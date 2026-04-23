@@ -1,9 +1,10 @@
 body {
+  --ics-note-block-radius: var(--code-radius, var(--radius-m));
   /* Callouts */
   --callout-border-width: 0px;
   --callout-border-opacity: 0.25;
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-radius: var(--radius-s);
+  --callout-radius: var(--ics-note-block-radius);
   --callout-title-color: inherit;
   --callout-title-padding: 0;
   --callout-title-size: inherit;
@@ -16,8 +17,7 @@ body {
   --callout-border-width: 0 0 0 4px;
   --callout-border-opacity: 1;
   --callout-padding: 0 !important;
-  /* --callout-radius: var(--radius-s); */
-  --callout-radius: 4px;
+  --callout-radius: var(--ics-note-block-radius);
   --callout-title-color: inherit;
   --callout-title-padding: 8px 16px;
   --callout-title-size: inherit;
@@ -38,8 +38,7 @@ body {
   --callout-border-width: 0 0 0 4px;
   --callout-border-opacity: 1;
   --callout-padding: 0;
-  /* --callout-radius: var(--radius-s); */
-  --callout-radius: 4px;
+  --callout-radius: var(--ics-note-block-radius);
   --callout-title-color: inherit;
   --callout-title-padding: 8px 16px;
   --callout-title-size: inherit;
@@ -79,5 +78,6 @@ body {
 .callout {
   /* margin-top: var(--admonition-margin-top); */
   /* margin-bottom: var(--admonition-margin-bottom); */
+  overflow: hidden;
   box-shadow: 0 0.2rem 0.5rem var(--background-modifier-box-shadow);
 }

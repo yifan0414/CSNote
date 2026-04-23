@@ -1,0 +1,3 @@
+display_name: Read arXiv Paper
+short_description: Download arXiv TeX source and write a project-oriented summary.
+default_prompt: Read an arXiv paper URL from source and produce a markdown summary.

@@ -1,0 +1,14 @@
+{
+  "disabledLanguages": [
+    "typst"
+  ],
+  "customThemeFolder": "",
+  "customLanguageFolder": "",
+  "darkTheme": "github-dark-default",
+  "lightTheme": "github-light",
+  "preferThemeColors": false,
+  "inlineHighlighting": true,
+  "ecDefaultShowLineNumbers": true,
+  "ecDefaultWrap": true,
+  "ecDefaultFrame": "code"
+}

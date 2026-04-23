@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.inFolder("06-Algorithm")
+views:
+  - type: table
+    name: 表格
+    order:
+      - file.name
+      - tags
+  - type: table
+    name: 视图
+    order:
+      - file.name
+      - 难度

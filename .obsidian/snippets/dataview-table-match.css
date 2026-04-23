@@ -1,0 +1,70 @@
+/* 让 Dataview 表格尽量贴近当前普通 Markdown 表格的样式 */
+body {
+  --ics-note-block-radius: var(--code-radius, var(--radius-m));
+  --dataview-table-font: "Maple Mono NF CN", var(--font-monospace), monospace;
+  --dataview-table-font-size: 16px;
+}
+
+.markdown-rendered .table-view-table,
+.markdown-rendered .table-view-table * {
+  font-family: var(--dataview-table-font) !important;
+  font-size: var(--dataview-table-font-size) !important;
+}
+
+.markdown-rendered .table-view-table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  word-break: break-all;
+}
+
+.markdown-rendered .table-view-table > thead > tr {
+  background-color: transparent;
+}
+
+.markdown-rendered .table-view-table > thead > tr > th {
+  background-color: var(--table-header-background) !important;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 600;
+  border-top: var(--table-header-border-width, 1px) solid var(--table-header-border-color, var(--table-border-color));
+  border-right: var(--table-border-width, 1px) solid var(--table-border-color);
+  border-bottom: var(--table-header-border-width, 1px) solid var(--table-header-border-color, var(--table-border-color));
+  border-left: var(--table-border-width, 1px) solid var(--table-border-color);
+}
+
+.markdown-rendered .table-view-table > tbody > tr > td {
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 400;
+  border-top: 0;
+  border-right: var(--table-border-width, 1px) solid var(--table-border-color);
+  border-bottom: var(--table-border-width, 1px) solid var(--table-border-color);
+  border-left: var(--table-border-width, 1px) solid var(--table-border-color);
+}
+
+.markdown-rendered .table-view-table > tbody > tr:hover {
+  background-color: var(--table-row-background-hover);
+}
+
+.markdown-rendered .table-view-table :is(ul, ol) {
+  margin-block-start: 0.2em !important;
+  margin-block-end: 0.2em !important;
+}
+
+body.table-round:not(.table-style-minimal) .markdown-rendered .table-view-table > thead > tr > th:first-child {
+  border-start-start-radius: var(--ics-note-block-radius);
+}
+
+body.table-round:not(.table-style-minimal) .markdown-rendered .table-view-table > thead > tr > th:last-child {
+  border-start-end-radius: var(--ics-note-block-radius);
+}
+
+body.table-round:not(.table-style-minimal) .markdown-rendered .table-view-table > tbody > tr:last-child > td:first-child {
+  border-end-start-radius: var(--ics-note-block-radius);
+}
+
+body.table-round:not(.table-style-minimal) .markdown-rendered .table-view-table > tbody > tr:last-child > td:last-child {
+  border-end-end-radius: var(--ics-note-block-radius);
+}

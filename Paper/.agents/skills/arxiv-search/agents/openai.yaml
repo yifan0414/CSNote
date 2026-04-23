@@ -1,0 +1,4 @@
+interface:
+  display_name: "arXiv Search"
+  short_description: "Search arXiv and return titles plus abstracts."
+  default_prompt: "Search arXiv for relevant papers and summarize key results."

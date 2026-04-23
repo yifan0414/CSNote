@@ -1,0 +1,4 @@
+interface:
+  display_name: "Read arXiv Video VQA"
+  short_description: "Read arXiv TeX for video VQA summaries"
+  default_prompt: "Read an arXiv paper from TeX source and write a training-free video VQA summary with InternVL/LLaVA-NeXT recipes."

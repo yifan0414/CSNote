@@ -1,0 +1,26 @@
+{
+  "id": "conv-1776972087243-mvbax4c5l",
+  "providerId": "codex",
+  "title": "Explain who you are",
+  "titleGenerationStatus": "success",
+  "createdAt": 1776972087244,
+  "updatedAt": 1776973914730,
+  "lastResponseAt": 1776973100372,
+  "sessionId": "019dbbca-4629-71f0-83a1-3fe825474c9a",
+  "providerState": {
+    "threadId": "019dbbca-4629-71f0-83a1-3fe825474c9a",
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/04/24/rollout-2026-04-24T03-21-28-019dbbca-4629-71f0-83a1-3fe825474c9a.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions"
+  },
+  "currentNote": "06-Algorithm/01题单/题型分类/搜索.md",
+  "usage": {
+    "inputTokens": 45305,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 40704,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 45305,
+    "percentage": 18,
+    "model": "gpt-5.4"
+  }
+}

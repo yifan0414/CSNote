@@ -1,0 +1,51 @@
+# Task Board Logs
+
+## System Information
+
+- **Obsidian version**: 1.11.7
+- **Installer version**: 1.9.14
+- **Operating system**: Darwin Kernel Version 24.6.0: Mon Aug 11 21:16:30 PDT 2025; root:xnu-11417.140.69.701.11~1/RELEASE_ARM64_T8132 24.6.0
+- **Use [[Wikilinks]]**: true
+- **Base color scheme**: light
+- **Community theme**: Minimal v8.1.4
+- **Snippets enabled**: 4
+- **Plugins installed**: 29
+- **Plugins enabled**: 
+  - Admonition v10.3.2
+  - Calendar v1.5.10
+  - Copy Block Link v1.0.4
+  - Dataview v0.5.68
+  - Settings Search v1.3.10
+  - Style Settings v1.0.9
+  - Tasks v7.22.0
+  - PDF++ v0.40.31
+  - Tabs v1.1.8
+  - Easy Typing v5.5.15
+  - Iconize v2.14.7
+  - Image Toolkit v1.4.3
+  - Image auto upload v4.1.0
+  - File Explorer++ v1.3.1
+  - Media Extended v4.1.5
+  - Advanced Tables v0.22.1
+  - Shiki Highlighter v0.7.0
+  - Editing Toolbar v3.2.7
+  - Quick Switcher++ v6.0.0
+  - Templater v2.18.1
+  - Excalidraw v2.20.2
+  - QuickAdd v2.10.0
+  - Latex Suite v1.10.0
+  - Enhancing Export v1.11.1
+  - Task Board v1.9.1
+
+## Recent Bug Reports
+
+Timestamp : 2026-02-07T05:07:36
+ID : 131
+Message : 
+Context : TaskBoardViewContent.tsx/loading boards and tasks useEffect
+
+#### Bug Content
+```log
+No need to worry about this bug, if its appearing on the fresh install.
+Error: ENOENT: no such file or directory, open '/Users/su/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/.obsidian/plugins/task-board/tasks.json'
+```

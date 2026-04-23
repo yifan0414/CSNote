@@ -1,0 +1,7 @@
+{
+  "__VERSION__": 2,
+  "release.previous-version": "4.1.5",
+  "playback.default-volume": 80,
+  "playback.screenshot.format": "image/webp",
+  "note.template.screenshot-embed": "{{TITLE}}{{DURATION}}"
+}

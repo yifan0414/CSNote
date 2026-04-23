@@ -44,16 +44,12 @@ body.theme-light .markdown-preview-view code:not(pre code) {
 }
 
 /* 编辑模式和实时预览 */
-.cm-s-obsidian .HyperMD-codeblock {
+/* .cm-s-obsidian .HyperMD-codeblock {
   font-family: "JetBrains Mono", monospace !important;
-   font-size: 14px !important; /* 如果需要，也可以取消注释来调整大小 */
-}
+   font-size: 14px !important;
+} */
 
 /* 阅读模式 */
-.markdown-preview-view pre > code {
-  font-family: "JetBrains Mono", monospace !important;
-  font-size: 15px !important;
-}
 
 /* 行内代码 */
 body.theme-light .markdown-preview-view code:not(pre code) {
