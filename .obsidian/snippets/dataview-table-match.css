@@ -2,7 +2,7 @@
 body {
   --ics-note-block-radius: var(--code-radius, var(--radius-m));
   --dataview-table-font: "Maple Mono NF CN", var(--font-monospace), monospace;
-  --dataview-table-font-size: 16px;
+  --dataview-table-font-size: 14px;
 }
 
 .markdown-rendered .table-view-table,

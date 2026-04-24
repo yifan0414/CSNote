@@ -1,0 +1,683 @@
+/* @settings
+name: iCSNote 字号控制
+id: ics-note-font
+settings:
+  - id: title-font-base
+    title: 基准字号
+    type: heading
+    level: 1
+    collapsed: false
+  - id: ics-font-size-body
+    title: 正文字号
+    description: 所有组件字号都会基于这个值计算。
+    type: variable-number-slider
+    default: 16
+    min: 12
+    max: 24
+    step: 1
+    format: px
+  - id: title-font-headings
+    title: 标题字号倍率
+    type: heading
+    level: 1
+    collapsed: true
+  - id: ics-font-scale-h1
+    title: H1 字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 1.6
+    min: 1
+    max: 2.4
+    step: 0.05
+  - id: ics-font-scale-h2
+    title: H2 字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 1.5
+    min: 1
+    max: 2.2
+    step: 0.05
+  - id: ics-font-scale-h3
+    title: H3 字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 1.4
+    min: 1
+    max: 2
+    step: 0.05
+  - id: ics-font-scale-h4
+    title: H4 字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 1.3
+    min: 1
+    max: 1.8
+    step: 0.05
+  - id: ics-font-scale-h5
+    title: H5 字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 1.2
+    min: 1
+    max: 1.6
+    step: 0.05
+  - id: ics-font-scale-h6
+    title: H6 字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 1.1
+    min: 0.9
+    max: 1.5
+    step: 0.05
+  - id: ics-font-scale-inline-title
+    title: 文档标题字号倍率
+    description: 控制正文顶部 inline title 的字号。
+    type: variable-number-slider
+    default: 1.4
+    min: 1
+    max: 2.4
+    step: 0.05
+  - id: ics-font-scale-titlebar
+    title: 标签页和标题栏字号倍率
+    description: 控制顶部标签页、文件标题栏和面包屑字号。
+    type: variable-number-slider
+    default: 0.8125
+    min: 0.6
+    max: 1.2
+    step: 0.0125
+  - id: title-font-code-table
+    title: 代码和表格字号倍率
+    type: heading
+    level: 1
+    collapsed: true
+  - id: ics-font-scale-inline-code
+    title: 行内代码字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.9
+    min: 0.6
+    max: 1.2
+    step: 0.05
+  - id: ics-font-scale-code-block
+    title: 代码块字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.9
+    min: 0.6
+    max: 1.2
+    step: 0.05
+  - id: ics-font-scale-table
+    title: 普通表格字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.89
+    min: 0.6
+    max: 1.2
+    step: 0.01
+  - id: ics-font-scale-dataview-table
+    title: Dataview 表格字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.9
+    min: 0.6
+    max: 1.2
+    step: 0.01
+  - id: title-font-blocks
+    title: 块元素字号倍率
+    type: heading
+    level: 1
+    collapsed: true
+  - id: ics-font-scale-callout
+    title: Callout 正文字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 1
+    min: 0.7
+    max: 1.4
+    step: 0.05
+  - id: ics-font-scale-callout-title
+    title: Callout 标题字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 1
+    min: 0.7
+    max: 1.4
+    step: 0.05
+  - id: ics-font-scale-quote
+    title: 引用块字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 1
+    min: 0.7
+    max: 1.4
+    step: 0.05
+  - id: ics-font-scale-math
+    title: 数学公式字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 1.1
+    min: 0.8
+    max: 1.5
+    step: 0.05
+  - id: title-font-small-ui
+    title: 小字和界面字号倍率
+    type: heading
+    level: 1
+    collapsed: true
+  - id: ics-font-scale-tag
+    title: 标签字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.85
+    min: 0.6
+    max: 1.2
+    step: 0.05
+  - id: ics-font-scale-footnote
+    title: 脚注字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.85
+    min: 0.6
+    max: 1.2
+    step: 0.05
+  - id: ics-font-scale-property
+    title: 属性区字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.9
+    min: 0.6
+    max: 1.2
+    step: 0.05
+  - id: ics-font-scale-ui-smaller
+    title: 界面更小字号倍率
+    description: 控制 Maple/Obsidian 的更小界面文字。
+    type: variable-number-slider
+    default: 0.8125
+    min: 0.6
+    max: 1.2
+    step: 0.0125
+  - id: ics-font-scale-ui-small
+    title: 界面小字号倍率
+    description: 控制 Maple/Obsidian 的小号界面文字。
+    type: variable-number-slider
+    default: 0.875
+    min: 0.6
+    max: 1.2
+    step: 0.0125
+  - id: ics-font-scale-ui-medium
+    title: 界面中字号倍率
+    description: 控制 Maple/Obsidian 的中号界面文字。
+    type: variable-number-slider
+    default: 1
+    min: 0.7
+    max: 1.4
+    step: 0.05
+  - id: ics-font-scale-file-explorer
+    title: 文件管理器字号倍率
+    description: 控制左侧文件列表字号。
+    type: variable-number-slider
+    default: 0.8
+    min: 0.6
+    max: 1.2
+    step: 0.05
+  - id: title-font-plugins
+    title: 插件区域字号倍率
+    type: heading
+    level: 1
+    collapsed: true
+  - id: ics-font-scale-claudian
+    title: Claudian 正文字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.85
+    min: 0.6
+    max: 1.2
+    step: 0.05
+  - id: ics-font-scale-claudian-heading
+    title: Claudian 标题字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.95
+    min: 0.6
+    max: 1.4
+    step: 0.05
+  - id: ics-font-scale-copilot
+    title: Copilot 正文字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.85
+    min: 0.6
+    max: 1.2
+    step: 0.05
+  - id: ics-font-scale-copilot-heading
+    title: Copilot 标题字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.95
+    min: 0.6
+    max: 1.4
+    step: 0.05
+  - id: ics-font-scale-copilot-small
+    title: Copilot 小字号倍率
+    description: 控制来源、推理过程等辅助文字。
+    type: variable-number-slider
+    default: 0.78
+    min: 0.5
+    max: 1.1
+    step: 0.05
+  - id: ics-font-scale-copilot-code
+    title: Copilot 代码字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.85
+    min: 0.6
+    max: 1.2
+    step: 0.05
+*/
+
+/* Maple font scale hub
+   Base size: configure --ics-font-size-body below.
+   Edit the multipliers below; every size is derived from body text. */
+
+/* 代码保持紧凑 */
+.markdown-rendered pre,
+.markdown-rendered code,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+body {
+  /* Base */
+  --ics-font-size-body: 16px;
+
+  /* Multipliers */
+  --ics-font-scale-h1: 1.6;
+  --ics-font-scale-h2: 1.5;
+  --ics-font-scale-h3: 1.4;
+  --ics-font-scale-h4: 1.3;
+  --ics-font-scale-h5: 1.2;
+  --ics-font-scale-h6: 1.1;
+  --ics-font-scale-inline-code: 0.9;
+  --ics-font-scale-code-block: 0.9;
+  --ics-font-scale-table: 0.89;
+  --ics-font-scale-dataview-table: 0.9;
+  --ics-font-scale-callout: 1;
+  --ics-font-scale-callout-title: 1;
+  --ics-font-scale-quote: 1;
+  --ics-font-scale-math: 1.1;
+  --ics-font-scale-tag: 0.85;
+  --ics-font-scale-footnote: 0.85;
+  --ics-font-scale-property: 0.9;
+  --ics-font-scale-ui-smaller: 0.8125;
+  --ics-font-scale-ui-small: 0.875;
+  --ics-font-scale-ui-medium: 1;
+  --ics-font-scale-titlebar: 0.8125;
+  --ics-font-scale-inline-title: 1.4;
+  --ics-font-scale-file-explorer: 0.8;
+  --ics-font-scale-claudian: 0.85;
+  --ics-font-scale-claudian-heading: 0.95;
+  --ics-font-scale-copilot: var(--ics-font-scale-claudian);
+  --ics-font-scale-copilot-heading: var(--ics-font-scale-claudian-heading);
+  --ics-font-scale-copilot-small: 0.78;
+  --ics-font-scale-copilot-code: var(--ics-font-scale-copilot);
+
+  /* Computed sizes */
+  --ics-font-size-h1: calc(var(--ics-font-size-body) * var(--ics-font-scale-h1));
+  --ics-font-size-h2: calc(var(--ics-font-size-body) * var(--ics-font-scale-h2));
+  --ics-font-size-h3: calc(var(--ics-font-size-body) * var(--ics-font-scale-h3));
+  --ics-font-size-h4: calc(var(--ics-font-size-body) * var(--ics-font-scale-h4));
+  --ics-font-size-h5: calc(var(--ics-font-size-body) * var(--ics-font-scale-h5));
+  --ics-font-size-h6: calc(var(--ics-font-size-body) * var(--ics-font-scale-h6));
+  --ics-font-size-inline-code: calc(var(--ics-font-size-body) * var(--ics-font-scale-inline-code));
+  --ics-font-size-code-block: calc(var(--ics-font-size-body) * var(--ics-font-scale-code-block));
+  --ics-font-size-table: calc(var(--ics-font-size-body) * var(--ics-font-scale-table));
+  --ics-font-size-dataview-table: calc(var(--ics-font-size-body) * var(--ics-font-scale-dataview-table));
+  --ics-font-size-callout: calc(var(--ics-font-size-body) * var(--ics-font-scale-callout));
+  --ics-font-size-callout-title: calc(var(--ics-font-size-body) * var(--ics-font-scale-callout-title));
+  --ics-font-size-quote: calc(var(--ics-font-size-body) * var(--ics-font-scale-quote));
+  --ics-font-size-math: calc(var(--ics-font-size-body) * var(--ics-font-scale-math));
+  --ics-font-size-tag: calc(var(--ics-font-size-body) * var(--ics-font-scale-tag));
+  --ics-font-size-footnote: calc(var(--ics-font-size-body) * var(--ics-font-scale-footnote));
+  --ics-font-size-property: calc(var(--ics-font-size-body) * var(--ics-font-scale-property));
+  --ics-font-size-ui-smaller: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-smaller));
+  --ics-font-size-ui-small: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-small));
+  --ics-font-size-ui-medium: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-medium));
+  --ics-font-size-titlebar: calc(var(--ics-font-size-body) * var(--ics-font-scale-titlebar));
+  --ics-font-size-inline-title: calc(var(--ics-font-size-body) * var(--ics-font-scale-inline-title));
+  --ics-font-size-file-explorer: calc(var(--ics-font-size-body) * var(--ics-font-scale-file-explorer));
+  --ics-font-size-claudian: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian));
+  --ics-font-size-claudian-heading: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian-heading));
+  --ics-font-size-copilot: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot));
+  --ics-font-size-copilot-heading: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot-heading));
+  --ics-font-size-copilot-small: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot-small));
+  --ics-font-size-copilot-code: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot-code));
+
+  /* Maple / Obsidian variables */
+  --setting-h1-size: var(--ics-font-scale-h1);
+  --setting-h2-size: var(--ics-font-scale-h2);
+  --setting-h3-size: var(--ics-font-scale-h3);
+  --setting-h4-size: var(--ics-font-scale-h4);
+  --setting-h5-size: var(--ics-font-scale-h5);
+  --setting-h6-size: var(--ics-font-scale-h6);
+  --code-size: var(--ics-font-size-code-block);
+  --tag-size: var(--ics-font-size-tag);
+  --footnote-size: var(--ics-font-size-footnote);
+  --font-smaller: var(--ics-font-size-ui-smaller);
+  --font-small: var(--ics-font-size-ui-small);
+  --font-ui-smaller: var(--ics-font-size-ui-smaller);
+  --font-ui-small: var(--ics-font-size-ui-small);
+  --font-ui-medium: var(--ics-font-size-ui-medium);
+  --metadata-label-font-size: var(--ics-font-size-property);
+  --metadata-input-font-size: var(--ics-font-size-property);
+  --table-maple-font: "Maple Mono NF CN", var(--font-monospace), monospace;
+  --table-maple-font-size: var(--ics-font-size-table);
+  --dataview-table-font: var(--table-maple-font);
+  --dataview-table-font-size: var(--ics-font-size-dataview-table);
+}
+
+/* Body-like content */
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-header):not(.HyperMD-codeblock),
+.markdown-rendered p,
+.markdown-rendered li {
+  font-size: var(--ics-font-size-body);
+}
+
+/* Headings: Maple reads --setting-h*-size, these selectors make the intent explicit. */
+.markdown-rendered h1,
+.markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  font-size: var(--ics-font-size-h1) !important;
+}
+
+.markdown-rendered h2,
+.markdown-source-view.mod-cm6 .HyperMD-header-2 {
+  font-size: var(--ics-font-size-h2) !important;
+}
+
+.markdown-rendered h3,
+.markdown-source-view.mod-cm6 .HyperMD-header-3 {
+  font-size: var(--ics-font-size-h3) !important;
+}
+
+.markdown-rendered h4,
+.markdown-source-view.mod-cm6 .HyperMD-header-4 {
+  font-size: var(--ics-font-size-h4) !important;
+}
+
+.markdown-rendered h5,
+.markdown-source-view.mod-cm6 .HyperMD-header-5 {
+  font-size: var(--ics-font-size-h5) !important;
+}
+
+.markdown-rendered h6,
+.markdown-source-view.mod-cm6 .HyperMD-header-6 {
+  font-size: var(--ics-font-size-h6) !important;
+}
+
+/* Code */
+.markdown-rendered code:not(pre code),
+.markdown-preview-view code:not(pre code),
+.markdown-source-view.mod-cm6 .cm-inline-code {
+  font-size: var(--ics-font-size-inline-code) !important;
+}
+
+.markdown-rendered pre,
+.markdown-rendered pre code,
+.markdown-preview-view pre,
+.markdown-preview-view pre code,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock * {
+  font-size: var(--ics-font-size-code-block) !important;
+}
+
+/* Tables */
+.markdown-rendered table,
+.markdown-rendered table *,
+.markdown-source-view.mod-cm6 .HyperMD-table-row,
+.markdown-source-view.mod-cm6 .HyperMD-table-row *,
+.markdown-source-view.mod-cm6 .cm-table-widget,
+.markdown-source-view.mod-cm6 .cm-table-widget *,
+.markdown-source-view.mod-cm6 .cm-table-widget .table-editor,
+.markdown-source-view.mod-cm6 .cm-table-widget .table-editor * {
+  font-family: var(--table-maple-font) !important;
+  font-size: var(--ics-font-size-table) !important;
+}
+
+.markdown-rendered .table-view-table,
+.markdown-rendered .table-view-table * {
+  font-family: var(--dataview-table-font) !important;
+  font-size: var(--ics-font-size-dataview-table) !important;
+}
+
+/* Callouts and quotes */
+body.theme-light .callout,
+body.theme-dark .callout,
+.callout {
+  --callout-title-size: var(--ics-font-size-callout-title);
+  font-size: var(--ics-font-size-callout);
+}
+
+.callout-title-inner {
+  font-size: var(--ics-font-size-callout-title);
+}
+
+.markdown-rendered blockquote {
+  font-size: var(--ics-font-size-quote);
+}
+
+.markdown-rendered blockquote :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  font-size: var(--ics-font-size-quote) !important;
+}
+
+/* Math, tags, footnotes, and properties */
+.math {
+  font-size: var(--ics-font-size-math) !important;
+}
+
+.tag,
+.cm-hashtag,
+.cm-tag {
+  font-size: var(--ics-font-size-tag) !important;
+}
+
+.footnote,
+.footnote-link,
+.cm-footref,
+.cm-formatting-footref {
+  font-size: var(--ics-font-size-footnote) !important;
+}
+
+.metadata-container,
+.metadata-container * {
+  font-size: var(--ics-font-size-property);
+}
+
+/* Editing-mode HTML fragments should follow surrounding text. */
+.markdown-source-view.mod-cm6 .cm-line:has(.cm-hmd-html-begin) *,
+.markdown-source-view.mod-cm6 .cm-html-embed * {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+/* Workspace details */
+.workspace-leaf-content[data-type="file-explorer"] {
+  font-family: var(--font-text) !important;
+  --nav-item-size: var(--ics-font-size-file-explorer);
+}
+
+/* Title bars */
+.workspace-tab-header-inner-title,
+.view-header-title,
+.view-header-breadcrumb,
+.view-header-breadcrumb-separator {
+  font-size: var(--ics-font-size-titlebar) !important;
+}
+
+.inline-title {
+  font-size: var(--ics-font-size-inline-title) !important;
+}
+
+/* Claudian output */
+.claudian-container {
+  --claudian-font-size: var(--ics-font-size-claudian);
+  --claudian-heading-size: var(--ics-font-size-claudian-heading);
+  --claudian-code-size: var(--claudian-font-size);
+  --claudian-code-font: "Maple Mono NF CN", "Maple Mono", "maplemono", var(--font-monospace);
+  font-family: var(--font-text) !important;
+  font-size: var(--claudian-font-size) !important;
+  line-height: var(--line-height-normal, 1.8) !important;
+}
+
+.claudian-container h1,
+.claudian-container h2,
+.claudian-container h3,
+.claudian-container h4,
+.claudian-container h5,
+.claudian-container h6 {
+  font-size: var(--claudian-heading-size) !important;
+  line-height: var(--line-height-normal, 1.8) !important;
+  margin-top: 0.6em !important;
+  margin-bottom: 0.4em !important;
+}
+
+.claudian-container code,
+.claudian-container pre,
+.claudian-container kbd,
+.claudian-container samp {
+  font-family: var(--claudian-code-font) !important;
+  font-size: var(--claudian-code-size) !important;
+  line-height: calc(var(--line-height-normal, 1.8) - 0.2) !important;
+}
+
+.claudian-container pre code,
+.claudian-container code *,
+.claudian-container pre *,
+.claudian-container kbd *,
+.claudian-container samp * {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.claudian-container table,
+.claudian-container table :not(code, code *, pre, pre *, kbd, kbd *, samp, samp *) {
+  font-size: var(--claudian-font-size) !important;
+}
+
+/* Copilot output: mirror the compact Claudian scale. */
+:where(
+  .workspace-leaf-content[data-type="copilot-chat-view"],
+  .copilot-quick-ask-overlay,
+  .copilot-command-modal,
+  .copilot-notice-container
+) {
+  --copilot-font-size: var(--ics-font-size-copilot);
+  --copilot-heading-size: var(--ics-font-size-copilot-heading);
+  --copilot-small-size: var(--ics-font-size-copilot-small);
+  --copilot-code-size: var(--ics-font-size-copilot-code);
+  --copilot-code-font: "Maple Mono NF CN", "Maple Mono", "maplemono", var(--font-monospace);
+  font-family: var(--font-text) !important;
+  font-size: var(--copilot-font-size) !important;
+  line-height: var(--line-height-normal, 1.8) !important;
+}
+
+:where(
+  .workspace-leaf-content[data-type="copilot-chat-view"],
+  .copilot-quick-ask-overlay,
+  .copilot-command-modal,
+  .copilot-notice-container
+) :is(
+  .markdown-rendered,
+  p,
+  li,
+  textarea,
+  input,
+  button,
+  [contenteditable],
+  .tw-text-sm,
+  .tw-text-base,
+  [class~="!tw-text-sm"],
+  [class~="tw-text-sm"],
+  [class~="tw-text-base"]
+) {
+  font-size: var(--copilot-font-size) !important;
+  line-height: var(--line-height-normal, 1.8) !important;
+}
+
+:where(
+  .workspace-leaf-content[data-type="copilot-chat-view"],
+  .copilot-quick-ask-overlay,
+  .copilot-command-modal,
+  .copilot-notice-container
+) :is(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .tw-text-lg,
+  .tw-text-xl,
+  [class~="tw-text-lg"],
+  [class~="tw-text-xl"]
+) {
+  font-size: var(--copilot-heading-size) !important;
+  line-height: var(--line-height-normal, 1.8) !important;
+}
+
+:where(
+  .workspace-leaf-content[data-type="copilot-chat-view"],
+  .copilot-quick-ask-overlay,
+  .copilot-command-modal,
+  .copilot-notice-container
+) :is(
+  .tw-text-xs,
+  .tw-text-ui-smaller,
+  .tw-text-smallest,
+  [class~="tw-text-xs"],
+  [class~="tw-text-ui-smaller"],
+  [class~="tw-text-smallest"],
+  .copilot-sources,
+  .copilot-sources__summary,
+  .copilot-sources__list,
+  .copilot-sources__text,
+  .agent-reasoning-block,
+  .agent-reasoning-header,
+  .agent-reasoning-step
+) {
+  font-size: var(--copilot-small-size) !important;
+  line-height: calc(var(--line-height-normal, 1.8) - 0.2) !important;
+}
+
+:where(
+  .workspace-leaf-content[data-type="copilot-chat-view"],
+  .copilot-quick-ask-overlay,
+  .copilot-command-modal,
+  .copilot-notice-container
+) :is(code, pre, kbd, samp, .tw-font-mono, [class~="tw-font-mono"]) {
+  font-family: var(--copilot-code-font) !important;
+  font-size: var(--copilot-code-size) !important;
+  line-height: calc(var(--line-height-normal, 1.8) - 0.2) !important;
+}
+
+:where(
+  .workspace-leaf-content[data-type="copilot-chat-view"],
+  .copilot-quick-ask-overlay,
+  .copilot-command-modal,
+  .copilot-notice-container
+) :is(pre code, code *, pre *, kbd *, samp *) {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+:where(
+  .workspace-leaf-content[data-type="copilot-chat-view"],
+  .copilot-quick-ask-overlay,
+  .copilot-command-modal,
+  .copilot-notice-container
+) ::placeholder {
+  font-size: var(--copilot-font-size) !important;
+}

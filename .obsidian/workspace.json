@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "01-Project/CS50/Lecture 2 - CS50's Introduction to Artificial Intelligence with Python.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-Project/CS50/Lecture 2 - CS50's Introduction to Artificial Intelligence with Python.md",
+                "file": "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Lecture 2 - CS50's Introduction to Artificial Intelligence with Python"
+              "title": "0-1 Installing GNU Linux"
             }
           }
         ],
@@ -186,16 +186,6 @@
             }
           },
           {
-            "id": "036d82e15607bd94",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
             "id": "7325cf1110f80ae0",
             "type": "leaf",
             "state": {
@@ -213,13 +203,23 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-Project/CS50/Lecture 2 - CS50's Introduction to Artificial Intelligence with Python.md",
+                "file": "06-Algorithm/00题库/大盗阿福.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Lecture 2 - CS50's Introduction to Artificial Intelligence with Python 的大纲"
+              "title": "大盗阿福 的大纲"
+            }
+          },
+          {
+            "id": "aacac9bcc1405bb7",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -266,50 +266,52 @@
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "media-extended:Open external media": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "fix-math:Current file": false,
       "copilot:Open Copilot Chat": false,
       "claudian:Open Claudian": false
     }
   },
-  "active": "7e20d82ba7b1f0c6",
+  "active": "f13ad54c9e405404",
   "lastOpenFiles": [
-    "01-Project/CS50/Lecture 3 - CS50's Introduction to Artificial Intelligence with Python.md",
-    "01-Project/CS50/Lecture 2 - CS50's Introduction to Artificial Intelligence with Python.md",
-    "01-Project/CS61A/composingprograms/1.2 Elements of Programming.md",
-    "02-Capture/灵感与工具/Codex 与 Obsidian.md",
-    "01-Project/CS61A/composingprograms/1.3   Defining New Functions.md",
-    "01-Project/CS61A/composingprograms/1.4   Designing Functions.md",
-    "Paper/flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat.md",
-    "03-Tool/ssh/The question of ssh.md",
-    "01-Project/CS61A/composingprograms/1.1 Getting Started.md",
-    "READING/learn c the hard way/ex35.md",
-    "READING/learn linux the hard way/练习 27：安全 Shell.md",
-    "06-Algorithm/03提高/数据结构/树状数组/树状数组.md",
+    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-2 First Exploration with GNU Linux.md",
+    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-3 Installing Tools.md",
+    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-5 More Exploration.md",
+    "06-Algorithm/01题单/题型分类/搜索.md",
+    "06-Algorithm/01题单/题型分类/动态规划.md",
     "06-Algorithm/01题单/题单汇总.md",
-    "00-Archive/The Missing Semester/1 Lecture overview and Shell.md",
-    "03-Tool/Fantastic ideas.md",
+    "01-Project/NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-7 如何阅读手册.md",
+    "01-Project/NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-1 在开始愉快的PA之旅之前.md",
+    "06-Algorithm/03提高/数据结构/树状数组/树状数组.md",
+    "06-Algorithm/03提高/动态规划/三角形模型/NOIP2007 提高组 矩阵取数游戏.md",
+    "01-Project/NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-3 RTFSC.md",
+    "01-Project/CS50/Lecture 2 - CS50's Introduction to Artificial Intelligence with Python.md",
+    "01-Project/NJUICS/tutorial/PA1 开天辟地的篇章 最简单的计算机/1-2 开天辟地的篇章.md",
+    "07-MultiModal/未命名.md",
+    "font.md",
+    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-4 Configuring vim.md",
+    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0 intro.md",
+    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
+    "01-Project/NJUICS/theory/02 数据的机器级表示与运算/数据表示常见问题解答.md",
+    "01-Project/NJUICS/lecture/L1-2 C语言拾遗/02-C 语言拾遗 (2) 编程实践.md",
+    "01-Project/NJUICS/lecture/L1-2 C语言拾遗/01-C 语言拾遗 (1) 机制.md",
+    "01-Project/NJUICS/manual/i386 2.3 Registers.md",
+    "03-Tool/鼠须管/MAC上的自定义输入法Squirrel.md",
+    "03-Tool/command line/命令行的艺术.md",
+    "03-Tool/command line/Ascii Art.md",
+    "03-Tool/command line/0 The note of Shell Command Line.md",
+    "Paper/PruneVid Visual Token Pruning (ACL Finding 2025).pdf",
+    "Paper/knowledge/arxiv/papers/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.pdf",
+    "Paper/assets/pipeline_2602.13191.pdf",
+    "Paper/assets/pipeline_2601.07761.png",
+    "Paper/assets/pipeline_2511.10134.pdf",
+    "01-Project/computer network/programming assignment/Web_Proxy_programming_only.pdf",
+    "01-Project/computer network/programming assignment/Traceroute_programming_lab_only.pdf",
+    "01-Project/computer network/programming assignment/~$mple_socket_program_PA1.docx",
     "01-Project/CS61A/canvasNote/IntroToPython.canvas",
-    "05-Work/左耳朵耗子的话.md",
     "02-Capture/灵感与工具/灵感与工具.base",
-    "06-Algorithm.md",
-    "README.md",
-    "研究内容.md",
-    "未命名.md",
-    "模拟器是如何实现的.md",
-    "参考文献.md",
-    "本子.md",
-    "Templates/✅ callout-todo.md",
-    "copilot/copilot-conversations/局域网SSH慢排查@20260424_033944.md",
-    "Clippings/输入与输出.md",
     "06-Algorithm/未命名.base",
     "02-Capture/灵感与工具",
-    "02-Capture",
     "03-Tool/gcc&gdb/Makefile示例.svg",
-    "copilot/copilot-conversations",
-    "copilot/copilot-custom-prompts",
-    "copilot",
     "ChatGPT-Data/Graphs/daily_activity.png",
     "ChatGPT-Data/Graphs/conversation_lengths.png",
     "ChatGPT-Data/Graphs/activity_heatmap.png",
@@ -318,10 +320,6 @@
     "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000e20071fd9f3a0284d602ab5b.png",
     "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000d68071f8a2bb10294c5c00df.png",
     "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000f1bc71fd9fdbc79494adcd45.png",
-    "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000ccf471f8a6a47120debb48af.png",
-    "ChatGPT-Data/Markdown/2026/04-April/assets",
-    "ChatGPT-Data/Markdown/2026/03-March",
-    "ChatGPT-Data/Markdown/2026/04-April",
     "07-AI/神经网络/人工神经网络训练过程.canvas",
     "07-MultiModal/未命名.canvas",
     "08-Lee/未命名.canvas",

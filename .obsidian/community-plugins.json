@@ -1,18 +1,14 @@
 [
   "obsidian-paste-image-rename",
   "obsidian-admonition",
-  "calendar",
   "obsidian-copy-block-link",
   "dataview",
   "darlal-switcher-plus",
   "quickadd",
-  "settings-search",
   "obsidian-style-settings",
   "templater-obsidian",
   "obsidian-tasks-plugin",
   "pdf-plus",
-  "tabs",
-  "obsidian-enhancing-export",
   "easy-typing-obsidian",
   "obsidian-icon-folder",
   "obsidian-latex-suite",
@@ -20,9 +16,10 @@
   "obsidian-image-auto-upload-plugin",
   "file-explorer-plus",
   "obsidian-excalidraw-plugin",
-  "media-extended",
-  "table-editor-obsidian",
   "fix-math",
   "claudian",
-  "copilot"
+  "copilot",
+  "settings-search",
+  "calendar",
+  "editing-toolbar"
 ]

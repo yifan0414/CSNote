@@ -8,7 +8,6 @@ description: "This course explores the concepts and algorithms at the foundation
 tags:
   - "clippings"
 ---
-## Lecture 2
 ## Uncertainty
 
 Last lecture, we discussed how AI can represent and derive new knowledge. However, often, in reality, the AI has only partial knowledge of the world, leaving space for uncertainty. Still, we would like our AI to make the best possible decision in these situations. For example, when predicting weather, the AI has information about the weather today, but there is no way to predict with 100% accuracy the weather tomorrow. Still, we can do better than chance, and today’s lecture is about how we can create AI that makes optimal decisions given limited information and uncertainty.
