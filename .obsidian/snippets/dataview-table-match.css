@@ -6,7 +6,7 @@ body {
 }
 
 .markdown-rendered .table-view-table,
-.markdown-rendered .table-view-table * {
+.markdown-rendered .table-view-table :not(:is(.math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) {
   font-family: var(--dataview-table-font) !important;
   font-size: var(--dataview-table-font-size) !important;
 }

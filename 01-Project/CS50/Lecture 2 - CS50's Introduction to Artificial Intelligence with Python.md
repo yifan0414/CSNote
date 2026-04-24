@@ -190,14 +190,14 @@ Loading, please wait
 
 Loading, please wait
 
-| R | M | *on time* | *delayed* |
-| --- | --- | --- | --- |
-| *none* | yes | 0.8 | 0.2 |
-| *none* | no | 0.9 | 0.1 |
-| *light* | yes | 0.6 | 0.4 |
-| *light* | no | 0.7 | 0.3 |
-| *heavy* | yes | 0.4 | 0.6 |
-| *heavy* | no | 0.5 | 0.5 |
+| R       | M   | *on time* | *delayed* |
+| ------- | --- | --------- | --------- |
+| *none*  | yes | 0.8       | 0.2       |
+| *none*  | no  | 0.9       | 0.1       |
+| *light* | yes | 0.6       | 0.4       |
+| *light* | no  | 0.7       | 0.3       |
+| *heavy* | yes | 0.4       | 0.6       |
+| *heavy* | no  | 0.5       | 0.5       |
 - Appointment is a random variable that represents whether we attend our appointment, taking the values {*attend, miss*}. Note that its only parent is Train. This point about Bayesian network is noteworthy: parents include only direct relations. It is true that maintenance affects whether the train is on time, and whether the train is on time affects whether we attend the appointment. However, in the end, what directly affects our chances of attending the appointment is whether the train came on time, and this is what is represented in the Bayesian network. For example, if the train came on time, it could be heavy rain and track maintenance, but that has no effect over whether we made it to our appointment.
 
 Loading, please wait

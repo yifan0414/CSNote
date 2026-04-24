@@ -6,23 +6,23 @@ body {
 
 /* 阅读模式 */
 .markdown-rendered table,
-.markdown-rendered table * {
+.markdown-rendered table :not(:is(.math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) {
   font-family: var(--table-maple-font) !important;
   font-size: var(--table-maple-font-size) !important;
 }
 
 /* 编辑模式：原始 Markdown 表格行 */
 .markdown-source-view.mod-cm6 .HyperMD-table-row,
-.markdown-source-view.mod-cm6 .HyperMD-table-row * {
+.markdown-source-view.mod-cm6 .HyperMD-table-row :not(:is(.cm-math, .cm-math *, .math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) {
   font-family: var(--table-maple-font) !important;
   font-size: var(--table-maple-font-size) !important;
 }
 
 /* 编辑模式：Table Editor 小部件 */
 .markdown-source-view.mod-cm6 .cm-table-widget,
-.markdown-source-view.mod-cm6 .cm-table-widget *,
+.markdown-source-view.mod-cm6 .cm-table-widget :not(:is(.cm-math, .cm-math *, .math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)),
 .markdown-source-view.mod-cm6 .cm-table-widget .table-editor,
-.markdown-source-view.mod-cm6 .cm-table-widget .table-editor * {
+.markdown-source-view.mod-cm6 .cm-table-widget .table-editor :not(:is(.cm-math, .cm-math *, .math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) {
   font-family: var(--table-maple-font) !important;
   font-size: var(--table-maple-font-size) !important;
 }
