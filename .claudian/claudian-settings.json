@@ -53,7 +53,9 @@
       "reasoningSummary": "detailed",
       "environmentVariables": "model_provider = \"OpenAI\"\nmodel = \"gpt-5.4\"\nreview_model = \"gpt-5.4\"\nmodel_reasoning_effort = \"xhigh\"\ndisable_response_storage = true\nnetwork_access = \"enabled\"\nwindows_wsl_setup_acknowledged = true\nmodel_context_window = 1000000\nmodel_auto_compact_token_limit = 900000\n\n[model_providers.OpenAI]\nname = \"OpenAI\"\nbase_url = \"https://api.duckcode.cn\"\nwire_api = \"responses\"\nrequires_openai_auth = true",
       "environmentHash": "",
-      "installationMethodsByHost": {},
+      "installationMethodsByHost": {
+        "yifanMac-mini": "native-windows"
+      },
       "wslDistroOverridesByHost": {}
     }
   },
@@ -64,7 +66,7 @@
   },
   "savedProviderEffort": {
     "claude": "high",
-    "codex": "medium"
+    "codex": "xhigh"
   },
   "savedProviderServiceTier": {
     "codex": "default"

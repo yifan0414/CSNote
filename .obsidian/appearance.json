@@ -1,7 +1,7 @@
 {
   "accentColor": "",
   "theme": "system",
-  "baseFontSize": 18,
+  "baseFontSize": 17,
   "cssTheme": "Maple",
   "translucency": false,
   "monospaceFontFamily": "Maple Mono NF CN,FiraCode Nerd Font,苹方-简",
@@ -18,9 +18,13 @@
     "sample",
     "callout1",
     "table-maple-mono",
-    "dataview-table-match"
+    "dataview-table-match",
+    "html-size",
+    "claudian",
+    "sidebar-size",
+    "callout"
   ],
-  "textFontFamily": "Open Sans,苹方-简,Maple Mono NF CN,Inter,Georgia,LXGW WenKai,Bookerly,Optima",
+  "textFontFamily": "Open Sans,苹方-简,Maple Mono NF CN,Inter,Georgia,Bookerly,Optima,LXGW WenKai",
   "interfaceFontFamily": "Open Sans,苹方-简,Inter,Bookerly",
-  "showRibbon": false
+  "showRibbon": true
 }

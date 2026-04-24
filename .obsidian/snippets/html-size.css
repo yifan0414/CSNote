@@ -1,0 +1,16 @@
+/* Make HTML fragments in editing mode match the code font treatment. */
+.markdown-source-view.mod-cm6 .cm-line:has(.cm-hmd-html-begin),
+.markdown-source-view.mod-cm6 .cm-html-embed {
+  font-family: "Maple Mono NF CN", "Maple Mono", var(--font-monospace) !important;
+  font-size: 0.9em !important;
+  font-weight: 500 !important;
+  line-height: var(--line-height-normal) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-line:has(.cm-hmd-html-begin) *,
+.markdown-source-view.mod-cm6 .cm-html-embed * {
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}

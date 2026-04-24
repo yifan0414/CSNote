@@ -342,5 +342,15 @@
   "maple-basic@@app-layout-card-border": false,
   "maple-basic@@app-layout-card-bg": "app-layout-card-gradient",
   "maple-editor@@heading-h1-caps": false,
-  "maple-editor@@setting-file-line-width": "clamp(700px, 78%, 980px)"
+  "maple-editor@@setting-file-line-width": "clamp(700px, 78%, 980px)",
+  "maple-editor@@image-zoom": false,
+  "maple-editor@@heading-h2-style": "heading-h2-full-line",
+  "maple-editor@@heading-h2-full-line-direction": "heading-h2-full-line-left",
+  "maple-workspace@@search-internal-enable": true,
+  "maple-workspace@@search-remove-button": false,
+  "maple-workspace@@modal-setting-header-search": true,
+  "maple-workspace@@enable-group-title": true,
+  "maple-workspace@@modal-setting-header": true,
+  "maple-editor@@prop-outline": true,
+  "maple-workspace@@explorer-title-wrap": false
 }

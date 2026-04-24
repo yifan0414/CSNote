@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat.md",
+                "file": "01-Project/CS50/Lecture 2 - CS50's Introduction to Artificial Intelligence with Python.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,29 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat"
+              "title": "Lecture 2 - CS50's Introduction to Artificial Intelligence with Python"
             }
           },
           {
-            "id": "8ab399944711806a",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "02-Capture/灵感与工具/灵感与工具.base",
-                "viewName": "收件箱"
-              },
-              "icon": "lucide-table",
-              "title": "灵感与工具"
-            }
-          },
-          {
-            "id": "d7f68b16c262e3bd",
+            "id": "7e20d82ba7b1f0c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05-Work/左耳朵耗子的话.md",
+                "file": "01-Project/CS50/Lecture 2 - CS50's Introduction to Artificial Intelligence with Python.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -65,35 +52,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "左耳朵耗子的话"
-            }
-          },
-          {
-            "id": "a97db5a7a6bfde83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-Capture/灵感与工具/Codex 与 Obsidian.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Codex 与 Obsidian"
+              "title": "Lecture 2 - CS50's Introduction to Artificial Intelligence with Python"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -150,7 +113,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 213
   },
   "right": {
     "id": "8815071129bdee48",
@@ -250,13 +213,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Paper/explicit-temporal-semantic-modeling-for-dense-video-captioning-via-context-aware-cross.md",
+                "file": "01-Project/CS50/Lecture 2 - CS50's Introduction to Artificial Intelligence with Python.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "explicit-temporal-semantic-modeling-for-dense-video-captioning-via-context-aware-cross 的大纲"
+              "title": "Lecture 2 - CS50's Introduction to Artificial Intelligence with Python 的大纲"
             }
           },
           {
@@ -280,11 +243,11 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 504.5
+    "width": 462
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -310,8 +273,26 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "d7f68b16c262e3bd",
+  "active": "7e20d82ba7b1f0c6",
   "lastOpenFiles": [
+    "01-Project/CS50/Lecture 3 - CS50's Introduction to Artificial Intelligence with Python.md",
+    "01-Project/CS50/Lecture 2 - CS50's Introduction to Artificial Intelligence with Python.md",
+    "01-Project/CS61A/composingprograms/1.2 Elements of Programming.md",
+    "02-Capture/灵感与工具/Codex 与 Obsidian.md",
+    "01-Project/CS61A/composingprograms/1.3   Defining New Functions.md",
+    "01-Project/CS61A/composingprograms/1.4   Designing Functions.md",
+    "Paper/flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat.md",
+    "03-Tool/ssh/The question of ssh.md",
+    "01-Project/CS61A/composingprograms/1.1 Getting Started.md",
+    "READING/learn c the hard way/ex35.md",
+    "READING/learn linux the hard way/练习 27：安全 Shell.md",
+    "06-Algorithm/03提高/数据结构/树状数组/树状数组.md",
+    "06-Algorithm/01题单/题单汇总.md",
+    "00-Archive/The Missing Semester/1 Lecture overview and Shell.md",
+    "03-Tool/Fantastic ideas.md",
+    "01-Project/CS61A/canvasNote/IntroToPython.canvas",
+    "05-Work/左耳朵耗子的话.md",
+    "02-Capture/灵感与工具/灵感与工具.base",
     "06-Algorithm.md",
     "README.md",
     "研究内容.md",
@@ -322,26 +303,9 @@
     "Templates/✅ callout-todo.md",
     "copilot/copilot-conversations/局域网SSH慢排查@20260424_033944.md",
     "Clippings/输入与输出.md",
-    "Clippings/深度学习把两篇论文的方法拼接在一起，效果实现了新的sota，可以发论文吗？.md",
-    "Clippings/对人工智能毫无了解，导师让看transformer和BERT的两篇论文。好几天了，基本没看懂，何解？ - 知乎.md",
-    "04-CPP/00基础/运算符重载.md",
-    "04-CPP/00基础/构造函数/移动构造函数.md",
-    "04-CPP/00基础/构造函数/复制构造函数.md",
-    "02-Capture/灵感与工具/Codex 与 Obsidian.md",
-    "06-Algorithm/02基础/高精度/大数类.md",
-    "06-Algorithm/02基础/高精度/大数相乘.md",
     "06-Algorithm/未命名.base",
-    "06-Algorithm/03提高/数据结构/树状数组/树状数组.md",
-    "06-Algorithm/02基础/少儿编程/信息素养大赛/01 勇敢的骑士.md",
-    "06-Algorithm/00题库/怪盗基德的滑翔翼.md",
-    "02-Capture/灵感与工具/灵感与工具.base",
-    "06-Algorithm/01题单/难度分类/难度汇总.md",
-    "06-Algorithm/04算法分析/快速排序/分治排序其一：快速排序（一）.md",
-    "Templates/工具链接收集.md",
-    "Templates/灵感收集.md",
     "02-Capture/灵感与工具",
     "02-Capture",
-    "06-Algorithm/Contest/考试/6.md",
     "03-Tool/gcc&gdb/Makefile示例.svg",
     "copilot/copilot-conversations",
     "copilot/copilot-custom-prompts",
