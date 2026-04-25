@@ -20,32 +20,27 @@
             }
           },
           {
-            "id": "c94be1373aa908f1",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "02-Capture/灵感与工具.base",
-                "viewName": "收件箱"
-              },
-              "icon": "lucide-table",
-              "title": "灵感与工具"
-            }
-          },
-          {
             "id": "1206008e4c9fb28a",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "01-Project/CMU-CSAPP/1 datalab/datalab.pdf",
-                "page": 5,
-                "left": -33,
-                "top": 796,
-                "zoom": 1.25
+                "file": "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-file-text",
-              "title": "datalab"
+              "icon": "lucide-file",
+              "title": "beyond-training-dynamic-token-merging-for-zero-shot-video-understanding"
             }
           }
         ],
@@ -219,13 +214,29 @@
               "icon": "message-square",
               "title": "Copilot"
             }
+          },
+          {
+            "id": "57a2af7a11c358ed",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Paper/flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat 的大纲"
+            }
           }
         ],
         "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 462
+    "width": 462,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -249,10 +260,41 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "c94be1373aa908f1",
+  "active": "1206008e4c9fb28a",
   "lastOpenFiles": [
+    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/assets/pipeline_2411.14401.png",
+    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding.md",
+    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/assets/paper_2411.14401.pdf",
+    "Paper/Papers.base",
+    "Paper/arxiv_2511.10134.md",
+    "Paper/本子.md",
+    "Paper/未命名.base",
+    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/assets/pipeline_2411.14401.pdf",
+    "Paper/flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat.md",
+    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/assets",
+    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding",
+    "Paper/toolformer-language-models-can-teach-themselves-to-use-tools.md",
+    "Paper/PruneVid Visual Token Pruning (ACL Finding 2025).pdf",
+    "Paper/papers/infinity-video-a-training-free-approach-to-long-video-understanding-via-continuo/infinity-video-a-training-free-approach-to-long-video-understanding-via-continuo.md",
+    "Paper/1月8日汇报.md",
+    "Paper/papers/infinity-video-a-training-free-approach-to-long-video-understanding-via-continuo/assets/pipeline_2501.19098v1.png",
+    "Paper/papers/infinity-video-a-training-free-approach-to-long-video-understanding-via-continuo/assets/pipeline_2501.19098v1.pdf",
+    "Paper/cope-videolm-codec-primitives-for-efficient-video-language-models.md",
+    "Paper/explicit-temporal-semantic-modeling-for-dense-video-captioning-via-context-aware-cross.md",
+    "Paper/summary_flashvid_tstm_video_compression.md",
+    "Paper/summary_video_evidence_grounding_coe.md",
+    "Paper/Video Evidence to Reasoning Efficient Video Understanding via Explicit Evidence Grounding.md",
+    "Paper/assets/pipeline_2302.04761.png",
+    "Paper/assets/experiment_table_2302.04761_8_ablation_analysis_data_quality.png",
+    "Paper/assets/experiment_table_2302.04761_7_ablation_analysis_decoding_k.png",
+    "Paper/assets/experiment_table_2302.04761_6_other_experimental_perplexity.png",
+    "Paper/assets/experiment_table_2302.04761_5_main_results_temporal.png",
+    "Paper/assets/experiment_table_2302.04761_4_main_results_mlqa.png",
+    "Paper/assets/experiment_table_2302.04761_3_main_results_qa.png",
+    "Paper/assets/experiment_table_2302.04761_2_main_results_math.png",
+    "Paper/assets/pipeline_2602.08024.pdf",
+    "01-Project/CMU-CSAPP/1 datalab/datalab.pdf",
     "copilot/copilot-conversations/局域网SSH慢排查@20260424_033944.md",
-    "02-Capture/灵感与工具.base",
     "font.md",
     "copilot/copilot-conversations/模拟器文档总结@20260424_014734.md",
     "07-MultiModal/MLLM.md",
@@ -266,38 +308,7 @@
     "01-Project/CMU-CSAPP/3 attacklab/The note of Attacklab.md",
     "01-Project/CMU-CSAPP/3 attacklab/ci-level3.md",
     "01-Project/CMU-CSAPP/3 attacklab/rop-level2.md",
-    "01-Project/CMU-CSAPP/3 attacklab/ci-level1.md",
-    "01-Project/CMU-CSAPP/2 bomblab/phase_6.md",
-    "01-Project/CMU-CSAPP/2 bomblab/phase_5.md",
-    "01-Project/CMU-CSAPP/2 bomblab/phase_4.md",
-    "01-Project/CMU-CSAPP/2 bomblab/phase_3.md",
-    "01-Project/CMU-CSAPP/2 bomblab/phase_2.md",
-    "01-Project/CMU-CSAPP/2 bomblab/phase_1.md",
-    "01-Project/CMU-CSAPP/2 bomblab/csapp2p.md",
-    "01-Project/CMU-CSAPP/1 datalab/datalab.pdf",
-    "Paper/cope-videolm-codec-primitives-for-efficient-video-language-models.md",
-    "Paper/arxiv_2511.10134.md",
-    "Paper/实时视频描述/LiveCC.md",
-    "Paper/实时视频描述/Dense-Captioning Events in Videos.md",
-    "Paper/PruneVid Visual Token Pruning (ACL Finding 2025).pdf",
-    "Paper/knowledge/arxiv/papers/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.pdf",
-    "Paper/assets/pipeline_2602.13191.pdf",
-    "Paper/assets/pipeline_2601.07761.png",
-    "Paper/assets/pipeline_2511.10134.pdf",
-    "01-Project/computer network/programming assignment/Web_Proxy_programming_only.pdf",
-    "01-Project/computer network/programming assignment/Traceroute_programming_lab_only.pdf",
-    "01-Project/computer network/programming assignment/~$mple_socket_program_PA1.docx",
     "01-Project/CS61A/canvasNote/IntroToPython.canvas",
-    "06-Algorithm/未命名.base",
-    "03-Tool/gcc&gdb/Makefile示例.svg",
-    "ChatGPT-Data/Graphs/daily_activity.png",
-    "ChatGPT-Data/Graphs/conversation_lengths.png",
-    "ChatGPT-Data/Graphs/activity_heatmap.png",
-    "ChatGPT-Data/Markdown/2026/04-April/assets/file_000000007f1071f5baab5acb039c214b.png",
-    "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000fef0722fa8dc2cb842ff8008.png",
-    "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000e20071fd9f3a0284d602ab5b.png",
-    "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000d68071f8a2bb10294c5c00df.png",
-    "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000f1bc71fd9fdbc79494adcd45.png",
     "07-AI/神经网络/人工神经网络训练过程.canvas",
     "08-Lee/未命名.canvas",
     "01-Project/NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",

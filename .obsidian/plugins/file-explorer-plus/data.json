@@ -24,6 +24,13 @@
         "type": "DIRECTORIES",
         "pattern": "Paper",
         "patternType": "STRICT"
+      },
+      {
+        "name": "",
+        "active": true,
+        "type": "FILES",
+        "pattern": "Paper/Papers.base",
+        "patternType": "STRICT"
       }
     ],
     "frontMatter": [

@@ -1,0 +1,183 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("Paper")
+    - file.hasTag("paper/arxiv")
+formulas:
+  paper: file.asLink(if(title, title, file.name))
+  cover_visual: if(cover, cover, if(pipeline_figure, link(file.folder + "/" + pipeline_figure), "#eef4ef"))
+  status_view: if(status == "read", html("<span class='paper-base-badge paper-status-read'>Read</span>"), if(status == "reading", html("<span class='paper-base-badge paper-status-reading'>Reading</span>"), if(status == "archived", html("<span class='paper-base-badge paper-status-archived'>Archived</span>"), html("<span class='paper-base-badge paper-status-unread'>Unread</span>"))))
+  priority_view: if(priority >= 4, html("<span class='paper-base-badge paper-priority-high'>P" + priority.toString() + "</span>"), if(priority >= 2, html("<span class='paper-base-badge paper-priority-mid'>P" + priority.toString() + "</span>"), if(priority, html("<span class='paper-base-badge paper-priority-low'>P" + priority.toString() + "</span>"), "")))
+  rating_view: if(rating >= 5, html("<span class='paper-base-rating'>★★★★★</span>"), if(rating >= 4, html("<span class='paper-base-rating'>★★★★☆</span>"), if(rating >= 3, html("<span class='paper-base-rating'>★★★☆☆</span>"), if(rating >= 2, html("<span class='paper-base-rating'>★★☆☆☆</span>"), if(rating >= 1, html("<span class='paper-base-rating'>★☆☆☆☆</span>"), "")))))
+  pdf_button: if(pdf_link, link(pdf_link.asFile(), icon("file-text")), "")
+  arxiv: if(arxiv_url, link(arxiv_url, icon("external-link")), "")
+  code_link: if(code, link(code, icon("github")), "")
+properties:
+  formula.paper:
+    displayName: Paper
+  authors:
+    displayName: Authors
+  conference:
+    displayName: Conference
+  year:
+    displayName: Year
+  formula.status_view:
+    displayName: Status
+  formula.priority_view:
+    displayName: Priority
+  formula.rating_view:
+    displayName: Rating
+  topics:
+    displayName: Topics
+  datasets:
+    displayName: Datasets
+  formula.pdf_button:
+    displayName: PDF
+  formula.arxiv:
+    displayName: arXiv
+  formula.code_link:
+    displayName: Code
+  updated:
+    displayName: Updated
+  file.mtime:
+    displayName: Modified
+  file.folder:
+    displayName: Folder
+views:
+  - type: table
+    name: All Papers
+    order:
+      - formula.paper
+      - conference
+      - formula.status_view
+      - formula.priority_view
+      - formula.rating_view
+      - topics
+      - formula.pdf_button
+      - formula.arxiv
+      - formula.code_link
+      - updated
+    sort:
+      - property: formula.status_view
+        direction: DESC
+      - property: year
+        direction: ASC
+      - property: topics
+        direction: ASC
+      - property: updated
+        direction: ASC
+    limit: 200
+    columnSize:
+      formula.paper: 208
+      note.conference: 113
+      note.year: 103
+      formula.rating_view: 90
+      note.topics: 177
+      formula.pdf_button: 59
+      formula.code_link: 77
+  - type: cards
+    name: Gallery
+    order:
+      - formula.paper
+      - formula.status_view
+      - conference
+      - year
+      - formula.rating_view
+      - topics
+      - formula.pdf_button
+      - formula.arxiv
+    sort:
+      - property: updated
+        direction: DESC
+    limit: 120
+    image: formula.cover_visual
+    imageFit: contain
+    imageAspectRatio: 1.35
+    cardSize: 220
+  - type: table
+    name: Reading Queue
+    filters:
+      and:
+        - status != "read"
+    groupBy:
+      property: status
+      direction: ASC
+    order:
+      - formula.paper
+      - formula.status_view
+      - formula.priority_view
+      - topics
+      - formula.pdf_button
+      - updated
+    sort:
+      - property: priority
+        direction: DESC
+      - property: updated
+        direction: DESC
+    limit: 100
+  - type: table
+    name: High Priority
+    filters:
+      or:
+        - priority >= 4
+        - rating >= 4
+    order:
+      - formula.paper
+      - formula.priority_view
+      - formula.rating_view
+      - formula.status_view
+      - topics
+      - formula.pdf_button
+      - formula.code_link
+    sort:
+      - property: priority
+        direction: DESC
+      - property: rating
+        direction: DESC
+    limit: 100
+  - type: table
+    name: By Topic
+    groupBy:
+      property: topics
+      direction: ASC
+    order:
+      - formula.paper
+      - topics
+      - conference
+      - year
+      - formula.status_view
+      - formula.rating_view
+      - formula.pdf_button
+    limit: 200
+  - type: table
+    name: By Year
+    groupBy:
+      property: year
+      direction: DESC
+    order:
+      - formula.paper
+      - year
+      - conference
+      - formula.status_view
+      - formula.rating_view
+      - topics
+      - formula.pdf_button
+    limit: 200
+  - type: table
+    name: Needs Metadata
+    filters:
+      or:
+        - "!conference"
+        - "!year"
+        - "!topics"
+        - "!pdf_link"
+        - "!updated"
+    order:
+      - formula.paper
+      - conference
+      - year
+      - topics
+      - formula.pdf_button
+      - updated
+      - file.folder
+    limit: 200
