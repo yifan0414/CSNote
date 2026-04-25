@@ -69,25 +69,25 @@ Train with L = a_cls*L_cls + a_loc*L_loc + a_count*L_count + a_cap*L_cap
 | YouCook2 | Dense Video Captioning | 标准划分（论文未给精确三段计数） | 同上 | 2,000 视频, 176h, 平均 7.7 captions/video；仅使用仍可访问视频（比原始少约 7%） |
 
 ### Main results table(s)
-| Dataset | Metric | Baseline | Ours | Δ |
-|---|---|---:|---:|---:|
-| ActivityNet Captions | BLEU4 | E²DVC: 2.43 | 2.44 | +0.01 |
-| ActivityNet Captions | METEOR | E²DVC: 8.57 | 8.68 | +0.11 |
-| ActivityNet Captions | CIDEr | E²DVC: 33.63 | 33.80 | +0.17 |
-| ActivityNet Captions | SODA_c | E²DVC: 6.13 | 6.39 | +0.26 |
-| YouCook2 | BLEU4 | E²DVC: 1.68 | 1.70 | +0.02 |
-| YouCook2 | METEOR | E²DVC: 6.11 | 6.21 | +0.10 |
-| YouCook2 | CIDEr | E²DVC: 34.26 | 34.83 | +0.57 |
-| YouCook2 | SODA_c | E²DVC: 5.39 | 5.57 | +0.18 |
+| Dataset              | Metric |     Baseline |  Ours |     Δ |
+| -------------------- | ------ | -----------: | ----: | ----: |
+| ActivityNet Captions | BLEU4  | E²DVC:  2.43 |  2.44 | +0.01 |
+| ActivityNet Captions | METEOR | E²DVC:  8.57 |  8.68 | +0.11 |
+| ActivityNet Captions | CIDEr  | E²DVC: 33.63 | 33.80 | +0.17 |
+| ActivityNet Captions | SODA_c |  E²DVC: 6.13 |  6.39 | +0.26 |
+| YouCook2             | BLEU4  |  E²DVC: 1.68 |  1.70 | +0.02 |
+| YouCook2             | METEOR |  E²DVC: 6.11 |  6.21 | +0.10 |
+| YouCook2             | CIDEr  | E²DVC: 34.26 | 34.83 | +0.57 |
+| YouCook2             | SODA_c |  E²DVC: 5.39 |  5.57 | +0.18 |
 
-| Dataset | Metric | Baseline | Ours | Δ |
-|---|---|---:|---:|---:|
-| ActivityNet Captions | F1 | E²DVC: 56.42 | 57.10 | +0.68 |
-| ActivityNet Captions | Recall | E²DVC: 55.14 | 55.89 | +0.75 |
+| Dataset              | Metric    |     Baseline |  Ours |     Δ |
+| -------------------- | --------- | -----------: | ----: | ----: |
+| ActivityNet Captions | F1        | E²DVC: 56.42 | 57.10 | +0.68 |
+| ActivityNet Captions | Recall    | E²DVC: 55.14 | 55.89 | +0.75 |
 | ActivityNet Captions | Precision | E²DVC: 57.77 | 58.05 | +0.28 |
-| YouCook2 | F1 | E²DVC: 28.87 | 29.34 | +0.47 |
-| YouCook2 | Recall | E²DVC: 25.01 | 25.54 | +0.53 |
-| YouCook2 | Precision | E²DVC: 34.13 | 34.63 | +0.50 |
+| YouCook2             | F1        | E²DVC: 28.87 | 29.34 | +0.47 |
+| YouCook2             | Recall    | E²DVC: 25.01 | 25.54 | +0.53 |
+| YouCook2             | Precision | E²DVC: 34.13 | 34.63 | +0.50 |
 
 ### Training / Compute
 | Item | Value |

@@ -352,5 +352,6 @@
   "maple-workspace@@enable-group-title": true,
   "maple-workspace@@modal-setting-header": true,
   "maple-editor@@prop-outline": true,
-  "maple-workspace@@explorer-title-wrap": false
+  "maple-workspace@@explorer-title-wrap": false,
+  "ics-note-font@@ics-font-scale-table": 0.9
 }

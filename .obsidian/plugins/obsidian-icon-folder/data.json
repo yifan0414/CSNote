@@ -37,7 +37,6 @@
   "06-Algorithm": "TiMathMaxMin",
   "01-Project": "OcProject16",
   "03-Tool": "FiTool",
-  "04-CPP": "TiBrandCpp",
   "05-Work": "OcWorkflow16",
   "07-AI": {
     "iconName": "LiBrain",
@@ -56,5 +55,6 @@
   "Clippings": "LiClipboardPen",
   "Templates": "TiTemplate",
   "copilot": "OcCopilot16",
-  "02-Capture": "TiCapture"
+  "02-Capture": "TiCapture",
+  "00-Archive/04-CPP": "TiBrandCpp"
 }

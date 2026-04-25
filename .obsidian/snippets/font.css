@@ -92,7 +92,7 @@ settings:
     collapsed: true
   - id: ics-font-scale-inline-code
     title: 行内代码字号倍率
-    description: 相对正文字号的倍数。
+    description: 相对所在文字字号的倍数；正文中等价于相对正文字号。
     type: variable-number-slider
     default: 0.9
     min: 0.6
@@ -153,7 +153,7 @@ settings:
     step: 0.05
   - id: ics-font-scale-math
     title: 数学公式字号倍率
-    description: 相对正文字号的倍数。
+    description: 相对所在文字字号的倍数；正文中等价于相对正文字号。
     type: variable-number-slider
     default: 1.1
     min: 0.8
@@ -299,7 +299,7 @@ body {
   --ics-font-scale-h6: 1.1;
   --ics-font-scale-inline-code: 0.9;
   --ics-font-scale-code-block: 0.9;
-  --ics-font-scale-table: 0.89;
+  --ics-font-scale-table: 0.9;
   --ics-font-scale-dataview-table: 0.9;
   --ics-font-scale-callout: 1;
   --ics-font-scale-callout-title: 1;
@@ -329,6 +329,7 @@ body {
   --ics-font-size-h5: calc(var(--ics-font-size-body) * var(--ics-font-scale-h5));
   --ics-font-size-h6: calc(var(--ics-font-size-body) * var(--ics-font-scale-h6));
   --ics-font-size-inline-code: calc(var(--ics-font-size-body) * var(--ics-font-scale-inline-code));
+  --ics-font-size-inline-code-context: calc(1em * var(--ics-font-scale-inline-code));
   --ics-font-size-code-block: calc(var(--ics-font-size-body) * var(--ics-font-scale-code-block));
   --ics-font-size-table: calc(var(--ics-font-size-body) * var(--ics-font-scale-table));
   --ics-font-size-dataview-table: calc(var(--ics-font-size-body) * var(--ics-font-scale-dataview-table));
@@ -336,6 +337,7 @@ body {
   --ics-font-size-callout-title: calc(var(--ics-font-size-body) * var(--ics-font-scale-callout-title));
   --ics-font-size-quote: calc(var(--ics-font-size-body) * var(--ics-font-scale-quote));
   --ics-font-size-math: calc(var(--ics-font-size-body) * var(--ics-font-scale-math));
+  --ics-font-size-math-context: calc(1em * var(--ics-font-scale-math));
   --ics-font-size-tag: calc(var(--ics-font-size-body) * var(--ics-font-scale-tag));
   --ics-font-size-footnote: calc(var(--ics-font-size-body) * var(--ics-font-scale-footnote));
   --ics-font-size-property: calc(var(--ics-font-size-body) * var(--ics-font-scale-property));
@@ -417,7 +419,7 @@ body {
 .markdown-rendered code:not(pre code),
 .markdown-preview-view code:not(pre code),
 .markdown-source-view.mod-cm6 .cm-inline-code {
-  font-size: var(--ics-font-size-inline-code) !important;
+  font-size: var(--ics-font-size-inline-code-context) !important;
 }
 
 .markdown-rendered pre,
@@ -439,13 +441,13 @@ body {
 .markdown-source-view.mod-cm6 .cm-table-widget .table-editor,
 .markdown-source-view.mod-cm6 .cm-table-widget .table-editor :not(:is(.cm-math, .cm-math *, .math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) {
   font-family: var(--table-maple-font) !important;
-  font-size: var(--ics-font-size-table) !important;
+  font-size: var(--table-maple-font-size) !important;
 }
 
 .markdown-rendered .table-view-table,
 .markdown-rendered .table-view-table :not(:is(.math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) {
   font-family: var(--dataview-table-font) !important;
-  font-size: var(--ics-font-size-dataview-table) !important;
+  font-size: var(--dataview-table-font-size) !important;
 }
 
 .markdown-rendered table .math,
@@ -453,7 +455,14 @@ body {
 .markdown-source-view.mod-cm6 .cm-table-widget .math,
 .markdown-source-view.mod-cm6 .HyperMD-table-row .cm-math {
   font-family: var(--font-text) !important;
-  font-size: var(--ics-font-size-math) !important;
+  font-size: var(--ics-font-size-math-context) !important;
+}
+
+.markdown-rendered table code:not(pre code),
+.markdown-rendered .table-view-table code:not(pre code),
+.markdown-source-view.mod-cm6 .cm-table-widget .cm-inline-code,
+.markdown-source-view.mod-cm6 .HyperMD-table-row .cm-inline-code {
+  font-size: var(--ics-font-size-inline-code-context) !important;
 }
 
 /* Callouts and quotes */
@@ -478,8 +487,9 @@ body.theme-dark .callout,
 }
 
 /* Math, tags, footnotes, and properties */
-.math {
-  font-size: var(--ics-font-size-math) !important;
+.math,
+.markdown-source-view.mod-cm6 .cm-math {
+  font-size: var(--ics-font-size-math-context) !important;
 }
 
 .tag,

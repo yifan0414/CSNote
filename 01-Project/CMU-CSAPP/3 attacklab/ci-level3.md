@@ -7,118 +7,37 @@ tags: [excalidraw]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+
+## Text Elements
 level3 和前面一样，注入代码攻击
 但是这里在栈上增加了检测
 意味着我们不能随便的注入代码 ^7OVQEPUg
 
-
-# Embedded files
+## Embedded Files
 77df23ddcc061479fde0628204747ba058a7ac52: [[Pasted Image 20230207145435_391.png]]
 
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://excalidraw.com",
-	"elements": [
-		{
-			"id": "LzkuiKM31zJdH-tqmN9ii",
-			"type": "image",
-			"x": -418.6904352891969,
-			"y": -188.703125,
-			"width": 666.4043080783938,
-			"height": 242.03434244791666,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"roundness": null,
-			"seed": 1925464382,
-			"version": 82,
-			"versionNonce": 640011262,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1675752874783,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "77df23ddcc061479fde0628204747ba058a7ac52",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"id": "7OVQEPUg",
-			"type": "text",
-			"x": 288,
-			"y": -165.5,
-			"width": 298,
-			"height": 84,
-			"angle": 0,
-			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"roundness": null,
-			"seed": 558195838,
-			"version": 227,
-			"versionNonce": 301367486,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1675752958901,
-			"link": null,
-			"locked": false,
-			"text": "level3 和前面一样，注入代码攻击\n但是这里在栈上增加了检测\n意味着我们不能随便的注入代码",
-			"rawText": "level3 和前面一样，注入代码攻击\n但是这里在栈上增加了检测\n意味着我们不能随便的注入代码",
-			"fontSize": 20,
-			"fontFamily": 2,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 77,
-			"containerId": null,
-			"originalText": "level3 和前面一样，注入代码攻击\n但是这里在栈上增加了检测\n意味着我们不能随便的注入代码"
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#000000",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "hachure",
-		"currentItemStrokeWidth": 1,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 2,
-		"currentItemFontSize": 20,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 487,
-		"scrollY": 371.5,
-		"zoom": {
-			"value": 1
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"colorPalette": {},
-		"currentStrokeOptions": null,
-		"previousGridSize": null
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+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
 ```
 %%

@@ -1,7 +1,7 @@
 /* 将表格字体统一为 Maple Mono NF CN，并按正文比例设置字号 */
 body {
   --table-maple-font: "Maple Mono NF CN", var(--font-monospace), monospace;
-  --table-maple-font-size: calc(var(--font-text-size) * 0.89);
+  --table-maple-font-size: var(--ics-font-size-table, calc(var(--font-text-size) * 0.89));
 }
 
 /* 阅读模式 */

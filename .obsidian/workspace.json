@@ -4,55 +4,48 @@
     "type": "split",
     "children": [
       {
-        "id": "eb33de58d4ca5e30",
+        "id": "1ea0fd0c974d9256",
         "type": "tabs",
         "children": [
           {
-            "id": "b6cd56bad9bb8c6d",
+            "id": "51abc6429035923d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "06-Algorithm/00题库/P1331 海战.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "01-Project/CMU-CSAPP/2 bomblab/csapp2p.md"
               },
-              "icon": "lucide-file",
-              "title": "P1331 海战"
+              "icon": "excalidraw-icon",
+              "title": "csapp2p"
             }
           },
           {
-            "id": "7e20d82ba7b1f0c6",
+            "id": "c94be1373aa908f1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "07-AI/01-数学/雅克比矩阵.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "02-Capture/灵感与工具.base",
+                "viewName": "收件箱"
               },
-              "icon": "lucide-file",
-              "title": "雅克比矩阵"
+              "icon": "lucide-table",
+              "title": "灵感与工具"
+            }
+          },
+          {
+            "id": "1206008e4c9fb28a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "01-Project/CMU-CSAPP/1 datalab/datalab.pdf",
+                "page": 5,
+                "left": -33,
+                "top": 796,
+                "zoom": 1.25
+              },
+              "icon": "lucide-file-text",
+              "title": "datalab"
             }
           }
         ],
@@ -113,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213
+    "width": 211
   },
   "right": {
     "id": "8815071129bdee48",
@@ -198,21 +191,6 @@
             }
           },
           {
-            "id": "bfef37e2369cca96",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "07-AI/01-数学/雅克比矩阵.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "雅克比矩阵 的大纲"
-            }
-          },
-          {
             "id": "aacac9bcc1405bb7",
             "type": "leaf",
             "state": {
@@ -243,7 +221,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -271,34 +249,36 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "7e20d82ba7b1f0c6",
+  "active": "c94be1373aa908f1",
   "lastOpenFiles": [
-    "07-AI/01-数学/行列式.md",
-    "07-AI/01-数学/线性模型.md",
-    "07-AI/01-数学/线性函数与多层感知机的数学前提.md",
-    "07-AI/01-数学/交叉熵.md",
-    "07-AI/01-数学/交叉熵函数梯度.md",
-    "07-AI/01-数学/均方误差解析解.md",
-    "07-AI/01-数学/均方误差损失函数.md",
-    "07-AI/01-数学/矩阵求导/矩阵求导术.md",
-    "07-AI/01-数学/矩阵求导/矩阵求导.md",
-    "07-AI/01-数学/矩阵求导/反向传播.md",
-    "07-AI/01-数学/贝叶斯公式.md",
-    "07-AI/01-数学/二阶范数的梯度.md",
-    "07-AI/机器学习/高斯朴素贝叶斯分类器.md",
-    "07-AI/02-代码/权重共享.md",
-    "07-AI/02-代码/多GPU训练过程.md",
-    "07-AI/02-代码/负对数似然.md",
-    "07-AI/01-数学/雅克比矩阵.md",
-    "06-Algorithm/01题单/题型分类/搜索.md",
-    "06-Algorithm/01题单/题单汇总.md",
-    "06-Algorithm/01题单/我已学算法总表.md",
-    "06-Algorithm/00题库/Shaass and Bookshelf.md",
-    "06-Algorithm/01题单/题型分类/动态规划.md",
-    "06-Algorithm/01题单/难度分类/难度汇总.md",
-    "01-Project/NJUICS/tutorial/PA0 世界诞生的前夜 开发环境配置/0-1 Installing GNU Linux.md",
-    "06-Algorithm/00题库/P1331 海战.md",
-    "01-Project/CS50/Lecture 2 - CS50's Introduction to Artificial Intelligence with Python.md",
+    "copilot/copilot-conversations/局域网SSH慢排查@20260424_033944.md",
+    "02-Capture/灵感与工具.base",
+    "font.md",
+    "copilot/copilot-conversations/模拟器文档总结@20260424_014734.md",
+    "07-MultiModal/MLLM.md",
+    "07-MultiModal/未命名.md",
+    "07-MultiModal/未命名.canvas",
+    "01-Project/CS61B/notes/L3 Testing Philosophy.md",
+    "01-Project/CS61B/notes/L5 Single linked list.md",
+    "01-Project/CS144/checkout 0.md",
+    "01-Project/00-LittleProject/数码管/数码管显示.md",
+    "01-Project/CMU-CSAPP/1 datalab/datalab-note.md",
+    "01-Project/CMU-CSAPP/3 attacklab/The note of Attacklab.md",
+    "01-Project/CMU-CSAPP/3 attacklab/ci-level3.md",
+    "01-Project/CMU-CSAPP/3 attacklab/rop-level2.md",
+    "01-Project/CMU-CSAPP/3 attacklab/ci-level1.md",
+    "01-Project/CMU-CSAPP/2 bomblab/phase_6.md",
+    "01-Project/CMU-CSAPP/2 bomblab/phase_5.md",
+    "01-Project/CMU-CSAPP/2 bomblab/phase_4.md",
+    "01-Project/CMU-CSAPP/2 bomblab/phase_3.md",
+    "01-Project/CMU-CSAPP/2 bomblab/phase_2.md",
+    "01-Project/CMU-CSAPP/2 bomblab/phase_1.md",
+    "01-Project/CMU-CSAPP/2 bomblab/csapp2p.md",
+    "01-Project/CMU-CSAPP/1 datalab/datalab.pdf",
+    "Paper/cope-videolm-codec-primitives-for-efficient-video-language-models.md",
+    "Paper/arxiv_2511.10134.md",
+    "Paper/实时视频描述/LiveCC.md",
+    "Paper/实时视频描述/Dense-Captioning Events in Videos.md",
     "Paper/PruneVid Visual Token Pruning (ACL Finding 2025).pdf",
     "Paper/knowledge/arxiv/papers/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.pdf",
     "Paper/assets/pipeline_2602.13191.pdf",
@@ -308,9 +288,7 @@
     "01-Project/computer network/programming assignment/Traceroute_programming_lab_only.pdf",
     "01-Project/computer network/programming assignment/~$mple_socket_program_PA1.docx",
     "01-Project/CS61A/canvasNote/IntroToPython.canvas",
-    "02-Capture/灵感与工具/灵感与工具.base",
     "06-Algorithm/未命名.base",
-    "02-Capture/灵感与工具",
     "03-Tool/gcc&gdb/Makefile示例.svg",
     "ChatGPT-Data/Graphs/daily_activity.png",
     "ChatGPT-Data/Graphs/conversation_lengths.png",
@@ -321,7 +299,6 @@
     "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000d68071f8a2bb10294c5c00df.png",
     "ChatGPT-Data/Markdown/2026/04-April/assets/file_00000000f1bc71fd9fdbc79494adcd45.png",
     "07-AI/神经网络/人工神经网络训练过程.canvas",
-    "07-MultiModal/未命名.canvas",
     "08-Lee/未命名.canvas",
     "01-Project/NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
     "Paper/未命名.canvas",

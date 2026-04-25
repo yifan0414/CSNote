@@ -1,7 +1,7 @@
 
 
 /* Maple theme: fix macOS hidden frame left safe area
-   only when left sidebar is collapsed */
+   only when left sidebar is collapsed 
 
 body.mod-macos.is-hidden-frameless:not(.is-fullscreen):not(.is-popout-window)
   .workspace
@@ -23,6 +23,7 @@ body.mod-macos.is-hidden-frameless:not(.is-fullscreen):not(.is-popout-window)
   -webkit-app-region: no-drag !important;
   pointer-events: auto !important;
 }
+*/
 
 /* fix pdf export */
 

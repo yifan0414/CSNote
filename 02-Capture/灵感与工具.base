@@ -38,6 +38,7 @@ views:
       - 网址
       - tags
       - file.mtime
+    sort: []
   - type: table
     name: 工具
     filters:

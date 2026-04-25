@@ -13,3 +13,6 @@ int bitXor(int x, int y) {
 ```
 
 - [ ] 数字逻辑电路真值表化简与迪摩根定律的使用 #todo 🔼 🛫 2022-12-27
+
+
+![[datalab.pdf#page=5&rect=77,346,553,559|datalab, p.5]]
