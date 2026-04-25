@@ -103,6 +103,146 @@
   white-space: nowrap;
 }
 
+.bases-view .paper-topic-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  vertical-align: middle;
+}
+
+.bases-view .paper-topic-list .paper-base-badge {
+  min-height: 1.55em;
+  padding: 0 0.5em;
+  font-size: 0.78em;
+  font-weight: 700;
+}
+
+.bases-view .paper-topic-list .paper-base-badge::before {
+  width: auto;
+  min-width: 1em;
+  opacity: 0.86;
+}
+
+.bases-view .paper-topic-llm {
+  background: color-mix(in srgb, var(--color-blue) 14%, transparent);
+  color: color-mix(in srgb, var(--color-blue) 74%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-blue) 28%, transparent);
+}
+
+.bases-view .paper-topic-llm::before {
+  content: "L";
+}
+
+.bases-view .paper-topic-mllm {
+  background: color-mix(in srgb, var(--color-cyan) 14%, transparent);
+  color: color-mix(in srgb, var(--color-cyan) 72%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-cyan) 28%, transparent);
+}
+
+.bases-view .paper-topic-mllm::before {
+  content: "M";
+}
+
+.bases-view .paper-topic-video-understanding {
+  background: color-mix(in srgb, var(--color-purple) 14%, transparent);
+  color: color-mix(in srgb, var(--color-purple) 74%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-purple) 28%, transparent);
+}
+
+.bases-view .paper-topic-video-understanding::before {
+  content: "V";
+}
+
+.bases-view .paper-topic-efficient-ai {
+  background: color-mix(in srgb, var(--color-green) 14%, transparent);
+  color: color-mix(in srgb, var(--color-green) 72%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-green) 28%, transparent);
+}
+
+.bases-view .paper-topic-efficient-ai::before {
+  content: "E";
+}
+
+.bases-view .paper-topic-generative-ai {
+  background: color-mix(in srgb, var(--color-pink) 13%, transparent);
+  color: color-mix(in srgb, var(--color-pink) 74%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-pink) 27%, transparent);
+}
+
+.bases-view .paper-topic-generative-ai::before {
+  content: "G";
+}
+
+.bases-view .paper-topic-representation-learning {
+  background: color-mix(in srgb, var(--color-orange) 13%, transparent);
+  color: color-mix(in srgb, var(--color-orange) 72%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-orange) 27%, transparent);
+}
+
+.bases-view .paper-topic-representation-learning::before {
+  content: "R";
+}
+
+.bases-view .paper-topic-reinforcement-learning {
+  background: color-mix(in srgb, var(--color-red) 12%, transparent);
+  color: color-mix(in srgb, var(--color-red) 72%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-red) 26%, transparent);
+}
+
+.bases-view .paper-topic-reinforcement-learning::before {
+  content: "RL";
+}
+
+.bases-view .paper-topic-dataset-and-benchmark {
+  background: color-mix(in srgb, var(--color-yellow) 17%, transparent);
+  color: color-mix(in srgb, var(--color-yellow) 58%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-yellow) 32%, transparent);
+}
+
+.bases-view .paper-topic-dataset-and-benchmark::before {
+  content: "D";
+}
+
+.bases-view .paper-topic-trustworthy-ai {
+  background: color-mix(in srgb, var(--color-green) 10%, var(--background-secondary));
+  color: color-mix(in srgb, var(--color-green) 52%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-green) 34%, transparent);
+}
+
+.bases-view .paper-topic-trustworthy-ai::before {
+  content: "T";
+}
+
+.bases-view .paper-topic-ai-for-science {
+  background: color-mix(in srgb, var(--color-cyan) 10%, var(--background-secondary));
+  color: color-mix(in srgb, var(--color-cyan) 58%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-cyan) 34%, transparent);
+}
+
+.bases-view .paper-topic-ai-for-science::before {
+  content: "S";
+}
+
+.bases-view .paper-topic-embodied-ai {
+  background: color-mix(in srgb, var(--color-purple) 10%, var(--background-secondary));
+  color: color-mix(in srgb, var(--color-purple) 58%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-purple) 34%, transparent);
+}
+
+.bases-view .paper-topic-embodied-ai::before {
+  content: "EA";
+}
+
+.bases-view .paper-topic-systems-for-ai {
+  background: color-mix(in srgb, var(--text-accent) 12%, var(--background-secondary));
+  color: color-mix(in srgb, var(--text-accent) 72%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--text-accent) 32%, transparent);
+}
+
+.bases-view .paper-topic-systems-for-ai::before {
+  content: "SYS";
+}
+
 .bases-view .value-list-container {
   gap: 4px;
 }
