@@ -2,6 +2,7 @@
   "copyLinkToElemenetAnchorTo100": false,
   "copyFrameLinkByName": false,
   "disableDoubleClickTextEditing": false,
+  "phoneFooterSafeAreaPadding": false,
   "folder": "Excalidraw",
   "cropFolder": "",
   "annotateFolder": "",
@@ -21391,7 +21392,7 @@
       }
     }
   },
-  "previousRelease": "2.22.0",
+  "previousRelease": "2.22.1",
   "showReleaseNotes": true,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,

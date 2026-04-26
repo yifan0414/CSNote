@@ -23,12 +23,12 @@
             }
           },
           {
-            "id": "72cefdc8362632bd",
+            "id": "ae93c3986888c79c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/Video Understanding 论文综述报告.md",
+                "file": "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -43,55 +43,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Video Understanding 论文综述报告"
-            }
-          },
-          {
-            "id": "b06808692e0e0ebe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/react-synergizing-reasoning-and-acting-in-language-models/react-synergizing-reasoning-and-acting-in-language-models.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "react-synergizing-reasoning-and-acting-in-language-models"
-            }
-          },
-          {
-            "id": "4474e6fda3ef7b57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question"
+              "title": "video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders"
             }
           }
         ],
@@ -127,7 +79,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#PT",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -262,13 +214,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Paper/react-synergizing-reasoning-and-acting-in-language-models/react-synergizing-reasoning-and-acting-in-language-models.md",
+                "file": "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "react-synergizing-reasoning-and-acting-in-language-models 的大纲"
+              "title": "video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders 的大纲"
             }
           }
         ],
@@ -276,7 +228,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 455
+    "width": 409
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -300,53 +252,53 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "72cefdc8362632bd",
+  "active": "ae93c3986888c79c",
   "lastOpenFiles": [
     "Paper/Papers.base",
+    "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for.md",
+    "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders.md",
+    "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/assets/pipeline_2604.05015.png",
+    "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/assets/paper_2604.05015.pdf",
+    "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/assets",
+    "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders",
+    "Paper/raw/deepseek-v4-towards-highly-efficient-million-token-context-intelligence/deepseek-v4-towards-highly-efficient-million-token-context-intelligence.md",
+    "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/assets/paper_arxiv_2603_11439v1.pdf",
+    "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/assets/pipeline_arxiv_2603_11439v1.png",
+    "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/assets",
+    "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for",
+    "Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/DYTO.md",
+    "Paper/raw/deepseek-v4-towards-highly-efficient-million-token-context-intelligence/assets/paper_deepseek-v4-f4cbe4fc.pdf",
+    "Paper/raw/deepseek-v4-towards-highly-efficient-million-token-context-intelligence/assets/pipeline_deepseek-v4-f4cbe4fc.png",
+    "Paper/raw/react-synergizing-reasoning-and-acting-in-language-models/ReAct.md",
+    "Paper/raw/deepseek-v4-towards-highly-efficient-million-token-context-intelligence/assets",
+    "Paper/raw/deepseek-v4-towards-highly-efficient-million-token-context-intelligence",
+    "Paper/raw/deep-video-discovery-agentic-search-with-tool-use-for-long-form-video-understand/deep-video-discovery-agentic-search-with-tool-use-for-long-form-video-understand.md",
+    "Paper/视频理解/DYTO-OCG 方法草稿与实验计划.md",
+    "Paper/raw/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/KTV.md",
+    "Paper/视频理解/DYTO vs D-CoDe.md",
     "Paper/Video Understanding 论文综述报告.md",
-    "Paper/react-synergizing-reasoning-and-acting-in-language-models/react-synergizing-reasoning-and-acting-in-language-models.md",
-    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question.md",
-    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.png",
-    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.pdf",
-    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629_cropbox_tmp.png",
-    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/pipeline_2604.21444.png",
-    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/pipeline_2604.21444.pdf",
-    "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/assets/pipeline_2602.03615.png",
-    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629_tmp.png",
-    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/paper_2210.03629.pdf",
-    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets",
-    "Paper/react-synergizing-reasoning-and-acting-in-language-models",
-    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/paper_2604.21444.pdf",
-    "Paper/文本视频/TOPA.md",
-    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets",
-    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question",
-    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding.md",
-    "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms.md",
-    "copilot/copilot-conversations/模型身份询问@20260426_155420.md",
+    "Paper/raw/deep-video-discovery-agentic-search-with-tool-use-for-long-form-video-understand/assets/pipeline_2505.18079.png",
     "Paper/实时视频描述/Dense-Captioning Events in Videos.md",
+    "Paper/实时视频描述/LiveCC.md",
+    "Paper/视频理解/视频理解.md",
+    "Paper/组会汇报/11 月 19 日汇报.md",
+    "Paper/组会汇报/1月8日汇报.md",
+    "Paper/组会汇报/1月23日.md",
+    "Paper/组会汇报/11月5日汇报.md",
+    "Diary/2026-04-26.md",
+    "05-Work/左耳朵耗子的话.md",
+    "Paper/raw/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question.md",
+    "Paper/文本视频/TOPA.md",
+    "Paper/raw/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.png",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629_cropbox_tmp.png",
+    "Paper/raw/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/pipeline_2604.21444.png",
+    "Paper/raw/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/assets/pipeline_2602.03615.png",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629_tmp.png",
+    "copilot/copilot-conversations/模型身份询问@20260426_155420.md",
     "06-Algorithm/02基础/树/树的遍历.md",
     "06-Algorithm/02基础/高精度/大数相乘.md",
     "06-Algorithm/02基础/高精度/大数类.md",
-    "06-Algorithm/01题单/我已学算法总表.md",
-    "06-Algorithm/04算法分析/快速排序/分治排序其一：快速排序（一）.md",
-    "06-Algorithm/Contest/abc375/D-ABA.md",
-    "06-Algorithm/Contest/abc374/D Separated Lunch.md",
-    "06-Algorithm/Contest/abc374/E Sensor Optimization Dilemma 2.md",
-    "06-Algorithm/Contest/考试/6.md",
-    "06-Algorithm/未命名.base",
-    "Clippings/2012，改变人类命运的180天-36氪.md",
     "attachments/afe65fac1019e35fb67c0622334293d1_MD5.png",
-    "attachments/816e09340652226edd1cfe423992622a_MD5.png",
-    "attachments/3d32f58746db5bcb2a8d25cd16659ab3_MD5.png",
-    "attachments/ebbd97f470760491b0569f755c7d24cf_MD5.png",
-    "attachments/153bc7a4666f4a3ab70f3586e4f08043_MD5.png",
-    "Clippings/对人工智能毫无了解，导师让看transformer和BERT的两篇论文。好几天了，基本没看懂，何解？ - 知乎.md",
-    "Clippings/深度学习把两篇论文的方法拼接在一起，效果实现了新的sota，可以发论文吗？.md",
-    "Clippings/数学公式提供.md",
-    "Clippings/Noteworthy AI Research Papers of 2024 (Part One).md",
-    "07-MultiModal/MLLM.md",
-    "06-Algorithm/01题单/题单汇总.md",
-    "06-Algorithm/01题单/题型分类/动态规划.md",
     "07-MultiModal/未命名.canvas",
     "01-Project/CS61A/canvasNote/IntroToPython.canvas",
     "07-AI/神经网络/人工神经网络训练过程.canvas",

@@ -188,6 +188,14 @@ settings:
     min: 0.6
     max: 1.2
     step: 0.05
+  - id: ics-font-scale-link-suggestion
+    title: 链接建议浮窗字号倍率
+    description: 输入 [[...]] 插入其他 md 文件时，候选浮窗相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.9
+    min: 0.6
+    max: 1.4
+    step: 0.05
   - id: ics-font-scale-ui-smaller
     title: 界面更小字号倍率
     description: 控制 Maple/Obsidian 的更小界面文字。
@@ -215,6 +223,14 @@ settings:
   - id: ics-font-scale-file-explorer
     title: 文件管理器字号倍率
     description: 控制左侧文件列表字号。
+    type: variable-number-slider
+    default: 0.8
+    min: 0.6
+    max: 1.2
+    step: 0.05
+  - id: ics-font-scale-outline
+    title: 大纲字号倍率
+    description: 控制右侧大纲字号；默认与文件管理器字号一致。
     type: variable-number-slider
     default: 0.8
     min: 0.6
@@ -316,12 +332,14 @@ body {
   --ics-font-scale-tag: 0.85;
   --ics-font-scale-footnote: 0.85;
   --ics-font-scale-property: 0.9;
+  --ics-font-scale-link-suggestion: 0.9;
   --ics-font-scale-ui-smaller: 0.8125;
   --ics-font-scale-ui-small: 0.875;
   --ics-font-scale-ui-medium: 1;
   --ics-font-scale-titlebar: 0.8125;
   --ics-font-scale-inline-title: 1.4;
   --ics-font-scale-file-explorer: 0.8;
+  --ics-font-scale-outline: var(--ics-font-scale-file-explorer);
   --ics-font-scale-claudian: 0.85;
   --ics-font-scale-claudian-heading: 0.95;
   --ics-font-scale-claudian-link: 0.9;
@@ -350,12 +368,14 @@ body {
   --ics-font-size-tag: calc(var(--ics-font-size-body) * var(--ics-font-scale-tag));
   --ics-font-size-footnote: calc(var(--ics-font-size-body) * var(--ics-font-scale-footnote));
   --ics-font-size-property: calc(var(--ics-font-size-body) * var(--ics-font-scale-property));
+  --ics-font-size-link-suggestion: calc(var(--ics-font-size-body) * var(--ics-font-scale-link-suggestion));
   --ics-font-size-ui-smaller: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-smaller));
   --ics-font-size-ui-small: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-small));
   --ics-font-size-ui-medium: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-medium));
   --ics-font-size-titlebar: calc(var(--ics-font-size-body) * var(--ics-font-scale-titlebar));
   --ics-font-size-inline-title: calc(var(--ics-font-size-body) * var(--ics-font-scale-inline-title));
   --ics-font-size-file-explorer: calc(var(--ics-font-size-body) * var(--ics-font-scale-file-explorer));
+  --ics-font-size-outline: calc(var(--ics-font-size-body) * var(--ics-font-scale-outline));
   --ics-font-size-claudian: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian));
   --ics-font-size-claudian-heading: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian-heading));
   --ics-font-size-claudian-link: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian-link));
@@ -468,11 +488,11 @@ body {
   font-size: var(--ics-font-size-math-context) !important;
 }
 
-.markdown-rendered table code:not(pre code),
-.markdown-rendered .table-view-table code:not(pre code),
+.markdown-rendered table :not(:is(.math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) code:not(pre code),
+.markdown-rendered .table-view-table :not(:is(.math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) code:not(pre code),
 .markdown-source-view.mod-cm6 .cm-table-widget .cm-inline-code,
 .markdown-source-view.mod-cm6 .HyperMD-table-row .cm-inline-code {
-  font-size: var(--ics-font-size-inline-code-context) !important;
+  font-size: var(--ics-font-size-inline-code) !important;
 }
 
 /* Callouts and quotes */
@@ -520,6 +540,14 @@ body.theme-dark .callout,
   font-size: var(--ics-font-size-property);
 }
 
+/* Editing-mode link suggestions, e.g. the popup after typing [[...]]. */
+.suggestion-container,
+.suggestion-container .suggestion-item,
+.suggestion-container .suggestion-title,
+.suggestion-container .suggestion-note {
+  font-size: var(--ics-font-size-link-suggestion) !important;
+}
+
 /* Editing-mode HTML fragments should follow surrounding text. */
 .markdown-source-view.mod-cm6 .cm-line:has(.cm-hmd-html-begin) *,
 .markdown-source-view.mod-cm6 .cm-html-embed * {
@@ -533,6 +561,15 @@ body.theme-dark .callout,
 .workspace-leaf-content[data-type="file-explorer"] {
   font-family: var(--font-text) !important;
   --nav-item-size: var(--ics-font-size-file-explorer);
+}
+
+.workspace-leaf-content[data-type="outline"] {
+  font-family: var(--font-text) !important;
+  --nav-item-size: var(--ics-font-size-outline);
+}
+
+.workspace-leaf-content[data-type="outline"] .tree-item-inner {
+  font-size: var(--ics-font-size-outline) !important;
 }
 
 /* Title bars */

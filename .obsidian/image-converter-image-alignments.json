@@ -1,28 +1,6 @@
 {
-  "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding.md": {
-    "a330e8bdfa3d1b57e8a220bf720b5f54": {
-      "position": "center",
-      "width": "",
-      "height": "",
-      "wrap": false
-    },
-    "8393a4032cc4302ed3c7c561d8eb91da": {
-      "position": "center",
-      "width": "",
-      "height": "",
-      "wrap": false
-    }
-  },
-  "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/assets/pipeline_2411.14401.png": {
-    "e78abd604c1f59afcf1cbcc6428138f6": {
-      "position": "center",
-      "width": "",
-      "height": "",
-      "wrap": false
-    }
-  },
   "00-Archive/NJUICS2016/intro.md": {
-    "161192f490236edc7176a481f15a87e1": {
+    "41262ecc916b52a6014ed1de36a1fcfe": {
       "position": "center",
       "width": "",
       "height": "",
@@ -83,40 +61,100 @@
       "wrap": false
     }
   },
-  "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms.md": {
-    "9fa2a02a5061d56117baa139599ef665": {
-      "position": "center",
-      "width": "",
-      "height": "",
-      "wrap": false
-    }
-  },
-  "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.png": {
-    "00c8fa955268ad0028f0e2a4a18e7cee": {
-      "position": "center",
-      "width": "",
-      "height": "",
-      "wrap": false
-    }
-  },
-  "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/assets/pipeline_2602.03615.png": {
-    "2584f83784cc7a9c8e55e1c0bd7bbd85": {
-      "position": "center",
-      "width": "",
-      "height": "",
-      "wrap": false
-    }
-  },
-  "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/pipeline_2604.21444.png": {
-    "193176106928bca9c64823f28100dc21": {
-      "position": "center",
-      "width": "",
-      "height": "",
-      "wrap": false
-    }
-  },
   "Paper/Papers.base": {
-    "210f72824043850e6a95f0c13d4bfc38": {
+    "10fd52de75e69579ed686e481fbcdf31": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "05-Work/左耳朵耗子的话.md": {
+    "de93010151847b0f67c9f420daaea03d": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "3f30148d17c6701cfcaed8ef7875435c": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "c02ac7a474207987b18fad84243799fd": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "10e6a4dc6181eef9b0229a057c8540c3": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question.md": {
+    "49a83b47d3485007d8adabaf93aa8621": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/Video Understanding 论文综述报告.md": {
+    "ab7861e7c2366f566c1920d3ab6b0e2c": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "fe248863b072cc0a29c9a719ef8579b8": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "2f18dfe8453daf23ecc802eaeaee4f37": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "9838bd5e21e6503672f145bac1ce49a9": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/deep-video-discovery-agentic-search-with-tool-use-for-long-form-video-understand/deep-video-discovery-agentic-search-with-tool-use-for-long-form-video-understand.md": {
+    "0a91113f8f60edf5f24f1bb23806e0d1": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/deepseek-v4-towards-highly-efficient-million-token-context-intelligence/assets/pipeline_deepseek-v4-f4cbe4fc.png": {
+    "5f739ce7227306d32406b6f45d5ed5a9": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/assets/pipeline_arxiv_2603_11439v1.png": {
+    "94087c5ae61e40ac8d30e50375e36e2a": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for.md": {
+    "fb7b49c19ebaa1307f6fa58d1c34fbe8": {
       "position": "center",
       "width": "",
       "height": "",

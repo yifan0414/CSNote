@@ -1,0 +1,21 @@
+/* Hide Claudian's top brand mark and title. */
+.claudian-container .claudian-header > .claudian-title-slot > .claudian-logo,
+.claudian-container .claudian-header > .claudian-title-slot > .claudian-title-text {
+  display: none !important;
+}
+
+.claudian-container .claudian-header > .claudian-title-slot {
+  gap: 0 !important;
+}
+
+/* In the default input-toolbar layout, the header only held the hidden branding. */
+.claudian-container:not(.claudian-container--header-mode) .claudian-header {
+  padding-bottom: 0 !important;
+}
+
+/* Make the composer placeholder lighter than typed text. */
+.claudian-container textarea.claudian-input::placeholder {
+  color: #8a8a8a !important;
+  -webkit-text-fill-color: #8a8a8a !important;
+  opacity: 1 !important;
+}

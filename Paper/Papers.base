@@ -2,7 +2,7 @@ filters:
   and:
     - file.ext == "md"
     - file.inFolder("Paper")
-    - file.hasTag("paper/arxiv")
+    - file.hasTag("paper/arxiv", "paper/pdf")
 formulas:
   paper: file.asLink(if(title, title, file.name))
   cover_visual: if(cover, cover, if(pipeline_figure, link(file.folder + "/" + pipeline_figure), "#eef4ef"))
@@ -59,6 +59,10 @@ views:
       - formula.code_link
       - updated
     sort:
+      - property: formula.paper
+        direction: DESC
+      - property: formula.topics_view
+        direction: ASC
       - property: year
         direction: ASC
       - property: topics
