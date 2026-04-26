@@ -40,11 +40,11 @@ if  ! make ; then
 fi
 ```
 
-![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/8/1.png)
+![[attachments/c0cf7f24d7f6effbc5a813e599bc5570_MD5.png]]
 
 ### 4. 基于 GitHub Pages 创建任意一个可以自动发布的页面。添加一个GitHub Action 到该仓库，对仓库中的所有 shell 文件执行 shellcheck([方法之一](https://github.com/marketplace/actions/shellcheck))；
 
-![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/8/2.png)![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/8/3.png)进入仓库的 [action](https://github.com/missing-semester-cn/The-Missing-Solutions/actions) 页面，修改`blank.yml`![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/8/4.png)
+![[attachments/dc0e08a4b7dce9104b53c402ec2c1f5c_MD5.png]]![[attachments/ba185bcfb62c754e39190d8a2cb8b0c1_MD5.png]]进入仓库的 [action](https://github.com/missing-semester-cn/The-Missing-Solutions/actions) 页面，修改`blank.yml`![[attachments/b74ca2ca5a2f59d7f28e74feda2abdc3_MD5.png]]
 
 ```yml
 # This is a basic workflow to help you get started with Actions
@@ -59,7 +59,7 @@ name: CI
         uses: ludeeus/action-shellcheck@1.1.0
 ```
 
-执行 action 后，可能会出现错误![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/8/5.png)根据提示修改错误![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/8/6.png)重新执行 action![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/8/7.png)
+执行 action 后，可能会出现错误![[attachments/9730e138396e992ce93fa6fa8957eb7c_MD5.png]]根据提示修改错误![[attachments/248c72b35cd60daa37748d93771e1c9f_MD5.png]]重新执行 action![[attachments/42cff3996ce847eccaa4343bd77731ad_MD5.png]]
 
 ### 5. 构建属于您的 GitHub action，对仓库中所有的.md文件执行 [proselint](http://proselint.com/) 或 [write-good](https://github.com/btford/write-good)，在您的仓库中开启这一功能，提交一个包含错误的文件看看该功能是否生效。
 

@@ -33,15 +33,15 @@
 tab: 现代航母
 USS Midway (CV-41); 1945 年首航，“沙漠风暴” 行动后退役
 - 舰船配置；资源管理/调度；容错……
-![Aircraft carrier|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/CV-41-USS-Midway-003.jpg)
+![[attachments/1ebbc21efead44e3843b81a3f9edc5d3_MD5.jpg|500]]
 tab: 初代航母
 > 航母不是一天造成的。
 
-![|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/gY53mv.jpg)
+![[attachments/8635e3dc60858724dbe8710d8181c42d_MD5.jpg|500]]
 tab: 小帆船
 > 采矿船继承了航海时代的设计。
 
-![FD7649|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/FD7649.jpg)
+![[attachments/858f68028869ca478bf6b0cf58bc23c8_MD5.jpg|500]]
 ~~~
 ## 1.3 复杂中隐藏的秩序 (cont'd)
 
@@ -75,11 +75,11 @@ Alan Turing's “machine” (1936)
         - (跳转) `goto label`
         - (终止) `halt()`
 
-![bklVLu|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/bklVLu.jpg)
+![[attachments/6ebed0a83580461c3be7083d540a29fa_MD5.jpg|500]]
 
 ## 2.2 ENIAC: 人类可用的 Turing Machine
 
-![pfhhs3|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/pfhhs3.jpg)
+![[attachments/b66dc12a0ccb70c4abae5a0aad855fda_MD5.jpg|500]]
 
 [ENIAC Simulator by Brian L. Stuart](https://www.cs.drexel.edu/~bls96/eniac/)
 
@@ -103,7 +103,7 @@ Alan Turing's “machine” (1936)
 
 >存储程序的通用性真正掀起了计算机走向全领域的革命。
 
-![HPg0On|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/HPg0On.jpg)
+![[attachments/a8a36f9ead11cb285ae195d008cadd95_MD5.jpg|500]]
 
 - 只要增加 in 和 out 指令，就可以和物理世界建立无限的联系
     - 持久存储 (磁带、磁盘……)
@@ -170,7 +170,7 @@ void interrupt_handler() {
 - 多处理器、big.LITTLE、异构处理器 (GPU, NPU, ...)
 - 单指令多数据 (MMX, SSE, AVX, ...), 虚拟化 (VT; EL0/1/2/3), 安全执行环境 (TrustZone; SGX), ...
 
-![dxah4n|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/dxah4n.jpg)
+![[attachments/c44fdd867617af127f2844fec42e5a59_MD5.jpg|500]]
 
 # 3 演化视角的 AbstractMachine
 

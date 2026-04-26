@@ -12,14 +12,13 @@
   "easy-typing-obsidian",
   "obsidian-icon-folder",
   "obsidian-latex-suite",
-  "obsidian-image-toolkit",
-  "obsidian-image-auto-upload-plugin",
   "file-explorer-plus",
   "obsidian-excalidraw-plugin",
-  "fix-math",
   "claudian",
   "copilot",
   "settings-search",
-  "calendar",
-  "editing-toolbar"
+  "editing-toolbar",
+  "image-converter",
+  "obsidian-local-images-plus",
+  "tabs"
 ]

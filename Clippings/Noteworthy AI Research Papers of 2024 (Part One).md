@@ -37,7 +37,7 @@ An MoE, or Mixture of Experts, is an ensemble model that combines several smalle
 
 In particular, in Mixtral 8x7B, is to replace each feed-forward module in a transformer architecture with 8 expert layers, as illustrated in the figure below.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb6a8621c-2193-4d5f-b140-e8b669ccbc75_1490x1134.png)
+![[attachments/56c51fb2d091a0fdb7c409ab0d597ed5_MD5.jpg]]
 
 *Annotated transformer architecture from Attention Is All You Need, https://arxiv.org/abs/1706.03762*
 
@@ -88,7 +88,7 @@ Full finetuning updates each large weight matrix *W* in an LLM by computing a la
 
 The figure below illustrates these formulas for full finetuning (left) and LoRA (right) side by side.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F014307aa-3e4d-47d1-a99f-37892d943c97_1600x702.png)
+![[attachments/9b9b42b374dfc3b7e0cc6e302982bcc1_MD5.jpg]]
 
 *An illustration of regular finetuning (left) and LoRA finetuning (right).*
 
@@ -96,7 +96,7 @@ The figure below illustrates these formulas for full finetuning (left) and LoRA 
 
 In [DoRA: Weight-Decomposed Low-Rank Adaptation](https://arxiv.org/abs/2402.09353) (February 2024), Liu and colleagues.extend LoRA by first decomposing a pretrained weight matrix into two parts: a magnitude vector m and a directional matrix *V*. This decomposition is rooted in the idea that any vector can be represented by its length (magnitude) and direction (orientation), and here we apply it to each column vector of a weight matrix. Once we have m and *V*, DoRA applies LoRA-style low-rank updates only to the directional matrix *V*, while allowing the magnitude vector m to be trained separately.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe39fff89-8c1b-4e06-80c9-f2ca375af019_1600x1165.png)
+![[attachments/fd4d059b3a820a815d399e94e544599f_MD5.jpg]]
 
 *Annotated illustration from the DoRA paper (https://arxiv.org/abs/2402.09353)*
 
@@ -128,7 +128,7 @@ What were the main tips for applying continued pretraining successfully?
 
 To be a bit more concrete regarding point 1, re-warming and re-decaying, this means we employ the exact same learning rate schedule that was used during the initial pretraining stage of an LLM as shown in the figure below.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feaf69f6f-effb-4f77-9ffb-4eb7bbdbdf8c_1600x554.png)
+![[attachments/a26874b629a843905d98285aefd94004_MD5.png]]
 
 *A schedule for continued pretraining. Figure based on Build a Large Language Model From Scratch, https://github.com/rasbt/LLMs-from-scratch/blob/main/appendix-D/01\_main-chapter-code/appendix-D.ipynb*
 
@@ -152,7 +152,7 @@ So, instead, my pick for April goes to a more practical paper: [Is DPO Superior 
 
 Before summarizing the paper itself, here's an overview of Proximal Policy Optimization (PPO) and Direct Preference Optimization (DPO), both popular methods in aligning LLMs via Reinforcement Learning with Human Feedback (RLHF). RLHF is the method of choice to align LLMs with human preferences, improving the quality but also the safety of their responses.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F96c470e8-0e63-4553-bfb9-4f82b1a821fd_1024x144.jpeg)
+![[attachments/d3d8337cdb1b322d4aa689938880e86f_MD5.jpg]]
 
 *The typical (simplified) LLM training lifecycle.*
 
@@ -171,7 +171,7 @@ Here, out-of-distribution data means the language model was previously trained o
 
 The main findings are summarized in the figure below.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5ade88a3-4ca5-43f4-92af-4bdfce84dc42_1600x918.png)
+![[attachments/f24ec0dc3c070f9428dd3c5026a49dbd_MD5.png]]
 
 *Annotated table from the Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study (https://arxiv.org/abs/2404.10719) paper.*
 
@@ -193,7 +193,7 @@ I found another LoRA paper this year particularly interesting (this is the last 
 
 The [LoRA Learns Less and Forgets Less](https://arxiv.org/abs/2405.09673) study shows LoRA learns noticeably less than full finetuning, especially in tasks like coding, where new knowledge needs to be acquired. The gap is smaller when only instruction finetuning is performed. This suggests that pretraining on new data (learning new knowledge) benefit more from full finetuning than converting a pretrained model into an instruction follower.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F68aeccb5-f78d-4fad-9ec5-2fc2f46b8340_1600x796.png)
+![[attachments/326bb6526c0dcd81ae00f05d1e5d4ac6_MD5.png]]
 
 *Full finetuning vs LoRA. The performance is measured on HumanEval, which is a dataset consisting of 164 coding challenges. Annotated figures from LoRA Learns Less and Forgets Less, [https://arxiv.org/abs/2405.09673](https://arxiv.org/abs/2405.09673).*
 
@@ -203,7 +203,7 @@ There are some more nuances, though. For math tasks, for example, the difference
 
 When examining how much previously acquired knowledge is lost, LoRA consistently forgets less. This is particularly clear when adapting to data far from the source domain (e.g., coding). With coding tasks, full finetuning leads to significant forgetting, while LoRA preserves more original capabilities. In math, where the model’s original knowledge was already closer to the new task, the difference is less pronounced.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F84c8af4d-e189-483c-a2f3-a7ecf3812584_1600x662.png)
+![[attachments/032f14c47a2e5009611787a48e7e239c_MD5.png]]
 
 *Full finetuning vs LoRA on the original source tasks after training on programming data. Annotated figures from LoRA Learns Less and Forgets Less, [https://arxiv.org/abs/2405.09673](https://arxiv.org/abs/2405.09673).*
 
@@ -230,7 +230,7 @@ Since several other large datasets for LLM pretraining are available, what's so 
 
 For example, ~360 billion tokens are only suited for small LLMs (for instance, 1.7 B, according to the [Chinchilla scaling laws](https://arxiv.org/abs/2203.15556) ). On the other hand, the 15 trillion tokens in the FineWeb dataset should be optimal for models up to 500 billion parameters according to the Chinchilla scaling laws. (Note that [RedPajama](https://github.com/togethercomputer/RedPajama-Data) contains 20 trillion tokens, but the researchers found that models trained on RedPajama result in poorer quality than FineWeb due to the different filtering rules applied.)
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F988590ff-fab6-4b18-af4d-2945bc529c34_1600x825.png)
+![[attachments/f4083efec03e1ba27e4997d1843de7b7_MD5.jpg]]
 
 *Illustration of the dataset sizes used to pretrain LLMs over the years. Note that this is simply a general reference and is not directly related to the FineWeb paper or the Chinchilla scaling laws paper.*
 
@@ -240,7 +240,7 @@ In short, the FineWeb dataset (English-only) makes it theoretically possible for
 
 In addition, the paper contains principled ablation studies and insights into how the filtering rules were developed and applied to arrive at the FineWeb dataset (starting from the [CommonCrawl](https://commoncrawl.org/) web corpus). In short, for each filtering rule they tried, they took a 360 billion token random sample from the original and the filtered data and then trained a small 1.71 billion parameter Llama-like model to see whether the filtering rule is beneficial or not based on the models' performances on standard benchmarks such as HellaSwag, ARC, MMLU, and others.
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fba7ca02d-dcb3-44a2-89fe-50578eb670b8_1600x1164.png)
+![[attachments/eb3191442edcea4dbcf6598214612dbb_MD5.jpg]]
 
 ## 6.3 The relevance of FineWeb today
 
@@ -254,7 +254,7 @@ The second (July to December) part is actually even more exciting (for me person
 
 *This magazine is a personal passion project. For those who wish to support me, please consider purchasing a copy of my [Build a Large Language Model (From Scratch) book](https://amzn.to/4fqvn0D). (I am confident that you'll get lots out of this book as it explains how LLMs work in a level of detail that is not found anywhere else.)*
 
-![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fea1152a0-18d9-4a8a-9398-c6b1ca67726a_1600x900.png)
+![[attachments/0fa182e185742cd52ec2cac002f1f3f8_MD5.jpg]]
 
 Build a Large Language Model (From Scratch) now [available on Amazon](https://amzn.to/4fqvn0D)
 

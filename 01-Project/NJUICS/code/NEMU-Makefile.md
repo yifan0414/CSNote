@@ -146,7 +146,7 @@ clean:
 这里使用的是 `make -nB | sed G` 为每一个行后添加空白行
 
 >[!note] 同样的，我们可以使用 `make run -nB` 查看运行参数
-> ![VCks6c](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/VCks6c.png) ^tdabqo
+> ![[attachments/15c91b38a8a09cd5e8544fea2394052a_MD5.png]] ^tdabqo
 
 
 ```shell
@@ -351,11 +351,11 @@ make -nB \
 
 可以得到以下结果
 
-![gNBfeL](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/gNBfeL.png)
+![[attachments/c8fbd7499144f604f99ceda0bcb9b648_MD5.png]]
 
 仍然看的不爽. 可以用 `set nowrap` 关掉换行
 
-![77ZMWv](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/77ZMWv.png)
+![[attachments/575527e6394f7354413925101cf530e6_MD5.png]]
 
 好像有点清晰了, 但那么多编译选项是干什么的呢?
 - `-O2` 是编译优化选项
@@ -364,26 +364,26 @@ make -nB \
 
 我们可以通过 `ctrl + v` 块选择删除掉这些信息让其变得更清晰
 
-![QwLW0R](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/QwLW0R.png)
+![[attachments/f36fe89901aee873c4070473ee6ac234_MD5.png]]
 
 - `-I` 的作用是控制 include path
 	- 比如 `#include <a.h>` 可以去 `-I.` 后面的目录中找
 
-![bpaCGT](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/bpaCGT.png)
+![[attachments/afa6150d5a2a74d21fe98a517b48438b_MD5.png]]
 
 下面就是很多 `-D` 编译选项, 这是**编译时宏定义命令**. Nemu代码中有很多, If 宏定义 .., 定义在这里.
 
 最后会变成这样
 
-![zeoPoU](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/zeoPoU.png)
+![[attachments/12df645434e3cfa8c24897b2e560007a_MD5.png]]
 
 好像最后一行还是不如人意
 
 >[!tip] vim 中可以只对选中的文本进行处理
->![V9RCj8](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/V9RCj8.png)
+>![[attachments/b29f9a087ae42daf1f8ad7ce0a78d62d_MD5.png]]
 
 
 我们通过正则表达式把最后一行的空格换成换行符号 `:'<,'>s/ /\r /g`
 
-![MbH1RC](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/MbH1RC.png)
+![[attachments/c2010785f8f49f252df7748897d7071b_MD5.png]]
 

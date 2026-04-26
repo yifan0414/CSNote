@@ -15,7 +15,7 @@
 ## The UNIX-Hater's Handbook (and Beyond)
 写于 1994 年
 
-![3V969r|inlR|150](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/3V969r.jpg)
+![[attachments/fbae91f66186923dd3956ec4728215af_MD5.jpg|150]]
 
 -   Simson Garfinkel 的主页有[电子版](https://web.mit.edu/~simsong/www/ugh.pdf) (里面有很多好玩的图片)
     -   说有道理也有道理
@@ -79,11 +79,11 @@ RTFM? STFW!
 
 ## A Visual Git Reference
 
-![R5Y9fa|600](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/R5Y9fa.png)
+![[attachments/acac32fce8142ff0f92d191a4b7a5321_MD5.png|600]]
 
 ## A Visual Git Reference (cont'd)
 
-![JmPdUz|600](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/JmPdUz.png)
+![[attachments/faca3899163dd018a5378f1a4f432349_MD5.png|600]]
 
 ## 一些 Comments
 
@@ -297,7 +297,7 @@ clean:
 [一个小诀窍](https://www.bilibili.com/video/BV1qa4y1j7xk/?p=3&share_source=copy_web&vd_source=587965785c97101d90acb761204e6795) 
 
 -   先观察 make 命令实际执行了什么 (trace) 
-	- ![Eky2kb](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Eky2kb.png)执行了一堆 + CC 是什么意思?
+	- ![[attachments/333e48ac4f7499ae4ab57a47252b99e3_MD5.png|600]]执行了一堆 + CC 是什么意思?
 -   <span style="background:#fff88f">RTFM/STFW: make 提供的两个有用的选项</span>
     -   `-n` 只打印命令不运行
     -   `-B` 强制 make 所有目标

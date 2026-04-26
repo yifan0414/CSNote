@@ -74,7 +74,7 @@ Please search the Internet for "Ubuntu 22.04 安装教程" and follow the tutori
 
 >[!must] 不要使用 Ubuntu 的 Software Updater
 > 在完成安装并初次登陆 Ubuntu 时, Software Updater会弹出提示框提醒用户更新软件(如下图所示), 请务必忽略该提示框, 不要点击"安装". 否则安装操作将会改变Ubuntu中包管理器的状态, 使其与讲义后续指示的操作产生冲突, 最终将导致系统崩溃而无法再次进入Ubuntu.
-> ![Zre3LZ](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Zre3LZ.jpg)
+> ![[attachments/2bd694b70d5cc4ad1967d9231fecd898_MD5.jpg]]
 > 建议关闭 Software Updater 功能使其不再提示, 具体操作请在互联网中搜索解决方案. 感谢 2020 级彭浩伦同学发现此问题.
 
 

@@ -173,7 +173,7 @@ done
     127.0.0.1 - - [15/May/2021 02:45:53] "GET / HTTP/1.1" 200 -
     ```
     
-	![ePDhox](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/ePDhox.jpg)
+	![[attachments/ef2f9fe5a34fa8b5b2f6b80b2e995a24_MD5.jpg]]
     
 5.  使用`sudo vim /etc/ssh/sshd_config` 编辑 SSH 服务器配置，通过修改`PasswordAuthentication`的值来禁用密码验证。通过修改`PermitRootLogin`的值来禁用 root 登录。然后使用`sudo service sshd restart`重启 ssh 服务器，然后重新尝试。
     

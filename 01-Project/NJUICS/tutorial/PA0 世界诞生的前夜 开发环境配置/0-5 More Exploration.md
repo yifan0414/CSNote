@@ -93,7 +93,7 @@ Maximize the terminal windows size, then use `tmux` to create multiple normal-
 >另外请大家务必阅读[提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)和[别像弱智一样提问](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)这两篇文章, 里面有不少例子供大家参考.
 
 The following picture shows a scene working with multiple terminals within single screen. Is it COOL?
-![J0QEhC](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/J0QEhC.jpg)
+![[attachments/e9e79f463cee0c68fbc5a2d5a491ce69_MD5.jpg]]
 
 >[!notice] 为什么要使用tmux?
 >这其实是一个"使用正确的工具做事情"的例子.

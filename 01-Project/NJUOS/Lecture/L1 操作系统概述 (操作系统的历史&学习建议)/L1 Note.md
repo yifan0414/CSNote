@@ -7,7 +7,7 @@
 > Sympy是一个用于符号数学的Python库。它允许您进行符号数学计算，例如求导、积分、解方程等。提供了一个交互式的Python shell，可以用于学习和直接进行数学计算。Sympy还与Latex和NumPy等库配合使用，可以轻松地将公式和计算结果转换为文本、图像和数组，使数学计算更加方便和可视化。
 
 
-![pU8mo8](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/pU8mo8.png)
+![[attachments/14a65f6c2694d4f7ad1e7313cc20b64f_MD5.png]]
 
 > [!quote] 如果我教数字逻辑电路，我会让你们一个星期学公理系统，一个学期写 verilog
 > 

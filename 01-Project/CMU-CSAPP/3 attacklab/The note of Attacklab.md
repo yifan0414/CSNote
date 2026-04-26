@@ -1,6 +1,6 @@
 > 注意看这个实验的名字
 
-![vLwlKc](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/vLwlKc.png)
+![[attachments/25ebbdfdf477ee66b67739307a367e55_MD5.png]]
 
 所以，这个实验的所有部分都是围绕 **Buffer Overflow** 进行的。
 

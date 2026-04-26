@@ -81,7 +81,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2411.14401.png]]
+![[assets/pipeline_2411.14401.png|716]]
 
 Caption: The overview of DyTo, a training-free model built upon image-based MLLM without any fine-tuning. Specifically, DyTo first divides the video into $K$ clusters using the `[CLS]` token. Then the dynamic bipartite merging module samples frames from each cluster and controls the final output length as $Z$, resulting in better balance between computational efficiency and semantic richness.
 

@@ -29,7 +29,7 @@ Type of model The different models are summed up in the table below:
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | **Goal**           | Directly estimate $P(y\|x)$                                                                                                                     | Estimate $P(x\|y)$ to then deduce $P(y\|x)$                                                                                             |
 | **What's learned** | Decision boundary                                                                                                                               | Probability distributions of the data                                                                                                   |
-| **Illustration**   | ![Discriminative model](https://stanford.edu/~shervine/teaching/cs-229/illustrations/discriminative-model.png?767b34c21d43a4fd8b59683578e132f9) | ![Generative model](https://stanford.edu/~shervine/teaching/cs-229/illustrations/generative-model.png?df0642cec6e99ac162cd4848d26f41c3) |
+| **Illustration**   | ![[attachments/06d90f83f14631a6ab7d3ec997715357_MD5.png]]| ![[attachments/38b93b0fee6271991d45ed4a715bfb7b_MD5.png]]|
 | **Examples**       | Regressions, SVMs                                                                                                                               | GDA, Naive Bayes                                                                                                                        |
 
   
@@ -45,7 +45,7 @@ Loss function A loss function is a function $L:(z,y)\in\mathbb{R}\times Y\longma
 | **Least squared error**                                                                                                                      | **Logistic loss**                                                                                                                 | **Hinge loss**                                                                                                              | **Cross-entropy**                                                                                                                 |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | $\displaystyle\frac{1}{2}(y-z)^2$                                                                                                            | $\displaystyle\log(1+\exp(-yz))$                                                                                                  | $\displaystyle\max(0,1-yz)$                                                                                                 | $\displaystyle-\Big[y\log(z)+(1-y)\log(1-z)\Big]$                                                                                 |
-| ![Least squared error](https://stanford.edu/~shervine/teaching/cs-229/illustrations/least-square-error.png?63fef2552284b0dc15f27d1ef0b79fea) | ![Logistic loss](https://stanford.edu/~shervine/teaching/cs-229/illustrations/logistic-loss.png?1bc1cb6d682c1bbfb978ec894afdf588) | ![Hinge loss](https://stanford.edu/~shervine/teaching/cs-229/illustrations/hinge-loss.png?3f1b26410c446f52885dcc5266937c84) | ![Cross entropy](https://stanford.edu/~shervine/teaching/cs-229/illustrations/cross-entropy.png?037ea4073873c9be4a7de099dac6d3b5) |
+| ![[attachments/d0b8d602d6ac0276c80bcd818518eb04_MD5.png]]| ![[attachments/fd1af19894a1daf23f87c65aa93340b2_MD5.png]]| ![[attachments/b3aec3de024fb6c16d07417bf77d1b0b_MD5.png]]| ![[attachments/f07767d5390a48e2cd16b9c9d4eb47ac_MD5.png]]|
 | Linear regression                                                                                                                            | Logistic regression                                                                                                               | SVM                                                                                                                         | Neural Network                                                                                                                    |
 
   
@@ -64,7 +64,7 @@ $$
 $$
   
 
-![Gradient descent](https://stanford.edu/~shervine/teaching/cs-229/illustrations/gradient-descent.png?01662c4a8147a55ba09f4f5c047641ba)
+![[attachments/20dfbc551dcd456fc008b0a5a8f4b621_MD5.png]]
 
   
 
@@ -196,7 +196,7 @@ $$
 \boxed{\min\frac{1}{2}||w||^2}\quad\quad\textrm{such that }\quad \boxed{y^{(i)}(w^Tx^{(i)}-b)\geqslant1}
 $$
 
-![SVM](https://stanford.edu/~shervine/teaching/cs-229/illustrations/svm-en.png?d23456fe589935f26cf32c1664c90851)
+![[attachments/490efdfd00aa25c936d5cc57b0a52ed3_MD5.png]]
 
 Remark: the decision boundary is defined as $\boxed{w^Tx-b=0}$.
 
@@ -217,7 +217,7 @@ $$
 
 In practice, the kernel $K$ defined by $K(x,z)=\exp\left(-\frac{||x-z||^2}{2\sigma^2}\right)$ is called the Gaussian kernel and is commonly used.
 
-![SVM kernel](https://stanford.edu/~shervine/teaching/cs-229/illustrations/svm-kernel-en.png?43f2af419ba926948a5bbf3289f2cf39)
+![[attachments/66880debb6e9358d358e7d874c22a58c_MD5.png]]
 
   
 
@@ -311,7 +311,7 @@ $$
 \boxed{P(A_1\cup ...\cup A_k)\leqslant P(A_1)+...+P(A_k)}
 $$
 
-![Union bound](https://stanford.edu/~shervine/teaching/cs-229/illustrations/union-bound.png?aab917859fa8e260e865def69a2889b8)
+![[attachments/a480cb9714201bdad7a43fd9cadd6e9d_MD5.png]]
 
   
 
@@ -356,7 +356,7 @@ VC dimension The Vapnik-Chervonenkis (VC) dimension of a given infinite hypothes
 
 Remark: the VC dimension of ${\small\mathcal{H}=\{\textrm{set of linear classifiers in 2 dimensions}\}}$ is 3.
 
-![VC dimension](https://stanford.edu/~shervine/teaching/cs-229/illustrations/vc-dimension.png?73859dedcc66a0e47526936f801b7b56)
+![[attachments/3697e3abeab02b0cbd3f7d2766d5bf37_MD5.png]]
 
   
 

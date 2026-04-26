@@ -6,19 +6,19 @@
 >开发人员可以使用调试工具分析"core dump"文件，以确定程序在崩溃时的状态，查找错误的根本原因，并最终修复程序中的问题。这对于开发大型和复杂的软件应用程序尤其重要，因为它可以帮助开发人员识别和解决潜在的问题，提高软件的稳定性和可靠性。
 
 测试如下：
-![oLCtWp|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/oLCtWp.png)
+![[attachments/b560de330f372824f20afa778ac85db5_MD5.png|500]]
 
 默认情况下并不生成 core dump 的文件（保存了错误状态信息），以防止生成大量冗余文件，可以通过 `ulimit -a` 查看。
 
-![e85XIw|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/e85XIw.png)
+![[attachments/164fac057062bc97093012ab4c4c84bf_MD5.png|500]]
 
 我们可以通过 `ulimit -c` 修改 `core file size` 这个值
 
-![KT7jBI|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/KT7jBI.png)
+![[attachments/929fff976f5eaff5f7eb0c3fb670a3e6_MD5.png|500]]
 
 还需要用到 `sudo sysctl -w kernel.core_pattern=core` 来修改 `/proc/sys/kernel/core_pattern` 的值。
-![eDkozR](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/eDkozR.png)
+![[attachments/3af7cc383e0655fe6343fa710504e977_MD5.png|500]]
 
-![LimgQC](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/LimgQC.png)
+![[attachments/8036e1c8baad552f73974d4041875b6b_MD5.png|500]]
 
 此时就可以使用 gdb 进行调试了。

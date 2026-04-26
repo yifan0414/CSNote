@@ -13,13 +13,13 @@ tags:
 ### Local Search
 Local search is a search algorithm that maintains a single node and searches by moving to a neighboring node. This type of algorithm is different from previous types of search that we saw. Whereas in maze solving, for example, we wanted to find the quickest way to the goal, **local search is interested in finding the best answer to a question.** Often, local search will bring to an answer that is not optimal but *“good enough,”* conserving computational power. Consider the following example of a local search problem: **we have four houses in set locations. We want to build two hospitals, such that we *minimize* the distance from each house to a hospital.** This problem can be visualized as follows:
 
-![Houses and Hospitals](https://cs50.harvard.edu/ai/2024/notes/3/hospitals1.png)
+![[attachments/cb04397b80fcb8a39d723d19e490b7f1_MD5.png]]
 
 In this illustration, we are seeing a possible configuration of houses and hospitals. The distance between them is measured using ***Manhattan distance*** (number of moves up, down, and to the sides; discussed in more detail in lecture 0), and the sum of the distances from each house to the nearest hospital is 17. We call this the **cost**, because we try to minimize this distance. In this case, a state would be any one configuration of houses and hospitals.
 
 Abstracting this concept, we can represent each configuration of houses and hospitals **as the state-space landscape below**. Each of the bars in the picture represents a value of a state, which in our example would be the cost of a certain configuration of houses and hospitals.
 
-![State-Space Landscape](https://cs50.harvard.edu/ai/2024/notes/3/statespace.png)
+![[attachments/033d40d75953a0b016093503b53d5e64_MD5.png]]
 
 Going off of this visualization, we can define a few important terms for the rest of our discussion:
 
@@ -60,7 +60,7 @@ In this algorithm, we start with a current state. In some problems, we will know
 
 Using the hill climbing algorithm, we can start to improve the locations that we assigned to the hospitals in our example. After a few transitions, we get to the following state:
 
-![Houses and Hospitals at Local Minimum](https://cs50.harvard.edu/ai/2024/notes/3/hospitals2.png)
+![[attachments/2ff0e577a1d21199a678a85ea339a373_MD5.png]]
 
 At this state, the cost is 11, which is an improvement over 17, the cost of the initial state. **However, this is not the optimal state just yet**. For example, moving the hospital on the left to be underneath the top left house would bring to a cost of 9, which is better than 11. However, this version of a hill climbing algorithm can’t get there, because all the neighbor states are at least as costly as the current state. In this sense, a hill climbing algorithm is ***short-sighted***, often settling for solutions that are *better* than some others, but not necessarily the *best* of all possible solutions.
 
@@ -68,15 +68,15 @@ At this state, the cost is 11, which is an improvement over 17, the cost of the 
 
 As mentioned above, a hill climbing algorithm can get stuck in local maxima or minima. A ***local* maximum** (plural: maxima) is a state that has a higher value than its *neighboring states*. As opposed to that, a ***global* maximum** is a state that has the highest value of *all states* in the state-space.
 
-![Maxima](https://cs50.harvard.edu/ai/2024/notes/3/maxima.png)
+![[attachments/e0a3d3f52786e17e837452f8c2d26e68_MD5.png]]
 
 In contrast, a ***local* minimum** (plural: minima) is a state that has a lower value than its *neighboring states*. As opposed to that, a ***global* minimum** is a state that has the lowest value of *all states* in the state-space.
 
-![Minima](https://cs50.harvard.edu/ai/2024/notes/3/minima.png)
+![[attachments/bf8d7c5a9a6591f415cfdb5f465de934_MD5.png]]
 
 The problem with hill climbing algorithms is that they may end up in local minima and maxima. Once the algorithm reaches a point whose neighbors are worse, for the function’s purpose, than the current state, the algorithm stops. Special types of local maxima and minima include the **flat local maximum/minimum**, where multiple states of equal value are adjacent, forming a plateau whose neighbors have a worse value, and the **shoulder**, where multiple states of equal value are adjacent and the neighbors of the plateau can be both better and worse. Starting from the ***middle*** of the plateau, the algorithm will not be able to advance in any direction.
 
-![Flat Local Maximum/Minimum and Shoulder](https://cs50.harvard.edu/ai/2024/notes/3/flatshoulder.png)
+![[attachments/2bf801063bff354c638fe430a5e01541_MD5.png]]
 
 **Hill Climbing Variants**
 
@@ -113,7 +113,7 @@ The algorithm takes as input a problem and *max*, the number of times it should 
 
 In the traveling salesman problem, the task is to connect all points while choosing the shortest possible distance. This is, for example, what delivery companies need to do: find the shortest route from the store to all the customers’ houses and back.
 
-![Traveling Salesman Problem](https://cs50.harvard.edu/ai/2024/notes/3/travelingsalesman.png)
+![[attachments/5f6fd1eb579f5672a98f9c47871fd428_MD5.png]]
 
 In this case, a neighbor state might be seen as a state where two arrows swap places. Calculating every possible combination makes this problem computationally demanding (having just 10 points gives us 10!, or 3,628,800 possible routes). By using the simulated annealing algorithm, a good solution can be found for a lower computational cost.
 
@@ -168,11 +168,11 @@ Sudoku can be represented as a constraint satisfaction problem, where each empty
 
 Consider another example. Each of students 1-4 is taking three courses from A, B, …, G. Each course needs to have an exam, and the possible days for exams are Monday, Tuesday, and Wednesday. However, the same student can’t have two exams on the same day. In this case, the variables are the courses, the domain is the days, and the constraints are which courses can’t be scheduled to have an exam on the same day because the same student is taking them. This can be visualized as follows:
 
-![Constraint Satisfaction Setting](https://cs50.harvard.edu/ai/2024/notes/3/constraintsatisfaction1.png)
+![[attachments/5b39e5df1a2cfeaf315db5493acf465d_MD5.png]]
 
 This problem can be solved using constraints that are represented as a graph. Each node on the graph is a course, and an edge is drawn between two courses if they can’t be scheduled on the same day. In this case, the graph will look this:
 
-![Constraint Satisfaction Constraints](https://cs50.harvard.edu/ai/2024/notes/3/constraintsatisfaction2.png)
+![[attachments/e8526737632691a647cd94d4fff2ecb1_MD5.png]]
 
 A few more terms worth knowing about constraint satisfaction problems:
 
@@ -248,7 +248,7 @@ In words, this algorithm starts with returning the current assignment if it is c
 
 Consider the following course of action:
 
-![Backtracking Example](https://cs50.harvard.edu/ai/2024/notes/3/backtracking.png)
+![[attachments/15d0546b3cba125149af4385a8952c02_MD5.png]]
 
 We start with empty assignments (top left). Then, we choose the variable A, and assign to it some value, Monday (top right). Then, using this assignment, we run the algorithm again. Now that A already has an assignment, the algorithm will consider B, and assign Monday to it (bottom left). This assignment returns false, so instead of assigning a value to C given the previous assignment, the algorithm will try to assign a new value to B, Tuesday (bottom right). This new assignment satisfies the constraints, and a new variable will be considered next given this assignment. If, for example, assigning also Tuesday or Wednesday to B would bring to a failure, then the algorithm would backtrack and return to considering A, assigning another value to it, Tuesday. If also Tuesday and Wednesday return *failure*, then it means we have tried every possible assignment and the problem is unsolvable.
 
@@ -281,13 +281,13 @@ There are additional ways to make the algorithm more efficient. So far, we selec
 
 **Minimum Remaining Values (MRV)** is one such heuristic. The idea here is that if a variable’s domain was constricted by inference, and now it has only one value left (or even if it’s two values), then by making this assignment we will reduce the number of backtracks we might need to do later. That is, we will have to make this assignment sooner or later, since it’s inferred from enforcing arc-consistency. If this assignment brings to failure, it is better to find out about it as soon as possible and not backtrack later.
 
-![Minimum Remaining Values](https://cs50.harvard.edu/ai/2024/notes/3/mrv.png)
+![[attachments/d49e00442e535f1f17c6e880910be43e_MD5.png]]
 
 For example, after having narrowed down the domains of variables given the current assignment, using the MRV heuristic, we will choose variable C next and assign the value Wednesday to it.
 
 The **Degree** heuristic relies on the degrees of variables, where a degree is how many arcs connect a variable to other variables. By choosing the variable with the highest degree, with one assignment, we constrain multiple other variables, speeding the algorithm’s process.
 
-![Degree Heuristic](https://cs50.harvard.edu/ai/2024/notes/3/degree.png)
+![[attachments/fc7dfe7cf84dce0851f9c720075a12e5_MD5.png]]
 
 For example, all the variables above have domains of the same size. Thus, we should pick a domain with the highest degree, which would be variable E.
 
@@ -295,7 +295,7 @@ Both heuristics are not always applicable. For example, when multiple variables 
 
 Another way to make the algorithm more efficient is employing yet another heuristic when we select a value from the domain of a variable. Here, we would like to use the **Least Constraining Values** heuristic, where we select the value that will constrain the least other variables. The idea here is that, while in the degree heuristic we wanted to use the variable that is more likely to constrain other variables, here we want this variable to place the least constraints on other variables. That is, we want to locate what could be the largest potential source of trouble (the variable with the highest degree), and then render it the least troublesome that we can (assign the least constraining value to it).
 
-![Least Constraining Value](https://cs50.harvard.edu/ai/2024/notes/3/leastconstrainingvalue.png)
+![[attachments/eb25a2ef117552043a61e1e722db71f0_MD5.png]]
 
 For example, let’s consider variable C. If we assign Tuesday to it, we will put a constraint on all of B, E, and F. However, if we choose Wednesday, we will put a constraint only on B and E. Therefore, it is probably better to go with Wednesday.
 

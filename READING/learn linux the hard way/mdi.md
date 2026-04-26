@@ -21,210 +21,210 @@
 
 1.  启动 VirtualBox。
 
-    ![](https://archive.fo/p1ZHn/68fc7efcadb72e1e0f33f26176522a14607424ca.png)
+    ![[attachments/c986b78ace170075eb7c76d0c48105df_MD5.png]]
     
 2.  按下`New`按钮来创建新的虚拟机。在`Name`字段中输入`vm1`，之后选择`Operating System: Linux, Version: Debian (64 bit)`，之后按下`Next >`。
 
-    ![](https://archive.fo/p1ZHn/c083a91d6b41d9216554816fbe0c0df9d6ed1e87.png)
+    ![[attachments/2526b78bd0209e80eb92df4349cb3fcf_MD5.png]]
     
 3.  从内存至少选择`512 MB`。如果你的机子上安装了足够的 RAM，`1024 GB`也可以。按下`Next >`。
 
-    ![](https://archive.fo/p1ZHn/ae59f8240ff9a5b19138aaec456e14545515b23b.png)
+    ![[attachments/a9c6ab3bf6e9ee20c54e655856f78f43_MD5.png]]
     
 4.  这里只需按下`Next >`。
 
-    ![](https://archive.fo/p1ZHn/6857a035f4111c1148ad0429bcbd72dc212c23f0.png)
+    ![[attachments/e416e5dc173a02aa3aad087aa3c7b8fa_MD5.png]]
     
 5.  选择`VDI (VirtualBox Disk Image)`，并按下`Next >`。
 
-    ![](https://archive.fo/p1ZHn/05d67f9169ff8f40bc61f4c6000871d37c3a71e4.png)
+    ![[attachments/f8f64307d0f2c185aeb2bd8c7d4eb211_MD5.png]]
     
 6.  选择`Dynamically allocated`，并按下`Next >`。
 
-    ![](https://archive.fo/p1ZHn/e7caa74cadc60c7b829e0dd85de35018dcfe0b2f.png)
+    ![[attachments/7a12279d13cc86ae36ca36008ca41c87_MD5.png]]
     
 7.  在`Location`中输入`vm1`，并按下`Next >`。
 
-    ![](https://archive.fo/p1ZHn/ba205c73a6f0954f9a567423da18fdb36d7b1319.png)
+    ![[attachments/79d42392716fa62aa5e1604aa8ce2850_MD5.png]]
     
 8.  点击`Create`。
 
-    ![](https://archive.fo/p1ZHn/5661251d5a943496f199307c52ad84a06c38078f.png)
+    ![[attachments/adb083659cd3a1d0c6add154c4f676e0_MD5.png]]
     
 9.  选择`vm1`并点击`Start`。
 
-    ![](https://archive.fo/p1ZHn/e387da8cc25aa78a8432e21ea7664b3b961f60a0.png)
+    ![[attachments/143aab04413e219745fcbc6b62d3d983_MD5.png]]
     
 0.  点击`Next >`。
 
-    ![](https://archive.fo/p1ZHn/eade1e093fb56f77774d57a6f6c8bff6a37f3ff8.png)
+    ![[attachments/0ca45cbd5d2885edde728a5eb558b179_MD5.png]]
     
 1.  点击`folder button`。
 
-    ![](https://archive.fo/p1ZHn/ff276e5704d18417a1b0581dd425e40e8909d1b6.png)
+    ![[attachments/5cb7e25d9dee04511cd7b26124f9f7fd_MD5.png]]
     
 2.  浏览并选择你的`Debian 6 Squeeze CD-image`，点击`Open`。
 
-    ![](https://archive.fo/p1ZHn/ef12fa3b92eef1c7001c071acb24d6c6f7622a7a.png)
+    ![[attachments/5879e8aea12ca9dcabed4830c20fd104_MD5.png]]
     
 3.  点击`Next >`。
 
-    ![](https://archive.fo/p1ZHn/5f4dcbce772f1d9b6ff84316769a2cec48139503.png)
+    ![[attachments/925008981447327fdee3cab9e5eca366_MD5.png]]
     
 4.  点击`Start`。
 
-    ![](https://archive.fo/p1ZHn/b139ce5a811d31c98ed0cb81573aa9f2b52b5b78.png)
+    ![[attachments/366e67a4f7e1ec28baaace6022471672_MD5.png]]
     
 5.  关闭烦人的 VirtualBox 窗口。点击 VirtualBox 窗口内部并按下`<ENTER>`。
-    ![](https://archive.fo/p1ZHn/6979a652355a3d20019983500f3a22a92d1968a6.png)
+    ![[attachments/4f406cdcad6d719ca88531e3ce326e76_MD5.png]]
     
 6.  按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/cd1b9c49b9015a9d37c09e8b91d0a7251aeffa6c.png)
+    ![[attachments/5b1edc5d3af6f1155a341c319eddda81_MD5.png]]
     
 7.  按下`<ENTER>`。
 
     > 译者注：这里你可以选“中文（简体）”。
     
-    ![](https://archive.fo/p1ZHn/9d4256a54e6e34d36aed8373fe074f3e6439c6c2.png)
+    ![[attachments/a2a45661ad555553f820028a2094adea_MD5.png]]
     
 8.  按下`<ENTER>`。
 
     > 译者注：这里你可以选“HongKong”。
     
-    ![](https://archive.fo/p1ZHn/e1fd69a847e9321383f87dbc9977cb8b9a0fb4a3.png)
+    ![[attachments/e6e1b1173f41ac6c85110c2179405827_MD5.png]]
     
 9.  按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/65b272c4e228ddcf365f61d44d5256a596935455.png)
+    ![[attachments/91cbde718eadd17731f0134e5f118ad1_MD5.png]]
     
 0.  输入`vm1`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/4801b99ce3260d1f90fee587763f2594bad2c2e7.png)
+    ![[attachments/f5a9ab65076e4eaccdeadefd8c62ab71_MD5.png]]
     
 1.  输入`site`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/5eb0e36cdf4e3ddaf10db2fb4fb2b0834c7c2bfa.png)
+    ![[attachments/94f95c9dcfd9e5b41ca758ebd936aca5_MD5.png]]
     
 2.  输入`123qwe`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/34ffc67b2618df734bcbd6f5306c2860254ce60f.png)
+    ![[attachments/1b97bd01a7b36583b92b0d674a476e6d_MD5.png]]
     
 3.  输入`123qwe`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/57dbc33555e2e2ae61517be0aa83cfbb1f9bfc34.png)
+    ![[attachments/f0598b8e5114a7cc11476a394ac57ab6_MD5.png]]
     
 4.  输入`user1`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/e0f9977d67c15b3b02e1229c7f0b454204161340.png)
+    ![[attachments/4e255e18f7073205d924a3f78325c77d_MD5.png]]
     
 5.  按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/1d2d158cb7bc6dae359fb1e02214136e4a6e3e2d.png)
+    ![[attachments/babb1ae833f218fbbe19e4557d28d82c_MD5.png]]
     
 6.  输入`123qwe`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/7e8415ff24fed2c2b155622889e226e92a3e51ea.png)
+    ![[attachments/8ec526207902db0fb57e1f7a8b05dbb4_MD5.png]]
     
 7.  输入`123qwe`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/03c870e0b698e28f3654f94c751547a25cbc04e1.png)
+    ![[attachments/fc043d21a5d1bca34fb37eab49552739_MD5.png]]
     
 8.  如果你不知道这里做什么，只需按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/04707609537bfd69cc50fc33867a15a7320e832c.png)
+    ![[attachments/ffc28018b03bc786725f1a03dfe06d26_MD5.png]]
     
 9.  选择`Guided partitioning`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/4af1a582de294fba7b8bd3aa4aca2b6d7534268f.png)
+    ![[attachments/c64ba7e57b791801e5ea50b008b0a690_MD5.png]]
     
 0.  选择`Guided – use entire disk`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/d7bfde3632cf431672e448ed0f4e59da792a8401.png)
+    ![[attachments/73f08573880a51a142a930620490e040_MD5.png]]
     
 1.  再次按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/a3bb62cd87b0e9359e08b3a8a2aa694258959b35.png)
+    ![[attachments/91f1dc002790ade6992ad80e63380d0c_MD5.png]]
     
 2.  选择`eparate /home, /usr, /var, and /tmp partitions`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/fc92f1246ab697a70fb40982988226f412853883.png)
+    ![[attachments/1edfb3ffcec5a553518591adc8657f73_MD5.png]]
     
 3.  选择`Finish partitioning and write changes to disk`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/a2b293906dc62fde7064426b59ad880b362d0f6a.png)
+    ![[attachments/c2ff9de14a9b820ee975ae0d3ae4b096_MD5.png]]
     
 4.  选择`<Yes>`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/ef0d5da56d4aad96dc711f0a527c0183e3a27269.png)
+    ![[attachments/aeb5323560fbde1a9d6df03314b421f9_MD5.png]]
     
 5.  选择`<No>`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/e9cfc3142b4d63f1d217da3d85dc1140ab09d845.png)
+    ![[attachments/ea5f7a0dc45604671ba9680bc4ab7879_MD5.png]]
     
 6.  选择`<Yes>`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/65f4aa627d6a40e7071cb2ac1ae68d04d09c8824.png)
+    ![[attachments/449f9f6be34341bf446793a7e9c2bb58_MD5.png]]
     
 7.  选择`ftp.egr.msu.edu`并按下`<ENTER>`。如果出现错误，选择其它的东西。
 
-    ![](https://archive.fo/p1ZHn/546cf834885a1e587938ea7cf5dc6e07d246e65b.png)
+    ![[attachments/0d54974e499940dc1863346eb199448e_MD5.png]]
 
 8.  再次按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/b2685c27c688d34ff6e504ffe186dd80c99c084d.png)
+    ![[attachments/1f2e1cec905930c7dc1f50dc59a9ea06_MD5.png]]
     
 9.  选择`<No>`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/fc6ebaa84a254c1ad045d64526b1a2326a37b237.png)
+    ![[attachments/2cca6148a4bad2959335ed65f211ddd7_MD5.png]]
     
 0.  使用`<SPACE>`选择`SSH server and Standard system utilities`，并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/713e8e08d2e059d156824e33da39e48abd9de65b.png)
+    ![[attachments/93cd31bc5ead1422bcad3f27db27d851_MD5.png]]
     
 1.  选择`<Yes>`并按下`<ENTER>`。
 
-    ![](https://archive.fo/p1ZHn/aeb99f9cf80d45d2015fa9b1f318a9b19cec2db4.png)
+    ![[attachments/a406d6b6e8d4ae965ac5248ae9d4f6b6_MD5.png]]
     
 2.  选择`<Continue>`并按下`<ENTER>`。你新安装的 Debian 会重启。
 
-    ![](https://archive.fo/p1ZHn/c912182ce24a01767fa1ffde3b08b176a3fa35f3.png)
+    ![[attachments/c29f7a6d935034ad6c0c337395fc95bb_MD5.png]]
     
 3.  点击`Devices`并选择`Network adapters`。
 
-    ![](https://archive.fo/p1ZHn/37877d8aacfd1da161dc8bdb06a2c2883dae22ca.png)
+    ![[attachments/66cb289d47da7fdcb2e6449c94cfc6a8_MD5.png]]
     
 4.  点击`Port Forwarding`。
 
-    ![](https://archive.fo/p1ZHn/bbcbf2ef6b2cfd5786201318978b5f9bd5bb32fa.png)
+    ![[attachments/1e9a9b03edddb884b3bac0e8b1de11cc_MD5.png]]
     
 5.  点击`Plus`按钮。
 
-    ![](https://archive.fo/p1ZHn/befa3bdfeebb864af78501c3d4c395293c2bc030.png)
+    ![[attachments/d2921600392fdd96a154b13b2aef49ad_MD5.png]]
     
 6.  在`Host Port`中输入`22`，`Guest Port`中输入`22`，点击`OK`。
 
-    ![](https://archive.fo/p1ZHn/89218bd92e2e590456bae0a7ac8d1c2168213318.png)
+    ![[attachments/660071950ada2ed985cb47053499533e_MD5.png]]
     
 7.  再次点击`OK`。
 
-    ![](https://archive.fo/p1ZHn/df2515bcd3fa375f8cf17f4b86a85f08d5cf47ef.png)
+    ![[attachments/ca3fc862da0c472545f0ca61eb7aae34_MD5.png]]
     
 8.  让你的 Debian 系统运行一会儿。
 
-    ![](https://archive.fo/p1ZHn/8648c8f7806c19ac2b3500adeb4bcef0f1dcd313.png)
+    ![[attachments/67ba10c933a1f7ab5e0f2922569c8a9a_MD5.png]]
     
 9.  启动`putty`，在`Host Name`中输入`localhost`（或 IP 地址），在`Port`字段中输入`22`。点击`Open`。
 
-    ![](https://archive.fo/p1ZHn/b4c54192c06c066444897554eb37f8693ca17578.png)
+    ![[attachments/d75baa75bff5e714e3d845b06016d7ca_MD5.png]]
     
 0.  点击`Yes`。
 
-    ![](https://archive.fo/p1ZHn/895745a41f1b557b6befcb3a73450747e815f8c3.png)
+    ![[attachments/23914f49b29eaf798a078ddc9b00caa1_MD5.png]]
     
 1.  输入`user1`，点击`<ENTER>`。输入`123qwe`，并再输入一次，来真正享受你的作品吧。
 
-    ![](https://archive.fo/p1ZHn/15936cef6402ab07e7982d18d4302b869b8136ab.png)
+    ![[attachments/5afc9be19927baf8b64a0a52e75e5105_MD5.png]]
     
 你以为这就完了吗？现在将这些输入`putty`，通过按下`<ENTER>`结束每个命令：
 

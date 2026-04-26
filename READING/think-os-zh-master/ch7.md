@@ -119,7 +119,7 @@ double get_seconds(){
 }
 ```
 
-![](http://greenteapress.com/thinkos/html/thinkos001.png)
+![[attachments/43a55619f3dc193e624b340539e99ae7_MD5.png]]
 
 图 7.1：数据大小和步长的平均缺失惩罚函数
 

@@ -286,7 +286,7 @@ The "Opcode" column gives the complete object code produced for each form of the
 - **/digit**:
 	- (digit is between 0 and 7) indicates that the ModR/M byte of the instruction uses only the r/m (register or memory) operand. The reg field contains the digit that provides an extension to the instruction's opcode.
 	- （数字介于 0 和 7 之间）表示指令的 ModR/M 字节仅使用 r/m（寄存器或内存）操作数。reg 字段包含提供指令操作码扩展的数字。
-	- ![Ttng2E|600](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Ttng2E.png)
+	- ![[attachments/56519ce0201a6fdd29d375079846582c_MD5.png|600]]
 - **/r**:
 	- indicates that the ModR/M byte of the instruction contains both a register operand and an r/m operand.（表示指令的 ModR/M 字节同时包含寄存器操作数和 r/m 操作数。）
 	- 寄存器操作数由 reg/opcode 指示，r/m 操作数由 MOD 和 R/M 指示。

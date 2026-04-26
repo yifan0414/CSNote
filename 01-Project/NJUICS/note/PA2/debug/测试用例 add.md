@@ -1,6 +1,6 @@
 我在测试 add 的测试用例的时候，第一次出现了 HIT BAD TRAP 的错误
 
-![Klt0ta](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Klt0ta.png)
+![[attachments/17d06e79408442c48a0bcd7e47720e70_MD5.png]]
 
 通过查看源代码可以发现，我们在测试用例中添加了大量的 `check` 函数，用来确保正确性。如果 check 中的判断为 0，那么我们将会调用 `halt(1)` 指令，`halt(1)` 会把 1 传递给 `eax`（通过内联汇编）。然后会通过 `def_Ehelper(nemu_trap)` 中的 `rtl_exit` 结束程序。
 

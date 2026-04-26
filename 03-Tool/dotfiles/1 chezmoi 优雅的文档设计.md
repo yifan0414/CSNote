@@ -90,7 +90,7 @@ $ exit
 
 These commands are summarized in this sequence diagram:
 
-![Summary](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/CZuHJg.png)
+![[attachments/45e77e15d2096a2ac5152df10fb19de6_MD5.png]]
 
 ## Using chezmoi across multiple machines
 
@@ -134,7 +134,7 @@ $ chezmoi update -v
 
 These commands are summarized in this sequence diagram:
 
-![AyQDBE](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/AyQDBE.png)
+![[attachments/073b3383ddbe8549c5e048850c1114fa_MD5.png]]
 
 
 ## Set up a new machine with a single command
@@ -153,7 +153,7 @@ $ chezmoi init --apply $GITHUB_USERNAME
 
 This command is summarized in this sequence diagram:
 
-![Oo4IRl](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Oo4IRl.png)
+![[attachments/77d998e34e7285a7ff37e1fd0c2619e3_MD5.png]]
 
 ## Next steps
 

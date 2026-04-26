@@ -88,12 +88,12 @@ In this mode, your `arrow key` transfer to a pen, when you move the `arrow key`,
 
 ## How to BOX a sentence
 
-![gjDYFp|600](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/gjDYFp.png)
+![[attachments/6911bbdd0370d579557c18c98147f7d5_MD5.png|600]]
 
 1. you can use `\b` to boxes the sentence
 2. you can create a box firstly, Then use the `R` which can enter the `replace mode` to replace the space character.
 
-![WN1kR9|600](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/WN1kR9.png)
+![[attachments/0af684a8dd2e443ad38038c358e70037_MD5.png|600]]
 
 
 

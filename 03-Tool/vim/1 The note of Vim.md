@@ -126,7 +126,7 @@
 > [!note] indent in Vim
 >  [Indent multiple lines quickly in vi](https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi)
 > 
-> ![](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/ivGwBQ.png)
+> ![[attachments/0151e885949961b1c5d67068eb719284_MD5.png]]
 > 
 > ~~~txt
 > >>   Indent line by shiftwidth spaces
@@ -153,7 +153,7 @@
 
 > [!danger] 有关 inclusive 和 exclusive 的内容还部熟悉
 > 比如怎么删除一个前面的单词且不保留这个字符呢？
-> ![](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/rdVb8i.png)
+> ![[attachments/c86a6100b1805a9f5002c1cd56b3be9c_MD5.png]]
 > 直接使用 `db` 的话会留下一个字符，这时可以使用 `dvb`
 > 这种操作也可以用到 `dt<>` `df<>`
 > 这是我现在的配置

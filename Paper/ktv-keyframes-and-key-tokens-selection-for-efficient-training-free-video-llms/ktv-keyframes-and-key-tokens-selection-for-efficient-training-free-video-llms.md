@@ -112,24 +112,24 @@ Source: TeX includegraphics from `Formatting-Instructions-LaTeX-2026.tex`, figur
 
 Table 1 展示 KTV 在 Multiple-Choice VideoQA benchmarks 上的整体 accuracy。KTV rows 为论文提出方法；数值按论文表格抄录，`-` 表示 not reported。
 
-| Method | Model / Setting | Vis Encoder | NExTQA acc. (%) | EgoSchema acc. (%) | IntentQA acc. (%) | STAR acc. (%) | VideoMME acc. (%) | MVBench acc. (%) |
-| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| *Training-Based Methods* |  |  |  |  |  |  |  |  |
-| Video-LLaVA | 7B | ViT-L | - | - | - | - | 39.9 | 41.0 |
-| VideoLLaMA2 | 46.7B | CLIP-L | - | 53.3 | - | - | - | 53.9 |
-| *Training-Free Methods* |  |  |  |  |  |  |  |  |
-| IG-VLM | 7B | CLIP-L | 63.1 | 35.8 | 60.3 | 48.6 | 39.7 | 42.9 |
-| SF-LLaVA-7B | 7B | CLIP-L | 64.0 | 44.2 | 60.5 | 48.8 | 39.4 | 43.3 |
-| DYTO | 7B | CLIP-L | 65.7 | 48.6 | 61.6 | 50.7 | 41.2 | - |
-| **KTV-7B-sparse** | 7B / 504 tokens | CLIP-L | **64.5** | **49.6** | **61.2** | **52.3** | **43.6** | **46.2** |
-| **KTV-7B-normal** | 7B / 936 tokens | CLIP-L | **65.1** | **50.4** | **61.3** | **52.5** | **43.7** | **46.4** |
-| **KTV-7B-dense** | 7B / 1872 tokens | CLIP-L | **65.8** | **51.0** | **62.0** | **52.7** | **44.0** | **46.0** |
-| IG-VLM | 34B | CLIP-L | 70.7 | 53.4 | 64.5 | 50.5 | 50.3 | 49.0 |
-| SF-LLaVA-7B | 34B | CLIP-L | 70.9 | 55.0 | 66.1 | 51.3 | 51.9 | 49.6 |
-| DYTO | 34B | CLIP-L | 72.9 | 56.8 | 66.4 | 51.1 | 53.4 | - |
-| **KTV-34B-sparse** | 34B / 504 tokens | CLIP-L | **71.2** | **55.6** | **65.9** | **54.2** | **52.2** | **51.9** |
-| **KTV-34B-normal** | 34B / 936 tokens | CLIP-L | **72.3** | **55.6** | **66.6** | **54.6** | **53.0** | **52.1** |
-| **KTV-34B-dense** | 34B / 1872 tokens | CLIP-L | **72.7** | **57.0** | **68.0** | **54.7** | **53.2** | **51.5** |
+| Method                   | Model / Setting   | Vis Encoder | NExTQA acc. (%) | EgoSchema acc. (%) | IntentQA acc. (%) | STAR acc. (%) | VideoMME acc. (%) | MVBench acc. (%) |
+| ------------------------ | ----------------- | ----------- | --------------: | -----------------: | ----------------: | ------------: | ----------------: | ---------------: |
+| *Training-Based Methods* |                   |             |                 |                    |                   |               |                   |                  |
+| Video-LLaVA              | 7B                | ViT-L       |               - |                  - |                 - |             - |              39.9 |             41.0 |
+| VideoLLaMA2              | 46.7B             | CLIP-L      |               - |               53.3 |                 - |             - |                 - |             53.9 |
+| *Training-Free Methods*  |                   |             |                 |                    |                   |               |                   |                  |
+| IG-VLM                   | 7B                | CLIP-L      |            63.1 |               35.8 |              60.3 |          48.6 |              39.7 |             42.9 |
+| SF-LLaVA-7B              | 7B                | CLIP-L      |            64.0 |               44.2 |              60.5 |          48.8 |              39.4 |             43.3 |
+| DYTO                     | 7B                | CLIP-L      |            65.7 |               48.6 |              61.6 |          50.7 |              41.2 |                - |
+| **KTV-7B-sparse**        | 7B / 504 tokens   | CLIP-L      |        **64.5** |           **49.6** |          **61.2** |      **52.3** |          **43.6** |         **46.2** |
+| **KTV-7B-normal**        | 7B / 936 tokens   | CLIP-L      |        **65.1** |           **50.4** |          **61.3** |      **52.5** |          **43.7** |         **46.4** |
+| **KTV-7B-dense**         | 7B / 1872 tokens  | CLIP-L      |        **65.8** |           **51.0** |          **62.0** |      **52.7** |          **44.0** |         **46.0** |
+| IG-VLM                   | 34B               | CLIP-L      |            70.7 |               53.4 |              64.5 |          50.5 |              50.3 |             49.0 |
+| SF-LLaVA-7B              | 34B               | CLIP-L      |            70.9 |               55.0 |              66.1 |          51.3 |              51.9 |             49.6 |
+| DYTO                     | 34B               | CLIP-L      |            72.9 |               56.8 |              66.4 |          51.1 |              53.4 |                - |
+| **KTV-34B-sparse**       | 34B / 504 tokens  | CLIP-L      |        **71.2** |           **55.6** |          **65.9** |      **54.2** |          **52.2** |         **51.9** |
+| **KTV-34B-normal**       | 34B / 936 tokens  | CLIP-L      |        **72.3** |           **55.6** |          **66.6** |      **54.6** |          **53.0** |         **52.1** |
+| **KTV-34B-dense**        | 34B / 1872 tokens | CLIP-L      |        **72.7** |           **57.0** |          **68.0** |      **54.7** |          **53.2** |         **51.5** |
 
 MLVU-Test 细分结果如下。TR/AR 属于 Holistic LVU，NQA/ER/PQA/SQA 属于 Single-Detail LVU，AO/AC/TQA 属于 Multi-Detail LVU。M-Avg 是平均准确率。
 

@@ -25,7 +25,7 @@ solution:
 
 尽管版本控制系统有很多， 其事实上的标准则是 **Git** 。而这篇 [XKCD 漫画](https://xkcd.com/1597/) 则反映出了人们对 Git 的评价：
 
-![xkcd 1597](https://imgs.xkcd.com/comics/git.png)
+![[attachments/b5c393ca721a0a801b0418fcd39c8d7b_MD5.png]]
 
 因为 Git 接口的抽象泄漏（leaky abstraction）问题，通过自顶向下的方式（从命令行接口开始）学习 Git 可能会让人感到非常困惑。很多时候您只能死记硬背一些命令行，然后像使用魔法一样使用它们，一旦出现问题，就只能像上面那幅漫画里说的那样去处理了。
 

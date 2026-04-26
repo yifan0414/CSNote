@@ -38,7 +38,7 @@
      }
     ```
     
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/2/1.png)
+    ![[attachments/e564dc5cee72d390209edae979782be3_MD5.png]]
     
 3.  假设您有一个命令，它很少出错。因此为了在出错时能够对其进行调试，需要花费大量的时间重现错误并捕获输出。 编写一段bash脚本，运行如下的脚本直到它出错，将它的标准输出和标准错误流记录到文件，并在最后输出所有内容。 加分项：报告脚本在失败前共运行了多少次。
     
@@ -108,7 +108,7 @@
     
     ```
     
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/2/2.png)
+    ![[attachments/313e1791564ca896c82bb8b00653cc8b_MD5.png]]
     
 4.  本节课我们讲解的 find 命令中的 -exec 参数非常强大，它可以对我们查找的文件进行操作。 如果我们要对所有文件进行操作呢？例如创建一个zip压缩文件？我们已经知道，命令行可以从参数或标准输入接受输入。在用管道连接命令时，我们将标准输出和标准输入连接起来，但是有些命令，例如tar 则需要从参数接受输入。这里我们可以使用[xargs](https://man7.org/linux/man-pages/man1/xargs.1.html) 命令，它可以使用标准输入中的内容作为参数。 例如 ls | xargs rm 会删除当前目录中的所有文件。您的任务是编写一个命令，它可以递归地查找文件夹中所有的HTML文件，并将它们压缩成zip文件。注意，即使文件名中包含空格，您的命令也应该能够正确执行（提示：查看 xargs的参数-d）_译注：MacOS 上的 xargs没有-d，查看这个[issue](https://github.com/missing-semester/missing-semester/issues/93)_
     
@@ -167,10 +167,10 @@
           a html_root/6.html
         ```
         
-5.  (进阶) 编写一个命令或脚本递归的查找文件夹中最近使用的文件。更通用的做法，你可以按照最近的使用时间列出文件吗？ `find . -type f -print0 | xargs -0 ls -lt | head -1`![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/2/4.png)
+5.  (进阶) 编写一个命令或脚本递归的查找文件夹中最近使用的文件。更通用的做法，你可以按照最近的使用时间列出文件吗？ `find . -type f -print0 | xargs -0 ls -lt | head -1`![[attachments/09b68b1d0a8ef8e73d461454ffdb6980_MD5.png]]
 
 当文件数量较多时，上面的解答会得出错误结果，解决办法是增加 `-mmin` 条件，先将最近修改的文件进行初步筛选再交给ls进行排序显示 `find . -type f -mmin -60 -print0 | xargs -0 ls -lt | head -10`
 
-![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/2/5.png)
+![[attachments/a07da1cf432500420a7dd705ca7932d7_MD5.png]]
 
 ---

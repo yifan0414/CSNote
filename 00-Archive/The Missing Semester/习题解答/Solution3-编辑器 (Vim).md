@@ -14,7 +14,7 @@
          set runtimepath^=~/.vim/pack/vendor/start/ctrlp.vim 
         ```
         
-    3.  请阅读这个插件的[文档](https://github.com/ctrlpvim/ctrlp.vim/blob/master/readme.md)。 尝试用 CtrlP 来在一个工程文件夹里定位一个文件， 打开 Vim, 然后用 Vim 命令控制行开始 :CtrlP.![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/3/1.png)
+    3.  请阅读这个插件的[文档](https://github.com/ctrlpvim/ctrlp.vim/blob/master/readme.md)。 尝试用 CtrlP 来在一个工程文件夹里定位一个文件， 打开 Vim, 然后用 Vim 命令控制行开始 :CtrlP.![[attachments/3cf723b236c241950e062a1d44daad34_MD5.png]]
     4.  自定义 CtrlP： 添加 [configuration](https://github.com/ctrlpvim/ctrlp.vim/blob/master/readme.md#basic-options) 到你的 ~/.vimrc 来用按 Ctrl-P 打开 CtrlP
         
         ```vim
@@ -23,7 +23,7 @@
          let g:ctrlp_working_path_mode = 'ra' #设置默认路径为当前路径
         ```
         
-        ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/3/2.png)
+        ![[attachments/d21d93ef8195b47f32da5353e54a8dc0_MD5.png]]
         
 4.  练习使用 Vim, 在你自己的机器上重做演示。
 5.  下个月用 Vim 完成_所有_的文件编辑。每当不够高效的时候，或者你感觉 “一定有一个更好的方式”， 尝试求助搜索引擎，很有可能有一个更好的方式。如果你遇到难题， 来我们的答疑时间或者给我们发邮件。
@@ -46,7 +46,7 @@
          call plug#end()
         ```
         
-    3.  在 vim 命令行中执行 `:PlugInstall`![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions//images/3/3.png)
+    3.  在 vim 命令行中执行 `:PlugInstall`![[attachments/acd5efe2ba75125758039e3980bc58bb_MD5.png]]
 8.  (高阶)用 Vim 宏将 XML 转换到 JSON ([例子文件](https://missing-semester-cn.github.io/2020/files/example-data.xml))。 尝试着先完全自己做，但是在你卡住的时候可以查看上面 [宏](https://missing-semester-cn.github.io/2020/editors/#macros) 章节。
     1.  Gdd, ggdd 删除第一行和最后一行
     2.  格式化最后一个元素的宏 （寄存器 e）  

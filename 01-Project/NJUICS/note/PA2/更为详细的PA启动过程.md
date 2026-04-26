@@ -87,13 +87,13 @@ latest:
 
 通过上面的分析我们可以知道这个 Makefile 文件的主要目的是从 `tests/` 目录中找出所有的 `.c` 文件，并为每个 `.c` 文件生成一个对应的 Makefile，然后使用这个 Makefile 来编译和链接 `.c` 文件。这样可以方便地对多个 `.c` 文件进行并行编译，并且每个 `.c` 文件都可以有自己的编译和链接选项。因此我们可以把 `-@rm -f Makefile.$*` 注释掉来观察 `Makefile.$*` 的内容，如下图所示：
 
-![EUbr1d](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/EUbr1d.png)
+![[attachments/2c68329da607800c8f2c3cf4676c84fc_MD5.png]]
 
 我们可以看到重点在第 4 行包含了 `abstract-machine` 的 Makefile。
 
 为了更清晰的看到 Makefile 执行过程中发生了什么，我们在**child make** 命令后加入 `-nB` 选项
 
-![QBvZqZ](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/QBvZqZ.png)
+![[attachments/22d6aa0685512210fe179bb04efb9a48_MD5.png]]
 
 现在我们使用下面的命令删除掉 echo 和 mkdir 开头的行并传入 vim 中。
 
@@ -105,7 +105,7 @@ make ARCH=x86-nemu ALL=dummy run -B \
 
 在 vim 中使用 `set nowrap` 得到下面的结果
 
-![m8fQQf](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/m8fQQf.png)
+![[attachments/52168dafc84991d04d779333da1b4d9d_MD5.png]]
 
 ### Building dummy-run
 
@@ -157,7 +157,7 @@ make -s -C /home/suyi/ics2020/abstract-machine/am archive
 
 下面是 building am-archive 的过程（删除了不必要的编译选项）
 
-![l5GJt7](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/l5GJt7.png)
+![[attachments/c8f1ed2e57a7cc2ca603155dbd155a8a_MD5.png]]
 
 > [!chatgpt] ar rcs 是什么意思
 > "ar rcs" 是一个Unix/Linux命令，它用于创建静态库文件。 
@@ -169,7 +169,7 @@ make -s -C /home/suyi/ics2020/abstract-machine/am archive
 
 ### klib 的静态库归档
 
-![bX5da7](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/bX5da7.png)
+![[attachments/6e49eb9e958c4b8e5a65f2ef9ce42a86_MD5.png]]
 
 
 ### 链接&运行
@@ -290,7 +290,7 @@ rcs
 
 ### klib 的静态库归档
 
-![AYyum3](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/AYyum3.png)
+![[attachments/44d83a57b87d8e4e979cb708d99eaf79_MD5.png]]
 
 
 ### 链接&运行

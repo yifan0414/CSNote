@@ -77,7 +77,7 @@ main (int argc, char* argv[])
 > [!target]
 > Write a concurrent prime sieve program for xv6 using pipes and the design illustrated in the picture halfway down [this page](http://swtch.com/~rsc/thread/) and the surrounding text. This idea is due to Doug McIlroy, inventor of Unix pipes. Your solution should be in the file user/primes. c.
 
-![image.png | 700](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/20240114153742.png)
+![[attachments/6d717bbce4364bcf7fd04dce8f256f53_MD5.png|300]]
 
 
 ```c
@@ -152,7 +152,7 @@ int main () {
 }
 ```
 
-![image.png|600](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/20240114163317.png)
+![[attachments/5d50bb750457add7a20c823f910fe443_MD5.png|600]]
 
 > [!chatgpt]-
 > 程序陷入死循环并持续输出 "prime 0" 的原因在于管道的写端没有被及时关闭，导致 `read` 函数无法正确地检测到管道末尾（EOF），进而无法退出读取循环。让我们详细分析下代码中的关键部分：
@@ -271,7 +271,7 @@ The following example illustrates xarg's behavior:
 
 							  
 ### 2.5.1 关于 cat 的命令
-![image.png|300](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/20240114225901.png)
+![[attachments/221dc95ba0a28d61ebb38d9393371b07_MD5.png|300]]
 
 而 cat 的实现是这样的
 

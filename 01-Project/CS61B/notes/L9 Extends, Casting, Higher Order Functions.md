@@ -11,9 +11,9 @@
 
 举例：
 
-![huGhOW](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/huGhOW.png)
+![[attachments/9f48d266f988c2d84467c05f659157b3_MD5.png]]
 
-![GGXwS8](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/GGXwS8.png)
+![[attachments/daf9449c192e1ef4bf381620efb130d6_MD5.png]]
 
 
 

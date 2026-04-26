@@ -104,8 +104,8 @@ to get arrays with specific values.
 
 最后学习了 JAVA 中的数组，这也许是这一课最大收获，与 C 的数组不同的是，JAVA 数组是一个对象。他有他自己的属性和方法，最重要的一点是当数组内是 reference type 时，这些引用数据并不是按照内存顺序排列的而是分布在不同的地址。
 
-![18NmiX](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/18NmiX.png)
+![[attachments/52f8ed48799dbd09253b3af7fd1cd330_MD5.png]]
 
-![ypERfa](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/ypERfa.png)
+![[attachments/2750d4eb3573ec2f4f73be2dd43c841e_MD5.png]]
 
 对于 C 而言，二维数组，结构体数组在内存中都是顺序排列的，都可以用指针精确的控制。

@@ -28,15 +28,15 @@ Every possible situation can be thought of as a world, represented by the lowerc
 - In general, the higher the value, the more likely the event is to happen.
 - The probabilities of every possible event, when summed together, are equal to 1.
 
-![lotp](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/lotp.png)
+![[attachments/26fbc0a3909140e6791613d9937185c6_MD5.png]]
 
 The probability of rolling a number *R* with a standard die can be represented as P(*R*). In our case, P(*R*) = 1/6, because there are six possible worlds (rolling any number from 1 through 6) and each is equally likely to happen. Now, consider the event of rolling two dice. Now, there are 36 possible events, which are, again, equally as likely.
 
-![36events1](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/36events1.png)
+![[attachments/7a6507b96fcde15bb28ec53c66d727dc_MD5.png]]
 
 However, what happens if we try to predict the sum of the two dice? In this case, we have only 11 possible values (the sum has to range from 2 to 12), and they do not occur equally as often.
 
-![sumdice](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/sumdice.png)
+![[attachments/d4b82f760264747aac57ffb06fb70d15_MD5.png]]
 
 To get the probability of an event, we divide the number of worlds in which it occurs by the number of total possible worlds. For example, there are 36 possible worlds when rolling two dice. Only in one of these worlds, when both dice yield a 6, do we get the sum of 12. Thus, P(*12*) = 1/36, or, in words, the probability of rolling two dice and getting two numbers whose sum is 12 is 1/36. What is P(*7*)? We count and see that the sum 7 occurs in 6 worlds. Thus, P(*7*) = 6/36 = 1/6.
 
@@ -52,19 +52,19 @@ Conditional probability is expressed using the following notation: P(*a | b*), m
 
 Mathematically, to compute the conditional probability of *a* given *b*, we use the following formula:
 
-![conditional](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/conditional.png)
+![[attachments/a7e4fa5dfc195fd07d7d0a96ff25e772_MD5.png]]
 
 To put it in words, the probability that *a* given *b* is true is equal to the probability of *a* and *b* being true, divided by the probability of *b*. An intuitive way of reasoning about this is the thought “we are interested in the events where both *a* and *b* are true (the numerator), but only from the worlds where we know *b* to be true (the denominator).” Dividing by *b* restricts the possible worlds to the ones where *b* is true. The following are algebraically equivalent forms to the formula above:
 
-![conditionalequivalent](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/conditionalequivalent.png)
+![[attachments/b453db075c230979be4273950a8dff09_MD5.png]]
 
 For example, consider P(*sum 12 | roll six on one die*), or the probability of rolling two dice and getting a sum of twelve, given that we have already rolled one die and got a six. To calculate this, we first restrict our worlds to the ones where the value of the first die is six:
 
-![sumconditional1](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/sumconditional1.png)
+![[attachments/7e64f5acb44393cdca2e1468b49fbf0d_MD5.png]]
 
 Now we ask how many times does the event *a* (the sum being 12) occur in the worlds that we restricted the question to (dividing by P(*b*), or the probability of the first die yielding 6).
 
-![sumconditional2](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/sumconditional2.png)
+![[attachments/656bbd6c77dce4f21774e37600fb3247_MD5.png]]
 
 ## Random Variables
 
@@ -90,7 +90,7 @@ Independence can be defined mathematically: events *a* and *b* are independent i
 
 Bayes’ rule is commonly used in probability theory to compute conditional probability. In words, Bayes’ rule says that the probability of *b* given *a* is equal to the probability of *a* given *b*, times the probability of *b*, divided by the probability of *a*.
 
-![bayesrule](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/bayesrule.png)
+![[attachments/2ea3540cdfa0d6f3442a7ebf64275f85_MD5.png]]
 
 For example, we would like to compute the probability of it raining in the afternoon if there are clouds in the morning, or P(*rain | clouds*). We start with the following information:
 
@@ -145,13 +145,13 @@ In the last equation, it is possible to view P(*rain*) as some constant by which
 
 Marginalization can be expressed for random variables the following way:
 
-![marginalization](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/marginalization.png)
+![[attachments/c53d1354f16d35660a4bf7dd4d223dd9_MD5.png]]
 
 The left side of the equation means “The probability of random variable X having the value xᵢ.” For example, for the variable C we mentioned earlier, the two possible values are *clouds in the morning* and *no clouds in the morning*. The right part of the equation is the idea of marginalization. P(*X = xᵢ*) is equal to the sum of all the joint probabilities of xᵢ and every single value of the random variable Y. For example, P(*C = cloud*) = P(*C = cloud, R = rain*) + P(*C = cloud, R = ¬rain*) = 0.08 + 0.32 = 0.4.
 
 - **Conditioning**: P(*a*) = P(*a | b*)P(*b*) + P(*a | ¬b*)P(*¬b*). This is a similar idea to marginalization. The probability of event *a* occurring is equal to the probability of *a* given *b* times the probability of *b*, plus the probability of *a* given *¬b* time the probability of *¬b*.
 
-![conditioning](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/conditioning.png)
+![[attachments/2c03ece6615775a6140a0d254c1d3ed4_MD5.png]]
 
 In this formula, the random variable X takes the value xᵢ with probability that is equal to the sum of the probabilities of xᵢ given each value of the random variable Y multiplied by the probability of variable Y taking that value. This makes sense if we remember that P(*a | b*) = P(*a, b*)/P(*b*). If we multiply this expression by P(*b*), we end up with P(*a, b*), and from here we do the same as we did with marginalization.
 
@@ -166,7 +166,7 @@ A Bayesian network is a data structure that represents the dependencies among ra
 
 Let’s consider an example of a Bayesian network that involves variables that affect whether we get to our appointment on time.
 
-![bayesiannetwork](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/bayesiannetwork.png)
+![[attachments/ea8634db085630d8f6bb8955c63cacf4_MD5.png]]
 
 Let’s describe this Bayesian network from the top down:
 
@@ -224,7 +224,7 @@ Let’s take an example. We want to compute the probability distribution of the 
 
 Inference by enumeration is a process of finding the probability distribution of variable X given observed evidence e and some hidden variables Y.
 
-![inferencebyenumeration](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/inferencebyenumeration.png)
+![[attachments/f5ec9359ff1a1358e55ea004e12e7d99_MD5.png]]
 
 In this equation, X stand for the query variable, e for the observed evidence, y for all the values of the hidden variables, and α normalizes the result such that we end up with probabilities that add up to 1. To explain the equation in words, it is saying that the probability distribution of X given e is equal to a normalized probability distribution of X and e. To get to this distribution, we sum the normalized probability of X, e, and y, where y takes each time a different value of the hidden variables Y.
 
@@ -416,11 +416,11 @@ A Markov chain is a sequence of random variables where the distribution of each 
 
 To start constructing a Markov chain, we need a **transition model** that will specify the the probability distributions of the next event based on the possible values of the current event.
 
-![transitionmodel](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/transitionmodel.png)
+![[attachments/4293c0b187aeec044c73b437974bbb5a_MD5.png]]
 
 In this example, the probability of tomorrow being sunny based on today being sunny is 0.8. This is reasonable, because it is more likely than not that a sunny day will follow a sunny day. However, if it is rainy today, the probability of rain tomorrow is 0.7, since rainy days are more likely to follow each other. Using this transition model, it is possible to sample a Markov chain. Start with a day being either rainy or sunny, and then sample the next day based on the probability of it being sunny or rainy given the weather today. Then, condition the probability of the day after tomorrow based on tomorrow, and so on, resulting in a Markov chain:
 
-![markovchain](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/markovchain.png)
+![[attachments/2e14898e3b0c79a2b7c067a34ff5266f_MD5.png]]
 
 Given this Markov chain, we can now answer questions such as “what is the probability of having four rainy days in a row?” Here is an example of how a Markov chain can be implemented in code:
 
@@ -458,7 +458,7 @@ A hidden [[Markov chain|Markov Model]] is a type of a Markov model for a system 
 
 For our discussion, we will use the following example. Our AI wants to infer the weather (the hidden state), but it only has access to an indoor camera that records how many people brought umbrellas with them. Here is our **sensor model** (also called **emission model**) that represents these probabilities:
 
-![sensormodel](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/sensormodel.png)
+![[attachments/c1366ab34daceb07a1f23c2773467133_MD5.png]]
 
 In this model, if it is sunny, it is most probable that people will not bring umbrellas to the building. If it is rainy, then it is very likely that people bring umbrellas to the building. By using the observation of whether people brought an umbrella or not, we can predict with reasonable likelihood what the weather is outside.
 
@@ -468,7 +468,7 @@ The assumption that the evidence variable depends only on the corresponding stat
 
 A hidden Markov model can be represented in a Markov chain with two layers. The top layer, variable X, stands for the hidden state. The bottom layer, variable E, stands for the evidence, the observations that we have.
 
-![hiddenmarkovchain](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/hiddenmarkovchain.png)
+![[attachments/186300ce92a5ffba0b31336afe139100_MD5.png]]
 
 Based on hidden Markov models, multiple tasks can be achieved:
 

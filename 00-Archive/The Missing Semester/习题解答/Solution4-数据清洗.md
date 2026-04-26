@@ -7,7 +7,7 @@
     # 850
     ```
     
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/4/1.png)
+    ![[attachments/be4a89e3b896496cf80bb28cec672528_MD5.png]]
     
     -   大小写转换：`tr "[:upper:]" "[:lower:]"`
     -   `^([^a]*a){3}.*[^'s]$`：查找一个以 a 结尾的字符串三次
@@ -104,13 +104,13 @@
     0 18c4819a536548a29def9f2b56f63dd0 Fri 2021-05-28 02:09:51 BST—Fri 2021-05-28 02:25:50 BST
     ```
     
-    可以看到已经可以列出多次启动信息了，然后我们进行十次重启。![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/4/2.png)可以使用 `systemd-analyze`工具看一下启动时间都花在哪里：
+    可以看到已经可以列出多次启动信息了，然后我们进行十次重启。![[attachments/1a6cf49912bd88b29464a75b9d912921_MD5.png]]可以使用 `systemd-analyze`工具看一下启动时间都花在哪里：
     
     ```bash
     sudo systemd-analyze plot > systemd.svg
     ```
     
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/4/3.svg)  
+    ![[attachments/0cf8ae7ecc70b1dd0823a73f2efa2fbc_MD5.svg]]  
     _右键图片新窗口打开查看大图_  
     可以看到启动时间为 14.157s。 接下来，编写脚本`getlog.sh`来获取最近十次的启动时间数据：
     

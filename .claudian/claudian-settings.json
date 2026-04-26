@@ -1,6 +1,6 @@
 {
   "userName": "yifan",
-  "permissionMode": "yolo",
+  "permissionMode": "normal",
   "model": "haiku",
   "thinkingBudget": "off",
   "effortLevel": "high",
@@ -17,8 +17,8 @@
       "id": "snippet-1776972241287",
       "name": "APIKEY",
       "description": "",
-      "envVars": "OPENAI_API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c",
-      "scope": "provider:codex"
+      "envVars": "API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c",
+      "scope": "shared"
     }
   ],
   "customContextLimits": {},
@@ -51,8 +51,8 @@
         "yifanMac-mini": "/opt/homebrew/bin/codex"
       },
       "reasoningSummary": "detailed",
-      "environmentVariables": "model_provider = \"OpenAI\"\nmodel = \"gpt-5.4\"\nreview_model = \"gpt-5.4\"\nmodel_reasoning_effort = \"xhigh\"\ndisable_response_storage = true\nnetwork_access = \"enabled\"\nwindows_wsl_setup_acknowledged = true\nmodel_context_window = 1000000\nmodel_auto_compact_token_limit = 900000\n\n[model_providers.OpenAI]\nname = \"OpenAI\"\nbase_url = \"https://api.duckcode.cn\"\nwire_api = \"responses\"\nrequires_openai_auth = true",
-      "environmentHash": "",
+      "environmentVariables": "OPENAI_API_KEY=API_KEY\nOPENAI_BASE_URL=https://api.duckcode.cn\nOPENAI_MODEL=gpt-5.5\nCODEX_SANDBOX=workspace-write",
+      "environmentHash": "OPENAI_API_KEY=API_KEY|OPENAI_BASE_URL=https://api.duckcode.cn|OPENAI_MODEL=gpt-5.5",
       "installationMethodsByHost": {
         "yifanMac-mini": "native-windows"
       },
@@ -62,11 +62,11 @@
   "settingsProvider": "claude",
   "savedProviderModel": {
     "claude": "haiku",
-    "codex": "gpt-5.4"
+    "codex": "gpt-5.5"
   },
   "savedProviderEffort": {
     "claude": "high",
-    "codex": "xhigh"
+    "codex": "medium"
   },
   "savedProviderServiceTier": {
     "codex": "default"

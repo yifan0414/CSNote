@@ -10,7 +10,7 @@
   "showToolbar": true,
   "tabSize": 8,
   "editorAutoSaveInterval": 5000,
-  "defaultTabsBorder": "border-hover",
+  "defaultTabsBorder": "border-always",
   "defaultTabsBorderColor": "#e0e0e0",
   "hideTabsEditBlockButton": false,
   "defaultTitleLineClamp": "one",

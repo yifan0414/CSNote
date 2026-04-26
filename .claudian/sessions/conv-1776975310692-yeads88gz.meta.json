@@ -6,12 +6,7 @@
   "createdAt": 1776975310694,
   "updatedAt": 1776999598938,
   "lastResponseAt": 1776976899893,
-  "sessionId": "019dbbfb-74ba-7a42-a47a-c880c7deb5c7",
-  "providerState": {
-    "threadId": "019dbbfb-74ba-7a42-a47a-c880c7deb5c7",
-    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/04/24/rollout-2026-04-24T04-15-12-019dbbfb-74ba-7a42-a47a-c880c7deb5c7.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex/sessions"
-  },
+  "sessionId": null,
   "currentNote": "06-Algorithm/00题库/枚举子集（递归实现指数型枚举）.md",
   "usage": {
     "inputTokens": 33346,

@@ -269,7 +269,7 @@ int inc(int y, int x) {
 
 当然，你也可以用其他第三方的工具，例如 cgdb:
 
-![Z87BSw](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Z87BSw.jpg)
+![[attachments/dd7785cc0869ff7cf806311dca71969d_MD5.jpg]]
 
 怎么样，非常方便吧？给大家两个有用的窍门：
 

@@ -43,7 +43,7 @@
 
 回到单链表，我们只需要关心其操作，比如**addFirst**、**getFirst**、**size**、**addLast**。对于其到底是用递归实现还是循环实现亦或者有没有头结点都不重要，甚至单链表并不需要是链表结构实现，我们在意的是其功能是否 workable and concise。
 
-![BAJuAx](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/BAJuAx.png)
+![[attachments/35689a4be1732f1379c2c7d35006fc93_MD5.png]]
 
 
 在实现内部，我们必须考虑其可复用性，可维护性，性能等一系列东西。因此如何组织数据结构变得尤为重要。

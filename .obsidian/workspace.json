@@ -23,16 +23,27 @@
             }
           },
           {
-            "id": "d408584c0cc2d404",
+            "id": "b06808692e0e0ebe",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Paper/Papers.base",
-                "viewName": "All Papers"
+                "file": "Paper/react-synergizing-reasoning-and-acting-in-language-models/react-synergizing-reasoning-and-acting-in-language-models.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-table",
-              "title": "Papers"
+              "icon": "lucide-file",
+              "title": "react-synergizing-reasoning-and-acting-in-language-models"
             }
           }
         ],
@@ -93,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 211
+    "width": 224
   },
   "right": {
     "id": "8815071129bdee48",
@@ -178,16 +189,6 @@
             }
           },
           {
-            "id": "aacac9bcc1405bb7",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
             "id": "f13ad54c9e405404",
             "type": "leaf",
             "state": {
@@ -213,21 +214,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Paper/flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat.md",
+                "file": "Paper/react-synergizing-reasoning-and-acting-in-language-models/react-synergizing-reasoning-and-acting-in-language-models.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat 的大纲"
+              "title": "react-synergizing-reasoning-and-acting-in-language-models 的大纲"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 462
+    "width": 455
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -248,57 +249,58 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "fix-math:Current file": false,
       "copilot:Open Copilot Chat": false,
-      "claudian:Open Claudian": false
+      "claudian:Open Claudian": false,
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "d408584c0cc2d404",
+  "active": "b06808692e0e0ebe",
   "lastOpenFiles": [
-    "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms.md",
-    "Paper/Papers.base",
-    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding.md",
-    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/assets/paper_2411.14401.pdf",
-    "Paper/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and.md",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.png",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.pdf",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models/react-synergizing-reasoning-and-acting-in-language-models.md",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629_cropbox_tmp.png",
+    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/pipeline_2604.21444.png",
+    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question.md",
+    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/pipeline_2604.21444.pdf",
     "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/assets/pipeline_2602.03615.png",
-    "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/assets/paper_2602.03615.pdf",
-    "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/assets",
-    "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms",
-    "Diary/2023-02-09.md",
-    "Paper/toolformer-language-models-can-teach-themselves-to-use-tools.md",
-    "Paper/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/assets/pipeline_2510.08818.pdf",
-    "Paper/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/assets/pipeline_2510.08818.png",
-    "Paper/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/assets/paper_2510.08818.pdf",
-    "Paper/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/assets",
-    "Paper/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and",
-    "test",
-    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/assets/pipeline_2411.14401.png",
-    "Paper/arxiv_2511.10134.md",
-    "Paper/本子.md",
-    "Paper/flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat.md",
-    "Paper/papers/infinity-video-a-training-free-approach-to-long-video-understanding-via-continuo/infinity-video-a-training-free-approach-to-long-video-understanding-via-continuo.md",
-    "Paper/1月8日汇报.md",
-    "Paper/papers/infinity-video-a-training-free-approach-to-long-video-understanding-via-continuo/assets/pipeline_2501.19098v1.png",
-    "Paper/cope-videolm-codec-primitives-for-efficient-video-language-models.md",
-    "Paper/explicit-temporal-semantic-modeling-for-dense-video-captioning-via-context-aware-cross.md",
-    "Paper/summary_flashvid_tstm_video_compression.md",
-    "Paper/summary_video_evidence_grounding_coe.md",
-    "Paper/Video Evidence to Reasoning Efficient Video Understanding via Explicit Evidence Grounding.md",
-    "Paper/assets/pipeline_2302.04761.png",
-    "Paper/assets/experiment_table_2302.04761_8_ablation_analysis_data_quality.png",
-    "Paper/assets/experiment_table_2302.04761_7_ablation_analysis_decoding_k.png",
-    "Paper/assets/experiment_table_2302.04761_6_other_experimental_perplexity.png",
-    "Paper/assets/experiment_table_2302.04761_5_main_results_temporal.png",
-    "Paper/assets/experiment_table_2302.04761_4_main_results_mlqa.png",
-    "copilot/copilot-conversations/局域网SSH慢排查@20260424_033944.md",
-    "font.md",
-    "copilot/copilot-conversations/模拟器文档总结@20260424_014734.md",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629_tmp.png",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/paper_2210.03629.pdf",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models",
+    "Paper/Papers.base",
+    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/paper_2604.21444.pdf",
+    "Paper/文本视频/TOPA.md",
+    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets",
+    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question",
+    "Paper/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding.md",
+    "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms.md",
+    "copilot/copilot-conversations/模型身份询问@20260426_155420.md",
+    "Paper/实时视频描述/Dense-Captioning Events in Videos.md",
+    "06-Algorithm/02基础/树/树的遍历.md",
+    "06-Algorithm/02基础/高精度/大数相乘.md",
+    "06-Algorithm/02基础/高精度/大数类.md",
+    "06-Algorithm/01题单/我已学算法总表.md",
+    "06-Algorithm/04算法分析/快速排序/分治排序其一：快速排序（一）.md",
+    "06-Algorithm/Contest/abc375/D-ABA.md",
+    "06-Algorithm/Contest/abc374/D Separated Lunch.md",
+    "06-Algorithm/Contest/abc374/E Sensor Optimization Dilemma 2.md",
+    "06-Algorithm/Contest/考试/6.md",
+    "06-Algorithm/未命名.base",
+    "Clippings/2012，改变人类命运的180天-36氪.md",
+    "attachments/afe65fac1019e35fb67c0622334293d1_MD5.png",
+    "attachments/816e09340652226edd1cfe423992622a_MD5.png",
+    "attachments/3d32f58746db5bcb2a8d25cd16659ab3_MD5.png",
+    "attachments/ebbd97f470760491b0569f755c7d24cf_MD5.png",
+    "attachments/153bc7a4666f4a3ab70f3586e4f08043_MD5.png",
+    "Clippings/对人工智能毫无了解，导师让看transformer和BERT的两篇论文。好几天了，基本没看懂，何解？ - 知乎.md",
+    "Clippings/深度学习把两篇论文的方法拼接在一起，效果实现了新的sota，可以发论文吗？.md",
+    "Clippings/数学公式提供.md",
+    "Clippings/Noteworthy AI Research Papers of 2024 (Part One).md",
     "07-MultiModal/MLLM.md",
-    "07-MultiModal/未命名.md",
+    "06-Algorithm/01题单/题单汇总.md",
+    "06-Algorithm/01题单/题型分类/动态规划.md",
+    "06-Algorithm/01题单/题型分类/二分查找.md",
     "07-MultiModal/未命名.canvas",
-    "01-Project/CS61B/notes/L3 Testing Philosophy.md",
-    "01-Project/CS61B/notes/L5 Single linked list.md",
-    "01-Project/CS144/checkout 0.md",
-    "01-Project/00-LittleProject/数码管/数码管显示.md",
-    "01-Project/CMU-CSAPP/1 datalab/datalab-note.md",
     "01-Project/CS61A/canvasNote/IntroToPython.canvas",
     "07-AI/神经网络/人工神经网络训练过程.canvas",
     "08-Lee/未命名.canvas",

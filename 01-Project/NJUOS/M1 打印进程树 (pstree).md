@@ -21,7 +21,7 @@
 
 操作系统能同时运行多个程序。大家都用过[任务管理器](https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html)——能够显示当前系统运行的状态、进程、处理器占用等等。下面是 Plasma Desktop 的任务管理器，能够显示系统资源的使用情况和进程的信息。当然，“友好地显示” 并不是这门课的主题 (我们假设可以绘制像素点，就能通过代码实现友好的界面)：
 
-![1etLOT](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/1etLOT.jpg)
+![[attachments/b1b53d8021d5a2609288023d9389f3d5_MD5.jpg]]
 
 作为操作系统课，我们更关注的问题其实是**任务管理器也是操作系统上的应用程序**，我们应该如何实现它？理论上，操作系统就是 “一组对象和操作它们的 API 规约” (例如在 x86-64 系统上，应用程序通过 syscall 指令调用操作系统 API)，所以一定有 API 能获取系统中有哪些正在运行的进程 (和它们的信息，例如使用的内存)。如果你是操作系统的设计者，你会提供怎样的 API (syscall)？
 

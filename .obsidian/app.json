@@ -13,7 +13,7 @@
   "promptDelete": false,
   "attachmentFolderPath": "attachments",
   "showUnsupportedFiles": true,
-  "trashOption": "none",
+  "trashOption": "system",
   "alwaysUpdateLinks": true,
   "showFrontmatter": false,
   "useTab": true,

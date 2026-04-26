@@ -2,7 +2,7 @@
 >[!question] 问题 1：什么是输入输出设备？ 
 > 一个能与 CPU 交换数据的接口/控制器
 > 
-> ![4TWEGk](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/4TWEGk.png)
+> ![[attachments/92423cea42bc0cb393ee3ff6ac98cc03_MD5.png]]
 >
 >IO 设备概念简单，但每个设备都有自己的协议
 

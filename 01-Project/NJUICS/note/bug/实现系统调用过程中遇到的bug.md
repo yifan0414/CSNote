@@ -16,7 +16,7 @@ static Context* do_event(Event e, Context* c) {
 
 - [ ] 如何检查 nemu 中的死循环？ #pa/todo
 
-![WrBEvo](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/WrBEvo.png)
+![[attachments/b7deded8b5cd07f84aac6f2b1b4db3d2_MD5.png]]
 
 
 我们是通过 `naive_uload` 函数加载 `dummy.c` 程序的

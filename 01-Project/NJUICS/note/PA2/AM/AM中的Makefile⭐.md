@@ -87,11 +87,11 @@ endif
 
 这里的 `MAKECMDGOALS` 是由 `cpu-test` 中的 Makefile 传递过来的，如下图所示：
 
-![uNDrOG](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/uNDrOG.png)
+![[attachments/ab4dcdc29e3cbc516c33ffd1ff288b61_MD5.png]]
 
 这里的意思是如果命令行未指定 `MAKECMDGOALS` 的值，那么默认是 img。这里决定了 nemu 的运行规则，在 `nemu.mk` 中定义
 
-![CmA973](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/CmA973.png)
+![[attachments/9b4600cc0e13cb712fa01e5fed3aae7f_MD5.png]]
 
 > [!quote]- Makefile中可以直接判断变量是否为空吗，需要预先定义吗
 > 在 Makefile 中，你可以直接检查一个变量是否为空，无需预先定义。如果你尝试使用一个未定义的变量，Makefile 会把它当作一个空字符串处理。
@@ -176,7 +176,7 @@ endif
 ```
 
 > [!command] $(shell ls $(AM_HOME)/scripts/*.mk)
-> ![d0H2lm](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/d0H2lm.png)
+> ![[attachments/3b49c1fdad1d615e30a7a39e27c67b65_MD5.png]]
 
 > [!chatgpt]
 > 这段代码主要是在检查 `$(ARCH)` 变量的值是否在特定的一组预定义的架构中。让我们逐行解析。

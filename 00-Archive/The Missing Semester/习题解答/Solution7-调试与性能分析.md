@@ -41,7 +41,7 @@
      call plug#end()
     ```
     
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/1.png)然后在 vim 执行`:PlugInstall`安装插件![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/2.png)在需要检查的 shell 脚本中，执行`:Neomake` 即可进行 shellcheck 检查。然后光标移动到对应行时可以看到告警或错误。![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/3.png)
+    ![[attachments/6a1cedd5c334b71237332432961ff71a_MD5.png]]然后在 vim 执行`:PlugInstall`安装插件![[attachments/bbcf8a842b8fa175f5ace8a63b4b62c7_MD5.png]]在需要检查的 shell 脚本中，执行`:Neomake` 即可进行 shellcheck 检查。然后光标移动到对应行时可以看到告警或错误。![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/3.png)
     
 4.  (进阶题) 请阅读 [可逆调试](https://undo.io/resources/reverse-debugging-whitepaper/) 并尝试创建一个可以工作的例子（使用 [`rr`](https://rr-project.org/) 或 [`RevPDB`](https://morepypy.blogspot.com/2016/07/reverse-debugging-for-python.html)）。
 
@@ -220,7 +220,7 @@
         print(eval("fib9()"))
     ```
     
-    将代码拷贝到文件中使其变为一个可执行的程序。首先安装 [`pycallgraph`](http://pycallgraph.slowchop.com/en/master/)和[`graphviz`](http://graphviz.org/)(如果您能够执行`dot`, 则说明已经安装了 GraphViz.)。并使用 `pycallgraph graphviz -- ./fib.py` 来执行代码并查看`pycallgraph.png` 这个文件。`fib0` 被调用了多少次？我们可以通过记忆法来对其进行优化。将注释掉的部分放开，然后重新生成图片。这回每个`fibN` 函数被调用了多少次？![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/4.png)放开注释内容后，再次执行：![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/5.png)注意：如果你是 Python 2.7的话，需要修改一下注释的内容:
+    将代码拷贝到文件中使其变为一个可执行的程序。首先安装 [`pycallgraph`](http://pycallgraph.slowchop.com/en/master/)和[`graphviz`](http://graphviz.org/)(如果您能够执行`dot`, 则说明已经安装了 GraphViz.)。并使用 `pycallgraph graphviz -- ./fib.py` 来执行代码并查看`pycallgraph.png` 这个文件。`fib0` 被调用了多少次？我们可以通过记忆法来对其进行优化。将注释掉的部分放开，然后重新生成图片。这回每个`fibN` 函数被调用了多少次？![[attachments/5aede55360b12f09f40e5b11c64a9c47_MD5.png]]放开注释内容后，再次执行：![[attachments/5dc3225f1841a4b675ed8c24d7143a24_MD5.png]]注意：如果你是 Python 2.7的话，需要修改一下注释的内容:
     
     ```python
     from backports.functools_lru_cache import lru_cache
@@ -229,23 +229,23 @@
     不过生成的图片里面会包含很多不相关的内容。
     
 3.  我们经常会遇到的情况是某个我们希望去监听的端口已经被其他进程占用了。让我们通过进程的PID查找相应的进程。首先执行 `python -m http.server 4444` 启动一个最简单的 web 服务器来监听 `4444` 端口。在另外一个终端中，执行 `lsof | grep LISTEN` 打印出所有监听端口的进程及相应的端口。找到对应的 PID 然后使用 `kill <PID>` 停止该进程。  
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/6.png)
+    ![[attachments/34a09b34512c490931ea8502801ea73b_MD5.png]]
     
 4.  限制进程资源也是一个非常有用的技术。执行 `stress -c 3` 并使用`htop` 对 CPU 消耗进行可视化。现在，执行`taskset --cpu-list 0,2 stress -c 3` 并可视化。`stress` 占用了3个 CPU 吗？为什么没有？阅读[`man taskset`](http://man7.org/linux/man-pages/man1/taskset.1.html)来寻找答案。附加题：使用 [`cgroups`](http://man7.org/linux/man-pages/man7/cgroups.7.html)来实现相同的操作，限制`stress -m`的内存使用。  
-    首先是设备正常运行状态下的资源占用情况：![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/7.png)创建负载：
+    首先是设备正常运行状态下的资源占用情况：![[attachments/be53a2117996a36bc119f7678ad88365_MD5.png]]创建负载：
     
     ```bash
     stress -c 3
     ```
     
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/8.png)限制资源消耗
+    ![[attachments/08de301b88bfd958aee3174a2b3bd4cd_MD5.png]]限制资源消耗
     
     ```bash
      taskset --cpu-list 0,2 stress -c 3
     ```
     
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/9.png)taskset 命令可以将任务绑定到指定CPU核心。  
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/10.png)接下来看`cgroups`是如何工作的，我参考了两篇文章：
+    ![[attachments/4b32e5286a268afca576c74c2d1acd48_MD5.png]]taskset 命令可以将任务绑定到指定CPU核心。  
+    ![[attachments/4e200330ac769eb44631888749c7e29a_MD5.png]]接下来看`cgroups`是如何工作的，我参考了两篇文章：
     
     -   [Linux资源管理之cgroups简介](https://tech.meituan.com/2015/03/31/cgroups.html)
     -   [Linux-insidesControl Groups](https://0xax.gitbooks.io/linux-insides/content/Cgroups/linux-cgroups-1.html) ß
@@ -256,7 +256,7 @@
      stress -m 3 --vm-bytes 512M
     ```
     
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/11.png)由于题目要求限制内存的使用，首先我们看一下内存设备是否已经挂载：
+    ![[attachments/5f2d9d6dedd3050ce530d12beb6b77d2_MD5.png]]由于题目要求限制内存的使用，首先我们看一下内存设备是否已经挂载：
     
     ```bash
      root@raspberrypi:~# lssubsys -am
@@ -317,14 +317,14 @@
      stress: FAIL: [832] (451) failed run completed in 5s
     ```
     
-    执行失败。![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/12.png)  
+    执行失败。![[attachments/a69e2b1499c08e936e2a957bfc8b35fb_MD5.png]]  
     如果是申请 1M 内存，则可以成功运行：
     
     ```bash
      cgexec -g memory:cgroup_test_group stress -m 3 --vm-bytes 1M
     ```
     
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/13.png)
+    ![[attachments/edd3c25b411081d15241100318eefe12_MD5.png]]
     
-5.  (进阶题) `curl ipinfo.io` 命令或执行 HTTP 请求并获取关于您 IP 的信息。打开 [Wireshark](https://www.wireshark.org/) 并抓取 `curl` 发起的请求和收到的回复报文。（提示：可以使用`http`进行过滤，只显示 HTTP 报文） 这里我使用的是`curl www.baidu.com`，请求百度的首页并过滤了除 HTTP 之外的其他报文：![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/14.png)  
-    ![1.png](https://missing-semester-cn.github.io/missing-notes-and-solutions/2020/solutions/images/7/15.png)
+5.  (进阶题) `curl ipinfo.io` 命令或执行 HTTP 请求并获取关于您 IP 的信息。打开 [Wireshark](https://www.wireshark.org/) 并抓取 `curl` 发起的请求和收到的回复报文。（提示：可以使用`http`进行过滤，只显示 HTTP 报文） 这里我使用的是`curl www.baidu.com`，请求百度的首页并过滤了除 HTTP 之外的其他报文：![[attachments/ce3e3773300d1f1f4efcf3653d0ab41a_MD5.png]]  
+    ![[attachments/08badc4a79973ce486538130e2c72ad5_MD5.png]]

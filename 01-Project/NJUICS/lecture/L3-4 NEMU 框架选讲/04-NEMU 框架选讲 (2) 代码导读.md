@@ -129,7 +129,7 @@ Comments
 The friendly source code
 
 -   命令行可以控制 NEMU 的行为
--  ![eWaaTO](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/eWaaTO.png)
+-  ![[attachments/5217910d16e0cb903c692dacde1eb70d_MD5.png]]
 -   我们甚至看到了 `--help` 帮助信息
 
 
@@ -156,7 +156,7 @@ The friendly source code
 >
 >Unix 中的程序都是从标准输入/输出
 
-![46Atez](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/46Atez.png)
+![[attachments/dc30e675899a2bda4e0c156e1ca07067_MD5.png]]
 
 更进一步我们可以把标准输入输出重定向到文件中
 ```shell
@@ -165,7 +165,7 @@ The friendly source code
 
 这是一个小的脚本, 我们可以把他写进 make 中, 只需要添加额外一个 make 目标.
 
-![2HDKBM](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/2HDKBM.png)
+![[attachments/c1065cc9e769de5bf33a06ad58460a87_MD5.png]]
 
 >[!question] 这里为什么会出现 Makefile: 110 test Error 1?
 > 这里是 main 函数返回值，由于我们没有执行 NEMU 模拟代码执行而是直接退出了，所以 nemu 的状态没有得到更新。

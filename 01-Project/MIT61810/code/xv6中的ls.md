@@ -119,7 +119,7 @@ fmtname(char *path)
 
 这个函数的目的是返回文件的名字，例如 `/home/suyi/example` 则会返回 `example`。这里建立 buf 数组的主要目的应该是使得文件名字**具有统一的形式**。
 
-![image.png|300](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/20240114180423.png)
+![[attachments/5473f2508fdd723daa888def4d127a6a_MD5.png|300]]
 
 ## case dir
 

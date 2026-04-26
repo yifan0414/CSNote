@@ -11,7 +11,7 @@ tags:
   - "clippings"
   - "wikipedia"
 ---
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Sintay_SVG.svg/330px-Sintay_SVG.svg.png)
+![[attachments/c7de6b27a1dd94e9c63e9de7ce352b31_MD5.png]]
 
 As the degree of the Taylor polynomial rises, it approaches the correct function. This image shows sin *x* and its Taylor approximations by polynomials of degree **1**, **3**, **5**, **7**, **9**, **11**, and **13** at *x* = 0.
 
@@ -94,7 +94,7 @@ The Maclaurin series was named after [Colin Maclaurin](https://en.wikipedia.org/
 
 Main article: [Analytic function](https://en.wikipedia.org/wiki/Analytic_function "Analytic function")
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Exp_neg_inverse_square.svg/500px-Exp_neg_inverse_square.svg.png)
+![[attachments/59d6c2af4fbfecb778a627a48461b9a5_MD5.png]]
 
 The function ***e*<sup>(−1/<i>x</i><sup>2</sup>)</sup>** is not analytic at *x* = 0: the Taylor series is identically 0, although the function is not.
 
@@ -125,11 +125,11 @@ Uses of the Taylor series for analytic functions include:
 
 Main article: [Taylor's theorem](https://en.wikipedia.org/wiki/Taylor%27s_theorem "Taylor's theorem")
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Taylorsine.svg/500px-Taylorsine.svg.png)
+![[attachments/aeac33619021a7dba4bfde25f60c2995_MD5.png]]
 
 The sine function (blue) is closely approximated by its Taylor polynomial of degree 7 (pink) for a full period centered at the origin.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/LogTay.svg/500px-LogTay.svg.png)
+![[attachments/0914819f6809906cc16f29ce6a4c82db_MD5.png]]
 
 The Taylor polynomials for ln(1 + *x*) only provide accurate approximations in the range −1 < *x* ≤ 1. For *x* > 1, Taylor polynomials of higher degree provide worse approximations.
 
@@ -549,4 +549,4 @@ The trigonometric [Fourier series](https://en.wikipedia.org/wiki/Fourier_series 
 - ["Taylor series"](https://www.encyclopediaofmath.org/index.php?title=Taylor_series), *[Encyclopedia of Mathematics](https://en.wikipedia.org/wiki/Encyclopedia_of_Mathematics "Encyclopedia of Mathematics")*, [EMS Press](https://en.wikipedia.org/wiki/European_Mathematical_Society "European Mathematical Society"), 2001 \[1994\]
 - [Weisstein, Eric W.](https://en.wikipedia.org/wiki/Eric_W._Weisstein "Eric W. Weisstein") ["Taylor Series"](https://mathworld.wolfram.com/TaylorSeries.html). *[MathWorld](https://en.wikipedia.org/wiki/MathWorld "MathWorld")*.
 
-![](https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1&usesul3=1)
+![[attachments/2dbeb1435b5a0041290af1991c7d9a0d_MD5.png]]

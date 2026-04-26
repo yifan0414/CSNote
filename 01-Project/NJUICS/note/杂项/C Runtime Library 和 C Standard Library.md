@@ -196,8 +196,8 @@ ld crt1.o crti.o [user_objects] [system_libraries] crtn.o
 
 > [!sc] 使用 `gcc -Wl,--verbose a.o b.o main.o`
 > 
-> ![vCcOLW](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/vCcOLW.png)
+> ![[attachments/b5d4d96d7616dca68790516f42aa435e_MD5.png]]
 > 
 > 中间许多许多 libc.a 的库函数
 > 
-> ![n8CmPu](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/n8CmPu.png)
+> ![[attachments/9e7dc144b6ffdbfb1d41c379cabf71c5_MD5.png]]

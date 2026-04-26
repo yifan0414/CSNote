@@ -15,7 +15,7 @@ Shaass 以以下的方式摆放这些书籍。
 
 2.他将剩余的书籍水平纺织于竖直的书上面。
 水平放置的书的宽度和不能多于竖直放置的书的总厚度。图中描绘了书籍的样本排列。
-![image.png](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/img/20240919140225.png)
+![[attachments/a652e1c3ac5b93ab9ebc1f4587e546fd_MD5.png]]
 
 帮助 Shaass 找到可以达到的书架长度最小值。
 

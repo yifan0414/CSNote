@@ -53,7 +53,7 @@ image: $(IMAGE).elf
 > [!quote]
 > 【[完结] 2020 南京大学计算机系统基础习题课 (蒋炎岩)】 【精准空降到 22:39】 https://www.bilibili.com/video/BV1qa4y1j7xk/?p=7&share_source=copy_web&vd_source=587965785c97101d90acb761204e6795&t=1359
 
-![OJcIkZ](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/OJcIkZ.png)
+![[attachments/767f4d533814ed35fc57038c2fed6631_MD5.png|500]]
 
 当我们谈 PC 指针或者 rip 的时候，我们总是谈下一条指针的 PC。
 
@@ -93,7 +93,7 @@ image: $(IMAGE).elf
 	- 在指令中填入新地址
 
 
-![WrXktQ](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/WrXktQ.png)
+![[attachments/008fb83a412eeee6fe90f71ebe0eb97f_MD5.png|500]]
 
 
 > [!question]
@@ -115,9 +115,9 @@ image: $(IMAGE).elf
 | 节头表（可选）           | 程序头表（必选）               |
 
 
-![cmdLwh|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/cmdLwh.png)
+![[attachments/fd9d3ba84a364774246cd2a7f0e16684_MD5.png|500]]
 
-![Kemars|500](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/Kemars.png)
+![[attachments/6f0d888de81a6eb73b8ffe08afa2c70e_MD5.png|500]]
 
 ### 7 C语言链接过程中，如果标准静态库和自定义静态库函数同名冲突，那么符号解析会链接哪里的函数呢？
 

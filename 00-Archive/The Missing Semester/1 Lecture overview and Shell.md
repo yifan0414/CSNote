@@ -64,7 +64,7 @@ missing:~$ /bin/echo $PATH
 >[!note] 一大堆 `:` 符号, 看的我好烦
 > `echo $PATH` 会输出一串以 `:` 分割的文本, 此时我们可以利用管道工具传递给字文本处理程序 `sed` 把 `:` 变为换行符 `\n`.
 > 
-> ![f1amA8](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/f1amA8.png)
+> ![[attachments/d66edebfc5176b0a89b37cb4b920b8b6_MD5.png]]
 
 ## 在shell中导航
 
@@ -172,7 +172,7 @@ missing:~$ curl --head --silent google.com | grep --ignore-case content-length |
 >[!note] 管道使用的一个例子
 > `curl --head --silent baidu.com | grep -i content-length | cut --delimiter=' ' -f2`
 > 
->![ynoyOa](https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/uPic/ynoyOa.png)
+>![[attachments/b79f549a02c50ed4b6b7693d252f678f_MD5.png]]
 
 管道不仅仅可以用来处理文本, 还可以用来处理图片或者视频, 利用将最后一个管道程序设置为推流程序
 
