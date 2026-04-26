@@ -15,15 +15,11 @@ cover: "[[assets/pipeline_2411.14401.png]]"
 updated: 2026-04-26
 tags:
   - paper/arxiv
-status: unread
-priority:
-rating:
+status: reading
+priority: "5"
+rating: "5"
 topics:
-  - video understanding
-  - multimodal large language models
-  - training-free
-  - token merging
-  - zero-shot VQA
+  - Video Understanding
 code: https://github.com/Jam1ezhang/DYTO
 datasets:
   - NExTQA
@@ -36,9 +32,6 @@ datasets:
   - TGIF-QA
   - ANet-QA
   - Video-ChatGPT Generation
-pipeline_figure: assets/pipeline_2411.14401.png
-pipeline_caption: The overview of DyTo, a training-free model built upon image-based MLLM without any fine-tuning. Specifically, DyTo first divides the video into K clusters using the [CLS] token. Then the dynamic bipartite merging module samples frames from each cluster and controls the final output length as Z, resulting in better balance between computational efficiency and semantic richness.
-pipeline_source: TeX includegraphics from sec/3_method.tex -> figures/overview.pdf; converted to PNG with pdftoppm at 250 DPI
 arxiv_version: v2
 submitted: 2024-11-21
 last_revised: 2025-03-24

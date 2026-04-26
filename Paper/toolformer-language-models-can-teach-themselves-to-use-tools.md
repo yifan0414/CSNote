@@ -73,6 +73,7 @@ experiment_tables:
     caption: "Table 10: Examples of API calls for different tools, sorted by the filtering score. High values typically correspond to API calls that are intuitively useful for predicting future tokens."
     source: PDF fallback crop from arXiv PDF page 10; TeX source table caption/label in main.tex
 Rating: "4"
+topics:
 ---
 
 # TL;DR
