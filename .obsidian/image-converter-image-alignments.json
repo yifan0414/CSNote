@@ -114,5 +114,13 @@
       "height": "",
       "wrap": false
     }
+  },
+  "Paper/Papers.base": {
+    "210f72824043850e6a95f0c13d4bfc38": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
   }
 }

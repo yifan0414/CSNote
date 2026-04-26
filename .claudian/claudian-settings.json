@@ -19,6 +19,13 @@
       "description": "",
       "envVars": "API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c",
       "scope": "shared"
+    },
+    {
+      "id": "snippet-1777192256234",
+      "name": "codex_api",
+      "description": "",
+      "envVars": "OPENAI_API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c\nCODEX_HOME=/Users/yifan/.codex-duckcode",
+      "scope": "provider:codex"
     }
   ],
   "customContextLimits": {},
@@ -51,8 +58,8 @@
         "yifanMac-mini": "/opt/homebrew/bin/codex"
       },
       "reasoningSummary": "detailed",
-      "environmentVariables": "OPENAI_API_KEY=API_KEY\nOPENAI_BASE_URL=https://api.duckcode.cn\nOPENAI_MODEL=gpt-5.5\nCODEX_SANDBOX=workspace-write",
-      "environmentHash": "OPENAI_API_KEY=API_KEY|OPENAI_BASE_URL=https://api.duckcode.cn|OPENAI_MODEL=gpt-5.5",
+      "environmentVariables": "OPENAI_API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c\nCODEX_HOME=/Users/yifan/.codex-duckcode",
+      "environmentHash": "OPENAI_API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c",
       "installationMethodsByHost": {
         "yifanMac-mini": "native-windows"
       },
@@ -62,11 +69,11 @@
   "settingsProvider": "claude",
   "savedProviderModel": {
     "claude": "haiku",
-    "codex": "gpt-5.5"
+    "codex": "gpt-5.4"
   },
   "savedProviderEffort": {
     "claude": "high",
-    "codex": "medium"
+    "codex": "xhigh"
   },
   "savedProviderServiceTier": {
     "codex": "default"

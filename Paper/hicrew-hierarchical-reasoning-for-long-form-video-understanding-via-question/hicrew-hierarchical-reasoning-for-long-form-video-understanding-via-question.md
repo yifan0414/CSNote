@@ -1,18 +1,30 @@
 ---
 title: "HiCrew: Hierarchical Reasoning for Long-Form Video Understanding via Question-Aware Multi-Agent Collaboration"
-authors: ["Yuehan Zhu", "Jingqi Zhao", "Jiawen Zhao", "Xudong Mao", "Baoquan Zhao"]
+authors:
+  - Yuehan Zhu
+  - Jingqi Zhao
+  - Jiawen Zhao
+  - Xudong Mao
+  - Baoquan Zhao
 conference: ""
 year: 2026
-arxiv_url: "https://arxiv.org/abs/2604.21444"
+arxiv_url: https://arxiv.org/abs/2604.21444
 pdf_link: "[[assets/paper_2604.21444.pdf]]"
 cover: "[[assets/pipeline_2604.21444.png]]"
 updated: 2026-04-26
-tags: ["paper/arxiv", "video-qa", "long-video", "temporal-reasoning", "question-aware", "video-llm"]
-status: "unread"
-priority:
-rating:
-topics: ["Video Understanding"]
-code: "https://github.com/SYSUzzz/HiCrew"
+tags:
+  - paper/arxiv
+  - video-qa
+  - long-video
+  - temporal-reasoning
+  - question-aware
+  - video-llm
+status: unread
+priority: "1"
+rating: "3"
+topics:
+  - Video Understanding
+code: https://github.com/SYSUzzz/HiCrew
 ---
 
 ## TL;DR

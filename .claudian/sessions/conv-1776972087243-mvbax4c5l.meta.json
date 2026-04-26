@@ -6,12 +6,7 @@
   "createdAt": 1776972087244,
   "updatedAt": 1777191860532,
   "lastResponseAt": 1777191860532,
-  "sessionId": "019dc8e2-479f-7ba0-886f-39231cace278",
-  "providerState": {
-    "threadId": "019dc8e2-479f-7ba0-886f-39231cace278",
-    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/04/26/rollout-2026-04-26T16-22-45-019dc8e2-479f-7ba0-886f-39231cace278.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex/sessions"
-  },
+  "sessionId": null,
   "currentNote": "06-Algorithm/01题单/题型分类/搜索.md",
   "usage": {
     "inputTokens": 38501,

@@ -1,0 +1,26 @@
+{
+  "id": "conv-1777192135053-967v3lski",
+  "providerId": "codex",
+  "title": "Acknowledge greeting",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777192135054,
+  "updatedAt": 1777193987435,
+  "lastResponseAt": 1777193987435,
+  "sessionId": "019dc901-f86e-7801-a37d-7be1ea480ca6",
+  "providerState": {
+    "threadId": "019dc901-f86e-7801-a37d-7be1ea480ca6",
+    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/04/26/rollout-2026-04-26T16-57-22-019dc901-f86e-7801-a37d-7be1ea480ca6.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "Paper/react-synergizing-reasoning-and-acting-in-language-models/react-synergizing-reasoning-and-acting-in-language-models.md",
+  "usage": {
+    "inputTokens": 11219,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 6016,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 11219,
+    "percentage": 4,
+    "model": "gpt-5.4"
+  }
+}

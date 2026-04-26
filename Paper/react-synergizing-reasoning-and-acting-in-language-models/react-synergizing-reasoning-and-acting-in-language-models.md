@@ -1,18 +1,29 @@
 ---
 title: "ReAct: Synergizing Reasoning and Acting in Language Models"
-authors: ["Shunyu Yao", "Jeffrey Zhao", "Dian Yu", "Nan Du", "Izhak Shafran", "Karthik Narasimhan", "Yuan Cao"]
-conference: "ICLR"
+authors:
+  - Shunyu Yao
+  - Jeffrey Zhao
+  - Dian Yu
+  - Nan Du
+  - Izhak Shafran
+  - Karthik Narasimhan
+  - Yuan Cao
+conference: ICLR
 year: 2023
-arxiv_url: "https://arxiv.org/abs/2210.03629"
+arxiv_url: https://arxiv.org/abs/2210.03629
 pdf_link: "[[assets/paper_2210.03629.pdf]]"
 cover: "[[assets/pipeline_2210.03629.png]]"
 updated: 2026-04-26
-tags: ["paper/arxiv", "reasoning", "agent"]
-status: "unread"
-priority:
-rating:
-topics: ["LLM"]
-code: "https://react-lm.github.io/"
+tags:
+  - paper/arxiv
+  - reasoning
+  - agent
+status: unread
+priority: "1"
+rating: "5"
+topics:
+  - LLM
+code: https://react-lm.github.io/
 ---
 
 ## TL;DR

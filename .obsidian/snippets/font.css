@@ -241,6 +241,14 @@ settings:
     min: 0.6
     max: 1.4
     step: 0.05
+  - id: ics-font-scale-claudian-link
+    title: Claudian 链接字号倍率
+    description: 相对正文字号的倍数。
+    type: variable-number-slider
+    default: 0.9
+    min: 0.6
+    max: 1.2
+    step: 0.05
   - id: ics-font-scale-copilot
     title: Copilot 正文字号倍率
     description: 相对正文字号的倍数。
@@ -316,6 +324,7 @@ body {
   --ics-font-scale-file-explorer: 0.8;
   --ics-font-scale-claudian: 0.85;
   --ics-font-scale-claudian-heading: 0.95;
+  --ics-font-scale-claudian-link: 0.9;
   --ics-font-scale-copilot: var(--ics-font-scale-claudian);
   --ics-font-scale-copilot-heading: var(--ics-font-scale-claudian-heading);
   --ics-font-scale-copilot-small: 0.78;
@@ -349,6 +358,7 @@ body {
   --ics-font-size-file-explorer: calc(var(--ics-font-size-body) * var(--ics-font-scale-file-explorer));
   --ics-font-size-claudian: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian));
   --ics-font-size-claudian-heading: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian-heading));
+  --ics-font-size-claudian-link: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian-link));
   --ics-font-size-copilot: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot));
   --ics-font-size-copilot-heading: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot-heading));
   --ics-font-size-copilot-small: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot-small));
@@ -541,6 +551,7 @@ body.theme-dark .callout,
 .claudian-container {
   --claudian-font-size: var(--ics-font-size-claudian);
   --claudian-heading-size: var(--ics-font-size-claudian-heading);
+  --claudian-link-size: var(--ics-font-size-claudian-link);
   --claudian-code-size: var(--claudian-font-size);
   --claudian-code-font: "Maple Mono NF CN", "Maple Mono", "maplemono", var(--font-monospace);
   font-family: var(--font-text) !important;
@@ -558,6 +569,10 @@ body.theme-dark .callout,
   line-height: var(--line-height-normal, 1.8) !important;
   margin-top: 0.6em !important;
   margin-bottom: 0.4em !important;
+}
+
+.claudian-container a {
+  font-size: var(--claudian-link-size) !important;
 }
 
 .claudian-container code,

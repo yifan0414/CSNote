@@ -23,6 +23,30 @@
             }
           },
           {
+            "id": "72cefdc8362632bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/Video Understanding 论文综述报告.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Video Understanding 论文综述报告"
+            }
+          },
+          {
             "id": "b06808692e0e0ebe",
             "type": "leaf",
             "state": {
@@ -44,6 +68,30 @@
               },
               "icon": "lucide-file",
               "title": "react-synergizing-reasoning-and-acting-in-language-models"
+            }
+          },
+          {
+            "id": "4474e6fda3ef7b57",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question"
             }
           }
         ],
@@ -247,27 +295,27 @@
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "fix-math:Current file": false,
       "copilot:Open Copilot Chat": false,
       "claudian:Open Claudian": false,
       "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "b06808692e0e0ebe",
+  "active": "72cefdc8362632bd",
   "lastOpenFiles": [
+    "Paper/Papers.base",
+    "Paper/Video Understanding 论文综述报告.md",
+    "Paper/react-synergizing-reasoning-and-acting-in-language-models/react-synergizing-reasoning-and-acting-in-language-models.md",
+    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question.md",
     "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.png",
     "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.pdf",
-    "Paper/react-synergizing-reasoning-and-acting-in-language-models/react-synergizing-reasoning-and-acting-in-language-models.md",
     "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629_cropbox_tmp.png",
     "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/pipeline_2604.21444.png",
-    "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question.md",
     "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/pipeline_2604.21444.pdf",
     "Paper/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/assets/pipeline_2602.03615.png",
     "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629_tmp.png",
     "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/paper_2210.03629.pdf",
     "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets",
     "Paper/react-synergizing-reasoning-and-acting-in-language-models",
-    "Paper/Papers.base",
     "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets/paper_2604.21444.pdf",
     "Paper/文本视频/TOPA.md",
     "Paper/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/assets",
@@ -299,7 +347,6 @@
     "07-MultiModal/MLLM.md",
     "06-Algorithm/01题单/题单汇总.md",
     "06-Algorithm/01题单/题型分类/动态规划.md",
-    "06-Algorithm/01题单/题型分类/二分查找.md",
     "07-MultiModal/未命名.canvas",
     "01-Project/CS61A/canvasNote/IntroToPython.canvas",
     "07-AI/神经网络/人工神经网络训练过程.canvas",
