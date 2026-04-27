@@ -4,6 +4,23 @@
   "title": "Summarize P16330 Just Because problem",
   "titleGenerationStatus": "success",
   "createdAt": 1777313525191,
-  "updatedAt": 1777313534595,
-  "sessionId": null
+  "updatedAt": 1777315649106,
+  "lastResponseAt": 1777315649106,
+  "sessionId": "019dd024-2edd-7700-8ecc-957ddd335c26",
+  "providerState": {
+    "threadId": "019dd024-2edd-7700-8ecc-957ddd335c26",
+    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/04/28/rollout-2026-04-28T02-12-05-019dd024-2edd-7700-8ecc-957ddd335c26.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "02-Capture/灵感与工具/解决 Mac 上浏览器 Mathjax 渲染问题.md",
+  "usage": {
+    "inputTokens": 31823,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 31616,
+    "contextWindow": 950000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 31823,
+    "percentage": 3,
+    "model": "gpt-5.4"
+  }
 }

@@ -94,7 +94,7 @@ settings:
     title: 行内代码字号倍率
     description: 相对所在文字字号的倍数；正文中等价于相对正文字号。
     type: variable-number-slider
-    default: 0.9
+    default: 0.85
     min: 0.6
     max: 1.2
     step: 0.05
@@ -110,7 +110,7 @@ settings:
     title: 普通表格字号倍率
     description: 相对正文字号的倍数。
     type: variable-number-slider
-    default: 0.89
+    default: 0.9
     min: 0.6
     max: 1.2
     step: 0.01
@@ -196,6 +196,22 @@ settings:
     min: 0.6
     max: 1.4
     step: 0.05
+  - id: ics-font-scale-popup
+    title: 菜单和弹窗字号倍率
+    description: 控制右键菜单、命令面板、设置窗口内容和普通弹窗。
+    type: variable-number-slider
+    default: 0.8125
+    min: 0.6
+    max: 1.2
+    step: 0.0125
+  - id: ics-font-scale-popup-heading
+    title: 菜单和弹窗标题字号倍率
+    description: 控制设置标题、菜单分组标签等稍大的界面文字。
+    type: variable-number-slider
+    default: 0.875
+    min: 0.6
+    max: 1.3
+    step: 0.0125
   - id: ics-font-scale-ui-smaller
     title: 界面更小字号倍率
     description: 控制 Maple/Obsidian 的更小界面文字。
@@ -333,6 +349,8 @@ body {
   --ics-font-scale-footnote: 0.85;
   --ics-font-scale-property: 0.9;
   --ics-font-scale-link-suggestion: 0.9;
+  --ics-font-scale-popup: 0.8125;
+  --ics-font-scale-popup-heading: 0.875;
   --ics-font-scale-ui-smaller: 0.8125;
   --ics-font-scale-ui-small: 0.875;
   --ics-font-scale-ui-medium: 1;
@@ -369,6 +387,8 @@ body {
   --ics-font-size-footnote: calc(var(--ics-font-size-body) * var(--ics-font-scale-footnote));
   --ics-font-size-property: calc(var(--ics-font-size-body) * var(--ics-font-scale-property));
   --ics-font-size-link-suggestion: calc(var(--ics-font-size-body) * var(--ics-font-scale-link-suggestion));
+  --ics-font-size-popup: calc(var(--ics-font-size-body) * var(--ics-font-scale-popup));
+  --ics-font-size-popup-heading: calc(var(--ics-font-size-body) * var(--ics-font-scale-popup-heading));
   --ics-font-size-ui-smaller: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-smaller));
   --ics-font-size-ui-small: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-small));
   --ics-font-size-ui-medium: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-medium));
@@ -546,6 +566,98 @@ body.theme-dark .callout,
 .suggestion-container .suggestion-title,
 .suggestion-container .suggestion-note {
   font-size: var(--ics-font-size-link-suggestion) !important;
+}
+
+/* Menus, prompts, popovers, and settings should follow the UI font scale. */
+:where(.menu, .prompt, .popover, .modal, .modal-container, .document-search-container) {
+  --font-ui-smaller: var(--ics-font-size-ui-smaller);
+  --font-ui-small: var(--ics-font-size-ui-small);
+  --font-ui-medium: var(--ics-font-size-ui-medium);
+}
+
+:where(.prompt, .popover, .document-search-container) {
+  font-size: var(--ics-font-size-popup) !important;
+}
+
+:where(.prompt, .popover, .document-search-container) :where(*:not(svg):not(path)) {
+  font-size: var(--ics-font-size-popup) !important;
+}
+
+.menu {
+  --font-ui-small: var(--ics-font-size-popup);
+  --font-ui-medium: var(--ics-font-size-popup-heading);
+  font-size: var(--ics-font-size-popup) !important;
+}
+
+.menu .menu-item,
+.menu .menu-item-title,
+.menu .menu-item-icon,
+.menu .menu-item-icon .svg-icon,
+.menu .suggestion-item,
+.menu .suggestion-title,
+.menu .suggestion-flair {
+  font-size: var(--ics-font-size-popup) !important;
+}
+
+.menu .menu-item.is-label,
+.menu .menu-item.is-label .menu-item-title,
+.menu .suggestion-item.is-label,
+.menu .suggestion-item.is-label .suggestion-title {
+  font-size: var(--ics-font-size-popup-heading) !important;
+}
+
+.menu .menu-item-desc,
+.menu .suggestion-note,
+.menu .suggestion-hotkey {
+  font-size: var(--ics-font-size-ui-smaller) !important;
+}
+
+:where(.mod-settings),
+:where(.mod-settings) :where(*:not(svg):not(path)) {
+  font-size: var(--ics-font-size-popup) !important;
+}
+
+:where(.modal:not(.mod-settings)) :is(
+  .modal-content,
+  .modal-button-container,
+  .setting-item,
+  .setting-item-name,
+  .setting-item-description,
+  .setting-item-control,
+  .community-item,
+  .community-item-name,
+  .community-item-author,
+  .community-item-downloads-text,
+  .community-item-updated,
+  button,
+  input,
+  textarea,
+  select,
+  .dropdown,
+  .search-input-container input
+) {
+  font-size: var(--ics-font-size-popup) !important;
+}
+
+:where(.modal, .mod-settings) :is(
+  .modal-title,
+  .setting-item-heading .setting-item-name,
+  .vertical-tab-content h2,
+  .vertical-tab-header-group-title,
+  .community-modal-info-name
+) {
+  font-size: var(--ics-font-size-popup-heading) !important;
+}
+
+body.modal-setting-header:not(.is-mobile) .modal-container .mod-settings::before,
+body.modal-setting-header:not(.is-mobile).modal-setting-header-search .mod-settings::before,
+body.modal-setting-header:not(.is-mobile).modal-setting-header-search
+  .mod-settings
+  .modal-content
+  .setting-item:has(~ .hotkey-list-container)
+  .setting-item-info
+  .setting-item-name {
+  font-size: var(--ics-font-size-popup-heading) !important;
 }
 
 /* Editing-mode HTML fragments should follow surrounding text. */

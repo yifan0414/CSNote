@@ -1,6 +1,6 @@
 {
   "accentColor": "",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "baseFontSize": 16,
   "cssTheme": "Maple",
   "translucency": false,
@@ -22,8 +22,8 @@
     "callout",
     "pdf-soft-shadow",
     "paper-base-maple",
-    "font",
-    "code"
+    "code",
+    "font"
   ],
   "textFontFamily": "Maple Mono NF CN,苹方-简,Open Sans,LXGW WenKai,Inter,Georgia,Bookerly,Optima",
   "interfaceFontFamily": "Maple Mono NF CN,Open Sans,苹方-简,Inter,Bookerly",

@@ -21,33 +21,8 @@
               "icon": "lucide-table",
               "title": "Papers"
             }
-          },
-          {
-            "id": "37580594fc7c22ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02-Capture/灵感与工具/解决 Mac 上浏览器 Mathjax 渲染问题.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "解决 Mac 上浏览器 Mathjax 渲染问题"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 215
   },
   "right": {
     "id": "8815071129bdee48",
@@ -189,6 +164,21 @@
             }
           },
           {
+            "id": "57a2af7a11c358ed",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "06-Algorithm/00题库/P16330 Just Because!.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "P16330 Just Because! 的大纲"
+            }
+          },
+          {
             "id": "f13ad54c9e405404",
             "type": "leaf",
             "state": {
@@ -197,38 +187,13 @@
               "icon": "bot",
               "title": "Claudian"
             }
-          },
-          {
-            "id": "4a35926727611688",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
-            }
-          },
-          {
-            "id": "57a2af7a11c358ed",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Paper/Papers.base",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Papers 的大纲"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 408
+    "width": 523
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -247,17 +212,20 @@
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "claudian:Open Claudian": false,
-      "copilot:Open Copilot Chat": false,
-      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false
+      "claudian:Open Claudian": false
     }
   },
-  "active": "37580594fc7c22ca",
+  "active": "4b1f9a0fb5e66638",
   "lastOpenFiles": [
-    "02-Capture/灵感与工具.base",
-    "02-Capture/灵感与工具/解决 Mac 上浏览器 Mathjax 渲染问题.md",
-    "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid.md",
+    "06-Algorithm/00题库/P16330 Just Because!.md",
+    "06-Algorithm/未命名.base",
+    "00-Archive/The Missing Semester/7 调试及性能分析.md",
     "Paper/Papers.base",
+    "00-Archive/The Missing Semester/4 数据整理.md",
+    "00-Archive/The Missing Semester/2 Shell 工具和脚本.md",
+    "02-Capture/灵感与工具/解决 Mac 上浏览器 Mathjax 渲染问题.md",
+    "02-Capture/灵感与工具.base",
+    "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid.md",
     "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/assets/paper_2405.19209.pdf",
     "Paper/mineru.md",
     "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/assets/pipeline_2405.19209.png",
@@ -273,7 +241,6 @@
     "07-AI/01-数学/交叉熵.md",
     "03-Tool/command line/命令行的艺术.md",
     "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets",
-    "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language",
     "06-Algorithm/00题库/体育课.md",
     "07-AI/Question/为什么首先使用的不是relu，而是sigmoid.md",
     "01-Project/NJUICS/lecture/L7 链接与加载选讲/L7 链接 Note.md",
@@ -290,14 +257,9 @@
     "06-Algorithm/01题单/题型分类/动态规划.md",
     "06-Algorithm/01题单/题单汇总.md",
     "06-Algorithm/01题单/我已学算法总表.md",
-    "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders.md",
-    "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for.md",
     "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/assets/pipeline_2604.05015.png",
-    "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/assets/paper_2604.05015.pdf",
-    "Paper/raw/deepseek-v4-towards-highly-efficient-million-token-context-intelligence/deepseek-v4-towards-highly-efficient-million-token-context-intelligence.md",
     "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/assets/pipeline_arxiv_2603_11439v1.png",
     "Paper/raw/deepseek-v4-towards-highly-efficient-million-token-context-intelligence/assets/pipeline_deepseek-v4-f4cbe4fc.png",
-    "Paper/raw/react-synergizing-reasoning-and-acting-in-language-models/ReAct.md",
     "Paper/raw/deep-video-discovery-agentic-search-with-tool-use-for-long-form-video-understand/assets/pipeline_2505.18079.png",
     "Paper/raw/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.png",
     "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629_cropbox_tmp.png",
