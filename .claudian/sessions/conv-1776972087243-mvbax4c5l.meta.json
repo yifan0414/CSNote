@@ -1,21 +1,21 @@
 {
   "id": "conv-1776972087243-mvbax4c5l",
   "providerId": "codex",
-  "title": "Explain who you are",
-  "titleGenerationStatus": "success",
+  "title": "你是谁",
+  "titleGenerationStatus": "failed",
   "createdAt": 1776972087244,
-  "updatedAt": 1777191860532,
-  "lastResponseAt": 1777191860532,
+  "updatedAt": 1777285175696,
+  "lastResponseAt": 1777285163112,
   "sessionId": null,
-  "currentNote": "06-Algorithm/01题单/题型分类/搜索.md",
+  "currentNote": "Paper/Papers.base",
   "usage": {
-    "inputTokens": 38501,
+    "inputTokens": 9716,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 31104,
+    "cacheReadInputTokens": 6016,
     "contextWindow": 258400,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 38501,
-    "percentage": 15,
-    "model": "gpt-5.5"
+    "contextTokens": 9716,
+    "percentage": 4,
+    "model": "gpt-5.4"
   }
 }

@@ -1,0 +1,14 @@
+{
+  "id": "conv-1777285885065-ncp2xy68t",
+  "providerId": "codex",
+  "title": "nihao",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1777285885066,
+  "updatedAt": 1777285999084,
+  "lastResponseAt": 1777285895066,
+  "sessionId": null,
+  "providerState": {
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid.md"
+}

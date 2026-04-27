@@ -1,0 +1,14 @@
+{
+  "id": "conv-1777285631534-usq2j2ulf",
+  "providerId": "codex",
+  "title": "你好",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1777285631536,
+  "updatedAt": 1777285867702,
+  "lastResponseAt": 1777285788372,
+  "sessionId": null,
+  "providerState": {
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid.md"
+}

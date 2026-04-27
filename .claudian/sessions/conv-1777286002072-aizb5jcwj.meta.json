@@ -1,0 +1,26 @@
+{
+  "id": "conv-1777286002072-aizb5jcwj",
+  "providerId": "codex",
+  "title": "Acknowledge greeting",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777286002072,
+  "updatedAt": 1777313138302,
+  "lastResponseAt": 1777313138302,
+  "sessionId": "019dce84-00c8-70a1-b486-cc4c7fbda3a8",
+  "providerState": {
+    "threadId": "019dce84-00c8-70a1-b486-cc4c7fbda3a8",
+    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/04/27/rollout-2026-04-27T18-37-30-019dce84-00c8-70a1-b486-cc4c7fbda3a8.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid.md",
+  "usage": {
+    "inputTokens": 10528,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 9600,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 10528,
+    "percentage": 4,
+    "model": "gpt-5.4"
+  }
+}

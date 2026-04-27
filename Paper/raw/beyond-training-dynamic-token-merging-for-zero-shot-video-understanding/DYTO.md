@@ -174,7 +174,7 @@ Open-ended 结果不如 structured VQA 那样单向压制。DyTo 对 VCG Average
 | Time experiment | EgoSchema 500 samples, LLaVA-NeXT-34B, single NVIDIA A100 GPU |
 | SlowFast-LLaVA latency | 5.74 s/item |
 | DyTo latency | 6.22 s/item |
-
+[INFO]
 ## Limitations & Caveats
 
 - Open-ended VQA 并不是全面优于 baseline；表中 MSVD-QA / MSRVTT-QA 的 best baseline 有时高于 DyTo。

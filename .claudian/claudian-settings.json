@@ -19,13 +19,6 @@
       "description": "",
       "envVars": "API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c",
       "scope": "shared"
-    },
-    {
-      "id": "snippet-1777192256234",
-      "name": "codex_api",
-      "description": "",
-      "envVars": "OPENAI_API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c\nCODEX_HOME=/Users/yifan/.codex-duckcode",
-      "scope": "provider:codex"
     }
   ],
   "customContextLimits": {},
@@ -54,9 +47,7 @@
       "enabled": true,
       "safeMode": "workspace-write",
       "cliPath": "",
-      "cliPathsByHost": {
-        "yifanMac-mini": "/opt/homebrew/bin/codex"
-      },
+      "cliPathsByHost": {},
       "reasoningSummary": "detailed",
       "environmentVariables": "OPENAI_API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c\nCODEX_HOME=/Users/yifan/.codex-duckcode",
       "environmentHash": "OPENAI_API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c",

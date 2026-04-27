@@ -19,3 +19,99 @@
   -webkit-text-fill-color: #8a8a8a !important;
   opacity: 1 !important;
 }
+
+/* Soften sent user-message bubbles; Claudian's default black overlay is too heavy. */
+body .claudian-container .claudian-message-user {
+  background: var(--background-secondary) !important;
+  border: 1px solid var(--background-modifier-border);
+}
+
+body.theme-light .claudian-container .claudian-message-user {
+  background: color-mix(
+    in srgb,
+    var(--background-secondary) 70%,
+    var(--background-primary) 30%
+  ) !important;
+}
+
+body.theme-dark .claudian-container .claudian-message-user {
+  background: color-mix(
+    in srgb,
+    var(--background-secondary) 82%,
+    var(--background-primary) 18%
+  ) !important;
+}
+
+/* Reuse Maple's code block tokens inside Claudian messages. */
+body .claudian-container .claudian-code-wrapper pre,
+body .claudian-container .claudian-message-content pre {
+  background: var(--code-background) !important;
+  color: var(--code-normal);
+  border: var(--code-border-width, 1px) solid var(--code-border-color);
+  border-radius: var(--code-radius);
+  padding: var(
+    --code-block-padding,
+    calc(var(--line-height-tight) * var(--code-size))
+      calc(var(--line-height-normal) * var(--code-size))
+  );
+  line-height: calc(var(--line-height-normal) - 0.2);
+  transition: border-color var(--animation);
+}
+
+body .claudian-container .claudian-code-wrapper pre:hover,
+body .claudian-container .claudian-message-content pre:hover {
+  border-color: var(--background-modifier-border-hover);
+}
+
+body .claudian-container .claudian-code-wrapper pre:active,
+body .claudian-container .claudian-message-content pre:active {
+  border-color: var(--background-modifier-border-focus);
+}
+
+body .claudian-container .claudian-message-content code {
+  font-family: var(--font-monospace);
+}
+
+body .claudian-container .claudian-code-wrapper .claudian-code-lang-label {
+  top: var(--size-4-1);
+  inset-inline-end: var(--size-4-1);
+  padding-block: 0;
+  color: var(--setting-code-language-color, var(--inline-code));
+  background: transparent;
+  border-radius: var(--radius-s);
+  font-weight: 550;
+}
+
+body .claudian-container .claudian-code-wrapper .claudian-code-lang-label:hover {
+  color: var(--setting-code-language-color, var(--inline-code));
+  background: var(--nav-item-background-hover);
+}
+
+body.code-theme .claudian-container .claudian-message-content .token.script {
+  color: var(--code-normal);
+}
+
+body.code-theme .claudian-container .claudian-message-content .token.imports {
+  color: var(--code-variable);
+}
+
+body.code-theme .claudian-container .claudian-message-content .token:is(.builtin, .regex, .keyword) {
+  color: var(--code-important);
+  font-style: italic;
+}
+
+body.code-theme .claudian-container .claudian-message-content .token:is(.selector, .inserted, .char, .attr-value) {
+  color: var(--color-green);
+}
+
+body.code-theme .claudian-container .claudian-message-content .token:is(.class-name, .maybe-class-name, .color) {
+  color: var(--code-class);
+}
+
+body.code-theme .claudian-container .claudian-message-content .token:is(.property-access, .attr-name, .annotation, .key, .entity, .parameter, .url) {
+  color: var(--code-variable);
+}
+
+body.code-theme .claudian-container .claudian-message-content .token:is(.comment, .prolog, .doctype, .cdata) {
+  color: var(--code-comment);
+}

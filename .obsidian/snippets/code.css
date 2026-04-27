@@ -1,4 +1,3 @@
-
 body:is(:not(.css-settings-manager), .code-language)
 .markdown-rendered pre:is(.language-text, .language-txt, .language-plain, .language-plaintext) {
   --code-lang: "Text";

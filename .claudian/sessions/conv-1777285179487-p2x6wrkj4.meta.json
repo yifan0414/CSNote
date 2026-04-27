@@ -1,0 +1,14 @@
+{
+  "id": "conv-1777285179487-p2x6wrkj4",
+  "providerId": "codex",
+  "title": "你是谁",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1777285179488,
+  "updatedAt": 1777285624504,
+  "lastResponseAt": 1777285566471,
+  "sessionId": null,
+  "providerState": {
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "Paper/Papers.base"
+}

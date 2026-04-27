@@ -59,10 +59,22 @@
       "width": "",
       "height": "",
       "wrap": false
+    },
+    "c47636109e9f643f37ade75842cf3e25": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
     }
   },
   "Paper/Papers.base": {
     "10fd52de75e69579ed686e481fbcdf31": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "8a8a04b3954fe35e39b9f7b8e91a1ae1": {
       "position": "center",
       "width": "",
       "height": "",
@@ -155,6 +167,92 @@
   },
   "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for.md": {
     "fb7b49c19ebaa1307f6fa58d1c34fbe8": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "03-Tool/command line/命令行的艺术.md": {
+    "2423c9866bdddce0d2d7e007206120a2": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/DYTO.md": {
+    "57a7996fc5d324962c468ac3f579db7d": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "07-MultiModal/MLLM.md": {
+    "e8ffbe960ef5d8c1f9dad8773d4d8af9": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "01-Project/NJUICS/lecture/L7 链接与加载选讲/L7 链接 Note.md": {
+    "1333f382a43885e356369bfd90b3088f": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "07-AI/Question/为什么首先使用的不是relu，而是sigmoid.md": {
+    "a2653831ffbeffa503df65a18d71d227": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    },
+    "51f8fef36ddb492ac04a82563be5bf30": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets/pipeline_2024_acl_long_679.png": {
+    "36b17c241a823d2cb01c463c110ac6fc": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets/pipeline_2024.acl-long.679.png": {
+    "df7250345ba173b5e264f8e4f86fe55a": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language.md": {
+    "ad2e859a7c12285fa7a1115b82dd1a5e": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/assets/paper_2405.19209.pdf": {
+    "90c9370e38459f6c583c7e1d6b983480": {
+      "position": "center",
+      "width": "",
+      "height": "",
+      "wrap": false
+    }
+  },
+  "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid.md": {
+    "5f784c9a600350508b19b8a6ef7f1858": {
       "position": "center",
       "width": "",
       "height": "",

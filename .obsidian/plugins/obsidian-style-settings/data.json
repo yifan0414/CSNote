@@ -339,7 +339,7 @@
   "maple-editor@@code-mac-style-header": false,
   "maple-editor@@code-preview-bg": false,
   "maple-editor@@code-line-number": false,
-  "maple-basic@@app-layout-card-border": false,
+  "maple-basic@@app-layout-card-border": true,
   "maple-basic@@app-layout-card-bg": "app-layout-card-gradient",
   "maple-editor@@heading-h1-caps": false,
   "maple-editor@@setting-file-line-width": "clamp(700px, 78%, 980px)",
@@ -354,5 +354,8 @@
   "maple-editor@@prop-outline": true,
   "maple-workspace@@explorer-title-wrap": false,
   "ics-note-font@@ics-font-scale-table": 0.9,
-  "ics-note-font@@ics-font-scale-link-suggestion": 0.85
+  "ics-note-font@@ics-font-scale-link-suggestion": 0.85,
+  "maple-basic@@color-dark-dim-disable": true,
+  "maple-basic@@color-modify-bg-light": false,
+  "maple-basic@@color-active-light": "color-active-default-light"
 }
