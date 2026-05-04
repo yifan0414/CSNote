@@ -7,8 +7,6 @@ tags:
   - paper/draft
   - video-understanding
   - video-qa
-  - egoschema
-  - dyto
 status: draft
 related:
   - "[[Paper/Video Understanding 论文综述报告]]"

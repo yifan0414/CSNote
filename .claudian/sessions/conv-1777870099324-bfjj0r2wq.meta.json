@@ -1,0 +1,21 @@
+{
+  "id": "conv-1777870099324-bfjj0r2wq",
+  "providerId": "codex",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1777870099324,
+  "updatedAt": 1777870673183,
+  "lastResponseAt": 1777870352321,
+  "sessionId": null,
+  "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+  "usage": {
+    "inputTokens": 9690,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 6016,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": false,
+    "contextTokens": 9690,
+    "percentage": 5,
+    "model": "gpt-5.4-mini"
+  }
+}

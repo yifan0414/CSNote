@@ -95,6 +95,51 @@
   content: "·";
 }
 
+.bases-view .capture-type-tool {
+  background: var(--paper-base-blue-bg);
+  color: var(--paper-base-blue-fg);
+}
+
+.bases-view .capture-type-tool::before {
+  width: auto;
+  font-size: 0.95em;
+  content: "⚙";
+}
+
+.bases-view .capture-type-idea {
+  background: color-mix(in srgb, var(--color-purple) 14%, transparent);
+  color: color-mix(in srgb, var(--color-purple) 74%, var(--text-normal));
+  border-color: color-mix(in srgb, var(--color-purple) 28%, transparent);
+}
+
+.bases-view .capture-type-idea::before {
+  width: auto;
+  font-size: 0.95em;
+  content: "💡";
+}
+
+.bases-view .capture-source-web {
+  background: var(--paper-base-green-bg);
+  color: var(--paper-base-green-fg);
+}
+
+.bases-view .capture-source-web::before {
+  width: auto;
+  font-size: 0.95em;
+  content: "🌐";
+}
+
+.bases-view .capture-source-thought {
+  background: var(--paper-base-yellow-bg);
+  color: var(--paper-base-yellow-fg);
+}
+
+.bases-view .capture-source-thought::before {
+  width: auto;
+  font-size: 0.95em;
+  content: "💭";
+}
+
 .bases-view .paper-base-rating {
   color: color-mix(in srgb, var(--color-yellow) 68%, var(--text-normal));
   font-family: "Maple Mono NF CN", var(--font-monospace), monospace;

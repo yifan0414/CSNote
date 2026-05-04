@@ -1,0 +1,20 @@
+{
+  "id": "conv-1777316590092-6oi812nw9",
+  "providerId": "codex",
+  "title": "Analyze experiment router assignments",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777316590093,
+  "updatedAt": 1777379511957,
+  "lastResponseAt": 1777316682101,
+  "sessionId": null,
+  "usage": {
+    "inputTokens": 12940,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 12416,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 12940,
+    "percentage": 5,
+    "model": "GPT-5.5"
+  }
+}

@@ -21,8 +21,57 @@
               "icon": "lucide-table",
               "title": "Papers"
             }
+          },
+          {
+            "id": "6228d2d92269dada",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "EgoSchema Adaptive LLM 实验阶段性总结"
+            }
+          },
+          {
+            "id": "427c91095a550829",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "EgoSchema Adaptive LLM 实验阶段性总结"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -54,7 +103,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#PT",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -79,7 +128,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215
+    "width": 200
   },
   "right": {
     "id": "8815071129bdee48",
@@ -169,17 +218,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06-Algorithm/00题库/P16330 Just Because!.md",
+                "file": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "P16330 Just Because! 的大纲"
+              "title": "EgoSchema Adaptive LLM 实验阶段性总结 的大纲"
             }
           },
           {
-            "id": "f13ad54c9e405404",
+            "id": "d3c48e1338e34288",
             "type": "leaf",
             "state": {
               "type": "claudian-view",
@@ -193,7 +242,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 523
+    "width": 416
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,37 +264,43 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "4b1f9a0fb5e66638",
+  "active": "427c91095a550829",
   "lastOpenFiles": [
-    "06-Algorithm/00题库/P16330 Just Because!.md",
-    "06-Algorithm/未命名.base",
-    "00-Archive/The Missing Semester/7 调试及性能分析.md",
+    "实验/实验.base",
     "Paper/Papers.base",
-    "00-Archive/The Missing Semester/4 数据整理.md",
-    "00-Archive/The Missing Semester/2 Shell 工具和脚本.md",
+    "Paper/raw/react-synergizing-reasoning-and-acting-in-language-models/ReAct.md",
+    "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+    "实验/规则router 实验.md",
+    "03-Tool/command line/命令行的艺术.md",
+    "02-Capture/灵感与工具/服务器下线 7、39CPU.md",
+    "attachments/Pasted image 20260430194024.png",
+    "07-MultiModal/MLLM.md",
+    "02-Capture/灵感与工具/Apple美区账号购买.md",
+    "Paper/raw/addressing-blind-guessing-calibration-of-selection-bias-in-multiple-choice-quest/assets/paper_2410.14248.pdf",
+    "Paper/raw/addressing-blind-guessing-calibration-of-selection-bias-in-multiple-choice-quest/assets/pipeline_2410.14248.png",
+    "Paper/raw/addressing-blind-guessing-calibration-of-selection-bias-in-multiple-choice-quest/assets",
+    "Paper/raw/addressing-blind-guessing-calibration-of-selection-bias-in-multiple-choice-quest/addressing-blind-guessing-calibration-of-selection-bias-in-multiple-choice-quest.md",
+    "Paper/raw/addressing-blind-guessing-calibration-of-selection-bias-in-multiple-choice-quest",
+    "实验/random shuffle 5 times.md",
+    "实验/GPT5.4 nano route 实验.md",
+    "实验/GPT4o-mini router实验.md",
+    "实验/4 月 29 日实验.md",
+    "实验/4 月 28 日实验.md",
+    "实验",
+    "06-Algorithm/00题库/P16330 Just Because!.md",
     "02-Capture/灵感与工具/解决 Mac 上浏览器 Mathjax 渲染问题.md",
-    "02-Capture/灵感与工具.base",
-    "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid.md",
-    "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/assets/paper_2405.19209.pdf",
-    "Paper/mineru.md",
     "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/assets/pipeline_2405.19209.png",
-    "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/assets/pipeline_2405.19209-1.png",
     "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/assets/pipeline_2405.19209.pdf",
+    "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/assets/paper_2405.19209.pdf",
+    "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid.md",
     "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/assets",
     "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid",
-    "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language.md",
-    "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets/pipeline_2024.acl-long.679.png",
+    "Paper/mineru.md",
     "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets/pipeline_2024_acl_long_679.png",
-    "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets/paper_2024.acl-long.679.pdf",
+    "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets/pipeline_2024.acl-long.679.png",
     "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets/paper_2024_acl_long_679.pdf",
-    "07-AI/01-数学/交叉熵.md",
-    "03-Tool/command line/命令行的艺术.md",
-    "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets",
-    "06-Algorithm/00题库/体育课.md",
-    "07-AI/Question/为什么首先使用的不是relu，而是sigmoid.md",
-    "01-Project/NJUICS/lecture/L7 链接与加载选讲/L7 链接 Note.md",
-    "07-AI/00-课程/08-Lee/06-CNN/Why CNN works.md",
-    "07-MultiModal/MLLM.md",
+    "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language.md",
+    "Paper/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language.md",
     "07-MultiModal/未命名.canvas",
     "Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/DYTO.md",
     "03-Tool/command line/0 The note of Shell Command Line.md",
@@ -253,16 +308,11 @@
     "03-Tool/dotfiles/1 chezmoi 优雅的文档设计.md",
     "copilot/copilot-conversations/已学算法回顾@20260424_041541.md",
     "06-Algorithm/01题单/题型分类/搜索.md",
-    "06-Algorithm/01题单/题型分类/二分查找.md",
-    "06-Algorithm/01题单/题型分类/动态规划.md",
-    "06-Algorithm/01题单/题单汇总.md",
-    "06-Algorithm/01题单/我已学算法总表.md",
     "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/assets/pipeline_2604.05015.png",
     "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/assets/pipeline_arxiv_2603_11439v1.png",
     "Paper/raw/deepseek-v4-towards-highly-efficient-million-token-context-intelligence/assets/pipeline_deepseek-v4-f4cbe4fc.png",
     "Paper/raw/deep-video-discovery-agentic-search-with-tool-use-for-long-form-video-understand/assets/pipeline_2505.18079.png",
     "Paper/raw/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629.png",
-    "Paper/react-synergizing-reasoning-and-acting-in-language-models/assets/pipeline_2210.03629_cropbox_tmp.png",
     "01-Project/CS61A/canvasNote/IntroToPython.canvas",
     "07-AI/神经网络/人工神经网络训练过程.canvas",
     "08-Lee/未命名.canvas",

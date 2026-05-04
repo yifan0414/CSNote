@@ -1,0 +1,53 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.inFolder("实验")
+formulas:
+  experiment: file.asLink(if(title, title, file.name))
+  performance_view: if(note["性能"], html("<span class='paper-base-badge paper-priority-mid'>" + escapeHTML(note["性能"].toString()) + "</span>"), "")
+properties:
+  formula.experiment:
+    displayName: 实验
+  数据集:
+    displayName: 数据集
+  formula.performance_view:
+    displayName: 性能
+  git commit:
+    displayName: git commit
+  创建时间:
+    displayName: 创建时间
+views:
+  - type: table
+    name: 全部实验
+    order:
+      - formula.experiment
+      - 数据集
+      - formula.performance_view
+      - git commit
+      - 创建时间
+    sort:
+      - property: 创建时间
+        direction: DESC
+      - property: 数据集
+        direction: DESC
+      - property: 性能
+        direction: DESC
+    limit: 200
+    columnSize:
+      formula.experiment: 220
+      note.数据集: 170
+      formula.performance_view: 90
+  - type: table
+    name: 按数据集
+    groupBy:
+      property: 数据集
+      direction: ASC
+    order:
+      - formula.experiment
+      - formula.performance_view
+      - git commit
+      - 创建时间
+    sort:
+      - property: 性能
+        direction: DESC
+    limit: 200

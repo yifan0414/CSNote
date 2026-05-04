@@ -1,0 +1,21 @@
+{
+  "id": "conv-1777870679890-8m027mssf",
+  "providerId": "codex",
+  "title": "Respond to Chinese greeting",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777870679891,
+  "updatedAt": 1777870954275,
+  "lastResponseAt": 1777870690978,
+  "sessionId": null,
+  "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+  "usage": {
+    "inputTokens": 9710,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 6016,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": false,
+    "contextTokens": 9710,
+    "percentage": 5,
+    "model": "gpt-5.5"
+  }
+}

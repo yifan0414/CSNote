@@ -1,22 +1,23 @@
 {
-  "id": "conv-1776972087243-mvbax4c5l",
+  "id": "conv-1777316020152-nkxrwzqb0",
   "providerId": "codex",
-  "title": "Greet the assistant",
+  "title": "Explain model identity",
   "titleGenerationStatus": "success",
-  "createdAt": 1776972087244,
-  "updatedAt": 1777869993682,
-  "lastResponseAt": 1777869540307,
+  "createdAt": 1777316020153,
+  "updatedAt": 1777316587641,
+  "lastResponseAt": 1777316571644,
   "sessionId": null,
   "providerState": {
     "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
   },
+  "currentNote": "Paper/Papers.base",
   "usage": {
-    "inputTokens": 11106,
+    "inputTokens": 12996,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 6016,
+    "cacheReadInputTokens": 12672,
     "contextWindow": 200000,
     "contextWindowIsAuthoritative": false,
-    "contextTokens": 11106,
+    "contextTokens": 12996,
     "percentage": 6,
     "model": "GPT-5.5"
   }

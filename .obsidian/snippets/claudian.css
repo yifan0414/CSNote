@@ -1,3 +1,9 @@
+/* Hide the default light scrollbar corner when both axes overflow. */
+.claudian-container::-webkit-scrollbar-corner,
+.claudian-container *::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 /* Hide Claudian's top brand mark and title. */
 .claudian-container .claudian-header > .claudian-title-slot > .claudian-logo,
 .claudian-container .claudian-header > .claudian-title-slot > .claudian-title-text {

@@ -314,7 +314,7 @@
   "minimal-style@@bases-table-header-icon-display": "flex",
   "things-style@@default-font-color": true,
   "things-style@@floating-button-off": true,
-  "maple-workspace@@enable-blur": true,
+  "maple-workspace@@enable-blur": false,
   "maple-workspace@@explorer-icon": false,
   "maple-workspace@@explorer-folder-bold": false,
   "maple-workspace@@labeled-nav": true,
@@ -357,5 +357,6 @@
   "ics-note-font@@ics-font-scale-link-suggestion": 0.85,
   "maple-basic@@color-dark-dim-disable": true,
   "maple-basic@@color-modify-bg-light": false,
-  "maple-basic@@color-active-light": "color-active-default-light"
+  "maple-basic@@color-active-light": "color-active-default-light",
+  "maple-editor@@setting-editor-letter-spacing": 0
 }

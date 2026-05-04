@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f1439520c85b8d13",
+        "id": "f9dda3d9e0356730",
         "type": "tabs",
         "children": [
           {
-            "id": "d68d0caeaf7dcac4",
+            "id": "de7a8599ab45243d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "chatgpt-export_国自然基金综述撰写.md",
+                "file": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "chatgpt-export_国自然基金综述撰写"
+              "title": "EgoSchema Adaptive LLM 实验阶段性总结"
             }
           }
         ]
@@ -122,8 +122,8 @@
         "state": {
           "type": "calendar",
           "state": {},
-          "icon": "calendar-with-checkmark",
-          "title": "Calendar"
+          "icon": "lucide-ghost",
+          "title": "calendar"
         }
       },
       {
@@ -180,7 +180,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "bases:新建数据库": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -197,7 +196,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "d68d0caeaf7dcac4",
+  "active": "de7a8599ab45243d",
   "lastOpenFiles": [
     "05-Work/左耳朵耗子的话.md",
     "06-Algorithm/04算法分析/快速排序/分治排序其一：快速排序（一）.md",

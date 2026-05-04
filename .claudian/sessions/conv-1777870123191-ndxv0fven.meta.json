@@ -1,0 +1,24 @@
+{
+  "id": "conv-1777870123191-ndxv0fven",
+  "providerId": "codex",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1777870123191,
+  "updatedAt": 1777870672468,
+  "lastResponseAt": 1777870620159,
+  "sessionId": null,
+  "providerState": {
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+  "usage": {
+    "inputTokens": 11132,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 6016,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": false,
+    "contextTokens": 11132,
+    "percentage": 6,
+    "model": "gpt-5.4-mini"
+  }
+}

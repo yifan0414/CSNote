@@ -1,6 +1,6 @@
 {
-  "lastVersion": "4.0.7",
-  "aestheticStyle": "default",
+  "lastVersion": "4.0.8",
+  "aestheticStyle": "custom",
   "positionStyle": "top",
   "menuCommands": [
     {
@@ -369,10 +369,10 @@
   "viewTypeSettings": {},
   "appearanceByStyle": {
     "top": {
-      "toolbarBackgroundColor": "#ECECEB",
+      "toolbarBackgroundColor": "#ECEBEB",
       "toolbarIconColor": "#4A5568",
       "toolbarIconSize": 18,
-      "aestheticStyle": "default"
+      "aestheticStyle": "custom"
     },
     "following": {
       "toolbarBackgroundColor": "rgba(var(--background-secondary-rgb), 0.7)",
@@ -393,7 +393,7 @@
       "aestheticStyle": "default"
     }
   },
-  "toolbarBackgroundColor": "#ECECEB",
+  "toolbarBackgroundColor": "#ECEBEB",
   "toolbarIconColor": "#4A5568",
   "toolbarIconSize": 18,
   "useCurrentLineForRegex": false,

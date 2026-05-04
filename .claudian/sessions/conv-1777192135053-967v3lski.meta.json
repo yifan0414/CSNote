@@ -1,21 +1,21 @@
 {
   "id": "conv-1777192135053-967v3lski",
   "providerId": "codex",
-  "title": "Acknowledge greeting",
+  "title": "Respond to greeting",
   "titleGenerationStatus": "success",
   "createdAt": 1777192135054,
-  "updatedAt": 1777243655046,
-  "lastResponseAt": 1777231368898,
+  "updatedAt": 1777869245972,
+  "lastResponseAt": 1777869220519,
   "sessionId": null,
-  "currentNote": "Paper/raw/react-synergizing-reasoning-and-acting-in-language-models/ReAct.md",
+  "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
   "usage": {
     "inputTokens": 51259,
     "cacheCreationInputTokens": 0,
     "cacheReadInputTokens": 50048,
-    "contextWindow": 258400,
-    "contextWindowIsAuthoritative": true,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": false,
     "contextTokens": 51259,
-    "percentage": 20,
-    "model": "gpt-5.4"
+    "percentage": 26,
+    "model": "GPT-5.5"
   }
 }

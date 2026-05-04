@@ -3,24 +3,24 @@ filters:
     - file.ext == "md"
     - file.inFolder("02-Capture/灵感与工具")
 formulas:
-  open: if(note["网址"], link(note["网址"], "打开"))
+  url_button: if(note["网址"], link(note["网址"], icon("external-link")), "")
+  type_view: if(note["类型"], html("<span class='paper-base-badge capture-type-" + note["类型"].toString().lower().replace("&", "and").replace(" ", "-") + "'>" + escapeHTML(note["类型"].toString()) + "</span>"), "")
+  source_view: if(note["来源"], html("<span class='paper-base-badge capture-source-" + note["来源"].toString().lower().replace("&", "and").replace(" ", "-") + "'>" + escapeHTML(note["来源"].toString()) + "</span>"), "")
 properties:
   file.name:
     displayName: 条目
-  类型:
+  formula.type_view:
     displayName: 类型
   状态:
     displayName: 状态
-  来源:
+  formula.source_view:
     displayName: 来源
-  网址:
+  formula.url_button:
     displayName: 网址
   发现时间:
     displayName: 发现时间
   tags:
     displayName: 标签
-  formula.open:
-    displayName: 打开
   file.mtime:
     displayName: 更新
 views:
@@ -32,13 +32,20 @@ views:
         - note["状态"] == "inbox"
     order:
       - file.name
-      - 类型
-      - 来源
-      - formula.open
-      - 网址
+      - formula.type_view
+      - formula.source_view
+      - formula.url_button
       - tags
       - file.mtime
-    sort: []
+    sort:
+      - property: formula.source_view
+        direction: DESC
+      - property: formula.type_view
+        direction: DESC
+    columnSize:
+      formula.source_view: 103
+      formula.url_button: 71
+      note.tags: 325
   - type: table
     name: 工具
     filters:
@@ -48,9 +55,8 @@ views:
     order:
       - file.name
       - 状态
-      - 来源
-      - formula.open
-      - 网址
+      - formula.source_view
+      - formula.url_button
       - tags
       - file.mtime
   - type: table
@@ -62,8 +68,8 @@ views:
     order:
       - file.name
       - 状态
-      - 来源
-      - 网址
+      - formula.source_view
+      - formula.url_button
       - tags
       - file.mtime
   - type: table
@@ -71,9 +77,8 @@ views:
     filters: note["状态"] == "archive"
     order:
       - file.name
-      - 类型
-      - 来源
-      - formula.open
-      - 网址
+      - formula.type_view
+      - formula.source_view
+      - formula.url_button
       - tags
       - file.mtime

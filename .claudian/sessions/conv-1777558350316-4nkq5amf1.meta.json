@@ -1,0 +1,24 @@
+{
+  "id": "conv-1777558350316-4nkq5amf1",
+  "providerId": "codex",
+  "title": "总结笔记进展与下一步规划",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777558350317,
+  "updatedAt": 1777868925826,
+  "lastResponseAt": 1777868819645,
+  "sessionId": null,
+  "providerState": {
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+  "usage": {
+    "inputTokens": 15015,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 14208,
+    "contextWindow": 200000,
+    "contextWindowIsAuthoritative": false,
+    "contextTokens": 15015,
+    "percentage": 8,
+    "model": "GPT-5.5"
+  }
+}

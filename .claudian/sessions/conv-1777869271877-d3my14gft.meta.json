@@ -1,0 +1,21 @@
+{
+  "id": "conv-1777869271877-d3my14gft",
+  "providerId": "codex",
+  "title": "Respond to greeting",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777869271878,
+  "updatedAt": 1777869591872,
+  "lastResponseAt": 1777869566284,
+  "sessionId": null,
+  "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+  "usage": {
+    "inputTokens": 9690,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 6016,
+    "contextWindow": 950000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 9690,
+    "percentage": 1,
+    "model": "gpt-5.4"
+  }
+}

@@ -1,12 +1,12 @@
 {
   "userName": "yifan",
   "permissionMode": "normal",
-  "model": "haiku",
-  "thinkingBudget": "off",
+  "model": "opus",
+  "thinkingBudget": "medium",
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
-  "titleGenerationModel": "gpt-5.4",
+  "titleGenerationModel": "gpt-5.4-mini",
   "excludedTags": [],
   "mediaFolder": "",
   "systemPrompt": "",
@@ -39,7 +39,7 @@
       "enableOpus1M": false,
       "enableSonnet1M": false,
       "customModels": "",
-      "lastModel": "haiku",
+      "lastModel": "opus",
       "environmentVariables": "",
       "environmentHash": ""
     },
@@ -48,19 +48,21 @@
       "safeMode": "workspace-write",
       "cliPath": "",
       "cliPathsByHost": {},
+      "customModels": "gpt-5.5",
       "reasoningSummary": "detailed",
-      "environmentVariables": "OPENAI_API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c\nCODEX_HOME=/Users/yifan/.codex-duckcode",
-      "environmentHash": "OPENAI_API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c",
+      "environmentVariables": "OPENAI_API_KEY=sk-6a08c8602682281c655a371e91bbc4824109e0999ccfca9156cb32967318ae8f\nCODEX_HOME=/Users/yifan/.codex-duckcode",
+      "environmentHash": "OPENAI_API_KEY=sk-6a08c8602682281c655a371e91bbc4824109e0999ccfca9156cb32967318ae8f",
       "installationMethodsByHost": {
-        "yifanMac-mini": "native-windows"
+        "yifanMac-mini": "native-windows",
+        "yifanMacBook-Air.local": "native-windows"
       },
       "wslDistroOverridesByHost": {}
     }
   },
   "settingsProvider": "claude",
   "savedProviderModel": {
-    "claude": "haiku",
-    "codex": "gpt-5.4"
+    "claude": "opus",
+    "codex": "gpt-5.5"
   },
   "savedProviderEffort": {
     "claude": "high",
@@ -70,8 +72,12 @@
     "codex": "fast"
   },
   "savedProviderThinkingBudget": {
-    "claude": "off",
+    "claude": "medium",
     "codex": "off"
+  },
+  "savedProviderPermissionMode": {
+    "claude": "normal",
+    "codex": "normal"
   },
   "lastCustomModel": "",
   "maxTabs": 3,
