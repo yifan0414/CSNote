@@ -13110,7 +13110,7 @@ var require_Lexer = __commonJS({
       open: /^\{/,
       close: /^\}/,
       quote: /^(`|``|'|'')/,
-      ordinary: /^[^\\{}$&#%_\s]+/
+      ordinary: /^[^\\{}$&#%\s]+/
     };
     var commentRegex = /^%.*/;
     var whitespaceRegex = /^\s+/;

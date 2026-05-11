@@ -59,6 +59,8 @@ views:
       - formula.code_link
       - updated
     sort:
+      - property: updated
+        direction: DESC
       - property: formula.paper
         direction: DESC
       - property: formula.topics_view
@@ -66,8 +68,6 @@ views:
       - property: year
         direction: ASC
       - property: topics
-        direction: ASC
-      - property: updated
         direction: ASC
     limit: 200
     columnSize:

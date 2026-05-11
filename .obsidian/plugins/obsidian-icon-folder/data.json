@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiRoadMapLine",
       "LiExperiment",
       "TiCapture",
       "OcCopilot16",
-      "TiTemplate",
-      "LiClipboardPen"
+      "TiTemplate"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -49,14 +49,13 @@
   "07-AI/00-课程": "LiSchool",
   "07-AI/02-代码": "TiCode",
   "Diary": "✍",
-  "06-Algorithm/01题单": "LiList",
   "Paper": "SiPaperspace",
   "Paper/Papers.base": "LiDatabase",
   "Excalidraw": "TiTypography",
-  "Clippings": "LiClipboardPen",
   "Templates": "TiTemplate",
   "copilot": "OcCopilot16",
   "02-Capture": "TiCapture",
   "00-Archive/04-CPP": "TiBrandCpp",
-  "实验": "LiExperiment"
+  "实验": "LiExperiment",
+  "07-AI/00-roadmap": "RiRoadMapLine"
 }

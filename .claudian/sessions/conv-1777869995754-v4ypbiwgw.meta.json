@@ -1,11 +1,11 @@
 {
   "id": "conv-1777869995754-v4ypbiwgw",
   "providerId": "codex",
-  "title": "Respond to hello",
+  "title": "Explain who you are",
   "titleGenerationStatus": "success",
   "createdAt": 1777869995755,
-  "updatedAt": 1777895435625,
-  "lastResponseAt": 1777895435625,
+  "updatedAt": 1777985616446,
+  "lastResponseAt": 1777985607060,
   "sessionId": "019df15d-eb6f-7360-b58c-e1624e9be2d0",
   "providerState": {
     "threadId": "019df15d-eb6f-7360-b58c-e1624e9be2d0",
@@ -14,12 +14,12 @@
   },
   "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
   "usage": {
-    "inputTokens": 9834,
+    "inputTokens": 11134,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 5504,
+    "cacheReadInputTokens": 6016,
     "contextWindow": 258400,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 9834,
+    "contextTokens": 11134,
     "percentage": 4,
     "model": "gpt-5.5"
   }

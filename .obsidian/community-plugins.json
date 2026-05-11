@@ -5,7 +5,6 @@
   "dataview",
   "darlal-switcher-plus",
   "quickadd",
-  "obsidian-style-settings",
   "templater-obsidian",
   "obsidian-tasks-plugin",
   "pdf-plus",
@@ -17,6 +16,6 @@
   "claudian",
   "settings-search",
   "editing-toolbar",
-  "image-converter",
-  "tabs"
+  "tabs",
+  "obsidian-style-settings"
 ]

@@ -16,6 +16,9 @@
   "filenameAsDateFolders": [],
   "recurrenceOnNextLine": false,
   "removeScheduledDateOnRecurrence": false,
+  "searchResults": {
+    "taskCountLocation": "bottom"
+  },
   "statusSettings": {
     "coreStatuses": [
       {

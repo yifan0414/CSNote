@@ -343,8 +343,8 @@
   "maple-basic@@app-layout-card-bg": "app-layout-card-gradient",
   "maple-editor@@heading-h1-caps": false,
   "maple-editor@@setting-file-line-width": "clamp(700px, 78%, 980px)",
-  "maple-editor@@image-zoom": false,
-  "maple-editor@@heading-h2-style": "heading-h2-full-line",
+  "maple-editor@@image-zoom": true,
+  "maple-editor@@heading-h2-style": "heading-h2-block",
   "maple-editor@@heading-h2-full-line-direction": "heading-h2-full-line-left",
   "maple-workspace@@search-internal-enable": true,
   "maple-workspace@@search-remove-button": false,
@@ -358,5 +358,14 @@
   "maple-basic@@color-dark-dim-disable": true,
   "maple-basic@@color-modify-bg-light": false,
   "maple-basic@@color-active-light": "color-active-default-light",
-  "maple-editor@@setting-editor-letter-spacing": 0
+  "maple-editor@@setting-editor-letter-spacing": 0,
+  "maple-basic@@setting-accent-h-light": 245,
+  "maple-editor@@heading-color-style": "heading-color-accent",
+  "maple-editor@@hr-enable": true,
+  "maple-editor@@pdf-export-default-hr": true,
+  "maple-editor@@pdf-export-page-break": true,
+  "maple-editor@@pdf-export-transparent": true,
+  "maple-editor@@pdf-export-standard": false,
+  "maple-editor@@link-heading": true,
+  "maple-editor@@tag-style": "tag-outline"
 }

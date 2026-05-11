@@ -54,7 +54,8 @@
       "environmentHash": "OPENAI_API_KEY=sk-6a08c8602682281c655a371e91bbc4824109e0999ccfca9156cb32967318ae8f",
       "installationMethodsByHost": {
         "yifanMac-mini": "native-windows",
-        "yifanMacBook-Air.local": "native-windows"
+        "yifanMacBook-Air.local": "native-windows",
+        "Mac-Mini": "native-windows"
       },
       "wslDistroOverridesByHost": {}
     }
@@ -69,7 +70,7 @@
     "codex": "xhigh"
   },
   "savedProviderServiceTier": {
-    "codex": "fast"
+    "codex": "default"
   },
   "savedProviderThinkingBudget": {
     "claude": "medium",

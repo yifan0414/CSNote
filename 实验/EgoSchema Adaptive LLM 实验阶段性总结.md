@@ -56,7 +56,7 @@ egoschema_pred_adaptive_llm_gpt54_nano_no_single_cyclic5_3_ensemble.json
 
 这个结果说明 `segment_motion` 对部分局部动作问题是有帮助的，但规则版 route 只分到了 47 个样本，覆盖不够充分。
 
-### 3.2 旧版 GPT-4 o-mini LLM routing 的问题
+### 3.2 旧版 GPT-4o-mini LLM routing 的问题
 
 旧版 `adaptive_llm` 使用 GPT-4o-mini 生成 route cache，整体为：
 
@@ -66,12 +66,12 @@ egoschema_pred_adaptive_llm_gpt54_nano_no_single_cyclic5_3_ensemble.json
 
 它的主要问题是 `procedure_causal` 被大量路由到 `uniform_motion_hybrid`。这个设计直觉上希望用 motion 信息补充过程/因果问题，但实际效果不好：
 
-| Route | Correct / Total | Accuracy |
-| --- | ---: | ---: |
-| `uniform_motion_hybrid` | 132 / 316 | 41.77% |
-| `segment_motion` | 58 / 104 | 55.77% |
-| `uniform` | 45 / 69 | 65.22% |
-| `single_frame` | 5 / 11 | 45.45% |
+|          Route          | Correct / Total | Accuracy |
+| :---------------------: | :-------------: | :------: |
+| `uniform_motion_hybrid` |    132 / 316    |  41.77%  |
+|    `segment_motion`     |    58 / 104     |  55.77%  |
+|        `uniform`        |     45 / 69     |  65.22%  |
+|     `single_frame`      |     5 / 11      |  45.45%  |
 
 其中 `procedure_causal` 是最大的子集，也是最明显的瓶颈。后续实验因此将 `procedure_causal` 调整为更保守的 `uniform`，避免大量使用 `uniform_motion_hybrid`。
 
@@ -79,12 +79,12 @@ egoschema_pred_adaptive_llm_gpt54_nano_no_single_cyclic5_3_ensemble.json
 
 重新使用 GPT-5.4-nano 生成 routing cache 后，route 分布更保守：
 
-| Route | Count | Ratio |
-| --- | ---: | ---: |
-| `uniform` | 372 | 74.4% |
-| `segment_motion` | 106 | 21.2% |
-| `uniform_motion_hybrid` | 14 | 2.8% |
-| `single_frame` | 8 | 1.6% |
+|          Route          | Count | Ratio |
+| :---------------------: | :---: | :---: |
+|        `uniform`        |  372  | 74.4% |
+|    `segment_motion`     |  106  | 21.2% |
+| `uniform_motion_hybrid` |  14   | 2.8%  |
+|     `single_frame`      |   8   | 1.6%  |
 
 对应结果：
 
@@ -109,12 +109,12 @@ egoschema_pred_adaptive_llm_gpt54_nano_no_single_cyclic5_3_ensemble.json
 在 no-single no-shuffle 结果中，模型的选项分布明显不均衡：
 
 | Option | GT Count | Pred Count | Recall |
-| :----- | :------- | :--------- | :----- |
-| A      | 101      | 131        | 46.53% |
-| B      | 108      | 86         | 43.52% |
-| C      | 91       | 113        | 58.24% |
-| D      | 83       | 111        | 68.67% |
-| E      | 117      | 59         | 36.75% |
+| :----: | :------: | :--------: | :----: |
+|   A    |   101    |    131     | 46.53% |
+|   B    |   108    |     86     | 43.52% |
+|   C    |    91    |    113     | 58.24% |
+|   D    |    83    |    111     | 68.67% |
+|   E    |   117    |     59     | 36.75% |
 
 最明显的问题是：正确答案 E 有 117 个，但模型只预测 E 59 次。也就是说模型严重少选 E。与此同时，模型一旦预测 E，precision 反而较高，因此问题更像是选项位置偏置，而不是 E 类答案本身不可识别。
 
@@ -124,10 +124,10 @@ egoschema_pred_adaptive_llm_gpt54_nano_no_single_cyclic5_3_ensemble.json
 
 先尝试随机打乱选项：
 
-| 实验 | Correct / Total | Accuracy |
-| --- | ---: | ---: |
-| Random shuffle single run | 226 / 500 | 45.20% |
-| Random shuffle 5 ensemble | 241 / 500 | 48.20% |
+|            实验             | Correct / Total | Accuracy |
+| :-----------------------: | :-------------: | :------: |
+| Random shuffle single run |    226 / 500    |  45.20%  |
+| Random shuffle 5 ensemble |    241 / 500    |  48.20%  |
 
 random shuffle 确实能一定程度提高 E 的 recall，但会伤害 A/C/D 等其他选项，并且不同 shuffle variant 差异较大。最终 5 次投票只有 `48.20%`，低于 no-shuffle 的 `49.40%`。
 
@@ -138,70 +138,70 @@ random shuffle 确实能一定程度提高 E 的 recall，但会伤害 A/C/D 等
 随后使用更结构化的 5 次 cyclic rotation：
 
 | Variant | Option order |
-| :------ | :----------- |
-| v0      | A B C D E    |
-| v1      | B C D E A    |
-| v2      | C D E A B    |
-| v3      | D E A B C    |
-| v4      | E A B C D    |
+| :-----: | :----------: |
+|   v0    |  A B C D E   |
+|   v1    |  B C D E A   |
+|   v2    |  C D E A B   |
+|   v3    |  D E A B C   |
+|   v4    |  E A B C D   |
 
 每次推理后将预测选项映射回原始 ABCDE，再做 majority vote。这个方法相比 random shuffle 更可控，每个原始选项都轮流出现在不同位置。
 
 最新 `cyclic5_3` 的 5 个单独 variant 准确率如下：
 
 | Variant  | Correct / Total | Accuracy |
-| :------- | :-------------- | :------- |
-| v0       | 249 / 500       | 49.80%   |
-| v1       | 238 / 500       | 47.60%   |
-| v2       | 241 / 500       | 48.20%   |
-| v3       | 218 / 500       | 43.60%   |
-| v4       | 236 / 500       | 47.20%   |
-| Ensemble | 260 / 500       | 52.00%   |
+| :------: | :-------------: | :------: |
+|    v0    |    249 / 500    |  49.80%  |
+|    v1    |    238 / 500    |  47.60%  |
+|    v2    |    241 / 500    |  48.20%  |
+|    v3    |    218 / 500    |  43.60%  |
+|    v4    |    236 / 500    |  47.20%  |
+| Ensemble |    260 / 500    |  52.00%  |
 
 单个 variant 并不强，尤其 v3 明显较低；但 ensemble 后达到当前最好结果。这说明 cyclic 的收益主要来自投票集成和位置偏置缓解，而不是某个单一选项顺序更好。
 
-## 4. 最新 cyclic 5_3 详细分析
+## 4. Egoschema 最新 cyclic 5_3 详细分析
 
 ### 4.1 按 route 划分
 
-| Route | Correct / Total | Accuracy |
-| --- | ---: | ---: |
-| `uniform` | 191 / 381 | 50.13% |
-| `segment_motion` | 61 / 106 | 57.55% |
-| `uniform_motion_hybrid` | 8 / 13 | 61.54% |
+|          Route          | Correct / Total | Accuracy |
+| :---------------------: | :-------------: | :------: |
+|        `uniform`        |    191 / 381    |  50.13%  |
+|    `segment_motion`     |    61 / 106     |  57.55%  |
+| `uniform_motion_hybrid` |     8 / 13      |  61.54%  |
 
 对比 no-shuffle no-single：
 
-| Route | No-shuffle | Cyclic 5_3 | Change |
-| --- | ---: | ---: | ---: |
-| `uniform` | 190 / 381 = 49.87% | 191 / 381 = 50.13% | +1 |
-| `segment_motion` | 50 / 106 = 47.17% | 61 / 106 = 57.55% | +11 |
-| `uniform_motion_hybrid` | 7 / 13 = 53.85% | 8 / 13 = 61.54% | +1 |
+|          Route          |     No-shuffle     |     Cyclic 5_3     | Change |
+| :---------------------: | :----------------: | :----------------: | :----: |
+|        `uniform`        | 190 / 381 = 49.87% | 191 / 381 = 50.13% |   +1   |
+|    `segment_motion`     | 50 / 106 = 47.17%  | 61 / 106 = 57.55%  |  +11   |
+| `uniform_motion_hybrid` |  7 / 13 = 53.85%   |  8 / 13 = 61.54%   |   +1   |
 
 主要收益来自 `segment_motion`。这和前面的观察一致：动作局部问题更容易从 motion-aware evidence 和多次选项轮询中受益。
 
 ### 4.2 按 question type 划分
 
-| Question type | Correct / Total | Accuracy |
-| --- | ---: | ---: |
-| `procedure_causal` | 128 / 274 | 46.72% |
-| `action_local` | 64 / 109 | 58.72% |
-| `global_temporal` | 48 / 87 | 55.17% |
-| `ambiguous` | 9 / 12 | 75.00% |
-| `counting` | 5 / 9 | 55.56% |
-| `static_attribute` | 6 / 9 | 66.67% |
+|   Question type    | Correct / Total | Accuracy |
+| :----------------: | :-------------: | :------: |
+| `procedure_causal` |    128 / 274    |  46.72%  |
+|   `action_local`   |    64 / 109     |  58.72%  |
+| `global_temporal`  |     48 / 87     |  55.17%  |
+|    `ambiguous`     |     9 / 12      |  75.00%  |
+|     `counting`     |      5 / 9      |  55.56%  |
+| `static_attribute` |      6 / 9      |  66.67%  |
 
 `action_local` 是当前最明显受益的类型；`procedure_causal` 仍然是最大瓶颈。它有 274 个样本，占全体超过一半，但 accuracy 只有 `46.72%`。
 
 ### 4.3 选项分布变化
 
 | Option | GT Count | No-shuffle Pred | Cyclic 5_3 Pred | No-shuffle Recall | Cyclic 5_3 Recall |
-| :----- | :------- | :-------------- | :-------------- | :---------------- | :---------------- |
-| A      | 101      | 131             | 120             | 46.53%            | 47.52%            |
-| B      | 108      | 86              | 114             | 43.52%            | 53.70%            |
-| C      | 91       | 113             | 84              | 58.24%            | 49.45%            |
-| D      | 83       | 111             | 93              | 68.67%            | 63.86%            |
-| E      | 117      | 59              | 89              | 36.75%            | 47.86%            |
+| :----: | :------: | :-------------: | :-------------: | :---------------: | :---------------: |
+|   A    |   101    |       131       |       120       |      46.53%       |      47.52%       |
+|   B    |   108    |       86        |       114       |      43.52%       |      53.70%       |
+|   C    |    91    |       113       |       84        |      58.24%       |      49.45%       |
+|   D    |    83    |       111       |       93        |      68.67%       |      63.86%       |
+|   E    |   117    |       59        |       89        |      36.75%       |      47.86%       |
 
 Cyclic rotation 明显缓解了 E 被严重低估的问题：E recall 从 `36.75%` 提升到 `47.86%`，预测 E 的次数也从 59 增加到 89。代价是 C/D 的 recall 有所下降，但总体净收益为正。
 
@@ -229,7 +229,7 @@ net gain: +13
 - 去掉 `single_frame` 只提升 1 题。
 - `procedure_causal` 改成 `uniform` 后更稳，但仍然低于整体平均。
 
-这说明底层 VLM 的答案偏置和证据理解能力同样影响最终准确率。
+<font color="#ff0000">这说明底层 VLM 的答案偏置和证据理解能力同样影响最终准确率。</font>
 
 ### 5.2 cyclic 的核心作用是缓解选项位置偏置
 
@@ -250,7 +250,7 @@ segment_motion: 61 / 106 = 57.55%
 action_local:   64 / 109 = 58.72%
 ```
 
-相比 no-shuffle，`segment_motion` 从 `50/106` 提升到 `61/106`。这说明对于动作局部问题，motion-aware evidence 加上选项轮询投票是有效组合。
+相比 no-shuffle，`segment_motion` 从 `50/106` 提升到 `61/106`。这说明对于<mark style="background:#d2cbff">动作局部</mark>问题，motion-aware evidence 加上选项轮询投票是有效组合。
 
 ### 5.4 procedure_causal 是下一阶段重点
 
@@ -262,7 +262,7 @@ action_local:   64 / 109 = 58.72%
 
 它样本最多、准确率最低，是当前最大瓶颈。单纯把它 route 到 `uniform` 更稳，但没有真正解决过程理解、因果关系和长程动作归纳的问题。
 
-## 6. 下一步建议
+## 6. 下一步
 
 ### 6.1 优先优化 procedure_causal 的 evidence
 
@@ -282,7 +282,7 @@ action_local:   64 / 109 = 58.72%
 
 ### 6.3 后续可以做选择性 cyclic
 
-全量 cyclic 5 成本是 5 倍推理。后续为了降低成本，可以尝试只在高收益子集上做 cyclic：
+全量 cyclic 5 成本比较高。后续为了降低成本，可以尝试只在高收益子集上做 cyclic：
 
 - `action_local`
 - `segment_motion`
@@ -290,9 +290,9 @@ action_local:   64 / 109 = 58.72%
 
 不过目前作为研究结论，建议先汇报全量 cyclic 5，因为它最干净、最容易解释，也没有 post-hoc 选择策略。
 
-## 7. 汇报时可以强调的三句话
+## 7. 总结
 
-1. 只靠 LLM routing 没有超过规则版 adaptive，说明问题不只是 route，还包括 VLM 的选项位置偏置。
+1. 只靠 LLM routing 没有超过规则版 adaptive，说明问题不只是 route，还包括 VLM 的选项位置偏置。也可能是设计的 LLM routing 不够好
 2. 去掉 `single_frame` 后只提升 1 题，真正有效的是 ABCDE cyclic rotation 的 5 次投票。
 3. 当前最好结果是 `52.00%`，主要收益来自 `action_local/segment_motion`，下一步瓶颈是 `procedure_causal`。
 

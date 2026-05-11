@@ -1,0 +1,26 @@
+{
+  "id": "conv-1778351117135-gnbtru0kr",
+  "providerId": "codex",
+  "title": "分析论文与实验想法是否撞题",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778351117136,
+  "updatedAt": 1778351505419,
+  "lastResponseAt": 1778351505418,
+  "sessionId": "019e0dfc-950a-79e1-a773-8e7c6a91df5c",
+  "providerState": {
+    "threadId": "019e0dfc-950a-79e1-a773-8e7c6a91df5c",
+    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/10/rollout-2026-05-10T02-25-17-019e0dfc-950a-79e1-a773-8e7c6a91df5c.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question.md",
+  "usage": {
+    "inputTokens": 49736,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 48512,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 49736,
+    "percentage": 19,
+    "model": "gpt-5.5"
+  }
+}

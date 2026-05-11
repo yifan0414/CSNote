@@ -1,0 +1,26 @@
+{
+  "id": "conv-1778224575924-ozzvwv3oo",
+  "providerId": "codex",
+  "title": "Annotate paper links with conference names",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778224575924,
+  "updatedAt": 1778351088138,
+  "lastResponseAt": 1778226362552,
+  "sessionId": "019e0671-b8ae-7340-9102-931fb4fe4277",
+  "providerState": {
+    "threadId": "019e0671-b8ae-7340-9102-931fb4fe4277",
+    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/08/rollout-2026-05-08T15-16-16-019e0671-b8ae-7340-9102-931fb4fe4277.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "Paper/视频理解/选项偏置（Option、Position、Selection Bias）相关论文综述.md",
+  "usage": {
+    "inputTokens": 34013,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 33152,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 34013,
+    "percentage": 13,
+    "model": "gpt-5.5"
+  }
+}

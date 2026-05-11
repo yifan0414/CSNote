@@ -18,12 +18,11 @@
     "sample",
     "callout1",
     "html-size",
-    "claudian",
     "callout",
-    "pdf-soft-shadow",
-    "paper-base-maple",
+    "claudian",
     "code",
-    "font"
+    "font",
+    "paper-base-maple"
   ],
   "textFontFamily": "Maple Mono NF CN,苹方-简,Open Sans,LXGW WenKai,Inter,Georgia,Bookerly,Optima",
   "interfaceFontFamily": "Maple Mono NF CN,Open Sans,苹方-简,Inter,Bookerly",

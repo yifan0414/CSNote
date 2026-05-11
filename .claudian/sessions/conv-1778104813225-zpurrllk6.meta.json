@@ -1,0 +1,26 @@
+{
+  "id": "conv-1778104813225-zpurrllk6",
+  "providerId": "codex",
+  "title": "Summarize in two sentences",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778104813226,
+  "updatedAt": 1778351089053,
+  "lastResponseAt": 1778104963988,
+  "sessionId": "019dff4e-4847-75e1-b20b-da892dc44b61",
+  "providerState": {
+    "threadId": "019dff4e-4847-75e1-b20b-da892dc44b61",
+    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/07/rollout-2026-05-07T06-00-13-019dff4e-4847-75e1-b20b-da892dc44b61.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "实验/Adaptive Video LLM 组会汇报.md",
+  "usage": {
+    "inputTokens": 10153,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 9600,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 10153,
+    "percentage": 4,
+    "model": "gpt-5.5"
+  }
+}
