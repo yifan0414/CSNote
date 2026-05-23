@@ -1,0 +1,21 @@
+{
+  "id": "conv-1779010954330-aypyvx00q",
+  "providerId": "codex",
+  "title": "Respond to Chinese greeting",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779010954336,
+  "updatedAt": 1779095689378,
+  "lastResponseAt": 1779011223654,
+  "sessionId": null,
+  "currentNote": "Paper/视频理解/DYTO、KTV 改进.md",
+  "usage": {
+    "inputTokens": 22664,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 6016,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 22664,
+    "percentage": 9,
+    "model": "gpt-5.5"
+  }
+}

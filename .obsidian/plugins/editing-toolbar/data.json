@@ -331,6 +331,11 @@
       "id": "editing-toolbar:editor:insert-table",
       "name": "Editing Toolbar: Toggle table",
       "icon": "lucide-table"
+    },
+    {
+      "id": "editor:toggle-readable-line-length",
+      "name": "切换限制行宽",
+      "icon": "lucide-ruler"
     }
   ],
   "followingCommands": [],
@@ -347,7 +352,7 @@
   "cMenuBottomValue": 4.25,
   "cMenuNumRows": 12,
   "cMenuWidth": 554,
-  "cMenuFontColor": "#ff0000",
+  "cMenuFontColor": "#8064a2",
   "cMenuBackgroundColor": "#d2cbff",
   "autohide": false,
   "Iscentered": false,

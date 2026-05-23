@@ -1,0 +1,21 @@
+{
+  "id": "conv-1778685517778-hi4x7c5a3",
+  "providerId": "codex",
+  "title": "分析文章涉及的 pipeline 环节",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778685517779,
+  "updatedAt": 1778723664082,
+  "lastResponseAt": 1778686891908,
+  "sessionId": null,
+  "currentNote": "Paper/raw/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis.md",
+  "usage": {
+    "inputTokens": 109316,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 108928,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 109316,
+    "percentage": 42,
+    "model": "gpt-5.5"
+  }
+}

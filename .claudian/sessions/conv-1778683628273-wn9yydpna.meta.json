@@ -1,0 +1,21 @@
+{
+  "id": "conv-1778683628273-wn9yydpna",
+  "providerId": "codex",
+  "title": "Summarize VideoRouter paper",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778683628274,
+  "updatedAt": 1778719397587,
+  "lastResponseAt": 1778683983585,
+  "sessionId": null,
+  "currentNote": "Paper/raw/videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding/videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding.md",
+  "usage": {
+    "inputTokens": 21074,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 6016,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 21074,
+    "percentage": 8,
+    "model": "gpt-5.5"
+  }
+}

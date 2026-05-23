@@ -6,12 +6,7 @@
   "createdAt": 1777869995755,
   "updatedAt": 1777985616446,
   "lastResponseAt": 1777985607060,
-  "sessionId": "019df15d-eb6f-7360-b58c-e1624e9be2d0",
-  "providerState": {
-    "threadId": "019df15d-eb6f-7360-b58c-e1624e9be2d0",
-    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/04/rollout-2026-05-04T13-02-37-019df15d-eb6f-7360-b58c-e1624e9be2d0.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
-  },
+  "sessionId": null,
   "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
   "usage": {
     "inputTokens": 11134,

@@ -4,14 +4,9 @@
   "title": "整理 NExTQA/EgoSchema Acc 对比汇报",
   "titleGenerationStatus": "success",
   "createdAt": 1778085454561,
-  "updatedAt": 1778103829061,
+  "updatedAt": 1778683606270,
   "lastResponseAt": 1778103829061,
-  "sessionId": "019dfe26-ea09-7d41-b148-c0bf694e35c5",
-  "providerState": {
-    "threadId": "019dfe26-ea09-7d41-b148-c0bf694e35c5",
-    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/07/rollout-2026-05-07T00-37-36-019dfe26-ea09-7d41-b148-c0bf694e35c5.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
-  },
+  "sessionId": null,
   "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
   "usage": {
     "inputTokens": 64166,

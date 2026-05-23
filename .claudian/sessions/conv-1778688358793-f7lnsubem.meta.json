@@ -1,0 +1,20 @@
+{
+  "id": "conv-1778688358793-f7lnsubem",
+  "providerId": "codex",
+  "title": "分析阶段 C 与 VLM 分工",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778688358794,
+  "updatedAt": 1778735944620,
+  "lastResponseAt": 1778689288731,
+  "sessionId": null,
+  "usage": {
+    "inputTokens": 129654,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 63360,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 129654,
+    "percentage": 50,
+    "model": "gpt-5.5"
+  }
+}

@@ -1,19 +1,29 @@
 ---
-title: "Video-ChatGPT: Towards Detailed Video Understanding via Large Vision and Language Models"
-authors: ["Muhammad Maaz", "Hanoona Rasheed", "Salman Khan", "Fahad Shahbaz Khan"]
-conference: "ACL"
+title: Video-ChatGPT
+authors:
+  - Muhammad Maaz
+  - Hanoona Rasheed
+  - Salman Khan
+  - Fahad Shahbaz Khan
+conference: ACL
 year: 2024
-paper_url: "https://aclanthology.org/2024.acl-long.679/"
-source_pdf: "https://aclanthology.org/2024.acl-long.679.pdf"
+paper_url: https://aclanthology.org/2024.acl-long.679/
+source_pdf: https://aclanthology.org/2024.acl-long.679.pdf
 pdf_link: "[[assets/paper_2024.acl-long.679.pdf]]"
 cover: "[[assets/pipeline_2024.acl-long.679.png]]"
 updated: 2026-04-27
-tags: ["paper/pdf", "video-qa", "video-llm", "temporal-reasoning", "benchmark"]
-status: "unread"
+tags:
+  - paper/pdf
+  - video-qa
+  - video-llm
+  - temporal-reasoning
+  - benchmark
+status: unread
 priority:
 rating:
-topics: ["Video Understanding"]
-code: "https://github.com/mbzuai-oryx/Video-ChatGPT"
+topics:
+  - Video Understanding
+code: https://github.com/mbzuai-oryx/Video-ChatGPT
 ---
 
 ## TL;DR

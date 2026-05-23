@@ -437,13 +437,45 @@ function capitalizeMidSentence(ctx) {
   }
   return { ...ctx, content };
 }
+function isCJKContext(ch) {
+  const cat = classifyChar(ch);
+  if (cat === "chinese" /* Chinese */ || cat === "japanese" /* Japanese */ || cat === "korean" /* Korean */) {
+    return true;
+  }
+  if (ch.length > 0) {
+    const code = ch.charCodeAt(0);
+    if (code >= 12288 && code <= 12351 || code >= 65281 && code <= 65295 || code >= 65306 && code <= 65312 || code >= 65339 && code <= 65344 || code >= 65371 && code <= 65376 || code >= 65504 && code <= 65510 || code >= 65072 && code <= 65103) {
+      return true;
+    }
+  }
+  return false;
+}
 function findTokenBounds(content, pos) {
+  pos = Math.max(0, Math.min(pos, content.length));
+  let refIdx = pos > 0 ? pos - 1 : 0;
+  if (refIdx >= content.length)
+    refIdx = content.length - 1;
+  if (refIdx < 0)
+    return [0, 0];
+  const refIsCJK = isCJKContext(content.charAt(refIdx));
   let left = pos;
   while (left > 0 && !/[\s\0]/.test(content.charAt(left - 1))) {
+    const ch = content.charAt(left - 1);
+    const isCJK = isCJKContext(ch);
+    if (!isCJK && !/\w/.test(ch))
+      break;
+    if (isCJK !== refIsCJK)
+      break;
     left--;
   }
   let right = pos;
   while (right < content.length && !/[\s\0]/.test(content.charAt(right))) {
+    const ch = content.charAt(right);
+    const isCJK = isCJKContext(ch);
+    if (!isCJK && !/\w/.test(ch))
+      break;
+    if (isCJK !== refIsCJK)
+      break;
     right++;
   }
   return [left, right];
@@ -467,12 +499,111 @@ function collectAllBoundaries(content, languagePairs, customCategories) {
   }
   return positions;
 }
+var FORMATTING_CHARS_RE = /[*_~`^]/;
+function isFormattingChar(ch) {
+  return FORMATTING_CHARS_RE.test(ch);
+}
+function collectFormattingSeparatedBoundaries(content, languagePairs, customCategories) {
+  const positions = /* @__PURE__ */ new Set();
+  if (!FORMATTING_CHARS_RE.test(content))
+    return positions;
+  const pairTests = [];
+  for (const pair of languagePairs) {
+    const classA = resolveCharClass(pair.a, customCategories);
+    const classB = resolveCharClass(pair.b, customCategories);
+    if (!classA || !classB)
+      continue;
+    const regA = new RegExp(`^[${classA}]$`);
+    const regB = new RegExp(`^[${classB}]$`);
+    pairTests.push({
+      test(a, b) {
+        return regA.test(a) && regB.test(b) || regA.test(b) && regB.test(a);
+      }
+    });
+  }
+  if (pairTests.length === 0)
+    return positions;
+  const len = content.length;
+  let i = 0;
+  while (i < len) {
+    if (!isFormattingChar(content[i])) {
+      i++;
+      continue;
+    }
+    let blockStart = i;
+    while (blockStart > 0 && isFormattingChar(content[blockStart - 1])) {
+      blockStart--;
+    }
+    let blockEnd = i;
+    while (blockEnd < len - 1 && isFormattingChar(content[blockEnd + 1])) {
+      blockEnd++;
+    }
+    i = blockEnd + 1;
+    let leftIdx = blockStart - 1;
+    while (leftIdx >= 0 && (isFormattingChar(content[leftIdx]) || content[leftIdx] === "\0")) {
+      leftIdx--;
+    }
+    if (leftIdx < 0)
+      continue;
+    let rightIdx = blockEnd + 1;
+    while (rightIdx < len && (isFormattingChar(content[rightIdx]) || content[rightIdx] === "\0")) {
+      rightIdx++;
+    }
+    if (rightIdx >= len)
+      continue;
+    const leftChar = content[leftIdx];
+    const rightChar = content[rightIdx];
+    let pairMatched = false;
+    for (const pt of pairTests) {
+      if (pt.test(leftChar, rightChar)) {
+        pairMatched = true;
+        break;
+      }
+    }
+    if (!pairMatched)
+      continue;
+    const fmtChar = content[blockStart];
+    let matchedLeftDist = -1;
+    let matchedRightDist = -1;
+    for (let j = blockStart - 1; j >= 0; j--) {
+      if (content[j] === fmtChar) {
+        matchedLeftDist = blockStart - j;
+        break;
+      }
+      if (/[\s\0]/.test(content[j]))
+        break;
+    }
+    for (let j = blockEnd + 1; j < len; j++) {
+      if (content[j] === fmtChar) {
+        matchedRightDist = j - blockEnd;
+        break;
+      }
+      if (/[\s\0]/.test(content[j]))
+        break;
+    }
+    if (matchedLeftDist >= 0 && (matchedRightDist < 0 || matchedLeftDist <= matchedRightDist)) {
+      positions.add(blockEnd + 1);
+    } else if (matchedRightDist >= 0) {
+      positions.add(blockStart);
+    } else {
+      if (isCJKContext(leftChar))
+        positions.add(blockStart);
+      if (isCJKContext(rightChar))
+        positions.add(blockEnd + 1);
+    }
+  }
+  return positions;
+}
 function applyLanguagePairSpacing(ctx, languagePairs, prefixDict, customCategories, debug) {
   let { content, curCh, prevCh, offset } = ctx;
   if (!isParamDefined(prevCh))
     return ctx;
   const cursorInContent = curCh - offset;
   const allBoundaries = collectAllBoundaries(content, languagePairs, customCategories);
+  const fmtBoundaries = collectFormattingSeparatedBoundaries(content, languagePairs, customCategories);
+  for (const pos of fmtBoundaries) {
+    allBoundaries.add(pos);
+  }
   if (allBoundaries.size === 0)
     return ctx;
   let [tokLeft, tokRight] = findTokenBounds(content, cursorInContent);
@@ -523,7 +654,7 @@ function applyLanguagePairSpacing(ctx, languagePairs, prefixDict, customCategori
     const inCursorToken = pos >= tokLeft && pos < tokRight;
     if (inCursorToken) {
       const posInToken = pos - tokLeft;
-      if (posInToken < protectedUpTo) {
+      if (posInToken > 0 && posInToken < protectedUpTo) {
         continue;
       }
       if (pos >= prevChInContent && pos < cursorInContent || prefixDictExpired) {
@@ -3442,7 +3573,7 @@ var RuleEngine = class {
   findMatchingBrace(text, openIdx) {
     let depth = 1;
     for (let i = openIdx + 1; i < text.length; i++) {
-      if (text[i] === "{" && i > 0 && text[i - 1] === "$")
+      if (text[i] === "{")
         depth++;
       else if (text[i] === "}") {
         depth--;

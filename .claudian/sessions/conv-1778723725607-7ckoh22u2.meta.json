@@ -1,0 +1,21 @@
+{
+  "id": "conv-1778723725607-7ckoh22u2",
+  "providerId": "codex",
+  "title": "优化论文表格并生成带 Emoji 的 MD 文档",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778723725607,
+  "updatedAt": 1778726117763,
+  "lastResponseAt": 1778724703511,
+  "sessionId": null,
+  "currentNote": "Paper/视频理解/视频理解论文_Pipeline与工作位置综述_结构化修订版.md",
+  "usage": {
+    "inputTokens": 53604,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 51072,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 53604,
+    "percentage": 21,
+    "model": "gpt-5.5"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "conv-1778639675930-w0tx9lc3a",
+  "providerId": "codex",
+  "title": "Fix LaTeX textsc rendering",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778639675936,
+  "updatedAt": 1778683603334,
+  "lastResponseAt": 1778639789774,
+  "sessionId": null,
+  "currentNote": "Paper/raw/himu-hierarchical-multimodal-frame-selection-for-long-video-question-answering/himu-hierarchical-multimodal-frame-selection-for-long-video-question-answering.md",
+  "usage": {
+    "inputTokens": 16379,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 15744,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 16379,
+    "percentage": 6,
+    "model": "gpt-5.5"
+  }
+}

@@ -10,25 +10,23 @@
           {
             "id": "4b1f9a0fb5e66638",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "bases",
               "state": {
                 "file": "Paper/Papers.base",
                 "viewName": "All Papers"
               },
-              "pinned": true,
               "icon": "lucide-table",
               "title": "Papers"
             }
           },
           {
-            "id": "af407b8138352425",
+            "id": "24bce311617fc3e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+                "file": "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -43,40 +41,26 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "EgoSchema Adaptive LLM 实验阶段性总结"
+              "title": "a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question"
             }
           },
           {
-            "id": "b4df4c2e485f61f6",
+            "id": "7d6c796a34583870",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "EgoSchema Adaptive LLM 实验阶段性总结"
+              "title": "新标签页"
             }
           },
           {
-            "id": "b1f10d532fec7357",
+            "id": "bb060f3c7571faae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/20260511_3-inference.md",
+                "file": "Paper/raw/floc-facility-location-based-efficient-visual-token-compression-for-long-video/floc-facility-location-based-efficient-visual-token-compression-for-long-video.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -91,35 +75,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "20260511_3-inference"
-            }
-          },
-          {
-            "id": "d4ee673146279d1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "实验/NExTQA Adaptive LLM 实验阶段性总结.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "NExTQA Adaptive LLM 实验阶段性总结"
+              "title": "floc-facility-location-based-efficient-visual-token-compression-for-long-video"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 295
+    "width": 213
   },
   "right": {
     "id": "8815071129bdee48",
@@ -266,13 +225,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "copilot/copilot-conversations/模拟器文档总结@20260424_014734.md",
+                "file": "Paper/raw/videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding/videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "模拟器文档总结@20260424_014734 的大纲"
+              "title": "videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding 的大纲"
             }
           },
           {
@@ -281,8 +240,8 @@
             "state": {
               "type": "claudian-view",
               "state": {},
-              "icon": "bot",
-              "title": "Claudian"
+              "icon": "lucide-ghost",
+              "title": "claudian-view"
             }
           }
         ],
@@ -290,7 +249,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 440,
+    "width": 419,
     "collapsed": true
   },
   "left-ribbon": {
@@ -310,58 +269,57 @@
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "claudian:Open Claudian": false
+      "realclaudian:Open Claudian": false
     }
   },
-  "active": "b1f10d532fec7357",
+  "active": "4b1f9a0fb5e66638",
   "lastOpenFiles": [
-    "实验/Adaptive Video LLM 组会汇报.md",
-    "Paper/20260511_3-inference.md",
-    "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question/assets/pipeline_2504.21403.png",
-    "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question/assets/pipeline_2504.21403.pdf",
-    "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question/assets/paper_2504.21403.pdf",
-    "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question.md",
-    "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question/assets",
-    "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question",
-    "Paper/raw/confidence-guided-refinement-reasoning-for-zero-shot-question-answering/assets/pipeline_2509.20750.png",
-    "Paper/raw/confidence-guided-refinement-reasoning-for-zero-shot-question-answering/assets/pipeline_2509.20750.pdf",
-    "Paper/raw/confidence-guided-refinement-reasoning-for-zero-shot-question-answering/assets/paper_2509.20750.pdf",
-    "Paper/raw/confidence-guided-refinement-reasoning-for-zero-shot-question-answering/confidence-guided-refinement-reasoning-for-zero-shot-question-answering.md",
-    "Paper/raw/confidence-guided-refinement-reasoning-for-zero-shot-question-answering/assets",
-    "Paper/raw/confidence-guided-refinement-reasoning-for-zero-shot-question-answering",
-    "未命名.md",
+    "Paper/raw/floc-facility-location-based-efficient-visual-token-compression-for-long-video/floc-facility-location-based-efficient-visual-token-compression-for-long-video.md",
+    "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question.md",
+    "Paper/Papers.base",
+    "Paper/raw/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/D-CoDe.md",
+    "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/assets/paper_2510.04428.pdf",
+    "Paper/raw/focus-efficient-keyframe-selection-for-long-video-understanding/focus-efficient-keyframe-selection-for-long-video-understanding.md",
+    "Paper/raw/k-frames-scene-driven-any-k-keyframe-selection-for-long-video-understanding/k-frames-scene-driven-any-k-keyframe-selection-for-long-video-understanding.md",
+    "Paper/raw/where-to-focus-query-modulated-multimodal-keyframe-selection-for-long-video-unde/where-to-focus-query-modulated-multimodal-keyframe-selection-for-long-video-unde.md",
+    "Paper/raw/divide-then-ground-adapting-frame-selection-to-query-types-for-long-form-video/Divide, then Ground Adapting Frame Selection to Query Types for Long-Form Video Understanding.md",
+    "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video.md",
+    "Paper/raw/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/KTV.md",
+    "Paper/raw/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/assets/paper_2602.03615.pdf",
+    "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/assets/pipeline_2510.04428.png",
+    "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/assets/pipeline_2510.04428-1.png",
+    "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/assets/pipeline_2510.04428.pdf",
+    "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/assets",
+    "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question",
+    "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video/assets/pipeline_2603.00512.png",
+    "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video/assets/paper_2603.00512.pdf",
+    "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video/assets",
+    "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video",
+    "Paper/raw/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/assets/paper_2510.08818.pdf",
+    "Paper/raw/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding.md",
+    "Paper/raw/logic-in-frames-dynamic-keyframe-search-via-visual-semantic-logical-verification/logic-in-frames-dynamic-keyframe-search-via-visual-semantic-logical-verification.md",
+    "Paper/视频理解/视频理解论文_Pipeline.md",
+    "Paper/raw/scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model/scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model.md",
+    "Paper/raw/k-frames-scene-driven-any-k-keyframe-selection-for-long-video-understanding/assets/pipeline_2510.13891.png",
+    "Paper/raw/logic-in-frames-dynamic-keyframe-search-via-visual-semantic-logical-verification/assets/pipeline_2503.13139.png",
+    "Paper/raw/focus-efficient-keyframe-selection-for-long-video-understanding/assets/pipeline_2510.27280.png",
+    "Paper/raw/focus-efficient-keyframe-selection-for-long-video-understanding/assets/pipeline_2510.27280_render-1.png",
+    "Paper/raw/where-to-focus-query-modulated-multimodal-keyframe-selection-for-long-video-unde/assets/pipeline_2604.17422.png",
+    "Paper/raw/coselect-adaptive-frame-selection-for-video-language-understanding/coselect-adaptive-frame-selection-for-video-language-understanding.md",
+    "Paper/raw/coselect-adaptive-frame-selection-for-video-language-understanding/assets/pipeline_85bab755c7254aed0b86d31707b4fac0a92d777d.png",
+    "Paper/raw/m-llm-based-video-frame-selection-for-efficient-video-understanding/m-llm-based-video-frame-selection-for-efficient-video-understanding.md",
+    "Paper/raw/m-llm-based-video-frame-selection-for-efficient-video-understanding/assets/pipeline_2502.19680v1.png",
+    "Paper/raw/one-token-per-highly-selective-frame-towards-extreme-compression-for-long-video/one-token-per-highly-selective-frame-towards-extreme-compression-for-long-video.md",
+    "Paper/raw/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis.md",
+    "Paper/raw/DeepScan-A-Training-Free-Framework-for-Visually-Grounded-Reasoning-in-Large-Visi/DeepScan-A-Training-Free-Framework-for-Visually-Grounded-Reasoning-in-Large-Visi.md",
+    "Paper/raw/adaptive-keyframe-sampling-for-long-video-understanding/adaptive-keyframe-sampling-for-long-video-understanding.md",
+    "Paper/raw/q-frame-query-aware-frame-selection-and-multi-resolution-adaptation-for-video-ll/q-frame-query-aware-frame-selection-and-multi-resolution-adaptation-for-video-ll.md",
+    "实验/KTV 消融实验.md",
+    "实验/adaptive evidence.md",
+    "Paper/视频理解/DYTO、KTV 改进.md",
+    "实验/EVI 最新.md",
     "Paper/视频理解/选项偏置（Option、Position、Selection Bias）相关论文综述.md",
-    "Paper/视频理解/未命名.md",
-    "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
-    "实验/NExTQA Adaptive LLM 实验阶段性总结.md",
-    "实验/实验.base",
-    "实验/NExTQA cyclic shuffle5.md",
-    "实验/ssh-remote+172.21.44.14:.inetloc",
-    "实验/random shuffle 5 times.md",
-    "实验/规则router 实验.md",
-    "Paper/Paper MOC.md",
-    "07-AI/AI MOC.md",
-    "07-AI/人工智能.md",
-    "06-Algorithm/Algorithm MOC.md",
-    "READING/Reading MOC.md",
-    "Diary/2025/2025-01-19.md",
-    "Diary/2024/2024-02-10.md",
-    "Diary/2024/2024-02-03.md",
-    "Diary/2024/2024-02-02.md",
-    "Diary/2024/2024-02-01.md",
-    "copilot/copilot-conversations/模拟器文档总结@20260424_014734.md",
-    "02-Capture/Clippings/输入与输出.md",
-    "02-Capture/Clippings/深度学习把两篇论文的方法拼接在一起，效果实现了新的sota，可以发论文吗？.md",
-    "02-Capture/Clippings/数学公式提供.md",
-    "attachments/Pasted image 20260430194024.png",
-    "Paper/raw/addressing-blind-guessing-calibration-of-selection-bias-in-multiple-choice-quest/assets/pipeline_2410.14248.png",
-    "Paper/raw/videotree-adaptive-tree-based-video-representation-for-llm-reasoning-on-long-vid/assets/pipeline_2405.19209.png",
-    "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets/pipeline_2024_acl_long_679.png",
-    "Paper/raw/video-chatgpt-towards-detailed-video-understanding-via-large-vision-and-language/assets/pipeline_2024.acl-long.679.png",
     "07-MultiModal/未命名.canvas",
-    "Paper/raw/video-mme-v2-towards-the-next-stage-in-benchmarks-for-comprehensive-video-unders/assets/pipeline_2604.05015.png",
-    "Paper/raw/stay-in-your-lane-role-specific-queries-with-overlap-suppression-loss-for/assets/pipeline_arxiv_2603_11439v1.png",
-    "Paper/raw/deepseek-v4-towards-highly-efficient-million-token-context-intelligence/assets/pipeline_deepseek-v4-f4cbe4fc.png",
     "01-Project/CS61A/canvasNote/IntroToPython.canvas",
     "07-AI/神经网络/人工神经网络训练过程.canvas",
     "08-Lee/未命名.canvas",

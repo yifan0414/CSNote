@@ -1,8 +1,8 @@
 {
   "userName": "yifan",
   "permissionMode": "normal",
-  "model": "opus",
-  "thinkingBudget": "medium",
+  "model": "haiku",
+  "thinkingBudget": "off",
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
@@ -27,6 +27,7 @@
     "scrollDownKey": "s",
     "focusInputKey": "i"
   },
+  "requireCommandOrControlEnterToSend": false,
   "locale": "zh-CN",
   "providerConfigs": {
     "claude": {
@@ -39,7 +40,7 @@
       "enableOpus1M": false,
       "enableSonnet1M": false,
       "customModels": "",
-      "lastModel": "opus",
+      "lastModel": "haiku",
       "environmentVariables": "",
       "environmentHash": ""
     },
@@ -50,19 +51,30 @@
       "cliPathsByHost": {},
       "customModels": "gpt-5.5",
       "reasoningSummary": "detailed",
-      "environmentVariables": "OPENAI_API_KEY=sk-6a08c8602682281c655a371e91bbc4824109e0999ccfca9156cb32967318ae8f\nCODEX_HOME=/Users/yifan/.codex-duckcode",
-      "environmentHash": "OPENAI_API_KEY=sk-6a08c8602682281c655a371e91bbc4824109e0999ccfca9156cb32967318ae8f",
+      "environmentVariables": "OPENAI_API_KEY=sk-ihs6I9jfMKAfy53jxjyzMWg0jWomBNJHeuj4IrMmiR0FxSG9\nCODEX_HOME=/Users/yifan/.codex-duckcode",
+      "environmentHash": "OPENAI_API_KEY=sk-ihs6I9jfMKAfy53jxjyzMWg0jWomBNJHeuj4IrMmiR0FxSG9",
       "installationMethodsByHost": {
         "yifanMac-mini": "native-windows",
         "yifanMacBook-Air.local": "native-windows",
-        "Mac-Mini": "native-windows"
+        "device:b9a16391-035b-4438-9c2f-0dfa16f36ee5": "native-windows"
       },
       "wslDistroOverridesByHost": {}
+    },
+    "opencode": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "modelAliases": {},
+      "preferredThinkingByModel": {},
+      "selectedMode": "",
+      "visibleModels": []
     }
   },
   "settingsProvider": "claude",
   "savedProviderModel": {
-    "claude": "opus",
+    "claude": "haiku",
     "codex": "gpt-5.5"
   },
   "savedProviderEffort": {
@@ -73,7 +85,7 @@
     "codex": "default"
   },
   "savedProviderThinkingBudget": {
-    "claude": "medium",
+    "claude": "off",
     "codex": "off"
   },
   "savedProviderPermissionMode": {
@@ -84,6 +96,7 @@
   "maxTabs": 3,
   "tabBarPosition": "input",
   "enableAutoScroll": true,
-  "openInMainTab": false,
+  "deferMathRenderingDuringStreaming": true,
+  "chatViewPlacement": "right-sidebar",
   "hiddenProviderCommands": {}
 }

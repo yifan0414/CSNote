@@ -4,14 +4,9 @@
   "title": "分析论文与实验想法是否撞题",
   "titleGenerationStatus": "success",
   "createdAt": 1778351117136,
-  "updatedAt": 1778351505419,
+  "updatedAt": 1778683604203,
   "lastResponseAt": 1778351505418,
-  "sessionId": "019e0dfc-950a-79e1-a773-8e7c6a91df5c",
-  "providerState": {
-    "threadId": "019e0dfc-950a-79e1-a773-8e7c6a91df5c",
-    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/10/rollout-2026-05-10T02-25-17-019e0dfc-950a-79e1-a773-8e7c6a91df5c.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
-  },
+  "sessionId": null,
   "currentNote": "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question.md",
   "usage": {
     "inputTokens": 49736,

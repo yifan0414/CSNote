@@ -1,5 +1,5 @@
 ---
-title: "VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos"
+title: VideoTree
 authors:
   - Ziyang Wang
   - Shoubin Yu
@@ -21,7 +21,7 @@ tags:
   - temporal-reasoning
   - question-aware
   - video-llm
-status: unread
+status: reading
 priority: "1"
 rating: "5"
 topics:

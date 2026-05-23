@@ -1,0 +1,21 @@
+{
+  "id": "conv-1778735975444-8zuvm4wpl",
+  "providerId": "codex",
+  "title": "解释 VideoRouter 在 VLM 内压缩建模取舍",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778735975444,
+  "updatedAt": 1778785098327,
+  "lastResponseAt": 1778736192273,
+  "sessionId": null,
+  "currentNote": "Paper/视频理解/视频理解论文_Pipeline.md",
+  "usage": {
+    "inputTokens": 23488,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 12672,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 23488,
+    "percentage": 9,
+    "model": "gpt-5.5"
+  }
+}

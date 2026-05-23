@@ -343,7 +343,7 @@
   "maple-basic@@app-layout-card-bg": "app-layout-card-gradient",
   "maple-editor@@heading-h1-caps": false,
   "maple-editor@@setting-file-line-width": "clamp(700px, 78%, 980px)",
-  "maple-editor@@image-zoom": true,
+  "maple-editor@@image-zoom": false,
   "maple-editor@@heading-h2-style": "heading-h2-block",
   "maple-editor@@heading-h2-full-line-direction": "heading-h2-full-line-left",
   "maple-workspace@@search-internal-enable": true,
