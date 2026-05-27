@@ -1,0 +1,26 @@
+{
+  "id": "conv-1779754639843-qvmzcru9g",
+  "providerId": "codex",
+  "title": "Explain AKS pipeline",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779754639843,
+  "updatedAt": 1779765551373,
+  "lastResponseAt": 1779763182543,
+  "sessionId": "019e61a4-a371-73a1-b2c2-41fb885ff99b",
+  "providerState": {
+    "threadId": "019e61a4-a371-73a1-b2c2-41fb885ff99b",
+    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/26/rollout-2026-05-26T08-17-20-019e61a4-a371-73a1-b2c2-41fb885ff99b.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "Paper/raw/adaptive-keyframe-sampling-for-long-video-understanding/adaptive-keyframe-sampling-for-long-video-understanding.md",
+  "usage": {
+    "inputTokens": 70948,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 2432,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 70948,
+    "percentage": 27,
+    "model": "gpt-5.5"
+  }
+}

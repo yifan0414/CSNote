@@ -1,5 +1,5 @@
 ---
-title: "K-frames: Scene-Driven Any-k Keyframe Selection for long video understanding"
+title: K-frames(frame)
 authors:
   - Yifeng Yao
   - Yike Yun

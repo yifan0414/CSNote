@@ -1,5 +1,5 @@
 ---
-title: "FOCUS: Efficient Keyframe Selection for Long Video Understanding"
+title: FOCUS(frame)
 authors:
   - Zirui Zhu
   - Hailun Xu
@@ -23,8 +23,8 @@ tags:
   - token-pruning
   - video-llm
 status: unread
-priority:
-rating:
+priority: "5"
+rating: "5"
 topics:
   - Video Understanding
 code: https://github.com/NUS-HPC-AI-Lab/FOCUS

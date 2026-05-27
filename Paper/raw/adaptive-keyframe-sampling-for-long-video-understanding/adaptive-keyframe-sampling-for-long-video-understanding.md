@@ -1,5 +1,5 @@
 ---
-title: Adaptive Keyframe Sampling for Long Video Understanding
+title: AKS(frame)
 authors:
   - Xi Tang
   - Jihao Qiu
@@ -21,9 +21,9 @@ tags:
   - temporal-reasoning
   - video-llm
   - token-pruning
-status: unread
-priority:
-rating:
+status: read
+priority: "5"
+rating: "5"
 topics:
   - Video Understanding
 code: https://github.com/ncTimTang/AKS

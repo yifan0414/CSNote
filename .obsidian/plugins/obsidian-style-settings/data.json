@@ -363,9 +363,12 @@
   "maple-editor@@heading-color-style": "heading-color-accent",
   "maple-editor@@hr-enable": true,
   "maple-editor@@pdf-export-default-hr": true,
-  "maple-editor@@pdf-export-page-break": true,
+  "maple-editor@@pdf-export-page-break": false,
   "maple-editor@@pdf-export-transparent": true,
   "maple-editor@@pdf-export-standard": false,
   "maple-editor@@link-heading": true,
-  "maple-editor@@tag-style": "tag-outline"
+  "maple-editor@@tag-style": "tag-outline",
+  "maple-editor@@quote-mark": false,
+  "maple-editor@@quote-italic": true,
+  "maple-editor@@quote-outline-style": "quote-shadow"
 }

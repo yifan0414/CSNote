@@ -9,7 +9,7 @@ authors:
   - Jinhui Ye
   - Ying Sun
   - Hui Xiong
-conference: NIPS 2025
+conference: NeruIPS 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2503.13139
 pdf_link: "[[assets/paper_2503.13139.pdf]]"

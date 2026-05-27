@@ -1,18 +1,30 @@
 ---
 title: "Addressing Blind Guessing: Calibration of Selection Bias in Multiple-Choice Question Answering by Video Language Models"
-authors: ["Olga Loginova", "Oleksandr Bezrukov", "Ravi Shekhar", "Alexey Kravets"]
-conference: ""
+authors:
+  - Olga Loginova
+  - Oleksandr Bezrukov
+  - Ravi Shekhar
+  - Alexey Kravets
+conference:
 year: 2024
-arxiv_url: "https://arxiv.org/abs/2410.14248"
+arxiv_url: https://arxiv.org/abs/2410.14248
 pdf_link: "[[assets/paper_2410.14248.pdf]]"
 cover: "[[assets/pipeline_2410.14248.png]]"
 updated: 2026-04-29
-tags: ["paper/arxiv", "video-qa", "temporal-reasoning", "option-aware", "question-aware", "video-llm", "benchmark"]
-status: "unread"
+tags:
+  - paper/arxiv
+  - video-qa
+  - temporal-reasoning
+  - option-aware
+  - question-aware
+  - video-llm
+  - benchmark
+status: unread
 priority:
 rating:
-topics: ["Video Understanding"]
-code: "https://github.com/ologin/BOLD"
+topics:
+  - Video Understanding
+code: https://github.com/ologin/BOLD
 ---
 
 ## TL;DR

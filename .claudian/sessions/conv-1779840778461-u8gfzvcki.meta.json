@@ -1,0 +1,25 @@
+{
+  "id": "conv-1779840778461-u8gfzvcki",
+  "providerId": "codex",
+  "title": "Respond to greeting",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779840778463,
+  "updatedAt": 1779841192981,
+  "lastResponseAt": 1779841192981,
+  "sessionId": "019e66c7-0164-7ab0-80e2-d054747638af",
+  "providerState": {
+    "threadId": "019e66c7-0164-7ab0-80e2-d054747638af",
+    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/27/rollout-2026-05-27T08-12-58-019e66c7-0164-7ab0-80e2-d054747638af.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "usage": {
+    "inputTokens": 29820,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 13696,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 29820,
+    "percentage": 12,
+    "model": "gpt-5.5"
+  }
+}

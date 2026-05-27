@@ -6,12 +6,7 @@
   "createdAt": 1779226616147,
   "updatedAt": 1779226689447,
   "lastResponseAt": 1779226689447,
-  "sessionId": "019e422b-a3d1-7b61-9ebc-09826ec23cd9",
-  "providerState": {
-    "threadId": "019e422b-a3d1-7b61-9ebc-09826ec23cd9",
-    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/20/rollout-2026-05-20T05-36-56-019e422b-a3d1-7b61-9ebc-09826ec23cd9.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
-  },
+  "sessionId": null,
   "currentNote": "Paper/raw/logic-in-frames-dynamic-keyframe-search-via-visual-semantic-logical-verification/logic-in-frames-dynamic-keyframe-search-via-visual-semantic-logical-verification.md",
   "usage": {
     "inputTokens": 24493,

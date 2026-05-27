@@ -5,7 +5,7 @@ authors:
   - Jimin Lee
   - Hyeongkeun Lee
   - Jae Won Cho
-conference: ""
+conference:
 year: 2026
 paper_url: https://arxiv.org/abs/2603.11439v1
 source_pdf: /Users/yifan/Downloads/Stay in your Lane Role Specific Queries with Overlap Suppression Loss for Dense Video Captioning.pdf

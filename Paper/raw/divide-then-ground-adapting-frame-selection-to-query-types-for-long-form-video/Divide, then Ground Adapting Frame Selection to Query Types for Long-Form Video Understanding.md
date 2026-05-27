@@ -1,11 +1,11 @@
 ---
-title: DIG
+title: DIG(frame)
 authors:
   - Jialuo Li
   - Bin Li
   - Jiahao Li
   - Yan Lu
-conference: CVPR 2025
+conference: CVPR 2026
 year: 2026
 arxiv_url: https://arxiv.org/abs/2512.04000
 pdf_link: "[[assets/paper_2512.04000.pdf]]"

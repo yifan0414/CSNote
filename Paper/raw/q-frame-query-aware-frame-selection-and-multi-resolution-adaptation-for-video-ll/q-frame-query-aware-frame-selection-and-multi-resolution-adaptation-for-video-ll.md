@@ -1,17 +1,29 @@
 ---
-title: "Q-Frame: Query-aware Frame Selection and Multi-Resolution Adaptation for Video-LLMs"
-authors: ["Shaojie Zhang", "Jiahui Yang", "Jianqin Yin", "Zhenbo Luo", "Jian Luan"]
-conference: "ICCV"
+title: Q-Frame(frame)
+authors:
+  - Shaojie Zhang
+  - Jiahui Yang
+  - Jianqin Yin
+  - Zhenbo Luo
+  - Jian Luan
+conference: ICCV 2025
 year: 2025
-arxiv_url: "https://arxiv.org/abs/2506.22139"
+arxiv_url: https://arxiv.org/abs/2506.22139
 pdf_link: "[[assets/paper_2506.22139.pdf]]"
 cover: "[[assets/pipeline_2506.22139.png]]"
 updated: 2026-05-18
-tags: ["paper/arxiv", "video-qa", "long-video", "temporal-reasoning", "question-aware", "video-llm"]
-status: "unread"
-priority:
-rating:
-topics: ["Video Understanding"]
+tags:
+  - paper/arxiv
+  - video-qa
+  - long-video
+  - temporal-reasoning
+  - question-aware
+  - video-llm
+status: read
+priority: "5"
+rating: "5"
+topics:
+  - Video Understanding
 code: ""
 ---
 

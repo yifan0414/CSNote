@@ -1,0 +1,21 @@
+{
+  "id": "conv-1779753600765-8aqlia5zt",
+  "providerId": "codex",
+  "title": "请你介绍下 MDP3 的 pipeline",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1779753600767,
+  "updatedAt": 1779765551937,
+  "lastResponseAt": 1779754406379,
+  "sessionId": null,
+  "currentNote": "Paper/raw/mdp3-a-training-free-approach-for-list-wise-frame-selection-in-video-llms/assets/paper_2501.02885.pdf",
+  "usage": {
+    "inputTokens": 41660,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 40832,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 41660,
+    "percentage": 16,
+    "model": "gpt-5.5"
+  }
+}

@@ -1,5 +1,5 @@
 ---
-title: "Beyond Training: Dynamic Token Merging for Zero-Shot Video Understanding"
+title: DYTO(frame+token)
 authors:
   - Yiming Zhang
   - Zhuokai Zhao

@@ -10,9 +10,9 @@ tags:
 status: draft
 related:
   - "[[Paper/Video Understanding 论文综述报告]]"
-  - "[[Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/DYTO|DYTO]]"
-  - "[[Paper/raw/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/D-CoDe|D-CoDe]]"
-  - "[[Paper/raw/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/KTV|KTV]]"
+  - "[[Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding|Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding]]"
+  - "[[D-CoDe Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition|D-CoDe Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition]]"
+  - "[[KTV Keyframes and Key Tokens Selection for Efficient Training-Free Video LLMs|KTV Keyframes and Key Tokens Selection for Efficient Training-Free Video LLMs]]"
   - "[[Paper/raw/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question|HiCrew]]"
   - "[[Paper/组会汇报/1月8日汇报]]"
   - "[[Paper/组会汇报/12 月 25 日汇报]]"
@@ -24,7 +24,7 @@ related:
 
 ## 0. 目标定位
 
-本文希望把 [[Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/DYTO|DYTO]] 从一个强感知压缩前端，扩展成一个面向长视频多选问答的 **training-free evidence reasoning framework**。
+本文希望把 [[Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding|Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding]] 从一个强感知压缩前端，扩展成一个面向长视频多选问答的 **training-free evidence reasoning framework**。
 
 一句话概括：
 
@@ -50,8 +50,8 @@ related:
 
 现有 training-free video understanding 方法大致可以分成两类：
 
-- **Perception compression**：如 [[Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/DYTO|DYTO]]、[[Paper/raw/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/KTV|KTV]]，重点在 temporal redundancy 和 spatial token redundancy；
-- **Reasoning orchestration**：如 [[Paper/raw/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/D-CoDe|D-CoDe]]、[[Paper/raw/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question|HiCrew]]，重点在如何消费已有视觉证据。
+- **Perception compression**：如 [[Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding|Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding]]、[[KTV Keyframes and Key Tokens Selection for Efficient Training-Free Video LLMs|KTV Keyframes and Key Tokens Selection for Efficient Training-Free Video LLMs]]，重点在 temporal redundancy 和 spatial token redundancy；
+- **Reasoning orchestration**：如 [[D-CoDe Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition|D-CoDe Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition]]、[[Paper/raw/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question|HiCrew]]，重点在如何消费已有视觉证据。
 
 从 [[Paper/组会汇报/1月8日汇报]] 的实验现象看：
 
@@ -288,9 +288,9 @@ VideoTokens + Q + option-wise support/refute evidence -> Answer
 | 类型          | Baseline                                                                                                                                                                        | 作用                        |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
 | 简单采样        | SlowFast-LLaVA                                                                                                                                                                  | 基础 training-free baseline |
-| 动态压缩        | [[Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/DYTO\|DYTO]]                                                                                | 主对比对象                     |
-| 高效 token 选择 | [[Paper/raw/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/KTV\|KTV]]                                                                            | 效率对比                      |
-| 推理增强        | [[D-CoDe]]                                                                                                                                                                      | reasoning upper reference |
+| 动态压缩        | [[Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding\|DYTO]]                                                                                | 主对比对象                     |
+| 高效 token 选择 | [[KTV Keyframes and Key Tokens Selection for Efficient Training-Free Video LLMs\|KTV]]                                                                            | 效率对比                      |
+| 推理增强        | [[D-CoDe Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition]]                                                                                                                                                                      | reasoning upper reference |
 | 系统上限        | [[Paper/raw/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question/hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question\|HiCrew]] | 高成本参考上限                   |
 
 ## 2.4 最小可行实验路线

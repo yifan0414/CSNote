@@ -1,10 +1,10 @@
 ---
-title: "CoSeLECT: Adaptive Frame Selection for Video-Language Understanding"
+title: CoSeLECT(frame)
 authors:
   - Anonymous
-conference: ICLR 2026
+conference: ICLR 2026×
 year: 2026
-paper_url: https://openreview.net/pdf/85bab755c7254aed0b86d31707b4fac0a92d777d.pdf
+paper_url: https://openreview.net/forum?id=Pr3I3ewBFU
 source_pdf: https://openreview.net/pdf/85bab755c7254aed0b86d31707b4fac0a92d777d.pdf
 pdf_link: "[[assets/paper_85bab755c7254aed0b86d31707b4fac0a92d777d.pdf]]"
 cover: "[[assets/pipeline_85bab755c7254aed0b86d31707b4fac0a92d777d.png]]"
@@ -17,9 +17,9 @@ tags:
   - question-aware
   - token-pruning
   - video-llm
-status: unread
-priority:
-rating:
+status: read
+priority: "3"
+rating: "3"
 topics:
   - Video Understanding
 code: ""

@@ -1,5 +1,5 @@
 ---
-title: Scaling the Long Video Understanding of Multimodal Large Language Models via Visual Memory Mechanism
+title: FlexMem
 authors:
   - Tao Chen
   - Kun Zhang

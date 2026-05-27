@@ -8,7 +8,7 @@ authors:
   - Bin Li
   - Houqiang Li
   - Yan Lu
-conference: NeurIPS
+conference: NeurIPS 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2505.18079
 pdf_link: "[[paper_2505.18079.pdf]]"

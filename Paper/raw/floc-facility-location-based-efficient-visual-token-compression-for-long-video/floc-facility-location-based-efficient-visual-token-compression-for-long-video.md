@@ -1,5 +1,5 @@
 ---
-title: "FLoC: Facility Location-Based Efficient Visual Token Compression for Long Video Understanding"
+title: FLoC(token compression)
 authors:
   - Janghoon Cho
   - Jungsoo Lee

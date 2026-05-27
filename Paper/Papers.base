@@ -59,14 +59,10 @@ views:
       - formula.code_link
       - updated
     sort:
-      - property: updated
-        direction: DESC
       - property: conference
         direction: DESC
-      - property: formula.paper
-        direction: ASC
-      - property: formula.topics_view
-        direction: ASC
+      - property: updated
+        direction: DESC
       - property: year
         direction: ASC
       - property: topics

@@ -1,5 +1,5 @@
 ---
-title: "KTV: Keyframes and Key Tokens Selection for Efficient Training-Free Video LLMs"
+title: KTV(frame+extern token)
 authors:
   - Baiyang Song
   - Jun Peng

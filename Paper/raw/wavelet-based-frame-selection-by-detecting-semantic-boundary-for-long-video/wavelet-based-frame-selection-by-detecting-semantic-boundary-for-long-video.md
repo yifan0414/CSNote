@@ -1,5 +1,5 @@
 ---
-title: Wavelet-based Frame Selection by Detecting Semantic Boundary for Long Video Understanding
+title: WFS-SB(frame)
 authors:
   - Wang Chen
   - Yuhui Zeng
@@ -23,8 +23,8 @@ tags:
   - question-aware
   - video-llm
 status: unread
-priority:
-rating:
+priority: "5"
+rating: "5"
 topics:
   - Video Understanding
 code: https://github.com/MAC-AutoML/WFS-SB

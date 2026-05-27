@@ -11,9 +11,9 @@ topics:
   - Video Understanding
 status: draft
 source_notes:
-  - "[[Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/DYTO]]"
-  - "[[D-CoDe]]"
-  - "[[KTV]]"
+  - "[[Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding]]"
+  - "[[D-CoDe Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition]]"
+  - "[[KTV Keyframes and Key Tokens Selection for Efficient Training-Free Video LLMs]]"
   - "[[hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question]]"
   - "[[Paper/文本视频/TOPA.md]]"
   - "[[Paper/实时视频描述/LiveCC.md]]"
@@ -51,9 +51,9 @@ source_notes:
 | 工作                                                                                | 主要任务                                                  |                                      是否真实视觉输入 |                        是否 training-free | 核心机制                            | 最强点                                                             | 主要短板                                         |                                               |                             |
 | --------------------------------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------: | --------------------------------------: | ------------------------------- | --------------------------------------------------------------- | -------------------------------------------- | --------------------------------------------- | --------------------------- |
 | [[Paper/文本视频/TOPA.md]]                                                            | TOPA                                                  | Text-only video understanding / pre-alignment |                                ❌ 文本模拟视频 | 部分依赖预训练                         | 用文本帧模拟视频，借 CLIP text-image space 做预对齐                           | 数据成本低，启发“语言时序推理”                             | 模态 gap 大，缺真实 motion / spatial continuity      |                             |
-| [[Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/DYTO]]       | DyTo                                                  |                             Zero-shot VideoQA |                                       ✅ | ✅                               | `[CLS]` 层级聚类选帧 + dynamic bipartite token merging                | training-free 强基线，视觉覆盖较好                     | query-agnostic；EgoSchema 上推理结构不足              |                             |
-| [[D-CoDe]]     | D-CoDe                                                |              Image-pretrained VLM 扩展到 VideoQA |                                       ✅ | ✅                               | dynamic compression + question decomposition                    | EgoSchema 提升显著，说明推理瓶颈真实存在                    | question decomposition 延迟极高；open-ended QA 不稳定 |                             |
-| [[KTV]] | KTV                                                   |              Efficient training-free VideoLLM |                                       ✅ | ✅                               | DINOv2 KMeans keyframes + importance/redundancy token selection | token 极省，效率/精度 Pareto 好                      | 主要验证 MC VideoQA；长视频全帧 DINOv2 预处理仍有成本          |                             |
+| [[Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding]]       | DyTo                                                  |                             Zero-shot VideoQA |                                       ✅ | ✅                               | `[CLS]` 层级聚类选帧 + dynamic bipartite token merging                | training-free 强基线，视觉覆盖较好                     | query-agnostic；EgoSchema 上推理结构不足              |                             |
+| [[D-CoDe Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition]]     | D-CoDe                                                |              Image-pretrained VLM 扩展到 VideoQA |                                       ✅ | ✅                               | dynamic compression + question decomposition                    | EgoSchema 提升显著，说明推理瓶颈真实存在                    | question decomposition 延迟极高；open-ended QA 不稳定 |                             |
+| [[KTV Keyframes and Key Tokens Selection for Efficient Training-Free Video LLMs]] | KTV                                                   |              Efficient training-free VideoLLM |                                       ✅ | ✅                               | DINOv2 KMeans keyframes + importance/redundancy token selection | token 极省，效率/精度 Pareto 好                      | 主要验证 MC VideoQA；长视频全帧 DINOv2 预处理仍有成本          |                             |
 | [[hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question]]  | HiCrew                                                |                             Long-form VideoQA |                                       ✅ | 系统层 training-free，但依赖 GPT-4o/工具 | Hybrid Tree + Q-aware Captioning + multi-agent planning         | long-form reasoning 最完整，EgoSchema/NExT-QA 很强 | 成本、复现细节、模块误差级联未充分报告                           |                             |
 | [[Paper/实时视频描述/LiveCC.md]]                                                        | [[Paper/实时视频描述/Dense-Captioning Events in Videos.md]] |                                          DDVC | Streaming caption / dense event caption | ✅                               | 通常需要训练或专门系统                                                     | 流式 ASR+frames / 事件定位+描述                      | 适合实时解说与事件结构化                                  | 任务不同，不能直接替代 VideoQA 压缩/推理方法 |
 
@@ -350,9 +350,9 @@ Final answer
 
 ## Source notes
 
-- [[Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/DYTO|Beyond Training: Dynamic Token Merging for Zero-Shot Video Understanding / DyTo]]
-- [[D-CoDe|D-CoDe]]
-- [[KTV|KTV]]
+- [[Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding|Beyond Training: Dynamic Token Merging for Zero-Shot Video Understanding / DyTo]]
+- [[D-CoDe Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition|D-CoDe]]
+- [[KTV Keyframes and Key Tokens Selection for Efficient Training-Free Video LLMs|KTV]]
 - [[hicrew-hierarchical-reasoning-for-long-form-video-understanding-via-question|HiCrew]]
 - [[Paper/文本视频/TOPA.md|TOPA]]
 - [[Paper/实时视频描述/LiveCC.md|LiveCC]]

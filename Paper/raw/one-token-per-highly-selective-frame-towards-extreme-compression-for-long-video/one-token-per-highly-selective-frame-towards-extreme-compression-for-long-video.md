@@ -7,7 +7,7 @@ authors:
   - Xiang Hao
   - Vimal Bhat
   - Yu-Xiong Wang
-conference: ""
+conference:
 year: 2026
 arxiv_url: https://arxiv.org/abs/2604.14149
 pdf_link: "[[assets/paper_2604.14149.pdf]]"

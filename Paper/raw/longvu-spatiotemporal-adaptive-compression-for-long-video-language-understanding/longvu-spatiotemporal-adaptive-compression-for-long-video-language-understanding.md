@@ -1,45 +1,45 @@
 ---
-title: "LongVU: Spatiotemporal Adaptive Compression for Long Video-Language Understanding"
+title: LongVU(token compression)
 authors:
-  - "Xiaoqian Shen"
-  - "Yunyang Xiong"
-  - "Changsheng Zhao"
-  - "Lemeng Wu"
-  - "Jun Chen"
-  - "Chenchen Zhu"
-  - "Zechun Liu"
-  - "Fanyi Xiao"
-  - "Balakrishnan Varadarajan"
-  - "Florian Bordes"
-  - "Zhuang Liu"
-  - "Hu Xu"
-  - "Hyunwoo J. Kim"
-  - "Bilge Soran"
-  - "Raghuraman Krishnamoorthi"
-  - "Mohamed Elhoseiny"
-  - "Vikas Chandra"
-conference: ""
+  - Xiaoqian Shen
+  - Yunyang Xiong
+  - Changsheng Zhao
+  - Lemeng Wu
+  - Jun Chen
+  - Chenchen Zhu
+  - Zechun Liu
+  - Fanyi Xiao
+  - Balakrishnan Varadarajan
+  - Florian Bordes
+  - Zhuang Liu
+  - Hu Xu
+  - Hyunwoo J. Kim
+  - Bilge Soran
+  - Raghuraman Krishnamoorthi
+  - Mohamed Elhoseiny
+  - Vikas Chandra
+conference: ICML 2025
 year: 2024
-arxiv_url: "https://arxiv.org/abs/2410.17434"
+arxiv_url: https://arxiv.org/abs/2410.17434
 pdf_link: "[[assets/paper_2410.17434.pdf]]"
 cover: "[[assets/pipeline_2410.17434.png]]"
-updated: 2026-05-18
+updated: 2026-05-26
 tags:
-  - "paper/arxiv"
-  - "video-qa"
-  - "long-video"
-  - "temporal-reasoning"
-  - "question-aware"
-  - "token-pruning"
-  - "video-llm"
-status: "unread"
+  - paper/arxiv
+  - video-qa
+  - long-video
+  - temporal-reasoning
+  - question-aware
+  - token-pruning
+  - video-llm
+status: unread
 priority:
 rating:
 topics:
-  - "Video Understanding"
-code: "https://github.com/Vision-CAIR/LongVU"
+  - Video Understanding
+code: https://github.com/Vision-CAIR/LongVU
 ---
-
+>   这是一个不错的选择，但是不是我的菜
 ## TL;DR
 
 - LongVU 面向 hour-long video understanding，核心目标是在常用的 8k LLM context length 内尽量保留长视频视觉细节，而不是只做稀疏 uniform sampling。
@@ -158,6 +158,8 @@ Source: TeX includegraphics from `sections/3-methods.tex`, rendered from `assets
 | Open-Source | VideoChat2 | 7B | 8k | 16 | 54.4 | 60.4 | 47.9 | 54.6 | 39.2 |
 | Open-Source | LLaVA-OneVision | 7B | 8k | 32 | 60.1 | 56.7 | 64.7 | 58.2 | 46.7 |
 | Open-Source | **LongVU (Ours)** | 7B | 8k | 1fps | **67.6** | **66.9** | **65.4** | **60.6** | **59.5** |
+
+注意：正文主表报告 LongVU 的 VideoMME Overall 为 `60.6`，而补充材料中的 VideoMME comparison table 与 STC strategy table 报告为 `60.9`。此处按各 source table 原样保留，不对差异做推断性修正。
 
 ### Small Model Results
 

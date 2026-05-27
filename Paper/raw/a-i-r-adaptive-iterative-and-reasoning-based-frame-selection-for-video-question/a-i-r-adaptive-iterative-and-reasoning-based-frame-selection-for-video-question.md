@@ -1,5 +1,5 @@
 ---
-title: "A.I.R.: Enabling Adaptive, Iterative, and Reasoning-based Frame Selection For Video Question Answering"
+title: A.I.R.(frame)
 authors:
   - Yuanhao Zou
   - Shengji Jin

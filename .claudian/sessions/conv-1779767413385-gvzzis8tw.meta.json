@@ -1,0 +1,26 @@
+{
+  "id": "conv-1779767413385-gvzzis8tw",
+  "providerId": "codex",
+  "title": "你好",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1779767413386,
+  "updatedAt": 1779840760288,
+  "lastResponseAt": 1779840712033,
+  "sessionId": "019e6267-8be6-75a2-86c1-35cc6dea7670",
+  "providerState": {
+    "threadId": "019e6267-8be6-75a2-86c1-35cc6dea7670",
+    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/26/rollout-2026-05-26T11-50-13-019e6267-8be6-75a2-86c1-35cc6dea7670.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "currentNote": "Paper/raw/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding.md",
+  "usage": {
+    "inputTokens": 110217,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 99200,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 110217,
+    "percentage": 43,
+    "model": "gpt-5.5"
+  }
+}

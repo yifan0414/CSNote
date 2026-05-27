@@ -1,5 +1,5 @@
 ---
-title: HiMu
+title: HiMu(frame)
 authors:
   - Dan Ben-Ami
   - Gabriele Serussi

@@ -1,5 +1,5 @@
 ---
-title: "D-CoDe: Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition"
+title: D-CoDe(frame+token+inference)
 authors:
   - Yiyang Huang
   - Yizhou Wang

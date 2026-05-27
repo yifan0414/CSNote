@@ -8,7 +8,7 @@ authors:
   - Izhak Shafran
   - Karthik Narasimhan
   - Yuan Cao
-conference: ICLR
+conference: ICLR 2023
 year: 2023
 arxiv_url: https://arxiv.org/abs/2210.03629
 pdf_link: "[[paper_2210.03629.pdf]]"
