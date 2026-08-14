@@ -1,0 +1,20 @@
+{
+  "id": "conv-1779891230307-21iesszlf",
+  "providerId": "codex",
+  "title": "解释 VQOS 视频文本检索实现",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779891230311,
+  "lastActivityAt": 1779892157291,
+  "sessionId": null,
+  "currentNote": "Paper/raw/a-training-free-framework-for-long-video-understanding-via-video-query-options-s/VQOS-第一性原理.md",
+  "usage": {
+    "inputTokens": 43978,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 42368,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 43978,
+    "percentage": 17,
+    "model": "gpt-5.5"
+  }
+}

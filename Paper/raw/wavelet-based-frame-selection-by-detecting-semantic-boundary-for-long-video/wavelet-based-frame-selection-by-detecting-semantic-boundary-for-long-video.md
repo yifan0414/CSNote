@@ -22,7 +22,7 @@ tags:
   - temporal-reasoning
   - question-aware
   - video-llm
-status: unread
+status: reading
 priority: "5"
 rating: "5"
 topics:

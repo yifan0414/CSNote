@@ -4,8 +4,7 @@
   "title": "Respond to Chinese greeting",
   "titleGenerationStatus": "success",
   "createdAt": 1777870679891,
-  "updatedAt": 1777870954275,
-  "lastResponseAt": 1777870690978,
+  "lastActivityAt": 1777870690978,
   "sessionId": null,
   "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
   "usage": {

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+                "file": "Paper/raw/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "EgoSchema Adaptive LLM 实验阶段性总结"
+              "title": "less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior"
             }
           }
         ]
@@ -47,7 +47,9 @@
           "type": "file-explorer",
           "state": {
             "sortOrder": "alphabetical",
-            "autoReveal": false
+            "autoReveal": false,
+            "showSearch": false,
+            "searchQuery": ""
           },
           "icon": "lucide-folder-closed",
           "title": "文件列表"
@@ -179,6 +181,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "fix-math:Current file": false,
       "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -198,6 +201,8 @@
   },
   "active": "de7a8599ab45243d",
   "lastOpenFiles": [
+    "Paper/Papers.base",
+    "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
     "05-Work/左耳朵耗子的话.md",
     "06-Algorithm/04算法分析/快速排序/分治排序其一：快速排序（一）.md",
     "Paper/多模态汇报.md",
@@ -222,8 +227,6 @@
     "README.md",
     "READING/编程心得.md",
     "06-Algorithm/02提高/动态规划/三角形模型/NOIP2007 提高组 矩阵取数游戏.md",
-    "06-Algorithm/题单/难度分类/难度汇总.md",
-    "01-Project/NJUICS/tutorial/PA4 虚实交错的魔法 分时多任务/4-1 多道程序.md",
     "README.md.tacitpart"
   ]
 }

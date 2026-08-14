@@ -4,14 +4,8 @@
   "title": "比较论文与主流帧选择论文性能",
   "titleGenerationStatus": "success",
   "createdAt": 1779765577679,
-  "updatedAt": 1779840760886,
-  "lastResponseAt": 1779767275017,
-  "sessionId": "019e624b-892b-7830-bf6c-d903e0369d22",
-  "providerState": {
-    "threadId": "019e624b-892b-7830-bf6c-d903e0369d22",
-    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/26/rollout-2026-05-26T11-19-38-019e624b-892b-7830-bf6c-d903e0369d22.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
-  },
+  "lastActivityAt": 1779767275017,
+  "sessionId": null,
   "currentNote": "Paper/raw/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm.md",
   "usage": {
     "inputTokens": 102979,

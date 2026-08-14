@@ -4,14 +4,8 @@
   "title": "整理 Obsidian 视频理解论文白板分类总结",
   "titleGenerationStatus": "success",
   "createdAt": 1779841335474,
-  "updatedAt": 1779850465600,
-  "lastResponseAt": 1779850465600,
-  "sessionId": "019e66cf-8212-7b22-9059-d81eb1c04e48",
-  "providerState": {
-    "threadId": "019e66cf-8212-7b22-9059-d81eb1c04e48",
-    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/27/rollout-2026-05-27T08-22-15-019e66cf-8212-7b22-9059-d81eb1c04e48.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
-  },
+  "lastActivityAt": 1779850465600,
+  "sessionId": null,
   "currentNote": "Paper/Papers.base",
   "usage": {
     "inputTokens": 112297,

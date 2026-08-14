@@ -1,0 +1,20 @@
+{
+  "id": "conv-1781082994617-7tp0wu9o0",
+  "providerId": "codex",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1781082994617,
+  "lastActivityAt": 1781083952063,
+  "sessionId": null,
+  "selectedModel": "gpt-5.5",
+  "usage": {
+    "inputTokens": 131719,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 129920,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 131719,
+    "percentage": 51,
+    "model": "gpt-5.5"
+  }
+}

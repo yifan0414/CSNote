@@ -4,11 +4,16 @@
   "title": "Greet the assistant",
   "titleGenerationStatus": "success",
   "createdAt": 1776972087244,
-  "updatedAt": 1777869993682,
-  "lastResponseAt": 1777869540307,
+  "lastActivityAt": 1777869540307,
   "sessionId": null,
   "providerState": {
     "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "modelRecoverySource": {
+    "sessionId": null,
+    "providerState": {
+      "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+    }
   },
   "usage": {
     "inputTokens": 11106,

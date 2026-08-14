@@ -1,5 +1,5 @@
 ---
-title: "SURGE: Surprise-Guided Token Reduction for Efficient Video Understanding with VLMs"
+title: SURGE(token)
 authors:
   - Chong Tang
   - Sannara Ek

@@ -1,5 +1,5 @@
 ---
-title: VQOS
+title: VQOS(frame)
 authors:
   - Zhirong Wu
   - Xiaodong Wang
@@ -21,9 +21,9 @@ tags:
   - question-aware
   - option-aware
   - efficient-inference
-status: unread
-priority:
-rating:
+status: read
+priority: "5"
+rating: "5"
 topics:
   - Video Understanding
 code: https://github.com/wuzhirong520/VTR-VLM

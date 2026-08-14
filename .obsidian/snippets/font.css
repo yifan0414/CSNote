@@ -1,159 +1,129 @@
 /* @settings
-name: iCSNote 字号控制
+name: iCSNote 字体控制
 id: ics-note-font
 settings:
-  - id: title-font-base
-    title: 基准字号
+  - id: title-font-body
+    title: 正文
     type: heading
     level: 1
     collapsed: false
   - id: ics-font-size-body
     title: 正文字号
-    description: 所有组件字号都会基于这个值计算。
     type: variable-number-slider
     default: 16
     min: 12
     max: 24
     step: 1
     format: px
-  - id: title-font-headings
-    title: 标题字号倍率
+  - id: ics-font-weight-body
+    title: 正文字重
+    description: 实际效果取决于当前字体支持的字重。
+    type: variable-number-slider
+    default: 400
+    min: 100
+    max: 900
+    step: 50
+  - id: ics-font-line-height-body
+    title: 正文行高
+    type: variable-number-slider
+    default: 1.8
+    min: 1.2
+    max: 2.4
+    step: 0.05
+  - id: title-font-bold
+    title: 粗体
     type: heading
     level: 1
-    collapsed: true
-  - id: ics-font-scale-h1
-    title: H1 字号倍率
-    description: 相对正文字号的倍数。
+    collapsed: false
+  - id: ics-font-weight-bold
+    title: 粗体字重
+    description: 粗体继承当前正文字体，只调整字重。
     type: variable-number-slider
-    default: 1.6
-    min: 1
-    max: 2.4
-    step: 0.05
-  - id: ics-font-scale-h2
-    title: H2 字号倍率
-    description: 相对正文字号的倍数。
+    default: 700
+    min: 100
+    max: 900
+    step: 50
+  - id: ics-font-enable-synthetic-bold
+    title: 允许合成粗体
+    description: 建议关闭；开启后浏览器可能伪造粗体并导致发糊。
+    type: class-toggle
+    default: false
+  - id: title-font-interface
+    title: 界面
+    type: heading
+    level: 1
+    collapsed: false
+  - id: ics-font-size-interface
+    title: 界面基准字号
+    description: 同步调整 Maple/Obsidian 的小、中、大号界面文字。
     type: variable-number-slider
-    default: 1.5
-    min: 1
-    max: 2.2
-    step: 0.05
-  - id: ics-font-scale-h3
-    title: H3 字号倍率
-    description: 相对正文字号的倍数。
+    default: 14
+    min: 10
+    max: 20
+    step: 1
+    format: px
+  - id: ics-font-weight-interface
+    title: 界面字重
     type: variable-number-slider
-    default: 1.4
-    min: 1
-    max: 2
-    step: 0.05
-  - id: ics-font-scale-h4
-    title: H4 字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 1.3
-    min: 1
-    max: 1.8
-    step: 0.05
-  - id: ics-font-scale-h5
-    title: H5 字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 1.2
-    min: 1
-    max: 1.6
-    step: 0.05
-  - id: ics-font-scale-h6
-    title: H6 字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 1.1
-    min: 0.9
-    max: 1.5
-    step: 0.05
-  - id: ics-font-scale-inline-title
-    title: 文档标题字号倍率
-    description: 控制正文顶部 inline title 的字号。
-    type: variable-number-slider
-    default: 1.4
-    min: 1
-    max: 2.4
-    step: 0.05
-  - id: ics-font-scale-titlebar
-    title: 标签页和标题栏字号倍率
-    description: 控制顶部标签页、文件标题栏和面包屑字号。
-    type: variable-number-slider
-    default: 0.8125
-    min: 0.6
-    max: 1.2
-    step: 0.0125
-  - id: title-font-code-table
-    title: 代码和表格字号倍率
+    default: 400
+    min: 100
+    max: 900
+    step: 50
+  - id: title-font-inline-code
+    title: 行内代码
     type: heading
     level: 1
     collapsed: true
   - id: ics-font-scale-inline-code
     title: 行内代码字号倍率
-    description: 相对所在文字字号的倍数；正文中等价于相对正文字号。
+    description: 相对所在文字字号的倍数。
     type: variable-number-slider
     default: 0.85
     min: 0.6
     max: 1.2
     step: 0.05
-  - id: ics-font-scale-code-block
-    title: 代码块字号倍率
-    description: 相对正文字号的倍数。
+  - id: ics-font-weight-inline-code
+    title: 行内代码字重
     type: variable-number-slider
-    default: 0.9
-    min: 0.6
-    max: 1.2
-    step: 0.05
-  - id: ics-font-scale-table
-    title: 普通表格字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.9
-    min: 0.6
-    max: 1.2
-    step: 0.01
-  - id: ics-font-scale-dataview-table
-    title: Dataview 表格字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.9
-    min: 0.6
-    max: 1.2
-    step: 0.01
-  - id: title-font-blocks
-    title: 块元素字号倍率
+    default: 400
+    min: 100
+    max: 900
+    step: 50
+  - id: title-font-code-block
+    title: 代码框
     type: heading
     level: 1
     collapsed: true
-  - id: ics-font-scale-callout
-    title: Callout 正文字号倍率
+  - id: ics-font-scale-code-block
+    title: 代码框字号倍率
     description: 相对正文字号的倍数。
     type: variable-number-slider
-    default: 1
-    min: 0.7
-    max: 1.4
+    default: 0.9
+    min: 0.6
+    max: 1.2
     step: 0.05
-  - id: ics-font-scale-callout-title
-    title: Callout 标题字号倍率
-    description: 相对正文字号的倍数。
+  - id: ics-font-weight-code-block
+    title: 代码框字重
     type: variable-number-slider
-    default: 1
-    min: 0.7
-    max: 1.4
-    step: 0.05
-  - id: ics-font-scale-quote
-    title: 引用块字号倍率
-    description: 相对正文字号的倍数。
+    default: 400
+    min: 100
+    max: 900
+    step: 50
+  - id: ics-font-line-height-code-block
+    title: 代码框行高
     type: variable-number-slider
-    default: 1
-    min: 0.7
-    max: 1.4
+    default: 1.45
+    min: 1
+    max: 2
     step: 0.05
+  - id: title-font-math
+    title: 数学公式
+    type: heading
+    level: 1
+    collapsed: true
   - id: ics-font-scale-math
     title: 数学公式字号倍率
-    description: 相对所在文字字号的倍数；正文中等价于相对正文字号。
+    description: 相对所在文字字号的倍数。
     type: variable-number-slider
     default: 1.1
     min: 0.8
@@ -161,757 +131,93 @@ settings:
     step: 0.05
   - id: ics-font-scale-math-source
     title: 数学公式源码字号倍率
-    description: 只控制编辑模式中的 LaTeX 源码字号；相对所在行文字字号。
+    description: 只控制编辑模式中的 LaTeX 源码字号。
     type: variable-number-slider
     default: 1
     min: 0.8
     max: 1.3
     step: 0.05
-  - id: title-font-small-ui
-    title: 小字和界面字号倍率
-    type: heading
-    level: 1
-    collapsed: true
-  - id: ics-font-scale-tag
-    title: 标签字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.85
-    min: 0.6
-    max: 1.2
-    step: 0.05
-  - id: ics-font-scale-footnote
-    title: 脚注字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.85
-    min: 0.6
-    max: 1.2
-    step: 0.05
-  - id: ics-font-scale-property
-    title: 属性区字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.9
-    min: 0.6
-    max: 1.2
-    step: 0.05
-  - id: ics-font-scale-link-suggestion
-    title: 链接建议浮窗字号倍率
-    description: 输入 [[...]] 插入其他 md 文件时，候选浮窗相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.9
-    min: 0.6
-    max: 1.4
-    step: 0.05
-  - id: ics-font-scale-popup
-    title: 菜单和弹窗字号倍率
-    description: 控制右键菜单、命令面板、设置窗口内容和普通弹窗。
-    type: variable-number-slider
-    default: 0.8125
-    min: 0.6
-    max: 1.2
-    step: 0.0125
-  - id: ics-font-scale-popup-heading
-    title: 菜单和弹窗标题字号倍率
-    description: 控制设置标题、菜单分组标签等稍大的界面文字。
-    type: variable-number-slider
-    default: 0.875
-    min: 0.6
-    max: 1.3
-    step: 0.0125
-  - id: ics-font-scale-ui-smaller
-    title: 界面更小字号倍率
-    description: 控制 Maple/Obsidian 的更小界面文字。
-    type: variable-number-slider
-    default: 0.8125
-    min: 0.6
-    max: 1.2
-    step: 0.0125
-  - id: ics-font-scale-ui-small
-    title: 界面小字号倍率
-    description: 控制 Maple/Obsidian 的小号界面文字。
-    type: variable-number-slider
-    default: 0.875
-    min: 0.6
-    max: 1.2
-    step: 0.0125
-  - id: ics-font-scale-ui-medium
-    title: 界面中字号倍率
-    description: 控制 Maple/Obsidian 的中号界面文字。
-    type: variable-number-slider
-    default: 1
-    min: 0.7
-    max: 1.4
-    step: 0.05
-  - id: ics-font-scale-file-explorer
-    title: 文件管理器字号倍率
-    description: 控制左侧文件列表字号。
-    type: variable-number-slider
-    default: 0.8
-    min: 0.6
-    max: 1.2
-    step: 0.05
-  - id: ics-font-scale-outline
-    title: 大纲字号倍率
-    description: 控制右侧大纲字号；默认与文件管理器字号一致。
-    type: variable-number-slider
-    default: 0.8
-    min: 0.6
-    max: 1.2
-    step: 0.05
-  - id: title-font-plugins
-    title: 插件区域字号倍率
-    type: heading
-    level: 1
-    collapsed: true
-  - id: ics-font-scale-claudian
-    title: Claudian 正文字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.85
-    min: 0.6
-    max: 1.2
-    step: 0.05
-  - id: ics-font-scale-claudian-heading
-    title: Claudian 标题字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.95
-    min: 0.6
-    max: 1.4
-    step: 0.05
-  - id: ics-font-scale-claudian-link
-    title: Claudian 链接字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.9
-    min: 0.6
-    max: 1.2
-    step: 0.05
-  - id: ics-font-scale-copilot
-    title: Copilot 正文字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.85
-    min: 0.6
-    max: 1.2
-    step: 0.05
-  - id: ics-font-scale-copilot-heading
-    title: Copilot 标题字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.95
-    min: 0.6
-    max: 1.4
-    step: 0.05
-  - id: ics-font-scale-copilot-small
-    title: Copilot 小字号倍率
-    description: 控制来源、推理过程等辅助文字。
-    type: variable-number-slider
-    default: 0.78
-    min: 0.5
-    max: 1.1
-    step: 0.05
-  - id: ics-font-scale-copilot-code
-    title: Copilot 代码字号倍率
-    description: 相对正文字号的倍数。
-    type: variable-number-slider
-    default: 0.85
-    min: 0.6
-    max: 1.2
-    step: 0.05
 */
 
-/* Maple font scale hub
-   Base size: configure --ics-font-size-body below.
-   Edit the multipliers below; every size is derived from body text. */
-
-/* 代码保持紧凑 */
-.markdown-rendered pre,
-.markdown-rendered code,
-.markdown-source-view.mod-cm6 .HyperMD-codeblock {
-  line-height: 1.45;
-  letter-spacing: 0;
-}
 body {
-  /* Base */
   --ics-font-size-body: 16px;
-
-  /* Multipliers */
-  --ics-font-scale-h1: 1.6;
-  --ics-font-scale-h2: 1.5;
-  --ics-font-scale-h3: 1.4;
-  --ics-font-scale-h4: 1.3;
-  --ics-font-scale-h5: 1.2;
-  --ics-font-scale-h6: 1.1;
+  --ics-font-weight-body: 400;
+  --ics-font-line-height-body: 1.8;
+  --ics-font-weight-bold: 700;
+  --ics-font-size-interface: 14px;
+  --ics-font-weight-interface: 400;
   --ics-font-scale-inline-code: 0.85;
+  --ics-font-weight-inline-code: 400;
   --ics-font-scale-code-block: 0.9;
-  --ics-font-scale-table: 0.9;
-  --ics-font-scale-dataview-table: 0.9;
-  --ics-font-scale-callout: 1;
-  --ics-font-scale-callout-title: 1;
-  --ics-font-scale-quote: 1;
+  --ics-font-weight-code-block: 400;
+  --ics-font-line-height-code-block: 1.45;
   --ics-font-scale-math: 1.1;
   --ics-font-scale-math-source: 1;
-  --ics-font-scale-tag: 0.85;
-  --ics-font-scale-footnote: 0.85;
-  --ics-font-scale-property: 0.9;
-  --ics-font-scale-link-suggestion: 0.9;
-  --ics-font-scale-popup: 0.8125;
-  --ics-font-scale-popup-heading: 0.875;
-  --ics-font-scale-ui-smaller: 0.8125;
-  --ics-font-scale-ui-small: 0.875;
-  --ics-font-scale-ui-medium: 1;
-  --ics-font-scale-titlebar: 0.8125;
-  --ics-font-scale-inline-title: 1.4;
-  --ics-font-scale-file-explorer: 0.8;
-  --ics-font-scale-outline: var(--ics-font-scale-file-explorer);
-  --ics-font-scale-claudian: 0.85;
-  --ics-font-scale-claudian-heading: 0.95;
-  --ics-font-scale-claudian-link: 0.9;
-  --ics-font-scale-copilot: var(--ics-font-scale-claudian);
-  --ics-font-scale-copilot-heading: var(--ics-font-scale-claudian-heading);
-  --ics-font-scale-copilot-small: 0.78;
-  --ics-font-scale-copilot-code: var(--ics-font-scale-copilot);
 
-  /* Computed sizes */
-  --ics-font-size-h1: calc(var(--ics-font-size-body) * var(--ics-font-scale-h1));
-  --ics-font-size-h2: calc(var(--ics-font-size-body) * var(--ics-font-scale-h2));
-  --ics-font-size-h3: calc(var(--ics-font-size-body) * var(--ics-font-scale-h3));
-  --ics-font-size-h4: calc(var(--ics-font-size-body) * var(--ics-font-scale-h4));
-  --ics-font-size-h5: calc(var(--ics-font-size-body) * var(--ics-font-scale-h5));
-  --ics-font-size-h6: calc(var(--ics-font-size-body) * var(--ics-font-scale-h6));
-  --ics-font-size-inline-code: calc(var(--ics-font-size-body) * var(--ics-font-scale-inline-code));
-  --ics-font-size-inline-code-context: calc(1em * var(--ics-font-scale-inline-code));
-  --ics-font-size-code-block: calc(var(--ics-font-size-body) * var(--ics-font-scale-code-block));
-  --ics-font-size-table: calc(var(--ics-font-size-body) * var(--ics-font-scale-table));
-  --ics-font-size-dataview-table: calc(var(--ics-font-size-body) * var(--ics-font-scale-dataview-table));
-  --ics-font-size-callout: calc(var(--ics-font-size-body) * var(--ics-font-scale-callout));
-  --ics-font-size-callout-title: calc(var(--ics-font-size-body) * var(--ics-font-scale-callout-title));
-  --ics-font-size-quote: calc(var(--ics-font-size-body) * var(--ics-font-scale-quote));
-  --ics-font-size-math: calc(var(--ics-font-size-body) * var(--ics-font-scale-math));
-  --ics-font-size-math-context: calc(1em * var(--ics-font-scale-math));
-  --ics-font-size-math-source-context: calc(1em * var(--ics-font-scale-math-source));
-  --ics-font-size-tag: calc(var(--ics-font-size-body) * var(--ics-font-scale-tag));
-  --ics-font-size-footnote: calc(var(--ics-font-size-body) * var(--ics-font-scale-footnote));
-  --ics-font-size-property: calc(var(--ics-font-size-body) * var(--ics-font-scale-property));
-  --ics-font-size-link-suggestion: calc(var(--ics-font-size-body) * var(--ics-font-scale-link-suggestion));
-  --ics-font-size-popup: calc(var(--ics-font-size-body) * var(--ics-font-scale-popup));
-  --ics-font-size-popup-heading: calc(var(--ics-font-size-body) * var(--ics-font-scale-popup-heading));
-  --ics-font-size-ui-smaller: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-smaller));
-  --ics-font-size-ui-small: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-small));
-  --ics-font-size-ui-medium: calc(var(--ics-font-size-body) * var(--ics-font-scale-ui-medium));
-  --ics-font-size-titlebar: calc(var(--ics-font-size-body) * var(--ics-font-scale-titlebar));
-  --ics-font-size-inline-title: calc(var(--ics-font-size-body) * var(--ics-font-scale-inline-title));
-  --ics-font-size-file-explorer: calc(var(--ics-font-size-body) * var(--ics-font-scale-file-explorer));
-  --ics-font-size-outline: calc(var(--ics-font-size-body) * var(--ics-font-scale-outline));
-  --ics-font-size-claudian: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian));
-  --ics-font-size-claudian-heading: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian-heading));
-  --ics-font-size-claudian-link: calc(var(--ics-font-size-body) * var(--ics-font-scale-claudian-link));
-  --ics-font-size-copilot: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot));
-  --ics-font-size-copilot-heading: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot-heading));
-  --ics-font-size-copilot-small: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot-small));
-  --ics-font-size-copilot-code: calc(var(--ics-font-size-body) * var(--ics-font-scale-copilot-code));
-
-  /* Maple / Obsidian variables */
-  --setting-h1-size: var(--ics-font-scale-h1);
-  --setting-h2-size: var(--ics-font-scale-h2);
-  --setting-h3-size: var(--ics-font-scale-h3);
-  --setting-h4-size: var(--ics-font-scale-h4);
-  --setting-h5-size: var(--ics-font-scale-h5);
-  --setting-h6-size: var(--ics-font-scale-h6);
-  --code-size: var(--ics-font-size-code-block);
-  --tag-size: var(--ics-font-size-tag);
-  --footnote-size: var(--ics-font-size-footnote);
-  --font-smaller: var(--ics-font-size-ui-smaller);
-  --font-small: var(--ics-font-size-ui-small);
-  --font-ui-smaller: var(--ics-font-size-ui-smaller);
-  --font-ui-small: var(--ics-font-size-ui-small);
-  --font-ui-medium: var(--ics-font-size-ui-medium);
-  --metadata-label-font-size: var(--ics-font-size-property);
-  --metadata-input-font-size: var(--ics-font-size-property);
-  --table-maple-font: "Maple Mono NF CN", var(--font-monospace), monospace;
-  --table-maple-font-size: var(--ics-font-size-table);
-  --dataview-table-font: var(--table-maple-font);
-  --dataview-table-font-size: var(--ics-font-size-dataview-table);
+  /* Preserve Maple's 13/14/16 px UI tiers around one adjustable base. */
+  --font-ui-smaller: calc(var(--ics-font-size-interface) - 1px);
+  --font-ui-small: var(--ics-font-size-interface);
+  --font-ui-medium: calc(var(--ics-font-size-interface) + 2px);
+  --font-ui-large: calc(var(--ics-font-size-interface) + 4px);
+  --font-normal: var(--ics-font-weight-interface);
 }
 
-/* Body-like content */
-.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-header):not(.HyperMD-codeblock),
-.markdown-rendered p,
-.markdown-rendered li {
+.workspace-leaf-content[data-type="markdown"],
+.markdown-embed {
+  --font-text-size: var(--ics-font-size-body);
+  --font-normal: var(--ics-font-weight-body);
+  --line-height-normal: var(--ics-font-line-height-body);
+}
+
+:is(.workspace, .modal-container, .menu, .suggestion-container, .popover) {
+  font-weight: var(--ics-font-weight-interface);
+}
+
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-rendered {
   font-size: var(--ics-font-size-body);
+  font-weight: var(--ics-font-weight-body);
 }
 
-/* Headings: Maple reads --setting-h*-size, these selectors make the intent explicit. */
-.markdown-rendered h1,
-.markdown-source-view.mod-cm6 .HyperMD-header-1 {
-  font-size: var(--ics-font-size-h1) !important;
+/* Inherit the body font and avoid synthetic outline expansion by default. */
+.markdown-rendered :is(strong, b),
+.markdown-source-view.mod-cm6 .cm-strong {
+  font-weight: var(--ics-font-weight-bold) !important;
+  font-synthesis-weight: none;
 }
 
-.markdown-rendered h2,
-.markdown-source-view.mod-cm6 .HyperMD-header-2 {
-  font-size: var(--ics-font-size-h2) !important;
+body.ics-font-enable-synthetic-bold .markdown-rendered :is(strong, b),
+body.ics-font-enable-synthetic-bold .markdown-source-view.mod-cm6 .cm-strong {
+  font-synthesis-weight: auto;
 }
 
-.markdown-rendered h3,
-.markdown-source-view.mod-cm6 .HyperMD-header-3 {
-  font-size: var(--ics-font-size-h3) !important;
-}
-
-.markdown-rendered h4,
-.markdown-source-view.mod-cm6 .HyperMD-header-4 {
-  font-size: var(--ics-font-size-h4) !important;
-}
-
-.markdown-rendered h5,
-.markdown-source-view.mod-cm6 .HyperMD-header-5 {
-  font-size: var(--ics-font-size-h5) !important;
-}
-
-.markdown-rendered h6,
-.markdown-source-view.mod-cm6 .HyperMD-header-6 {
-  font-size: var(--ics-font-size-h6) !important;
-}
-
-/* Code */
+/* Inline code. */
 .markdown-rendered code:not(pre code),
-.markdown-preview-view code:not(pre code),
 .markdown-source-view.mod-cm6 .cm-inline-code {
-  font-size: var(--ics-font-size-inline-code-context) !important;
+  font-size: calc(1em * var(--ics-font-scale-inline-code)) !important;
+  font-weight: var(--ics-font-weight-inline-code) !important;
 }
 
+/* Fenced code blocks in reading and editing modes. */
 .markdown-rendered pre,
 .markdown-rendered pre code,
-.markdown-preview-view pre,
-.markdown-preview-view pre code,
-.markdown-source-view.mod-cm6 .HyperMD-codeblock,
-.markdown-source-view.mod-cm6 .HyperMD-codeblock * {
-  font-size: var(--ics-font-size-code-block) !important;
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  line-height: var(--ics-font-line-height-code-block) !important;
 }
 
-/* Tables */
-.markdown-rendered table,
-.markdown-rendered table :not(:is(.math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)),
-.markdown-source-view.mod-cm6 .HyperMD-table-row,
-.markdown-source-view.mod-cm6 .HyperMD-table-row :not(:is(.cm-math, .cm-math *, .math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)),
-.markdown-source-view.mod-cm6 .cm-table-widget,
-.markdown-source-view.mod-cm6 .cm-table-widget :not(:is(.cm-math, .cm-math *, .math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)),
-.markdown-source-view.mod-cm6 .cm-table-widget .table-editor,
-.markdown-source-view.mod-cm6 .cm-table-widget .table-editor :not(:is(.cm-math, .cm-math *, .math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) {
-  font-family: var(--table-maple-font) !important;
-  font-size: var(--table-maple-font-size) !important;
+.markdown-rendered pre code,
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  font-size: calc(var(--ics-font-size-body) * var(--ics-font-scale-code-block)) !important;
+  font-weight: var(--ics-font-weight-code-block) !important;
 }
 
-.markdown-rendered .table-view-table,
-.markdown-rendered .table-view-table :not(:is(.math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) {
-  font-family: var(--dataview-table-font) !important;
-  font-size: var(--dataview-table-font-size) !important;
-}
-
-.markdown-rendered table .math,
-.markdown-rendered .table-view-table .math,
-.markdown-source-view.mod-cm6 .cm-table-widget .math {
-  font-family: var(--font-text) !important;
-  font-size: var(--ics-font-size-math-context) !important;
-}
-
-.markdown-source-view.mod-cm6 .HyperMD-table-row .cm-math {
-  font-family: var(--font-text) !important;
-  font-size: var(--ics-font-size-math-source-context) !important;
-}
-
-.markdown-rendered table :not(:is(.math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) code:not(pre code),
-.markdown-rendered .table-view-table :not(:is(.math, .math *, mjx-container, mjx-container *, .MathJax, .MathJax *)) code:not(pre code),
-.markdown-source-view.mod-cm6 .cm-table-widget .cm-inline-code,
-.markdown-source-view.mod-cm6 .HyperMD-table-row .cm-inline-code {
-  font-size: var(--ics-font-size-inline-code) !important;
-}
-
-/* Callouts and quotes */
-body.theme-light .callout,
-body.theme-dark .callout,
-.callout {
-  --callout-title-size: var(--ics-font-size-callout-title);
-  font-size: var(--ics-font-size-callout);
-}
-
-.callout-title-inner {
-  font-size: var(--ics-font-size-callout-title);
-}
-
-.markdown-rendered blockquote {
-  font-size: var(--ics-font-size-quote);
-}
-
-.markdown-rendered blockquote :is(h1, h2, h3, h4, h5, h6),
-.markdown-source-view.mod-cm6 .HyperMD-quote {
-  font-size: var(--ics-font-size-quote) !important;
-}
-
-/* Math, tags, footnotes, and properties */
+/* Reading mode and rendered formulas in Live Preview. */
 .math {
-  font-size: var(--ics-font-size-math-context) !important;
+  font-size: calc(1em * var(--ics-font-scale-math)) !important;
 }
 
-.markdown-source-view.mod-cm6 :is(.cm-math, .HyperMD-math) {
-  font-size: var(--ics-font-size-math-source-context) !important;
-}
-
-.tag,
-.cm-hashtag,
-.cm-tag {
-  font-size: var(--ics-font-size-tag) !important;
-}
-
-.footnote,
-.footnote-link,
-.cm-footref,
-.cm-formatting-footref {
-  font-size: var(--ics-font-size-footnote) !important;
-}
-
-.metadata-container,
-.metadata-container * {
-  font-size: var(--ics-font-size-property);
-}
-
-/* Editing-mode link suggestions, e.g. the popup after typing [[...]]. */
-.suggestion-container,
-.suggestion-container .suggestion-item,
-.suggestion-container .suggestion-title,
-.suggestion-container .suggestion-note {
-  font-size: var(--ics-font-size-link-suggestion) !important;
-}
-
-/* Menus, prompts, popovers, and settings should follow the UI font scale. */
-:where(.menu, .prompt, .popover, .modal, .modal-container, .document-search-container) {
-  --font-ui-smaller: var(--ics-font-size-ui-smaller);
-  --font-ui-small: var(--ics-font-size-ui-small);
-  --font-ui-medium: var(--ics-font-size-ui-medium);
-}
-
-:where(.prompt, .popover, .document-search-container) {
-  font-size: var(--ics-font-size-popup) !important;
-}
-
-:where(.prompt, .popover, .document-search-container) :where(*:not(svg):not(path)) {
-  font-size: var(--ics-font-size-popup) !important;
-}
-
-.menu {
-  --font-ui-small: var(--ics-font-size-popup);
-  --font-ui-medium: var(--ics-font-size-popup-heading);
-  font-size: var(--ics-font-size-popup) !important;
-}
-
-.menu .menu-item,
-.menu .menu-item-title,
-.menu .menu-item-icon,
-.menu .menu-item-icon .svg-icon,
-.menu .suggestion-item,
-.menu .suggestion-title,
-.menu .suggestion-flair {
-  font-size: var(--ics-font-size-popup) !important;
-}
-
-.menu .menu-item.is-label,
-.menu .menu-item.is-label .menu-item-title,
-.menu .suggestion-item.is-label,
-.menu .suggestion-item.is-label .suggestion-title {
-  font-size: var(--ics-font-size-popup-heading) !important;
-}
-
-.menu .menu-item-desc,
-.menu .suggestion-note,
-.menu .suggestion-hotkey {
-  font-size: var(--ics-font-size-ui-smaller) !important;
-}
-
-:where(.mod-settings),
-:where(.mod-settings) :where(*:not(svg):not(path)) {
-  font-size: var(--ics-font-size-popup) !important;
-}
-
-:where(.modal:not(.mod-settings)) :is(
-  .modal-content,
-  .modal-button-container,
-  .setting-item,
-  .setting-item-name,
-  .setting-item-description,
-  .setting-item-control,
-  .community-item,
-  .community-item-name,
-  .community-item-author,
-  .community-item-downloads-text,
-  .community-item-updated,
-  button,
-  input,
-  textarea,
-  select,
-  .dropdown,
-  .search-input-container input
-) {
-  font-size: var(--ics-font-size-popup) !important;
-}
-
-:where(.modal, .mod-settings) :is(
-  .modal-title,
-  .setting-item-heading .setting-item-name,
-  .vertical-tab-content h2,
-  .vertical-tab-header-group-title,
-  .community-modal-info-name
-) {
-  font-size: var(--ics-font-size-popup-heading) !important;
-}
-
-body.modal-setting-header:not(.is-mobile) .modal-container .mod-settings::before,
-body.modal-setting-header:not(.is-mobile).modal-setting-header-search .mod-settings::before,
-body.modal-setting-header:not(.is-mobile).modal-setting-header-search
-  .mod-settings
-  .modal-content
-  .setting-item:has(~ .hotkey-list-container)
-  .setting-item-info
-  .setting-item-name {
-  font-size: var(--ics-font-size-popup-heading) !important;
-}
-
-/* Editing-mode HTML fragments should follow surrounding text. */
-.markdown-source-view.mod-cm6 .cm-line:has(.cm-hmd-html-begin) *,
-.markdown-source-view.mod-cm6 .cm-html-embed * {
-  font-family: inherit !important;
-  font-size: inherit !important;
-  font-weight: inherit !important;
-  line-height: inherit !important;
-}
-
-/* Workspace details */
-.workspace-leaf-content[data-type="file-explorer"],
-.workspace-leaf-content[data-type="search"],
-.workspace-leaf-content[data-type="bookmarks"],
-.workspace-leaf-content[data-type="starred"] {
-  font-family: var(--font-text) !important;
-  font-size: var(--ics-font-size-file-explorer) !important;
-  --nav-item-size: var(--ics-font-size-file-explorer);
-}
-
-.workspace-leaf-content[data-type="search"] :is(
-  .search-input-container,
-  .search-input-container input,
-  .search-result-container,
-  .search-result-file-title,
-  .search-result-file-matches,
-  .search-result-file-match,
-  .search-result-file-matched-text,
-  .tree-item-inner
-),
-.workspace-leaf-content[data-type="bookmarks"] :is(
-  .tree-item-self,
-  .tree-item-inner,
-  .tree-item-flair,
-  .nav-file-title,
-  .nav-folder-title
-),
-.workspace-leaf-content[data-type="starred"] :is(
-  .tree-item-self,
-  .tree-item-inner,
-  .tree-item-flair,
-  .nav-file-title,
-  .nav-folder-title
-) {
-  font-size: var(--ics-font-size-file-explorer) !important;
-}
-
-.workspace-leaf-content[data-type="outline"] {
-  font-family: var(--font-text) !important;
-  --nav-item-size: var(--ics-font-size-outline);
-}
-
-.workspace-leaf-content[data-type="outline"] .tree-item-inner {
-  font-size: var(--ics-font-size-outline) !important;
-}
-
-/* Title bars */
-.workspace-tab-header-inner-title,
-.view-header-title,
-.view-header-breadcrumb,
-.view-header-breadcrumb-separator {
-  font-size: var(--ics-font-size-titlebar) !important;
-}
-
-.labeled-nav .mod-left-split .mod-top .workspace-tab-header-inner-title {
-  font-size: var(--ics-font-size-file-explorer) !important;
-}
-
-.inline-title {
-  font-size: var(--ics-font-size-inline-title) !important;
-}
-
-/* Claudian output */
-.claudian-container {
-  --claudian-font-size: var(--ics-font-size-claudian);
-  --claudian-heading-size: var(--ics-font-size-claudian-heading);
-  --claudian-link-size: var(--ics-font-size-claudian-link);
-  --claudian-code-size: var(--claudian-font-size);
-  --claudian-code-font: "Maple Mono NF CN", "Maple Mono", "maplemono", var(--font-monospace);
-  font-family: var(--font-text) !important;
-  font-size: var(--claudian-font-size) !important;
-  line-height: var(--line-height-normal, 1.8) !important;
-}
-
-.claudian-container h1,
-.claudian-container h2,
-.claudian-container h3,
-.claudian-container h4,
-.claudian-container h5,
-.claudian-container h6 {
-  font-size: var(--claudian-heading-size) !important;
-  line-height: var(--line-height-normal, 1.8) !important;
-  margin-top: 0.6em !important;
-  margin-bottom: 0.4em !important;
-}
-
-.claudian-container a {
-  font-size: var(--claudian-link-size) !important;
-}
-
-.claudian-container code,
-.claudian-container pre,
-.claudian-container kbd,
-.claudian-container samp {
-  font-family: var(--claudian-code-font) !important;
-  font-size: var(--claudian-code-size) !important;
-  line-height: calc(var(--line-height-normal, 1.8) - 0.2) !important;
-}
-
-.claudian-container pre code,
-.claudian-container code *,
-.claudian-container pre *,
-.claudian-container kbd *,
-.claudian-container samp * {
-  font-family: inherit !important;
-  font-size: inherit !important;
-  line-height: inherit !important;
-}
-
-.claudian-container table,
-.claudian-container table :not(code, code *, pre, pre *, kbd, kbd *, samp, samp *) {
-  font-size: var(--claudian-font-size) !important;
-}
-
-/* Copilot output: mirror the compact Claudian scale. */
-:where(
-  .workspace-leaf-content[data-type="copilot-chat-view"],
-  .copilot-quick-ask-overlay,
-  .copilot-command-modal,
-  .copilot-notice-container
-) {
-  --copilot-font-size: var(--ics-font-size-copilot);
-  --copilot-heading-size: var(--ics-font-size-copilot-heading);
-  --copilot-small-size: var(--ics-font-size-copilot-small);
-  --copilot-code-size: var(--ics-font-size-copilot-code);
-  --copilot-code-font: "Maple Mono NF CN", "Maple Mono", "maplemono", var(--font-monospace);
-  font-family: var(--font-text) !important;
-  font-size: var(--copilot-font-size) !important;
-  line-height: var(--line-height-normal, 1.8) !important;
-}
-
-:where(
-  .workspace-leaf-content[data-type="copilot-chat-view"],
-  .copilot-quick-ask-overlay,
-  .copilot-command-modal,
-  .copilot-notice-container
-) :is(
-  .markdown-rendered,
-  p,
-  li,
-  textarea,
-  input,
-  button,
-  [contenteditable],
-  .tw-text-sm,
-  .tw-text-base,
-  [class~="!tw-text-sm"],
-  [class~="tw-text-sm"],
-  [class~="tw-text-base"]
-) {
-  font-size: var(--copilot-font-size) !important;
-  line-height: var(--line-height-normal, 1.8) !important;
-}
-
-:where(
-  .workspace-leaf-content[data-type="copilot-chat-view"],
-  .copilot-quick-ask-overlay,
-  .copilot-command-modal,
-  .copilot-notice-container
-) :is(
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .tw-text-lg,
-  .tw-text-xl,
-  [class~="tw-text-lg"],
-  [class~="tw-text-xl"]
-) {
-  font-size: var(--copilot-heading-size) !important;
-  line-height: var(--line-height-normal, 1.8) !important;
-}
-
-:where(
-  .workspace-leaf-content[data-type="copilot-chat-view"],
-  .copilot-quick-ask-overlay,
-  .copilot-command-modal,
-  .copilot-notice-container
-) :is(
-  .tw-text-xs,
-  .tw-text-ui-smaller,
-  .tw-text-smallest,
-  [class~="tw-text-xs"],
-  [class~="tw-text-ui-smaller"],
-  [class~="tw-text-smallest"],
-  .copilot-sources,
-  .copilot-sources__summary,
-  .copilot-sources__list,
-  .copilot-sources__text,
-  .agent-reasoning-block,
-  .agent-reasoning-header,
-  .agent-reasoning-step
-) {
-  font-size: var(--copilot-small-size) !important;
-  line-height: calc(var(--line-height-normal, 1.8) - 0.2) !important;
-}
-
-:where(
-  .workspace-leaf-content[data-type="copilot-chat-view"],
-  .copilot-quick-ask-overlay,
-  .copilot-command-modal,
-  .copilot-notice-container
-) :is(code, pre, kbd, samp, .tw-font-mono, [class~="tw-font-mono"]) {
-  font-family: var(--copilot-code-font) !important;
-  font-size: var(--copilot-code-size) !important;
-  line-height: calc(var(--line-height-normal, 1.8) - 0.2) !important;
-}
-
-:where(
-  .workspace-leaf-content[data-type="copilot-chat-view"],
-  .copilot-quick-ask-overlay,
-  .copilot-command-modal,
-  .copilot-notice-container
-) :is(pre code, code *, pre *, kbd *, samp *) {
-  font-family: inherit !important;
-  font-size: inherit !important;
-  line-height: inherit !important;
-}
-
-:where(
-  .workspace-leaf-content[data-type="copilot-chat-view"],
-  .copilot-quick-ask-overlay,
-  .copilot-command-modal,
-  .copilot-notice-container
-) ::placeholder {
-  font-size: var(--copilot-font-size) !important;
+/* Inline and block LaTeX source in editing mode. */
+.markdown-source-view.mod-cm6 .HyperMD-math,
+.markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-math) .cm-math {
+  font-size: calc(1em * var(--ics-font-scale-math-source)) !important;
 }

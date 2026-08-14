@@ -1,5 +1,5 @@
 ---
-title: "DyCoke: Dynamic Compression of Tokens for Fast Video Large Language Models"
+title: DyCoke(token)
 authors:
   - Keda Tao
   - Can Qin

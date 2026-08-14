@@ -1,5 +1,5 @@
 ---
-title: "PruneVid: Visual Token Pruning for Efficient Video Large Language Models"
+title: PruneVid(token)
 authors:
   - Xiaohu Huang
   - Hao Zhou
@@ -24,7 +24,7 @@ topics:
   - Video Understanding
 code: https://github.com/Visual-AI/PruneVid
 ---
-> First-principles analysis: [[prunevid-visual-token-pruning-for-efficient-video-large-language-models-first-principles]]
+> First-principles analysis: [[PruneVid第一性原理论文分析]]
 
 ## TL;DR
 

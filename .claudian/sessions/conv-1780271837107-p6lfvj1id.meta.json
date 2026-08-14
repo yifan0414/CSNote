@@ -1,0 +1,20 @@
+{
+  "id": "conv-1780271837107-p6lfvj1id",
+  "providerId": "codex",
+  "title": "Fix this document",
+  "titleGenerationStatus": "success",
+  "createdAt": 1780271837109,
+  "lastActivityAt": 1780272424204,
+  "sessionId": null,
+  "currentNote": "Paper/raw/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large.md",
+  "usage": {
+    "inputTokens": 44129,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 43904,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 44129,
+    "percentage": 17,
+    "model": "gpt-5.5"
+  }
+}

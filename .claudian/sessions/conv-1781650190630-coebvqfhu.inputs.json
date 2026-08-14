@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1781650190630-coebvqfhu",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786361619484-89a79xe",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1786361619361-kltwj9y",
+      "timestamp": 1786361619361,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "currentNote": {
+          "path": "Paper/组会汇报/11 月 19 日汇报.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "019feb73-2876-7060-a687-d381f2311ab6"
+    }
+  ]
+}

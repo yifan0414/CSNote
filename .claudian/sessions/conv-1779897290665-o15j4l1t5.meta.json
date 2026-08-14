@@ -1,0 +1,20 @@
+{
+  "id": "conv-1779897290665-o15j4l1t5",
+  "providerId": "codex",
+  "title": "Refine PDF frame-selection model details",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779897290666,
+  "lastActivityAt": 1779899367349,
+  "sessionId": null,
+  "currentNote": "Paper/视频理解/视频理解论文_各阶段使用模型对比.md",
+  "usage": {
+    "inputTokens": 208751,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 208256,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 208751,
+    "percentage": 81,
+    "model": "gpt-5.5"
+  }
+}

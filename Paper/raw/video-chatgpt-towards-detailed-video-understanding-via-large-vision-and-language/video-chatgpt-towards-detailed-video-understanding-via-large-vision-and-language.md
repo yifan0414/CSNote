@@ -5,7 +5,7 @@ authors:
   - Hanoona Rasheed
   - Salman Khan
   - Fahad Shahbaz Khan
-conference: ACL
+conference: ACL 2024
 year: 2024
 paper_url: https://aclanthology.org/2024.acl-long.679/
 source_pdf: https://aclanthology.org/2024.acl-long.679.pdf

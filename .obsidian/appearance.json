@@ -4,7 +4,7 @@
   "baseFontSize": 16,
   "cssTheme": "Maple",
   "translucency": false,
-  "monospaceFontFamily": "Maple Mono NF CN,FiraCode Nerd Font,苹方-简",
+  "monospaceFontFamily": "FiraCode Nerd Font,Maple Mono NF CN,苹方-简",
   "nativeMenus": false,
   "baseFontSizeAction": false,
   "showViewHeader": true,
@@ -21,10 +21,10 @@
     "callout",
     "claudian",
     "code",
-    "font",
-    "paper-base-maple"
+    "paper-base-maple",
+    "font"
   ],
-  "textFontFamily": "Maple Mono NF CN,苹方-简,Open Sans,LXGW WenKai,Inter,Georgia,Bookerly,Optima",
-  "interfaceFontFamily": "Maple Mono NF CN,Open Sans,苹方-简,Inter,Bookerly",
+  "textFontFamily": "Georgia,Source Han Serif SC VF,LXGW WenKai,苹方-简,Open Sans,STSong,Maple Mono NF CN,Bookerly",
+  "interfaceFontFamily": "Georgia,Source Han Serif SC VF,Maple Mono NF CN,Open Sans,苹方-简,Inter,Bookerly",
   "showRibbon": false
 }

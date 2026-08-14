@@ -22,9 +22,9 @@ tags:
   - temporal-reasoning
   - question-aware
   - video-llm
-status: unread
-priority:
-rating:
+status: reading
+priority: "3"
+rating: "5"
 topics:
   - Video Understanding
 code: https://github.com/sunh-23/MDP3

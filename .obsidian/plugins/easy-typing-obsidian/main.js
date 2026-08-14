@@ -483,6 +483,47 @@ function findTokenBounds(content, pos) {
 function extractToken(content, left, right) {
   return content.substring(left, right).replace(/\0/g, "");
 }
+function extendCursorTokenForDict(content, seedL, seedR, prefixDict, usePrefix) {
+  const seedToken = extractToken(content, seedL, seedR);
+  let runL = seedL;
+  while (runL > 0) {
+    const ch = content.charAt(runL - 1);
+    if (/[\s\0]/.test(ch) || !/\w/.test(ch) && !isCJKContext(ch))
+      break;
+    runL--;
+  }
+  let runR = seedR;
+  while (runR < content.length) {
+    const ch = content.charAt(runR);
+    if (/[\s\0]/.test(ch) || !/\w/.test(ch) && !isCJKContext(ch))
+      break;
+    runR++;
+  }
+  let bestL = seedL, bestR = seedR, bestToken = seedToken;
+  let bestMatched = prefixDict.shouldSuppressSpace(seedToken, usePrefix);
+  let bestSpan = bestMatched ? seedR - seedL : -1;
+  for (let l = seedL; l >= runL; l--) {
+    for (let r = seedR; r <= runR; r++) {
+      if (l === seedL && r === seedR)
+        continue;
+      const token = extractToken(content, l, r);
+      if (prefixDict.shouldSuppressSpace(token, usePrefix)) {
+        const span = r - l;
+        if (span > bestSpan) {
+          bestL = l;
+          bestR = r;
+          bestToken = token;
+          bestMatched = true;
+          bestSpan = span;
+        }
+      }
+    }
+  }
+  if (!bestMatched) {
+    return { left: seedL, right: seedR, token: seedToken };
+  }
+  return { left: bestL, right: bestR, token: bestToken };
+}
 function collectAllBoundaries(content, languagePairs, customCategories) {
   const positions = /* @__PURE__ */ new Set();
   for (const pair of languagePairs) {
@@ -622,38 +663,42 @@ function applyLanguagePairSpacing(ctx, languagePairs, prefixDict, customCategori
   }
   const isActivelyTyping = curCh !== prevCh;
   const usePrefix = isActivelyTyping && !tokenIsFinalized;
-  const cursorTokenSuppressed = prefixDict.shouldSuppressSpace(cursorToken, usePrefix);
+  const extended = extendCursorTokenForDict(content, tokLeft, tokRight, prefixDict, usePrefix);
+  let tokLeftExt = extended.left;
+  let tokRightExt = extended.right;
+  let cursorTokenExt = extended.token;
+  const cursorTokenSuppressed = prefixDict.shouldSuppressSpace(cursorTokenExt, usePrefix);
   let protectedUpTo = -1;
   if (cursorTokenSuppressed) {
-    protectedUpTo = cursorToken.length;
+    protectedUpTo = cursorTokenExt.length;
   } else {
-    const matchLen = prefixDict.findLongestMatchFromStart(cursorToken);
-    if (matchLen > 0 && matchLen < cursorToken.length) {
-      const lastCharOfMatch = cursorToken.charAt(matchLen - 1);
-      const firstCharAfterMatch = cursorToken.charAt(matchLen);
+    const matchLen = prefixDict.findLongestMatchFromStart(cursorTokenExt);
+    if (matchLen > 0 && matchLen < cursorTokenExt.length) {
+      const lastCharOfMatch = cursorTokenExt.charAt(matchLen - 1);
+      const firstCharAfterMatch = cursorTokenExt.charAt(matchLen);
       if (classifyChar(lastCharOfMatch) !== classifyChar(firstCharAfterMatch)) {
         protectedUpTo = matchLen;
       }
     }
   }
   if (debug) {
-    console.log("[LangPairSpacing] content:", JSON.stringify(content), "curCh:", curCh, "prevCh:", prevCh, "offset:", offset, "cursorInContent:", cursorInContent, "boundaries:", Array.from(allBoundaries), "tokenBounds:", [tokLeft, tokRight], "cursorToken:", JSON.stringify(cursorToken), "suppressed:", cursorTokenSuppressed, "protectedUpTo:", protectedUpTo);
+    console.log("[LangPairSpacing] content:", JSON.stringify(content), "curCh:", curCh, "prevCh:", prevCh, "offset:", offset, "cursorInContent:", cursorInContent, "boundaries:", Array.from(allBoundaries), "tokenBounds:", [tokLeft, tokRight], "cursorToken:", JSON.stringify(cursorToken), "tokenBoundsExt:", [tokLeftExt, tokRightExt], "cursorTokenExt:", JSON.stringify(cursorTokenExt), "suppressed:", cursorTokenSuppressed, "protectedUpTo:", protectedUpTo);
   }
   const toInsert = [];
   const prevChInContent = prevCh - offset;
   let prefixDictExpired = false;
   if (!cursorTokenSuppressed) {
-    if (isActivelyTyping && prevChInContent > tokLeft) {
-      const prevToken = cursorToken.substring(0, prevChInContent - tokLeft);
+    if (isActivelyTyping && prevChInContent > tokLeftExt) {
+      const prevToken = cursorTokenExt.substring(0, prevChInContent - tokLeftExt);
       prefixDictExpired = prefixDict.shouldSuppressSpace(prevToken, true);
     } else if (!isActivelyTyping || tokenIsFinalized) {
-      prefixDictExpired = prefixDict.shouldSuppressSpace(cursorToken, true);
+      prefixDictExpired = prefixDict.shouldSuppressSpace(cursorTokenExt, true);
     }
   }
   for (const pos of allBoundaries) {
-    const inCursorToken = pos >= tokLeft && pos < tokRight;
+    const inCursorToken = pos >= tokLeftExt && pos < tokRightExt;
     if (inCursorToken) {
-      const posInToken = pos - tokLeft;
+      const posInToken = pos - tokLeftExt;
       if (posInToken > 0 && posInToken < protectedUpTo) {
         continue;
       }
@@ -662,9 +707,9 @@ function applyLanguagePairSpacing(ctx, languagePairs, prefixDict, customCategori
       }
     } else {
       if (pos >= prevChInContent && pos < cursorInContent) {
-        const [tl, tr] = findTokenBounds(content, pos);
-        const token = extractToken(content, tl, tr);
-        if (!prefixDict.shouldSuppressSpace(token, false)) {
+        const [seedL, seedR] = findTokenBounds(content, pos);
+        const ext = extendCursorTokenForDict(content, seedL, seedR, prefixDict, false);
+        if (!prefixDict.shouldSuppressSpace(ext.token, false)) {
           toInsert.push(pos);
         }
       }
@@ -5371,6 +5416,7 @@ var RuleManager = class {
     this.cachedBuiltinRules = [];
     this.cachedUserRules = [];
     this.previousStoragePath = "";
+    this.lastSaveTime = 0;
     this.BUILTIN_RULES_FILE = "builtin-rules.json";
     this.USER_RULES_FILE = "user-rules.json";
     this.previousStoragePath = settings.rulesStoragePath;
@@ -5393,7 +5439,7 @@ var RuleManager = class {
   }
   pluginPath(filename) {
     const base = this.settings.rulesStoragePath ? this.settings.rulesStoragePath : this.manifest.dir;
-    return `${base}/${filename}`;
+    return `${base}/${filename}`.replace(/\/+/g, "/");
   }
   async loadRulesFile(filename) {
     const path = this.pluginPath(filename);
@@ -5406,6 +5452,7 @@ var RuleManager = class {
   }
   async saveRulesFile(filename, rules) {
     const path = this.pluginPath(filename);
+    this.lastSaveTime = Date.now();
     await this.app.vault.adapter.write(path, JSON.stringify(rules, null, 2));
   }
   async mergeBuiltinRules() {
@@ -7379,6 +7426,7 @@ var EasyTypingPlugin = class extends import_obsidian9.Plugin {
   constructor() {
     super(...arguments);
     this.pasteTimerId = null;
+    this.configReloadTimerId = null;
     this.getDefaultIndentChar = () => {
       let useTab = this.app.vault.config.useTab === void 0 ? true : false;
       let tabSize = this.app.vault.config.tabSize == void 0 ? 4 : this.app.vault.config.tabSize;
@@ -7560,6 +7608,9 @@ var EasyTypingPlugin = class extends import_obsidian9.Plugin {
       hotkeys: [{ modifiers: ["Mod"], key: "/" }]
     });
     this.addSettingTab(new EasyTypingSettingTab(this.app, this));
+    this.registerEvent(this.app.vault.on("raw", (path) => {
+      this.onConfigFileChange(path);
+    }));
     this.registerEvent(this.app.workspace.on("active-leaf-change", (leaf) => {
       var _a;
       if (leaf.view.getViewType() == "markdown") {
@@ -7587,7 +7638,30 @@ var EasyTypingPlugin = class extends import_obsidian9.Plugin {
   onunload() {
     if (this.pasteTimerId)
       clearTimeout(this.pasteTimerId);
+    if (this.configReloadTimerId)
+      clearTimeout(this.configReloadTimerId);
     console.log("Easy Typing Plugin unloaded.");
+  }
+  onConfigFileChange(path) {
+    if (Date.now() - this.ruleManager.lastSaveTime < 2e3)
+      return;
+    const builtinRulesPath = this.ruleManager.pluginPath("builtin-rules.json");
+    const userRulesPath = this.ruleManager.pluginPath("user-rules.json");
+    if (path !== builtinRulesPath && path !== userRulesPath)
+      return;
+    if (this.configReloadTimerId)
+      clearTimeout(this.configReloadTimerId);
+    this.configReloadTimerId = setTimeout(async () => {
+      this.configReloadTimerId = null;
+      try {
+        await this.ruleManager.initRuleEngine();
+        if (this.settings.debug) {
+          console.log("[EasyTyping] Rules reloaded from external change:", path);
+        }
+      } catch (e) {
+        console.error("[EasyTyping] Failed to reload rules:", e);
+      }
+    }, 1e3);
   }
   markPaste(plain) {
     this.pasteDetected = true;

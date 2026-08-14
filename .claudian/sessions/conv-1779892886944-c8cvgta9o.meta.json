@@ -1,0 +1,20 @@
+{
+  "id": "conv-1779892886944-c8cvgta9o",
+  "providerId": "codex",
+  "title": "创建视频理解论文阶段模型对比文档",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779892886944,
+  "lastActivityAt": 1779896475625,
+  "sessionId": null,
+  "currentNote": "Paper/Papers.base",
+  "usage": {
+    "inputTokens": 195707,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 194944,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 195707,
+    "percentage": 76,
+    "model": "gpt-5.5"
+  }
+}

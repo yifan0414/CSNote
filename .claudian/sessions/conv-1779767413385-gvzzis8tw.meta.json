@@ -1,18 +1,12 @@
 {
   "id": "conv-1779767413385-gvzzis8tw",
   "providerId": "codex",
-  "title": "你好",
-  "titleGenerationStatus": "failed",
+  "title": "Analyze A+B style papers in Papers database",
+  "titleGenerationStatus": "success",
   "createdAt": 1779767413386,
-  "updatedAt": 1779840760288,
-  "lastResponseAt": 1779840712033,
-  "sessionId": "019e6267-8be6-75a2-86c1-35cc6dea7670",
-  "providerState": {
-    "threadId": "019e6267-8be6-75a2-86c1-35cc6dea7670",
-    "sessionFilePath": "/Users/yifan/.codex-duckcode/sessions/2026/05/26/rollout-2026-05-26T11-50-13-019e6267-8be6-75a2-86c1-35cc6dea7670.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
-  },
-  "currentNote": "Paper/raw/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding.md",
+  "lastActivityAt": 1779767770620,
+  "sessionId": null,
+  "currentNote": "Paper/raw/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm.md",
   "usage": {
     "inputTokens": 110217,
     "cacheCreationInputTokens": 0,

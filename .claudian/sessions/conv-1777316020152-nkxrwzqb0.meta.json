@@ -4,11 +4,16 @@
   "title": "Explain model identity",
   "titleGenerationStatus": "success",
   "createdAt": 1777316020153,
-  "updatedAt": 1777316587641,
-  "lastResponseAt": 1777316571644,
+  "lastActivityAt": 1777316571644,
   "sessionId": null,
   "providerState": {
     "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "modelRecoverySource": {
+    "sessionId": null,
+    "providerState": {
+      "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+    }
   },
   "currentNote": "Paper/Papers.base",
   "usage": {

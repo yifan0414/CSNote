@@ -23,12 +23,12 @@
             }
           },
           {
-            "id": "934d103cf52401f9",
+            "id": "f4e8222eef7deb9b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/raw/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding.md",
+                "file": "Paper/AAAI 2027/Simple QGPS.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -43,16 +43,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding"
+              "title": "Simple QGPS"
             }
           },
           {
-            "id": "bddd667f999c2dba",
+            "id": "2e8d71c0159a1a11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/raw/a-training-free-framework-for-long-video-understanding-via-video-query-options-s/未命名.md",
+                "file": "Paper/Video Understanding 论文综述报告.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -67,7 +67,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "Video Understanding 论文综述报告"
             }
           }
         ],
@@ -91,7 +91,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -103,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:00-Archive  ",
+                "query": "egoschema",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -128,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 213
+    "width": 268.47265625
   },
   "right": {
     "id": "8815071129bdee48",
@@ -218,13 +220,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Paper/raw/videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding/videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding.md",
+                "file": "Paper/组会汇报/11 月 19 日汇报.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -242,10 +244,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360
+    "width": 384.1796875
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -260,60 +263,59 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "realclaudian:Open Claudian": false,
       "fix-math:Current file": false
     }
   },
-  "active": "bddd667f999c2dba",
+  "active": "2e8d71c0159a1a11",
   "lastOpenFiles": [
-    "Paper/raw/a-training-free-framework-for-long-video-understanding-via-video-query-options-s/a-training-free-framework-for-long-video-understanding-via-video-query-options-s.md",
-    "Paper/raw/a-training-free-framework-for-long-video-understanding-via-video-query-options-s/未命名.md",
-    "Paper/Video Understanding 论文分类总结.canvas",
-    "Paper/raw/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding.md",
-    "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video/WFS-SB-论文分析.md",
-    "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video/WFS-SB-论文分析.pdf",
-    "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video/WFS-SB 第一性原理.md",
-    "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video/未命名.md",
-    "Paper/Papers.base",
-    "Paper/raw/storm-token-efficient-long-video-understanding-for-multimodal-llms/storm-token-efficient-long-video-understanding-for-multimodal-llms.md",
+    "Paper/实时视频描述/Dense-Captioning Events in Videos.md",
+    "Paper/实时视频描述/LiveCC.md",
+    "Paper/AAAI 2027/想法1.md",
+    "Paper/AAAI 2027/解析解.md",
+    "Paper/组会汇报/12 月 25 日汇报.md",
+    "Paper/组会汇报/11月5日汇报.md",
+    "Paper/AAAI 2027/Simple QGPS.md",
+    "07-AI/02-代码/多GPU训练过程.md",
+    "07-AI/00-课程/08-Lee/02-Gradient Descent/Adagrad.md",
+    "07-AI/00-课程/08-Lee/00-Model/Where does the error come from?.md",
+    "Paper/组会汇报/11 月 19 日汇报.md",
+    "07-AI/00-课程/08-Lee/00-Model/Bias and Variance (v2).pdf",
+    "Paper/KTV-idea.md",
+    "Paper/组会汇报/1月8日汇报.md",
+    "Paper/组会汇报/1月23日.md",
     "Paper/raw/prunevid-visual-token-pruning-for-efficient-video-large-language-models/prunevid-visual-token-pruning-for-efficient-video-large-language-models.md",
-    "Paper/raw/dycoke-dynamic-compression-of-tokens-for-fast-video-large-language-models/dycoke-dynamic-compression-of-tokens-for-fast-video-large-language-models.md",
-    "Paper/raw/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis.md",
-    "Paper/raw/ktv-keyframes-and-key-tokens-selection-for-efficient-training-free-video-llms/KTV Keyframes and Key Tokens Selection for Efficient Training-Free Video LLMs.md",
-    "Paper/raw/query-conditioned-evidential-keyframe-sampling-for-mllm-based-long-form-video-un/query-conditioned-evidential-keyframe-sampling-for-mllm-based-long-form-video-un.md",
-    "Paper/raw/prunevid-visual-token-pruning-for-efficient-video-large-language-models/prunevid-visual-token-pruning-for-efficient-video-large-language-models-first-principles.md",
-    "Paper/raw/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis/assets/paper_2603.29252.pdf",
-    "Paper/raw/prunevid-visual-token-pruning-for-efficient-video-large-language-models/assets/paper_2412.16117.pdf",
-    "Paper/raw/prunevid-visual-token-pruning-for-efficient-video-large-language-models/assets/pipeline_2412.16117.png",
-    "Paper/raw/prunevid-visual-token-pruning-for-efficient-video-large-language-models/assets/pipeline_2412.16117.pdf",
-    "Paper/raw/prunevid-visual-token-pruning-for-efficient-video-large-language-models/assets",
-    "Paper/raw/prunevid-visual-token-pruning-for-efficient-video-large-language-models",
-    "Paper/raw/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm.md",
-    "Paper/raw/dycoke-dynamic-compression-of-tokens-for-fast-video-large-language-models/assets/pipeline_2411.15024.png",
-    "Paper/raw/dycoke-dynamic-compression-of-tokens-for-fast-video-large-language-models/assets/pipeline_2411.15024.pdf",
-    "Paper/raw/dycoke-dynamic-compression-of-tokens-for-fast-video-large-language-models/assets/paper_2411.15024.pdf",
-    "Paper/raw/dycoke-dynamic-compression-of-tokens-for-fast-video-large-language-models/assets",
-    "Paper/raw/storm-token-efficient-long-video-understanding-for-multimodal-llms/assets/pipeline_2503.04130.png",
-    "Paper/raw/threading-keyframe-with-narratives-mllms-as-strong-long-video-comprehenders/threading-keyframe-with-narratives-mllms-as-strong-long-video-comprehenders.md",
-    "Paper/raw/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm/assets/pipeline_593_SURGE_Surprise_Guided_Toke_fa9d91a7.png",
-    "Paper/raw/threading-keyframe-with-narratives-mllms-as-strong-long-video-comprehenders/assets/pipeline_16552_threading_keyframe_with_fe6fed5c.png",
-    "Paper/raw/a-training-free-framework-for-long-video-understanding-via-video-query-options-s/assets/pipeline_6998_A_Training_Free_Framework_3_dfa959da.png",
-    "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question.md",
-    "Paper/raw/beyond-training-dynamic-token-merging-for-zero-shot-video-understanding/Beyond Training Dynamic Token Merging for Zero-Shot Video Understanding.md",
+    "Paper/Papers.base",
+    "attachments/Pasted image 20260810005110.png",
+    "Paper/raw/q-frame-query-aware-frame-selection-and-multi-resolution-adaptation-for-video-ll/q-frame-query-aware-frame-selection-and-multi-resolution-adaptation-for-video-ll.md",
+    "Paper/AAAI 2027",
     "Paper/raw/mdp3-a-training-free-approach-for-list-wise-frame-selection-in-video-llms/mdp3-a-training-free-approach-for-list-wise-frame-selection-in-video-llms.md",
-    "Paper/raw/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/D-CoDe Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition.md",
-    "Paper/raw/himu-hierarchical-multimodal-frame-selection-for-long-video-question-answering/himu-hierarchical-multimodal-frame-selection-for-long-video-question-answering.md",
-    "Paper/raw/react-synergizing-reasoning-and-acting-in-language-models/ReAct.md",
-    "Paper/raw/confidence-guided-refinement-reasoning-for-zero-shot-question-answering/confidence-guided-refinement-reasoning-for-zero-shot-question-answering.md",
-    "Paper/raw/divide-then-ground-adapting-frame-selection-to-query-types-for-long-form-video/Divide, then Ground Adapting Frame Selection to Query Types for Long-Form Video Understanding.md",
     "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question.md",
+    "Paper/raw/coselect-adaptive-frame-selection-for-video-language-understanding/coselect-adaptive-frame-selection-for-video-language-understanding.md",
     "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video.md",
-    "Paper/raw/logic-in-frames-dynamic-keyframe-search-via-visual-semantic-logical-verification/logic-in-frames-dynamic-keyframe-search-via-visual-semantic-logical-verification.md",
-    "attachments/Pasted image 20260525035731.png",
-    "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/assets/pipeline_2510.04428.png",
-    "Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/assets/pipeline_2510.04428-1.png",
-    "Paper/raw/wavelet-based-frame-selection-by-detecting-semantic-boundary-for-long-video/assets/pipeline_2603.00512.png",
+    "Paper/raw/threading-keyframe-with-narratives-mllms-as-strong-long-video-comprehenders/threading-keyframe-with-narratives-mllms-as-strong-long-video-comprehenders.md",
+    "实验/未命名.md",
+    "Paper/raw/mdp3-a-training-free-approach-for-list-wise-frame-selection-in-video-llms/assets/paper_2501.02885.pdf",
+    "Paper/raw/a-training-free-framework-for-long-video-understanding-via-video-query-options-s/assets/paper_6998_A_Training_Free_Framework_3_dfa959da.pdf",
+    "Paper/raw/a-training-free-framework-for-long-video-understanding-via-video-query-options-s/a-training-free-framework-for-long-video-understanding-via-video-query-options-s.md",
+    "Paper/raw/bolt-boost-large-vision-language-model-without-training-for-long-form-video-unde/bolt-boost-large-vision-language-model-without-training-for-long-form-video-unde.md",
+    "实验/QGPS.md",
+    "实验/实验.base",
+    "Paper/Video Understanding 论文综述报告.md",
+    "Paper/raw/chordedit-one-step-low-energy-transport-for-image-editing/assets/pipeline_2602.19083.png",
+    "Paper/raw/chordedit-one-step-low-energy-transport-for-image-editing/assets/pipeline_2602.19083.pdf",
+    "Paper/raw/chordedit-one-step-low-energy-transport-for-image-editing/assets/paper_2602.19083.pdf",
+    "Paper/raw/chordedit-one-step-low-energy-transport-for-image-editing/assets",
+    "Paper/raw/chordedit-one-step-low-energy-transport-for-image-editing",
+    "Paper/Video Understanding 论文分类总结.canvas",
+    "attachments/Pasted image 20260606134112.png",
+    "Paper/raw/mukv-multi-grained-kv-cache-compression-for-long-streaming-video-question-answer/assets/pipeline_2605.22269.png",
+    "Paper/raw/earlytom-early-token-compression-completes-fast-video-understanding/assets/pipeline_2605.30010.png",
+    "Paper/raw/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large/assets/pipeline_2603.01400.png",
+    "Paper/raw/lmms-eval-reality-check-on-the-evaluation-of-large-multimodal-models/assets/pipeline_2407.12772.png",
+    "Paper/raw/unified-spatiotemporal-token-compression-for-video-llms-at-ultra-low-retention/assets/pipeline_2603.21957.png",
+    "Paper/raw/flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat/assets/pipeline_2602.08024.png",
+    "Paper/raw/flashvid-efficient-video-large-language-models-via-training-free-tree-based-spat/assets/pipeline_2602.08024-1.png",
     "07-MultiModal/未命名.canvas",
     "01-Project/CS61A/canvasNote/IntroToPython.canvas",
     "07-AI/神经网络/人工神经网络训练过程.canvas",

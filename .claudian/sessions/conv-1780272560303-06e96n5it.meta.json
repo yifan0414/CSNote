@@ -1,0 +1,21 @@
+{
+  "id": "conv-1780272560303-06e96n5it",
+  "providerId": "codex",
+  "title": "Fix Markdown formatting",
+  "titleGenerationStatus": "success",
+  "createdAt": 1780272560303,
+  "lastActivityAt": 1780709157182,
+  "sessionId": null,
+  "selectedModel": "gpt-5.5",
+  "currentNote": "Paper/raw/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large/token-reduction 第一性原理.md",
+  "usage": {
+    "inputTokens": 26651,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 22912,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 26651,
+    "percentage": 10,
+    "model": "gpt-5.5"
+  }
+}

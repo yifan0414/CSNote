@@ -4,8 +4,7 @@
   "title": "Respond to greeting",
   "titleGenerationStatus": "success",
   "createdAt": 1777192135054,
-  "updatedAt": 1777869245972,
-  "lastResponseAt": 1777869220519,
+  "lastActivityAt": 1777869220519,
   "sessionId": null,
   "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
   "usage": {

@@ -1,0 +1,20 @@
+{
+  "id": "conv-1780159760526-rbh6vwd5q",
+  "providerId": "codex",
+  "title": "解释 DyToK 为什么能接入 VisionZip 和 Dycoke",
+  "titleGenerationStatus": "success",
+  "createdAt": 1780159760528,
+  "lastActivityAt": 1780161106735,
+  "sessionId": null,
+  "currentNote": "Paper/raw/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior.md",
+  "usage": {
+    "inputTokens": 31457,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 5504,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 31457,
+    "percentage": 12,
+    "model": "gpt-5.5"
+  }
+}

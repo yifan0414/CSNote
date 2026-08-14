@@ -1,0 +1,11 @@
+{
+  "id": "conv-1781650190630-coebvqfhu",
+  "providerId": "codex",
+  "title": "hello",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1781650190638,
+  "lastActivityAt": 1786361632371,
+  "sessionId": null,
+  "selectedModel": "gpt-5.6-sol",
+  "currentNote": "Paper/AAAI 2027/Simple QGPS.md"
+}

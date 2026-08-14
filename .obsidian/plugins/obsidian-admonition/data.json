@@ -2,7 +2,7 @@
   "userAdmonitions": {
     "cloud": {
       "type": "cloud",
-      "color": "117, 89, 217",
+      "color": "rgb(117, 89, 217)",
       "icon": {
         "type": "obsidian",
         "name": "lucide-message-circle"
@@ -15,7 +15,7 @@
     },
     "sq": {
       "type": "sq",
-      "color": "117, 89, 217",
+      "color": "rgb(117, 89, 217)",
       "icon": {
         "type": "obsidian",
         "name": "question-mark-glyph"
@@ -28,7 +28,7 @@
     },
     "sc": {
       "type": "sc",
-      "color": "104, 60, 185",
+      "color": "rgb(104, 60, 185)",
       "icon": {
         "type": "obsidian",
         "name": "lucide-code-2"
@@ -41,10 +41,10 @@
     },
     "must": {
       "type": "must",
-      "color": "250, 20, 67",
+      "color": "rgb(250, 20, 67)",
       "icon": {
         "name": "exclamation",
-        "type": "font-awesome"
+        "type": "fas"
       },
       "command": false,
       "title": "must",
@@ -54,7 +54,7 @@
     },
     "command": {
       "type": "command",
-      "color": "117, 89, 217",
+      "color": "rgb(117, 89, 217)",
       "icon": {
         "type": "obsidian",
         "name": "lucide-terminal"
@@ -67,7 +67,7 @@
     },
     "chatgpt": {
       "type": "chatgpt",
-      "color": "149, 150, 150",
+      "color": "rgb(149, 150, 150)",
       "icon": {
         "name": "dependabot",
         "type": "octicons"
@@ -80,7 +80,7 @@
     },
     "demo": {
       "type": "demo",
-      "color": "151, 145, 145",
+      "color": "rgb(151, 145, 145)",
       "icon": {
         "type": "obsidian",
         "name": "experiment"
@@ -93,7 +93,7 @@
     },
     "idea": {
       "type": "idea",
-      "color": "79, 151, 7",
+      "color": "rgb(79, 151, 7)",
       "icon": {
         "type": "obsidian",
         "name": "lucide-lightbulb"
@@ -106,7 +106,7 @@
     },
     "edit": {
       "type": "edit",
-      "color": "9, 152, 241",
+      "color": "rgb(9, 152, 241)",
       "icon": {
         "name": "edit",
         "type": "font-awesome"
@@ -119,10 +119,10 @@
     },
     "notice": {
       "type": "notice",
-      "color": "255, 0, 0",
+      "color": "rgb(255, 0, 0)",
       "icon": {
         "name": "bullhorn",
-        "type": "font-awesome"
+        "type": "fas"
       },
       "command": false,
       "title": "notice",
@@ -132,7 +132,7 @@
     },
     "task": {
       "type": "task",
-      "color": "117, 89, 217",
+      "color": "rgb(117, 89, 217)",
       "icon": {
         "name": "tasks",
         "type": "font-awesome"
@@ -145,10 +145,10 @@
     },
     "math": {
       "type": "math",
-      "color": "14, 123, 160",
+      "color": "rgb(14, 123, 160)",
       "icon": {
         "name": "infinity",
-        "type": "font-awesome"
+        "type": "fas"
       },
       "command": false,
       "title": "math",
@@ -159,26 +159,26 @@
   },
   "syntaxHighlight": false,
   "copyButton": true,
-  "version": "11.0.0",
+  "version": "12.0.5",
   "autoCollapse": true,
   "defaultCollapseType": "open",
   "injectColor": true,
   "parseTitles": false,
   "dropShadow": true,
   "hideEmpty": false,
+  "icons": [
+    "octicons",
+    "rpg",
+    "fas"
+  ],
+  "rpgDownloadedOnce": false,
+  "useSnippet": false,
+  "snippetPath": "custom-admonitions.8ba8b2",
   "open": {
     "admonitions": true,
     "icons": true,
     "other": true,
     "advanced": true
   },
-  "icons": [
-    "octicons",
-    "rpg"
-  ],
-  "useFontAwesome": true,
-  "rpgDownloadedOnce": false,
-  "msDocConverted": false,
-  "useSnippet": false,
-  "snippetPath": "custom-admonitions.8ba8b2"
+  "useFontAwesome": false
 }

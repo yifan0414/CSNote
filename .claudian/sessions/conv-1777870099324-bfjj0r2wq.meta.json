@@ -4,8 +4,7 @@
   "title": "hello",
   "titleGenerationStatus": "failed",
   "createdAt": 1777870099324,
-  "updatedAt": 1777870673183,
-  "lastResponseAt": 1777870352321,
+  "lastActivityAt": 1777870352321,
   "sessionId": null,
   "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
   "usage": {

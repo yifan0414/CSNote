@@ -20,9 +20,9 @@ tags:
   - temporal-reasoning
   - question-aware
   - video-llm
-status: unread
-priority:
-rating:
+status: reading
+priority: "5"
+rating: "5"
 topics:
   - Video Understanding
 code: https://ucf-air.github.io/

@@ -4,11 +4,16 @@
   "title": "hello",
   "titleGenerationStatus": "failed",
   "createdAt": 1777870123191,
-  "updatedAt": 1777870672468,
-  "lastResponseAt": 1777870620159,
+  "lastActivityAt": 1777870620159,
   "sessionId": null,
   "providerState": {
     "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "modelRecoverySource": {
+    "sessionId": null,
+    "providerState": {
+      "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+    }
   },
   "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
   "usage": {

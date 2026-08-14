@@ -4,11 +4,16 @@
   "title": "Explain assistant identity",
   "titleGenerationStatus": "success",
   "createdAt": 1777870010915,
-  "updatedAt": 1777870097021,
-  "lastResponseAt": 1777870032725,
+  "lastActivityAt": 1777870032725,
   "sessionId": null,
   "providerState": {
     "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+  },
+  "modelRecoverySource": {
+    "sessionId": null,
+    "providerState": {
+      "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
+    }
   },
   "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md"
 }

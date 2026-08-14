@@ -39,7 +39,7 @@ topics:
   - Video Understanding
 code: https://github.com/Vision-CAIR/LongVU
 ---
->   这是一个不错的选择，但是不是我的菜
+
 ## TL;DR
 
 - LongVU 面向 hour-long video understanding，核心目标是在常用的 8k LLM context length 内尽量保留长视频视觉细节，而不是只做稀疏 uniform sampling。

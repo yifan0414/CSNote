@@ -1,0 +1,20 @@
+{
+  "id": "conv-1780237579974-kjjrhhd1f",
+  "providerId": "codex",
+  "title": "Fix Markdown formatting",
+  "titleGenerationStatus": "success",
+  "createdAt": 1780237579974,
+  "lastActivityAt": 1780237693025,
+  "sessionId": null,
+  "currentNote": "Paper/raw/d-code-scaling-image-pretrained-vlms-to-video-via-dynamic-compression-and/D-CoDe 第一性原理.md",
+  "usage": {
+    "inputTokens": 16228,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 15744,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 16228,
+    "percentage": 6,
+    "model": "gpt-5.5"
+  }
+}

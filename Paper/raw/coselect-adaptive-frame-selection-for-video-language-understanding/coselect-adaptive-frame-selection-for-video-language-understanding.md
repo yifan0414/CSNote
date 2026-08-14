@@ -32,7 +32,8 @@ code: ""
 - 核心选择策略是先根据 scene boundaries 得到 subclips，再用 $R_i=\max(S_{\text{text}}\mid C_i)+\mathrm{mean}(S_{\text{text}}\mid C_i)$ 与 $\sqrt{D_i}$ 做预算分配，最后在每个 subclip 内分段选最高 text relevance 的帧。
 - 在 VideoMME、MLVU、MVBench、EgoSchema、LongVideoBench、NextQA 等 benchmark 上，CoSeLECT 在多个 backbone 上稳定提升，尤其在 long-horizon / long-video 场景里更明显。
 - PDF 声称 CoSeLECT 相比 LongVU 在 MLVU 上提升 +3.8%，相比 AKS 在 EgoSchema 上提升 +4.5%；但论文仍是 ICLR 2026 under review，作者匿名，结论应按未正式发表版本看待。
-
+- **Limitations section**
+![[Pasted image 20260606134112.png]]
 ## Key Contributions
 
 - 提出 CoSeLECT（Continuity-aware Semantic Localization and Extraction of Candidate Tokens），把 keyframe selection 作为 frame-level token reduction，避免训练额外 compression module。

@@ -1,0 +1,20 @@
+{
+  "id": "conv-1779923244437-xnr2ynnd9",
+  "providerId": "codex",
+  "title": "分析视频理解基座论文的显式证据选择",
+  "titleGenerationStatus": "success",
+  "createdAt": 1779923244437,
+  "lastActivityAt": 1779923568338,
+  "sessionId": null,
+  "currentNote": "Paper/Papers.base",
+  "usage": {
+    "inputTokens": 91009,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 53120,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 91009,
+    "percentage": 35,
+    "model": "gpt-5.5"
+  }
+}

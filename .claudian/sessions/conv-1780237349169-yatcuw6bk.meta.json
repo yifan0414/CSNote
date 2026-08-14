@@ -1,0 +1,20 @@
+{
+  "id": "conv-1780237349169-yatcuw6bk",
+  "providerId": "codex",
+  "title": "Fix Markdown formatting",
+  "titleGenerationStatus": "success",
+  "createdAt": 1780237349169,
+  "lastActivityAt": 1780237462930,
+  "sessionId": null,
+  "currentNote": "Paper/raw/lmms-eval-reality-check-on-the-evaluation-of-large-multimodal-models/lmms-eval-第一性原理.md",
+  "usage": {
+    "inputTokens": 27358,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 27008,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 27358,
+    "percentage": 11,
+    "model": "gpt-5.5"
+  }
+}

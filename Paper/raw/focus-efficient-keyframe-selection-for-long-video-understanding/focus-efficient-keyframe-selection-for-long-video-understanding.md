@@ -22,7 +22,7 @@ tags:
   - question-aware
   - token-pruning
   - video-llm
-status: unread
+status: reading
 priority: "5"
 rating: "5"
 topics:

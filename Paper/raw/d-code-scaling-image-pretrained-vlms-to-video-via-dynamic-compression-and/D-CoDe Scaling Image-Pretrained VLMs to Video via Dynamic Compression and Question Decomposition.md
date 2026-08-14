@@ -15,7 +15,7 @@ pipeline_source: TeX includegraphics from figs/pipeline.tex -> images/pipeline.p
 updated: 2026-04-26
 tags:
   - paper/arxiv
-status: unread
+status: read
 priority: "5"
 rating: "5"
 topics:

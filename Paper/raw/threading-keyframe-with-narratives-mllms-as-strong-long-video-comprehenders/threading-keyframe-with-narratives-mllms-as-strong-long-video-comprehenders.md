@@ -1,5 +1,5 @@
 ---
-title: "Threading Keyframe with Narratives: MLLMs as Strong Long Video Comprehenders"
+title: Nar-KFC(frame)
 authors:
   - Bo Fang
   - Yuxin Song
@@ -26,6 +26,7 @@ rating:
 topics:
   - Video Understanding
 code: https://github.com/bofang98/Nar-KFC
+openreview: https://openreview.net/forum?id=kyLS9EhPhY
 ---
 
 ## TL;DR

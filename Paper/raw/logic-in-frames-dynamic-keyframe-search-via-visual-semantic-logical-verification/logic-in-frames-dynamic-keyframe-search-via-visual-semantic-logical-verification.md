@@ -1,5 +1,5 @@
 ---
-title: "Logic-in-Frames: Dynamic Keyframe Search via Visual Semantic-Logical Verification for Long Video Understanding"
+title: VSLS(frame)
 authors:
   - Weiyu Guo
   - Ziyang Chen

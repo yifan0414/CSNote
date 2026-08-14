@@ -200,7 +200,6 @@ function convertMath(text, stats) {
   text = text.replace(/^#[ \t]*(\[[ \t]*)$/gm, (_m, bracket) => bracket);
   text = text.replace(/^#[ \t]*(\\begin\{)/gm, "$1");
   const displayBackslashRe = /(^|[^\\])\\\[((?:[\s\S]*?))\\\]/g;
-  const bracketBlockRe = /^[ \t]*([#>\-*+0-9.]+\s*)?\[[ \t]*\r?\n([\s\S]*?)\r?\n[ \t]*\][ \t]*$/gm;
   const hasLaTeXCommand = (s) => /\\[a-zA-Z]+/.test(s);
   const inlineBackslashRe = /(^|[^\\])\\\((.+?)\\\)/g;
   const isMathy = (s, strict = false) => {
@@ -236,25 +235,65 @@ function convertMath(text, stats) {
     }
     return false;
   };
+  text = text.replace(/\\\][ \t]*\\\[/g, "\\]\n\\[");
   let out = text.replace(displayBackslashRe, (_, pre, inner) => {
     stats.blockCount++;
     return `${pre}$$
 ${inner.trim()}
 $$`;
   });
-  out = out.replace(
-    bracketBlockRe,
-    (m, prefix, inner) => {
-      const p = prefix ?? "";
-      if (isMathy(inner, true)) {
-        stats.blockCount++;
-        return `${p}$$
-${inner.trim()}
-$$`;
+  {
+    const lines = out.split(/\r?\n/);
+    const result = [];
+    let i = 0;
+    while (i < lines.length) {
+      const line = lines[i];
+      const openMatch = line.match(/^([ \t]*(?:[#>\-*+0-9.]+\s*)?)\[[ \t]*$/);
+      if (openMatch) {
+        const prefix = openMatch[1];
+        let depth = 1;
+        let j = i + 1;
+        const innerLines = [];
+        let found = false;
+        while (j < lines.length) {
+          const l = lines[j];
+          let closedHere = false;
+          for (const ch of l) {
+            if (ch === "[")
+              depth++;
+            else if (ch === "]") {
+              depth--;
+              if (depth === 0) {
+                closedHere = true;
+                break;
+              }
+            }
+          }
+          if (closedHere) {
+            if (/^[ \t]*\][ \t]*$/.test(l))
+              found = true;
+            break;
+          }
+          innerLines.push(l);
+          j++;
+        }
+        if (found) {
+          const inner = innerLines.join("\n");
+          if (hasLaTeXCommand(inner) || isMathy(inner, true)) {
+            stats.blockCount++;
+            result.push(`${prefix}$$`);
+            result.push(inner.trim());
+            result.push("$$");
+            i = j + 1;
+            continue;
+          }
+        }
       }
-      return m;
+      result.push(line);
+      i++;
     }
-  );
+    out = result.join("\n");
+  }
   {
     const bracketParts = out.split(/(\$\$[\s\S]*?\$\$)/);
     out = bracketParts.map((part, idx) => {
@@ -276,6 +315,9 @@ $$`;
           const closeInline = (before.match(/\\\)/g) || []).length;
           if (openInline > closeInline)
             return match;
+          const singleDollars = (before.match(/(?<!\$)\$(?!\$)/g) || []).length;
+          if (singleDollars % 2 === 1)
+            return match;
           stats.blockCount++;
           return `$$
 ${inner.trim()}
@@ -295,9 +337,18 @@ $$`;
             return match;
           if (inner.startsWith("^"))
             return match;
+          if (!/^\s/.test(inner))
+            return match;
+          if (/^\s*\d+(?:\s*,\s*\d+)*\s*$/.test(inner))
+            return match;
+          if (/^\s*[a-zA-Z](?:\s*,\s*[a-zA-Z])*\s*$/.test(inner))
+            return match;
           const openInline = (before.match(/\\\(/g) || []).length;
           const closeInline = (before.match(/\\\)/g) || []).length;
           if (openInline > closeInline)
+            return match;
+          const singleDollars = (before.match(/(?<!\$)\$(?!\$)/g) || []).length;
+          if (singleDollars % 2 === 1)
             return match;
           if (hasLaTeXCommand(inner) || isMathy(inner, true)) {
             stats.blockCount++;
@@ -313,7 +364,7 @@ $$`;
   }
   out = out.replace(
     /\$\$([\s\S]*?)\$\$/g,
-    (block) => block.replace(/(?<!\\)\\[ \t]*$/gm, "\\\\").replace(/(?<!\\)\\(?=[0-9-])/g, "\\\\").replace(/^={3,}$/gm, "=").replace(/^-{3,}$/gm, "-").replace(/^#{1,6}[ \t]+(.*)/gm, "$1\n-").replace(/^([+-]),/gm, "$1")
+    (block) => block.replace(/(?<!\\)\\[ \t]*$/gm, "\\\\").replace(/(?<!\\)\\(?=[0-9-])/g, "\\\\").replace(/^={3,}$/gm, "=").replace(/^-{3,}$/gm, "-").replace(/^#{1,6}[ \t]+(.*)/gm, "$1\n-").replace(/^([+-]),/gm, "$1").replace(/(?<!\\)#/g, "\\#")
   );
   const parts = out.split(/(\$\$[\s\S]*?\$\$)/);
   out = parts.map((part, idx) => {
@@ -388,7 +439,8 @@ function convertPlainParens(text, isMathy, stats) {
         k += 1;
       }
       const after = k < text.length ? text[k] : "";
-      const afterIsDelim = after === "" || isWhitespace(after) || ").,;:?!*_".includes(after);
+      const koreanParticleRe = /^(?:으로|에서|에게|까지|부터|처럼|보다|마다|이나|이라|은|는|이|가|을|를|와|과|의|에|께|도|만|로|나|라)/;
+      const afterIsDelim = after === "" || isWhitespace(after) || ").,;:?!*_\uFF0C\u3002\uFF01\uFF1F\uFF1B\uFF1A\u3001".includes(after) || koreanParticleRe.test(text.slice(k));
       if (!afterIsDelim) {
         result += ch;
         i += 1;

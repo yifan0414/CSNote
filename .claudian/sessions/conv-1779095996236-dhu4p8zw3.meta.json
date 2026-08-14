@@ -4,8 +4,7 @@
   "title": "hello",
   "titleGenerationStatus": "failed",
   "createdAt": 1779095996237,
-  "updatedAt": 1779753570234,
-  "lastResponseAt": 1779096732330,
+  "lastActivityAt": 1779096732330,
   "sessionId": null,
   "currentNote": "Paper/raw/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding.md",
   "usage": {
