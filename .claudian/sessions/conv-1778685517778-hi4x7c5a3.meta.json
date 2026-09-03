@@ -6,7 +6,7 @@
   "createdAt": 1778685517779,
   "lastActivityAt": 1778686891908,
   "sessionId": null,
-  "currentNote": "Paper/raw/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis.md",
+  "linkedContentPath": "Paper/raw/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis/scaling-the-long-video-understanding-of-multimodal-large-language-models-via-vis.md",
   "usage": {
     "inputTokens": 109316,
     "cacheCreationInputTokens": 0,

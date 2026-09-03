@@ -1,5 +1,5 @@
 ---
-title: DyToK(token)
+title: (token)DyToK
 authors:
   - Yulin Li
   - Haokun Gui

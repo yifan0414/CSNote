@@ -1,0 +1,28 @@
+{
+  "id": "conv-1787171767208-vhgw3qwjf",
+  "providerId": "codex",
+  "title": "因为**矩阵乘法的本质，就是“沿着一个共同维度做内积，然后把这个维度消掉”**。",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1787171767212,
+  "lastActivityAt": 1787174576743,
+  "sessionId": "01a01bbd-042b-78f0-a3f4-6859281ccc62",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a01bbd-042b-78f0-a3f4-6859281ccc62",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex-trans/sessions/2026/08/20/rollout-2026-08-20T04-36-07-01a01bbd-042b-78f0-a3f4-6859281ccc62.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-trans/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+  "usage": {
+    "inputTokens": 145988,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 143104,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 145988,
+    "percentage": 56,
+    "model": "gpt-5.6-sol"
+  }
+}

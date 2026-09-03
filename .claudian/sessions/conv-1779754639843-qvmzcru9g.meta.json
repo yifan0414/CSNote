@@ -6,7 +6,7 @@
   "createdAt": 1779754639843,
   "lastActivityAt": 1779763182543,
   "sessionId": null,
-  "currentNote": "Paper/raw/adaptive-keyframe-sampling-for-long-video-understanding/adaptive-keyframe-sampling-for-long-video-understanding.md",
+  "linkedContentPath": "Paper/raw/adaptive-keyframe-sampling-for-long-video-understanding/adaptive-keyframe-sampling-for-long-video-understanding.md",
   "usage": {
     "inputTokens": 70948,
     "cacheCreationInputTokens": 0,

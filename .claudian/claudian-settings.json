@@ -52,7 +52,10 @@
       "enabled": true,
       "safeMode": "workspace-write",
       "cliPath": "",
-      "cliPathsByHost": {},
+      "cliPathsByHost": {
+        "device:89f624ab-ad33-4bdc-a921-e6c0989a53ce": "/Users/yifan/.nvm/versions/node/v24.15.0/bin/codex",
+        "device-914f9750b77ba7fbc22f13a359c8f8ca643e9cee26bfe24a916bf9439b77c60d": "/Users/yifan/.nvm/versions/node/v24.15.0/bin/codex"
+      },
       "customModels": "gpt-5.5",
       "discoveredModels": [
         {
@@ -91,6 +94,11 @@
               "id": "priority",
               "name": "Fast",
               "description": "1.5x speed, increased usage"
+            },
+            {
+              "id": "ultrafast",
+              "name": "Ultrafast",
+              "description": "The fastest available responses for latency-sensitive work."
             }
           ],
           "defaultServiceTier": null,
@@ -224,62 +232,25 @@
           "isDefault": false
         },
         {
-          "model": "gpt-5.4",
-          "displayName": "GPT-5.4",
-          "description": "Strong model for everyday coding.",
+          "model": "gpt-5.2",
+          "displayName": "GPT-5.2",
+          "description": "Optimized for professional work and long-running agents.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
-              "description": "Fast responses with lighter reasoning"
+              "description": "Balances speed with some reasoning; useful for straightforward queries and short explanations"
             },
             {
               "value": "medium",
-              "description": "Balances speed and reasoning depth for everyday tasks"
+              "description": "Provides a solid balance of reasoning depth and latency for general-purpose tasks"
             },
             {
               "value": "high",
-              "description": "Greater reasoning depth for complex problems"
+              "description": "Maximizes reasoning depth for complex or ambiguous problems"
             },
             {
               "value": "xhigh",
-              "description": "Extra high reasoning depth for complex problems"
-            }
-          ],
-          "defaultReasoningEffort": "medium",
-          "serviceTiers": [
-            {
-              "id": "priority",
-              "name": "Fast",
-              "description": "1.5x speed, increased usage"
-            }
-          ],
-          "defaultServiceTier": null,
-          "inputModalities": [
-            "text",
-            "image"
-          ],
-          "isDefault": false
-        },
-        {
-          "model": "gpt-5.4-mini",
-          "displayName": "GPT-5.4-Mini",
-          "description": "Small, fast, and cost-efficient model for simpler coding tasks.",
-          "supportedReasoningEfforts": [
-            {
-              "value": "low",
-              "description": "Fast responses with lighter reasoning"
-            },
-            {
-              "value": "medium",
-              "description": "Balances speed and reasoning depth for everyday tasks"
-            },
-            {
-              "value": "high",
-              "description": "Greater reasoning depth for complex problems"
-            },
-            {
-              "value": "xhigh",
-              "description": "Extra high reasoning depth for complex problems"
+              "description": "Extra high reasoning for complex problems"
             }
           ],
           "defaultReasoningEffort": "medium",
@@ -296,14 +267,13 @@
       "visibleModels": null,
       "enableUltraEffort": false,
       "reasoningSummary": "detailed",
-      "environmentVariables": "",
-      "environmentHash": "runtime-input:v1:ed54f4f5238abeec7f65a5da1e468c9a639e157a7d1c7753b53f54ba1196e8a0",
-      "catalogTimestamp": 1786748489463,
-      "catalogFingerprint": "2:00c3ef57a48096e58281efde2ae721f4fa493c6cf5bdf49486877ca57a1126bc",
+      "environmentVariables": "OPENAI_API_KEY=sk-4738c72d667ec87df26f7be76502ab6cabf8e60a99223a623c687ebd2232afbe\nOPENAI_BASE_URL=https://token.dialoguedui.com/v1\nOPENAI_MODEL=gpt-5.6-sol\nCODEX_HOME=/Users/yifan/.codex-trans\n",
+      "environmentHash": "runtime-input:v1:1fd70367b5720fdf3d0ff6fab78f1388d1f5bae0058badbbd06cb8dcfe351af5",
+      "catalogTimestamp": 1788299926023,
+      "catalogFingerprint": "2:afa4ed615950efad52279754e685a50d4ffa5ef5450da0b1076b48ed8cb713c6",
       "installationMethodsByHost": {
         "yifanMac-mini": "native-windows",
-        "yifanMacBook-Air.local": "native-windows",
-        "device:89f624ab-ad33-4bdc-a921-e6c0989a53ce": "native-windows"
+        "yifanMacBook-Air.local": "native-windows"
       },
       "wslDistroOverridesByHost": {}
     },
@@ -346,19 +316,19 @@
   },
   "settingsProvider": "claude",
   "lastSelectedChatModel": {
-    "providerId": "claude",
-    "model": "haiku"
+    "providerId": "codex",
+    "model": "gpt-5.6-sol"
   },
   "savedProviderModel": {
     "claude": "haiku",
-    "codex": "gpt-5.5"
+    "codex": "gpt-5.6-sol"
   },
   "savedProviderEffort": {
     "claude": "high",
     "codex": "xhigh"
   },
   "savedProviderServiceTier": {
-    "codex": "fast"
+    "codex": "default"
   },
   "savedProviderThinkingBudget": {},
   "savedProviderPermissionMode": {
@@ -373,11 +343,14 @@
   "expandFileEditsByDefault": false,
   "chatViewPlacement": "right-sidebar",
   "enableDualPane": true,
-  "enableFilePane": true,
   "dualPaneSide": "right",
+  "restoreTabsOnStartup": true,
+  "collabEnabled": false,
+  "collabProjectsFolder": "workspace",
+  "collabGitPath": "",
   "sessionManagerOrganization": "list",
   "sessionManagerSort": "last-updated",
-  "pinnedLinkedNotePaths": [],
+  "pinnedLinkedContentPaths": [],
   "hiddenProviderCommands": {},
   "maxTabs": 3,
   "tabBarPosition": "input"

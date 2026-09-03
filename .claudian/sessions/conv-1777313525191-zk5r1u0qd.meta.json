@@ -6,7 +6,7 @@
   "createdAt": 1777313525191,
   "lastActivityAt": 1777315649106,
   "sessionId": null,
-  "currentNote": "02-Capture/灵感与工具/解决 Mac 上浏览器 Mathjax 渲染问题.md",
+  "linkedContentPath": "02-Capture/灵感与工具/解决 Mac 上浏览器 Mathjax 渲染问题.md",
   "usage": {
     "inputTokens": 31823,
     "cacheCreationInputTokens": 0,

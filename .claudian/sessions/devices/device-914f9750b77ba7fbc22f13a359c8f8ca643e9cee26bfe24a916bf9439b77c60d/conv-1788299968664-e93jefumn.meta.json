@@ -1,0 +1,27 @@
+{
+  "id": "conv-1788299968664-e93jefumn",
+  "providerId": "codex",
+  "title": "你能帮我把https://github",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788299968672,
+  "lastActivityAt": 1788305231518,
+  "sessionId": "01a05efc-01d0-79e3-b98e-5f71f22b9196",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a05efc-01d0-79e3-b98e-5f71f22b9196",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex-trans/sessions/2026/09/02/rollout-2026-09-02T05-59-29-01a05efc-01d0-79e3-b98e-5f71f22b9196.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-trans/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "usage": {
+    "inputTokens": 116482,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 75380,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 116482,
+    "percentage": 45,
+    "model": "gpt-5.6-sol"
+  }
+}

@@ -6,7 +6,7 @@
   "createdAt": 1779763233650,
   "lastActivityAt": 1779763847241,
   "sessionId": null,
-  "currentNote": "Paper/raw/focus-efficient-keyframe-selection-for-long-video-understanding/focus-efficient-keyframe-selection-for-long-video-understanding.md",
+  "linkedContentPath": "Paper/raw/focus-efficient-keyframe-selection-for-long-video-understanding/focus-efficient-keyframe-selection-for-long-video-understanding.md",
   "usage": {
     "inputTokens": 44444,
     "cacheCreationInputTokens": 0,

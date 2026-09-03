@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787171247772-dvdlviqop",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787171247836-kfr2x09",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787171247769-mrkm8yg",
+      "timestamp": 1787171247769,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "currentNote": {
+          "path": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "01a01bb5-1785-7103-9324-3668e70ae9d0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787171610400-gw18nm8",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787171610395-uzhj5yo",
+      "timestamp": 1787171610395,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "01a01bba-9f2e-7453-be1b-75cb82190b63"
+    }
+  ]
+}

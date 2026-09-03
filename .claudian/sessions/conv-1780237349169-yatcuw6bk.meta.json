@@ -6,7 +6,7 @@
   "createdAt": 1780237349169,
   "lastActivityAt": 1780237462930,
   "sessionId": null,
-  "currentNote": "Paper/raw/lmms-eval-reality-check-on-the-evaluation-of-large-multimodal-models/lmms-eval-第一性原理.md",
+  "linkedContentPath": "Paper/raw/lmms-eval-reality-check-on-the-evaluation-of-large-multimodal-models/lmms-eval-第一性原理.md",
   "usage": {
     "inputTokens": 27358,
     "cacheCreationInputTokens": 0,

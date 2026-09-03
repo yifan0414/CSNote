@@ -1,18 +1,33 @@
 ---
 title: "EarlyTom: Early Token Compression Completes Fast Video Understanding"
-authors: ["Hesong Wang", "Xin Jin", "Lu Lu", "Chenhaowen Li", "Jian Chen", "Qiang Liu", "Huan Wang"]
-conference: ""
+authors:
+  - Hesong Wang
+  - Xin Jin
+  - Lu Lu
+  - Chenhaowen Li
+  - Jian Chen
+  - Qiang Liu
+  - Huan Wang
+conference: CVPR 2025
 year: 2026
-arxiv_url: "https://arxiv.org/abs/2605.30010"
+arxiv_url: https://arxiv.org/abs/2605.30010
 pdf_link: "[[assets/paper_2605.30010.pdf]]"
 cover: "[[assets/pipeline_2605.30010.png]]"
 updated: 2026-06-01
-tags: ["paper/arxiv", "video-qa", "long-video", "temporal-reasoning", "question-aware", "token-pruning", "video-llm"]
-status: "unread"
+tags:
+  - paper/arxiv
+  - video-qa
+  - long-video
+  - temporal-reasoning
+  - question-aware
+  - token-pruning
+  - video-llm
+status: unread
 priority:
 rating:
-topics: ["Video Understanding"]
-code: "https://viridisgreen.github.io/EarlyTom"
+topics:
+  - Video Understanding
+code: https://viridisgreen.github.io/EarlyTom
 ---
 
 ## TL;DR

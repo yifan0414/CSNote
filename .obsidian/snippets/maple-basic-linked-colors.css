@@ -1,0 +1,36 @@
+/* Follow Maple Basic > Colors > Base Color without further color adjustment. */
+
+body {
+  /* Internal link color and underline color. */
+  --link-color: var(--color-accent);
+  --link-color-hover: var(--color-accent);
+  --link-color-underline: var(--color-accent);
+
+  /* External link color and underline color. */
+  --link-external-color: var(--color-accent);
+  --link-external-color-hover: var(--color-accent);
+  --link-external-color-underline: var(--color-accent);
+
+  /* Inline-code text and code-language indicator colors. */
+  --inline-code: var(--color-accent);
+}
+
+/* Maple's standard link mode uses RGB palette variables directly. */
+body:not(.link-hover-expand)
+  :is(
+    a.external-link,
+    .cm-link .cm-underline,
+    .cm-url:not(.cm-string) .cm-underline,
+    a.internal-link:not(.is-unresolved),
+    .cm-hmd-internal-link > .cm-underline
+  ) {
+  color: var(--color-accent);
+}
+
+/* Keep both editing- and reading-view language labels tied to Base Color. */
+body .markdown-source-view.mod-cm6 .code-block-flair,
+body:is(:not(.css-settings-manager), .code-language)
+  .markdown-rendered pre[class*="language-"]
+  .copy-code-button:not([style="color: var(--text-success); display: inline-flex;"])::before {
+  color: var(--color-accent);
+}

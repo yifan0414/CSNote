@@ -9,7 +9,7 @@
   "libraryFolderPath": "Excalidraw/Libraries",
   "libraryFileName": "local-library",
   "libraryStorageMode": "data-json",
-  "libraryMigrationStatus": "pending",
+  "libraryMigrationStatus": "opted-out",
   "libraryMigrationSnoozeUntil": 0,
   "cropFolder": "",
   "annotateFolder": "",
@@ -126,7 +126,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.22.3",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.26.4",
     "libraryItems": [
       {
         "id": "DCphUpzRb6v6HGs1kqefF",
@@ -15626,7 +15626,11 @@
             "lastCommittedPoint": null,
             "simulatePressure": true,
             "pressures": [],
-            "hasTextLink": false
+            "hasTextLink": false,
+            "strokeOptions": {
+              "variability": "variable",
+              "streamline": 0.5
+            }
           },
           {
             "type": "freedraw",
@@ -15836,7 +15840,11 @@
             "lastCommittedPoint": null,
             "simulatePressure": true,
             "pressures": [],
-            "hasTextLink": false
+            "hasTextLink": false,
+            "strokeOptions": {
+              "variability": "variable",
+              "streamline": 0.5
+            }
           }
         ],
         "id": "Qgt0hVoQL2IpS13oGCVzo",
@@ -16024,7 +16032,11 @@
             "lastCommittedPoint": null,
             "simulatePressure": true,
             "pressures": [],
-            "hasTextLink": false
+            "hasTextLink": false,
+            "strokeOptions": {
+              "variability": "variable",
+              "streamline": 0.5
+            }
           }
         ],
         "id": "wWsv44ZkWiRsDeEtLr2rr",

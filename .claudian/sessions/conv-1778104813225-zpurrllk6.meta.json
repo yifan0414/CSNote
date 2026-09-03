@@ -6,7 +6,7 @@
   "createdAt": 1778104813226,
   "lastActivityAt": 1778104963988,
   "sessionId": null,
-  "currentNote": "实验/Adaptive Video LLM 组会汇报.md",
+  "linkedContentPath": "实验/Adaptive Video LLM 组会汇报.md",
   "usage": {
     "inputTokens": 10153,
     "cacheCreationInputTokens": 0,

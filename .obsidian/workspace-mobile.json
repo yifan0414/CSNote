@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Paper/raw/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior.md",
+                "file": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior"
+              "title": "01-transformer-基础知识与例题"
             }
           }
         ]
@@ -181,6 +181,13 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "templater-obsidian:Templater": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "fix-math:Current file": false,
       "bases:新建数据库": false,
       "switcher:打开快速切换": false,
@@ -189,18 +196,12 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "publish:发布更改": false,
-      "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false,
-      "templater-obsidian:Templater": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "publish:发布更改": false
     }
   },
   "active": "de7a8599ab45243d",
   "lastOpenFiles": [
+    "Paper/raw/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior.md",
     "Paper/Papers.base",
     "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
     "05-Work/左耳朵耗子的话.md",

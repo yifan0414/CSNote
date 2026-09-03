@@ -6,7 +6,7 @@
   "createdAt": 1778683628274,
   "lastActivityAt": 1778683983585,
   "sessionId": null,
-  "currentNote": "Paper/raw/videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding/videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding.md",
+  "linkedContentPath": "Paper/raw/videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding/videorouter-query-adaptive-dual-routing-for-efficient-long-video-understanding.md",
   "usage": {
     "inputTokens": 21074,
     "cacheCreationInputTokens": 0,

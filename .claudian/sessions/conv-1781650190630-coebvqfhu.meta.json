@@ -2,10 +2,20 @@
   "id": "conv-1781650190630-coebvqfhu",
   "providerId": "codex",
   "title": "hello",
-  "titleGenerationStatus": "pending",
+  "titleGenerationStatus": "failed",
   "createdAt": 1781650190638,
-  "lastActivityAt": 1786361632371,
+  "lastActivityAt": 1786750855877,
   "sessionId": null,
   "selectedModel": "gpt-5.6-sol",
-  "currentNote": "Paper/AAAI 2027/Simple QGPS.md"
+  "linkedContentPath": "Paper/组会汇报/1月8日汇报.md",
+  "usage": {
+    "inputTokens": 14102,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 3840,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 14102,
+    "percentage": 5,
+    "model": "gpt-5.6-sol"
+  }
 }

@@ -1,0 +1,21 @@
+{
+  "id": "conv-1786765301364-gnxktn1hy",
+  "providerId": "codex",
+  "title": "这个文档写的不好, 请你帮我整理格式, 并重新写一遍, 计划要使用md格式的-[] 等等, 符合现代...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1786765301375,
+  "lastActivityAt": 1786926695950,
+  "sessionId": null,
+  "selectedModel": "gpt-5.6-sol",
+  "linkedContentPath": "Paper/架构学习/RoadMap.md",
+  "usage": {
+    "inputTokens": 188682,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 187136,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 188682,
+    "percentage": 73,
+    "model": "gpt-5.6-sol"
+  }
+}

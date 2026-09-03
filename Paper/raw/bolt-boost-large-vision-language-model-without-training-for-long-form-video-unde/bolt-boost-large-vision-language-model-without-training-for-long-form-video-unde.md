@@ -1,5 +1,5 @@
 ---
-title: BOLT(frame)
+title: (frame)BOLT
 authors:
   - Shuming Liu
   - Chen Zhao

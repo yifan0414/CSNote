@@ -1,0 +1,28 @@
+{
+  "id": "conv-1787313390672-i2a075otr",
+  "providerId": "codex",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1787313390687,
+  "lastActivityAt": 1787313400926,
+  "sessionId": "01a0242e-150d-77b0-aa53-ad03bee6e339",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a0242e-150d-77b0-aa53-ad03bee6e339",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex-trans/sessions/2026/08/21/rollout-2026-08-21T19-56-34-01a0242e-150d-77b0-aa53-ad03bee6e339.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex-trans/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "Paper/架构学习/Video-MLLM/resources/papers/2010.11929-vit.pdf",
+  "usage": {
+    "inputTokens": 14136,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 3840,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 14136,
+    "percentage": 5,
+    "model": "gpt-5.6-sol"
+  }
+}

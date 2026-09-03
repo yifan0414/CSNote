@@ -57,7 +57,7 @@
   "highlightExistingTab": false,
   "existingTabHighlightOpacity": 0.5,
   "existingTabHighlightDuration": 0.75,
-  "paneTypeForFirstPDFLeaf": "left",
+  "paneTypeForFirstPDFLeaf": "tab",
   "openLinkNextToExistingPDFTab": true,
   "openPDFWithDefaultApp": false,
   "openPDFWithDefaultAppAndObsidian": true,

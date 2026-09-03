@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788410097040-mesxn8ql1",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788410097076-vg79ee5",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788410097025-ttr45j5",
+      "timestamp": 1788410097025,
+      "rawDisplayText": "为什么我的行内代码框有点下移和正文相比",
+      "canonicalText": "为什么我的行内代码框有点下移和正文相比",
+      "images": [],
+      "contentDigest": "42163d5c937a4a2619d67fe554b1b462c452281fbcb907ba478b8ed86b5de613",
+      "providerUserMessageId": "01a0658c-6e4e-7bb2-8551-73875ad162a8",
+      "providerAssistantMessageId": "msg_0e34eb530b5d9be2016a98f980377487d180d31230ecb34b6a"
+    }
+  ]
+}

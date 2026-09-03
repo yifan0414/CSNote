@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1787313390672-i2a075otr",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787313390717-uogi0vw",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787313390668-rjamkzz",
+      "timestamp": 1787313390668,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/Video-MLLM/resources/papers/2010.11929-vit.pdf"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "01a0242e-157c-73d0-a61e-15be019f0c29",
+      "providerAssistantMessageId": "msg_058d98ad07b7ff38016a883cf7d2c887d0ae6aefd7b3c20794"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   "createdAt": 1777985614426,
   "lastActivityAt": 1777985629272,
   "sessionId": null,
-  "currentNote": "copilot/copilot-conversations/模拟器文档总结@20260424_014734.md",
+  "linkedContentPath": "copilot/copilot-conversations/模拟器文档总结@20260424_014734.md",
   "usage": {
     "inputTokens": 9711,
     "cacheCreationInputTokens": 0,

@@ -6,7 +6,7 @@
   "createdAt": 1778639675936,
   "lastActivityAt": 1778639789774,
   "sessionId": null,
-  "currentNote": "Paper/raw/himu-hierarchical-multimodal-frame-selection-for-long-video-question-answering/himu-hierarchical-multimodal-frame-selection-for-long-video-question-answering.md",
+  "linkedContentPath": "Paper/raw/himu-hierarchical-multimodal-frame-selection-for-long-video-question-answering/himu-hierarchical-multimodal-frame-selection-for-long-video-question-answering.md",
   "usage": {
     "inputTokens": 16379,
     "cacheCreationInputTokens": 0,

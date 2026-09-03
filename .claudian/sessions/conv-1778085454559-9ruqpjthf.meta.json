@@ -6,7 +6,7 @@
   "createdAt": 1778085454561,
   "lastActivityAt": 1778103829061,
   "sessionId": null,
-  "currentNote": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
+  "linkedContentPath": "实验/EgoSchema Adaptive LLM 实验阶段性总结.md",
   "usage": {
     "inputTokens": 64166,
     "cacheCreationInputTokens": 0,

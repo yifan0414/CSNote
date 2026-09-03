@@ -6,7 +6,7 @@
   "createdAt": 1778735975444,
   "lastActivityAt": 1778736192273,
   "sessionId": null,
-  "currentNote": "Paper/视频理解/视频理解论文_Pipeline.md",
+  "linkedContentPath": "Paper/视频理解/视频理解论文_Pipeline.md",
   "usage": {
     "inputTokens": 23488,
     "cacheCreationInputTokens": 0,

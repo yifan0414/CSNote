@@ -6,7 +6,7 @@
   "createdAt": 1777379540277,
   "lastActivityAt": 1777387130048,
   "sessionId": null,
-  "currentNote": "实验/GPT4o-mini router实验.md",
+  "linkedContentPath": "实验/GPT4o-mini router实验.md",
   "usage": {
     "inputTokens": 16073,
     "cacheCreationInputTokens": 0,

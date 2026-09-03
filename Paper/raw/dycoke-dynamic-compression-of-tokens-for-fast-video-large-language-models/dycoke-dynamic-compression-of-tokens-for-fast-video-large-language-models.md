@@ -1,5 +1,5 @@
 ---
-title: DyCoke(token)
+title: (token)DyCoke
 authors:
   - Keda Tao
   - Can Qin

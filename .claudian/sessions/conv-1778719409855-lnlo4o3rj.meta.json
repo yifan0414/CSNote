@@ -6,7 +6,7 @@
   "createdAt": 1778719409855,
   "lastActivityAt": 1778723505276,
   "sessionId": null,
-  "currentNote": "实验/EVI 最新.md",
+  "linkedContentPath": "实验/EVI 最新.md",
   "usage": {
     "inputTokens": 40891,
     "cacheCreationInputTokens": 0,

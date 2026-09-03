@@ -6,7 +6,7 @@
   "createdAt": 1779765577679,
   "lastActivityAt": 1779767275017,
   "sessionId": null,
-  "currentNote": "Paper/raw/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm.md",
+  "linkedContentPath": "Paper/raw/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm/surge-surprise-guided-token-reduction-for-efficient-video-understanding-with-vlm.md",
   "usage": {
     "inputTokens": 102979,
     "cacheCreationInputTokens": 0,

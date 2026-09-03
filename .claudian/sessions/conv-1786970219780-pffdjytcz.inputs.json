@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1786970219780-pffdjytcz",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786970219925-fet0k7b",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1786970219765-mlj2upa",
+      "timestamp": 1786970219765,
+      "rawDisplayText": "你能不能根据这个文档给我生成一份练习题(不需要运行程序), 类似于纸质测试题来帮我进行每个知识点的理解和检验",
+      "canonicalText": "你能不能根据这个文档给我生成一份练习题(不需要运行程序), 类似于纸质测试题来帮我进行每个知识点的理解和检验",
+      "context": {
+        "currentNote": {
+          "path": "Paper/架构学习/Video-MLLM/01-transformer.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "aa76a6d049f1ccab9f05589a3ac7370a0122674d26f0b3519967310d2992a54f",
+      "providerUserMessageId": "01a00fb9-a812-7032-9f0f-5f59082c2cf6",
+      "providerAssistantMessageId": "msg_0171233a8c73e4a6016a830157a1688190ad71f28fcf40819c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786970550147-cqi62dm",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1786970550140-9itehmk",
+      "timestamp": 1786970550140,
+      "rawDisplayText": "对于数学公式不要使用代码框, 要使用latex公式, 该使用代码框的时候再使用代码框",
+      "canonicalText": "对于数学公式不要使用代码框, 要使用latex公式, 该使用代码框的时候再使用代码框",
+      "images": [],
+      "contentDigest": "ee73b1785a96d9f8b9868c53aba53301fa607ba3b3c31ca9d9cfb2825553d3da",
+      "providerUserMessageId": "01a00fbe-af89-7583-aa02-19474d32b183",
+      "providerAssistantMessageId": "msg_0171233a8c73e4a6016a8302ec878c8190a49c4b3a00f3bbe9"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786971238887-yykxw8t",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1786971238876-p2zyju6",
+      "timestamp": 1786971238876,
+      "rawDisplayText": "@Paper/架构学习/Video-MLLM/01-transformer-练习题.md  你还要再生成一份md文件, 包括做这个练习题的全部基础知识, 内容详尽, 格式精美, 还要有对应例题和解答",
+      "canonicalText": "@Paper/架构学习/Video-MLLM/01-transformer-练习题.md  你还要再生成一份md文件, 包括做这个练习题的全部基础知识, 内容详尽, 格式精美, 还要有对应例题和解答",
+      "images": [],
+      "contentDigest": "31d78fc9bbf9009665281c06f9e2a2f893dafc7c43c20bed962fbcb105fd6927",
+      "providerUserMessageId": "01a00fc9-3229-7130-b113-0f0288cf9e50"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786971727131-sw9pt77",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "timestamp": 1786971727131,
+      "rawDisplayText": "继续",
+      "canonicalText": "继续",
+      "images": [],
+      "contentDigest": "65f454414e2fda4840658901f9399831363ad75712ba36b930b5ad393f72f7b7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786971745557-9nnuzj2",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1786971745545-8q01clr",
+      "timestamp": 1786971745545,
+      "rawDisplayText": "继续",
+      "canonicalText": "继续",
+      "images": [],
+      "contentDigest": "65f454414e2fda4840658901f9399831363ad75712ba36b930b5ad393f72f7b7",
+      "providerUserMessageId": "01a00fd0-ee41-7bc0-b514-19676a43fa22",
+      "providerAssistantMessageId": "msg_0171233a8c73e4a6016a830851c6e88190873acd7cea8f94ff"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787170843915-doowulk",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1787170843828-wwaa0k3",
+      "timestamp": 1787170843828,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "currentNote": {
+          "path": "Paper/架构学习/Video-MLLM/01-transformer.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787171044940-ckjawzq",
+      "userTurnOrdinal": 1,
+      "state": "staged",
+      "localMessageId": "msg-1787171044871-vfws7rf",
+      "timestamp": 1787171044871,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "currentNote": {
+          "path": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1787171137307-adw0flx",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1787171137296-aei5kd1",
+      "timestamp": 1787171137296,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "01a01bb3-ac6d-7910-90a3-bd12b77c2e2c"
+    }
+  ]
+}

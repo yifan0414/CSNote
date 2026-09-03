@@ -1,5 +1,5 @@
 ---
-title: CoSeLECT(frame)
+title: (frame)CoSeLECT
 authors:
   - Anonymous
 conference: ICLR 2026×

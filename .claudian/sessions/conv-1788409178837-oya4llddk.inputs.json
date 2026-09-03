@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788409178837-oya4llddk",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788409178889-1namkcz",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788409178828-effldye",
+      "timestamp": 1788409178828,
+      "rawDisplayText": "整理下这个文档，目前内容组织的很杂乱，而且很多代码框",
+      "canonicalText": "整理下这个文档，目前内容组织的很杂乱，而且很多代码框",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/从 Seq2Seq 到 Attention 再到 Transformer.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "bbee1550c82661838170dd290fce270a4ad7827703a1f72616cbed9bc7bed419",
+      "providerUserMessageId": "01a0657e-6fd3-7ad2-bd3c-c0b1f5d3b25a",
+      "providerAssistantMessageId": "msg_07b449a31b0d3f11016a98f6a41e3087d1afdece547eae8217"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788409541066-av1r5x2",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788409541061-xe88wiq",
+      "timestamp": 1788409541061,
+      "rawDisplayText": "目录登记统一降低一级",
+      "canonicalText": "目录登记统一降低一级",
+      "images": [],
+      "contentDigest": "ea2253dc27cac41b492606aa216bc74fceb94629e798ce711bc4f9515caa94c9",
+      "providerUserMessageId": "01a06583-f1ce-7dc1-ad7e-60b6c695ea36",
+      "providerAssistantMessageId": "msg_07b449a31b0d3f11016a98f716789c87d1b7ab99ffd959c023"
+    }
+  ]
+}

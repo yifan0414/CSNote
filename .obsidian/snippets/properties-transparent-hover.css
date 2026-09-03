@@ -1,0 +1,20 @@
+/* Keep note properties visually unchanged on hover and focus. */
+body .metadata-container {
+  --metadata-property-background-hover: transparent;
+  --metadata-property-background-active: transparent;
+  --metadata-label-background-hover: transparent;
+  --metadata-label-background-active: transparent;
+  --metadata-input-background-hover: transparent;
+  --metadata-input-background-active: transparent;
+  --background-modifier-form-field-hover: transparent;
+}
+
+body .metadata-container .metadata-property:hover,
+body .metadata-container .metadata-property:focus-within,
+body .metadata-container .metadata-property-key:hover,
+body .metadata-container .metadata-property-key:focus-within,
+body .metadata-container input.metadata-property-key-input:hover,
+body .metadata-container input.metadata-property-key-input:focus,
+body .metadata-container input.metadata-property-key-input:active {
+  background-color: transparent !important;
+}

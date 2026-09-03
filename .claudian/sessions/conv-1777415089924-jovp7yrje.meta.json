@@ -6,7 +6,7 @@
   "createdAt": 1777415089924,
   "lastActivityAt": 1777415113197,
   "sessionId": null,
-  "currentNote": "实验/random shuffle 5 times.md",
+  "linkedContentPath": "实验/random shuffle 5 times.md",
   "usage": {
     "inputTokens": 13689,
     "cacheCreationInputTokens": 0,

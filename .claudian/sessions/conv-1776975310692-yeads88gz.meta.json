@@ -6,7 +6,7 @@
   "createdAt": 1776975310694,
   "lastActivityAt": 1776976899893,
   "sessionId": null,
-  "currentNote": "06-Algorithm/00题库/枚举子集（递归实现指数型枚举）.md",
+  "linkedContentPath": "06-Algorithm/00题库/枚举子集（递归实现指数型枚举）.md",
   "usage": {
     "inputTokens": 33346,
     "cacheCreationInputTokens": 0,

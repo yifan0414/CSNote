@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiAnchor",
       "TiStars",
       "RiRoadMapLine",
       "LiExperiment",
-      "TiCapture",
-      "OcCopilot16"
+      "TiCapture"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -58,5 +58,6 @@
   "00-Archive/04-CPP": "TiBrandCpp",
   "实验": "LiExperiment",
   "07-AI/00-roadmap": "RiRoadMapLine",
-  "Paper/raw/divide-then-ground-adapting-frame-selection-to-query-types-for-long-form-video": "TiStars"
+  "Paper/raw/divide-then-ground-adapting-frame-selection-to-query-types-for-long-form-video": "TiStars",
+  "科研": "LiAnchor"
 }

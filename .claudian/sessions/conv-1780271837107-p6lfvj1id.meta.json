@@ -6,7 +6,7 @@
   "createdAt": 1780271837109,
   "lastActivityAt": 1780272424204,
   "sessionId": null,
-  "currentNote": "Paper/raw/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large.md",
+  "linkedContentPath": "Paper/raw/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large.md",
   "usage": {
     "inputTokens": 44129,
     "cacheCreationInputTokens": 0,

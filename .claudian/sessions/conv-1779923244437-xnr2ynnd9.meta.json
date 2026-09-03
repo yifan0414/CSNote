@@ -6,7 +6,7 @@
   "createdAt": 1779923244437,
   "lastActivityAt": 1779923568338,
   "sessionId": null,
-  "currentNote": "Paper/Papers.base",
+  "linkedContentPath": "Paper/Papers.base",
   "usage": {
     "inputTokens": 91009,
     "cacheCreationInputTokens": 0,

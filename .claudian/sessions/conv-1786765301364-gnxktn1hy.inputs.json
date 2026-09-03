@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1786765301364-gnxktn1hy",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786765301410-bv1k53a",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1786765301354-omx1vcm",
+      "timestamp": 1786765301354,
+      "rawDisplayText": "这个文档写的不好, 请你帮我整理格式, 并重新写一遍, 计划要使用md格式的-[] 等等, 符合现代obsidian md语言",
+      "canonicalText": "这个文档写的不好, 请你帮我整理格式, 并重新写一遍, 计划要使用md格式的-[] 等等, 符合现代obsidian md语言",
+      "context": {
+        "currentNote": {
+          "path": "Paper/架构学习/RoadMap.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "62a4f9f942a6f57f9a522ba799e5f2f530c7dff180a422c5937b5913545cb881",
+      "providerUserMessageId": "01a00382-d83f-7ea1-9845-20e297553dbe",
+      "providerAssistantMessageId": "msg_0d105ec3d12de26c016a7fe269dcb0819b91a49f1aaa14db98"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786766569744-83n99vw",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1786766569731-fpibirf",
+      "timestamp": 1786766569731,
+      "rawDisplayText": "就是把每一阶段要看的参考资料, 以及课程中详细的内容或者作业你都写出来, 每一个课程你都要去官方网站仔细检查",
+      "canonicalText": "就是把每一阶段要看的参考资料, 以及课程中详细的内容或者作业你都写出来, 每一个课程你都要去官方网站仔细检查",
+      "images": [],
+      "contentDigest": "038753ceab0d2174c74c88b0e520a96deedc61e748f43a1dd08e67f17fca5f5a",
+      "providerUserMessageId": "01a00396-313c-7c92-adde-c51f3029cbb7",
+      "providerAssistantMessageId": "msg_0d105ec3d12de26c016a7fe8910280819bbfa2a6c31a0b7677"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786767772869-782rsbr",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1786767772855-5rqckad",
+      "timestamp": 1786767772855,
+      "rawDisplayText": "你在Paper/架构学习 中建立下面的目录, 并根据RoadMap中组织各个子文件, 并把所有需要的文件(比如论文pdf,或者作业pdf,slide等等) 下载下来, 进行引用, RoadMap不用变\nVideo-MLLM/\n├── 00-shape-cheatsheet.md\n├── 01-transformer.md\n├── 02-vit.md\n├── 03-clip-siglip.md\n├── 04-blip-llava.md\n├── 05-onevision-trace.md\n├── 06-compression-map.md\n└── experiments/\n    ├── traces/\n    ├── profiler/\n    └── compression/",
+      "canonicalText": "你在Paper/架构学习 中建立下面的目录, 并根据RoadMap中组织各个子文件, 并把所有需要的文件(比如论文pdf,或者作业pdf,slide等等) 下载下来, 进行引用, RoadMap不用变\nVideo-MLLM/\n├── 00-shape-cheatsheet.md\n├── 01-transformer.md\n├── 02-vit.md\n├── 03-clip-siglip.md\n├── 04-blip-llava.md\n├── 05-onevision-trace.md\n├── 06-compression-map.md\n└── experiments/\n    ├── traces/\n    ├── profiler/\n    └── compression/",
+      "images": [],
+      "contentDigest": "41d0967fa11fde8b422d616be3b9dba5333078366a93d5b6d0858af196b028f4",
+      "providerUserMessageId": "01a003a8-8cd4-70d3-8ef5-f4c0722125d7",
+      "providerAssistantMessageId": "msg_0bb8a955ca0af80c016a7fefc874ec819ab038255bbbd67abf"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786778846402-ybjk4z1",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1786778846389-pe732ml",
+      "timestamp": 1786778846389,
+      "rawDisplayText": "你修复下Paper/架构学习/Video-MLLM 中顶层的00, 01, 02, 03... 06 其中他们的表格中的内部链接断了",
+      "canonicalText": "你修复下Paper/架构学习/Video-MLLM 中顶层的00, 01, 02, 03... 06 其中他们的表格中的内部链接断了",
+      "images": [],
+      "contentDigest": "10420ca19e69f6c0b8efbc0900788bbcf1656ab659f244461902edee2b3296b5",
+      "providerUserMessageId": "01a00451-84eb-7431-8624-18f2df2550f6",
+      "providerAssistantMessageId": "msg_0bb8a955ca0af80c016a80154096ac819aa8e90ef64d8c6fc0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786779163229-a55zvk9",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1786779163216-pwitv8w",
+      "timestamp": 1786779163216,
+      "rawDisplayText": "HTML, ipynb这种就不用变成本地文件了啊, 还是原始链接即可, 删除这些源文件, 修改文件引用",
+      "canonicalText": "HTML, ipynb这种就不用变成本地文件了啊, 还是原始链接即可, 删除这些源文件, 修改文件引用",
+      "images": [],
+      "contentDigest": "27bce21d74730b7c9f1308320e7617a349e7aaed810afd3803d242cfc35d8109",
+      "providerUserMessageId": "01a00456-5a6c-7bc0-8fea-07e855105617",
+      "providerAssistantMessageId": "msg_0bb8a955ca0af80c016a801772a150819abfaecd6d55fab9f9"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786780389046-fq6gbra",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1786780389042-057zm4u",
+      "timestamp": 1786780389042,
+      "rawDisplayText": "为什么我点击PDF的链接,不是给我在新的标签页打开, 而是左右拆分窗口呢, 点击md的链接就正常",
+      "canonicalText": "为什么我点击PDF的链接,不是给我在新的标签页打开, 而是左右拆分窗口呢, 点击md的链接就正常",
+      "images": [],
+      "contentDigest": "931f4360df2497853b6e22b79598b7ff170569cf5ed8b3ff41aa9eda448dbee4",
+      "providerUserMessageId": "01a00469-0ebe-7f00-bed6-bdad444390dc",
+      "providerAssistantMessageId": "msg_0bb8a955ca0af80c016a801b5a24ec819a87445c8060c11935"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786780787194-uvixfki",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1786780787164-sc7f7ep",
+      "timestamp": 1786780787164,
+      "rawDisplayText": "打开 设置 → PDF++ → Opening links to PDF files\n将 How to open PDF links when there is no open PDF file 从 Split left 改为 New tab 找不到这个设置, 你能不能直接给我该配置文件",
+      "canonicalText": "打开 设置 → PDF++ → Opening links to PDF files\n将 How to open PDF links when there is no open PDF file 从 Split left 改为 New tab 找不到这个设置, 你能不能直接给我该配置文件",
+      "images": [],
+      "contentDigest": "187d412745e3ad2aa0b44198db80ceeeb8ce0f881402be8bbdf512b76425f64c",
+      "providerUserMessageId": "01a0046f-2298-70c1-8b1a-4b37087f1d03",
+      "providerAssistantMessageId": "msg_0bb8a955ca0af80c016a801ca66ae0819ab4722c1783954c96"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786784454704-dylunme",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1786784454695-btxewdq",
+      "timestamp": 1786784454695,
+      "rawDisplayText": "我鼠标指针放到笔记属性的字段名字上面, 底色变成了#ffffff 是什么原因",
+      "canonicalText": "我鼠标指针放到笔记属性的字段名字上面, 底色变成了#ffffff 是什么原因",
+      "images": [],
+      "contentDigest": "629183b1895521fbc5c580e59208cca4cbf8fa747c430369626e2aad93e80043",
+      "providerUserMessageId": "01a004a7-184a-7841-b9b6-5a2b531b2725",
+      "providerAssistantMessageId": "msg_0bb8a955ca0af80c016a802c13f510819a8604c177422c2225"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786822467305-bs2haro",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1786822467298-m0dvlgz",
+      "timestamp": 1786822467298,
+      "rawDisplayText": "你帮我修复下, 不要覆盖颜色, 在css snippet中添加",
+      "canonicalText": "你帮我修复下, 不要覆盖颜色, 在css snippet中添加",
+      "images": [],
+      "contentDigest": "a19922783792bdf9969a16613817c00265597ae2e367678c0e204f2c8a8a284f",
+      "providerUserMessageId": "01a006eb-1f43-7a00-8447-eb7987f89371",
+      "providerAssistantMessageId": "msg_0bb8a955ca0af80c016a80bf863f48819a885fd1f936d0678b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1786926613307-tpxvrut",
+      "userTurnOrdinal": 10,
+      "state": "accepted",
+      "localMessageId": "msg-1786926613279-8ravoqi",
+      "timestamp": 1786926613279,
+      "rawDisplayText": "还是没有修复",
+      "canonicalText": "还是没有修复",
+      "images": [],
+      "contentDigest": "dcb0c1ecb8aea3c3f4d9ed860eeab1c9d7bb1511df0c90c196101fccf63645e0",
+      "providerUserMessageId": "01a00d20-44b9-7590-8d6a-a97fb3c64056",
+      "providerAssistantMessageId": "msg_0bb8a955ca0af80c016a825665ae88819aa744f242ade4125f"
+    }
+  ]
+}

@@ -17,14 +17,15 @@
     "callout_aside",
     "sample",
     "callout1",
-    "html-size",
     "callout",
     "claudian",
-    "code",
     "paper-base-maple",
+    "maple-basic-linked-colors",
+    "properties-transparent-hover",
+    "code",
     "font"
   ],
-  "textFontFamily": "Georgia,Source Han Serif SC VF,LXGW WenKai,苹方-简,Open Sans,STSong,Maple Mono NF CN,Bookerly",
+  "textFontFamily": "Georgia,Source Han Serif SC VF,Songti SC,LXGW WenKai,苹方-简,Open Sans,STSong,Maple Mono NF CN,Bookerly",
   "interfaceFontFamily": "Georgia,Source Han Serif SC VF,Maple Mono NF CN,Open Sans,苹方-简,Inter,Bookerly",
   "showRibbon": false
 }

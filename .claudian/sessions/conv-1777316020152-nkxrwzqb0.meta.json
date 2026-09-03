@@ -15,7 +15,7 @@
       "transcriptRootPath": "/Users/yifan/.codex-duckcode/sessions"
     }
   },
-  "currentNote": "Paper/Papers.base",
+  "linkedContentPath": "Paper/Papers.base",
   "usage": {
     "inputTokens": 12996,
     "cacheCreationInputTokens": 0,

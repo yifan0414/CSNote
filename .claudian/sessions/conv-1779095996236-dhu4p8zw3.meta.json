@@ -6,7 +6,7 @@
   "createdAt": 1779095996237,
   "lastActivityAt": 1779096732330,
   "sessionId": null,
-  "currentNote": "Paper/raw/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding.md",
+  "linkedContentPath": "Paper/raw/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding/longvu-spatiotemporal-adaptive-compression-for-long-video-language-understanding.md",
   "usage": {
     "inputTokens": 104107,
     "cacheCreationInputTokens": 0,

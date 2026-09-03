@@ -6,7 +6,7 @@
   "createdAt": 1779010954336,
   "lastActivityAt": 1779011223654,
   "sessionId": null,
-  "currentNote": "Paper/视频理解/DYTO、KTV 改进.md",
+  "linkedContentPath": "Paper/视频理解/DYTO、KTV 改进.md",
   "usage": {
     "inputTokens": 22664,
     "cacheCreationInputTokens": 0,

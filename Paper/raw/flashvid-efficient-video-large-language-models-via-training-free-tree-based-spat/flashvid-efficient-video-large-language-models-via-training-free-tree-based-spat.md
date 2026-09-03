@@ -1,5 +1,5 @@
 ---
-title: FlashVID(token)
+title: (token)FlashVID
 authors:
   - Ziyang Fan
   - Keyu Chen

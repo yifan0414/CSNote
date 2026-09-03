@@ -1,5 +1,5 @@
 ---
-title: DIG(frame)
+title: (frame)DIG
 authors:
   - Jialuo Li
   - Bin Li

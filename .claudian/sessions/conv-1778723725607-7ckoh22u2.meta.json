@@ -6,7 +6,7 @@
   "createdAt": 1778723725607,
   "lastActivityAt": 1778724703511,
   "sessionId": null,
-  "currentNote": "Paper/视频理解/视频理解论文_Pipeline与工作位置综述_结构化修订版.md",
+  "linkedContentPath": "Paper/视频理解/视频理解论文_Pipeline与工作位置综述_结构化修订版.md",
   "usage": {
     "inputTokens": 53604,
     "cacheCreationInputTokens": 0,

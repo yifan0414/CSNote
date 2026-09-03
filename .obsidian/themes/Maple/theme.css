@@ -1,4 +1,4 @@
-/* Maple Theme v1.5.4 For Obsidian */
+/* Maple Theme v1.5.7 For Obsidian */
 /* @settings
 id: maple-basic
 name: Maple Basic
@@ -452,7 +452,7 @@ settings:
       type: variable-text
       title: Setting Panel Header Title
       title.zh: 设置面板标题
-      default: Maple 1.5.4
+      default: Maple 1.5.7
       quotes: true
     - id: modal-setting-header-title-center
       type: class-toggle
@@ -2172,6 +2172,10 @@ settings:
             value: calendar-end-6-7
           - label: Column 7 and 1
             value: calendar-end-7-1
+          - label: Column 7 and 8 (show week number)
+            value: calendar-end-7-8
+          - label: Column 8 and 2 (show week number)
+            value: calendar-end-8-2
     - id: calendar-swap-year-month
       type: class-toggle
       title: Swap Year and Month Display
@@ -2579,7 +2583,7 @@ html[lang=zh] {
 body.css-settings-manager:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control:has(> input[type=color]), body.css-settings-manager:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-group > .setting-items > .setting-item.mod-toggle > .setting-item-control:has(> input[type=color]) {
   position: relative;
 }
-body.css-settings-manager:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control:has(> input[type=color]) :is(div, input), body.css-settings-manager:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-group > .setting-items > .setting-item.mod-toggle > .setting-item-control:has(> input[type=color]) :is(div, input) {
+body.css-settings-manager:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-item:nth-child(2) > .setting-item-control:has(> input[type=color]) :is(.extra-setting-button, input), body.css-settings-manager:not(.color-use-default) .mod-settings .vertical-tab-content-container > .vertical-tab-content > .setting-group > .setting-items > .setting-item.mod-toggle > .setting-item-control:has(> input[type=color]) :is(.extra-setting-button, input) {
   visibility: hidden;
   pointer-events: none;
 }
@@ -5602,9 +5606,6 @@ body:is(:not(.css-settings-manager), .table-round:not(.table-style-minimal)) .ta
   justify-content: center;
   align-items: center;
 }
-.markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper:has(.is-live-preview .image-embed) [class=cm-line] {
-  display: none;
-}
 .markdown-source-view.mod-cm6 .cm-table-widget :is(.table-row-btn, .table-col-btn, .table-row-drag-handle, .table-col-drag-handle) {
   transition: opacity var(--animation-fast);
 }
@@ -6558,6 +6559,9 @@ body.canvas-center .canvas-node-content.markdown-embed > .markdown-embed-content
   body.list-enable {
     --list-marker-color-alt-render: var(--list-marker-color-alt);
   }
+  body.quote-shadow .markdown-rendered blockquote {
+    box-shadow: none;
+  }
 }
 /* #endregion pdf */
 /* #region property */
@@ -6900,6 +6904,14 @@ body.calendar-swap-year-month #calendar-container .nav .title .month {
 }
 
 .calendar-end-7-1 #calendar-container tbody tr td:is(:nth-child(7), :nth-child(1)) {
+  background-color: hsla(var(--color-accent-hsl), 0.1);
+}
+
+.calendar-end-7-8 #calendar-container tbody tr td:is(:nth-child(7), :nth-child(8)) {
+  background-color: hsla(var(--color-accent-hsl), 0.1);
+}
+
+.calendar-end-8-2 #calendar-container tbody tr td:is(:nth-child(8), :nth-child(2)) {
   background-color: hsla(var(--color-accent-hsl), 0.1);
 }
 
@@ -7298,7 +7310,7 @@ body.modal-setting-header:not(.is-mobile):not(.is-popout-modal) .modal-container
   container-type: inline-size;
 }
 body.modal-setting-header:not(.is-mobile):not(.is-popout-modal) .modal-container .mod-settings::before {
-  content: var(--setting-modal-header-title, "Maple 1.5.4");
+  content: var(--setting-modal-header-title, "Maple 1.5.7");
   position: absolute;
   left: var(--size-4-4);
   top: calc(var(--modal-header-height) / 2);

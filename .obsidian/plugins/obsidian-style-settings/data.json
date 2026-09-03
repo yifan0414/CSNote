@@ -364,7 +364,7 @@
   "maple-editor@@quote-mark": false,
   "maple-editor@@quote-italic": true,
   "maple-editor@@quote-outline-style": "quote-shadow",
-  "ics-note-font@@ics-font-scale-math": 1.2,
+  "ics-note-font@@ics-font-scale-math": 1.15,
   "maple-editor@@code-nowrap": false,
   "maple-editor@@code-theme": true,
   "maple-editor@@font-maple": false,
@@ -376,8 +376,9 @@
   "ics-note-font@@ics-font-scale-inline-code": 0.8,
   "ics-note-font@@ics-font-weight-code-block": 500,
   "ics-note-font@@ics-font-scale-code-block": 0.8,
-  "ics-note-font@@ics-font-line-height-code-block": 1.4,
   "ics-note-font@@ics-font-line-height-body": 1.7,
   "ics-note-font@@ics-font-weight-bold": 700,
-  "ics-note-font@@ics-font-weight-interface": 550
+  "ics-note-font@@ics-font-weight-interface": 400,
+  "ics-note-font@@ics-font-line-height-code-block-source": 1.5,
+  "ics-note-font@@ics-font-line-height-code-block-reading": 1.2
 }

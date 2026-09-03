@@ -69,6 +69,47 @@ settings:
     min: 100
     max: 900
     step: 50
+  - id: title-font-claudian
+    title: Claudian
+    type: heading
+    level: 1
+    collapsed: false
+  - id: ics-font-size-claudian-message
+    title: 消息字号
+    description: 单独控制 Claudian 的用户消息和助手回复。
+    type: variable-number-slider
+    default: 14
+    min: 10
+    max: 24
+    step: 1
+    format: px
+  - id: ics-font-size-claudian-input
+    title: 输入框字号
+    description: 单独控制 Claudian 输入框中的文字。
+    type: variable-number-slider
+    default: 14
+    min: 10
+    max: 24
+    step: 1
+    format: px
+  - id: ics-font-size-claudian-link
+    title: 链接字号
+    description: 单独控制 Claudian 消息中的普通链接、文件链接和引用链接。
+    type: variable-number-slider
+    default: 14
+    min: 10
+    max: 24
+    step: 1
+    format: px
+  - id: ics-font-size-claudian-code
+    title: 代码字号
+    description: 单独控制 Claudian 消息中的行内代码和代码块。
+    type: variable-number-slider
+    default: 13
+    min: 9
+    max: 24
+    step: 1
+    format: px
   - id: title-font-inline-code
     title: 行内代码
     type: heading
@@ -109,8 +150,15 @@ settings:
     min: 100
     max: 900
     step: 50
-  - id: ics-font-line-height-code-block
-    title: 代码框行高
+  - id: ics-font-line-height-code-block-source
+    title: 编辑模式代码框行高
+    type: variable-number-slider
+    default: 1.45
+    min: 1
+    max: 2
+    step: 0.05
+  - id: ics-font-line-height-code-block-reading
+    title: 阅读模式代码框行高
     type: variable-number-slider
     default: 1.45
     min: 1
@@ -146,11 +194,16 @@ body {
   --ics-font-weight-bold: 700;
   --ics-font-size-interface: 14px;
   --ics-font-weight-interface: 400;
+  --ics-font-size-claudian-message: 14px;
+  --ics-font-size-claudian-input: 14px;
+  --ics-font-size-claudian-link: 14px;
+  --ics-font-size-claudian-code: 13px;
   --ics-font-scale-inline-code: 0.85;
   --ics-font-weight-inline-code: 400;
   --ics-font-scale-code-block: 0.9;
   --ics-font-weight-code-block: 400;
-  --ics-font-line-height-code-block: 1.45;
+  --ics-font-line-height-code-block-source: 1.45;
+  --ics-font-line-height-code-block-reading: 1.45;
   --ics-font-scale-math: 1.1;
   --ics-font-scale-math-source: 1;
 
@@ -171,6 +224,32 @@ body {
 
 :is(.workspace, .modal-container, .menu, .suggestion-container, .popover) {
   font-weight: var(--ics-font-weight-interface);
+}
+
+/* Claudian message text and composer use independent sizes. */
+.claudian-container .claudian-message-content {
+  font-size: var(--ics-font-size-claudian-message) !important;
+}
+
+.claudian-container .claudian-input-wrapper textarea.claudian-input {
+  font-size: var(--ics-font-size-claudian-input) !important;
+}
+
+.claudian-container :is(
+  .claudian-message-content a,
+  .claudian-file-link,
+  .claudian-tool-link,
+  .claudian-citation-note
+) {
+  font-size: var(--ics-font-size-claudian-link) !important;
+}
+
+.claudian-container :is(
+  .claudian-message-content code,
+  .claudian-message-content pre,
+  .claudian-code-wrapper pre
+) {
+  font-size: var(--ics-font-size-claudian-code) !important;
 }
 
 .markdown-source-view.mod-cm6 .cm-content,
@@ -196,13 +275,18 @@ body.ics-font-enable-synthetic-bold .markdown-source-view.mod-cm6 .cm-strong {
 .markdown-source-view.mod-cm6 .cm-inline-code {
   font-size: calc(1em * var(--ics-font-scale-inline-code)) !important;
   font-weight: var(--ics-font-weight-inline-code) !important;
+  vertical-align: 0.10em !important;
 }
 
-/* Fenced code blocks in reading and editing modes. */
+/* Fenced code blocks in reading mode. */
 .markdown-rendered pre,
-.markdown-rendered pre code,
+.markdown-rendered pre code {
+  line-height: var(--ics-font-line-height-code-block-reading) !important;
+}
+
+/* Fenced code blocks in editing mode. */
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-  line-height: var(--ics-font-line-height-code-block) !important;
+  line-height: var(--ics-font-line-height-code-block-source) !important;
 }
 
 .markdown-rendered pre code,
@@ -220,4 +304,5 @@ body.ics-font-enable-synthetic-bold .markdown-source-view.mod-cm6 .cm-strong {
 .markdown-source-view.mod-cm6 .HyperMD-math,
 .markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-math) .cm-math {
   font-size: calc(1em * var(--ics-font-scale-math-source)) !important;
+
 }

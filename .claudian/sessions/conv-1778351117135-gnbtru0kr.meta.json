@@ -6,7 +6,7 @@
   "createdAt": 1778351117136,
   "lastActivityAt": 1778351505418,
   "sessionId": null,
-  "currentNote": "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question.md",
+  "linkedContentPath": "Paper/raw/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question/static-or-dynamic-towards-query-adaptive-token-selection-for-video-question.md",
   "usage": {
     "inputTokens": 49736,
     "cacheCreationInputTokens": 0,

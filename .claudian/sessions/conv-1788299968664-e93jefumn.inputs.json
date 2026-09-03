@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788299968664-e93jefumn",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788299968767-jbqs6rt",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788299968651-3ebtzzj",
+      "timestamp": 1788299968651,
+      "rawDisplayText": "你能帮我把https://github.com/LAMDA-NeSy/Research-Starter-Kit 中手册：如何做科研与写论文中的各个飞书文档组织成要给obsidian风格的md文件吗",
+      "canonicalText": "你能帮我把https://github.com/LAMDA-NeSy/Research-Starter-Kit 中手册：如何做科研与写论文中的各个飞书文档组织成要给obsidian风格的md文件吗",
+      "images": [],
+      "contentDigest": "5c952ae3105cd6657eb3fdd8b64efd1e9036e5c71ac78fd94e28f246f3b680a3",
+      "providerUserMessageId": "01a05efc-0232-75a3-92d5-36713db8f1f8",
+      "providerAssistantMessageId": "msg_06dbd06984c92a09016a9751074ee087d2aa0de050d6393d89"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788302038988-v3fl3aj",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788302038979-ncl5d1e",
+      "timestamp": 1788302038979,
+      "rawDisplayText": "我的意思是让你组织成一个md文档， 并且原文中的颜色标注加粗等格式要保留",
+      "canonicalText": "我的意思是让你组织成一个md文档， 并且原文中的颜色标注加粗等格式要保留",
+      "images": [],
+      "contentDigest": "10f48f238bec53653aa4ca8dcfe894b147cd10383f2ecc24966e3127b1b66d32",
+      "providerUserMessageId": "01a05f1b-9805-7b91-967a-979c85517aca",
+      "providerAssistantMessageId": "msg_0dd8c5fbd5c98934016a9755d40b4487d2a9c82b94da35ad39"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788302859128-4v46phl",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788302859116-7g4if2h",
+      "timestamp": 1788302859116,
+      "rawDisplayText": "这种不需要，都去掉",
+      "canonicalText": "这种不需要，都去掉",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/科研入门指南：如何做科研与写论文.md",
+          "mode": "selection",
+          "selectedText": "原文\n打开飞书原文",
+          "lineCount": 2
+        }
+      },
+      "images": [],
+      "contentDigest": "1858ca56ae978bc9b56da69dfbbcbfc3b7a8ec3654c947e383a5b2784d774e87",
+      "providerUserMessageId": "01a05f28-1b9e-77b1-b087-74ef1e779be5",
+      "providerAssistantMessageId": "msg_0dd8c5fbd5c98934016a975631a23487d2998aafd184f054f6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788303267264-umijb77",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788303267250-vywla36",
+      "timestamp": 1788303267250,
+      "rawDisplayText": "<span style=\"color: #d83931 ;\">**各大基于 AI 的论文分享平台，例如 AMiner，Bohrium，ChatPaper 等。**</span> 这个在编辑模式下渲染的字体太大了，我想其和正文一样大",
+      "canonicalText": "<span style=\"color: #d83931 ;\">**各大基于 AI 的论文分享平台，例如 AMiner，Bohrium，ChatPaper 等。**</span> 这个在编辑模式下渲染的字体太大了，我想其和正文一样大",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/科研入门指南：如何做科研与写论文.md",
+          "mode": "selection",
+          "selectedText": "<span style=\"color: #d83931 ;\">**各大基于 AI 的论文分享平台，例如 AMiner，Bohrium，ChatPaper 等。**</span>",
+          "lineCount": 1,
+          "startLine": 200
+        }
+      },
+      "images": [],
+      "contentDigest": "096d80cc416c29df25856f35b196b47c660d5c2ddb1a30c926cd8645ffd65146",
+      "providerUserMessageId": "01a05f2f-6efc-7d13-bf3a-40d1de554b3e",
+      "providerAssistantMessageId": "msg_0dd8c5fbd5c98934016a975878a72487d2b5d9a3d15303154c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788303337122-pf6ci2h",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "timestamp": 1788303337122,
+      "rawDisplayText": "我的意思不仅仅是颜色标记\n\n而是html都要和正文一样",
+      "canonicalText": "我的意思不仅仅是颜色标记\n\n而是html都要和正文一样",
+      "images": [],
+      "contentDigest": "c503f35dd076c479a1da18ab36d5fe65bf5e277c9b91a2cab68f7ae76f2c4191",
+      "providerUserMessageId": "01a05f2f-6efc-7d13-bf3a-40d1de554b3e"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788303490180-hts45j5",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1788303490176-19mk7ct",
+      "timestamp": 1788303490176,
+      "rawDisplayText": "我的意思是你要在snippet中添加持久化css偏低",
+      "canonicalText": "我的意思是你要在snippet中添加持久化css偏低",
+      "images": [],
+      "contentDigest": "aa6fb821337ea6bbd927734c77dfee5a39eb3888a83186f38b3266e05ede67c9",
+      "providerUserMessageId": "01a05f32-15ef-70f2-afd9-e8a2352c973a",
+      "providerAssistantMessageId": "msg_0dd8c5fbd5c98934016a975966e89087d2ac308a3837586463"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788303493754-3w2pc34",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "timestamp": 1788303493754,
+      "rawDisplayText": "片段",
+      "canonicalText": "片段",
+      "images": [],
+      "contentDigest": "ec4b15bd725ed26cb372a8f4a7c7cfd837d14d1245c45e85e435739feb9537fd",
+      "providerUserMessageId": "01a05f32-15ef-70f2-afd9-e8a2352c973a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788303720050-lg1v9rs",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1788303720045-5dp8uyp",
+      "timestamp": 1788303720045,
+      "rawDisplayText": "还是没有效果",
+      "canonicalText": "还是没有效果",
+      "images": [],
+      "contentDigest": "7305118cb33c9e53d72ec90df0b8dc190d135b3e9313da3a37da4283b17ca996",
+      "providerUserMessageId": "01a05f35-3e90-7ce1-aac8-fc2684493ad1",
+      "providerAssistantMessageId": "msg_0dd8c5fbd5c98934016a975b113eb887d2a0c0e0128c0c3b7f"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788304194314-b50eesu",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1788304194312-6qvhs4n",
+      "timestamp": 1788304194312,
+      "rawDisplayText": "还是比正文大",
+      "canonicalText": "还是比正文大",
+      "images": [],
+      "contentDigest": "2f43c77a611f6f3787465b2432b7fd37ca92e799860f6906768994cb65ae6e17",
+      "providerUserMessageId": "01a05f3c-7b41-7360-a270-eadcf7c98f9d",
+      "providerAssistantMessageId": "msg_04d8d3a934f65a3e016a975f4d738487d2a386969314ded88e"
+    }
+  ]
+}

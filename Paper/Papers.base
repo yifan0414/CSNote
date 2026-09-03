@@ -59,10 +59,12 @@ views:
       - formula.code_link
       - updated
     sort:
-      - property: conference
-        direction: ASC
       - property: updated
         direction: DESC
+      - property: formula.paper
+        direction: ASC
+      - property: conference
+        direction: ASC
       - property: formula.topics_view
         direction: DESC
       - property: year
@@ -71,7 +73,7 @@ views:
         direction: ASC
     limit: 200
     columnSize:
-      formula.paper: 260
+      formula.paper: 223
       note.conference: 113
       formula.priority_view: 98
       formula.rating_view: 90

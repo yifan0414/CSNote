@@ -6,7 +6,7 @@
   "createdAt": 1780159760528,
   "lastActivityAt": 1780161106735,
   "sessionId": null,
-  "currentNote": "Paper/raw/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior.md",
+  "linkedContentPath": "Paper/raw/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior/less-is-more-but-where-dynamic-token-compression-via-llm-guided-keyframe-prior.md",
   "usage": {
     "inputTokens": 31457,
     "cacheCreationInputTokens": 0,
