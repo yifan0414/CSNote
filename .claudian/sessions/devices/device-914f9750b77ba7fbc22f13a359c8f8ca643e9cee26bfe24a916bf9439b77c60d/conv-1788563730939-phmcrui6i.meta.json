@@ -1,0 +1,18 @@
+{
+  "id": "conv-1788563730939-phmcrui6i",
+  "providerId": "codex",
+  "title": "目前这篇笔记写的不够清晰，重点不突出。特别重要的地方要用callout。",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1788563730946,
+  "lastActivityAt": 1788563805341,
+  "sessionId": "01a06eb4-b28c-7d63-b717-41b1a03a1904",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06eb4-b28c-7d63-b717-41b1a03a1904",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T07-15-31-01a06eb4-b28c-7d63-b717-41b1a03a1904.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/03-LSTM与GRU.md"
+}

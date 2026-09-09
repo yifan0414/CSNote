@@ -21,7 +21,7 @@ conference: ICCV 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2503.04130
 pdf_link: "[[assets/paper_2503.04130.pdf]]"
-cover: "[[assets/pipeline_2503.04130.png]]"
+cover: "[[_assets/images/pipeline_2503.04130.png]]"
 updated: 2026-05-26
 tags:
   - paper/arxiv
@@ -86,7 +86,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2503.04130.png]]
+![[_assets/images/pipeline_2503.04130.png]]
 
 Caption: 作者的主方法图展示了 STORM pipeline：Mamba-based temporal projector 位于 image encoder 与 LLM 之间，产生携带时序历史的 Summary Tokens，以支持后续 token reduction。
 

@@ -14,7 +14,7 @@
 
 从 [Berkeley-CS61B/skeleton-sp21: starter code for spring 21 (github.com)](https://github.com/Berkeley-CS61B/skeleton-sp21) clone 到本地
 
-![[attachments/19839abd0cbc3c874fe18f407ff09686_MD5.png]]
+![[_assets/images/19839abd0cbc3c874fe18f407ff09686_MD5.png]]
 
 1. 使用 `rm -rf .git` 命令把原有的 git 配置删除掉
 2. 在根目录使用 `mv skeleton-sp21 cs61b` 将仓库改名

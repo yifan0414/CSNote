@@ -65,10 +65,10 @@ static inline void set_idt(void *idt, int size) {
 但difftest为什么执行int 0x81 后会到这个地址呢？ ^5tA1NrCL
 
 ## Embedded Files
-109b035520fb1567e2e4948a862a62ebb89e2856: [[Pasted Image 20231017105549_288.png]]
-bcee675d21e1fa3c69de0e739f9a4ff632759f2e: [[Pasted Image 20231017110122_391.png]]
-01cb54f040e36492f0a5e800c6da2411bfff9cd4: [[Pasted Image 20231017110856_510.png]]
-dc60544f07bed37f87acb6cffc683aecc980fd82: [[Pasted Image 20231017111404_608.png]]
+109b035520fb1567e2e4948a862a62ebb89e2856: [[_assets/images/Pasted Image 20231017105549_288.png]]
+bcee675d21e1fa3c69de0e739f9a4ff632759f2e: [[_assets/images/Pasted Image 20231017110122_391.png]]
+01cb54f040e36492f0a5e800c6da2411bfff9cd4: [[_assets/images/Pasted Image 20231017110856_510.png]]
+dc60544f07bed37f87acb6cffc683aecc980fd82: [[_assets/images/Pasted Image 20231017111404_608.png]]
 
 %%
 ## Drawing

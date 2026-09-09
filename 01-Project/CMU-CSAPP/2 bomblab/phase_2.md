@@ -73,23 +73,23 @@ rbx是索引 ^C3pRTW3V
 1 2 4 8 16 32 ^LQ7sk9Zc
 
 ## Embedded Files
-0436eaf3ba2b76c8e8063d9deb69bb0753f9535b: [[Pasted Image 20221228172346_578.png]]
+0436eaf3ba2b76c8e8063d9deb69bb0753f9535b: [[_assets/images/Pasted Image 20221228172346_578.png]]
 
-dc0ef7eec707fd2b53e9ccb4029a2c077edaeeea: [[Pasted Image 20221228172221_143.png]]
+dc0ef7eec707fd2b53e9ccb4029a2c077edaeeea: [[_assets/images/Pasted Image 20221228172221_143.png]]
 
-300f91cb5f9f5ab0077866245c417cba298afe4b: [[Pasted Image 20221228191909_201.png]]
+300f91cb5f9f5ab0077866245c417cba298afe4b: [[_assets/images/Pasted Image 20221228191909_201.png]]
 
-082322dd6b0b1c8b1be8d24122e1d7142b44f6eb: [[Pasted Image 20221228192309_231.png]]
+082322dd6b0b1c8b1be8d24122e1d7142b44f6eb: [[_assets/images/Pasted Image 20221228192309_231.png]]
 
-f5db9e2e6473ac82486354a50fb3d2b9bd4e06ce: [[Pasted Image 20221228192554_258.png]]
+f5db9e2e6473ac82486354a50fb3d2b9bd4e06ce: [[_assets/images/Pasted Image 20221228192554_258.png]]
 
-8bf61d3bfeea20357ae089c65d7f3083aaadd8e5: [[Pasted Image 20221228192855_339.png]]
+8bf61d3bfeea20357ae089c65d7f3083aaadd8e5: [[_assets/images/Pasted Image 20221228192855_339.png]]
 
-72bbdd818de7530b8351b37834496b84e56baf98: [[Pasted Image 20221228193340_399.png]]
+72bbdd818de7530b8351b37834496b84e56baf98: [[_assets/images/Pasted Image 20221228193340_399.png]]
 
-8836f2abb7f47ce774ba90f5e80d7c956f2e3115: [[Pasted Image 20221228173331_303.png]]
+8836f2abb7f47ce774ba90f5e80d7c956f2e3115: [[_assets/images/Pasted Image 20221228173331_303.png]]
 
-da053e89ed1d490adf2f89746fee4f9db3517eee: [[Pasted Image 20221228174805_461.png]]
+da053e89ed1d490adf2f89746fee4f9db3517eee: [[_assets/images/Pasted Image 20221228174805_461.png]]
 
 %%
 ## Drawing

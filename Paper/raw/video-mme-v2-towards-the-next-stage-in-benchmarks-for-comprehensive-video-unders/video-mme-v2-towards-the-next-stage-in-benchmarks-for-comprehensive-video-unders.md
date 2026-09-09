@@ -5,7 +5,7 @@ conference: ""
 year: 2026
 arxiv_url: "https://arxiv.org/abs/2604.05015"
 pdf_link: "[[assets/paper_2604.05015.pdf]]"
-cover: "[[assets/pipeline_2604.05015.png]]"
+cover: "[[_assets/images/pipeline_2604.05015.png]]"
 updated: 2026-04-27
 tags: ["paper/arxiv", "benchmark", "dataset", "evaluation", "video-llm", "long-video", "temporal-reasoning"]
 status: "unread"
@@ -67,7 +67,7 @@ average group scores into Non-Lin Score
 
 ## Pipeline Figure
 
-![[assets/pipeline_2604.05015.png]]
+![[_assets/images/pipeline_2604.05015.png]]
 
 Caption: Left: The three-level capability hierarchy of Video-MME-v2: distribution of capability dimensions across Level 1 (information retrieval and aggregation), Level 2 (temporal understanding), and Level 3 (complex reasoning). Right: Models are ranked by their group-based non-linear scores, while average accuracy is provided for reference only. Due to API limitations, Gemini models are tested by extracting and compressing video frames to 60M, while GPT-5 is tested with an input of 50 frames.
 

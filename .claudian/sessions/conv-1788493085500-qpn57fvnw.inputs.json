@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788493085500-qpn57fvnw",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788493085532-vzqtbdj",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788493085496-7srgmqd",
+      "timestamp": 1788493085496,
+      "rawDisplayText": "你去把https://web.stanford.edu/class/cs224n/index.html把所有的课程整理下到Paper/架构学习/CS224n中，包括PPT和文档，还有实验pdf等等，按照Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题 的组织方式，每节课组织成一个md文档",
+      "canonicalText": "你去把https://web.stanford.edu/class/cs224n/index.html把所有的课程整理下到Paper/架构学习/CS224n中，包括PPT和文档，还有实验pdf等等，按照Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题 的组织方式，每节课组织成一个md文档",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/Video-MLLM/01-transformer.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "3d7b11be08708c4e5fdd5cd081bfe3307e0179336c29e671f1f22e33400beff6",
+      "providerUserMessageId": "01a06a7f-4742-74b3-8703-0c4b1103614d"
+    }
+  ]
+}

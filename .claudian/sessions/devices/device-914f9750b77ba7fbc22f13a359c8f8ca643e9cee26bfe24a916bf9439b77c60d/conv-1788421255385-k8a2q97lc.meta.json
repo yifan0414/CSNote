@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788421255385-k8a2q97lc",
+  "providerId": "codex",
+  "title": "我觉得目前五、Mask：控制哪些信息可见 写的有点乱，请你整理下",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788421255395,
+  "lastActivityAt": 1788460280987,
+  "sessionId": "01a06636-bd0b-7271-b84b-31d761434682",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06636-bd0b-7271-b84b-31d761434682",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/03/rollout-2026-09-03T15-40-58-01a06636-bd0b-7271-b84b-31d761434682.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/06-transformer.md",
+  "usage": {
+    "inputTokens": 75691,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 74880,
+    "contextWindow": 475000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 75691,
+    "percentage": 16,
+    "model": "gpt-5.6-sol"
+  }
+}

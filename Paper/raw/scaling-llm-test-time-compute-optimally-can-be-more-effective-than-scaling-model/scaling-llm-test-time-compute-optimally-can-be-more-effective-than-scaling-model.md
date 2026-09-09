@@ -9,7 +9,7 @@ conference:
 year: 2024
 arxiv_url: https://arxiv.org/abs/2408.03314
 pdf_link: "[[assets/paper_2408.03314.pdf]]"
-cover: "[[assets/pipeline_2408.03314.png]]"
+cover: "[[_assets/images/pipeline_2408.03314.png]]"
 updated: 2026-05-19
 tags:
   - paper/arxiv
@@ -59,7 +59,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2408.03314.png]]
+![[_assets/images/pipeline_2408.03314.png]]
 
 Caption: 论文没有一个覆盖全部贡献的单一 global pipeline 图；这里选取最接近 pipeline/framework 的方法图。它展示 parallel sampling / best-of-N 与 sequential revisions 的差异，以及如何在同一预算下混合 parallel 和 sequential allocation，并用 verifier 选择最终答案。
 

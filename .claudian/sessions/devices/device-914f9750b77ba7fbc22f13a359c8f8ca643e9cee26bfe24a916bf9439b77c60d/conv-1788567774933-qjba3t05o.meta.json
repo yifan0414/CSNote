@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788567774933-qjba3t05o",
+  "providerId": "codex",
+  "title": "这里加一个callout，作为后续多模态Encoder，projector，Decoder的引子",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788567774945,
+  "lastActivityAt": 1788567974176,
+  "sessionId": "01a06ef2-67fd-7381-9ce4-a5cf0364ea8f",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06ef2-67fd-7381-9ce4-a5cf0364ea8f",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T08-22-55-01a06ef2-67fd-7381-9ce4-a5cf0364ea8f.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/04-Seq2Seq.md",
+  "usage": {
+    "inputTokens": 24157,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 23552,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 24157,
+    "percentage": 9,
+    "model": "gpt-5.6-sol"
+  }
+}

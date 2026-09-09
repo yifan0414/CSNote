@@ -11,7 +11,7 @@ conference: CVPR
 year: 2026
 arxiv_url: https://arxiv.org/abs/2603.03857
 pdf_link: "[[assets/paper_2603.03857.pdf]]"
-cover: "[[assets/pipeline_2603.03857.png]]"
+cover: "[[_assets/images/pipeline_2603.03857.png]]"
 updated: 2026-05-19
 tags:
   - paper/arxiv
@@ -107,7 +107,7 @@ answer = LVLM([e_1, ..., V_star], q)
 
 ## Pipeline Figure
 
-![[assets/pipeline_2603.03857.png]]
+![[_assets/images/pipeline_2603.03857.png]]
 
 Caption: 该图概括了 DeepScan 的整体架构：Hierarchical Scanning 从局部 cue 恢复视觉证据，Refocusing 调整证据周围上下文，Evidence-Enhanced Reasoning 用 Hybrid Evidence Memory 组织多粒度视图并交给 LVLM 回答。
 

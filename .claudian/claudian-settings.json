@@ -59,9 +59,54 @@
       "customModels": "gpt-5.5",
       "discoveredModels": [
         {
+          "model": "gpt-6-astra",
+          "displayName": "GPT-6-Astra",
+          "description": "Our most capable model for complex, demanding work.",
+          "supportedReasoningEfforts": [
+            {
+              "value": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "value": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "value": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "value": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "value": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "value": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ],
+          "defaultReasoningEffort": "low",
+          "serviceTiers": [
+            {
+              "id": "priority",
+              "name": "Fast",
+              "description": "2x speed, increased usage"
+            }
+          ],
+          "defaultServiceTier": null,
+          "inputModalities": [
+            "text",
+            "image"
+          ],
+          "isDefault": true
+        },
+        {
           "model": "gpt-5.6-sol",
           "displayName": "GPT-5.6-Sol",
-          "description": "Latest frontier agentic coding model.",
+          "description": "Reliable agentic workhorse for everyday tasks.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -94,11 +139,6 @@
               "id": "priority",
               "name": "Fast",
               "description": "1.5x speed, increased usage"
-            },
-            {
-              "id": "ultrafast",
-              "name": "Ultrafast",
-              "description": "The fastest available responses for latency-sensitive work."
             }
           ],
           "defaultServiceTier": null,
@@ -106,7 +146,7 @@
             "text",
             "image"
           ],
-          "isDefault": true
+          "isDefault": false
         },
         {
           "model": "gpt-5.6-terra",
@@ -197,7 +237,7 @@
         {
           "model": "gpt-5.5",
           "displayName": "GPT-5.5",
-          "description": "Frontier model for complex coding, research, and real-world work.",
+          "description": "Proven previous-generation model for coding and general work.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -230,47 +270,21 @@
             "image"
           ],
           "isDefault": false
-        },
-        {
-          "model": "gpt-5.2",
-          "displayName": "GPT-5.2",
-          "description": "Optimized for professional work and long-running agents.",
-          "supportedReasoningEfforts": [
-            {
-              "value": "low",
-              "description": "Balances speed with some reasoning; useful for straightforward queries and short explanations"
-            },
-            {
-              "value": "medium",
-              "description": "Provides a solid balance of reasoning depth and latency for general-purpose tasks"
-            },
-            {
-              "value": "high",
-              "description": "Maximizes reasoning depth for complex or ambiguous problems"
-            },
-            {
-              "value": "xhigh",
-              "description": "Extra high reasoning for complex problems"
-            }
-          ],
-          "defaultReasoningEffort": "medium",
-          "serviceTiers": [],
-          "defaultServiceTier": null,
-          "inputModalities": [
-            "text",
-            "image"
-          ],
-          "isDefault": false
         }
       ],
       "modelAliases": {},
-      "visibleModels": null,
+      "visibleModels": [
+        "gpt-6-astra",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-5.6-luna"
+      ],
       "enableUltraEffort": false,
-      "reasoningSummary": "detailed",
-      "environmentVariables": "OPENAI_API_KEY=sk-4738c72d667ec87df26f7be76502ab6cabf8e60a99223a623c687ebd2232afbe\nOPENAI_BASE_URL=https://token.dialoguedui.com/v1\nOPENAI_MODEL=gpt-5.6-sol\nCODEX_HOME=/Users/yifan/.codex-trans\n",
-      "environmentHash": "runtime-input:v1:1fd70367b5720fdf3d0ff6fab78f1388d1f5bae0058badbbd06cb8dcfe351af5",
-      "catalogTimestamp": 1788299926023,
-      "catalogFingerprint": "2:afa4ed615950efad52279754e685a50d4ffa5ef5450da0b1076b48ed8cb713c6",
+      "reasoningSummary": "auto",
+      "environmentVariables": "",
+      "environmentHash": "runtime-input:v1:057c24804ad623010ca5b002ba56803d48f10df435413e3607af64ec4ed75a93",
+      "catalogTimestamp": 1788938863517,
+      "catalogFingerprint": "2:95579f03064f02198b402d1ef01afc5ae44cecdfcb3cb6402b77ba83d018d4d8",
       "installationMethodsByHost": {
         "yifanMac-mini": "native-windows",
         "yifanMacBook-Air.local": "native-windows"
@@ -291,15 +305,97 @@
     },
     "pi": {
       "cliPath": "",
-      "cliPathsByHost": {},
-      "discoveredModels": [],
-      "enabled": false,
-      "environmentHash": "",
+      "cliPathsByHost": {
+        "device-914f9750b77ba7fbc22f13a359c8f8ca643e9cee26bfe24a916bf9439b77c60d": "/Users/yifan/.nvm/versions/node/v24.15.0/bin/pi"
+      },
+      "discoveredModels": [
+        {
+          "api": "openai-completions",
+          "contextWindow": 1000000,
+          "encodedId": "pi:deepseek/deepseek-v4-flash",
+          "id": "deepseek-v4-flash",
+          "input": [
+            "text"
+          ],
+          "label": "DeepSeek V4 Flash",
+          "maxTokens": 384000,
+          "provider": "deepseek",
+          "reasoning": true,
+          "thinkingLevels": [
+            "off",
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "api": "openai-completions",
+          "contextWindow": 1000000,
+          "encodedId": "pi:deepseek/deepseek-v4-flash-vision-exp",
+          "id": "deepseek-v4-flash-vision-exp",
+          "input": [
+            "text",
+            "image"
+          ],
+          "label": "DeepSeek V4 Flash Vision Exp",
+          "maxTokens": 384000,
+          "provider": "deepseek",
+          "reasoning": true,
+          "thinkingLevels": [
+            "off",
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "api": "openai-completions",
+          "contextWindow": 1000000,
+          "encodedId": "pi:deepseek/deepseek-v4-pro",
+          "id": "deepseek-v4-pro",
+          "input": [
+            "text"
+          ],
+          "label": "DeepSeek V4 Pro",
+          "maxTokens": 384000,
+          "provider": "deepseek",
+          "reasoning": true,
+          "thinkingLevels": [
+            "off",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "api": "openai-completions",
+          "contextWindow": 1000000,
+          "encodedId": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+          "id": "deepseek-v4.1-flash-expires-on-0910",
+          "input": [
+            "text",
+            "image"
+          ],
+          "label": "DeepSeek V4.1 Flash",
+          "maxTokens": 384000,
+          "provider": "deepseek",
+          "reasoning": true,
+          "thinkingLevels": [
+            "off",
+            "low",
+            "high",
+            "max"
+          ]
+        }
+      ],
+      "enabled": true,
+      "environmentHash": "runtime-input:v1:d39fce0aa5599822a0640cdb74a12db12219b72cbf4c28ce746af2758efac793",
       "environmentVariables": "",
       "modelAliases": {},
       "preferredThinkingByModel": {},
       "toolMode": "all",
-      "visibleModels": []
+      "visibleModels": [
+        "pi:deepseek/deepseek-v4.1-flash-expires-on-0910"
+      ]
     },
     "grok": {
       "catalogsByHost": {},
@@ -317,23 +413,28 @@
   "settingsProvider": "claude",
   "lastSelectedChatModel": {
     "providerId": "codex",
-    "model": "gpt-5.6-sol"
+    "model": "gpt-6-astra"
   },
   "savedProviderModel": {
     "claude": "haiku",
-    "codex": "gpt-5.6-sol"
+    "codex": "gpt-6-astra",
+    "pi": "haiku"
   },
   "savedProviderEffort": {
     "claude": "high",
-    "codex": "xhigh"
+    "codex": "xhigh",
+    "pi": "high"
   },
   "savedProviderServiceTier": {
     "codex": "default"
   },
-  "savedProviderThinkingBudget": {},
+  "savedProviderThinkingBudget": {
+    "pi": "off"
+  },
   "savedProviderPermissionMode": {
     "claude": "normal",
-    "codex": "yolo"
+    "codex": "yolo",
+    "pi": "yolo"
   },
   "pendingProviderSessionInvalidations": {},
   "lastCustomModel": "",

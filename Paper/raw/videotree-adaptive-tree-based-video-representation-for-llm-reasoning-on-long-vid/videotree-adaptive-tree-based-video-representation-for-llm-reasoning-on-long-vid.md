@@ -12,7 +12,7 @@ conference: CVPR 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2405.19209
 pdf_link: "[[assets/paper_2405.19209.pdf]]"
-cover: "[[assets/pipeline_2405.19209.png]]"
+cover: "[[_assets/images/pipeline_2405.19209.png]]"
 updated: 2026-04-27
 tags:
   - paper/arxiv
@@ -84,7 +84,7 @@ answer = LLM(description, query, options)
 
 ## Pipeline Figure
 
-![[assets/pipeline_2405.19209.png]]
+![[_assets/images/pipeline_2405.19209.png]]
 
 Caption: A detailed view of VideoTree. To construct the tree structure, the method begins with Adaptive Breadth Expansion, dynamically extracting query-relevant key information from video and question inputs. It then performs Relevance-guided Depth Expansion from highly relevant root nodes, re-clustering at each level to capture finer visual cues. Finally, selected keyframes are captioned, temporally ordered, and used for LLM reasoning.
 

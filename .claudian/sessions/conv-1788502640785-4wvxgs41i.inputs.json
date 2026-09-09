@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788502640785-4wvxgs41i",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788502640827-76wpu2n",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788502640778-hetmw9h",
+      "timestamp": 1788502640778,
+      "rawDisplayText": "你帮我把Paper/架构学习/CS224n/Word2Vec表征原理中的重要的内容梳理一遍，然后整理到02-词向量md文件中，有些内容可以用折叠的callout形式，有些可以直接写到正文中",
+      "canonicalText": "你帮我把Paper/架构学习/CS224n/Word2Vec表征原理中的重要的内容梳理一遍，然后整理到02-词向量md文件中，有些内容可以用折叠的callout形式，有些可以直接写到正文中",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/CS224n/02-词向量.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "4034890cbcdcf95bbb04c23d195a4789440602f7762780cf67c1944f342c7ad9",
+      "providerUserMessageId": "01a06b10-eaaa-7c61-bf38-6bfec8fc549c",
+      "providerAssistantMessageId": "msg_0b79e294b76bab51016a9a6473a4a487d0b1befc0f9a24b2ab"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788503204719-hj9hbtl",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788503204709-rjo9ej3",
+      "timestamp": 1788503204709,
+      "rawDisplayText": "你现在重新检查一遍 @Paper/架构学习/CS224n/02-词向量.md 。是否组织清晰有逻辑",
+      "canonicalText": "你现在重新检查一遍 @Paper/架构学习/CS224n/02-词向量.md 。是否组织清晰有逻辑",
+      "images": [],
+      "contentDigest": "4105bec126c658301a3c6ee75fa36a2f187c09c55e02b09307800cf1565d6b18",
+      "providerUserMessageId": "01a06b19-23a8-75d1-9bf3-564cf51006e2",
+      "providerAssistantMessageId": "msg_0b79e294b76bab51016a9a65b1b9c887d0bfa844997277180a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788503570095-bhmtq9o",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788503570087-4o3m5q7",
+      "timestamp": 1788503570087,
+      "rawDisplayText": "还有就是Paper/架构学习/CS224n/Word2Vec表征原理中的一些公式推导也要加到02-词向量中，用折叠callout",
+      "canonicalText": "还有就是Paper/架构学习/CS224n/Word2Vec表征原理中的一些公式推导也要加到02-词向量中，用折叠callout",
+      "images": [],
+      "contentDigest": "60b464c70b9fd2e2a709524ab115149cd7a99f244bfa588c5f85ca44e665d8e2",
+      "providerUserMessageId": "01a06b1e-b6eb-7d42-9d68-7b0c5217f5a0",
+      "providerAssistantMessageId": "msg_0b79e294b76bab51016a9a66cb03b487d0b0718f7136803a62"
+    }
+  ]
+}

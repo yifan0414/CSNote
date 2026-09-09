@@ -46,7 +46,7 @@ Source: u/TheInsaneApp
 
 重要问题可走咨询：
 
-![[attachments/044112d4d4f6f84eacf29cf621e37309_MD5.jpg]]甜菜欣欣 1 次咨询 5.0 10897 次赞同去咨询 [编辑于 2024-08-29 01:07](https://www.zhihu.com/question/637834653/answer/3580194041) ・IP 属地美国
+![[_assets/images/044112d4d4f6f84eacf29cf621e37309_MD5.jpg]]甜菜欣欣 1 次咨询 5.0 10897 次赞同去咨询 [编辑于 2024-08-29 01:07](https://www.zhihu.com/question/637834653/answer/3580194041) ・IP 属地美国
 
 #### 更多回答
 

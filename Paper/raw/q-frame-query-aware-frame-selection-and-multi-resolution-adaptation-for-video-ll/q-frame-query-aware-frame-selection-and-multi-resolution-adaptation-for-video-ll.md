@@ -10,7 +10,7 @@ conference: ICCV 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2506.22139
 pdf_link: "[[assets/paper_2506.22139.pdf]]"
-cover: "[[assets/pipeline_2506.22139.png]]"
+cover: "[[_assets/images/pipeline_2506.22139.png]]"
 updated: 2026-05-18
 tags:
   - paper/arxiv
@@ -110,7 +110,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2506.22139.png]]
+![[_assets/images/pipeline_2506.22139.png]]
 
 Caption: The overall framework of Q-Frame. Q-Frame is composed of Cross-modal Query Retrieval (CQR), Query-Aware Frame Selection (QFS), and Multi-Resolution Adaptation (MRA). CQR retrieves query-relevant frames, QFS adaptively selects important temporal segments, and MRA allocates different resolutions to preserve fine details while reducing cost. The paper notes that MRA is not applicable to every Video-LLM preprocessing pipeline.
 

@@ -10,10 +10,10 @@ tags: [excalidraw]
 # Excalidraw Data
 ## Text Elements
 ## Embedded Files
-c892ebf487b001820b2931291fb310e27a00ca8b: [[Pasted Image 20230207155528_201.png]]
-9b8a14a98a425bd1fc1136e124e5b816247a41c2: [[Pasted Image 20230207155609_119.png]]
-ed510d19544e4b14f4865b3143786f6d218b55cd: [[Pasted Image 20230207160309_209.png]]
-ee20b49e29d3b38316350d47210553202d03538e: [[Pasted Image 20230207204115_863.png]]
+c892ebf487b001820b2931291fb310e27a00ca8b: [[_assets/images/Pasted Image 20230207155528_201.png]]
+9b8a14a98a425bd1fc1136e124e5b816247a41c2: [[_assets/images/Pasted Image 20230207155609_119.png]]
+ed510d19544e4b14f4865b3143786f6d218b55cd: [[_assets/images/Pasted Image 20230207160309_209.png]]
+ee20b49e29d3b38316350d47210553202d03538e: [[_assets/images/Pasted Image 20230207204115_863.png]]
 
 %%
 ## Drawing

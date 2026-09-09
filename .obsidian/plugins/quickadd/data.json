@@ -185,6 +185,7 @@
   "inputPrompt": "single-line",
   "persistInputPromptDrafts": true,
   "useSelectionAsCaptureValue": true,
+  "namePastedImagesAfterNoteTitle": false,
   "searchNestedChoices": true,
   "templateFolderLauncherRow": "bottom",
   "devMode": false,
@@ -192,7 +193,7 @@
     "Templates"
   ],
   "announceUpdates": "all",
-  "version": "2.23.0",
+  "version": "2.24.2",
   "globalVariables": {},
   "onePageInputEnabled": false,
   "disableOnlineFeatures": true,

@@ -14,7 +14,7 @@ conference: ICLR 2026×
 year: 2025
 arxiv_url: https://arxiv.org/abs/2510.13891
 pdf_link: "[[assets/paper_2510.13891.pdf]]"
-cover: "[[assets/pipeline_2510.13891.png]]"
+cover: "[[_assets/images/pipeline_2510.13891.png]]"
 updated: 2026-05-20
 tags:
   - paper/arxiv
@@ -81,7 +81,7 @@ Input: long video V, query Q, frame budget k
 
 # Pipeline Figure
 
-![[assets/pipeline_2510.13891.png]]
+![[_assets/images/pipeline_2510.13891.png]]
 
 Caption: An overview of the K-frames framework. It features a two-stage Supervised Fine-Tuning (SFT) curriculum for temporal grounding and key-clip perception, followed by a Reinforcement Learning (RL) stage to align the selection policy with downstream task performance.
 

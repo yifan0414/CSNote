@@ -11,7 +11,7 @@ conference:
 year: 2026
 arxiv_url: https://arxiv.org/abs/2604.14149
 pdf_link: "[[assets/paper_2604.14149.pdf]]"
-cover: "[[assets/pipeline_2604.14149.png]]"
+cover: "[[_assets/images/pipeline_2604.14149.png]]"
 updated: 2026-05-13
 tags:
   - paper/arxiv
@@ -95,7 +95,7 @@ During inference:
 
 ## Pipeline Figure
 
-![[assets/pipeline_2604.14149.png]]
+![[_assets/images/pipeline_2604.14149.png]]
 
 Caption: 该 overview 图展示 XComp 的两个压缩维度：token-level 的 LP-Comp 通过 supervised compression tuning 让 LLM layer 学习渐进压缩；frame-level 的 QC-Comp 用 question-conditioned relevance 选择相关帧。两者合起来实现 “one token per highly selective frame”。
 

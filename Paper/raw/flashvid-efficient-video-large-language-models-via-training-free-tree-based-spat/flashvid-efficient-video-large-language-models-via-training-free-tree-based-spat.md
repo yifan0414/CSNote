@@ -11,7 +11,7 @@ conference: ICLR 2026⭐️
 year: 2026
 arxiv_url: https://arxiv.org/abs/2602.08024
 pdf_link: "[[assets/paper_2602.08024.pdf]]"
-cover: "[[assets/pipeline_2602.08024.png]]"
+cover: "[[_assets/images/pipeline_2602.08024.png]]"
 updated: 2026-05-31
 tags:
   - paper/arxiv
@@ -109,7 +109,7 @@ Return aggregated tokens union selected ADTS tokens
 
 ## Pipeline Figure
 
-![[assets/pipeline_2602.08024.png]]
+![[_assets/images/pipeline_2602.08024.png]]
 
 Caption: Overview of our FlashVID. FlashVID compresses visual tokens by two synergistic modules: (1) ADTS prioritizes spatiotemporally informative tokens while ensuring feature diversity by solving a calibrated Max-Min Diversity Problem (MMDP); (2) TSTM models redundancy by spatiotemporal redundancy trees, which effectively capture fine-grained video dynamics.
 

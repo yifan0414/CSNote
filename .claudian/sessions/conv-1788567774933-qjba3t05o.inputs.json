@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788567774933-qjba3t05o",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788567774976-nsujmev",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788567774929-xjv4wgv",
+      "timestamp": 1788567774929,
+      "rawDisplayText": "这里加一个callout，作为后续多模态Encoder，projector，Decoder的引子",
+      "canonicalText": "这里加一个callout，作为后续多模态Encoder，projector，Decoder的引子",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/04-Seq2Seq.md"
+        },
+        "editorSelection": {
+          "notePath": "Paper/架构学习/基础/04-Seq2Seq.md",
+          "mode": "selection",
+          "selectedText": "2.3 Bridge：把源摘要变成 Decoder 初始状态\n若 Encoder 与 Decoder hidden size 相同，最简单地令：\n\n若状态空间不同，可以使用可学习 projection：\n\n若 、，则：\n\nBridge 不是第三个序列模型，只是 Encoder 输出空间到 Decoder 状态空间的接口。",
+          "lineCount": 8
+        }
+      },
+      "images": [],
+      "contentDigest": "1a6407ea9897a6b1d6a4c68c156000db8827b3570df1f5a00812f5c35f251dd2",
+      "providerUserMessageId": "01a06ef2-6867-7093-83d9-cd723f61cf05",
+      "providerAssistantMessageId": "msg_0bcdc7bee27634aa016a9b616ce26c87d0a0d32e9ad049a114"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788567950700-px1hfc1",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788567950682-6fjotou",
+      "timestamp": 1788567950682,
+      "rawDisplayText": "> $$\n> \\text{image/audio}\n> \\xrightarrow{\\text{modality Encoder}}\n> \\text{features}\n> \\xrightarrow{\\text{projector}}\n> \\text{decoder-compatible representations}\n> \\xrightarrow{\\text{language Decoder}}\n> \\text{text}\n> $$\n这个要分行，不要一行",
+      "canonicalText": "> $$\n> \\text{image/audio}\n> \\xrightarrow{\\text{modality Encoder}}\n> \\text{features}\n> \\xrightarrow{\\text{projector}}\n> \\text{decoder-compatible representations}\n> \\xrightarrow{\\text{language Decoder}}\n> \\text{text}\n> $$\n这个要分行，不要一行",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/基础/04-Seq2Seq.md",
+          "mode": "selection",
+          "selectedText": "> $$\n> \\text{image/audio}\n> \\xrightarrow{\\text{modality Encoder}}\n> \\text{features}\n> \\xrightarrow{\\text{projector}}\n> \\text{decoder-compatible representations}\n> \\xrightarrow{\\text{language Decoder}}\n> \\text{text}\n> $$",
+          "lineCount": 9,
+          "startLine": 325
+        }
+      },
+      "images": [],
+      "contentDigest": "9fda2eb3e66bdeff82274d21be61c95e09af79ccfc7b17d6e3b6519d32b0820a",
+      "providerUserMessageId": "01a06ef5-1578-7f63-9eae-7c7ceef12298",
+      "providerAssistantMessageId": "msg_0bcdc7bee27634aa016a9b61a2acec87d09bdef7e95486860f"
+    }
+  ]
+}

@@ -8,8 +8,8 @@ conference: EMNLP 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2510.08818
 pdf_link: "[[paper_2510.08818.pdf]]"
-cover: "[[pipeline_2510.08818.png]]"
-pipeline_figure: assets/pipeline_2510.08818.png
+cover: "[[_assets/images/pipeline_2510.08818.png]]"
+pipeline_figure: ../../../_assets/images/pipeline_2510.08818.png
 pipeline_caption: D-CoDe 将 dynamic compression 与 question decomposition 串联起来：先用补充帧选择、低价值 token 丢弃和相似 token 合并压缩视频，再把复杂问题拆成 focused sub-questions，用 sub-answers 支持最终回答。
 pipeline_source: TeX includegraphics from figs/pipeline.tex -> images/pipeline.pdf; rasterized to PNG with pdftoppm at 250 dpi
 updated: 2026-04-26
@@ -94,7 +94,7 @@ Implementation details reported by the paper:
 
 ## Pipeline Figure
 
-![[pipeline_2510.08818.png]]
+![[_assets/images/pipeline_2510.08818.png]]
 
 Caption: D-CoDe 将 dynamic compression 与 question decomposition 串联起来：先用补充帧选择、低价值 token 丢弃和相似 token 合并压缩视频，再把复杂问题拆成 focused sub-questions，用 sub-answers 支持最终回答。
 

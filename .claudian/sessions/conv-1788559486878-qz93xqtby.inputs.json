@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788559486878-qz93xqtby",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788559486913-w69375e",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788559486873-djrmm0f",
+      "timestamp": 1788559486873,
+      "rawDisplayText": "以Paper/架构学习/CS224n/resources/slides/cs224n-2026-lecture04-rnnlm.pdf为参考资料，00-分词的排版布局为参考（callout，图片等等）帮我创建一个03-RNN的md笔记",
+      "canonicalText": "以Paper/架构学习/CS224n/resources/slides/cs224n-2026-lecture04-rnnlm.pdf为参考资料，00-分词的排版布局为参考（callout，图片等等）帮我创建一个03-RNN的md笔记",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/00-分词.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "b78c2bd801bb9537bed9edafc016248c58efd4486f049c496c189bc33435c97a",
+      "providerUserMessageId": "01a06e74-2fd8-78f0-966f-710dffba1424",
+      "providerAssistantMessageId": "msg_0c93f134bf03ab3a016a9b42e11ebc87d0b41b2703f1ab351c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788560232267-nm1rdo9",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788560232262-cw07kjd",
+      "timestamp": 1788560232262,
+      "rawDisplayText": "这个表格有错误",
+      "canonicalText": "这个表格有错误",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/基础/03-RNN.md",
+          "mode": "selection",
+          "selectedText": "参数 / 变量\tShape\t作用\t\t\n$d_e\\times\tV\t$\ttoken embedding lookup\n当前输入表示\t\t\ninput-to-hidden\t\t\nhidden-to-hidden\t\t\n历史摘要\t\t\n$\tV\t\\times d_h$\thidden-to-logits\n$\tV\t$\tlogits 与概率分布",
+          "lineCount": 8
+        }
+      },
+      "images": [],
+      "contentDigest": "d63fdae0734727174992e43433e6bf4026529956b8507775346d25d09b60d349",
+      "providerUserMessageId": "01a06e7f-56a5-77e2-a7a1-c780e58ad541",
+      "providerAssistantMessageId": "msg_0c93f134bf03ab3a016a9b4393032887d0895f23daeb419140"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788560672972-w5c4fl9",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788560672970-boakuoe",
+      "timestamp": 1788560672970,
+      "rawDisplayText": "我觉得Seq2Seq这里写的不够详细，看不懂",
+      "canonicalText": "我觉得Seq2Seq这里写的不够详细，看不懂",
+      "images": [],
+      "contentDigest": "9492928de879df64933e58bcc38c225eedba2b6530cb58d264ba6a0a8ba76314",
+      "providerUserMessageId": "01a06e86-1027-7480-93ad-14d82a4102af",
+      "providerAssistantMessageId": "msg_0c93f134bf03ab3a016a9b460df87c87d0ad055e0a04e191cc"
+    }
+  ]
+}

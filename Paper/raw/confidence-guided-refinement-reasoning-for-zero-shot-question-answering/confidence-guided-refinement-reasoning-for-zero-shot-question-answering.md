@@ -10,7 +10,7 @@ conference: EMNLP 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2509.20750
 pdf_link: "[[assets/paper_2509.20750.pdf]]"
-cover: "[[assets/pipeline_2509.20750.png]]"
+cover: "[[_assets/images/pipeline_2509.20750.png]]"
 updated: 2026-05-10
 tags:
   - paper/arxiv
@@ -58,7 +58,7 @@ C2R 的输入是 content $V$（可以是 image / video，也可以没有视觉�
 
 # Pipeline Figure
 
-![[assets/pipeline_2509.20750.png]]
+![[_assets/images/pipeline_2509.20750.png]]
 
 Caption: C2R 的 overview。给定 content $V$ 和 main question $Q$，Generator 构建 $N$ 个 sub-QAs；Refiner 组合出 $K$ 个 subset，每个 subset 含 $M$ 个 sub-QAs，用来生成带 confidence score 的 answer candidates；Answer Selector 最后在 $\hat{A}_\text{base}$ 与 $\hat{A}_\text{refined}$ 之间，用 $\tau_1$ 和 $\tau_2$ 选择 final answer。原 caption 还说明 Vision-Language Model (VLM) 是 frozen 的。
 

@@ -8,15 +8,14 @@
   "templater-obsidian",
   "obsidian-tasks-plugin",
   "pdf-plus",
-  "easy-typing-obsidian",
   "obsidian-icon-folder",
   "obsidian-latex-suite",
   "file-explorer-plus",
   "obsidian-excalidraw-plugin",
   "claudian",
-  "editing-toolbar",
   "tabs",
   "obsidian-style-settings",
   "realclaudian",
-  "fix-math"
+  "fix-math",
+  "easy-typing-obsidian"
 ]

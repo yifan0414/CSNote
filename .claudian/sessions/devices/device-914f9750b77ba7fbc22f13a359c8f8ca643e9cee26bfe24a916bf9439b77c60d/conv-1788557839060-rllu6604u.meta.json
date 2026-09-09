@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788557839060-rllu6604u",
+  "providerId": "codex",
+  "title": "你觉得这篇文章写的怎么样",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788557839069,
+  "lastActivityAt": 1788559044026,
+  "sessionId": "01a06e5a-cb5c-7ed0-b9d6-7e7bf5311f5d",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06e5a-cb5c-7ed0-b9d6-7e7bf5311f5d",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T05-37-19-01a06e5a-cb5c-7ed0-b9d6-7e7bf5311f5d.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/00-分词.md",
+  "usage": {
+    "inputTokens": 81192,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 80000,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 81192,
+    "percentage": 31,
+    "model": "gpt-5.6-sol"
+  }
+}

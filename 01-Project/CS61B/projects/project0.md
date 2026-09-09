@@ -13,15 +13,15 @@ tags: [excalidraw]
 这里主要是为了符合人的视角 ^JBISgGLd
 
 ## Embedded Files
-9f65f01e286d480dd9a70c271485a56e4fe1c19a: [[Pasted Image 20230121203221_983.png]]
+9f65f01e286d480dd9a70c271485a56e4fe1c19a: [[_assets/images/Pasted Image 20230121203221_983.png]]
 
-f79e70db87dcaefdf2f077c31a15d03dfefdfe07: [[Pasted Image 20230121203254_004.png]]
+f79e70db87dcaefdf2f077c31a15d03dfefdfe07: [[_assets/images/Pasted Image 20230121203254_004.png]]
 
-a80b2f1d5aca81efa939f2c3099da21f61502143: [[Pasted Image 20230121204038_115.png]]
+a80b2f1d5aca81efa939f2c3099da21f61502143: [[_assets/images/Pasted Image 20230121204038_115.png]]
 
-0575a17f7ad5557bf63bc72abc6e4e8bb9213fe4: [[Pasted Image 20230121204108_129.png]]
+0575a17f7ad5557bf63bc72abc6e4e8bb9213fe4: [[_assets/images/Pasted Image 20230121204108_129.png]]
 
-fc129cdfa68bca8bfc63af13aba2c47734af12ab: [[Pasted Image 20230121213040_687.png]]
+fc129cdfa68bca8bfc63af13aba2c47734af12ab: [[_assets/images/Pasted Image 20230121213040_687.png]]
 
 %%
 ## Drawing

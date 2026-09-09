@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788829588453-2fns9mkr5",
+  "providerId": "codex",
+  "title": "你以这个文档为资料库，给我一个重新整理后的新文档",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788829588460,
+  "lastActivityAt": 1788834341630,
+  "sessionId": "01a07e8d-642a-7630-acb8-8e5f2d7b3dfd",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a07e8d-642a-7630-acb8-8e5f2d7b3dfd",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/08/rollout-2026-09-08T09-06-30-01a07e8d-642a-7630-acb8-8e5f2d7b3dfd.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/01-数学/Adam优化器介绍.md",
+  "usage": {
+    "inputTokens": 231431,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 230784,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 231431,
+    "percentage": 28,
+    "model": "gpt-6-astra"
+  }
+}

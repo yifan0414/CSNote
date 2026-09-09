@@ -8,7 +8,7 @@ conference: ACL 2025
 year: 2024
 arxiv_url: https://arxiv.org/abs/2412.16117
 pdf_link: "[[assets/paper_2412.16117.pdf]]"
-cover: "[[assets/pipeline_2412.16117.png]]"
+cover: "[[_assets/images/pipeline_2412.16117.png]]"
 updated: 2026-05-26
 tags:
   - paper/arxiv
@@ -61,7 +61,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2412.16117.png]]
+![[_assets/images/pipeline_2412.16117.png]]
 
 Caption: PruneVid 先进行 temporal clustering 与 static/dynamic token 区分，再依次执行 static temporal merge 和 spatial merge；进入 Video LLM 后，由问题 token 对 visual token 的 attention 指导筛选，并压缩对应 KV cache。
 

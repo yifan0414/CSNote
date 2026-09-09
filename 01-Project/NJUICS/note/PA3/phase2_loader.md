@@ -151,31 +151,31 @@ loader函数 ^w3KIvdQl
 4XjnFGax: [[ramdisk是如何构建的]]
 
 ## Embedded Files
-6f4811c7bd9faf199a41c1a78fd1258c770f55d7: [[gKliRA.png]]
+6f4811c7bd9faf199a41c1a78fd1258c770f55d7: [[_assets/images/gKliRA.png]]
 
-f790cb14c9e6cd814a6ef9b969b652b1cc719915: [[Pasted Image 20231019222625_949.png]]
+f790cb14c9e6cd814a6ef9b969b652b1cc719915: [[_assets/images/Pasted Image 20231019222625_949.png]]
 
-bd14cd015dd5ec368d2ef73e6845a6aa51b0158e: [[Pasted Image 20231019222910_975.png]]
+bd14cd015dd5ec368d2ef73e6845a6aa51b0158e: [[_assets/images/Pasted Image 20231019222910_975.png]]
 
-2bfee2a4efdc726671452e5bdd9fdc4a77fd4e9f: [[Pasted Image 20231019223914_293.png]]
+2bfee2a4efdc726671452e5bdd9fdc4a77fd4e9f: [[_assets/images/Pasted Image 20231019223914_293.png]]
 
-b1d65c508c598b46a7268de97530be25e17a74ca: [[Pasted Image 20231019224303_384.png]]
+b1d65c508c598b46a7268de97530be25e17a74ca: [[_assets/images/Pasted Image 20231019224303_384.png]]
 
-31d8ae4ca8924eaf3ce1d066bfa5c6985aee224a: [[Pasted Image 20231019230421_747.png]]
+31d8ae4ca8924eaf3ce1d066bfa5c6985aee224a: [[_assets/images/Pasted Image 20231019230421_747.png]]
 
-d246846a87ddc9fa86ee33de88795dc848b5cb3c: [[Pasted Image 20231027203149_619.png]]
+d246846a87ddc9fa86ee33de88795dc848b5cb3c: [[_assets/images/Pasted Image 20231027203149_619.png]]
 
-7a2ebc5eee9a522787a645824d0ffd659d54d38e: [[Pasted Image 20231027203321_633.png]]
+7a2ebc5eee9a522787a645824d0ffd659d54d38e: [[_assets/images/Pasted Image 20231027203321_633.png]]
 
-5aa506ae6cebb3ae44d49f754df301b8d7d68643: [[Pasted Image 20231027203408_644.png]]
+5aa506ae6cebb3ae44d49f754df301b8d7d68643: [[_assets/images/Pasted Image 20231027203408_644.png]]
 
-1a00a36cc47f754c0b7c848a24b0ddd1fd35f646: [[Pasted Image 20231027210610_910.png]]
+1a00a36cc47f754c0b7c848a24b0ddd1fd35f646: [[_assets/images/Pasted Image 20231027210610_910.png]]
 
-7d6dcee0f05257538e8971432ad87991ee94b922: [[Pasted Image 20231027211332_041.png]]
+7d6dcee0f05257538e8971432ad87991ee94b922: [[_assets/images/Pasted Image 20231027211332_041.png]]
 
-91bb8a22ee19afac1af035c2dd166c4c6f3d0b7e: [[Pasted Image 20231027212650_742.png]]
+91bb8a22ee19afac1af035c2dd166c4c6f3d0b7e: [[_assets/images/Pasted Image 20231027212650_742.png]]
 
-1c4a8d877920d4ee957c0553df1d2afbaf60af48: [[Pasted Image 20231027213634_608.png]]
+1c4a8d877920d4ee957c0553df1d2afbaf60af48: [[_assets/images/Pasted Image 20231027213634_608.png]]
 
 %%
 ## Drawing

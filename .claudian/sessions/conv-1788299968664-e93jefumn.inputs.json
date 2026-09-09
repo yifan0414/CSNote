@@ -13,7 +13,7 @@
       "canonicalText": "你能帮我把https://github.com/LAMDA-NeSy/Research-Starter-Kit 中手册：如何做科研与写论文中的各个飞书文档组织成要给obsidian风格的md文件吗",
       "images": [],
       "contentDigest": "5c952ae3105cd6657eb3fdd8b64efd1e9036e5c71ac78fd94e28f246f3b680a3",
-      "providerUserMessageId": "01a05efc-0232-75a3-92d5-36713db8f1f8",
+      "providerUserMessageId": "01a05efc-0212-7452-bc27-0e394aab0585",
       "providerAssistantMessageId": "msg_06dbd06984c92a09016a9751074ee087d2aa0de050d6393d89"
     },
     {
@@ -27,7 +27,7 @@
       "canonicalText": "我的意思是让你组织成一个md文档， 并且原文中的颜色标注加粗等格式要保留",
       "images": [],
       "contentDigest": "10f48f238bec53653aa4ca8dcfe894b147cd10383f2ecc24966e3127b1b66d32",
-      "providerUserMessageId": "01a05f1b-9805-7b91-967a-979c85517aca",
+      "providerUserMessageId": "01a05f1b-97ec-7f90-9ff5-a7d35c2390d7",
       "providerAssistantMessageId": "msg_0dd8c5fbd5c98934016a9755d40b4487d2a9c82b94da35ad39"
     },
     {
@@ -49,7 +49,7 @@
       },
       "images": [],
       "contentDigest": "1858ca56ae978bc9b56da69dfbbcbfc3b7a8ec3654c947e383a5b2784d774e87",
-      "providerUserMessageId": "01a05f28-1b9e-77b1-b087-74ef1e779be5",
+      "providerUserMessageId": "01a05f28-1b88-74b0-b38f-27495a59057e",
       "providerAssistantMessageId": "msg_0dd8c5fbd5c98934016a975631a23487d2998aafd184f054f6"
     },
     {
@@ -85,7 +85,8 @@
       "canonicalText": "我的意思不仅仅是颜色标记\n\n而是html都要和正文一样",
       "images": [],
       "contentDigest": "c503f35dd076c479a1da18ab36d5fe65bf5e277c9b91a2cab68f7ae76f2c4191",
-      "providerUserMessageId": "01a05f2f-6efc-7d13-bf3a-40d1de554b3e"
+      "providerUserMessageId": "01a05f2e-55d9-7c40-90e5-e1883527ef7f",
+      "providerAssistantMessageId": "01a05f2e-55d9-7c40-90e5-e1883527ef7f"
     },
     {
       "schemaVersion": 1,
@@ -111,7 +112,8 @@
       "canonicalText": "片段",
       "images": [],
       "contentDigest": "ec4b15bd725ed26cb372a8f4a7c7cfd837d14d1245c45e85e435739feb9537fd",
-      "providerUserMessageId": "01a05f32-15ef-70f2-afd9-e8a2352c973a"
+      "providerUserMessageId": "01a05f31-bc8c-7512-88b2-eaa6164331c0",
+      "providerAssistantMessageId": "01a05f31-bc8c-7512-88b2-eaa6164331c0"
     },
     {
       "schemaVersion": 1,
@@ -124,7 +126,7 @@
       "canonicalText": "还是没有效果",
       "images": [],
       "contentDigest": "7305118cb33c9e53d72ec90df0b8dc190d135b3e9313da3a37da4283b17ca996",
-      "providerUserMessageId": "01a05f35-3e90-7ce1-aac8-fc2684493ad1",
+      "providerUserMessageId": "01a05f35-3e7a-7ad2-881a-07513666904a",
       "providerAssistantMessageId": "msg_0dd8c5fbd5c98934016a975b113eb887d2a0c0e0128c0c3b7f"
     },
     {
@@ -138,7 +140,7 @@
       "canonicalText": "还是比正文大",
       "images": [],
       "contentDigest": "2f43c77a611f6f3787465b2432b7fd37ca92e799860f6906768994cb65ae6e17",
-      "providerUserMessageId": "01a05f3c-7b41-7360-a270-eadcf7c98f9d",
+      "providerUserMessageId": "01a05f3c-7b31-7f50-862c-a14439aa2406",
       "providerAssistantMessageId": "msg_04d8d3a934f65a3e016a975f4d738487d2a386969314ded88e"
     }
   ]

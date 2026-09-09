@@ -16,7 +16,7 @@
 
 ## 赞助我
 
-![](READING/think-os-zh-master/img/qr_alipay.png)
+![](../../_assets/images/qr_alipay.png)
 
 ## 协议
 

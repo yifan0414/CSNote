@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788913245708-eh9q3kt3w",
+  "providerId": "codex",
+  "title": "帮我整理下这个笔记，不需要大改内容，主要是易读性和格式的整理",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788913245716,
+  "lastActivityAt": 1788916888910,
+  "sessionId": "01a08389-df98-7c11-85bc-c73e58f1cb19",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a08389-df98-7c11-85bc-c73e58f1cb19",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/09/rollout-2026-09-09T08-20-46-01a08389-df98-7c11-85bc-c73e58f1cb19.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/01-数学/从概率建模统一理解机器学习损失 MLE、NLL、Cross-Entropy、KL、MSE 与 MAE.md",
+  "usage": {
+    "inputTokens": 107566,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 103040,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 107566,
+    "percentage": 13,
+    "model": "gpt-6-astra"
+  }
+}

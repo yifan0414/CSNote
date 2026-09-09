@@ -16,7 +16,7 @@ conference:
 year: 2025
 arxiv_url: https://arxiv.org/abs/2502.19680v1
 pdf_link: "[[assets/paper_2502.19680v1.pdf]]"
-cover: "[[assets/pipeline_2502.19680v1.png]]"
+cover: "[[_assets/images/pipeline_2502.19680v1.png]]"
 updated: 2026-05-19
 tags:
   - paper/arxiv
@@ -108,7 +108,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2502.19680v1.png]]
+![[_assets/images/pipeline_2502.19680v1.png]]
 
 Caption: An illustration of the conventional n-frame video M-LLM framework and the proposed video M-LLM framework with frame selection.
 

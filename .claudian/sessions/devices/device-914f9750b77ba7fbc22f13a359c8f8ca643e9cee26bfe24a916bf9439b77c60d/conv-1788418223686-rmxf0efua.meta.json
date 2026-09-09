@@ -1,0 +1,21 @@
+{
+  "id": "conv-1788418223686-rmxf0efua",
+  "providerId": "codex",
+  "title": "$d_h$ 是什么意思",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788418223695,
+  "lastActivityAt": 1788418837302,
+  "sessionId": null,
+  "selectedModel": "gpt-5.6-sol",
+  "linkedContentPath": "06-LLM/架构学习/基础/06-transformer.md",
+  "usage": {
+    "inputTokens": 35525,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 7488,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 35525,
+    "percentage": 14,
+    "model": "gpt-5.6-sol"
+  }
+}

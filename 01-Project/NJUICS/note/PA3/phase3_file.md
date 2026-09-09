@@ -36,14 +36,14 @@ fscanf是libs/libc/src/stdio/fscanf.c中定义的，也就是说，这是标准�
 
 
 # Embedded files
-721678aa1c8f01a3eb709062c40bdd44a5871f56: [[Pasted Image 20231022162951_758.png]]
-ac8dc1685bd129443fe6d1fc68d59e03861499f3: [[Pasted Image 20231022163216_850.png]]
-daf73923b6ca35486e1858ca254980f27831231e: [[Pasted Image 20231022163534_909.png]]
-8a52bfb3a867afb9f36fc931858327f30ffef830: [[Pasted Image 20231022163702_979.png]]
-3e5c7594b2d7af295ede5f9ec0af8e21fb1448a1: [[Pasted Image 20231022235709_598.png]]
-3b311dd93e138116e699ba8de53f270996af32cd: [[Pasted Image 20231023000009_671.png]]
-573e0d68b251a6879a7d2dddf0aed15e876fb8e2: [[Pasted Image 20231023000057_719.png]]
-737754646876933cdc2e9685700730cf1d7f225f: [[Pasted Image 20240120175308_293.png]]
+721678aa1c8f01a3eb709062c40bdd44a5871f56: [[_assets/images/Pasted Image 20231022162951_758.png]]
+ac8dc1685bd129443fe6d1fc68d59e03861499f3: [[_assets/images/Pasted Image 20231022163216_850.png]]
+daf73923b6ca35486e1858ca254980f27831231e: [[_assets/images/Pasted Image 20231022163534_909.png]]
+8a52bfb3a867afb9f36fc931858327f30ffef830: [[_assets/images/Pasted Image 20231022163702_979.png]]
+3e5c7594b2d7af295ede5f9ec0af8e21fb1448a1: [[_assets/images/Pasted Image 20231022235709_598.png]]
+3b311dd93e138116e699ba8de53f270996af32cd: [[_assets/images/Pasted Image 20231023000009_671.png]]
+573e0d68b251a6879a7d2dddf0aed15e876fb8e2: [[_assets/images/Pasted Image 20231023000057_719.png]]
+737754646876933cdc2e9685700730cf1d7f225f: [[_assets/images/Pasted Image 20240120175308_293.png]]
 
 %%
 # Drawing

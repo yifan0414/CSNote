@@ -5,16 +5,9 @@
   "titleGenerationStatus": "failed",
   "createdAt": 1788409178846,
   "lastActivityAt": 1788409623996,
-  "sessionId": "01a0657e-6ef9-7ee3-a5f8-7c692ebedc98",
+  "sessionId": null,
   "selectedModel": "gpt-5.6-sol",
-  "providerState": {
-    "threadId": "01a0657e-6ef9-7ee3-a5f8-7c692ebedc98",
-    "nativeConversationContextEstablished": true,
-    "sessionFilePath": "/Users/yifan/.codex-trans/sessions/2026/09/03/rollout-2026-09-03T12-19-39-01a0657e-6ef9-7ee3-a5f8-7c692ebedc98.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex-trans/sessions",
-    "workspaceDependencyToolVersion": 1
-  },
-  "linkedContentPath": "Paper/架构学习/从 Seq2Seq 到 Attention 再到 Transformer.md",
+  "linkedContentPath": "06-LLM/架构学习/从 Seq2Seq 到 Attention 再到 Transformer.md",
   "usage": {
     "inputTokens": 41526,
     "cacheCreationInputTokens": 0,

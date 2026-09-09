@@ -16,4 +16,4 @@ int main() {
 
 🌱 I’m currently learning LLM, MLLM.
 
-![[Pasted image 20240109051334.png]]
+![[_assets/images/Pasted image 20240109051334.png]]

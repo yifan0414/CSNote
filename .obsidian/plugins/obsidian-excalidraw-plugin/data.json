@@ -16,6 +16,8 @@
   "embedUseExcalidrawFolder": false,
   "templateFilePath": "Excalidraw/Template.excalidraw",
   "scriptFolderPath": "Excalidraw/Scripts",
+  "allowJavaScriptFiles": false,
+  "storeScriptFilesAsJavaScript": false,
   "fontAssetsPath": "Excalidraw/CJK Fonts",
   "loadChineseFonts": false,
   "loadJapaneseFonts": false,
@@ -23,8 +25,6 @@
   "compress": true,
   "decompressForMDView": true,
   "onceOffCompressFlagReset": true,
-  "onceOffGPTVersionReset": true,
-  "autosave": true,
   "autosaveIntervalDesktop": 15000,
   "autosaveIntervalMobile": 10000,
   "drawingFilenamePrefix": "Drawing ",
@@ -126,7 +126,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.26.4",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.27.3",
     "libraryItems": [
       {
         "id": "DCphUpzRb6v6HGs1kqefF",
@@ -4402,7 +4402,8 @@
             "originalText": "?",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "id": "tHjRGTT3qsB4CVJ6khGI6",
@@ -4780,7 +4781,8 @@
             "originalText": "0 0 0",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "created": 1670469972570
@@ -4900,7 +4902,8 @@
             "originalText": "+",
             "autoResize": true,
             "lineHeight": 1.2499999999999998,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "text",
@@ -4946,7 +4949,8 @@
             "originalText": "-",
             "autoResize": true,
             "lineHeight": 1.2353515624999791,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -16116,7 +16120,8 @@
             "originalText": "+",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "id": "uNAUdjeuMZFj9JwL8VxDq",
@@ -16195,7 +16200,8 @@
             "originalText": "Button",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "id": "ffWvGd-Czr0XARWti9QpN",
@@ -16274,7 +16280,8 @@
             "originalText": "One",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "rectangle",
@@ -16346,7 +16353,8 @@
             "originalText": "Two",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "rectangle",
@@ -16418,7 +16426,8 @@
             "originalText": "Three",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "id": "Ajlosn73FYuSdg-9VWtOs",
@@ -16497,7 +16506,8 @@
             "originalText": "ComboBox",
             "autoResize": true,
             "lineHeight": 1.2500000000000018,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "rectangle",
@@ -16662,7 +16672,8 @@
             "originalText": "/",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "text",
@@ -16703,7 +16714,8 @@
             "originalText": "/",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "rectangle",
@@ -17141,7 +17153,8 @@
             "originalText": "42",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "rectangle",
@@ -17468,7 +17481,8 @@
             "originalText": "Button",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -17602,7 +17616,8 @@
             "originalText": "Button",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -17732,7 +17747,8 @@
             "originalText": "Button",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -17862,7 +17878,8 @@
             "originalText": "+",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "id": "-COnlKXR7W0jXq3m6M7iu",
@@ -18034,7 +18051,8 @@
             "originalText": "?",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "id": "YPtDPKd3vAtQunRnskNiS",
@@ -18488,7 +18506,8 @@
             "originalText": "Checkbox",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "id": "xPqYdQsF1bxKl2U_vpSpl",
@@ -18567,7 +18586,8 @@
             "originalText": "Selected",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -18697,7 +18717,8 @@
             "originalText": "Indeterminate",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -18823,7 +18844,8 @@
             "originalText": "Disabled",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "id": "LwxUGmfx_M3zkyRtfGcVR",
@@ -18902,7 +18924,8 @@
             "originalText": "Disabled selected",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -19032,7 +19055,8 @@
             "originalText": "Disabled indeterminate",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -19158,7 +19182,8 @@
             "originalText": "Radio",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "id": "N0bZa8anRmeF63Wjccp6t",
@@ -19237,7 +19262,8 @@
             "originalText": "Selected",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "ellipse",
@@ -19347,7 +19373,8 @@
             "originalText": "Indeterminate",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -19475,7 +19502,8 @@
             "originalText": "Disabled",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           }
         ],
         "id": "rgVmDD86W3lpfSr0xUcIZ",
@@ -19554,7 +19582,8 @@
             "originalText": "Disabled selected",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "ellipse",
@@ -19664,7 +19693,8 @@
             "originalText": "Disabled indeterminate",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -19792,7 +19822,8 @@
             "originalText": "B",
             "autoResize": true,
             "lineHeight": 1.2666666666666673,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "rectangle",
@@ -19864,7 +19895,8 @@
             "originalText": "style",
             "autoResize": true,
             "lineHeight": 1.2726777844668697,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "rectangle",
@@ -20132,7 +20164,8 @@
             "originalText": "U",
             "autoResize": true,
             "lineHeight": 1.25,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -20220,7 +20253,8 @@
             "originalText": "S",
             "autoResize": true,
             "lineHeight": 1.2499999999999998,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -20683,7 +20717,8 @@
             "originalText": "1",
             "autoResize": true,
             "lineHeight": 1.1500000000000006,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "text",
@@ -20724,7 +20759,8 @@
             "originalText": "2",
             "autoResize": true,
             "lineHeight": 1.0541666666666671,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "text",
@@ -20765,7 +20801,8 @@
             "originalText": "3",
             "autoResize": true,
             "lineHeight": 1.0541666666666671,
-            "hasTextLink": false
+            "hasTextLink": false,
+            "labelPosition": null
           },
           {
             "type": "line",
@@ -21422,6 +21459,7 @@
       }
     }
   },
+  "markdownImageDeletionPreference": "ask",
   "scriptEngineSettings": {
     "ZoteroToExcalidraw": {
       "Zotero Library Path": {
@@ -21438,8 +21476,11 @@
       }
     }
   },
-  "previousRelease": "2.26.4",
+  "autostartScripts": {},
+  "autostartScriptFailures": {},
+  "previousRelease": "2.27.3",
   "showReleaseNotes": true,
+  "useDeclarativeSettings": true,
   "excalidrawMasteryPromoCollapsed": false,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
@@ -22065,6 +22106,7 @@
     }
   },
   "aiDefaultTextModel": "gpt-4.1",
+  "aiDefaultMultimodalModel": "gpt-5-mini",
   "aiDefaultImageGenerationModel": "dall-e-3",
   "aiDefaultMaxOutgoingTokens": 0,
   "aiDefaultMaxResponseTokens": 4096,
@@ -22389,6 +22431,8 @@
     "margin": "normal"
   },
   "disableContextMenu": false,
+  "onceOffGPTVersionReset": true,
+  "autosave": true,
   "isDebugMode": false,
   "defaultTrayMode": false,
   "compactModeOnTablets": true,

@@ -152,8 +152,8 @@ AM_SRCS := native/trm.c \
 通过这个规则调用 ^YsuoZVAX
 
 # Embedded files
-524147e6d4c41610c10cb1f08397fa795ef3ccbd: [[Pasted Image 20230624121753_914.png]]
-f5a389f897a0f6b3fdbf6a3511210fc6c45c20d4: [[Pasted Image 20230624121823_932.png]]
+524147e6d4c41610c10cb1f08397fa795ef3ccbd: [[_assets/images/Pasted Image 20230624121753_914.png]]
+f5a389f897a0f6b3fdbf6a3511210fc6c45c20d4: [[_assets/images/Pasted Image 20230624121823_932.png]]
 
 %%
 # Drawing

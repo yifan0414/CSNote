@@ -36,8 +36,8 @@
 
 ## 相关区域
 
-- [[07-AI/AI MOC|AI MOC]]
-- [[06-Algorithm/Algorithm MOC|Algorithm MOC]]
+- [[AI MOC|AI MOC]]
+- [[Algorithm MOC|Algorithm MOC]]
 - [[03-Tool/command line/0 The note of Shell Command Line|Shell Command Line]]
 
 ## 待整理

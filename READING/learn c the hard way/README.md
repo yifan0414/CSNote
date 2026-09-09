@@ -18,7 +18,7 @@
 
 ## 赞助我
 
-![](READING/learn%20c%20the%20hard%20way/img/qr_alipay.png)
+![](../../_assets/images/qr_alipay.png)
 
 ## 协议
 

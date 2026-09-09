@@ -11,7 +11,7 @@ tags:
   - "clippings"
   - "wikipedia"
 ---
-![[attachments/c7de6b27a1dd94e9c63e9de7ce352b31_MD5.png]]
+![[_assets/images/c7de6b27a1dd94e9c63e9de7ce352b31_MD5.png]]
 
 As the degree of the Taylor polynomial rises, it approaches the correct function. This image shows sin *x* and its Taylor approximations by polynomials of degree **1**, **3**, **5**, **7**, **9**, **11**, and **13** at *x* = 0.
 
@@ -94,7 +94,7 @@ The Maclaurin series was named after [Colin Maclaurin](https://en.wikipedia.org/
 
 Main article: [Analytic function](https://en.wikipedia.org/wiki/Analytic_function "Analytic function")
 
-![[attachments/59d6c2af4fbfecb778a627a48461b9a5_MD5.png]]
+![[_assets/images/59d6c2af4fbfecb778a627a48461b9a5_MD5.png]]
 
 The function ***e*<sup>(−1/<i>x</i><sup>2</sup>)</sup>** is not analytic at *x* = 0: the Taylor series is identically 0, although the function is not.
 
@@ -125,15 +125,15 @@ Uses of the Taylor series for analytic functions include:
 
 Main article: [Taylor's theorem](https://en.wikipedia.org/wiki/Taylor%27s_theorem "Taylor's theorem")
 
-![[attachments/aeac33619021a7dba4bfde25f60c2995_MD5.png]]
+![[_assets/images/aeac33619021a7dba4bfde25f60c2995_MD5.png]]
 
 The sine function (blue) is closely approximated by its Taylor polynomial of degree 7 (pink) for a full period centered at the origin.
 
-![[attachments/0914819f6809906cc16f29ce6a4c82db_MD5.png]]
+![[_assets/images/0914819f6809906cc16f29ce6a4c82db_MD5.png]]
 
 The Taylor polynomials for ln(1 + *x*) only provide accurate approximations in the range −1 < *x* ≤ 1. For *x* > 1, Taylor polynomials of higher degree provide worse approximations.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Logarithm_GIF.gif/500px-Logarithm_GIF.gif)
+![](../../_assets/images/093a88f9924663f56a12c372831109364e43228ed4a023ce335a9fbf1ac53dcf.gif)
 
 The Taylor approximations for ln(1 + *x*) (black). For *x* > 1, the approximations diverge.
 
@@ -196,7 +196,7 @@ Several important Maclaurin series expansions follow. All these expansions are v
 
 \[[edit](https://en.wikipedia.org/w/index.php?title=Taylor_series&action=edit&section=8 "Edit section: Exponential function")\]
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Exp_series.gif/250px-Exp_series.gif)
+![](../../_assets/images/c74ebe09b252261ac5d6191ec9198bb6a41e434beedab55d4f33451bd4587e8b.gif)
 
 The [exponential function](https://en.wikipedia.org/wiki/Exponential_function "Exponential function") *e*<sup><i>x</i></sup> (in blue), and the sum of the first *n* + 1 terms of its Taylor series at 0 (in red).
 
@@ -426,7 +426,7 @@ which is to be understood as a still more abbreviated [multi-index](https://en.w
 
 \[[edit](https://en.wikipedia.org/w/index.php?title=Taylor_series&action=edit&section=23 "Edit section: Example")\]
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Second_Order_Taylor.svg/250px-Second_Order_Taylor.svg.png)
+![](../../_assets/images/dcfd41c4316f0f1a6906d3914d032b277b2d4480391d6a2aa8232af579c60cdb.png)
 
 Second-order Taylor series approximation (in orange) of a function *f* (*x*,*y*) = *e<sup>x</sup>* ln(1 + *y*) around the origin.
 
@@ -470,7 +470,7 @@ The trigonometric [Fourier series](https://en.wikipedia.org/wiki/Fourier_series 
 
 \[[edit](https://en.wikipedia.org/w/index.php?title=Taylor_series&action=edit&section=25 "Edit section: See also")\]
 
-- [![icon](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nuvola_apps_edu_mathematics_blue-p.svg/40px-Nuvola_apps_edu_mathematics_blue-p.svg.png)](https://en.wikipedia.org/wiki/File:Nuvola_apps_edu_mathematics_blue-p.svg)[Mathematics portal](https://en.wikipedia.org/wiki/Portal:Mathematics "Portal:Mathematics")
+- [![icon](assets/img/7/6/2/762e273820eb5d9caa3851fc9e51ea6bde0dd116de9f901fe5144de795fbea8b.png)](https://en.wikipedia.org/wiki/File:Nuvola_apps_edu_mathematics_blue-p.svg)[Mathematics portal](https://en.wikipedia.org/wiki/Portal:Mathematics "Portal:Mathematics")
 - [Asymptotic expansion](https://en.wikipedia.org/wiki/Asymptotic_expansion "Asymptotic expansion")
 - [Newton polynomial](https://en.wikipedia.org/wiki/Newton_polynomial "Newton polynomial")
 - [Padé approximant](https://en.wikipedia.org/wiki/Pad%C3%A9_approximant "Padé approximant") – best approximation by a rational function
@@ -549,4 +549,4 @@ The trigonometric [Fourier series](https://en.wikipedia.org/wiki/Fourier_series 
 - ["Taylor series"](https://www.encyclopediaofmath.org/index.php?title=Taylor_series), *[Encyclopedia of Mathematics](https://en.wikipedia.org/wiki/Encyclopedia_of_Mathematics "Encyclopedia of Mathematics")*, [EMS Press](https://en.wikipedia.org/wiki/European_Mathematical_Society "European Mathematical Society"), 2001 \[1994\]
 - [Weisstein, Eric W.](https://en.wikipedia.org/wiki/Eric_W._Weisstein "Eric W. Weisstein") ["Taylor Series"](https://mathworld.wolfram.com/TaylorSeries.html). *[MathWorld](https://en.wikipedia.org/wiki/MathWorld "MathWorld")*.
 
-![[attachments/2dbeb1435b5a0041290af1991c7d9a0d_MD5.png]]
+![[_assets/images/2dbeb1435b5a0041290af1991c7d9a0d_MD5.png]]

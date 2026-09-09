@@ -12,7 +12,7 @@ conference: NeurIPS 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2505.18079
 pdf_link: "[[paper_2505.18079.pdf]]"
-cover: "[[pipeline_2505.18079.png]]"
+cover: "[[_assets/images/pipeline_2505.18079.png]]"
 updated: 2026-04-26
 tags:
   - paper/arxiv
@@ -92,7 +92,7 @@ return Answer(P_i)
 
 ## Pipeline Figure
 
-![[pipeline_2505.18079.png]]
+![[_assets/images/pipeline_2505.18079.png]]
 
 Caption: Deep Video Discovery consists of two stages: 1) Multi-granular Video Database Construction, extracting information at multiple levels for understanding, retrieval, and original-content preservation; 2) Agentic Search and Answer, where the agent iteratively reasons over the user query and uses tools to gather information for answering.
 

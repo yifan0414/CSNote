@@ -12,7 +12,7 @@ conference: ""
 year: 2026
 arxiv_url: "https://arxiv.org/abs/2604.01002"
 pdf_link: "[[assets/paper_2604.01002.pdf]]"
-cover: "[[assets/pipeline_2604.01002.png]]"
+cover: "[[_assets/images/pipeline_2604.01002.png]]"
 updated: 2026-05-12
 tags:
   - "paper/arxiv"
@@ -88,7 +88,7 @@ code: ""
 
 ## Pipeline Figure
 
-![[assets/pipeline_2604.01002.png]]
+![[_assets/images/pipeline_2604.01002.png]]
 
 Caption: Overview of the query-conditioned evidence scoring network. The input video is uniformly sampled into frames, which are encoded into frame embeddings and scored to obtain frame-level evidence scores conditioned on the query. Frames with the highest evidence scores are then selected and fed into an MLLM to generate the final response.
 

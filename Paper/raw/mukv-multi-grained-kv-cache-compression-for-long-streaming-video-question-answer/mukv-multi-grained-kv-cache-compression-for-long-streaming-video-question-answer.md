@@ -5,7 +5,7 @@ conference: "CVPR"
 year: 2026
 arxiv_url: "https://arxiv.org/abs/2605.22269"
 pdf_link: "[[assets/paper_2605.22269.pdf]]"
-cover: "[[assets/pipeline_2605.22269.png]]"
+cover: "[[_assets/images/pipeline_2605.22269.png]]"
 updated: 2026-06-06
 tags: ["paper/arxiv", "video-qa", "long-video", "temporal-reasoning", "token-pruning", "video-llm"]
 status: "unread"
@@ -113,7 +113,7 @@ question at time t
 
 ## Pipeline Figure
 
-![[assets/pipeline_2605.22269.png]]
+![[_assets/images/pipeline_2605.22269.png]]
 
 Caption: Illustration of multi-grained video KV cache compression in offline memory.
 

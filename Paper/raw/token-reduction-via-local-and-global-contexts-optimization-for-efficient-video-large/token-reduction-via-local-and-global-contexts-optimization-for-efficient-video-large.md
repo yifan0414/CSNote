@@ -9,7 +9,7 @@ conference: CVPR 2026
 year: 2026
 arxiv_url: https://arxiv.org/abs/2603.01400
 pdf_link: "[[Paper/raw/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large/assets/paper_2603.01400.pdf]]"
-cover: "[[Paper/raw/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large/assets/pipeline_2603.01400.png]]"
+cover: "[[_assets/images/pipeline_2603.01400.png]]"
 updated: 2026-06-01
 tags:
   - paper/arxiv
@@ -90,7 +90,7 @@ return compressed anchors + high-change temporal tokens
 
 ## Pipeline Figure
 
-![[Paper/raw/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large/assets/pipeline_2603.01400.png]]
+![[_assets/images/pipeline_2603.01400.png]]
 
 Caption: Overall pipeline of AOT. The method compresses Video LLM tokens across spatiotemporal dimensions through optimal transport: local/global token anchors are established per frame, intra-frame OT aggregates informative cues from pruned tokens, and inter-frame OT compresses temporal redundancy while preserving dynamic tokens.
 

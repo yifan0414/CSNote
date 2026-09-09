@@ -21,10 +21,10 @@ tags: [excalidraw]
 首先将 getbuf 返回地址设置为 0x5561dc78 即栈上的地址。然后在栈上构造上述代码  ^0T2AD1iV
 
 ## Embedded Files
-efbffb83894057343fb882506e43a242d65043d7: [[Pasted Image 20230207143013_778.png]]
-4c909bc40269cecb2045e7a53d9e430cfd43ab97: [[Pasted Image 20230207143116_809.png]]
-0ab8c93e3eb3ad970cd8ac6052090b9bf8b21a3e: [[Pasted Image 20230207134810_252.png]]
-580b99fc879ae4eaa9e79aad0e42f8da2f2dec35: [[Pasted Image 20230207143941_134.png]]
+efbffb83894057343fb882506e43a242d65043d7: [[_assets/images/Pasted Image 20230207143013_778.png]]
+4c909bc40269cecb2045e7a53d9e430cfd43ab97: [[_assets/images/Pasted Image 20230207143116_809.png]]
+0ab8c93e3eb3ad970cd8ac6052090b9bf8b21a3e: [[_assets/images/Pasted Image 20230207134810_252.png]]
+580b99fc879ae4eaa9e79aad0e42f8da2f2dec35: [[_assets/images/Pasted Image 20230207143941_134.png]]
 
 %%
 ## Drawing

@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788943390617-mrnsxmzki",
+  "providerId": "pi",
+  "title": "我现在06-LLM 的文件夹和文件组织的非常乱，你觉得呢",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788943390626,
+  "lastActivityAt": 1788943917594,
+  "sessionId": "01a08555-d94a-716a-aa9f-8885efb5d052",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-09T08-43-11-061Z_01a08555-d94a-716a-aa9f-8885efb5d052.jsonl",
+    "sessionId": "01a08555-d94a-716a-aa9f-8885efb5d052"
+  },
+  "linkedContentPath": "06-LLM/人工智能.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 118265,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 118265,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 12
+  }
+}

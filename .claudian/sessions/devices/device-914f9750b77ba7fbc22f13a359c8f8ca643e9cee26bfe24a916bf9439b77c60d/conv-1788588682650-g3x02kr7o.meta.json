@@ -1,0 +1,18 @@
+{
+  "id": "conv-1788588682650-g3x02kr7o",
+  "providerId": "codex",
+  "title": "我觉得目前这篇笔记写的很乱，还有很多防御性的说明，我的意思是单独这篇介绍attention机制，解决...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788588682659,
+  "lastActivityAt": 1788588852528,
+  "sessionId": "01a07031-6ede-73e1-9d7d-15c6e6f7e3fa",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a07031-6ede-73e1-9d7d-15c6e6f7e3fa",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T14-11-23-01a07031-6ede-73e1-9d7d-15c6e6f7e3fa.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/05-Attention.md"
+}

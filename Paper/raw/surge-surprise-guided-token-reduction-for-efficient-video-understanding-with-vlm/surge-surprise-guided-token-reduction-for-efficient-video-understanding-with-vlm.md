@@ -12,7 +12,7 @@ year: 2026
 paper_url: ""
 source_pdf: /Users/yifan/Downloads/593_SURGE_Surprise_Guided_Toke.pdf
 pdf_link: "[[assets/paper_593_SURGE_Surprise_Guided_Toke_fa9d91a7.pdf]]"
-cover: "[[assets/pipeline_593_SURGE_Surprise_Guided_Toke_fa9d91a7.png]]"
+cover: "[[_assets/images/pipeline_593_SURGE_Surprise_Guided_Toke_fa9d91a7.png]]"
 updated: 2026-05-26
 tags:
   - paper/pdf
@@ -68,7 +68,7 @@ code: https://github.com/BarryTang22/SURGE.git
 
 ## Pipeline Figure
 
-![[assets/pipeline_593_SURGE_Surprise_Guided_Toke_fa9d91a7.png]]
+![[_assets/images/pipeline_593_SURGE_Surprise_Guided_Toke_fa9d91a7.png]]
 
 Caption: SURGE 先以 constant-velocity predictor 生成 token surprise score，经 surprise curve 检测 key events；可选的 CLIP query-aware focusing 选择相关事件，只将高 surprise token 送入 multimodal LLM。
 

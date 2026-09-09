@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788504417357-fs3dagrm2",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788504417395-24d3rna",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788504417353-cf6g7ne",
+      "timestamp": 1788504417353,
+      "rawDisplayText": "审阅一下这个笔记",
+      "canonicalText": "审阅一下这个笔记",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/CS224n/02-词向量.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "615013db60cd1a25d1c96f49f4a31c239e5a5a31806939a67c7e94562aed6027",
+      "providerUserMessageId": "01a06b2b-b766-7363-b604-bf5a311e80b6",
+      "providerAssistantMessageId": "msg_0cdf47af814febc8016a9a6b01f2e487d0afd736da3234457c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788504937311-suv0q0z",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788504937294-tviepro",
+      "timestamp": 1788504937294,
+      "rawDisplayText": "1. ELMo 与 Transformer 的描述略不准确\n“RNN/ELMo：表示依赖序列历史”把两者混在了一起：ELMo 使用双向语言模型，不只依赖左侧历史；Transformer 是否能看见双向上下文则取决于 attention mask。\n\n建议改成：\n\n\\text{RNN LM：表示依赖前缀历史}\n\\rightarrow\n\\text{ELMo：表示依赖双向序列上下文}\n\\rightarrow\n\\text{Transformer：通过注意力聚合当前可见上下文}\nlatex\n2. status: complete 与复选框状态冲突\nFrontmatter 标记为 complete，但学习目标及学习记录全部未完成。建议区分：\n\ncontent_status: complete\nlearning_status: not-started\nyaml\n或者保留一个 status，但明确它表示“笔记内容完成”而非“学习完成”。\n\n3. 两套向量的导出方式应标明“课件口径”\n课件明确建议训练结束后平均 input/output embeddings；笔记则将“只取 input”写成最常见用法。二者都能成立，但最好注明来源差异：\n\n本课课件建议平均两套向量；原始实现和许多工具库通常主要暴露 input embedding。实际选择应由内在或下游评测决定。\n\n4. 3/4 次幂的措辞可以更精确\n“让中低频词获得更多负样本机会”容易被理解为中低频词会比高频词更常被抽到。建议改为：\n\n相比原始 unigram 分布， 次幂提高了中低频词的相对采样占比；高频词通常仍具有更大的绝对采样概率。\n\n可选增强\n若强调完整覆盖课件，可补一小段 WordNet/人工语义资源的局限，使“离散符号 → 分布语义”的动机更完整。\n可增加一段 SGNS 隐式分解 shifted-PMI 矩阵，将 Word2Vec 与 count-based 方法进一步统一。\n\n修改下吧，除了最后一个",
+      "canonicalText": "1. ELMo 与 Transformer 的描述略不准确\n“RNN/ELMo：表示依赖序列历史”把两者混在了一起：ELMo 使用双向语言模型，不只依赖左侧历史；Transformer 是否能看见双向上下文则取决于 attention mask。\n\n建议改成：\n\n\\text{RNN LM：表示依赖前缀历史}\n\\rightarrow\n\\text{ELMo：表示依赖双向序列上下文}\n\\rightarrow\n\\text{Transformer：通过注意力聚合当前可见上下文}\nlatex\n2. status: complete 与复选框状态冲突\nFrontmatter 标记为 complete，但学习目标及学习记录全部未完成。建议区分：\n\ncontent_status: complete\nlearning_status: not-started\nyaml\n或者保留一个 status，但明确它表示“笔记内容完成”而非“学习完成”。\n\n3. 两套向量的导出方式应标明“课件口径”\n课件明确建议训练结束后平均 input/output embeddings；笔记则将“只取 input”写成最常见用法。二者都能成立，但最好注明来源差异：\n\n本课课件建议平均两套向量；原始实现和许多工具库通常主要暴露 input embedding。实际选择应由内在或下游评测决定。\n\n4. 3/4 次幂的措辞可以更精确\n“让中低频词获得更多负样本机会”容易被理解为中低频词会比高频词更常被抽到。建议改为：\n\n相比原始 unigram 分布， 次幂提高了中低频词的相对采样占比；高频词通常仍具有更大的绝对采样概率。\n\n可选增强\n若强调完整覆盖课件，可补一小段 WordNet/人工语义资源的局限，使“离散符号 → 分布语义”的动机更完整。\n可增加一段 SGNS 隐式分解 shifted-PMI 矩阵，将 Word2Vec 与 count-based 方法进一步统一。\n\n修改下吧，除了最后一个",
+      "images": [],
+      "contentDigest": "985f9e642a425cbe0a9cee660061f11d2f1e45e7f93a54e339c97d1049411c40",
+      "providerUserMessageId": "01a06b33-93a2-7961-b16b-94cc5dd41b9a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788504946029-r2qrkc9",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788504946019-6wcnpi0",
+      "timestamp": 1788504946019,
+      "rawDisplayText": "1. ELMo 与 Transformer 的描述略不准确\n“RNN/ELMo：表示依赖序列历史”把两者混在了一起：ELMo 使用双向语言模型，不只依赖左侧历史；Transformer 是否能看见双向上下文则取决于 attention mask。\n\n建议改成：\n\n\\text{RNN LM：表示依赖前缀历史}\n\\rightarrow\n\\text{ELMo：表示依赖双向序列上下文}\n\\rightarrow\n\\text{Transformer：通过注意力聚合当前可见上下文}\nlatex\n2. status: complete 与复选框状态冲突\nFrontmatter 标记为 complete，但学习目标及学习记录全部未完成。建议区分：\n\ncontent_status: complete\nlearning_status: not-started\nyaml\n或者保留一个 status，但明确它表示“笔记内容完成”而非“学习完成”。\n\n3. 两套向量的导出方式应标明“课件口径”\n课件明确建议训练结束后平均 input/output embeddings；笔记则将“只取 input”写成最常见用法。二者都能成立，但最好注明来源差异：\n\n本课课件建议平均两套向量；原始实现和许多工具库通常主要暴露 input embedding。实际选择应由内在或下游评测决定。\n\n4. 3/4 次幂的措辞可以更精确\n“让中低频词获得更多负样本机会”容易被理解为中低频词会比高频词更常被抽到。建议改为：\n\n相比原始 unigram 分布， 次幂提高了中低频词的相对采样占比；高频词通常仍具有更大的绝对采样概率。\n\n可选增强\n若强调完整覆盖课件，可补一小段 WordNet/人工语义资源的局限，使“离散符号 → 分布语义”的动机更完整。\n可增加一段 SGNS 隐式分解 shifted-PMI 矩阵，将 Word2Vec 与 count-based 方法进一步统一。\n\n修改下吧",
+      "canonicalText": "1. ELMo 与 Transformer 的描述略不准确\n“RNN/ELMo：表示依赖序列历史”把两者混在了一起：ELMo 使用双向语言模型，不只依赖左侧历史；Transformer 是否能看见双向上下文则取决于 attention mask。\n\n建议改成：\n\n\\text{RNN LM：表示依赖前缀历史}\n\\rightarrow\n\\text{ELMo：表示依赖双向序列上下文}\n\\rightarrow\n\\text{Transformer：通过注意力聚合当前可见上下文}\nlatex\n2. status: complete 与复选框状态冲突\nFrontmatter 标记为 complete，但学习目标及学习记录全部未完成。建议区分：\n\ncontent_status: complete\nlearning_status: not-started\nyaml\n或者保留一个 status，但明确它表示“笔记内容完成”而非“学习完成”。\n\n3. 两套向量的导出方式应标明“课件口径”\n课件明确建议训练结束后平均 input/output embeddings；笔记则将“只取 input”写成最常见用法。二者都能成立，但最好注明来源差异：\n\n本课课件建议平均两套向量；原始实现和许多工具库通常主要暴露 input embedding。实际选择应由内在或下游评测决定。\n\n4. 3/4 次幂的措辞可以更精确\n“让中低频词获得更多负样本机会”容易被理解为中低频词会比高频词更常被抽到。建议改为：\n\n相比原始 unigram 分布， 次幂提高了中低频词的相对采样占比；高频词通常仍具有更大的绝对采样概率。\n\n可选增强\n若强调完整覆盖课件，可补一小段 WordNet/人工语义资源的局限，使“离散符号 → 分布语义”的动机更完整。\n可增加一段 SGNS 隐式分解 shifted-PMI 矩阵，将 Word2Vec 与 count-based 方法进一步统一。\n\n修改下吧",
+      "images": [],
+      "contentDigest": "cb2a384b03a0ab9155a912b75f762a37c32eaca8d9abc2607120566211875f6e",
+      "providerUserMessageId": "01a06b33-b62d-7641-b9d4-9c0cc5426252",
+      "providerAssistantMessageId": "msg_0cdf47af814febc8016a9a6cac6e8887d0843b1ca8af44c581"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788505465570-a08npnh",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788505465563-j7lsrp6",
+      "timestamp": 1788505465563,
+      "rawDisplayText": "Paper/架构学习/CS224n/Word2Vec表征原理 是否可以删除了",
+      "canonicalText": "Paper/架构学习/CS224n/Word2Vec表征原理 是否可以删除了",
+      "images": [],
+      "contentDigest": "8f39fff8a6a90c32f3cd677657052b452f2dc6afa41382f76764986569ab97f5",
+      "providerUserMessageId": "01a06b3b-a2f0-7e41-b76e-058c9b408cc1",
+      "providerAssistantMessageId": "msg_0cdf47af814febc8016a9a6e36586887d0a894447ec58414a5"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788505760179-zm4zmfc",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788505760170-nxha040",
+      "timestamp": 1788505760170,
+      "rawDisplayText": "我恢复了一下，你看看是完成下面的版本吗？已修改 CS224N 02：词向量：\n\n拆分 content_status 与 learning_status\n修正 RNN LM、ELMo、Transformer 的上下文描述\n补充 WordNet/人工语义资源的局限\n区分课件与实践中的词向量导出方式\n精确化  负采样分布的表述\n增加 SGNS 与 shifted PMI 的联系，并说明  平滑和低维近似的限制；该关系已依据 ACL Anthology 核对\n已验证 YAML、数学公式分隔符及全部 17 个内部链接，未发现异常。",
+      "canonicalText": "我恢复了一下，你看看是完成下面的版本吗？已修改 CS224N 02：词向量：\n\n拆分 content_status 与 learning_status\n修正 RNN LM、ELMo、Transformer 的上下文描述\n补充 WordNet/人工语义资源的局限\n区分课件与实践中的词向量导出方式\n精确化  负采样分布的表述\n增加 SGNS 与 shifted PMI 的联系，并说明  平滑和低维近似的限制；该关系已依据 ACL Anthology 核对\n已验证 YAML、数学公式分隔符及全部 17 个内部链接，未发现异常。",
+      "images": [],
+      "contentDigest": "e671bc78d67f8ab4006dcca29b666d535c1e719c10dd4a4f234721e1fe2facd4",
+      "providerUserMessageId": "01a06b40-21c1-7cc2-bff9-f2542ad07d55",
+      "providerAssistantMessageId": "msg_0cdf47af814febc8016a9a6ede766487d0a2fa966990b1a44e"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788505844254-nwjcsf9",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1788505844248-1ji5bcu",
+      "timestamp": 1788505844248,
+      "rawDisplayText": "帮我恢复下SGNS 与 shifted PMI 的联系”整节缺失",
+      "canonicalText": "帮我恢复下SGNS 与 shifted PMI 的联系”整节缺失",
+      "images": [],
+      "contentDigest": "ffd20aab1ad3e599f779af2b64ef19544ca0df410ebf1b8c82eadd5cfa8842a1",
+      "providerUserMessageId": "01a06b41-6a22-73c3-8a15-8628e692f93a",
+      "providerAssistantMessageId": "msg_0cdf47af814febc8016a9a6f39841887d0a01ae0c2276dbac6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788555111072-mqjn4df",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1788555111063-h228rcr",
+      "timestamp": 1788555111063,
+      "rawDisplayText": "这个表格资料和本地文件变成一列，不用加上pdf 页面数量和大小",
+      "canonicalText": "这个表格资料和本地文件变成一列，不用加上pdf 页面数量和大小",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/CS224n/02-词向量.md",
+          "mode": "selection",
+          "selectedText": "官方资料与本地文件\n类型\t资料\t本地文件与状态\t官网 / 原始页\nPPT / 课件\tslides\tslides\nPDF · 44 页 · 2.7 MB\t原始链接\n课程讲义\tnotes 1\tnotes 1\nPDF · 13 页 · 0.2 MB\t原始链接\n课程讲义\tnotes 2\tnotes 2\nPDF · 13 页 · 0.5 MB\t原始链接\n论文 / 阅读\tEfficient Estimation of Word Representations in Vector Space\tEfficient Estimation of Word Representations in Vector Space\nPDF · 12 页 · 0.2 MB\t原始链接\n论文 / 阅读\tDistributed Representations of Words and Phrases and their Compositionality\tDistributed Representations of Words and Phrases and their Compositionality\nPDF · 9 页 · 0.1 MB\t原始链接\n论文 / 阅读\tGloVe: Global Vectors for Word Representation\tGloVe: Global Vectors for Word Representation\nPDF · 12 页 · 2.5 MB\t原始链接\n论文 / 阅读\tImproving Distributional Similarity with Lessons Learned from Word Embeddings\tImproving Distributional Similarity with Lessons Learned from Word Embeddings\nPDF · 16 页 · 0.3 MB\t原始链接\n论文 / 阅读\tEvaluation methods for unsupervised word embeddings\tEvaluation methods for unsupervised word embeddings\nPDF · 10 页 · 0.3 MB\t原始链接\n论文 / 阅读\tA Latent Variable Model Approach to PMI-based Word Embeddings\tA Latent Variable Model Approach to PMI-based Word Embeddings\nPDF · 16 页 · 1.4 MB\t原始链接\n论文 / 阅读\tLinear Algebraic Structure of Word Senses, with Applications to Polysemy\tLinear Algebraic Structure of Word Senses, with Applications to Polysemy\nPDF · 14 页 · 0.8 MB\t原始链接\n论文 / 阅读\tOn the Dimensionality of Word Embedding\tOn the Dimensionality of Word Embedding\nPDF · 12 页 · 0.8 MB\t原始链接\n",
+          "lineCount": 25
+        }
+      },
+      "images": [],
+      "contentDigest": "615b8666216a069f08b7b47a1032451c4f2fd73cd892e23f75e9f0ec512b3bd9",
+      "providerUserMessageId": "01a06e31-2af2-7991-8d30-b24877ca8fb2",
+      "providerAssistantMessageId": "msg_0cdf47af814febc8016a9b2fac880487d0a4043155ae140555"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788555220997-69wopyj",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1788555220992-knnpg5p",
+      "timestamp": 1788555220992,
+      "rawDisplayText": "CS224n下其他md文件的表格也要这样修改",
+      "canonicalText": "CS224n下其他md文件的表格也要这样修改",
+      "images": [],
+      "contentDigest": "6f1da2e8622cb0ad306734520702ddfa43cc7230558778888af82a16dab163dc",
+      "providerUserMessageId": "01a06e32-d82d-7180-beb1-f46196a2253c",
+      "providerAssistantMessageId": "msg_0cdf47af814febc8016a9b3083aa6c87d08279a109741fcff8"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788555473238-3nb9ge3",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1788555473227-f1l9gk8",
+      "timestamp": 1788555473227,
+      "rawDisplayText": "你修改下这个文件的属性，我想变成单独的文件，而不是cs224n的一个课程笔记，后面我还要写分词，attention，transformer等等的笔记",
+      "canonicalText": "你修改下这个文件的属性，我想变成单独的文件，而不是cs224n的一个课程笔记，后面我还要写分词，attention，transformer等等的笔记",
+      "images": [],
+      "contentDigest": "7c0f5f7fa37048d93dadfdc1f79b7d2c76b894cee4e72e7e7951f9092b2755a1",
+      "providerUserMessageId": "01a06e36-b165-7d12-af08-05455184fdfc",
+      "providerAssistantMessageId": "msg_0cdf47af814febc8016a9b32d104e887d0bf78287753721f0f"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788584201585-7tq8j64",
+      "userTurnOrdinal": 10,
+      "state": "staged",
+      "localMessageId": "msg-1788584201511-3isjnzs",
+      "timestamp": 1788584201511,
+      "rawDisplayText": "这个表格有错误，修复下",
+      "canonicalText": "这个表格有错误，修复下",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/基础/04-Seq2Seq.md",
+          "mode": "selection",
+          "selectedText": "\n| 张量 | Shape | 来源 |\n| --- | --- | --- |\n| `source_ids` | $[B,T_x]$ | padding 后的源 token IDs |\n| `source_mask` | $[B,T_x]$ | 有效源位置 |\n| `source_emb` | $[B,T_x,d_x]$ | 源 embedding lookup |\n| `encoder_outputs` | $[B,T_x,d_h]$ | 每个源位置的 state |\n| `source_summary` | $[B,d_h]$ | 每条样本最后有效 state |\n| `decoder_init` | $[B,d_d]$ | bridge 输出 |\n| `decoder_input_ids` | $[B,T_y]$ | shift-right 目标输入 |\n| `decoder_states` | $[B,T_y,d_d]$ | 每个目标位置的 state |\n| `logits` | $[B,T_y,|V_y|]$ | 目标词表分数 |\n| `target_mask` | $[B,T_y]$ | 有效 target 位置 |",
+          "lineCount": 13,
+          "startLine": 822
+        }
+      },
+      "images": [],
+      "contentDigest": "c59e70fc3c34b0e38672c4e0d29c258e4a6c9357833a5c581c484890d736c90f"
+    }
+  ]
+}

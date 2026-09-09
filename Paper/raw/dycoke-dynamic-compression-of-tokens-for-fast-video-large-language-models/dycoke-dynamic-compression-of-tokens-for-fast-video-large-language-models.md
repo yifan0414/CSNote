@@ -10,7 +10,7 @@ conference: CVPR 2025
 year: 2024
 arxiv_url: https://arxiv.org/abs/2411.15024
 pdf_link: "[[assets/paper_2411.15024.pdf]]"
-cover: "[[assets/pipeline_2411.15024.png]]"
+cover: "[[_assets/images/pipeline_2411.15024.png]]"
 updated: 2026-05-26
 tags:
   - paper/arxiv
@@ -78,7 +78,7 @@ DyCoke 的处理流程如下：
 
 ## Pipeline Figure
 
-![[assets/pipeline_2411.15024.png]]
+![[_assets/images/pipeline_2411.15024.png]]
 
 Caption: **Detailed overview of our DyCoke method.** DyCoke 通过两阶段压缩 visual tokens：左侧为 prefilling 阶段的 visual token temporal merging (TTM)，右侧为 decoding 阶段的 KV cache dynamic pruning；后者利用 DP cache 动态交换当前重要和不重要的 tokens。
 

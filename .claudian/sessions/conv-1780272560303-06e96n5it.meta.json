@@ -6,7 +6,7 @@
   "createdAt": 1780272560303,
   "lastActivityAt": 1780709157182,
   "sessionId": null,
-  "selectedModel": "gpt-5.5",
+  "selectedModel": "gpt-5.6-sol",
   "linkedContentPath": "Paper/raw/token-reduction-via-local-and-global-contexts-optimization-for-efficient-video-large/token-reduction 第一性原理.md",
   "usage": {
     "inputTokens": 26651,

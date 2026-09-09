@@ -5,14 +5,7 @@
   "titleGenerationStatus": "failed",
   "createdAt": 1787171247777,
   "lastActivityAt": 1787171647176,
-  "sessionId": "01a01bb5-1748-7383-832a-3786042404a8",
+  "sessionId": null,
   "selectedModel": "gpt-5.6-sol",
-  "providerState": {
-    "threadId": "01a01bb5-1748-7383-832a-3786042404a8",
-    "nativeConversationContextEstablished": true,
-    "sessionFilePath": "/Users/yifan/.codex-trans/sessions/2026/08/20/rollout-2026-08-20T04-27-27-01a01bb5-1748-7383-832a-3786042404a8.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex-trans/sessions",
-    "workspaceDependencyToolVersion": 1
-  },
-  "linkedContentPath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md"
+  "linkedContentPath": "06-LLM/架构学习/基础/06-transformer.md"
 }

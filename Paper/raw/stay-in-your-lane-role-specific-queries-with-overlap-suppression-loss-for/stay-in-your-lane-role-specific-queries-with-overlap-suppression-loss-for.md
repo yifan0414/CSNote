@@ -10,7 +10,7 @@ year: 2026
 paper_url: https://arxiv.org/abs/2603.11439v1
 source_pdf: /Users/yifan/Downloads/Stay in your Lane Role Specific Queries with Overlap Suppression Loss for Dense Video Captioning.pdf
 pdf_link: "[[assets/paper_arxiv_2603_11439v1.pdf]]"
-cover: "[[assets/pipeline_arxiv_2603_11439v1.png]]"
+cover: "[[_assets/images/pipeline_arxiv_2603_11439v1.png]]"
 updated: 2026-04-27
 tags:
   - paper/arxiv
@@ -104,7 +104,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_arxiv_2603_11439v1.png]]
+![[_assets/images/pipeline_arxiv_2603_11439v1.png]]
 
 Caption: Figure 2. An overview of our proposed ROS-DVC framework. The input video is first fed into the pretrained encoder, and a transformer encoder processes it to generate frame-level features. In the decoding stage, two types of queries are independently initialized and retrieve their role-specific information from the frame-level features. The output localization queries are trained with the Overlap Suppression Loss to minimize mutual overlap and are matched with ground truths via the Hungarian algorithm. Subsequently, the CTCA loss is employed to semantically align the caption queries with their corresponding localization queries. Finally, these processed queries are fed into respective heads to obtain the predictions for event-number, localize timestamps, event captions, and event-level concepts.
 

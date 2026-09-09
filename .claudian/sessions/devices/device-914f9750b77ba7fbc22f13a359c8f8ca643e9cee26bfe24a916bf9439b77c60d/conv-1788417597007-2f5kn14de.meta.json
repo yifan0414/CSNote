@@ -1,0 +1,21 @@
+{
+  "id": "conv-1788417597007-2f5kn14de",
+  "providerId": "codex",
+  "title": "请你根据这个文档给我生成一个ipynb的代码配套演示文件",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788417597012,
+  "lastActivityAt": 1788417941541,
+  "sessionId": null,
+  "selectedModel": "gpt-5.6-sol",
+  "linkedContentPath": "06-LLM/架构学习/基础/06-transformer.md",
+  "usage": {
+    "inputTokens": 87964,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 81370,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 87964,
+    "percentage": 34,
+    "model": "gpt-5.6-sol"
+  }
+}

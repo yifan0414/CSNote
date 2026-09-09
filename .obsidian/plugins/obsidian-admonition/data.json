@@ -65,19 +65,6 @@
       "noTitle": false,
       "copy": false
     },
-    "chatgpt": {
-      "type": "chatgpt",
-      "color": "rgb(149, 150, 150)",
-      "icon": {
-        "name": "dependabot",
-        "type": "octicons"
-      },
-      "command": false,
-      "title": "ChatGPT",
-      "injectColor": true,
-      "noTitle": false,
-      "copy": false
-    },
     "demo": {
       "type": "demo",
       "color": "rgb(151, 145, 145)",
@@ -130,19 +117,6 @@
       "noTitle": false,
       "copy": false
     },
-    "task": {
-      "type": "task",
-      "color": "rgb(117, 89, 217)",
-      "icon": {
-        "name": "tasks",
-        "type": "font-awesome"
-      },
-      "command": false,
-      "title": "task",
-      "injectColor": true,
-      "noTitle": false,
-      "copy": false
-    },
     "math": {
       "type": "math",
       "color": "rgb(14, 123, 160)",
@@ -169,7 +143,9 @@
   "icons": [
     "octicons",
     "rpg",
-    "fas"
+    "fas",
+    "fab",
+    "far"
   ],
   "rpgDownloadedOnce": false,
   "useSnippet": false,

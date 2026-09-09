@@ -87,7 +87,7 @@ static inline void parse_args(int argc, char *argv[]) {
 
 NEMU 是通过 Makefile 进行构建的，所以所有的命令都在 Makefile 中。
 
-![[attachments/96f1311a9c7634d24ed509f1b544e8ee_MD5.png]]
+![[_assets/images/96f1311a9c7634d24ed509f1b544e8ee_MD5.png]]
 
 我们可以通过直接查看 Makefile 源文件中的代码看到调用了那几个参数，也可以通过使用 `make run -nB` 直接在终端输出执行命令（更准确）
 ![[NEMU-Makefile#^tdabqo]]
@@ -106,7 +106,7 @@ parse_args 中比较重要的是 `option` 结构体和 `getopt_long` 函数。�
 
 ## 1.4 错误结果展示
 
-![[attachments/2d8e61ff9314ba1317a1faf0b425fe88_MD5.png]]
+![[_assets/images/2d8e61ff9314ba1317a1faf0b425fe88_MD5.png]]
 
 对应 Default 分支
 
@@ -167,7 +167,7 @@ void init_isa() {
 
 - [x] 这个函数是用来加载客户端程序，目前还没用到，等 PA2 再说 #todo ✅ 2023-06-20
 
-![[attachments/c004df3c60dfc00d33023172fa599aaa_MD5.png]]
+![[_assets/images/c004df3c60dfc00d33023172fa599aaa_MD5.png]]
 
 ```c
 static inline long load_img() {

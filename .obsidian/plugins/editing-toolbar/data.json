@@ -1,5 +1,5 @@
 {
-  "lastVersion": "4.1.1",
+  "lastVersion": "4.1.3",
   "aestheticStyle": "custom",
   "positionStyle": "top",
   "menuCommands": [
@@ -352,7 +352,7 @@
   "cMenuBottomValue": 4.25,
   "cMenuNumRows": 12,
   "cMenuWidth": 554,
-  "cMenuFontColor": "#c00000",
+  "cMenuFontColor": "#205867",
   "cMenuBackgroundColor": "#d2cbff",
   "autohide": false,
   "Iscentered": false,

@@ -12,7 +12,7 @@ year: 2026
 paper_url: ""
 source_pdf: /Users/yifan/Downloads/16552_Threading_Keyframe_with_.pdf
 pdf_link: "[[assets/paper_16552_threading_keyframe_with_fe6fed5c.pdf]]"
-cover: "[[assets/pipeline_16552_threading_keyframe_with_fe6fed5c.png]]"
+cover: "[[_assets/images/pipeline_16552_threading_keyframe_with_fe6fed5c.png]]"
 updated: 2026-05-26
 tags:
   - paper/pdf
@@ -87,7 +87,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_16552_threading_keyframe_with_fe6fed5c.png]]
+![[_assets/images/pipeline_16552_threading_keyframe_with_fe6fed5c.png]]
 
 Caption: Figure 2，`Nar-KFC` 将由 `KFC` 选出的 keyframes 与 off-the-shelf captioner 产生的 temporally interleaved narratives 串接起来，构造连续的长视频表示供 MLLM 推理。
 

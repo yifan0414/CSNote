@@ -168,7 +168,7 @@ BASE_HYBRID_RATIOS = {
 }
 ```
 
-![[Pasted image 20260514095548.png]]
+![[_assets/images/Pasted image 20260514095548.png]]
 
 所以我现在对 EVID 的一句话理解是：**它不是让 reward 更准，而是承认不同题型对 local peak 和 global coverage 的需求不同，然后按题型重新分采样预算。**
 

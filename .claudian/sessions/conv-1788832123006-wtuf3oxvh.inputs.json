@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788832123006-wtuf3oxvh",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788832123030-aiyp66v",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788832122997-m46a4hs",
+      "timestamp": 1788832122997,
+      "rawDisplayText": "这个文档所有的数字都要使用 $$ 表示，比如前 $1000$ 步梯度",
+      "canonicalText": "这个文档所有的数字都要使用 $$ 表示，比如前 $1000$ 步梯度",
+      "context": {
+        "linkedContent": {
+          "path": "07-AI/01-数学/Adam优化器系统整理.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "51c4183470d8b4fa9303cfe58f2d859d103a7a3d4d9a15389863d015c3a55ee2",
+      "providerUserMessageId": "01a07eb4-093a-7743-9063-981676d0670c",
+      "providerAssistantMessageId": "msg_0c097ee879a95d8b016a9f6a19bb6887d0806b9be7fde6ce5e"
+    }
+  ]
+}

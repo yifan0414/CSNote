@@ -1,4 +1,4 @@
-![[8C097030-CBB7-4401-8318-225B6143FDB1_1_201_a.jpeg]]
+![[_assets/images/8C097030-CBB7-4401-8318-225B6143FDB1_1_201_a.jpeg]]
 
 ```c
 static inline def_EHelper(int) {

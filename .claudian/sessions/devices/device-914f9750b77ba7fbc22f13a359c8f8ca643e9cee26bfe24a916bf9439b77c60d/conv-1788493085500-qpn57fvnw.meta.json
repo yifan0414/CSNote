@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788493085500-qpn57fvnw",
+  "providerId": "codex",
+  "title": "你去把https://web",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788493085510,
+  "lastActivityAt": 1788494051903,
+  "sessionId": "01a06a7e-d0e0-7e30-a32f-297d04b0c635",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06a7e-d0e0-7e30-a32f-297d04b0c635",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/04/rollout-2026-09-04T11-38-11-01a06a7e-d0e0-7e30-a32f-297d04b0c635.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/Video-MLLM/01-transformer.md",
+  "usage": {
+    "inputTokens": 54033,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 53760,
+    "contextWindow": 475000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 54033,
+    "percentage": 11,
+    "model": "gpt-5.6-sol"
+  }
+}

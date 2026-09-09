@@ -9,7 +9,7 @@ conference:
 year: 2024
 arxiv_url: https://arxiv.org/abs/2410.14248
 pdf_link: "[[assets/paper_2410.14248.pdf]]"
-cover: "[[assets/pipeline_2410.14248.png]]"
+cover: "[[_assets/images/pipeline_2410.14248.png]]"
 updated: 2026-04-29
 tags:
   - paper/arxiv
@@ -98,7 +98,7 @@ Pipeline bullets:
 
 ## Pipeline Figure
 
-![[assets/pipeline_2410.14248.png]]
+![[_assets/images/pipeline_2410.14248.png]]
 
 Caption: Decomposition approach in 3 steps: key-component decomposition, rearrangement into pairs, applying probability debiasing to the aggregated data.
 

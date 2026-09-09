@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788939515265-hk226sm7b",
+  "providerId": "pi",
+  "title": "你按照AGENTS",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788939515270,
+  "lastActivityAt": 1788940206619,
+  "sessionId": "01a0851a-b708-703c-a6e6-b710d3b1b7b7",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-09T07-38-35-657Z_01a0851a-b708-703c-a6e6-b710d3b1b7b7.jsonl",
+    "sessionId": "01a0851a-b708-703c-a6e6-b710d3b1b7b7"
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/06-transformer.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 145107,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 145107,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 15
+  }
+}

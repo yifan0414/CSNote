@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788562526560-qlpm9vp34",
+  "providerId": "codex",
+  "title": "目前这篇笔记写的不够清晰，重点不突出。特别重要的地方要用callout",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788562526567,
+  "lastActivityAt": 1788563483948,
+  "sessionId": "01a06ea2-58bd-71d3-afe4-437eb1455ad2",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06ea2-58bd-71d3-afe4-437eb1455ad2",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T06-55-28-01a06ea2-58bd-71d3-afe4-437eb1455ad2.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/04-Seq2Seq.md",
+  "usage": {
+    "inputTokens": 74308,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 73600,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 74308,
+    "percentage": 29,
+    "model": "gpt-5.6-sol"
+  }
+}

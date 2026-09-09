@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788557032005-fuvoj9stu",
+  "providerId": "codex",
+  "title": "对。那我建议你把 **Tokenization 这一节明确限定为“现代神经网络 / LLM 的分词技...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788557032015,
+  "lastActivityAt": 1788557429175,
+  "sessionId": "01a06e4e-7bb6-70c2-80af-67e8b6acf989",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06e4e-7bb6-70c2-80af-67e8b6acf989",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T05-23-52-01a06e4e-7bb6-70c2-80af-67e8b6acf989.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/01-词向量.md",
+  "usage": {
+    "inputTokens": 41096,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 39808,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 41096,
+    "percentage": 16,
+    "model": "gpt-5.6-sol"
+  }
+}

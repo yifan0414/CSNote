@@ -11,7 +11,7 @@ year: 2026
 paper_url: ""
 source_pdf: /Users/yifan/Downloads/6998_A_Training_Free_Framework (3).pdf
 pdf_link: "[[assets/paper_6998_A_Training_Free_Framework_3_dfa959da.pdf]]"
-cover: "[[assets/pipeline_6998_A_Training_Free_Framework_3_dfa959da.png]]"
+cover: "[[_assets/images/pipeline_6998_A_Training_Free_Framework_3_dfa959da.png]]"
 updated: 2026-05-26
 tags:
   - paper/pdf
@@ -88,7 +88,7 @@ question + options -> VTR similarities (VQOS)
 
 ## Pipeline Figure
 
-![[assets/pipeline_6998_A_Training_Free_Framework_3_dfa959da.png]]
+![[_assets/images/pipeline_6998_A_Training_Free_Framework_3_dfa959da.png]]
 
 Caption: Figure 2. Overall Framework. 原始 MLLM 生成 plausible answer options，VTR model 计算 option-conditioned video similarities，随后 `AFS` 与 `DRA` 分别控制采样密度和分辨率，最终交由 MLLM 作答。
 

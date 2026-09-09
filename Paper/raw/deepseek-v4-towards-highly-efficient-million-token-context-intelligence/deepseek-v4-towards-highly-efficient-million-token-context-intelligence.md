@@ -7,7 +7,7 @@ year: 2026
 paper_url: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/resolve/main/DeepSeek_V4.pdf
 source_pdf: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/resolve/main/DeepSeek_V4.pdf
 pdf_link: "[[assets/paper_deepseek-v4-f4cbe4fc.pdf]]"
-cover: "[[assets/pipeline_deepseek-v4-f4cbe4fc.png]]"
+cover: "[[_assets/images/pipeline_deepseek-v4-f4cbe4fc.png]]"
 updated: 2026-04-27
 tags:
   - paper/pdf
@@ -66,7 +66,7 @@ code: https://huggingface.co/collections/deepseek-ai/deepseek-v4
 
 ## Pipeline Figure
 
-![[assets/pipeline_deepseek-v4-f4cbe4fc.png]]
+![[_assets/images/pipeline_deepseek-v4-f4cbe4fc.png]]
 
 Caption: Figure 2 | Overall architecture of DeepSeek-V4 series. We use hybrid CSA (Compressed Sparse Attention) and HCA (Heavily Compressed Attention) for attention layers, DeepSeekMoE for feed-forward layers, and strengthen conventional residual connections with mHC.
 

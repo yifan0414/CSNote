@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788585249496-h7vrbmf4y",
+  "providerId": "codex",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788585249502,
+  "lastActivityAt": 1788585366679,
+  "sessionId": "01a06ffd-0c50-7561-a80d-898e449194de",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a06ffd-0c50-7561-a80d-898e449194de",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T13-14-09-01a06ffd-0c50-7561-a80d-898e449194de.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/04-Seq2Seq.md",
+  "usage": {
+    "inputTokens": 14514,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 14514,
+    "percentage": 2,
+    "model": "gpt-6-astra"
+  }
+}

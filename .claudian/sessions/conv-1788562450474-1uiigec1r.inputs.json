@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788562450474-1uiigec1r",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788562450523-6hnsfma",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788562450470-qz1jrt9",
+      "timestamp": 1788562450470,
+      "rawDisplayText": "目前这篇笔记写的不够清晰，重点不突出，而且公式符号是不是没有对齐，比如Encoder之后到底是z还是h_t",
+      "canonicalText": "目前这篇笔记写的不够清晰，重点不突出，而且公式符号是不是没有对齐，比如Encoder之后到底是z还是h_t",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/04-Seq2Seq.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "2f2b0dc2bb64871366c24e81e098a72d6b3a503a3579515cc8e1babe51239892"
+    }
+  ]
+}

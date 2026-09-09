@@ -31,4 +31,4 @@
 - [附录：有没有一个简单的人工智能算法](Appendix.md)
 - [致谢、常见问题](Acknowledgements-Frequently-asked-questions.md)
 
-![introduction](introduction.png)
+![introduction](../../_assets/images/introduction.png)

@@ -104,23 +104,23 @@ a8 ^yS0hbI36
 4 3 2 1 6 5 ^xMRYKRYc
 
 ## Embedded Files
-55795143555fda98811f46a38281593a43d97b65: [[Pasted Image 20221230203604_813.png]]
+55795143555fda98811f46a38281593a43d97b65: [[_assets/images/Pasted Image 20221230203604_813.png]]
 
-4c5ded5cebe91842f5f1be9423734e38c0c08486: [[Pasted Image 20221230203719_819.png]]
+4c5ded5cebe91842f5f1be9423734e38c0c08486: [[_assets/images/Pasted Image 20221230203719_819.png]]
 
-2f91f18c422b8daed6cb9c5ea70055f8e58ed466: [[Pasted Image 20221230203945_854.png]]
+2f91f18c422b8daed6cb9c5ea70055f8e58ed466: [[_assets/images/Pasted Image 20221230203945_854.png]]
 
-c1e6d8cdfb7ec37914f3edd56940acae0af2d770: [[Pasted Image 20221230204145_883.png]]
+c1e6d8cdfb7ec37914f3edd56940acae0af2d770: [[_assets/images/Pasted Image 20221230204145_883.png]]
 
-16282da5a4e562f7cb51b9da3a5f005deeeba1a2: [[Pasted Image 20221230204522_999.png]]
+16282da5a4e562f7cb51b9da3a5f005deeeba1a2: [[_assets/images/Pasted Image 20221230204522_999.png]]
 
-55f68493322135bd2cfe56f043a119377661746a: [[Pasted Image 20221230204738_006.png]]
+55f68493322135bd2cfe56f043a119377661746a: [[_assets/images/Pasted Image 20221230204738_006.png]]
 
-84db0ea6cbe20a643266f5c26e368f282839891f: [[Pasted Image 20221230210253_030.png]]
+84db0ea6cbe20a643266f5c26e368f282839891f: [[_assets/images/Pasted Image 20221230210253_030.png]]
 
-e39cafb2b08b67ab2b09e89ba18a291b1fb59f06: [[Pasted Image 20221230212400_297.png]]
+e39cafb2b08b67ab2b09e89ba18a291b1fb59f06: [[_assets/images/Pasted Image 20221230212400_297.png]]
 
-b7f7163fcd53b5b9d8dba6828ae79f2ce3748445: [[Pasted Image 20221230213400_356.png]]
+b7f7163fcd53b5b9d8dba6828ae79f2ce3748445: [[_assets/images/Pasted Image 20221230213400_356.png]]
 
 %%
 ## Drawing

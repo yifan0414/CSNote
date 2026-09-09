@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788909621422-nv8lfbt7q",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788909621455-09lu9b5",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788909621415-m98ofsc",
+      "timestamp": 1788909621415,
+      "rawDisplayText": "@07-AI/01-数学/线性函数与多层感知机的数学前提.md 我觉得你这篇文章写的还是不够好，不明白需要仿射，要一步一步的引出多层感知机",
+      "canonicalText": "@07-AI/01-数学/线性函数与多层感知机的数学前提.md 我觉得你这篇文章写的还是不够好，不明白需要仿射，要一步一步的引出多层感知机",
+      "context": {
+        "linkedContent": {
+          "path": "07-AI/01-数学/线性函数与多层感知机的数学前提.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "242c4f1ec345d047b1e782e8bd0b248a9755b6ecfce46dcbb1faaf3c1789f1da",
+      "providerUserMessageId": "01a08352-d162-7753-8f6c-a80484f018d6",
+      "providerAssistantMessageId": "msg_0f6497876faff9b9016aa09990b6a087d0aa95932b94547b59"
+    }
+  ]
+}

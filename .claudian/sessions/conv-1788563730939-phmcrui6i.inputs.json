@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788563730939-phmcrui6i",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788563730971-utg8avr",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788563730936-sm0xtpq",
+      "timestamp": 1788563730936,
+      "rawDisplayText": "目前这篇笔记写的不够清晰，重点不突出。特别重要的地方要用callout。",
+      "canonicalText": "目前这篇笔记写的不够清晰，重点不突出。特别重要的地方要用callout。",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/03-LSTM与GRU.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "273e41f61af6198ed7301b8c4aa33945c1f443c9c76bb27808365ed80d948c22",
+      "providerUserMessageId": "01a06eb4-f1c2-7fb2-9c83-adb897d8542c"
+    }
+  ]
+}

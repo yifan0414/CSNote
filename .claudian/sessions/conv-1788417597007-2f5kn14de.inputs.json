@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788417597007-2f5kn14de",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788417597096-9xnha9o",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788417597003-pmlo1sb",
+      "timestamp": 1788417597003,
+      "rawDisplayText": "请你根据这个文档给我生成一个ipynb的代码配套演示文件",
+      "canonicalText": "请你根据这个文档给我生成一个ipynb的代码配套演示文件",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "733f2f44e259475232a9eade2a3def25c6c72ed7bf7001174c5c0762312e6ed9",
+      "providerUserMessageId": "01a065fe-e1a1-7370-94d0-849bafcad9df",
+      "providerAssistantMessageId": "msg_0ceee569d05f1540016a9917907a6087d1a73cc49a5b7e54d8"
+    }
+  ]
+}

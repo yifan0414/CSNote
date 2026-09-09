@@ -5,7 +5,7 @@ conference: ""
 year: 2024
 arxiv_url: "https://arxiv.org/abs/2407.21787"
 pdf_link: "[[assets/paper_2407.21787.pdf]]"
-cover: "[[assets/pipeline_2407.21787.png]]"
+cover: "[[_assets/images/pipeline_2407.21787.png]]"
 updated: 2026-09-03
 tags: ["paper/arxiv", "efficient-inference", "reasoning"]
 status: "unread"
@@ -82,7 +82,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2407.21787.png]]
+![[_assets/images/pipeline_2407.21787.png]]
 
 论文的核心流程：先通过独立采样提高“生成至少一个正确解”的机会，再依赖 verifier 解决“从候选中识别正确解”的问题。两阶段分别对应 coverage 与 precision，任一阶段不足都会限制最终收益。
 
@@ -109,7 +109,7 @@ $$
 
 论文按当时 API 价格、固定 Moatless Tools 框架所做的 SWE-bench Lite case study 如下；这些数字是论文实验条件下的历史成本，不能直接当作当前报价：
 
-![[assets/experiment_table_2407.21787_t1.png]]
+![[_assets/images/experiment_table_2407.21787_t1.png]]
 
 ### Verification bottleneck
 
@@ -119,7 +119,7 @@ $$
 
 作者还人工检查了 105 条来自 Llama-3-8B-Instruct、最终答案正确的 GSM8K Chain-of-Thought。超过 $90\%$ 的 CoT 被判断为逻辑有效，说明正确样本的中间推理中存在可供更强 verifier 利用的信号：
 
-![[assets/experiment_table_2407.21787_t2.png]]
+![[_assets/images/experiment_table_2407.21787_t2.png]]
 
 ### Verifier reliability checks
 

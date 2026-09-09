@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788909621422-nv8lfbt7q",
+  "providerId": "codex",
+  "title": "@07-AI/01-数学/线性函数与多层感知机的数学前提",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788909621432,
+  "lastActivityAt": 1788909973135,
+  "sessionId": "01a08352-9260-7722-964a-c9e878af109f",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a08352-9260-7722-964a-c9e878af109f",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/09/rollout-2026-09-09T07-20-21-01a08352-9260-7722-964a-c9e878af109f.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/01-数学/线性函数与多层感知机的数学前提.md",
+  "usage": {
+    "inputTokens": 30865,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 23680,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 30865,
+    "percentage": 4,
+    "model": "gpt-6-astra"
+  }
+}

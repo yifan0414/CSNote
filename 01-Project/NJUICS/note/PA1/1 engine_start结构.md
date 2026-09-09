@@ -40,7 +40,7 @@ main(int argc, char *argv[])
 
 类似于终端的命令行提示符，只不过这是在 NEMU 内部执行的，可以很容易的访问内部状态。
 
-![[attachments/d074fb0477b05c33d229b0043fe61402_MD5.png]]
+![[_assets/images/d074fb0477b05c33d229b0043fe61402_MD5.png]]
 
 
 ```c
@@ -254,4 +254,4 @@ static int cmd_info(char *args) {
 }
 ```
 
-![[attachments/db0781c43f399e0c5392d095aad250f0_MD5.png]]
+![[_assets/images/db0781c43f399e0c5392d095aad250f0_MD5.png]]

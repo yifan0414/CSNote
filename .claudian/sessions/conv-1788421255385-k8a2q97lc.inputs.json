@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788421255385-k8a2q97lc",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788421255478-tzxk27k",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788421255379-9f3n4of",
+      "timestamp": 1788421255379,
+      "rawDisplayText": "我觉得目前五、Mask：控制哪些信息可见 写的有点乱，请你整理下",
+      "canonicalText": "我觉得目前五、Mask：控制哪些信息可见 写的有点乱，请你整理下",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md"
+        },
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "五、Mask：控制哪些信息可见",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "679307f8ef1df188c18e49c1922633fa550119bf4251c5c28946e2ff92833e78",
+      "providerUserMessageId": "01a06636-bdf9-72c1-a2ec-13b9bade8b81",
+      "providerAssistantMessageId": "msg_09fcc75a9cbdcd71016a99258ea03887d090fc081c2d83f9cc"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788421629639-ldatgb3",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788421629631-12v5qgl",
+      "timestamp": 1788421629631,
+      "rawDisplayText": "数据流不要使用代码框形式，使用gather数学公式",
+      "canonicalText": "数据流不要使用代码框形式，使用gather数学公式",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "score S → 加上 mask M → 沿 key 维 softmax → attention weight P → 乘 V",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "7c2854257c50e4764e29193b88aed6153e489f6173f5071724c5fb5cb8c5b4c3",
+      "providerUserMessageId": "01a0663c-6712-7613-aeb3-524e0203fddb",
+      "providerAssistantMessageId": "msg_09fcc75a9cbdcd71016a99261fd37087d0b57144f8befa6693"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788421706548-rg0jexx",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788421706539-b68fjj0",
+      "timestamp": 1788421706539,
+      "rawDisplayText": "这里使用数学公式",
+      "canonicalText": "这里使用数学公式",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "score:        [B, H, N_q, N_k]\ncausal:       [1, 1, N_q, N_k]\nkey padding:  [B, 1,   1, N_k]",
+          "lineCount": 3
+        }
+      },
+      "images": [],
+      "contentDigest": "664cd098fa08c566d386682406d92f5af246bc6b6d31453877808f3705019b11",
+      "providerUserMessageId": "01a0663d-9aac-7c32-b602-3ab33b0cee28",
+      "providerAssistantMessageId": "msg_09fcc75a9cbdcd71016a992669d50487d0ba41933374ffdca5"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788421761335-mjrhxie",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788421761327-vmfosdu",
+      "timestamp": 1788421761327,
+      "rawDisplayText": "五、Mask：控制哪些信息可见 增加一个内容介绍什么是广播",
+      "canonicalText": "五、Mask：控制哪些信息可见 增加一个内容介绍什么是广播",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "五、Mask：控制哪些信息可见",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "ded336edf69d328e65ef80c95a7922edd412361a79e44ef7e87ec5b2ce5d6146",
+      "providerUserMessageId": "01a0663e-6979-7c13-97ce-1b21ba9a8f36",
+      "providerAssistantMessageId": "msg_09fcc75a9cbdcd71016a9926c6ec2887d0b515764cb783e4ff"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788422509666-9fe697u",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788422509654-vtwuusj",
+      "timestamp": 1788422509654,
+      "rawDisplayText": "沿 shape 完整推导一次 single-head 和 multi-head attention。",
+      "canonicalText": "沿 shape 完整推导一次 single-head 和 multi-head attention。",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "\n沿 shape 完整推导一次 single-head 和 multi-head attention。",
+          "lineCount": 2
+        }
+      },
+      "images": [],
+      "contentDigest": "37cacf458e3660c328321a3e7f99befba19e186760c54334f9ace1beb030ac8d",
+      "providerUserMessageId": "01a06649-db90-7a42-b2ce-dd6e93fcf87d",
+      "providerAssistantMessageId": "msg_09fcc75a9cbdcd71016a9929ef576487d08189dc7ac9f34e1d"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788422715770-jy50y0a",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1788422715761-ba0l6cv",
+      "timestamp": 1788422715761,
+      "rawDisplayText": "你不要简化head为1，要使用H符号",
+      "canonicalText": "你不要简化head为1，要使用H符号",
+      "images": [],
+      "contentDigest": "b6765687294e5ac60980279519e4a4ab14a494712eb6854e9e95b755d792a2c5",
+      "providerUserMessageId": "01a0664c-f9b6-77a0-87fa-3dcd615af987",
+      "providerAssistantMessageId": "msg_09fcc75a9cbdcd71016a992ae1952c87d0bd6e1e07926ef1ff"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788459953700-5eebt7j",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1788459953687-fvfvsp9",
+      "timestamp": 1788459953687,
+      "rawDisplayText": "四、Scaled Dot-Product Attention 和 五、Mask：控制哪些信息可见 是不是换个位置更好？",
+      "canonicalText": "四、Scaled Dot-Product Attention 和 五、Mask：控制哪些信息可见 是不是换个位置更好？",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "五、Mask：控制哪些信息可见",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "91ac58ea1960b6c5f5156e0ff44ea13eba875862230c340e091f0f8e78198adc",
+      "providerUserMessageId": "01a06885-2f3a-70b3-86ca-de5c78ef9e6d",
+      "providerAssistantMessageId": "msg_09fcc75a9cbdcd71016a99bbd545d087d08b7466806c0e4fec"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788460136623-jkdiuhn",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1788460136611-euul8gr",
+      "timestamp": 1788460136611,
+      "rawDisplayText": "你先把四、Scaled Dot-Product Attention改下名字吧",
+      "canonicalText": "你先把四、Scaled Dot-Product Attention改下名字吧",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "五、Mask：控制哪些信息可见",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "8f7d397d4f6bd0f978e7768aa2a6dfcd52546b6296b1224dc9e2629d27df6c3e",
+      "providerUserMessageId": "01a06887-ff6d-7143-bbe9-49a87d7c50df",
+      "providerAssistantMessageId": "msg_09fcc75a9cbdcd71016a99bc7d275487d094ff91e890baeaa3"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788460191970-j43b3j5",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1788460191962-gm0eqcj",
+      "timestamp": 1788460191962,
+      "rawDisplayText": "这是什么意思",
+      "canonicalText": "这是什么意思",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "这里的 single-head attention 指“一个 head 内部”的 scaled dot-product attention。实际实现会把  个 head 并行放在同一个张量中计算，因此下面始终保留  维，而不把它简化为 。",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "cc6b521dbbf3cc8a167273dc1277fa3a9e28cb741855d91beeef6aa43cd86029",
+      "providerUserMessageId": "01a06888-d126-7ea2-9d59-f412e46819c3",
+      "providerAssistantMessageId": "msg_09fcc75a9cbdcd71016a99bcafb52487d0879aec813ee00afd"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788460234684-88hz2nw",
+      "userTurnOrdinal": 10,
+      "state": "accepted",
+      "localMessageId": "msg-1788460234678-s5vqw6h",
+      "timestamp": 1788460234678,
+      "rawDisplayText": "帮我修改下",
+      "canonicalText": "帮我修改下",
+      "images": [],
+      "contentDigest": "6e3f78497c53c9d179366dce99734798fef8cf0f047c707f9f7abc898d009830",
+      "providerUserMessageId": "01a06889-7812-7e10-8c2a-8b1d8a45c02d",
+      "providerAssistantMessageId": "msg_09fcc75a9cbdcd71016a99bcf62fb087d09b750f951ebbeeb9"
+    }
+  ]
+}

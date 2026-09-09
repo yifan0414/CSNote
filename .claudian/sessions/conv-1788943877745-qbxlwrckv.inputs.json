@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788943877745-qbxlwrckv",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788943877757-knv69vp",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788943877744-pood2ls",
+      "timestamp": 1788943877744,
+      "rawDisplayText": "这篇笔记的公式符号符合机器学习和深度学习的惯例吗",
+      "canonicalText": "这篇笔记的公式符号符合机器学习和深度学习的惯例吗",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/01-数学基础/贝叶斯公式.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "da7baf109af874dc7fbd178f42cf6709b08cd0f3c482bcec336f96eb96b96c42",
+      "providerUserMessageId": "01a0855d-87f1-7392-80b5-2e9ea728e7c6"
+    }
+  ]
+}

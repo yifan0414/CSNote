@@ -11,7 +11,7 @@ conference: CVPR 2026🏆
 year: 2026
 arxiv_url: https://arxiv.org/abs/2602.19083
 pdf_link: "[[assets/paper_2602.19083.pdf]]"
-cover: "[[assets/pipeline_2602.19083.png]]"
+cover: "[[_assets/images/pipeline_2602.19083.png]]"
 updated: 2026-06-06
 tags:
   - paper/arxiv
@@ -111,7 +111,7 @@ Input: source image x_src, source/target prompts, t, delta, lambda, optional t_c
 
 ## Pipeline Figure
 
-![[assets/pipeline_2602.19083.png]]
+![[_assets/images/pipeline_2602.19083.png]]
 
 **Caption:** Comparison of editing field stability. 多步 Simple Drift 可通过小步迭代保持稳定；one-step Simple Drift 的高能量场在一次大步中偏离目标；ChordEdit 对 $\mathbf{R}(x_\tau,t)$ 与 $\mathbf{R}(x_\tau,t-\delta)$ 做时间加权，得到稳定低能量的 Chord Control Field。
 

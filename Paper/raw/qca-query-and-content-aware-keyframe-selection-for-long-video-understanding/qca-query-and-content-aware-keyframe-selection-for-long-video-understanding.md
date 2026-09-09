@@ -12,7 +12,7 @@ conference: ECCV 2026
 year: 2026
 arxiv_url: https://arxiv.org/abs/2607.00983
 pdf_link: "[[assets/paper_2607.00983.pdf]]"
-cover: "[[assets/pipeline_2607.00983.png]]"
+cover: "[[_assets/images/pipeline_2607.00983.png]]"
 updated: 2026-08-23
 tags:
   - paper/arxiv
@@ -90,37 +90,37 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2607.00983.png]]
+![[_assets/images/pipeline_2607.00983.png]]
 
 Caption: The proposed QCA consists of: (a) Inter-Segment Keyframe Allocation, where the frame budget for each segment is dynamically determined by considering semantic alignment and visual content deviation; (b) Intra-Segment Keyframe Selection, which iteratively adds the frame with the maximum aggregate distance to the current keyframe set $\mathcal{K}_s$ from a relevance-filtered candidate set $\mathcal{C}_s$.
 
 ## Experiments
 
-评测覆盖 LongVideoBench、Video-MME（不使用字幕）、MLVU 和 LVBench。Backbone 包括 LLaVA-Video、InternVL-3.5 和 Qwen3-VL；统一从原视频以 1 FPS 预采样，并在主要对比中采用 64 帧预算。默认 Vision-Language embedding 为 BLIP-2，设置 $\alpha=\beta=0.5$、$\tau=0.5$，候选阈值 $\gamma=0.7$。论文报告实验运行于 $8\times$A800 80G GPU。
+评测覆盖 LongVideoBench、Video-MME（不使用字幕）、MLVU 和 LVBench。Backbone 包括 LLaVA-Video、InternVL-3.5 和 Qwen3-VL；统一从原视频以 $1$ FPS 预采样，并在主要对比中采用 $64$ 帧预算。默认 Vision-Language embedding 为 BLIP-2，设置 $\alpha=\beta=0.5$、$\tau=0.5$，候选阈值 $\gamma=0.7$。论文报告实验运行于 $8\times$A800 80G GPU。
 
 ### Main Results - Table 1
 
-![[assets/experiment_table_2607.00983_t1.png]]
+![[_assets/images/experiment_table_2607.00983_t1.png]]
 
 ### State-of-the-Art Comparison - Table 2
 
-![[assets/experiment_table_2607.00983_t2.png]]
+![[_assets/images/experiment_table_2607.00983_t2.png]]
 
 ### Ablation Study - Table 3
 
-![[assets/experiment_table_2607.00983_t3.png]]
+![[_assets/images/experiment_table_2607.00983_t3.png]]
 
 ### VL Embeddings - Table 4
 
-![[assets/experiment_table_2607.00983_t4.png]]
+![[_assets/images/experiment_table_2607.00983_t4.png]]
 
 ### Keyframe Budget - Table 5
 
-![[assets/experiment_table_2607.00983_t5.png]]
+![[_assets/images/experiment_table_2607.00983_t5.png]]
 
 ### Token-Pruning Comparison - Table 6
 
-![[assets/experiment_table_2607.00983_t6.png]]
+![[_assets/images/experiment_table_2607.00983_t6.png]]
 
 ## Limitations & Caveats
 

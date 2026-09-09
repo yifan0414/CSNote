@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788559486878-qz93xqtby",
+  "providerId": "codex",
+  "title": "以Paper/架构学习/CS224n/resources/slides/cs224n-2026-le...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788559486887,
+  "lastActivityAt": 1788560914143,
+  "sessionId": "01a06e73-f015-7312-97d9-a0ce2f75bdf0",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06e73-f015-7312-97d9-a0ce2f75bdf0",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T06-04-47-01a06e73-f015-7312-97d9-a0ce2f75bdf0.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/00-分词.md",
+  "usage": {
+    "inputTokens": 102004,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 100352,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 102004,
+    "percentage": 39,
+    "model": "gpt-5.6-sol"
+  }
+}

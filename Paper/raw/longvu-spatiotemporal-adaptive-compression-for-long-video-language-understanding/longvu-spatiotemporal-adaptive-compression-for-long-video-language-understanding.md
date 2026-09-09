@@ -22,7 +22,7 @@ conference: ICML 2025
 year: 2024
 arxiv_url: https://arxiv.org/abs/2410.17434
 pdf_link: "[[assets/paper_2410.17434.pdf]]"
-cover: "[[assets/pipeline_2410.17434.png]]"
+cover: "[[_assets/images/pipeline_2410.17434.png]]"
 updated: 2026-05-26
 tags:
   - paper/arxiv
@@ -99,7 +99,7 @@ LongVU 的 pipeline 可以压缩成下面几步：
 
 ## Pipeline Figure
 
-![[assets/pipeline_2410.17434.png]]
+![[_assets/images/pipeline_2410.17434.png]]
 
 Caption: Architecture of LongVU. Given densely sampled video frames, the model first uses DINOv2 prior to remove redundant frames, fuses remaining frame features from SigLIP and DINOv2, selectively reduces visual tokens via cross-modal query, and finally performs spatial token compression based on temporal dependencies to fit the LLM context length.
 

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788418223686-rmxf0efua",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418223718-m7n0h48",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788418223672-5z03tp9",
+      "timestamp": 1788418223672,
+      "rawDisplayText": "$d_h$ 是什么意思",
+      "canonicalText": "$d_h$ 是什么意思",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "19c31a3b127e367a8aff5fa5fe158048a44964b18ae500ec0400868cd5375da1",
+      "providerUserMessageId": "01a06608-6f2b-7100-b7c4-d4a16abe3670",
+      "providerAssistantMessageId": "msg_0df1f231c8993f98016a9918ccd50487d09e481aeaa3a05596"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418288771-cm4w89d",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788418288763-ynf2x20",
+      "timestamp": 1788418288763,
+      "rawDisplayText": "每个token的向量长度？",
+      "canonicalText": "每个token的向量长度？",
+      "images": [],
+      "contentDigest": "5500c3c40183091fc594321346b6813821d9738ea2624cff7764fbd450ce2587",
+      "providerUserMessageId": "01a06609-6c93-7681-98b7-101c17de1ee7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418376428-ixn697u",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788418376419-vxh7xx2",
+      "timestamp": 1788418376419,
+      "rawDisplayText": "每个token的向量长度？",
+      "canonicalText": "每个token的向量长度？",
+      "images": [],
+      "contentDigest": "5500c3c40183091fc594321346b6813821d9738ea2624cff7764fbd450ce2587",
+      "providerUserMessageId": "01a0660a-c2f4-7470-88d7-fcf394b559e4",
+      "providerAssistantMessageId": "msg_0df1f231c8993f98016a99196b06f887d0a233f417d88a1c9e"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418464153-mq3de0t",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788418464145-8qsc6ra",
+      "timestamp": 1788418464145,
+      "rawDisplayText": "不是多头注意力从不同角度看同一序列吗，为什么要把原始长度D评价拆分",
+      "canonicalText": "不是多头注意力从不同角度看同一序列吗，为什么要把原始长度D评价拆分",
+      "images": [],
+      "contentDigest": "b02893618af5403c8fa49f2a282f6d8103e5a4d3987251e45d3c733b4542ee14",
+      "providerUserMessageId": "01a0660c-19ba-77e2-9938-19763ad21892"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418474454-i6k4jol",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788418474449-x94uh1l",
+      "timestamp": 1788418474449,
+      "rawDisplayText": "不是多头注意力从不同角度看同一序列吗，为什么要把原始长度D平均拆分",
+      "canonicalText": "不是多头注意力从不同角度看同一序列吗，为什么要把原始长度D平均拆分",
+      "images": [],
+      "contentDigest": "bb9a0373b20592f649ab50fe18559646efc48ae618e5b35600c7b8b019e68e0d",
+      "providerUserMessageId": "01a0660c-4254-7443-b26a-c84baad6f7c9",
+      "providerAssistantMessageId": "msg_0df1f231c8993f98016a9919b6af1c87d0af586c91eb87e5fd"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418555438-slx38ym",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1788418555430-fhv0kuz",
+      "timestamp": 1788418555430,
+      "rawDisplayText": "这里应该是列向量吧？",
+      "canonicalText": "这里应该是列向量吧？",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "例如  时：\n\n",
+          "lineCount": 3
+        }
+      },
+      "images": [],
+      "contentDigest": "dcc55d694dc146a810f24f5920e0f02a9be2b6de7785b82973aeef8e4f51e959",
+      "providerUserMessageId": "01a0660d-7e3d-7851-90c5-b7df4ddc547a",
+      "providerAssistantMessageId": "msg_0df1f231c8993f98016a991a1a481887d0b377538617dd4ecd"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418608534-lelum7k",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1788418608526-goysgah",
+      "timestamp": 1788418608526,
+      "rawDisplayText": "帮我修正",
+      "canonicalText": "帮我修正",
+      "images": [],
+      "contentDigest": "f9b1bf9e46b93c2cc801be87f15d9105f3fbbc0ce61a4f55d137ea9ff52ba189",
+      "providerUserMessageId": "01a0660e-4da4-79b2-8f7d-e1d06018a73e",
+      "providerAssistantMessageId": "msg_0df1f231c8993f98016a991a52ad4087d0a1735f84435105ed"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418696072-efyptut",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1788418696062-cuufrps",
+      "timestamp": 1788418696062,
+      "rawDisplayText": "并注明“按列向量约定”，不用注明",
+      "canonicalText": "并注明“按列向量约定”，不用注明",
+      "images": [],
+      "contentDigest": "43e77d4aa86dd6a202310a4fdf8c11586fa9a86dfa1a6167aa9afaa5c6759420",
+      "providerUserMessageId": "01a0660f-a3aa-7340-8322-b7c568e3df93",
+      "providerAssistantMessageId": "msg_0df1f231c8993f98016a991a98c9b487d096b84c9399d50c07"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418782161-e3ngpbf",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1788418782158-enqrwnq",
+      "timestamp": 1788418782158,
+      "rawDisplayText": "如何理解",
+      "canonicalText": "如何理解",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "Attention 中， 一次性计算所有 query token 与所有 key token 的点积；每次点积沿  个特征求和，因此  被收缩，最终留下的  正好表示“谁和谁进行了比较”：\n\n 描述“拿哪些特征来比较”，而  描述“哪些 query 和哪些 key 进行了比较”。",
+          "lineCount": 3
+        }
+      },
+      "images": [],
+      "contentDigest": "ed35d37ec6c9e5f81076e79d7520c20a1618d34f67b83fa7ea4f27c5591873c4",
+      "providerUserMessageId": "01a06610-f3f6-7cf0-9081-bc05658f6b7a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418819237-wixp47m",
+      "userTurnOrdinal": 10,
+      "state": "accepted",
+      "localMessageId": "msg-1788418819232-j0t1u24",
+      "timestamp": 1788418819232,
+      "rawDisplayText": "如何理解收缩这个概念",
+      "canonicalText": "如何理解收缩这个概念",
+      "images": [],
+      "contentDigest": "b8605818de779855875b67d2e6f4cab00b440fbfac7eb1b7481a841f21a06d02",
+      "providerUserMessageId": "01a06611-84c9-7d61-a206-9b4ab29db99d",
+      "providerAssistantMessageId": "msg_0df1f231c8993f98016a991b0e6b1887d0960d7eb3a3155b6d"
+    }
+  ]
+}

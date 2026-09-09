@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788584209675-5cthjkled",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788584209729-c4qkesi",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788584209672-0w72s5y",
+      "timestamp": 1788584209672,
+      "rawDisplayText": "这个表格有错误，修复下",
+      "canonicalText": "这个表格有错误，修复下",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/04-Seq2Seq.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "c59e70fc3c34b0e38672c4e0d29c258e4a6c9357833a5c581c484890d736c90f",
+      "providerUserMessageId": "01a06fed-46b3-7ac3-8f67-5aaf3d9fd3f7",
+      "providerAssistantMessageId": "msg_04c40e2c7a0c6f35016a9ba1b3beb487d0861a544f29500b1f"
+    }
+  ]
+}

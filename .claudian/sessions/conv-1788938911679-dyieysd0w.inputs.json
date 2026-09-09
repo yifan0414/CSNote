@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788938911679-dyieysd0w",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788938911749-ooa8sm7",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788938911673-pqwtkme",
+      "timestamp": 1788938911673,
+      "rawDisplayText": "你给我这个项目创建一个AGENT",
+      "canonicalText": "你给我这个项目创建一个AGENT",
+      "context": {
+        "linkedContent": {
+          "path": "07-AI/01-数学/Foward KL 和 Reverse KL.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "4a747abb91079769219feb84147f9e6555f56871684806118e7e02b878e13e68"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788939027536-g97ivw1",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788939027525-mwr0wl2",
+      "timestamp": 1788939027525,
+      "rawDisplayText": "你给我这个项目创建一个AGENT.md 吧，有两个要声明的规范，就是生成或者插入的图片原始文件放到_assets/images 中，还有就是创建或者修改的文档中数字或者字母等尽量使用latex也就是$$包围，比如 $1$ fps 等等",
+      "canonicalText": "你给我这个项目创建一个AGENT.md 吧，有两个要声明的规范，就是生成或者插入的图片原始文件放到_assets/images 中，还有就是创建或者修改的文档中数字或者字母等尽量使用latex也就是$$包围，比如 $1$ fps 等等",
+      "images": [],
+      "contentDigest": "dddaf0775d495bf898ad51d29895ccd6b03b9174d09ec4d447642f5d00b65846",
+      "providerUserMessageId": "01a08513-8412-7d71-8e14-f47032e381f1",
+      "providerAssistantMessageId": "msg_067ae204cb75af92016aa10b9a7a9887d09571370b7fde7df5"
+    }
+  ]
+}

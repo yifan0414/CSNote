@@ -6,7 +6,7 @@
 
 下图是我在做 PA1 时的 commit 列表，圈出的部分就是构造测试代码并完成测试的 commit (`99e00be`)。我当时的做法是直接把测试代码删除掉，还原成原来的样子，并再次做了一个 commit (`b7a4b54`)。我的想法是以后如果再用到这部分测试代码，我就使用 `git checkout 99e00be` 切换到该 commit。(事实证明这应该不是正确的做法)
 
-![[attachments/75420325364f23a29865b30200f330b6_MD5.png]]
+![[_assets/images/75420325364f23a29865b30200f330b6_MD5.png]]
 
 这一天，我准备对之前做过的实验做一下笔记整理，所以会用到相关的代码和结果截图。因此我就按之前想的使用 `git checkout 99e00be` 切换到该提交（此时工作区的文件就会变成当时 commit 时的状态）。但 git 给了我以下的提醒：
 
@@ -37,11 +37,11 @@ HEAD is now at 99e00be Monitor: Construct The Expr Test Case And Test In Main fu
 
 答案显而易见，我们应该在 `99e00be` 处进行提交，因为这是对 `99e00be` 代码中独有的测试代码修改。
 
-![[attachments/9918cd65f8eefa8ec10fa518770a544b_MD5.png]]
+![[_assets/images/9918cd65f8eefa8ec10fa518770a544b_MD5.png]]
 
 可以看我，我们在 master 分支的 `99e00bec` 节点正确提交了，此时的节点编号变成了 `1afe22a4`。
 
-![[detachedHEAD.png]]
+![[_assets/images/detachedHEAD.png]]
 
 那么此时的 `1afe22a4` 属于什么分支呢？我们切换到 master 分支的最新节点。此时 git 会输出一段话。
 
@@ -59,7 +59,7 @@ to do so with:
 
 虽然我们在 master 分支进行的提交，但是由于是在 `detached HEAD` 状态的提交，所以并不属于 master 分支，所以我们要新创建一个分支。然后使用 `git log --graph --oneline --all` 进行查看
 
-![[attachments/d7afa763a9ab571baa2db3f9e89e845e_MD5.png]]
+![[_assets/images/d7afa763a9ab571baa2db3f9e89e845e_MD5.png]]
 
 可以看到，我们成功创建了一个分支（testbranch）并把刚才的提交放在了这个分支（testbranch）上。
 
@@ -69,7 +69,7 @@ to do so with:
 
 ## 1.1 四个工作区概念
 
-![[attachments/b04b166b0cacb7ef633c0153b2ff733e_MD5.jpg]]
+![[_assets/images/b04b166b0cacb7ef633c0153b2ff733e_MD5.jpg]]
 
 **Workspace**： 工作区，就是你平时存放项目代码的地方
 
@@ -98,7 +98,7 @@ git 的工作流程一般是这样的：
 
 GIT 不关心文件两个版本之间的具体差别，而是关心文件的整体是否有改变，若文件被改变，在添加提交时就生成文件新版本的快照，而判断文件整体是否改变的方法就是用 SHA-1 算法计算文件的校验和。
 
-![[attachments/8fadb76880d4e2311560a4a046693a23_MD5.png]]
+![[_assets/images/8fadb76880d4e2311560a4a046693a23_MD5.png]]
 
 **Untracked:** 未跟踪, 此文件在文件夹中, 但并没有加入到 git 库, 不参与版本控制. 通过 git add 状态变为 Staged.
 
@@ -111,7 +111,7 @@ GIT 不关心文件两个版本之间的具体差别，而是关心文件的整�
 
 下面的图很好的解释了这四种状态的转变：
 
-![[attachments/f1503bfa5820bea75d0b9fc7fbe9433f_MD5.jpg]]
+![[_assets/images/f1503bfa5820bea75d0b9fc7fbe9433f_MD5.jpg]]
 
 
 # 2 detached HEAD 的工作区
@@ -120,7 +120,7 @@ GIT 不关心文件两个版本之间的具体差别，而是关心文件的整�
 
 1. 首先看你修改的文件在 `detached HEAD` 和 `master HEAD` 中是否一致，如果不一致那么 git 会给出警告并且不执行命令
 
-	![[attachments/a33eb9529dabdab59bda9396b47bbfa2_MD5.png]]
+	![[_assets/images/a33eb9529dabdab59bda9396b47bbfa2_MD5.png]]
 
 2. 其他情况共用一个工作区
 

@@ -92,7 +92,7 @@ MapReduce 模型可以有多种不同的实现方式。如何正确选择取决�
 
   
 
-![[attachments/f4edd67100b1b87974e24c77cb2e9835_MD5.webp]]
+![[_assets/images/f4edd67100b1b87974e24c77cb2e9835_MD5.webp]]
 
 
 
@@ -253,7 +253,7 @@ grep 程序可以从 10^10 条大小为 100byte 的数据中找到一条相对�
 
   
 
-![[attachments/8f44b265a6eea2b5608d02b351dc9fb1_MD5.webp]]
+![[_assets/images/8f44b265a6eea2b5608d02b351dc9fb1_MD5.webp]]
 
   
 
@@ -273,7 +273,7 @@ sort 程序是用来对 10^10 条大小为 100byte（大约为 1TB 大小的数�
 
   
 
-![[attachments/af44c6ad6b3056cf76e212b1065d0256_MD5.webp]]
+![[_assets/images/af44c6ad6b3056cf76e212b1065d0256_MD5.webp]]
 
   
 
@@ -308,7 +308,7 @@ worker 进程的关闭会在图中显示一个负的输入速度，这是因为�
 
   
 
-![[attachments/7168590aaf4e8f78e5c22f5c21a6e67e_MD5.webp]]
+![[_assets/images/7168590aaf4e8f78e5c22f5c21a6e67e_MD5.webp]]
 
   
 
@@ -316,7 +316,7 @@ figure4 MapReduce instances over time
 
   
 
-![[attachments/b670319c30f7dca63fe2c6b8a032d174_MD5.webp]]
+![[_assets/images/b670319c30f7dca63fe2c6b8a032d174_MD5.webp]]
 
   
 

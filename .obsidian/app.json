@@ -11,7 +11,7 @@
     "downscalePercent": 70
   },
   "promptDelete": false,
-  "attachmentFolderPath": "attachments",
+  "attachmentFolderPath": "_assets/images",
   "showUnsupportedFiles": true,
   "trashOption": "system",
   "alwaysUpdateLinks": true,

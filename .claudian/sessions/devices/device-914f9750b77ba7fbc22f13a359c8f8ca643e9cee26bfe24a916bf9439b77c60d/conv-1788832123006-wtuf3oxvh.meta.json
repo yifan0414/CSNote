@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788832123006-wtuf3oxvh",
+  "providerId": "codex",
+  "title": "这个文档所有的数字都要使用 $$ 表示，比如前 $1000$ 步梯度",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788832123011,
+  "lastActivityAt": 1788832283600,
+  "sessionId": "01a07eb4-08d0-7623-acb0-cb74ade00129",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a07eb4-08d0-7623-acb0-cb74ade00129",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/08/rollout-2026-09-08T09-48-43-01a07eb4-08d0-7623-acb0-cb74ade00129.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/01-数学/Adam优化器系统整理.md",
+  "usage": {
+    "inputTokens": 34844,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 34304,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 34844,
+    "percentage": 4,
+    "model": "gpt-6-astra"
+  }
+}

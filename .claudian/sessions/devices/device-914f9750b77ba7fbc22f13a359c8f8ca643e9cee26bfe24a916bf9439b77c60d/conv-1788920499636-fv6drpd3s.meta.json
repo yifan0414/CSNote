@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788920499636-fv6drpd3s",
+  "providerId": "pi",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788920499645,
+  "lastActivityAt": 1788920866818,
+  "sessionId": "01a083f8-8e88-7789-b301-c5b22d8af03e",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-09T02-21-39-848Z_01a083f8-8e88-7789-b301-c5b22d8af03e.jsonl",
+    "sessionId": "01a083f8-8e88-7789-b301-c5b22d8af03e"
+  },
+  "linkedContentPath": "06-LLM/01-数学/从概率建模统一理解机器学习损失 MLE、NLL、Cross-Entropy、KL、MSE 与 MAE.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 76262,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 76262,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 8
+  }
+}

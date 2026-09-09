@@ -11,9 +11,9 @@
 
 举例：
 
-![[attachments/9f48d266f988c2d84467c05f659157b3_MD5.png]]
+![[_assets/images/9f48d266f988c2d84467c05f659157b3_MD5.png]]
 
-![[attachments/daf9449c192e1ef4bf381620efb130d6_MD5.png]]
+![[_assets/images/daf9449c192e1ef4bf381620efb130d6_MD5.png]]
 
 
 

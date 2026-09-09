@@ -11,9 +11,9 @@ tags: [excalidraw]
 
 ## Text Elements
 ## Embedded Files
-ff195de2fb59ee49c081f5353684c26c3992db2d: [[Pasted Image 20221228215938_380.png]]
+ff195de2fb59ee49c081f5353684c26c3992db2d: [[_assets/images/Pasted Image 20221228215938_380.png]]
 
-c07e04242d5c61aed6acfc1ca6a017e3c1e9f686: [[Pasted Image 20221229203502_141.png]]
+c07e04242d5c61aed6acfc1ca6a017e3c1e9f686: [[_assets/images/Pasted Image 20221229203502_141.png]]
 
 %%
 ## Drawing

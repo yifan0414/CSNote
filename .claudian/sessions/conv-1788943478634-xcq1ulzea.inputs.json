@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788943478634-xcq1ulzea",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788943478658-6n9g3v8",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788943478627-0fn8jd6",
+      "timestamp": 1788943478627,
+      "rawDisplayText": "我现在06-LLM的文件和文件夹的组织非常乱，你觉得呢",
+      "canonicalText": "我现在06-LLM的文件和文件夹的组织非常乱，你觉得呢",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/人工智能.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "92fe6f039089473939613cfce440c25deb1d0f390cad904f9dd0a7060a5a5b95"
+    }
+  ]
+}

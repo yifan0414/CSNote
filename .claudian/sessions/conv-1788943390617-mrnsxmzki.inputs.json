@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788943390617-mrnsxmzki",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788943390651-g81veiq",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788943390611-oyummpw",
+      "timestamp": 1788943390611,
+      "rawDisplayText": "我现在06-LLM 的文件夹和文件组织的非常乱，你觉得呢",
+      "canonicalText": "我现在06-LLM 的文件夹和文件组织的非常乱，你觉得呢",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/人工智能.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "56f6d93c9dc68e12a4e3955d3275e6b276e59c17c2127ecaad562fa95aa934e0",
+      "providerAssistantMessageId": "85ff3c05",
+      "providerUserMessageId": "8881a63b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788943695729-i5aj20l",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788943695720-fjfcjs7",
+      "timestamp": 1788943695720,
+      "rawDisplayText": "可以，多模态的部分可以放到顶层07-MultiModal中",
+      "canonicalText": "可以，多模态的部分可以放到顶层07-MultiModal中",
+      "images": [],
+      "contentDigest": "c19889a5d011f5668877bdd4229ecafa2fdab4bdcceadf898e06ac081ff39e3b",
+      "providerAssistantMessageId": "0ff9ec10"
+    }
+  ]
+}

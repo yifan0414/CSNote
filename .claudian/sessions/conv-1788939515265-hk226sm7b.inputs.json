@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788939515265-hk226sm7b",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788939515294-757tdph",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788939515258-jmheve3",
+      "timestamp": 1788939515258,
+      "rawDisplayText": "你按照AGENTS.md 规范处理下这个文档",
+      "canonicalText": "你按照AGENTS.md 规范处理下这个文档",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/06-transformer.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "6cb6689a914ebe04d55e883cf15ea07c41a2e9bcc6074514e2ba9ae22ba8b965",
+      "providerAssistantMessageId": "8cb73a75",
+      "providerUserMessageId": "363e5d65"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788939677898-dpyftge",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788939677894-mlm3ekr",
+      "timestamp": 1788939677894,
+      "rawDisplayText": "同样的处理下 @Paper/架构学习/基础/05-Attention.md",
+      "canonicalText": "同样的处理下 @Paper/架构学习/基础/05-Attention.md",
+      "images": [],
+      "contentDigest": "fffd603cf6e1a5a999637671284a9ec6ee18c64bee55a7173049369cdf44507e",
+      "providerUserMessageId": "cce48998",
+      "providerAssistantMessageId": "21fbbaa1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788939804807-12c4myr",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788939804798-kakp4k0",
+      "timestamp": 1788939804798,
+      "rawDisplayText": "你觉得AGENTS.md 怎么样，需要改进吗",
+      "canonicalText": "你觉得AGENTS.md 怎么样，需要改进吗",
+      "images": [],
+      "contentDigest": "4ab88759e4c14b97353fbb40d55e72cebc98ff94ea6e8cd9218b95340ea34607",
+      "providerAssistantMessageId": "d9f8647b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788939960153-gsfk4i2",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788939960144-fapvtqt",
+      "timestamp": 1788939960144,
+      "rawDisplayText": "可以，帮我修改下吧",
+      "canonicalText": "可以，帮我修改下吧",
+      "images": [],
+      "contentDigest": "26f2ca41c9ff4fa45a41b76a031b273da41682c34c3142ed8c5038a26422b98f",
+      "providerAssistantMessageId": "a46b20ef"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788940196293-pvb83dn",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788940196287-abaoe86",
+      "timestamp": 1788940196287,
+      "rawDisplayText": "这个AGENTS.md 中的规范是用行内代码框起来的，这样是共识默认吗",
+      "canonicalText": "这个AGENTS.md 中的规范是用行内代码框起来的，这样是共识默认吗",
+      "images": [],
+      "contentDigest": "6e378e796df30623a239509b41ff43e94089e88dc41ddce7f1baea05b7281488",
+      "providerAssistantMessageId": "84c4fe32"
+    }
+  ]
+}

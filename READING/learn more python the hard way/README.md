@@ -14,7 +14,7 @@
 
 ## 赞助我
 
-![](READING/learn%20more%20python%20the%20hard%20way/img/qr_alipay.png)
+![](../../_assets/images/qr_alipay.png)
 
 ## 协议
 

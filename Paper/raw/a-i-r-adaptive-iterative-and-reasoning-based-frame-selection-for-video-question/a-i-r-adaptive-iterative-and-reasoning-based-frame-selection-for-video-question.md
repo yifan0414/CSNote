@@ -11,7 +11,7 @@ conference: ICLR 2026
 year: 2026
 arxiv_url: https://arxiv.org/abs/2510.04428
 pdf_link: "[[Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/assets/paper_2510.04428.pdf]]"
-cover: "[[Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/assets/pipeline_2510.04428.png]]"
+cover: "[[_assets/images/pipeline_2510.04428.png]]"
 updated: 2026-05-21
 tags:
   - paper/arxiv
@@ -101,7 +101,7 @@ $$
 
 ## Pipeline Figure
 
-![[Paper/raw/a-i-r-adaptive-iterative-and-reasoning-based-frame-selection-for-video-question/assets/pipeline_2510.04428.png]]
+![[_assets/images/pipeline_2510.04428.png]]
 
 Caption: 图中展示 A.I.R. 的两个核心阶段：先用 GMM threshold 与 event-wise sampling 生成 $\mathcal{F}_{\mathrm{initial}}$，再通过 Interval Potential Ranking、Reasoning-Based VLM Analysis、Early Stop 和 LDS 逐轮细化最终 frames。
 

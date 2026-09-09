@@ -7,7 +7,7 @@
   "lastActivityAt": 1786926695950,
   "sessionId": null,
   "selectedModel": "gpt-5.6-sol",
-  "linkedContentPath": "Paper/架构学习/RoadMap.md",
+  "linkedContentPath": "06-LLM/架构学习/RoadMap.md",
   "usage": {
     "inputTokens": 188682,
     "cacheCreationInputTokens": 0,

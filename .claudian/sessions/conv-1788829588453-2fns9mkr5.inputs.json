@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788829588453-2fns9mkr5",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788829588542-jy2kup4",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788829588446-ugd9tqv",
+      "timestamp": 1788829588446,
+      "rawDisplayText": "你以这个文档为资料库，给我一个重新整理后的新文档",
+      "canonicalText": "你以这个文档为资料库，给我一个重新整理后的新文档",
+      "context": {
+        "linkedContent": {
+          "path": "07-AI/01-数学/Adam优化器介绍.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "1e2dffe5bcb3bfd4d05d593c3d66da1aed3e64e98a880d5e2e16d84d094ce52d",
+      "providerUserMessageId": "01a07e8d-a410-7013-9270-b2a3c2b9c7e5",
+      "providerAssistantMessageId": "msg_099d7acaed11b561016a9f6264c98087d0811d8fb11e76cd27"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788830418975-hcxbogi",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788830418965-tc5njkh",
+      "timestamp": 1788830418965,
+      "rawDisplayText": "你应该从嘴还是得SGD、Momentum开始一步一步的演进，公式设计的原因是什么，你不能假设读者对这部分很熟悉（读者只需具备基本的数学知识）推导要详细，详细的步骤可以放到折叠 callout中",
+      "canonicalText": "你应该从嘴还是得SGD、Momentum开始一步一步的演进，公式设计的原因是什么，你不能假设读者对这部分很熟悉（读者只需具备基本的数学知识）推导要详细，详细的步骤可以放到折叠 callout中",
+      "images": [],
+      "contentDigest": "a07710f360718b950cb80c180b523218fc7919724117ef3eae521ef3507cd99c",
+      "providerUserMessageId": "01a07e9a-0859-78c3-8def-288154dbab3a",
+      "providerAssistantMessageId": "msg_099d7acaed11b561016a9f68febef087d09ce7c2534999c070"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788832628697-q99jvq4",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788832628688-2juc62r",
+      "timestamp": 1788832628688,
+      "rawDisplayText": "你整理下 @07-AI/01-数学/交叉熵.md @07-AI/01-数学/交叉熵 1.md ， @07-AI/01-数学/交叉熵函数梯度.md ，整理到一个文档中，按照 @07-AI/01-数学/Adam优化器系统整理.md 的风格",
+      "canonicalText": "你整理下 @07-AI/01-数学/交叉熵.md @07-AI/01-数学/交叉熵 1.md ， @07-AI/01-数学/交叉熵函数梯度.md ，整理到一个文档中，按照 @07-AI/01-数学/Adam优化器系统整理.md 的风格",
+      "images": [],
+      "contentDigest": "7309809e67241297ce77f0eaeb9f8cd24ee9ecf7c37de995daac79f27465928b",
+      "providerUserMessageId": "01a07ebb-c00d-7df0-a8ee-b79241c56292",
+      "providerAssistantMessageId": "msg_099d7acaed11b561016a9f70974e5087d096b2c3eb3a1d1a47"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788833944442-07d819v",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788833944437-vpcxxjf",
+      "timestamp": 1788833944437,
+      "rawDisplayText": "softmax + cross-entropy 为什么会产生 \\(\\hat y-y\\) 还要有这一部分的推导解释",
+      "canonicalText": "softmax + cross-entropy 为什么会产生 \\(\\hat y-y\\) 还要有这一部分的推导解释",
+      "images": [],
+      "contentDigest": "e2f8a5d444be6a751be0f3f6b301f96d819240821e5042a6a7e649fe0062e27a",
+      "providerUserMessageId": "01a07ecf-d9cd-74f3-bb05-2d0884157ef9",
+      "providerAssistantMessageId": "msg_099d7acaed11b561016a9f711a35f087d09fef5267f7fbf36e"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788834079399-ucqwov6",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788834079397-ps24jmi",
+      "timestamp": 1788834079397,
+      "rawDisplayText": "我的意思是你的符号要统一",
+      "canonicalText": "我的意思是你的符号要统一",
+      "images": [],
+      "contentDigest": "3eb2e3a91156286de44532c506d54b4ea8fb189e661f48bc5d3e3c619b1dd731",
+      "providerUserMessageId": "01a07ed2-8e62-7363-8835-5ded223a3d22",
+      "providerAssistantMessageId": "msg_099d7acaed11b561016a9f7221287c87d0a2fdeceac6970f8a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788834094536-1nrx68j",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "timestamp": 1788834094536,
+      "rawDisplayText": "统一为常见的符号",
+      "canonicalText": "统一为常见的符号",
+      "images": [],
+      "contentDigest": "cb31c1432896c84e4db90f1b0b21a2b80fa66761b514e5c31c1e7a4a7469d462",
+      "providerUserMessageId": "01a07ed2-8e62-7363-8835-5ded223a3d22"
+    }
+  ]
+}

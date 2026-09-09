@@ -13,7 +13,7 @@ conference: CVPR 2026
 year: 2026
 arxiv_url: https://arxiv.org/abs/2603.00512
 pdf_link: "[[assets/paper_2603.00512.pdf]]"
-cover: "[[assets/pipeline_2603.00512.png]]"
+cover: "[[_assets/images/pipeline_2603.00512.png]]"
 updated: 2026-05-21
 tags:
   - paper/arxiv
@@ -88,7 +88,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2603.00512.png]]
+![[_assets/images/pipeline_2603.00512.png]]
 
 Caption: WFS-SB framework overview，包括 wavelet-based semantic boundary identification、adaptive budget allocation、diversity-aware intra-segment selection 三个阶段。
 

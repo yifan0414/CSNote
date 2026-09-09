@@ -45,7 +45,7 @@ drwxr-xr-x 4 root  root  4096 Jul  2 06:19 ..
 
 > 精通你的领域，不要 · 像 · 这样：
 
-![](intro-1.png)
+![](../../_assets/images/intro-1.png)
 
 © [Nedroid](http://nedroid.com/2012/05/honk-the-databus/)
 

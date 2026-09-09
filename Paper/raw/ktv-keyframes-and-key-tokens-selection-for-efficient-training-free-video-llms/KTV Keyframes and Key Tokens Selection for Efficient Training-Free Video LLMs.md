@@ -11,7 +11,7 @@ conference: AAAI 2026
 year: 2026
 arxiv_url: https://arxiv.org/abs/2602.03615
 pdf_link: "[[paper_2602.03615.pdf]]"
-cover: "[[pipeline_2602.03615.png]]"
+cover: "[[_assets/images/pipeline_2602.03615.png]]"
 updated: 2026-04-26
 tags:
   - paper/arxiv
@@ -88,7 +88,7 @@ KTV 的输入是一段视频 $\mathcal{V}=\{I_1,I_2,\cdots,I_T\}$、question $Q$
 
 ## Pipeline Figure
 
-![[pipeline_2602.03615.png]]
+![[_assets/images/pipeline_2602.03615.png]]
 
 > *Caption: Framework of KTV, which is a two-stage method of training-free video understanding built upon LLaVA-v1.6. First, the method extracts video-frame visual features and clusters them into $m$ clusters, selecting centroid frames as keyframes to reduce temporal redundancy. Second, for each frame, it selects top-$k=\beta\cdot L$ key visual tokens by importance and redundancy, prunes the others, then concatenates remaining visual tokens with text tokens for the LLM answer generation.*
 

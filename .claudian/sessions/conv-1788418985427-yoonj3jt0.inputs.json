@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788418985427-yoonj3jt0",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788418985456-468t8hq",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788418985418-gwwjpbi",
+      "timestamp": 1788418985418,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "01a06614-10be-7d50-b89e-7aedbd175cfd",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a991c1efb9887d0a9634e9d65f71c60"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788419117497-zh05n8b",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788419117491-3hppkne",
+      "timestamp": 1788419117491,
+      "rawDisplayText": "你是谁",
+      "canonicalText": "你是谁",
+      "images": [],
+      "contentDigest": "a606caaea3f27f473956d0f27ba7df90dd64ca63190d8444c9d7b02e96e08240",
+      "providerUserMessageId": "01a06616-11c4-7e31-b63a-31b310c2df0f",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a991c3362f887d0bf4c754c76c0aaaa"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788419173984-dufm5td",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788419173976-0dcb5p9",
+      "timestamp": 1788419173976,
+      "rawDisplayText": "你好",
+      "canonicalText": "你好",
+      "images": [],
+      "contentDigest": "815b1925f3db319cfc8ef8cad8a91b3f8b512f630d8f82635cb105e93e666c2a",
+      "providerUserMessageId": "01a06616-ee6e-78e0-99c1-ad510bc61406",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a991c68b9d887d0bd53876af09cc9fc"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788419235914-zyiaygj",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788419235906-m30en9v",
+      "timestamp": 1788419235906,
+      "rawDisplayText": "什么叫做linear的权重",
+      "canonicalText": "什么叫做linear的权重",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "Linear 的权重为 ",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "ee148e85b605f7a3e1037f6ba454821bfefd3992afdd8526504e85d574a2533a",
+      "providerUserMessageId": "01a06617-e7eb-74c2-982e-389374d54d9f",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a991cba4ce087d08e5f7f64a7bfdbdb"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788419374625-f31vcpf",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788419374617-g9t2k7u",
+      "timestamp": 1788419374617,
+      "rawDisplayText": "transformer中的激活函数是什么，为什么用这个",
+      "canonicalText": "transformer中的激活函数是什么，为什么用这个",
+      "images": [],
+      "contentDigest": "d064de6340914837b8dc91f9dfebbbc5a9d898aed62dc8923d3983ddd035713c",
+      "providerUserMessageId": "01a0661a-05a4-7fd2-95dd-66e46d125488",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a991d3ea10487d09a4af00d5222eab2"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788419454018-dou39iw",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1788419454015-cxamp9q",
+      "timestamp": 1788419454015,
+      "rawDisplayText": "为什么这里不使用softmax归一化",
+      "canonicalText": "为什么这里不使用softmax归一化",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "LayerNorm 对每个 token 的完整特征向量独立做归一化，也就是沿  的最后一轴一次性统计全部  个特征。对 ：\n\n \n \n \n \n \nLayerNorm 不改变 shape：\n\n",
+          "lineCount": 10
+        }
+      },
+      "images": [],
+      "contentDigest": "dbf90c4e2e3dafb8c5e0b0fef4aef3df5e37cf03e29e62d8033606fed41b65f4",
+      "providerUserMessageId": "01a0661b-3489-7452-b699-a31d68551041",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a991d8d43ac87d084f72adcee1e8efa"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788419605365-2w6njma",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1788419605362-fj9vigg",
+      "timestamp": 1788419605362,
+      "rawDisplayText": "什么是BatchNorm，哪里用到了",
+      "canonicalText": "什么是BatchNorm，哪里用到了",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "它与 BatchNorm 的关键区别是：LayerNorm 不依赖 batch 内其他样本的统计量，因此适合变长序列和自回归模型。",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "266cc2d827a1dc10813b16861e38f70d70fff2e8a439a7716073658d21af5288",
+      "providerUserMessageId": "01a0661d-8b96-7712-ac76-a62b9c3959c3",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a991e262d6087d0962ba5355c40de2a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788419795601-675kheu",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1788419795594-1ifn3q4",
+      "timestamp": 1788419795594,
+      "rawDisplayText": "不理解这里是在干什么",
+      "canonicalText": "不理解这里是在干什么",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "3.2 Teacher forcing\n训练时已经知道完整正确序列，因此可以把真实前缀作为每个位置的输入。以序列：\n\n<BOS> 我 喜欢 猫 <EOS>\n\n为例：\n\n训练输入\t监督目标\n<BOS>\t我\n我\t喜欢\n喜欢\t猫\n猫\t<EOS>\n整体写成：\n\ninput = [<BOS>, 我, 喜欢, 猫]\ntarget = [我, 喜欢, 猫, <EOS>]\n输入和目标必须错开一个位置，否则当前位置会直接看到待预测答案。",
+          "lineCount": 17
+        }
+      },
+      "images": [],
+      "contentDigest": "925a0ab79f9e107581e1bb7babab8e835e296a7de5dd8add5a76adbea7691bbf",
+      "providerUserMessageId": "01a06620-71fa-7f11-a6fb-699f01e43572",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a991ee2140887d0a7fc987c50fad3d9"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788420029352-ors9rr8",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1788420029344-dkg5yo2",
+      "timestamp": 1788420029344,
+      "rawDisplayText": "使用3维举个例子",
+      "canonicalText": "使用3维举个例子",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "例题 4：单头 Attention 手算\n设：\n\n  \n \n使用 causal mask，求两个位置的 context。\n\n解答",
+          "lineCount": 8
+        }
+      },
+      "images": [],
+      "contentDigest": "33b0539307354a0cffea619d8c3c88ccbe3da1975fc195d8947d5d98e7dcd2ac",
+      "providerUserMessageId": "01a06624-03ff-7740-89bc-e6ba0c2a648c",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a991fd361b087d0bb94346ea2dfdbf6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788420127143-pqwqdqr",
+      "userTurnOrdinal": 10,
+      "state": "accepted",
+      "localMessageId": "msg-1788420127133-8a4lxz6",
+      "timestamp": 1788420127133,
+      "rawDisplayText": "我的意思是N=3",
+      "canonicalText": "我的意思是N=3",
+      "images": [],
+      "contentDigest": "d2778f0ab84bf7adbcf94c42e817ea89dc058f30620c44c4a0af9b08dfc64c9a",
+      "providerUserMessageId": "01a06625-79e4-7f11-8170-697fdead85d6",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a99203233ac87d096f5ec9dddffa1df"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788420235538-rzqyi98",
+      "userTurnOrdinal": 11,
+      "state": "accepted",
+      "localMessageId": "msg-1788420235528-v5xqcqm",
+      "timestamp": 1788420235528,
+      "rawDisplayText": "padding mask 是什么",
+      "canonicalText": "padding mask 是什么",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "5.3 Padding mask\nbatch 内不同序列通常会 pad 到相同长度。假设两条序列的有效长度分别为 4 和 2，padding 到 ，key padding 可见性为：\n\n \n其常见 shape 为 ，会在 head 和 query 维广播。它主要防止有效 query 读取 padding key。",
+          "lineCount": 5
+        }
+      },
+      "images": [],
+      "contentDigest": "889e512e21a7e311b1184af08516aee922c44a32722ddbb5567b531385df3309",
+      "providerUserMessageId": "01a06627-2fab-7382-9e75-acd5b593ec88",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a9920a0177087d086d7d4cb8fb786e4"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788420296938-y3onmlb",
+      "userTurnOrdinal": 12,
+      "state": "accepted",
+      "localMessageId": "msg-1788420296926-u6z7gng",
+      "timestamp": 1788420296926,
+      "rawDisplayText": "根据上面内容改写5.3",
+      "canonicalText": "根据上面内容改写5.3",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "5.3 Padding mask",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "28f11175eb44de0bec95ef43c7c59a8c12eea3e4c30bd98df1afa34efb7a2aa5",
+      "providerUserMessageId": "01a06628-1823-7c63-a852-e10927a59c78",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a992105420087d0b7c0cf326cba2fbd"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788420436298-ot4gv31",
+      "userTurnOrdinal": 13,
+      "state": "accepted",
+      "localMessageId": "msg-1788420436287-lkmbu8v",
+      "timestamp": 1788420436287,
+      "rawDisplayText": "解释下为什么",
+      "canonicalText": "解释下为什么",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "例题 5：Mask broadcasting\n设 score shape 为 。判断下列 mask 是否能广播，并说明语义：\n\n解答\n可以。它是典型 key padding mask，在 head 和 query 维广播。\n可以。它可表示所有样本、所有 head 共用的 causal mask。\n不能直接按预期与四维 score 相加。广播会从右向左对齐，语义不清晰；应显式扩成 。",
+          "lineCount": 7
+        }
+      },
+      "images": [],
+      "contentDigest": "976fd522a764fbccb1803492516efdc0ec903dea7fd3e10d9b630a04a12b7997",
+      "providerUserMessageId": "01a0662a-38aa-7ee1-ab2f-dd50f48c8057",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a992163214887d08c2884ccf5463270"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788420643765-8e5ljnm",
+      "userTurnOrdinal": 14,
+      "state": "accepted",
+      "localMessageId": "msg-1788420643757-zthb83u",
+      "timestamp": 1788420643757,
+      "rawDisplayText": "Mask shape\t能否广播\t语义\n可以\t每个样本自己的 key padding mask\n可以\t所有样本、所有 head 共享的完整 Attention mask 这里还是不理解",
+      "canonicalText": "Mask shape\t能否广播\t语义\n可以\t每个样本自己的 key padding mask\n可以\t所有样本、所有 head 共享的完整 Attention mask 这里还是不理解",
+      "images": [],
+      "contentDigest": "d925d1f2fa7267a80e92320e97cc32146cdb1e2bf33120058db4b9b9a1e1aa01",
+      "providerUserMessageId": "01a0662d-5bef-7ae0-ad4b-3c0ee09c0e69",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a99223170c887d08c82ff2ac5683b07"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788420835198-7uhwna4",
+      "userTurnOrdinal": 15,
+      "state": "accepted",
+      "localMessageId": "msg-1788420835183-w036jve",
+      "timestamp": 1788420835183,
+      "rawDisplayText": "那到底是使用padding mask还是causal mask",
+      "canonicalText": "那到底是使用padding mask还是causal mask",
+      "images": [],
+      "contentDigest": "5d6673572475626cc89c1a2bbba1365cfc94e0ea4ad269710bf08c7fe1b58179",
+      "providerUserMessageId": "01a06630-4f06-78c0-9569-2ae09688d7da",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a9922efec8087d08a03d21554a6deb6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788420953133-ur0ohj8",
+      "userTurnOrdinal": 16,
+      "state": "accepted",
+      "localMessageId": "msg-1788420953123-mu6fzm7",
+      "timestamp": 1788420953123,
+      "rawDisplayText": "也就是padding mask是序列与序列？causal mask是单个序列中不同token的？",
+      "canonicalText": "也就是padding mask是序列与序列？causal mask是单个序列中不同token的？",
+      "images": [],
+      "contentDigest": "ec1e019310e2dcea13ade314f15bc4bee57cb5fce2fbff9c0852cce532aad06a",
+      "providerUserMessageId": "01a06632-1b76-7d50-95be-f682c9530bab",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a992366351487d0845ebe4e126ce6b7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788421046758-wavqcmv",
+      "userTurnOrdinal": 17,
+      "state": "accepted",
+      "localMessageId": "msg-1788421046746-juvpdae",
+      "timestamp": 1788421046746,
+      "rawDisplayText": "你把上面的好几条回答对比总结下放到五、Mask：控制哪些信息可见中",
+      "canonicalText": "你把上面的好几条回答对比总结下放到五、Mask：控制哪些信息可见中",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": "五、Mask：控制哪些信息可见",
+          "lineCount": 1
+        }
+      },
+      "images": [],
+      "contentDigest": "e461f9716e3b9da4738665f27a0fd7f1b346fa615d3260dd465ee6986708211f",
+      "providerUserMessageId": "01a06633-8228-7261-8460-2d9b6416d537",
+      "providerAssistantMessageId": "msg_05e47582793a1a2b016a9924345b7487d0aa48a790c6721732"
+    }
+  ]
+}

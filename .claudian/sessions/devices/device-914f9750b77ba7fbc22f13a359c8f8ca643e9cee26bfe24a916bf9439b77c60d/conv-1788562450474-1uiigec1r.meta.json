@@ -1,0 +1,18 @@
+{
+  "id": "conv-1788562450474-1uiigec1r",
+  "providerId": "codex",
+  "title": "目前这篇笔记写的不够清晰，重点不突出，而且公式符号是不是没有对齐，比如Encoder之后到底是z还是...",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1788562450482,
+  "lastActivityAt": 1788562459872,
+  "sessionId": "01a06ea1-28db-7ef3-8340-6de7d75ef7c6",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06ea1-28db-7ef3-8340-6de7d75ef7c6",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T06-54-10-01a06ea1-28db-7ef3-8340-6de7d75ef7c6.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/04-Seq2Seq.md"
+}

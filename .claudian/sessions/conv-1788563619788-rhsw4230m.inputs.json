@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788563619788-rhsw4230m",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788562526586-xo7amu9",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788562526553-936tevf",
+      "timestamp": 1788562526553,
+      "rawDisplayText": "目前这篇笔记写的不够清晰，重点不突出。特别重要的地方要用callout",
+      "canonicalText": "目前这篇笔记写的不够清晰，重点不突出。特别重要的地方要用callout",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/04-Seq2Seq.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "89b17524ab06f361203a710ed28a1daf220778e1f1a9641046ce07bd7bb8176f",
+      "providerUserMessageId": "01a06ea2-9882-70b1-b167-684b3b07bc3e",
+      "providerAssistantMessageId": "msg_085fc9d11bcb9424016a9b4e332c6087d0aa01a2fe61301c3b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788563707137-mlyxq9v",
+      "userTurnOrdinal": 2,
+      "state": "staged",
+      "localMessageId": "msg-1788563707102-kp550vd",
+      "timestamp": 1788563707102,
+      "rawDisplayText": "你同样的修改下 @Paper/架构学习/基础/03-LSTM与GRU.md",
+      "canonicalText": "你同样的修改下 @Paper/架构学习/基础/03-LSTM与GRU.md",
+      "images": [],
+      "contentDigest": "a52ad40aed38549c1fb334b3e21e733c2c0f445a53780f6e40274e6303b2c94a"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ conference: ""
 year: 2026
 arxiv_url: https://arxiv.org/abs/2604.21444
 pdf_link: "[[paper_2604.21444.pdf]]"
-cover: "[[pipeline_2604.21444.png]]"
+cover: "[[_assets/images/pipeline_2604.21444.png]]"
 updated: 2026-04-26
 tags:
   - paper/arxiv
@@ -92,7 +92,7 @@ $$
 
 ## Pipeline Figure
 
-![[pipeline_2604.21444.png]]
+![[_assets/images/pipeline_2604.21444.png]]
 
 Caption: Architecture of HiCrew framework showing Hybrid Tree construction (left) and hierarchical multi-agent collaboration (right).
 

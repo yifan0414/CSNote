@@ -14,9 +14,9 @@ tags: [excalidraw]
 rncXLnbU: [[datalab.pdf#page=5&rect=77,346,553,559]]
 
 ## Embedded Files
-5e84e6b9da884ae32b80923e22bc3bb2efefe4fd: [[Pasted Image 20221228172746_239.png]]
+5e84e6b9da884ae32b80923e22bc3bb2efefe4fd: [[_assets/images/Pasted Image 20221228172746_239.png]]
 
-141014f380c5ac66426f6173e0bf23aaa172478f: [[Pasted Image 20221228170755_012.png]]
+141014f380c5ac66426f6173e0bf23aaa172478f: [[_assets/images/Pasted Image 20221228170755_012.png]]
 
 dc209970e1bea6af78bc88be82a75e795a38a703: [[datalab.pdf#page=5]]
 

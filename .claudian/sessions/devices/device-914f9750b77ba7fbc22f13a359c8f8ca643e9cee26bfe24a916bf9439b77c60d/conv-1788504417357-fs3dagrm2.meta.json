@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788504417357-fs3dagrm2",
+  "providerId": "codex",
+  "title": "审阅一下这个笔记",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788504417369,
+  "lastActivityAt": 1788584201599,
+  "sessionId": "01a06b2b-b6ac-76e3-a71a-196af5c204dc",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06b2b-b6ac-76e3-a71a-196af5c204dc",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/04/rollout-2026-09-04T14-47-02-01a06b2b-b6ac-76e3-a71a-196af5c204dc.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/01-词向量.md",
+  "usage": {
+    "inputTokens": 152214,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 152064,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 152214,
+    "percentage": 59,
+    "model": "gpt-5.6-sol"
+  }
+}

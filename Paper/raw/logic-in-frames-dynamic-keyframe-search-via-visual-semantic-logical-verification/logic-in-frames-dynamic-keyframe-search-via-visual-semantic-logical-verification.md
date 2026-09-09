@@ -13,7 +13,7 @@ conference: NeruIPS 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2503.13139
 pdf_link: "[[assets/paper_2503.13139.pdf]]"
-cover: "[[assets/pipeline_2503.13139.png]]"
+cover: "[[_assets/images/pipeline_2503.13139.png]]"
 updated: 2026-05-20
 tags:
   - paper/arxiv
@@ -90,7 +90,7 @@ Input: video V, query Q, top-K target, search budget and relation parameters
 
 ## Pipeline Figure
 
-![[assets/pipeline_2503.13139.png]]
+![[_assets/images/pipeline_2503.13139.png]]
 
 Caption: Our VSLS Framework for Efficient Keyframe Selection. VSLS sparsely samples frames and selects key ones via object detection and logic verification. Steps: 1) use LLM & VLM to extract cue/target objects and four logic types; 2) adaptive sampling with evolving confidence; 3) detect objects via YOLO-World; 4) fuse scores with a spline function to identify high-confidence frames for downstream tasks.
 

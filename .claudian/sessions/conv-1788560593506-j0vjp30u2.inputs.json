@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788560593506-j0vjp30u2",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788560593540-nifadgi",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788560593502-4iiowh4",
+      "timestamp": 1788560593502,
+      "rawDisplayText": "现在我已经写了00-分词，01-词向量，02-RNN，下一篇你觉得应该写什么",
+      "canonicalText": "现在我已经写了00-分词，01-词向量，02-RNN，下一篇你觉得应该写什么",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/02-RNN.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "dfbffeb7d210965434b58c229b1731cae44ed3ba3b3a02e764b6f4bb813eb7bb",
+      "providerUserMessageId": "01a06e84-d36e-7661-ad12-45211e5a1b20",
+      "providerAssistantMessageId": "msg_02e308e95fb93b86016a9b455a8bd887d09233cc34c16e60b7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788560810469-hhkqw57",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788560810463-mpvfa2j",
+      "timestamp": 1788560810463,
+      "rawDisplayText": "你帮我创建一个文档吧，内容架构组织形式参考02-RNN",
+      "canonicalText": "你帮我创建一个文档吧，内容架构组织形式参考02-RNN",
+      "images": [],
+      "contentDigest": "7aaf3be14f25c571e0c29f8993c5f5a4a387f92f3b33d8b2a35af8cc63d0ab8a",
+      "providerUserMessageId": "01a06e88-2228-70d0-a92f-ed0273936cdd",
+      "providerAssistantMessageId": "msg_02e308e95fb93b86016a9b4783bbbc87d0b987f18031dda6ce"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788561609337-5rxtpgb",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788561609330-9aq7p0j",
+      "timestamp": 1788561609330,
+      "rawDisplayText": "目前02-RNN和03-LSTM中都有Seq2Seq的部分，我并不想在这两个笔记中做详细的技术介绍，而是只是做衔接。帮我创建04-Seq2Seq这个笔记，内容组织架构同样参考现在的笔记",
+      "canonicalText": "目前02-RNN和03-LSTM中都有Seq2Seq的部分，我并不想在这两个笔记中做详细的技术介绍，而是只是做衔接。帮我创建04-Seq2Seq这个笔记，内容组织架构同样参考现在的笔记",
+      "images": [],
+      "contentDigest": "6445d8e319095f9e39f9ae5e502014d201678909b9846f8906cb2ec3e38410d7",
+      "providerUserMessageId": "01a06e94-599e-78d1-b815-a4c25652906e",
+      "providerAssistantMessageId": "msg_02e308e95fb93b86016a9b4b06007087d0b9ea7c0ec2a5d915"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788562379298-nev0dzo",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788562379290-p2uuq1j",
+      "timestamp": 1788562379290,
+      "rawDisplayText": "但是我觉得Seq",
+      "canonicalText": "但是我觉得Seq",
+      "images": [],
+      "contentDigest": "15843a474ead1f6f2ae46bd5ea8b483181689807ca210e4f2c3056152589ce47"
+    }
+  ]
+}

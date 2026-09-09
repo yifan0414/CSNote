@@ -10,7 +10,7 @@ year: 2024
 paper_url: https://aclanthology.org/2024.acl-long.679/
 source_pdf: https://aclanthology.org/2024.acl-long.679.pdf
 pdf_link: "[[assets/paper_2024.acl-long.679.pdf]]"
-cover: "[[assets/pipeline_2024.acl-long.679.png]]"
+cover: "[[_assets/images/pipeline_2024.acl-long.679.png]]"
 updated: 2026-04-27
 tags:
   - paper/pdf
@@ -94,7 +94,7 @@ Assistant: <Answer>
 
 ## Pipeline Figure
 
-![[assets/pipeline_2024.acl-long.679.png]]
+![[_assets/images/pipeline_2024.acl-long.679.png]]
 
 Caption: Figure 1: Architecture of Video-ChatGPT. Video-ChatGPT uses CLIP-L/14 to extract spatial and temporal video features, averages frame-level features across temporal/spatial dimensions, projects them through a learnable linear layer, and feeds them into Vicuna-v1.1 7B initialized from LLaVA.
 

@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiOpenai",
       "LiAnchor",
       "TiStars",
       "RiRoadMapLine",
-      "LiExperiment",
-      "TiCapture"
+      "LiExperiment"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -34,30 +34,22 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "06-Algorithm": "TiMathMaxMin",
   "01-Project": "OcProject16",
   "03-Tool": "FiTool",
-  "05-Work": "OcWorkflow16",
-  "07-AI": {
-    "iconName": "LiBrain",
-    "iconColor": "#c73333"
-  },
-  "07-AI/01-数学": "TiMath",
   "READING": "CoBook",
   "00-Archive": "LiArchive",
   "07-MultiModal": "⛰",
-  "07-AI/00-课程": "LiSchool",
-  "07-AI/02-代码": "TiCode",
   "Diary": "✍",
   "Paper": "SiPaperspace",
   "Paper/Papers.base": "LiDatabase",
   "Excalidraw": "TiTypography",
   "Templates": "TiTemplate",
-  "copilot": "OcCopilot16",
   "02-Capture": "TiCapture",
   "00-Archive/04-CPP": "TiBrandCpp",
   "实验": "LiExperiment",
-  "07-AI/00-roadmap": "RiRoadMapLine",
   "Paper/raw/divide-then-ground-adapting-frame-selection-to-query-types-for-long-form-video": "TiStars",
-  "科研": "LiAnchor"
+  "科研": "LiAnchor",
+  "06-LLM": "SiOpenai",
+  "04-Work": "OcWorkflow16",
+  "05-Algorithm": "TiMathMaxMin"
 }

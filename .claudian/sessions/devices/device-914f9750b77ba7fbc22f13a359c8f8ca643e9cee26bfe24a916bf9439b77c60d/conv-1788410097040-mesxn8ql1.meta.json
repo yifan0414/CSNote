@@ -5,15 +5,8 @@
   "titleGenerationStatus": "failed",
   "createdAt": 1788410097049,
   "lastActivityAt": 1788410245781,
-  "sessionId": "01a0658c-6e0b-78e3-994d-7adce0a9d51e",
+  "sessionId": null,
   "selectedModel": "gpt-5.6-sol",
-  "providerState": {
-    "threadId": "01a0658c-6e0b-78e3-994d-7adce0a9d51e",
-    "nativeConversationContextEstablished": true,
-    "sessionFilePath": "/Users/yifan/.codex-trans/sessions/2026/09/03/rollout-2026-09-03T12-34-57-01a0658c-6e0b-78e3-994d-7adce0a9d51e.jsonl",
-    "transcriptRootPath": "/Users/yifan/.codex-trans/sessions",
-    "workspaceDependencyToolVersion": 1
-  },
   "usage": {
     "inputTokens": 84238,
     "cacheCreationInputTokens": 0,

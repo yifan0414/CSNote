@@ -9,7 +9,7 @@ conference:
 year: 2026
 arxiv_url: https://arxiv.org/abs/2603.18558
 pdf_link: "[[assets/paper_2603.18558.pdf]]"
-cover: "[[assets/pipeline_2603.18558.png]]"
+cover: "[[_assets/images/pipeline_2603.18558.png]]"
 updated: 2026-05-13
 tags:
   - paper/arxiv
@@ -91,7 +91,7 @@ $\operatorname{Seq}$ 用 running max 的 has-occurred signal $H_j(t)=\max_{s<t}u
 
 ## Pipeline Figure
 
-![[assets/pipeline_2603.18558.png]]
+![[_assets/images/pipeline_2603.18558.png]]
 
 Caption: The HiMu pipeline. (1) An LLM parses the question into a logic tree of modality-specific experts. (2) Experts (CLIP, ASR, OVD, CLAP) extract raw signals, which are then normalized and smoothed. (3) Fuzzy logic operators compose signals into a temporal satisfaction curve. (4) Top frames are sampled for the LVLM using PASS.
 

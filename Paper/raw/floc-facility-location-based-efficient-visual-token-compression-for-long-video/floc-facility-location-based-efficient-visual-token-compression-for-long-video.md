@@ -11,7 +11,7 @@ conference: ICLR 2026
 year: 2026
 arxiv_url: https://arxiv.org/abs/2511.00141
 pdf_link: "[[assets/paper_2511.00141.pdf]]"
-cover: "[[assets/pipeline_2511.00141.png]]"
+cover: "[[_assets/images/pipeline_2511.00141.png]]"
 updated: 2026-05-19
 tags:
   - paper/arxiv
@@ -91,7 +91,7 @@ Return S
 
 ## Pipeline Figure
 
-![[assets/pipeline_2511.00141.png]]
+![[_assets/images/pipeline_2511.00141.png]]
 
 Caption: Overview of the proposed framework for selecting a visual token subset. The method compresses visual tokens extracted by a visual encoder from input video sequences into a diverse and representative subset within a given budget, then concatenates selected visual tokens with text tokens for the video-LMM. It is training-free and model-agnostic, so it can be integrated plug-and-play into video-LMM workflows.
 

@@ -9,7 +9,7 @@ conference: CVPR 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2503.21483
 pdf_link: "[[assets/paper_2503.21483.pdf]]"
-cover: "[[assets/pipeline_2503.21483.png]]"
+cover: "[[_assets/images/pipeline_2503.21483.png]]"
 updated: 2026-05-28
 tags:
   - paper/arxiv
@@ -68,7 +68,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2503.21483.png]]
+![[_assets/images/pipeline_2503.21483.png]]
 
 Caption: BOLT 的 training-free frame selection framework，并对比 Top-K、Watershed Grouping 与 Inverse Transform Sampling；ITS 依据相似度累积分布选取相关且分散的帧。
 

@@ -103,23 +103,23 @@ Linux ^JcTtPjOU
 /home/suyi/ics2020/nanos-lite/build/nanos-lite-x86-nemu.bin ^DLLKH3Fg
 
 ## Embedded Files
-fe971ef184ce02447558f58e135352b5df6f44df: [[Pasted Image 20240121074633_769.png]]
+fe971ef184ce02447558f58e135352b5df6f44df: [[_assets/images/Pasted Image 20240121074633_769.png]]
 
-045bab4f8b537c9d9b63eb835a04089a0f4fe674: [[Pasted Image 20240121075033_775.png]]
+045bab4f8b537c9d9b63eb835a04089a0f4fe674: [[_assets/images/Pasted Image 20240121075033_775.png]]
 
-86d64833a3327b73581b653366f154107d2fb47a: [[Pasted Image 20240121083000_296.png]]
+86d64833a3327b73581b653366f154107d2fb47a: [[_assets/images/Pasted Image 20240121083000_296.png]]
 
-fe1e633164402830c0c7996a61a2b26618fb7f25: [[Pasted Image 20240121083228_294.png]]
+fe1e633164402830c0c7996a61a2b26618fb7f25: [[_assets/images/Pasted Image 20240121083228_294.png]]
 
-4b50a9cb6aeaeef5e1e5a36edd17f3ca2cd634eb: [[Pasted Image 20240121083517_335.png]]
+4b50a9cb6aeaeef5e1e5a36edd17f3ca2cd634eb: [[_assets/images/Pasted Image 20240121083517_335.png]]
 
-49c0ff9c85572696819d5422fd468a34a3845705: [[Pasted Image 20240121083548_339.png]]
+49c0ff9c85572696819d5422fd468a34a3845705: [[_assets/images/Pasted Image 20240121083548_339.png]]
 
-37b87edb06b2017309eb67c1e2980e7ccdaf35fd: [[Pasted Image 20240121083618_342.png]]
+37b87edb06b2017309eb67c1e2980e7ccdaf35fd: [[_assets/images/Pasted Image 20240121083618_342.png]]
 
-6cfb864e6dcf126480b108d2a4851b46a89cfd94: [[Pasted Image 20240121094518_628.png]]
+6cfb864e6dcf126480b108d2a4851b46a89cfd94: [[_assets/images/Pasted Image 20240121094518_628.png]]
 
-cc48db202a8a8b4e11a2df09194c35b851ecb77f: [[Pasted Image 20240121113700_284.png]]
+cc48db202a8a8b4e11a2df09194c35b851ecb77f: [[_assets/images/Pasted Image 20240121113700_284.png]]
 
 %%
 ## Drawing

@@ -12,7 +12,7 @@ conference: NeurIPS 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2512.06866
 pdf_link: "[[assets/paper_2512.06866.pdf]]"
-cover: "[[assets/pipeline_2512.06866.png]]"
+cover: "[[_assets/images/pipeline_2512.06866.png]]"
 updated: 2026-05-31
 tags:
   - paper/arxiv
@@ -100,7 +100,7 @@ Input: frame tokens {x_f}, assistant attention layers L', total budget T_total, 
 
 ## Pipeline Figure
 
-![[assets/pipeline_2512.06866.png]]
+![[_assets/images/pipeline_2512.06866.png]]
 
 Caption: **Illustration of DyToK.** 图中展示两阶段流程：先用 lightweight assistant model 的 cross-modal attention 估计 temporal importance，再按 frame importance 执行 Dynamic Frame-Level Compression，把更多 token 留给关键帧，同时兼容不同 pruning methods。
 

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788563942859-zme0i9j4q",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788563942882-4ja4raq",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788563942853-ljqcokr",
+      "timestamp": 1788563942853,
+      "rawDisplayText": "你重新组织下这个笔记，Seq2Seq正文使用经典RNN作为例子，LSTM放到折叠callout中",
+      "canonicalText": "你重新组织下这个笔记，Seq2Seq正文使用经典RNN作为例子，LSTM放到折叠callout中",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/04-Seq2Seq.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "7e243384c9d81f8b77cdd4015dc213de9834b74f44c53c99376068541e6e132b",
+      "providerUserMessageId": "01a06eb8-3733-7b90-8f05-84ac686d1354",
+      "providerAssistantMessageId": "msg_0a95b38788fdac6a016a9b54c6d0a887d0bad43375218a80de"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788564963971-wi3jy66",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788564963964-1lleb6c",
+      "timestamp": 1788564963964,
+      "rawDisplayText": "我还是觉得目前的内容组织的有点乱，比如有些章节出现的很奇怪比如2.3，章节6没有前因后果，概念也不清晰",
+      "canonicalText": "我还是觉得目前的内容组织的有点乱，比如有些章节出现的很奇怪比如2.3，章节6没有前因后果，概念也不清晰",
+      "images": [],
+      "contentDigest": "7ae963e470625e9987ea55447f77647f0bc5ecf749102e73d10c373428ca863d",
+      "providerUserMessageId": "01a06ec7-89f3-7062-9671-95c8d447e736",
+      "providerAssistantMessageId": "msg_0a95b38788fdac6a016a9b56f5ad9887d0aabe27980dd47172"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788565819292-698rpyn",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788565819284-5x8jihh",
+      "timestamp": 1788565819284,
+      "rawDisplayText": "@Paper/架构学习/基础/03-LSTM与GRU.md 这一个也要重新组织下架构，太多细节了，补充内容可以放到callout中。",
+      "canonicalText": "@Paper/架构学习/基础/03-LSTM与GRU.md 这一个也要重新组织下架构，太多细节了，补充内容可以放到callout中。",
+      "images": [],
+      "contentDigest": "5470d64eef8f91a71d91cce9ec53a9c187b0b98481a231e8f652e8032f932cc6",
+      "providerUserMessageId": "01a06ed4-96b5-7f83-8106-1242b57ae4e0",
+      "providerAssistantMessageId": "msg_0a95b38788fdac6a016a9b5a3310c887d0b6c76b934b09d4e8"
+    }
+  ]
+}

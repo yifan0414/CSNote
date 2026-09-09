@@ -4,11 +4,11 @@
 
 本章的主要内容是对一种广泛应用的深层网络的介绍：深层卷积网络（deep convolutional networks）。我们会用一个具体的例子，包括代码，用卷积网络去解决经典的 MNIST 手写数字识别问题：
 
-![digits](1-digits.png)
+![digits](../../_assets/images/digits.png)
 
 我们首先会使用简单的浅层卷积网络来解决这个问题，然后不断地构建更加复杂的、强大的网络。同时，我们会探索许多强大的技巧：卷积（convolution）、池化（pooling）、使用 GPUs、改进的算法和 dropout（减少过拟合）、网络的整合（ensembles）等等。网络的最终表现几乎达到了人类的水平，在 $10,000$ 个 MNIST 训练图片上，我们的网络正确分类了 $9,967$ 个图片。下面展示了分类错误的 $33$ 个图片。每个图片右上角的数字是正确的分类，右下角的数字是我们的网络给出的分类：
 
-![ensemble error](2-ensemble_errors.png)
+![ensemble error](../../_assets/images/14-ensemble_errors.png)
 
 这些数字对于人类来说也是很难辨认的。例如上图中第三个数字，对我来说，它更像是 9 而不是所谓的 8。我们的网络也是这样认为！这种类型的“错误”也许算不上是真正的错误，我们甚至可以说它是一种值得赞赏的“错误”。我们最后对图像识别领域中一些最新的惊人进展（尤其是卷积网络）做出一些概述和总结。
 
@@ -22,11 +22,11 @@
 
 在之前的章节里，我们设计的神经网络可以在手写数字识别问题上得到一个不错的结果了：
 
-![digits](.\pics\chapter-6\1-digits.png)
+![digits](../../_assets/images/digits.png)
 
 我们所使用的网络，其相邻层之间是全部连接的。这就是说，网路中每一个神经元都与其相邻层的每一个神经元相互连接：
 
-![fully connected layers](.\pics\chapter-6\3-tikz41.png)
+![fully connected layers](../../_assets/images/3-tikz41.png)
 
 对于输入图片中的每一个像素，我们把其像素亮度看做是相应输入层神经元的输入值。对于一个大小为 $28 \times 28$ 像素的图片，这意味着我们的网络拥有 $784(=28\times 28)$ 个输入神经元。我们然后训练这个网络的权值和 biases，最后网络可以对每个输入图片，输出其所代表的数字：从零到九。
 
@@ -38,23 +38,23 @@
 
 **局部接受域**：在之前介绍的全连接层中，输入被表示为一个竖直排列的神经元组合。在卷积网络中，我们把输入看做是一个面积为 $28 \times 28$ 的神经元矩形，每个值都对应着像素亮度：
 
-![local receptive fields](.\pics\chapter-6\4-tikz42.png)
+![local receptive fields](../../_assets/images/4-tikz42.png)
 
 如同往常一样，我们会把输入像素连接到一个隐藏层上。但不是每个像素都去连接隐藏层中的每一个神经元，而是，我们对输入图片中一个很小的局部区域做连接。
 
 更准确地说，第一个隐藏层中的每一个隐藏神经元，都会连接到输入神经元中的一个小的区域，例如，一个 $5 \times 5$ 的区域，其对应着 $25$ 个输入像素。所以，对于某个特定的隐藏神经元，我们的连接可能会像下图展示的那样：
 
-![small region](.\pics\chapter-6\5-tikz43.png)
+![small region](../../_assets/images/5-tikz43.png)
 
 这个输入图片中的区域，称为隐藏神经元的 *局部接受域（local receptive field）*。这是输入像素中的一个小的窗口。每个连接都会学习一个权值，隐藏神经元也会学习一个整体的 bias。你可以认为这个特定的隐藏神经元在试着学习这个特定的局部接受域。
 
 我们让局部接受域在整个输入图片上滑动。每一个局部接受域，都在第一个隐藏层中有一个对应的隐藏神经元。为了解释的具体些，让我们从输入图片的右上角开始构建一个局部接受域：
 
-![first local receptive field](.\pics\chapter-6\6-tikz44.png)
+![first local receptive field](../../_assets/images/6-tikz44.png)
 
 然后我们让局部接受域向右滑动一段距离（例如一个像素）：
 
-![second local receptive field](.\pics\chapter-6\7-tikz45.png)
+![second local receptive field](../../_assets/images/7-tikz45.png)
 
 如此反复，最终构建出整个隐藏层。如果我们的输入是像素大小为 $28 \times 28$ 的图片，以及大小为 $5 \times 5$ 的局部接受域，那么隐藏层最终会拥有 $24 \times 24$ 个神经元。这是因为在图片像素中的每一行（列）中，我们只能移动局部接受域 $23$ 次。
 
@@ -78,13 +78,13 @@ $$
 
 上面我描述的网络只能探测（detect）出一种局部特征（localized feature），而在图像识别中，我们需要更多的特征映射，所以对于一个完整的卷积层，它由许多不同的特征映射组成：
 
-![many feature maps](.\pics\chapter-6\8-tikz46.png)
+![many feature maps](../../_assets/images/8-tikz46.png)
 
 在上面的例子中有三个特征映射（feature map）。每个特征映射由一大小为 $5 \times 5$ 的共享权值和单个 bias 定义。这样，我们的网络就可以探测出三种不同类型的特征，每种特征都可以在整张图片上探测出来。
 
 三个特征映射并不多，在实际的卷积网络中，可能拥有更多（多的多的多）的特征映射。之前一个经典的卷积网络，$\text{LeNet-}5$，使用了六种特征映射，每个映射由大小为 $5 \times 5$ 的局部接受域构建，然后用来识别 MNIST 手写数字。所以上面的例子与 $\text{LeNet-}5$ 非常相似。在后面的例子中，我们构建的卷积网络将拥有 $20$ 个、$40$ 个特征映射。让我们简单看一看那些学习到的特征*：
 
-![feature map example](.\pics\chapter-6\9-net_full_layer_0.png)
+![feature map example](../../_assets/images/9-net_full_layer_0.png)
 
 > *这些特征映射来自于本章后面所训练的卷积网络。
 
@@ -102,7 +102,7 @@ $$
 
 池化层接收每个特征映射\*在卷积层上的输出，生成一个压缩的特征映射。例如，池化层中的一个单元也许代表着上一层中一块 $2 \times 2$ 的神经元区域。一种常见的池化操作是 *最大池化（max-pooling）*，在最大池化中，一个池化单元的值就是这个 $2 \times 2$ 区域中最大的激活，如下图所示：
 
-![max pooling](.\pics\chapter-6\10-tikz47.png)
+![max pooling](../../_assets/images/10-tikz47.png)
 
 > *这里使用的术语并不严谨。特别是，这里的“特征映射”表示的并不是卷积层所计算的函数，而是卷积层中隐藏神经元输出的激活。这种后果并不严重的术语滥用其实在学术界还挺常见的。
 
@@ -110,7 +110,7 @@ $$
 
 我们之前提过，卷积层中有着不止一个特征映射。我们对每一个特征映射都做一次最大池化。所以假如有三个特征映射的话，卷积层和池化层是这样的：
 
-![three feature map](.\pics\chapter-6\11-tikz48.png)
+![three feature map](../../_assets/images/11-tikz48.png)
 
 我们可以这样去想象最大池化的作用：它去询问网络，图片中某个区域上，有没有这种特征。然后它丢弃了具体的位置信息。这其中的道理在于，一旦在某个区域内找到了这种特征，那么这个特征在这个区域内的具体位置并不如这个特征与其他特征的相对位置重要。一个巨大的好处是，图片中这样的特征可能很少，所以这样做可以显著地减少之后的层所需要的参数。
 
@@ -118,7 +118,7 @@ $$
 
 **整合**：我们现在把所有的这些想法整合在一起，构建出一个完整的卷积神经网络。它与我们刚刚看过的结构很相似，但是多了一个输出层：
 
-![complete network](.\pics\chapter-6\12-tikz49.png)
+![complete network](../../_assets/images/12-tikz49.png)
 
 这个网络首先从 $28 \times 28$ 的输入神经元开始，它们对 MNIST 图片中的像素强度进行编码。然后是一个卷积层，局部接受域的大小为 $5 \times 5$，拥有 $3$ 个特征映射，总共包含 $3 \times 24 \times 24$ 个隐藏特征神经元。下一步是最大池化层，分别应用于 $3$ 个特征映射中大小为 $2 \times 2$ 的区域，总共包含 $3 \times 12 \times 12$ 个隐藏特征神经元。
 
@@ -175,7 +175,7 @@ $97.80\%$ 的准确率与我们在第三章中得到的 $98.04\%$ 非常接近�
 
 让我们试着在网络的开始加上一个卷积层。我们使用 $5\ \times 5$ 大小的局部接受域，步长为 $1$，以及 $20$ 个特征映射。我们还会插入一个最大池化层，它使用一个大小为 $2 \times 2$ 的池化窗口来对特征进行整合。这个网络的整体结构如下图所示：
 
-![simple conv](.\pics\chapter-6\13-simple_conv.png)
+![simple conv](../../_assets/images/13-simple_conv.png)
 
 在这个结构中，我们可以认为卷积层和池化层在训练图片中对局部的空间结构信息进行了学习，然后，全连接层对其进行了更为抽象地学习，把遍布整张图片上的全局信息进行了整合。这便是卷积神经网络工作的模式。
 
@@ -364,7 +364,7 @@ $ python expand_mnist.py
 
 分类错误的测试图片如下图所示。右上角的数字是 MNIST 数据集中正确的分类，而右下角是我们的集成网络给出的分类：
 
-![errors](.\pics\chapter-6\14-ensemble_errors.png)
+![errors](../../_assets/images/14-ensemble_errors.png)
 
 让我们看看具体的情况。前两个数字，一个是 $6$ 一个是 $5$，我们的分类器确实分类错了。这些错误是可以理解的错误，对于人类来说，也可能犯这样的错误，因为图片中的 $6$ 确实和 $0$ 比较像，而那个 $5$ 看起来和 $3$ 差不多。第三个图片，虽然标签是 $8$，但它不管怎么看，都更像是数字 $9$。所以这一次我站在了分类器的这一边：我认为它做的比当初写这个数字的人要好。不过，另一方面，例如第四个图片 $6$，我们的网络确实分类错了。
 
@@ -928,7 +928,7 @@ def dropout_layer(layer, p_dropout):
 
 **2012年的 LRMD 论文**：让我们从2012年来自斯坦福大学和谷歌的研究人员所发表的论文*开始。我把这篇论文称为 LRMD，即前四位作者的姓的首字母。LRMD 使用了神经网络去分类 [ImageNet](http://www.image-net.org/) 中的图片，这是一个非常有挑战性的图像识别问题。他们使用的2011年的 ImageNet 数据包含了一千六百万张完整的带有色彩的图片，这些图片总共有着大约两万种分类。这些图片是从网上使用爬虫获得的，由 Amazon 的 Mechanical Turk service 的员工对其进行分类。下面展示了一些 ImageNet 中的图片\*：
 
-![ImageNet](.\pics\chapter-6\15-imagenet3.jpg)
+![ImageNet](../../_assets/images/15-imagenet3.jpg)
 
 > *[Building high-level features using large scale unsupervised learning](http://research.google.com/pubs/pub38115.html)，作者是 Quoc Le、Marc`Aurelio Ranzato、Rajat Monga、Matthieu Devin、Kai Chen、Greg Corrado、Jeff Dean 和 Andrew Ng，发表于2012年。该论文中使用的网络结构与我们所学习的卷积网络的结构在细节上有着非常多的不同。不过大概来说，LRMD 的想法与我们是类似。
 >

@@ -15,7 +15,7 @@ level3 和前面一样，注入代码攻击
 意味着我们不能随便的注入代码 ^7OVQEPUg
 
 ## Embedded Files
-77df23ddcc061479fde0628204747ba058a7ac52: [[Pasted Image 20230207145435_391.png]]
+77df23ddcc061479fde0628204747ba058a7ac52: [[_assets/images/Pasted Image 20230207145435_391.png]]
 
 %%
 ## Drawing

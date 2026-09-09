@@ -35,16 +35,16 @@ rbp 指向 bomb 的字符串 ^qX2rFMZS
 结束了, edx=0=eax ^nhfzonmE
 
 ## Embedded Files
-2ecce432846137f3df0bde1c0a531e2420f5e908: [[Pasted Image 20221227205733_008.png]]
-d050d4957a9aa3901539946f94a6000766fcef6f: [[Pasted Image 20221227205818_030.png]]
-0c0090955705d8d730dca9b5e3beaee4aaa25a12: [[Pasted Image 20221227205932_421.png]]
-e4826f6e5428a5c56f1ede142317c5f65555d47a: [[Pasted Image 20221227210141_156.png]]
-af7bae4f3a5ba8a83ca2ec08af101a4474c120e2: [[Pasted Image 20221227213033_610.png]]
-74c9123be6b80a1a5b799906a8fa8e2945f70dd6: [[Pasted Image 20221227214700_939.png]]
-7d46a9cc42c80d16a1058c778e7da991824db6e1: [[Pasted Image 20221227215616_145.png]]
-be0cffd0765d08e3c7dc9012b6d86cfc4857fb27: [[Pasted Image 20221227220130_306.png]]
-35e0a34625ae6ee0bb7042a0bd79c6750b2e05cd: [[Pasted Image 20221227220408_387.png]]
-51cc1ed611884fecdcf6859ecd38a694e07827d2: [[Pasted Image 20221228170554_989.png]]
+2ecce432846137f3df0bde1c0a531e2420f5e908: [[_assets/images/Pasted Image 20221227205733_008.png]]
+d050d4957a9aa3901539946f94a6000766fcef6f: [[_assets/images/Pasted Image 20221227205818_030.png]]
+0c0090955705d8d730dca9b5e3beaee4aaa25a12: [[_assets/images/Pasted Image 20221227205932_421.png]]
+e4826f6e5428a5c56f1ede142317c5f65555d47a: [[_assets/images/Pasted Image 20221227210141_156.png]]
+af7bae4f3a5ba8a83ca2ec08af101a4474c120e2: [[_assets/images/Pasted Image 20221227213033_610.png]]
+74c9123be6b80a1a5b799906a8fa8e2945f70dd6: [[_assets/images/Pasted Image 20221227214700_939.png]]
+7d46a9cc42c80d16a1058c778e7da991824db6e1: [[_assets/images/Pasted Image 20221227215616_145.png]]
+be0cffd0765d08e3c7dc9012b6d86cfc4857fb27: [[_assets/images/Pasted Image 20221227220130_306.png]]
+35e0a34625ae6ee0bb7042a0bd79c6750b2e05cd: [[_assets/images/Pasted Image 20221227220408_387.png]]
+51cc1ed611884fecdcf6859ecd38a694e07827d2: [[_assets/images/Pasted Image 20221228170554_989.png]]
 
 %%
 ## Drawing

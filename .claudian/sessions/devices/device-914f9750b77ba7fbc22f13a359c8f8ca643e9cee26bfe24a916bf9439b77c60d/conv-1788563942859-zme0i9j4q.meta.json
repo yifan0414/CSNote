@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788563942859-zme0i9j4q",
+  "providerId": "codex",
+  "title": "你重新组织下这个笔记，Seq2Seq正文使用经典RNN作为例子，LSTM放到折叠callout中",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788563942861,
+  "lastActivityAt": 1788566073240,
+  "sessionId": "01a06eb7-f6f0-7d82-91ca-57212f4d5afb",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06eb7-f6f0-7d82-91ca-57212f4d5afb",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T07-19-05-01a06eb7-f6f0-7d82-91ca-57212f4d5afb.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/04-Seq2Seq.md",
+  "usage": {
+    "inputTokens": 111598,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 108416,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 111598,
+    "percentage": 43,
+    "model": "gpt-5.6-sol"
+  }
+}

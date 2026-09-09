@@ -17,11 +17,11 @@ level 1 的目的就是改变程序返回地址，本应该返回到 test 函数
 后把这里覆盖为touch1的地址就行了 ^qomROJOt
 
 ## Embedded Files
-65707195a406a98851bea80bc83d49f8678ddb17: [[Pasted Image 20230207134637_220.png]]
+65707195a406a98851bea80bc83d49f8678ddb17: [[_assets/images/Pasted Image 20230207134637_220.png]]
 
-0ab8c93e3eb3ad970cd8ac6052090b9bf8b21a3e: [[Pasted Image 20230207134810_252.png]]
+0ab8c93e3eb3ad970cd8ac6052090b9bf8b21a3e: [[_assets/images/Pasted Image 20230207134810_252.png]]
 
-025c87d987289733bc4dbab89f9ad8fbce531d2a: [[Pasted Image 20230207135139_339.png]]
+025c87d987289733bc4dbab89f9ad8fbce531d2a: [[_assets/images/Pasted Image 20230207135139_339.png]]
 
 %%
 ## Drawing

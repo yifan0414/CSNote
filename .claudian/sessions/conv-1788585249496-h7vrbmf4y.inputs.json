@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788585249496-h7vrbmf4y",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788585249581-lncpo0i",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788585249491-czje4az",
+      "timestamp": 1788585249491,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/04-Seq2Seq.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "01a06ffd-0d10-76b1-9511-7f4605260e64",
+      "providerAssistantMessageId": "msg_03454f3f8901d9de016a9ba5946d0087d0a8a355701cdb2cbe"
+    }
+  ]
+}

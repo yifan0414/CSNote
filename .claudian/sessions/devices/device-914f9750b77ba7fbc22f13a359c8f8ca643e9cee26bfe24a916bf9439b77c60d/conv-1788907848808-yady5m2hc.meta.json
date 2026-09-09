@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788907848808-yady5m2hc",
+  "providerId": "codex",
+  "title": "9",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788907848817,
+  "lastActivityAt": 1788911449601,
+  "sessionId": "01a08337-8be9-7651-806b-354eb6544738",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a08337-8be9-7651-806b-354eb6544738",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/09/rollout-2026-09-09T06-50-50-01a08337-8be9-7651-806b-354eb6544738.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/01-数学/交叉熵系统整理.md",
+  "usage": {
+    "inputTokens": 155856,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 153856,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 155856,
+    "percentage": 19,
+    "model": "gpt-6-astra"
+  }
+}

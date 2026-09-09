@@ -10,7 +10,7 @@ conference:
 year: 2026
 arxiv_url: https://arxiv.org/abs/2604.17422
 pdf_link: "[[assets/paper_2604.17422.pdf]]"
-cover: "[[assets/pipeline_2604.17422.png]]"
+cover: "[[_assets/images/pipeline_2604.17422.png]]"
 updated: 2026-05-20
 tags:
   - paper/arxiv
@@ -84,7 +84,7 @@ Q-Gate 的 pipeline 可以压缩成三步：
 
 ## Pipeline Figure
 
-![[assets/pipeline_2604.17422.png]]
+![[_assets/images/pipeline_2604.17422.png]]
 
 Caption: Overview of the **Q-Gate** framework. Given a video and a user query, Q-Gate computes multi-granularity scores from Visual Grounding, Global Matching, and Contextual Alignment; Query-Aware Gating dynamically modulates these streams into a final score distribution; Sampler selects top-$K$ frames/subtitles and builds a temporally aligned prompt for the downstream VLM. The caption explicitly notes that high-weight Contextual Alignment can suppress distractions from noisy visual streams.
 

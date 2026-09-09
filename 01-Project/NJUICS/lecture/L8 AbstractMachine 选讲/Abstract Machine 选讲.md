@@ -75,11 +75,11 @@ Alan Turing's “machine” (1936)
         - (跳转) `goto label`
         - (终止) `halt()`
 
-![[attachments/6ebed0a83580461c3be7083d540a29fa_MD5.jpg|500]]
+![[_assets/images/6ebed0a83580461c3be7083d540a29fa_MD5.jpg|500]]
 
 ## 2.2 ENIAC: 人类可用的 Turing Machine
 
-![[attachments/b66dc12a0ccb70c4abae5a0aad855fda_MD5.jpg|500]]
+![[_assets/images/b66dc12a0ccb70c4abae5a0aad855fda_MD5.jpg|500]]
 
 [ENIAC Simulator by Brian L. Stuart](https://www.cs.drexel.edu/~bls96/eniac/)
 
@@ -103,7 +103,7 @@ Alan Turing's “machine” (1936)
 
 >存储程序的通用性真正掀起了计算机走向全领域的革命。
 
-![[attachments/a8a36f9ead11cb285ae195d008cadd95_MD5.jpg|500]]
+![[_assets/images/a8a36f9ead11cb285ae195d008cadd95_MD5.jpg|500]]
 
 - 只要增加 in 和 out 指令，就可以和物理世界建立无限的联系
     - 持久存储 (磁带、磁盘……)
@@ -170,7 +170,7 @@ void interrupt_handler() {
 - 多处理器、big.LITTLE、异构处理器 (GPU, NPU, ...)
 - 单指令多数据 (MMX, SSE, AVX, ...), 虚拟化 (VT; EL0/1/2/3), 安全执行环境 (TrustZone; SGX), ...
 
-![[attachments/c44fdd867617af127f2844fec42e5a59_MD5.jpg|500]]
+![[_assets/images/c44fdd867617af127f2844fec42e5a59_MD5.jpg|500]]
 
 # 3 演化视角的 AbstractMachine
 

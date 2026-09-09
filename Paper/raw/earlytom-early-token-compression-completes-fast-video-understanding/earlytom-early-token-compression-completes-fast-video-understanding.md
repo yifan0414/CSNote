@@ -12,7 +12,7 @@ conference: CVPR 2025
 year: 2026
 arxiv_url: https://arxiv.org/abs/2605.30010
 pdf_link: "[[assets/paper_2605.30010.pdf]]"
-cover: "[[assets/pipeline_2605.30010.png]]"
+cover: "[[_assets/images/pipeline_2605.30010.png]]"
 updated: 2026-06-01
 tags:
   - paper/arxiv
@@ -66,7 +66,7 @@ EarlyTom 的关键假设是：Video-LLM 的 inference latency 中，vision encod
 
 ## Pipeline Figure
 
-![[assets/pipeline_2605.30010.png]]
+![[_assets/images/pipeline_2605.30010.png]]
 
 Caption: **Overall pipeline of EarlyTom.** The method has Stage I inner-vision encoder frame merging for temporal compression and Stage II decoupled spatial selection for dynamic/static spatial token reduction.
 

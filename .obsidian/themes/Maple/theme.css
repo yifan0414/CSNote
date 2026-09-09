@@ -1,4 +1,4 @@
-/* Maple Theme v1.5.7 For Obsidian */
+/* Maple Theme v1.5.9 For Obsidian */
 /* @settings
 id: maple-basic
 name: Maple Basic
@@ -452,7 +452,7 @@ settings:
       type: variable-text
       title: Setting Panel Header Title
       title.zh: 设置面板标题
-      default: Maple 1.5.7
+      default: Maple 1.5.9
       quotes: true
     - id: modal-setting-header-title-center
       type: class-toggle
@@ -3163,6 +3163,9 @@ body.app-layout-card:not(.is-mobile):not(.color-highlight-only) .modal-sidebar {
 body.app-layout-card:not(.is-mobile):not(.color-highlight-only) .modal-setting-nav-bar {
   border-color: transparent;
 }
+body.app-layout-card:not(.is-mobile):not(.color-highlight-only).tab-float .mod-root .workspace-tab-header-container {
+  padding-left: var(--size-2-3);
+}
 
 /* #endregion layout */
 /* #region animation */
@@ -3642,7 +3645,6 @@ code {
 }
 
 .cm-s-obsidian .cm-line.HyperMD-codeblock {
-  line-height: calc(var(--line-height-normal) - 0.2);
   color: var(--code-normal) !important;
   border-inline: var(--code-border-width) solid var(--code-border-color);
   border-radius: 0 !important;
@@ -3657,13 +3659,11 @@ code {
   border-top: var(--code-border-width) solid var(--code-border-color);
   border-start-start-radius: var(--code-radius) !important;
   border-start-end-radius: var(--code-radius) !important;
-  margin-top: var(--size-2-1) !important;
 }
 .cm-s-obsidian .cm-line.HyperMD-codeblock.HyperMD-codeblock-end-bg {
   border-bottom: var(--code-border-width) solid var(--code-border-color);
   border-end-start-radius: var(--code-radius) !important;
   border-end-end-radius: var(--code-radius) !important;
-  margin-bottom: var(--size-2-1) !important;
 }
 
 .cm-hmd-codeblock .cm-indent::before {
@@ -7310,7 +7310,7 @@ body.modal-setting-header:not(.is-mobile):not(.is-popout-modal) .modal-container
   container-type: inline-size;
 }
 body.modal-setting-header:not(.is-mobile):not(.is-popout-modal) .modal-container .mod-settings::before {
-  content: var(--setting-modal-header-title, "Maple 1.5.7");
+  content: var(--setting-modal-header-title, "Maple 1.5.9");
   position: absolute;
   left: var(--size-4-4);
   top: calc(var(--modal-header-height) / 2);
@@ -7713,7 +7713,7 @@ body:is(:not(.css-settings-manager), .tab-float) .mod-root .workspace-tab-header
   box-shadow: var(--tab-active-shadow);
 }
 body:is(:not(.css-settings-manager), .tab-float) .mod-root .workspace-tab-header-container {
-  translate: calc(-1 * var(--size-4-1));
+  padding-left: var(--size-4-1);
 }
 body:is(:not(.css-settings-manager), .tab-float) .mod-root .workspace-tab-header-container-inner {
   margin-top: var(--size-4-1);

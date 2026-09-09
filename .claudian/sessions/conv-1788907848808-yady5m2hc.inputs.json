@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788907848808-yady5m2hc",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788907848850-obxma6p",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788907848800-17rme4g",
+      "timestamp": 1788907848800,
+      "rawDisplayText": "9. 多分类梯度：为什么所有类别都会收到更新信号 这一部分写的太乱了，重新写，详细推导放到折叠callout中",
+      "canonicalText": "9. 多分类梯度：为什么所有类别都会收到更新信号 这一部分写的太乱了，重新写，详细推导放到折叠callout中",
+      "context": {
+        "linkedContent": {
+          "path": "07-AI/01-数学/交叉熵系统整理.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "fd651cd4cb17849037bd750d2c7d6b45432434c5a98cee090cd2956b1c73965a",
+      "providerUserMessageId": "01a08337-cb6b-7cc2-b5c8-964111554e4d",
+      "providerAssistantMessageId": "msg_0f289322c4f6ded4016aa09232f43087d081f115c935ddcac9"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788908135695-i8azxsp",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788908135683-i87gtej",
+      "timestamp": 1788908135683,
+      "rawDisplayText": "这个文档有些公式渲染错误，请你修复",
+      "canonicalText": "这个文档有些公式渲染错误，请你修复",
+      "images": [],
+      "contentDigest": "cb7dea059dbdec79360a84a50178efa2f067945277643380378b778bcfa13518",
+      "providerUserMessageId": "01a0833b-e57e-7c70-8cf7-c411d9a75af1",
+      "providerAssistantMessageId": "msg_0f289322c4f6ded4016aa09298ee0887d0bb9fdc7110f57d37"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788908557312-3i1a098",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788908557304-5s6prn5",
+      "timestamp": 1788908557304,
+      "rawDisplayText": "@07-AI/01-数学/线性函数与多层感知机的数学前提.md 你重新整理下这个文档，从直觉到严格数学推导等等，假设读者没有神经网络的背景",
+      "canonicalText": "@07-AI/01-数学/线性函数与多层感知机的数学前提.md 你重新整理下这个文档，从直觉到严格数学推导等等，假设读者没有神经网络的背景",
+      "images": [],
+      "contentDigest": "80bceb7be715f2c3c9c5258e3f910ba2e67b566c66e36fc6d05384e40c6d7230",
+      "providerUserMessageId": "01a08342-5438-7242-8a4f-bd265df6cdae",
+      "providerAssistantMessageId": "msg_0f289322c4f6ded4016aa09545073c87d083af2c20d72704f0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788909385054-hgyfpfy",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788909385043-0fabusc",
+      "timestamp": 1788909385043,
+      "rawDisplayText": "你现在扩展下 @07-AI/01-数学/贝叶斯公式.md ，从直觉到各个概念的解释到数学公式推导以及和神经网络的联系等等，读者默认具备高中数学知识",
+      "canonicalText": "你现在扩展下 @07-AI/01-数学/贝叶斯公式.md ，从直觉到各个概念的解释到数学公式推导以及和神经网络的联系等等，读者默认具备高中数学知识",
+      "images": [],
+      "contentDigest": "184b98e679c1780cbdc11abbfd84ad555cfe11ef8f1ed0617f9cad33f5bd6b90",
+      "providerUserMessageId": "01a0834e-f596-7fe3-ac14-9eb989d91939",
+      "providerAssistantMessageId": "msg_0f289322c4f6ded4016aa09900c83c87d08cc38debd00e9b6b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788910892778-64h90a1",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788910892766-4nqlv7b",
+      "timestamp": 1788910892766,
+      "rawDisplayText": "5. 分类任务中，标签怎样变成交叉熵 这一部分的数学推导不够详细，分类任务的交叉熵不明白怎么推导得到的",
+      "canonicalText": "5. 分类任务中，标签怎样变成交叉熵 这一部分的数学推导不够详细，分类任务的交叉熵不明白怎么推导得到的",
+      "context": {
+        "editorSelection": {
+          "notePath": "07-AI/01-数学/交叉熵系统整理.md",
+          "mode": "selection",
+          "selectedText": "5. 分类任务中，标签怎样变成交叉熵\n",
+          "lineCount": 2
+        }
+      },
+      "images": [],
+      "contentDigest": "0a516d6217048bd6f0166e03d31e309db08275f80b38a23bd4704d5c5d67000a",
+      "providerUserMessageId": "01a08365-f72e-7dc2-bbe5-e7f650235d09",
+      "providerAssistantMessageId": "msg_0f289322c4f6ded4016aa09e0196a487d0b10565eb2fe1db34"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788911229604-oz0ckhv",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1788911229595-51iyi7y",
+      "timestamp": 1788911229595,
+      "rawDisplayText": "你现在重新审校一遍这个笔记",
+      "canonicalText": "你现在重新审校一遍这个笔记",
+      "images": [],
+      "contentDigest": "f9e449c8d4ff65823101af3180805075b9b7bfacc90cbeda18a944d053c43082",
+      "providerUserMessageId": "01a0836b-1b00-7d73-aeb5-47ebf95173d1",
+      "providerAssistantMessageId": "msg_0f289322c4f6ded4016aa09f549bd487d0bd0396663a426e11"
+    }
+  ]
+}

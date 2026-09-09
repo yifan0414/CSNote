@@ -27,27 +27,27 @@ ionefg是其中一个答案 ^YChUCR7K
 首先假设输入的字符串为 123456 ^JBZ5Nu0b
 
 ## Embedded Files
-79d27d8acc751e8997002992479647c5a3c574fe: [[Pasted Image 20221229194737_515.png]]
+79d27d8acc751e8997002992479647c5a3c574fe: [[_assets/images/Pasted Image 20221229194737_515.png]]
 
-93efa349c3ceeaa8ba91eafb195bf225325d58c3: [[Pasted Image 20221229194822_535.png]]
+93efa349c3ceeaa8ba91eafb195bf225325d58c3: [[_assets/images/Pasted Image 20221229194822_535.png]]
 
-a39159c4aabeace2724ca96160e95e6db0a03231: [[Pasted Image 20221229195808_624.png]]
+a39159c4aabeace2724ca96160e95e6db0a03231: [[_assets/images/Pasted Image 20221229195808_624.png]]
 
-af0a4875b17d343b6991d37e3270eeff00c59b1d: [[Pasted Image 20221229200238_661.png]]
+af0a4875b17d343b6991d37e3270eeff00c59b1d: [[_assets/images/Pasted Image 20221229200238_661.png]]
 
-dc22341ed1f09395f0e30c5323e6015e332fa65f: [[Pasted Image 20221229200411_686.png]]
+dc22341ed1f09395f0e30c5323e6015e332fa65f: [[_assets/images/Pasted Image 20221229200411_686.png]]
 
-2b2f536690bbcadee7ed301cb6a0adb4d6dfc36b: [[Pasted Image 20221229200711_712.png]]
+2b2f536690bbcadee7ed301cb6a0adb4d6dfc36b: [[_assets/images/Pasted Image 20221229200711_712.png]]
 
-47dd27708172c67e3a9a28c831f5fe24f00d24c5: [[Pasted Image 20221229200956_738.png]]
+47dd27708172c67e3a9a28c831f5fe24f00d24c5: [[_assets/images/Pasted Image 20221229200956_738.png]]
 
-d75e8e0374f386d525d34d72d7c62b28c74ff332: [[Pasted Image 20221229201235_052.png]]
+d75e8e0374f386d525d34d72d7c62b28c74ff332: [[_assets/images/Pasted Image 20221229201235_052.png]]
 
-9ba9194f5250aec12b297557f2ddf5fdfde536fd: [[Pasted Image 20221229201356_775.png]]
+9ba9194f5250aec12b297557f2ddf5fdfde536fd: [[_assets/images/Pasted Image 20221229201356_775.png]]
 
-2234414524346313bde90dd267491ad3b2694ebc: [[Pasted Image 20221229201456_793.png]]
+2234414524346313bde90dd267491ad3b2694ebc: [[_assets/images/Pasted Image 20221229201456_793.png]]
 
-a5528e7182f219069118561727a6de330bc6d10b: [[Pasted Image 20221229202027_873.png]]
+a5528e7182f219069118561727a6de330bc6d10b: [[_assets/images/Pasted Image 20221229202027_873.png]]
 
 %%
 ## Drawing

@@ -8,7 +8,7 @@ conference: EMNLP 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2504.21403
 pdf_link: "[[assets/paper_2504.21403.pdf]]"
-cover: "[[assets/pipeline_2504.21403.png]]"
+cover: "[[_assets/images/pipeline_2504.21403.png]]"
 updated: 2026-05-10
 tags:
   - paper/arxiv
@@ -85,7 +85,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2504.21403.png]]
+![[_assets/images/pipeline_2504.21403.png]]
 
 Caption: Overview of our Explore-then-Select framework for token selection. During the exploration stage, multiple subsequences are generated from different combinations of key and delta-frame tokens. In the selection stage, these subsequences are evaluated using query-aware metrics computed from shallow attention layers, and the optimal subsequence is chosen as input to the LLM.
 

@@ -1,0 +1,21 @@
+{
+  "id": "conv-1788410833031-lf543wf3o",
+  "providerId": "codex",
+  "title": "$$",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788410833047,
+  "lastActivityAt": 1788412313777,
+  "sessionId": null,
+  "selectedModel": "gpt-5.6-sol",
+  "linkedContentPath": "06-LLM/架构学习/基础/06-transformer.md",
+  "usage": {
+    "inputTokens": 46624,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 25460,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 46624,
+    "percentage": 18,
+    "model": "gpt-5.6-sol"
+  }
+}

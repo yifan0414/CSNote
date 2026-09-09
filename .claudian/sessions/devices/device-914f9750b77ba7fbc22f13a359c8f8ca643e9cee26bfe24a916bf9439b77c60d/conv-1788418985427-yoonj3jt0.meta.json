@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788418985427-yoonj3jt0",
+  "providerId": "codex",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788418985436,
+  "lastActivityAt": 1788421175443,
+  "sessionId": "01a06614-0fca-7571-b0e9-ad05905e9c19",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06614-0fca-7571-b0e9-ad05905e9c19",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/03/rollout-2026-09-03T15-03-05-01a06614-0fca-7571-b0e9-ad05905e9c19.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/06-transformer.md",
+  "usage": {
+    "inputTokens": 55999,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 52864,
+    "contextWindow": 475000,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 55999,
+    "percentage": 12,
+    "model": "gpt-5.6-sol"
+  }
+}

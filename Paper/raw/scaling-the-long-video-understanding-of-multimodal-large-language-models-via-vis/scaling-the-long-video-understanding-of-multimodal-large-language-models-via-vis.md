@@ -13,7 +13,7 @@ conference: CVPR 2026
 year: 2026
 arxiv_url: https://arxiv.org/abs/2603.29252
 pdf_link: "[[assets/paper_2603.29252.pdf]]"
-cover: "[[assets/pipeline_2603.29252.png]]"
+cover: "[[_assets/images/pipeline_2603.29252.png]]"
 updated: 2026-05-13
 tags:
   - paper/arxiv
@@ -121,7 +121,7 @@ FlexMem pipeline
 
 ## Pipeline Figure
 
-![[assets/pipeline_2603.29252.png]]
+![[_assets/images/pipeline_2603.29252.png]]
 
 Caption: Illustration of the proposed FlexMem method. The figure shows iterative clip encoding, Context Memory and Local Memory construction, visual memory bank recall, encoding-based indexing, and MemIndex with compact question/visual index tensors.
 

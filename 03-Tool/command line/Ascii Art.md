@@ -36,11 +36,11 @@ _/    _/  _/              _/      _/    _/  _/      _/_/
 
 >Rainbows and unicorns!
 
-![[attachments/234f9e799a73753453552ef21fba61e1_MD5.png]]
+![[_assets/images/234f9e799a73753453552ef21fba61e1_MD5.png]]
 
 
 # [boxes](https://boxes.thomasjensen.com/)
 
 
 >_Boxes_ is a command line program which draws, removes, and repairs ASCII art boxes.
->![[attachments/2168cb0dd01fc5540b73881653c97dc4_MD5.jpg]]
+>![[_assets/images/2168cb0dd01fc5540b73881653c97dc4_MD5.jpg]]

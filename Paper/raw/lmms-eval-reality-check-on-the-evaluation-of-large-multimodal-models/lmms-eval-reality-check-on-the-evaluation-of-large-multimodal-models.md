@@ -16,7 +16,7 @@ conference: NAACL 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2407.12772
 pdf_link: "[[assets/paper_2407.12772.pdf]]"
-cover: "[[assets/pipeline_2407.12772.png]]"
+cover: "[[_assets/images/pipeline_2407.12772.png]]"
 updated: 2026-05-31
 tags:
   - paper/arxiv
@@ -78,7 +78,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2407.12772.png]]
+![[_assets/images/pipeline_2407.12772.png]]
 
 Caption: Overview pipeline for LiveBench. The paper describes collecting latest information from actively updated websites, organizing Q&A with multimodal model assistance, verifying Q&A with human annotators, evaluating models with judge models including human judges, and finally reporting the problem set.
 

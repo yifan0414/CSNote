@@ -11,7 +11,7 @@ conference: CVPR 2025
 year: 2025
 arxiv_url: https://arxiv.org/abs/2502.21271
 pdf_link: "[[assets/paper_2502.21271.pdf]]"
-cover: "[[assets/pipeline_2502.21271.png]]"
+cover: "[[_assets/images/pipeline_2502.21271.png]]"
 updated: 2026-05-18
 tags:
   - paper/arxiv
@@ -86,7 +86,7 @@ return selected frame indices
 
 ## Pipeline Figure
 
-![[assets/pipeline_2502.21271.png]]
+![[_assets/images/pipeline_2502.21271.png]]
 
 Caption: The overall framework of our approach. We insert a plug-and-play module, Adaptive Keyframe Sampling (AKS, marked in green frames) into the MLLM to improve the quality of sampled keyframes. Each red dot indicates a prompt-frame matching score ($s(\mathbf{Q},\mathbf{F}_t)$). AKS follows a recursive, judge-and-split optimization for keyframe selection.
 

@@ -8,7 +8,7 @@ conference:
 year: 2026
 arxiv_url: https://arxiv.org/abs/2605.05848
 pdf_link: "[[assets/paper_2605.05848.pdf]]"
-cover: "[[assets/pipeline_2605.05848.png]]"
+cover: "[[_assets/images/pipeline_2605.05848.png]]"
 updated: 2026-05-12
 tags:
   - paper/arxiv
@@ -102,7 +102,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2605.05848.png]]
+![[_assets/images/pipeline_2605.05848.png]]
 
 Caption: Overview of the VideoRouter framework. The Semantic Router predicts the dominant allocation policy and selects either broad Uniform Compression or Adaptive Compression. Under Adaptive Compression, the Image Router's frame-level scores drive token allocation dynamically.
 

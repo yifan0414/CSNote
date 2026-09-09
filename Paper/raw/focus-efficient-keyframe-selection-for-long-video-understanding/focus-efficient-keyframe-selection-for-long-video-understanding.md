@@ -12,7 +12,7 @@ conference: ICLR 2026
 year: 2025
 arxiv_url: https://arxiv.org/abs/2510.27280
 pdf_link: "[[assets/paper_2510.27280.pdf]]"
-cover: "[[assets/pipeline_2510.27280.png]]"
+cover: "[[_assets/images/pipeline_2510.27280.png]]"
 updated: 2026-05-20
 tags:
   - paper/arxiv
@@ -90,7 +90,7 @@ Return selected keyframes to downstream MLLM
 
 ## Pipeline Figure
 
-![[assets/pipeline_2510.27280.png]]
+![[_assets/images/pipeline_2510.27280.png]]
 
 Caption: Overview of FOCUS. FOCUS partitions videos into fixed-length clips as bandit arms, applies optimistic confidence upper-bound arm selection, and selects final keyframes within each promising arm.
 

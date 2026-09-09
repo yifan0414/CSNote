@@ -5,7 +5,7 @@ conference: "CVPR"
 year: 2026
 arxiv_url: "https://arxiv.org/abs/2603.21957"
 pdf_link: "[[assets/paper_2603.21957.pdf]]"
-cover: "[[assets/pipeline_2603.21957.png]]"
+cover: "[[_assets/images/pipeline_2603.21957.png]]"
 updated: 2026-05-31
 tags: ["paper/arxiv", "video-qa", "long-video", "temporal-reasoning", "question-aware", "token-pruning", "video-llm"]
 status: "unread"
@@ -76,7 +76,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_2603.21957.png]]
+![[_assets/images/pipeline_2603.21957.png]]
 
 Caption: 方法总览：先在 LLM 外部用 unified spatiotemporal compression 筛选高贡献、低冗余 token，并对 recycle pool 做聚类回填；随后在 LLM 内部用 text-aware merging 强化 query-relevant visual tokens。
 

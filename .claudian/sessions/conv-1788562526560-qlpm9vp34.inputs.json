@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788562526560-qlpm9vp34",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788562526586-xo7amu9",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788562526553-936tevf",
+      "timestamp": 1788562526553,
+      "rawDisplayText": "目前这篇笔记写的不够清晰，重点不突出。特别重要的地方要用callout",
+      "canonicalText": "目前这篇笔记写的不够清晰，重点不突出。特别重要的地方要用callout",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/04-Seq2Seq.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "89b17524ab06f361203a710ed28a1daf220778e1f1a9641046ce07bd7bb8176f",
+      "providerUserMessageId": "01a06ea2-9882-70b1-b167-684b3b07bc3e",
+      "providerAssistantMessageId": "msg_085fc9d11bcb9424016a9b4e332c6087d0aa01a2fe61301c3b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788563138179-aab6x67",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788563138171-2dp9397",
+      "timestamp": 1788563138171,
+      "rawDisplayText": "我不是让你改变组织架构",
+      "canonicalText": "我不是让你改变组织架构",
+      "images": [],
+      "contentDigest": "0827fbbe52a15a2e30d0d1cd1e6b2b7c44cebeb84bf6ef4b3eecdb27c4b9eb46",
+      "providerUserMessageId": "01a06eab-a6c0-7c73-ad08-50fe47a9b21a",
+      "providerAssistantMessageId": "msg_085fc9d11bcb9424016a9b501888c087d0892afc8eabee05b2"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788502640785-4wvxgs41i",
+  "providerId": "codex",
+  "title": "你帮我把Paper/架构学习/CS224n/Word2Vec表征原理中的重要的内容梳理一遍，然后整理...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788502640797,
+  "lastActivityAt": 1788503760143,
+  "sessionId": "01a06b10-9baf-7481-ba02-449776a449dd",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06b10-9baf-7481-ba02-449776a449dd",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/04/rollout-2026-09-04T14-17-25-01a06b10-9baf-7481-ba02-449776a449dd.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/01-词向量.md",
+  "usage": {
+    "inputTokens": 119148,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 117760,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 119148,
+    "percentage": 46,
+    "model": "gpt-5.6-sol"
+  }
+}

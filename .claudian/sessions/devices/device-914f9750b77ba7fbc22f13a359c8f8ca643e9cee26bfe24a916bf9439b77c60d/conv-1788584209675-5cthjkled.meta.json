@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788584209675-5cthjkled",
+  "providerId": "codex",
+  "title": "这个表格有错误，修复下",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788584209687,
+  "lastActivityAt": 1788584374479,
+  "sessionId": "01a06fed-462e-7ab3-9192-30bdbdda4d47",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06fed-462e-7ab3-9192-30bdbdda4d47",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T12-56-56-01a06fed-462e-7ab3-9192-30bdbdda4d47.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/04-Seq2Seq.md",
+  "usage": {
+    "inputTokens": 28804,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 28160,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 28804,
+    "percentage": 11,
+    "model": "gpt-5.6-sol"
+  }
+}

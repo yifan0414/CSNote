@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788938911679-dyieysd0w",
+  "providerId": "codex",
+  "title": "你给我这个项目创建一个AGENT",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788938911682,
+  "lastActivityAt": 1788939164731,
+  "sessionId": "01a08511-80ee-7fa2-87f2-0a300960f0fa",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a08511-80ee-7fa2-87f2-0a300960f0fa",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/09/rollout-2026-09-09T15-28-32-01a08511-80ee-7fa2-87f2-0a300960f0fa.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/01-数学/Foward KL 和 Reverse KL.md",
+  "usage": {
+    "inputTokens": 13218,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 12800,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 13218,
+    "percentage": 2,
+    "model": "gpt-6-astra"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788588682650-g3x02kr7o",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788588682686-bcghho6",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788588682643-d3swdrj",
+      "timestamp": 1788588682643,
+      "rawDisplayText": "我觉得目前这篇笔记写的很乱，还有很多防御性的说明，我的意思是单独这篇介绍attention机制，解决了前面什么问题，留下了什么问题，06再介绍transformer。单独成文， @Paper/架构学习/基础/dive-to-attention/dive-to-attention.md 对这个的讨论例子也要脱离原文",
+      "canonicalText": "我觉得目前这篇笔记写的很乱，还有很多防御性的说明，我的意思是单独这篇介绍attention机制，解决了前面什么问题，留下了什么问题，06再介绍transformer。单独成文， @Paper/架构学习/基础/dive-to-attention/dive-to-attention.md 对这个的讨论例子也要脱离原文",
+      "context": {
+        "linkedContent": {
+          "path": "Paper/架构学习/基础/05-Attention.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "7af41f0cb110f7bf6235af6373ee06be4414f695d20ad3e7fe33f45fb08a3bbd",
+      "providerUserMessageId": "01a07031-e4f2-7de3-9a43-ca4b967ca12c"
+    }
+  ]
+}

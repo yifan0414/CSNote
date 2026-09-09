@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788560593506-j0vjp30u2",
+  "providerId": "codex",
+  "title": "现在我已经写了00-分词，01-词向量，02-RNN，下一篇你觉得应该写什么",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788560593515,
+  "lastActivityAt": 1788562380424,
+  "sessionId": "01a06e84-d304-7da3-9c89-12b7e2baba79",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "threadId": "01a06e84-d304-7da3-9c89-12b7e2baba79",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T06-23-13-01a06e84-d304-7da3-9c89-12b7e2baba79.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/02-RNN.md",
+  "usage": {
+    "inputTokens": 135091,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 134528,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 135091,
+    "percentage": 52,
+    "model": "gpt-5.6-sol"
+  }
+}

@@ -27,9 +27,9 @@ rax=6 ^cpVXzi2M
 rax=7 ^V3AggeOk
 
 ## Embedded Files
-e098e0d683ebf0c39b3f6af43208357581bbdcf9: [[Pasted Image 20221228213709_511.png]]
+e098e0d683ebf0c39b3f6af43208357581bbdcf9: [[_assets/images/Pasted Image 20221228213709_511.png]]
 
-5e7f407c4399ac9db370fa55a097d8124dde33dd: [[Pasted Image 20221228214759_589.png]]
+5e7f407c4399ac9db370fa55a097d8124dde33dd: [[_assets/images/Pasted Image 20221228214759_589.png]]
 
 %%
 ## Drawing

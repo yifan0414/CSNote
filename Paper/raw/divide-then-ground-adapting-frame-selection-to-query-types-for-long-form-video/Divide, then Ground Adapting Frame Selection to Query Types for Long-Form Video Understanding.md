@@ -9,7 +9,7 @@ conference: CVPR 2026
 year: 2026
 arxiv_url: https://arxiv.org/abs/2512.04000
 pdf_link: "[[assets/paper_2512.04000.pdf]]"
-cover: "[[assets/pipeline_2512.04000.png]]"
+cover: "[[_assets/images/pipeline_2512.04000.png]]"
 updated: 2026-05-12
 tags:
   - paper/arxiv
@@ -79,7 +79,7 @@ DIG 的关键是先判断 query 类型，再决定 selection 策略：
 
 ## Pipeline Figure
 
-![[assets/pipeline_2512.04000.png]]
+![[_assets/images/pipeline_2512.04000.png]]
 
 Caption: **Overview of DIG.** The LLM first classifies the query type. Global queries utilize uniform sampling across the entire video, while localized queries employ CAFS and reward assignment to construct a refined video prior to sampling. The selected frames are subsequently processed by the LMM for final inference.
 

@@ -7,7 +7,7 @@ year: 2026
 paper_url: https://openreview.net/forum?id=Pr3I3ewBFU
 source_pdf: https://openreview.net/pdf/85bab755c7254aed0b86d31707b4fac0a92d777d.pdf
 pdf_link: "[[assets/paper_85bab755c7254aed0b86d31707b4fac0a92d777d.pdf]]"
-cover: "[[assets/pipeline_85bab755c7254aed0b86d31707b4fac0a92d777d.png]]"
+cover: "[[_assets/images/pipeline_85bab755c7254aed0b86d31707b4fac0a92d777d.png]]"
 updated: 2026-05-19
 tags:
   - paper/pdf
@@ -33,7 +33,7 @@ code: ""
 - 在 VideoMME、MLVU、MVBench、EgoSchema、LongVideoBench、NextQA 等 benchmark 上，CoSeLECT 在多个 backbone 上稳定提升，尤其在 long-horizon / long-video 场景里更明显。
 - PDF 声称 CoSeLECT 相比 LongVU 在 MLVU 上提升 +3.8%，相比 AKS 在 EgoSchema 上提升 +4.5%；但论文仍是 ICLR 2026 under review，作者匿名，结论应按未正式发表版本看待。
 - **Limitations section**
-![[Pasted image 20260606134112.png]]
+![[_assets/images/Pasted image 20260606134112.png]]
 ## Key Contributions
 
 - 提出 CoSeLECT（Continuity-aware Semantic Localization and Extraction of Candidate Tokens），把 keyframe selection 作为 frame-level token reduction，避免训练额外 compression module。
@@ -85,7 +85,7 @@ $$
 
 ## Pipeline Figure
 
-![[assets/pipeline_85bab755c7254aed0b86d31707b4fac0a92d777d.png]]
+![[_assets/images/pipeline_85bab755c7254aed0b86d31707b4fac0a92d777d.png]]
 
 Caption: CoSeLECT 是一个 query-aware frame selection 方法，选择同时具备 semantic relevance 与 visual narrative representativeness 的帧，以适配 token-budget constrained MLLM 的长视频理解。
 

@@ -12,7 +12,7 @@ conference: ICLR 2023
 year: 2023
 arxiv_url: https://arxiv.org/abs/2210.03629
 pdf_link: "[[paper_2210.03629.pdf]]"
-cover: "[[pipeline_2210.03629.png]]"
+cover: "[[_assets/images/pipeline_2210.03629.png]]"
 updated: 2026-04-26
 tags:
   - paper/arxiv
@@ -68,7 +68,7 @@ For each task instance:
 
 ## Pipeline Figure
 
-![[pipeline_2210.03629.png]]
+![[_assets/images/pipeline_2210.03629.png]]
 
 Caption: (1) Comparison of 4 prompting methods, Standard, Chain-of-thought / CoT, Act-only, and ReAct, solving a HotpotQA question. (2) Comparison of Act-only and ReAct prompting to solve an AlfWorld game. In both domains, the figure omits in-context examples and shows model-generated task-solving trajectories (`Act`, `Thought`) plus environment observations (`Obs`).
 

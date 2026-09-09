@@ -1,7 +1,7 @@
 #### 1.为什么要在 Nemu 的黑色窗口中按键，才会被 am 中的 `AM_INPUT_KEYBRD` 捕捉到。✅
 将下面的代码注释掉，就不会生成黑色窗口，按键也不会被捕捉到。
 **这是通过 SDL_Event 控制的，见下一个问题。**
-![[Pasted image 20231027032543.png]]
+![[_assets/images/Pasted image 20231027032543.png]]
 
 #### 2.在 Nemu 中，我按下键盘然后被 Nemu 捕捉是什么时候发生的 ✅
 
@@ -109,7 +109,7 @@ void device_update() {
 > 总的来说，"一切都是文件" 是一个有益的思维方式，特别是在Unix系统编程中，但在现实中并不是绝对正确的。它强调了操作系统提供的一致性和通用性，但仍然需要在不同情况下了解不同的接口和操作。
 
 比如：我们使用 `cat /proc/cpuinfo` 来获得 cpu 的信息，但 cpuinfo 这个文件是**空**的。但如果使用 vim 或者 cat 打开，cpuinfo 就不为空，可以证明在操作系统层面打开这个文件是由**特殊**的函数控制的。
-![[Pasted image 20231027034804.png]]
+![[_assets/images/Pasted image 20231027034804.png]]
 
 
 > [!chatgpt]
@@ -175,7 +175,7 @@ void device_update() {
 
 #### 4 `\n` 刷新缓冲区
 
-![]( https://picture-suyifan.oss-cn-shenzhen.aliyuncs.com/20240120090510.png )
+![](../../../../_assets/images/08c9ef56b15edd3be14fb8483fe763a10560abbe868e902da3f404fa2696b5ca.png)
 
 可以看到，如果我不加换行符的情况下，需要等到缓冲区慢了之后才能输出。
 

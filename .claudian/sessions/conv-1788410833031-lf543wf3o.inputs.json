@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788410833031-lf543wf3o",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788410833131-2gggyyu",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788410833013-mwwj154",
+      "timestamp": 1788410833013,
+      "rawDisplayText": "$$\n \\boxed{\n \\begin{aligned}\n \\operatorname{Var}(q_rk_r)&=1\\\\\n &\\Downarrow\\\\\n \\operatorname{Var}\\left(\\sum_{r=1}^{d_h}q_rk_r\\right)&=d_h\\\\\n &\\Downarrow\\\\\n \\operatorname{Var}\\left(\\frac{q^\\top k}{\\sqrt{d_h}}\\right)&=1.\n \\end{aligned}\n }. \n $$\n这一个公式，Downarrow并没有在中间，怎么办",
+      "canonicalText": "$$\n \\boxed{\n \\begin{aligned}\n \\operatorname{Var}(q_rk_r)&=1\\\\\n &\\Downarrow\\\\\n \\operatorname{Var}\\left(\\sum_{r=1}^{d_h}q_rk_r\\right)&=d_h\\\\\n &\\Downarrow\\\\\n \\operatorname{Var}\\left(\\frac{q^\\top k}{\\sqrt{d_h}}\\right)&=1.\n \\end{aligned}\n }. \n $$\n这一个公式，Downarrow并没有在中间，怎么办",
+      "context": {
+        "editorSelection": {
+          "notePath": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md",
+          "mode": "selection",
+          "selectedText": " \\boxed{\n \\begin{aligned}\n \\operatorname{Var}(q_rk_r)&=1\\\\\n &\\Downarrow\\\\\n \\operatorname{Var}\\left(\\sum_{r=1}^{d_h}q_rk_r\\right)&=d_h\\\\\n &\\Downarrow\\\\\n \\operatorname{Var}\\left(\\frac{q^\\top k}{\\sqrt{d_h}}\\right)&=1.\n \\end{aligned}\n }. \n ",
+          "lineCount": 10,
+          "startLine": 1104
+        },
+        "linkedContent": {
+          "path": "Paper/架构学习/Video-MLLM/01-transformer-基础知识与例题.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "54b7a30c7345ef86952aa2fbef8b7b7ecf2dd5e2f4570ac0ab4a58525f0e7308",
+      "providerUserMessageId": "01a06597-ab34-7593-b339-61bc831533c6",
+      "providerAssistantMessageId": "msg_0f79ce8d0294c80b016a98fc21017887d0b7a6c1aae0a15833"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788410934438-4dcpqmb",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788410934416-xycd302",
+      "timestamp": 1788410934416,
+      "rawDisplayText": "gathered的区别是什么",
+      "canonicalText": "gathered的区别是什么",
+      "images": [],
+      "contentDigest": "6cadc2b65f6c23af31e8790c67b26703058aa7fe499b7d869482bbd4135e963d",
+      "providerUserMessageId": "01a06599-34b5-73b1-963a-72b1fe324b9a",
+      "providerAssistantMessageId": "msg_0f79ce8d0294c80b016a98fc3d3f1487d0b84ad4916bd0eab0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788411274968-c9y2pci",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788411274943-1q2gwou",
+      "timestamp": 1788411274943,
+      "rawDisplayText": "目前的大纲，并不会随着正文的浏览移动而移动，这是什么原因",
+      "canonicalText": "目前的大纲，并不会随着正文的浏览移动而移动，这是什么原因",
+      "images": [],
+      "contentDigest": "1a220882de35f7ec3620ab1f71979903602b6c4fb40e1b473652197b7591a57b",
+      "providerUserMessageId": "01a0659e-66f6-7d42-804f-8644fb7acbab"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788412168630-wk6x74j",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788412168600-fgpre6q",
+      "timestamp": 1788412168600,
+      "rawDisplayText": "目前的大纲，并不会随着正文的浏览移动而移动，这是什么原因",
+      "canonicalText": "目前的大纲，并不会随着正文的浏览移动而移动，这是什么原因",
+      "images": [],
+      "contentDigest": "1a220882de35f7ec3620ab1f71979903602b6c4fb40e1b473652197b7591a57b",
+      "providerUserMessageId": "01a065ac-0bdf-7ec1-a338-b3bdc9088eec",
+      "providerAssistantMessageId": "msg_0f79ce8d0294c80b016a990132cd4487d091fb8bd1f877a120"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788412296877-tp3bmdh",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788412296874-v5ls957",
+      "timestamp": 1788412296874,
+      "rawDisplayText": "帮我设置成true",
+      "canonicalText": "帮我设置成true",
+      "images": [],
+      "contentDigest": "fa78896c64163adf301d123f848c494da4b1d39e0e7b0a991e109e30c82915be",
+      "providerUserMessageId": "01a065ad-ff25-7220-a7e1-60eab119573c"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "conv-1788563619788-rhsw4230m",
+  "providerId": "codex",
+  "title": "Fork: 目前这篇笔记写的不够清晰，重点不突出。特别重要的地方要用callout (#2)",
+  "createdAt": 1788563619834,
+  "lastActivityAt": 1788563707411,
+  "sessionId": "01a06eb4-5575-73c2-8258-bb2d4fa022ab",
+  "selectedModel": "gpt-5.6-sol",
+  "providerState": {
+    "forkSource": {
+      "sessionId": "01a06ea2-58bd-71d3-afe4-437eb1455ad2",
+      "resumeAt": "msg_085fc9d11bcb9424016a9b4e332c6087d0aa01a2fe61301c3b"
+    },
+    "workspaceDependencyToolVersion": 1,
+    "forkSourceSessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T06-55-28-01a06ea2-58bd-71d3-afe4-437eb1455ad2.jsonl",
+    "forkSourceTranscriptRootPath": "/Users/yifan/.codex/sessions",
+    "threadId": "01a06eb4-5575-73c2-8258-bb2d4fa022ab",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T07-15-07-01a06eb4-5575-73c2-8258-bb2d4fa022ab.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "pendingForkTarget": {
+      "threadId": "01a06eb4-5575-73c2-8258-bb2d4fa022ab",
+      "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/05/rollout-2026-09-05T07-15-07-01a06eb4-5575-73c2-8258-bb2d4fa022ab.jsonl"
+    }
+  },
+  "linkedContentPath": "06-LLM/架构学习/基础/04-Seq2Seq.md"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "conv-1788943478634-xcq1ulzea",
+  "providerId": "codex",
+  "title": "我现在06-LLM的文件和文件夹的组织非常乱，你觉得呢",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788943478640,
+  "lastActivityAt": 1788943483090,
+  "sessionId": "01a08557-313e-7d10-835b-170a8b858dad",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a08557-313e-7d10-835b-170a8b858dad",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/09/rollout-2026-09-09T16-44-39-01a08557-313e-7d10-835b-170a8b858dad.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/人工智能.md"
+}
