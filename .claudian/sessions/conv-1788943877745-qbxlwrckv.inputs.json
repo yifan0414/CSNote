@@ -18,7 +18,22 @@
       },
       "images": [],
       "contentDigest": "da7baf109af874dc7fbd178f42cf6709b08cd0f3c482bcec336f96eb96b96c42",
-      "providerUserMessageId": "01a0855d-87f1-7392-80b5-2e9ea728e7c6"
+      "providerUserMessageId": "01a0855d-4815-7460-b8d3-c32fb8cb413f",
+      "providerAssistantMessageId": "msg_0383cb79745e2a1d016aa11eac6d4c87d087814df91ec5a0dc"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788944140195-n5adt6c",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788944140186-ym9uc6o",
+      "timestamp": 1788944140186,
+      "rawDisplayText": "但是贝叶斯公式我很难根据这些符号建立深度学习以至于LLM的概念",
+      "canonicalText": "但是贝叶斯公式我很难根据这些符号建立深度学习以至于LLM的概念",
+      "images": [],
+      "contentDigest": "8f72a31e402669331fb75cfec3acb96797cf9aa99b1e18e5c777f16ac2a81529",
+      "providerUserMessageId": "01a08561-47e3-7642-b78d-cdbe8db4b661",
+      "providerAssistantMessageId": "msg_0383cb79745e2a1d016aa1216d170887d0ad3e66a8682b8774"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "title": "我现在06-LLM 的文件夹和文件组织的非常乱，你觉得呢",
   "titleGenerationStatus": "failed",
   "createdAt": 1788943390626,
-  "lastActivityAt": 1788943917594,
+  "lastActivityAt": 1788944803263,
   "sessionId": "01a08555-d94a-716a-aa9f-8885efb5d052",
   "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
   "providerState": {
@@ -15,11 +15,11 @@
   "usage": {
     "cacheCreationInputTokens": 0,
     "cacheReadInputTokens": 0,
-    "contextTokens": 118265,
+    "contextTokens": 221517,
     "contextWindow": 1000000,
     "contextWindowIsAuthoritative": true,
-    "inputTokens": 118265,
+    "inputTokens": 221517,
     "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
-    "percentage": 12
+    "percentage": 22
   }
 }

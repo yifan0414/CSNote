@@ -2,9 +2,9 @@
   "id": "conv-1788943877745-qbxlwrckv",
   "providerId": "codex",
   "title": "这篇笔记的公式符号符合机器学习和深度学习的惯例吗",
-  "titleGenerationStatus": "pending",
+  "titleGenerationStatus": "failed",
   "createdAt": 1788943877747,
-  "lastActivityAt": 1788943877747,
+  "lastActivityAt": 1788944790829,
   "sessionId": "01a0855d-47a6-7141-ba6f-16ab82934e0f",
   "selectedModel": "gpt-6-astra",
   "providerState": {
@@ -14,5 +14,15 @@
     "transcriptRootPath": "/Users/yifan/.codex/sessions",
     "workspaceDependencyToolVersion": 1
   },
-  "linkedContentPath": "06-LLM/01-数学基础/贝叶斯公式.md"
+  "linkedContentPath": "06-LLM/01-数学基础/贝叶斯公式.md",
+  "usage": {
+    "inputTokens": 52804,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 52608,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 52804,
+    "percentage": 6,
+    "model": "gpt-6-astra"
+  }
 }

@@ -33,6 +33,84 @@
       "images": [],
       "contentDigest": "c19889a5d011f5668877bdd4229ecafa2fdab4bdcceadf898e06ac081ff39e3b",
       "providerAssistantMessageId": "0ff9ec10"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788944207350-6kb6no3",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788944207344-qk7ise2",
+      "timestamp": 1788944207344,
+      "rawDisplayText": "不用管了",
+      "canonicalText": "不用管了",
+      "images": [],
+      "contentDigest": "1e7ac589b51553ca3046e327a0418dab3bc5b1ac742c7638233696e401378eb7",
+      "providerAssistantMessageId": "c40d91db"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788944252072-n0qttvw",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788944252065-358pae3",
+      "timestamp": 1788944252065,
+      "rawDisplayText": "01-数学基础这里，是不是建立一个新的md文件介绍梯度",
+      "canonicalText": "01-数学基础这里，是不是建立一个新的md文件介绍梯度",
+      "images": [],
+      "contentDigest": "7b64969b9ab22bca0724858d88b2b44658fa1883992c71e398cfb214f93c98dc",
+      "providerAssistantMessageId": "b4a89577"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788944475570-ms93j04",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1788944475563-axv7z27",
+      "timestamp": 1788944475563,
+      "rawDisplayText": "就是说01-数学基础和02-机器学习基础的区分不明显，是否合并成一个基础文件夹比较好",
+      "canonicalText": "就是说01-数学基础和02-机器学习基础的区分不明显，是否合并成一个基础文件夹比较好",
+      "images": [],
+      "contentDigest": "fb6e31629835401797282996adf6b1fc4fcbf79a6aa96e180cd72572afef5927",
+      "providerAssistantMessageId": "78263e8c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788944509883-kk7irre",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1788944509876-tru99bs",
+      "timestamp": 1788944509876,
+      "rawDisplayText": "帮我按照第一种修改下吧",
+      "canonicalText": "帮我按照第一种修改下吧",
+      "images": [],
+      "contentDigest": "2472ebf872d034b9bb9466d90fe7fe536896733a42aea214bf16504d8a073c82",
+      "providerAssistantMessageId": "2c4e6044"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788944692714-0e87xpj",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1788944692706-o15l65h",
+      "timestamp": 1788944692706,
+      "rawDisplayText": "不用恢复，是我删除的",
+      "canonicalText": "不用恢复，是我删除的",
+      "images": [],
+      "contentDigest": "2a1095eebf6f87a21eeb683a770721f646e1e68e54df2d4cd1120d5aee7fb3be",
+      "providerAssistantMessageId": "5f4da5a5"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788944760779-0m7l8ep",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1788944760770-jrc0jo5",
+      "timestamp": 1788944760770,
+      "rawDisplayText": "我觉得你现在的01-基础的子目录还是不够清晰，概率和损失不也是数学的内容吗，你可以修改文件的名字，或者告诉我哪些文件适合合并",
+      "canonicalText": "我觉得你现在的01-基础的子目录还是不够清晰，概率和损失不也是数学的内容吗，你可以修改文件的名字，或者告诉我哪些文件适合合并",
+      "images": [],
+      "contentDigest": "60207cdd5f6fc0b4d09dd2fd87d87c80a13c9c3bc7df31f47feffa8046dd9ee3",
+      "providerAssistantMessageId": "7675e046"
     }
   ]
 }
