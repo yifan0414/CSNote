@@ -1,0 +1,27 @@
+{
+  "id": "conv-1788956462914-qwm2opbep",
+  "providerId": "codex",
+  "title": "@06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788956462923,
+  "lastActivityAt": 1788957162201,
+  "sessionId": "01a0861d-511a-7001-bf0d-0eb149d4d099",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a0861d-511a-7001-bf0d-0eb149d4d099",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/09/rollout-2026-09-09T20-21-03-01a0861d-511a-7001-bf0d-0eb149d4d099.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "usage": {
+    "inputTokens": 80283,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 78592,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 80283,
+    "percentage": 10,
+    "model": "gpt-6-astra"
+  }
+}

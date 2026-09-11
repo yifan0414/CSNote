@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788996277589-4mlpkzzle",
+  "providerId": "pi",
+  "title": "这个笔记你在最后等式的后面加上大矩阵的形式，可以清晰看出来",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788996277599,
+  "lastActivityAt": 1788996782085,
+  "sessionId": "01a0887c-d709-7379-b0a8-ffe4a3ed4ebd",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-09T23-24-38-026Z_01a0887c-d709-7379-b0a8-ffe4a3ed4ebd.jsonl",
+    "sessionId": "01a0887c-d709-7379-b0a8-ffe4a3ed4ebd"
+  },
+  "linkedContentPath": "06-LLM/01-数学基础/01-线性代数与微积分/矩阵微分与求导技巧.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 158519,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 158519,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 16
+  }
+}

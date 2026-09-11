@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788956581312-64g2bds8z",
+  "providerId": "pi",
+  "title": "@06-LLM/01-数学基础/02-概率统计与信息论/损失函数的概率解释",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788956581319,
+  "lastActivityAt": 1788956666206,
+  "sessionId": "01a0861f-1f8b-713c-af18-f819fbb922bd",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-09T12-23-01-772Z_01a0861f-1f8b-713c-af18-f819fbb922bd.jsonl",
+    "sessionId": "01a0861f-1f8b-713c-af18-f819fbb922bd"
+  },
+  "linkedContentPath": "06-LLM/01-数学基础/02-概率统计与信息论/损失函数的概率解释.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 54146,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 54146,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 5
+  }
+}

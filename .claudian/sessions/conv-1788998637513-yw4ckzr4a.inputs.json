@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788998637513-yw4ckzr4a",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788998637548-gr3uh2x",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788998637503-qyaxde6",
+      "timestamp": 1788998637503,
+      "rawDisplayText": "你整理下这个笔记，主要是整理格式和排版，目前是推导草稿。推导步骤不要省略",
+      "canonicalText": "你整理下这个笔记，主要是整理格式和排版，目前是推导草稿。推导步骤不要省略",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/transformer计算图与反向传播.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "00ca064700ad20f68e6c058b0cad0f83450447c0af7c20940b461c339a1f69c8",
+      "providerUserMessageId": "01a088a0-d9d2-74b3-af3d-d05b868552f4",
+      "providerAssistantMessageId": "msg_09e22eb512cdc2b3016aa1f501be9487d0ab0e7bd8869e7383"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788998981610-8g1maug",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788998981599-0qccpqj",
+      "timestamp": 1788998981599,
+      "rawDisplayText": "计算图不要使用代码框，你生成白板，而且目前公式推导太零散了，正文写主要内容，callout放具体的推导，整个文章行文要有逻辑",
+      "canonicalText": "计算图不要使用代码框，你生成白板，而且目前公式推导太零散了，正文写主要内容，callout放具体的推导，整个文章行文要有逻辑",
+      "images": [],
+      "contentDigest": "c2be07386478aecb675ae5813b33b48c385445fe6709b9e2340373e8a02d0ac9",
+      "providerUserMessageId": "01a088a6-1828-7f43-a102-e90cbdd4f9e2",
+      "providerAssistantMessageId": "msg_09e22eb512cdc2b3016aa1f6ee1cc487d0b7c1a7318167e7f7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788999494706-eayby4g",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788999494693-nz02top",
+      "timestamp": 1788999494693,
+      "rawDisplayText": "你不要使用G，而是要使用偏微分的形式",
+      "canonicalText": "你不要使用G，而是要使用偏微分的形式",
+      "images": [],
+      "contentDigest": "e694d2eb8061951e487c54d558c5759b6b916d18c73928e41cae9e07c8ddb0b3",
+      "providerUserMessageId": "01a088ad-ec76-7b80-a0d3-4b460f0c0422",
+      "providerAssistantMessageId": "msg_09e22eb512cdc2b3016aa1f79c321087d093c482f17db83207"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789001129756-tryvepr",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789001129753-bom6ale",
+      "timestamp": 1789001129753,
+      "rawDisplayText": "你不要使用obsidian CANVAS，你自己生成图片，公式要正确渲染",
+      "canonicalText": "你不要使用obsidian CANVAS，你自己生成图片，公式要正确渲染",
+      "images": [],
+      "contentDigest": "56dd77c711acf1bc8e6de1802e2bbc2797059f837ff81ab15b3dde874b157aae",
+      "providerUserMessageId": "01a088c6-df26-7d62-9cfb-a3d24734c9d5",
+      "providerAssistantMessageId": "01a088c6-df26-7d62-9cfb-a3d24734c9d5"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789001744338-o4bi49s",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1789001744312-1oi9i3q",
+      "timestamp": 1789001744312,
+      "rawDisplayText": "继续",
+      "canonicalText": "继续",
+      "images": [],
+      "contentDigest": "65f454414e2fda4840658901f9399831363ad75712ba36b930b5ad393f72f7b7",
+      "providerUserMessageId": "01a088d0-7f75-74f2-86e7-2fe61ae483ec",
+      "providerAssistantMessageId": "msg_09e22eb512cdc2b3016aa20094f0c487d09bd852ec7fc3e41d"
+    }
+  ]
+}

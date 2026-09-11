@@ -23,12 +23,12 @@
             }
           },
           {
-            "id": "f158b9defbccda08",
+            "id": "6bc092d6c9aa3da0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-LLM/01-基础/优化/学习率.md",
+                "file": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -43,7 +43,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "学习率"
+              "title": "transformer计算图与反向传播"
             }
           }
         ],
@@ -106,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 335.44921875
+    "width": 304.92578125
   },
   "right": {
     "id": "8815071129bdee48",
@@ -196,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "07-AI/01-数学/Foward KL 和 Reverse KL.md",
+                "file": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -215,27 +215,28 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1788927856630-ejfrwh2",
-                      "conversationId": "conv-1788938911679-dyieysd0w"
+                      "tabId": "tab-1788948022419-kuvhzr6",
+                      "conversationId": "conv-1788948037651-1hpxmty9h"
                     },
                     {
-                      "tabId": "tab-1788939494543-ikf3dtk",
-                      "conversationId": "conv-1788939515265-hk226sm7b"
+                      "tabId": "tab-1788998585802-8taljvu",
+                      "conversationId": "conv-1788998637513-yw4ckzr4a"
                     },
                     {
-                      "tabId": "tab-1788943368615-pvkonzz",
-                      "conversationId": "conv-1788943390617-mrnsxmzki"
+                      "tabId": "tab-1788999699556-dy44yvc",
+                      "conversationId": "conv-1788999707882-acxxw0g1i"
                     },
                     {
-                      "tabId": "tab-1788943463703-xcxgpgq",
-                      "conversationId": "conv-1788943478634-xcq1ulzea"
+                      "tabId": "tab-1789087511785-ruzyck9",
+                      "conversationId": "conv-1789087547703-layhne2bp"
                     },
                     {
-                      "tabId": "tab-1788943860390-wotwd1t",
-                      "conversationId": "conv-1788943877745-qbxlwrckv"
+                      "tabId": "tab-1789087558154-yjvr74w",
+                      "conversationId": null,
+                      "draftModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910"
                     }
                   ],
-                  "activeTabId": "tab-1788943368615-pvkonzz"
+                  "activeTabId": "tab-1789087511785-ruzyck9"
                 }
               },
               "icon": "bot",
@@ -247,7 +248,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 501.44140625
+    "width": 397.09765625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -270,63 +271,63 @@
       "fix-math:Current file": false
     }
   },
-  "active": "f158b9defbccda08",
+  "active": "6bc092d6c9aa3da0",
   "lastOpenFiles": [
-    "06-LLM/01-基础/优化/梯度下降权重更新公式.md",
-    "06-LLM/01-基础/优化/梯度归一化 .sum().backward().md",
-    "06-LLM/01-基础/优化/二阶范数的梯度.md",
-    "06-LLM/01-基础/优化/随机梯度下降.md",
-    "06-LLM/01-基础/概率与损失/交叉熵系统整理.md",
-    "06-LLM/01-基础/概率与损失/均方误差解析解.md",
-    "06-LLM/01-基础/概率与损失/均方误差损失函数.md",
-    "06-LLM/01-基础/优化/梯度.md",
-    "06-LLM/01-基础/概率与损失/Foward KL 和 Reverse KL.md",
+    "科研/科研入门指南：如何做科研与写论文.md",
+    "06-LLM/03-Transformer/transformer计算图与反向传播.md",
+    "06-LLM/03-Transformer/transformer-04-Attention反向白板.canvas",
+    "_assets/images/transformer-04-Attention反向传播.png",
+    "_assets/images/transformer-03-FFN反向传播.png",
+    "_assets/images/transformer-02-残差分流与汇合.png",
+    "06-LLM/03-Transformer/transformer-03-FFN反向白板.canvas",
+    "06-LLM/03-Transformer/transformer-02-残差分流与汇合.canvas",
+    "06-LLM/03-Transformer/06-transformer.md",
+    "_assets/images/transformer-01-计算图与反向传播.png",
+    "_assets/images/ChatGPT Image 2026年9月10日 07_50_36.png",
+    "06-LLM/03-Transformer/transformer计算图与反向传播公式推导.md",
+    "_assets/images/Codex 图像 2026年9月10日 07_39_45.png",
+    "06-LLM/03-Transformer/Codex 图像 2026年9月10日 07_39_45.png",
+    "_assets/images/transformer-backprop-02-block-attention.png",
+    "_assets/images/transformer-backprop-01-forward-backward.png",
+    "_assets/scripts/gen_transformer_backprop_whiteboard.py",
+    "_assets/scripts",
+    "06-LLM/01-数学基础/01-线性代数与微积分/矩阵微分与求导技巧.md",
+    "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+    "06-LLM/01-数学基础/01-线性代数与微积分/两层神经网络的反向传播推导.md",
+    "06-LLM/03-Transformer/05-Attention.md",
+    "06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度.md",
+    "06-LLM/03-Transformer/从 Seq2Seq 到 Attention 再到 Transformer.md",
+    "06-LLM/03-Transformer/02-RNN.md",
+    "06-LLM/03-Transformer/01-词向量.md",
+    "06-LLM/01-数学基础/02-概率统计与信息论/损失函数的概率解释.md",
+    "06-LLM/91-问题/为什么sigmoid函数容易梯度消失.md",
+    "_assets/images/loss-01-unified-view.svg",
+    "06-LLM/91-问题/神经网络应用待整理.md",
+    "06-LLM/91-问题/损失函数和优化器的选择.md",
+    "06-LLM/91-问题/为什么小权重比大权重更好.md",
+    "06-LLM/91-问题/为什么首先使用的不是relu，而是sigmoid.md",
+    "06-LLM/02-模型基础/CNN：卷积计算与特征学习.md",
+    "06-LLM/02-模型基础/线性回归：最小二乘与参数求解.md",
+    "06-LLM/02-模型基础/高斯朴素贝叶斯：从类别分布到分类.md",
+    "06-LLM/02-模型基础/从线性模型到多层感知机.md",
+    "06-LLM/01-数学基础/02-概率统计与信息论/KL 散度：定义、性质与方向.md",
+    "06-LLM/01-数学基础/02-概率统计与信息论/交叉熵系统整理.md",
     "06-LLM/01-基础/概率与损失/最大似然MLE.md",
-    "06-LLM/01-基础/概率与损失/负对数似然.md",
-    "06-LLM/LLM MOC.md",
-    "06-LLM/01-数学基础/贝叶斯公式.md",
-    "06-LLM/01-数学基础",
-    "06-LLM/02-机器学习基础/梯度下降/梯度.md",
-    "06-LLM/01-基础/模型/CNN/CNN中的滤波器.md",
-    "06-LLM/01-基础/模型/CNN/CNN中需要学习的内容.md",
-    "06-LLM/01-基础/模型/CNN",
-    "06-LLM/01-基础/模型/人工神经网络训练过程.canvas",
-    "06-LLM/01-基础/模型/高斯朴素贝叶斯分类器.md",
-    "06-LLM/01-基础/模型/神经网络所解决的问题.md",
-    "06-LLM/01-基础/优化/学习率.md",
-    "06-LLM/01-基础/优化/Adam优化器系统整理.md",
-    "06-LLM/01-基础/概率与损失/KL 散度.md",
-    "06-LLM/01-基础/概率与损失/损失函数统一视角.md",
-    "06-LLM/01-基础/数学/矩阵求导/矩阵求导术.md",
-    "06-LLM/01-基础/数学/矩阵求导/矩阵求导.md",
-    "06-LLM/01-基础/数学/矩阵求导/反向传播.md",
-    "06-LLM/01-基础/数学/矩阵求导",
-    "06-LLM/01-基础/数学/雅克比矩阵.md",
-    "06-LLM/01-基础/模型",
     "06-LLM/01-基础/概率与损失",
-    "06-LLM/01-基础/数学",
-    "06-LLM/01-基础/优化",
     "06-LLM/01-基础",
-    "Paper/Papers.base",
-    "06-LLM/90-课程/08-Lee/04-logistic-regression/Logistic Regression (v3).pdf",
+    "06-LLM/01-数学/交叉熵系统整理.md",
+    "06-LLM/01-数学",
+    "06-LLM/02-模型基础/人工神经网络训练过程.canvas",
+    "06-LLM/02-模型基础",
+    "06-LLM/01-数学基础/03-最优化",
+    "06-LLM/01-数学基础/01-线性代数与微积分",
+    "06-LLM/01-数学基础/02-概率统计与信息论",
+    "06-LLM/01-数学基础",
+    "06-LLM/01-基础/模型/人工神经网络训练过程.canvas",
     "06-LLM/02-机器学习基础/人工神经网络训练过程.canvas",
-    "_assets/images/kl-04-two-options.svg",
-    "_assets/images/kl-03-forward-mode-covering.svg",
-    "_assets/images/kl-02-reverse-mode-seeking.svg",
-    "_assets/images/kl-01-p-bimodal.svg",
-    "_assets/images/e2d7238f3cddd4e9360821b210198eec_MD5.png",
-    "_assets/images/figure.svg",
-    "_assets/images/Pasted image 20230103222324.png",
-    "_assets/images/sreenshot_temp (4th copy).png",
-    "_assets/images/ZoteroToExcalidraw.svg",
-    "_assets/images/sreenshot_temp (15th copy).png",
     "Paper/Video Understanding 论文分类总结.canvas",
     "07-MultiModal/未命名.canvas",
     "01-Project/CS61A/canvasNote/IntroToPython.canvas",
-    "06-LLM/神经网络/人工神经网络训练过程.canvas",
-    "08-Lee/未命名.canvas",
-    "01-Project/NJUICS/lecture/L7 链接与加载选讲/命令行工具.canvas",
-    "Paper/未命名.canvas",
-    "08-Lee/Untitled.canvas"
+    "06-LLM/神经网络/人工神经网络训练过程.canvas"
   ]
 }

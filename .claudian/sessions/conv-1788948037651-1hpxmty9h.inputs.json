@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788948037651-1hpxmty9h",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788948037680-eaycgy6",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788948037644-5ggw76k",
+      "timestamp": 1788948037645,
+      "rawDisplayText": "你对06-LLM/01-数学基础 下的文章进行下审稿",
+      "canonicalText": "你对06-LLM/01-数学基础 下的文章进行下审稿",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "a449877f32b6888a6aeacd9c372ca31c4456aa8a3cc27463ce68a92937f212d7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788948050159-za5syyv",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788948050153-9r5m6ii",
+      "timestamp": 1788948050153,
+      "rawDisplayText": "你对06-LLM/01-数学基础 下的文章进行下审阅",
+      "canonicalText": "你对06-LLM/01-数学基础 下的文章进行下审阅",
+      "images": [],
+      "contentDigest": "5c550ef0d8bc4c8f829700d5d0a68d73f12b6506cb77c4151d52ece7d676b107",
+      "providerAssistantMessageId": "60081783"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788948481965-de9ocdx",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788948481956-8ldoe7i",
+      "timestamp": 1788948481956,
+      "rawDisplayText": "按照你说的认真帮我修改下吧",
+      "canonicalText": "按照你说的认真帮我修改下吧",
+      "images": [],
+      "contentDigest": "78a6284e9fd55ddd7e1b5d37674b03606b20fd5c6954d7d531fded720096d3c5",
+      "providerAssistantMessageId": "191476e5"
+    }
+  ]
+}

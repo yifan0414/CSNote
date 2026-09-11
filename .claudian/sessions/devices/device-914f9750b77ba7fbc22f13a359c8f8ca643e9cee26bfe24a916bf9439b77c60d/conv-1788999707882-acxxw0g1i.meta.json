@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788999707882-acxxw0g1i",
+  "providerId": "pi",
+  "title": "你觉得这个文章写的怎么样",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788999707893,
+  "lastActivityAt": 1789001120968,
+  "sessionId": "01a088b1-2e12-756f-a48b-09121a8765d5",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-10T00-21-48-179Z_01a088b1-2e12-756f-a48b-09121a8765d5.jsonl",
+    "sessionId": "01a088b1-2e12-756f-a48b-09121a8765d5"
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 34679,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 34679,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 3
+  }
+}

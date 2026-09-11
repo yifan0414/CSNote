@@ -283,7 +283,7 @@
       "reasoningSummary": "auto",
       "environmentVariables": "",
       "environmentHash": "runtime-input:v1:057c24804ad623010ca5b002ba56803d48f10df435413e3607af64ec4ed75a93",
-      "catalogTimestamp": 1788938863517,
+      "catalogTimestamp": 1789001740423,
       "catalogFingerprint": "2:95579f03064f02198b402d1ef01afc5ae44cecdfcb3cb6402b77ba83d018d4d8",
       "installationMethodsByHost": {
         "yifanMac-mini": "native-windows",
@@ -391,7 +391,9 @@
       "environmentHash": "runtime-input:v1:d39fce0aa5599822a0640cdb74a12db12219b72cbf4c28ce746af2758efac793",
       "environmentVariables": "",
       "modelAliases": {},
-      "preferredThinkingByModel": {},
+      "preferredThinkingByModel": {
+        "pi:deepseek/deepseek-v4.1-flash-expires-on-0910": "high"
+      },
       "toolMode": "all",
       "visibleModels": [
         "pi:deepseek/deepseek-v4.1-flash-expires-on-0910"
@@ -412,25 +414,23 @@
   },
   "settingsProvider": "claude",
   "lastSelectedChatModel": {
-    "providerId": "codex",
-    "model": "gpt-6-astra"
+    "providerId": "pi",
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910"
   },
   "savedProviderModel": {
     "claude": "haiku",
     "codex": "gpt-6-astra",
-    "pi": "haiku"
+    "pi": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910"
   },
   "savedProviderEffort": {
     "claude": "high",
-    "codex": "xhigh",
+    "codex": "medium",
     "pi": "high"
   },
   "savedProviderServiceTier": {
     "codex": "default"
   },
-  "savedProviderThinkingBudget": {
-    "pi": "off"
-  },
+  "savedProviderThinkingBudget": {},
   "savedProviderPermissionMode": {
     "claude": "normal",
     "codex": "yolo",

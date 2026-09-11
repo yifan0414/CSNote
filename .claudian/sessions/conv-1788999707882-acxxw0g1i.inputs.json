@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788999707882-acxxw0g1i",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788999707919-1v85cqr",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788999707874-724lfp0",
+      "timestamp": 1788999707874,
+      "rawDisplayText": "你觉得这个文章写的怎么样",
+      "canonicalText": "你觉得这个文章写的怎么样",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/transformer计算图与反向传播.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "7f65b1daa4c8bef1209297c3f6860906236022c758b1566f1f8e9e2c00df7938",
+      "providerAssistantMessageId": "1aecc83a",
+      "providerUserMessageId": "871fdff3"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789001111317-l47o5bx",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789001111307-8ejh10p",
+      "timestamp": 1789001111307,
+      "rawDisplayText": "你不要使用obsidian CANVAS，你自己生成图片，公式要正确渲染",
+      "canonicalText": "你不要使用obsidian CANVAS，你自己生成图片，公式要正确渲染",
+      "images": [],
+      "contentDigest": "56dd77c711acf1bc8e6de1802e2bbc2797059f837ff81ab15b3dde874b157aae",
+      "providerUserMessageId": "c0b69dba",
+      "providerAssistantMessageId": "944c411d"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788948827919-90yig05wn",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788948827950-vn32qm7",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788948827912-80lsk51",
+      "timestamp": 1788948827912,
+      "rawDisplayText": "这里写的不好，要是全文的点睛之笔，不是说告诉读者怎么读",
+      "canonicalText": "这里写的不好，要是全文的点睛之笔，不是说告诉读者怎么读",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度.md"
+        },
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度.md",
+          "mode": "selection",
+          "selectedText": "这篇笔记怎样读\n本文只预设你理解函数、概率、加减乘除、平方和平均数。对数、信息量、期望、logit、链式法则等概念都会在用到时解释，不从交叉熵的完整公式或“梯度等于预测减标签”开始背。\n\n每一步都回答：我们遇到了什么问题？想增加什么能力？为什么设计成这个公式？代入数字后会怎样？\n\n正文串起理解路径，详细推导放在默认折叠的 callout 中。第一次阅读先看正文，第二次再展开证明。",
+          "lineCount": 6
+        }
+      },
+      "images": [],
+      "contentDigest": "4911788ee6ec6670466f1e88cd0d9d381c8b3db3c0a91a26088a42f9f43dbf04",
+      "providerAssistantMessageId": "2e400b0d",
+      "providerUserMessageId": "7b7d71f7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788949098720-yin0n2n",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788949098710-u01mssr",
+      "timestamp": 1788949098710,
+      "rawDisplayText": "为什么恰好能推导出梯度是预测减去标签呢，这是巧合吗",
+      "canonicalText": "为什么恰好能推导出梯度是预测减去标签呢，这是巧合吗",
+      "images": [],
+      "contentDigest": "193dbc3696934e10e3bed2a47f6bc7819ea5625814ea0a2bab3ad006a3b3fa88",
+      "providerAssistantMessageId": "c3116b6f",
+      "providerUserMessageId": "dbe45738"
+    }
+  ]
+}

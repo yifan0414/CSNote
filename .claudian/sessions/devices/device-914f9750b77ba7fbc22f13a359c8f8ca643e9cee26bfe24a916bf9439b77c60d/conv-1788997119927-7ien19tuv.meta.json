@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788997119927-7ien19tuv",
+  "providerId": "pi",
+  "title": "这个文章的符号太复杂了，你要与 @06-LLM/03-Transformer/06-transfor...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788997119936,
+  "lastActivityAt": 1788997307780,
+  "sessionId": "01a08889-b07a-723b-944e-4cafb947add3",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-09T23-38-40-123Z_01a08889-b07a-723b-944e-4cafb947add3.jsonl",
+    "sessionId": "01a08889-b07a-723b-944e-4cafb947add3"
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/transformer计算图与反向传播公式推导.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 131294,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 131294,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 13
+  }
+}

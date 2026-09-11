@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788948037651-1hpxmty9h",
+  "providerId": "pi",
+  "title": "你对06-LLM/01-数学基础 下的文章进行下审稿",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788948037657,
+  "lastActivityAt": 1788948690281,
+  "sessionId": "01a0859c-f193-7689-9917-108772680472",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-09T10-00-50-324Z_01a0859c-f193-7689-9917-108772680472.jsonl",
+    "sessionId": "01a0859c-f193-7689-9917-108772680472"
+  },
+  "linkedContentPath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 304170,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 304170,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 30
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788956462914-qwm2opbep",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788956462947-l74l8tx",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788956462909-i2tkqx6",
+      "timestamp": 1788956462909,
+      "rawDisplayText": "@06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度.md @06-LLM/01-数学基础/02-概率统计与信息论/交叉熵系统整理.md 这两个笔记哪个更好",
+      "canonicalText": "@06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度.md @06-LLM/01-数学基础/02-概率统计与信息论/交叉熵系统整理.md 这两个笔记哪个更好",
+      "images": [],
+      "contentDigest": "7689fcfc870d6731bc0c8fcc43ae310ec5387de1c83a22c7ca19799d50ac497e",
+      "providerUserMessageId": "01a0861d-51cb-7b63-9b82-13d283e50a37",
+      "providerAssistantMessageId": "msg_054554695ea8b3ff016aa14fc65f6c87d0bc1bc1f6f1fd9172"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788956776899-cqjxdua",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788956776889-wiobdav",
+      "timestamp": 1788956776889,
+      "rawDisplayText": "那你帮我融合下吧，保留一篇",
+      "canonicalText": "那你帮我融合下吧，保留一篇",
+      "images": [],
+      "contentDigest": "a8b25b28a39c248ea635ca2b94d0012650c4f72ba72d35aab4fa353a0b915e94",
+      "providerUserMessageId": "01a08622-1a30-7492-a68c-001b5a1e31a4",
+      "providerAssistantMessageId": "msg_054554695ea8b3ff016aa1511ec87887d08018f89ea2508ee3"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788957060142-oaw9kh3",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788957060134-fy5j0kf",
+      "timestamp": 1788957060134,
+      "rawDisplayText": "怎么突然到了这里，这个公式从哪里来的",
+      "canonicalText": "怎么突然到了这里，这个公式从哪里来的",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度.md",
+          "mode": "selection",
+          "selectedText": "\nsoftmax 使用指数，损失使用负对数。把它们放在一起，对数就把分子与分母拆开：\n\n \n利用目标总和为 ，损失变成：\n\n",
+          "lineCount": 7
+        }
+      },
+      "images": [],
+      "contentDigest": "82ace99a9e3fee363722bae1d9f7fabfa282a597cfa6d62f9c0e40419b71056a",
+      "providerUserMessageId": "01a08626-6c72-7ae1-9f3d-cc511c8c6cd6",
+      "providerAssistantMessageId": "msg_054554695ea8b3ff016aa15192e90087d0b30a062bb4c2d178"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788957100117-xriv40w",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788957100110-wto3x5g",
+      "timestamp": 1788957100110,
+      "rawDisplayText": "帮我修改下",
+      "canonicalText": "帮我修改下",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度.md",
+          "mode": "selection",
+          "selectedText": "\nsoftmax 使用指数，损失使用负对数。把它们放在一起，对数就把分子与分母拆开：\n\n \n利用目标总和为 ，损失变成：\n\n",
+          "lineCount": 7
+        }
+      },
+      "images": [],
+      "contentDigest": "6e3f78497c53c9d179366dce99734798fef8cf0f047c707f9f7abc898d009830",
+      "providerUserMessageId": "01a08627-0894-70f0-aa8c-5d54e1460b0e",
+      "providerAssistantMessageId": "msg_054554695ea8b3ff016aa151e6a24c87d096681acc75a6ffbb"
+    }
+  ]
+}

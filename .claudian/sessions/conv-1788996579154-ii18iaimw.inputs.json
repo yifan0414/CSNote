@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788996579154-ii18iaimw",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788996579175-nmlp392",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788996579153-yt0ixk2",
+      "timestamp": 1788996579153,
+      "rawDisplayText": "为什么要写成trace的形式",
+      "canonicalText": "为什么要写成trace的形式",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/01-数学基础/01-线性代数与微积分/矩阵微分与求导技巧.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "35f6b0c5f42e2a455510ff7444d2d5c360f56bde51e9358bef5e5dd2dac67fc9",
+      "providerAssistantMessageId": "91ace5ba",
+      "providerUserMessageId": "ddf0adf7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788996629734-3zyyg6z",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788996629731-ngorrmn",
+      "timestamp": 1788996629731,
+      "rawDisplayText": "trace是如何和梯度联系起来的",
+      "canonicalText": "trace是如何和梯度联系起来的",
+      "images": [],
+      "contentDigest": "fef1f5539588d3ae2e65d82c6b15f997a14f95be7305edec6d2a3b3d2666af4d",
+      "providerAssistantMessageId": "f13dd9de",
+      "providerUserMessageId": "ca004799"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788948827919-90yig05wn",
+  "providerId": "pi",
+  "title": "这里写的不好，要是全文的点睛之笔，不是说告诉读者怎么读",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788948827926,
+  "lastActivityAt": 1788949138465,
+  "sessionId": "01a085a8-cfda-74a5-882d-6ce877f1f461",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-09T10-13-48-122Z_01a085a8-cfda-74a5-882d-6ce877f1f461.jsonl",
+    "sessionId": "01a085a8-cfda-74a5-882d-6ce877f1f461"
+  },
+  "linkedContentPath": "06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 35570,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 35570,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 4
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "conv-1788996579154-ii18iaimw",
+  "providerId": "pi",
+  "title": "为什么要写成trace的形式",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788996579160,
+  "lastActivityAt": 1788996643321,
+  "sessionId": "01a08881-700f-72ff-bbfa-042636fce0ac",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-09T23-29-39-343Z_01a08881-700f-72ff-bbfa-042636fce0ac.jsonl",
+    "sessionId": "01a08881-700f-72ff-bbfa-042636fce0ac"
+  },
+  "linkedContentPath": "06-LLM/01-数学基础/01-线性代数与微积分/矩阵微分与求导技巧.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 23968,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 23968,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 2
+  }
+}

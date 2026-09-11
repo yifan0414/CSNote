@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788997119927-7ien19tuv",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788997119960-cbi2gmd",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788997119920-wmy0328",
+      "timestamp": 1788997119920,
+      "rawDisplayText": "这个文章的符号太复杂了，你要与 @06-LLM/03-Transformer/06-transformer.md 保持一致，而且不能假设读者有高深的数学知识",
+      "canonicalText": "这个文章的符号太复杂了，你要与 @06-LLM/03-Transformer/06-transformer.md 保持一致，而且不能假设读者有高深的数学知识",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/transformer计算图与反向传播公式推导.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "22f5431640ea7d74ac9020dfda97956ca135745f06a5b808fd8adfdc62d3f71d",
+      "providerAssistantMessageId": "4514945c",
+      "providerUserMessageId": "44a251ac"
+    }
+  ]
+}

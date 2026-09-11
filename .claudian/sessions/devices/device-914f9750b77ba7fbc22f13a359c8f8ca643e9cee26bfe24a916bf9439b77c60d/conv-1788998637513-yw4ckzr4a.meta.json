@@ -1,0 +1,28 @@
+{
+  "id": "conv-1788998637513-yw4ckzr4a",
+  "providerId": "codex",
+  "title": "你整理下这个笔记，主要是整理格式和排版，目前是推导草稿。推导步骤不要省略",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1788998637521,
+  "lastActivityAt": 1789001880608,
+  "sessionId": "01a088a0-d8ee-76a2-876c-4a9bd985bbe4",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a088a0-d8ee-76a2-876c-4a9bd985bbe4",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/10/rollout-2026-09-10T08-03-57-01a088a0-d8ee-76a2-876c-4a9bd985bbe4.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
+  "usage": {
+    "inputTokens": 102643,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 99200,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 102643,
+    "percentage": 12,
+    "model": "gpt-6-astra"
+  }
+}

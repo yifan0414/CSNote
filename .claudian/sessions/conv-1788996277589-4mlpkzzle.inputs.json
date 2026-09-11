@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788996277589-4mlpkzzle",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788996277688-e3hh8cb",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788996277582-4kk9sot",
+      "timestamp": 1788996277582,
+      "rawDisplayText": "这个笔记你在最后等式的后面加上大矩阵的形式，可以清晰看出来",
+      "canonicalText": "这个笔记你在最后等式的后面加上大矩阵的形式，可以清晰看出来",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/01-数学基础/01-线性代数与微积分/矩阵微分与求导技巧.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "37017285fd1dbe7b38efcdd5186a03531e0e3af781b2c9aae166f52ad4712131",
+      "providerAssistantMessageId": "24e45f21",
+      "providerUserMessageId": "4366f7b2"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788996415736-sgltxjo",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788996415728-awd2v1m",
+      "timestamp": 1788996415728,
+      "rawDisplayText": "不仅仅是这个等式，其他合适的公式后面也可以加上大矩阵，比如df=\\sum_{i,j}\\frac{\\partial f}{\\partial X_{ij}}\\,dX_{ij}.",
+      "canonicalText": "不仅仅是这个等式，其他合适的公式后面也可以加上大矩阵，比如df=\\sum_{i,j}\\frac{\\partial f}{\\partial X_{ij}}\\,dX_{ij}.",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/01-线性代数与微积分/矩阵微分与求导技巧.md",
+          "mode": "selection",
+          "selectedText": "df=\\sum_{i,j}\\frac{\\partial f}{\\partial X_{ij}}\\,dX_{ij}.",
+          "lineCount": 1,
+          "startLine": 54
+        }
+      },
+      "images": [],
+      "contentDigest": "01fa116c1914bba8d4d06052630ef7ebc5ff00247e7dbf59c2e79d794032d8d2",
+      "providerAssistantMessageId": "38ac7659",
+      "providerUserMessageId": "2dec5ee4"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788996544667-had72tl",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788996544658-9n9skzc",
+      "timestamp": 1788996544658,
+      "rawDisplayText": "@06-LLM/03-Transformer/transformer计算图与反向传播公式推导.md 你帮我完成这个文档",
+      "canonicalText": "@06-LLM/03-Transformer/transformer计算图与反向传播公式推导.md 你帮我完成这个文档",
+      "images": [],
+      "contentDigest": "2749046c40f69fc45230e3aecb819cf652f098b67b3150982b49d4ef7dd98c94",
+      "providerAssistantMessageId": "06c86ac9"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788996782097-vzgyik5",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788996782085-g5gltps",
+      "timestamp": 1788996782085,
+      "rawDisplayText": "你的示意图不要使用mermaid，而是直接生成一个白板上的笔记",
+      "canonicalText": "你的示意图不要使用mermaid，而是直接生成一个白板上的笔记",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/03-Transformer/transformer计算图与反向传播公式推导.md",
+          "mode": "selection",
+          "selectedText": "flowchart TD\n  T[token ids] --> E[Embedding] --> H0[H0]\n  H0 --> BL[DecoderBlock x L] --> LNF[Final LayerNorm]\n  LNF --> LM[LM head] --> Z[logits] --> CE[softmax + cross entropy] --> LOSS[loss]",
+          "lineCount": 4,
+          "startLine": 48
+        }
+      },
+      "images": [],
+      "contentDigest": "a186a509144f28ec6cf689ab15b169ec2bb5abefa100ecdcc40a4cee73e9200d"
+    }
+  ]
+}

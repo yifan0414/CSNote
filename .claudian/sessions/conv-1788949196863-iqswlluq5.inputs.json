@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788949196863-iqswlluq5",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788949196896-7kv5ojg",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788949196858-p535gat",
+      "timestamp": 1788949196858,
+      "rawDisplayText": "为什么恰好能推导出梯度是预测减去标签呢，这是巧合吗",
+      "canonicalText": "为什么恰好能推导出梯度是预测减去标签呢，这是巧合吗",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "193dbc3696934e10e3bed2a47f6bc7819ea5625814ea0a2bab3ad006a3b3fa88",
+      "providerUserMessageId": "01a085ae-7205-7ae2-b8ad-72870ceb0429",
+      "providerAssistantMessageId": "msg_05c69a4f6ae3752c016aa13345921c87d0b7bb009dc11ed5c0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788949437951-rqgyhj9",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1788949437944-x9qrpnb",
+      "timestamp": 1788949437944,
+      "rawDisplayText": "那你觉得这个文章的行文逻辑通顺吗",
+      "canonicalText": "那你觉得这个文章的行文逻辑通顺吗",
+      "images": [],
+      "contentDigest": "08fd7fd55c458cbcd68251ff13dbda9318b42f043eb56ba57ff1d2c1782edceb",
+      "providerUserMessageId": "01a085b2-1e42-7a42-ae48-3a0bf0848142",
+      "providerAssistantMessageId": "msg_05c69a4f6ae3752c016aa133c8d02c87d0904679b1fa812e14"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788949677820-rvnfzp9",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1788949677810-8dt39ic",
+      "timestamp": 1788949677810,
+      "rawDisplayText": "我期望的行文逻辑是有一个关键问题，然后从一个基本概念出发，解释清楚为什么这么设计，这样设计带来的结果，有哪些新的问题，然后添加更复杂的设计反复，直到解决问题。其中用callout补充内容和详细公式推导，机器学习真实案例等等，公式符号要上下一致。",
+      "canonicalText": "我期望的行文逻辑是有一个关键问题，然后从一个基本概念出发，解释清楚为什么这么设计，这样设计带来的结果，有哪些新的问题，然后添加更复杂的设计反复，直到解决问题。其中用callout补充内容和详细公式推导，机器学习真实案例等等，公式符号要上下一致。",
+      "images": [],
+      "contentDigest": "0458246179265120cf2440a619f4b6cafbf46946d274321607db307ad84a1a1c",
+      "providerUserMessageId": "01a085b5-c735-77e2-9e18-9c5b292fba7f",
+      "providerAssistantMessageId": "msg_05c69a4f6ae3752c016aa134bccc8487d089e2778218de2781"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788949770335-xdqelah",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1788949770325-iv3c5we",
+      "timestamp": 1788949770325,
+      "rawDisplayText": "我觉得目前1，2，3章节写的还行，其他的按照你说的重新组织",
+      "canonicalText": "我觉得目前1，2，3章节写的还行，其他的按照你说的重新组织",
+      "images": [],
+      "contentDigest": "9232b7d156ee6c675c06aae6ecf6d06ece0daeccfbca8830860c7689deabce5d",
+      "providerUserMessageId": "01a085b7-3099-7563-ab50-87b66032e33d",
+      "providerAssistantMessageId": "msg_05c69a4f6ae3752c016aa13640284c87d0a266840d3dc46671"
+    }
+  ]
+}

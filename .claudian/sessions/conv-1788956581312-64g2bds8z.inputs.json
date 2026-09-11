@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1788956581312-64g2bds8z",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1788956581337-wbf96gx",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1788956581306-qozp9bg",
+      "timestamp": 1788956581306,
+      "rawDisplayText": "@06-LLM/01-数学基础/02-概率统计与信息论/损失函数的概率解释.md 你审阅下这个笔记",
+      "canonicalText": "@06-LLM/01-数学基础/02-概率统计与信息论/损失函数的概率解释.md 你审阅下这个笔记",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/01-数学基础/02-概率统计与信息论/损失函数的概率解释.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "84ebb445211af469f5122509aa4d388702fc38e718a36dd97b90926e88774703",
+      "providerAssistantMessageId": "2d600aa9",
+      "providerUserMessageId": "68cccf56"
+    }
+  ]
+}
