@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789099921280-xgdvj54tp",
+  "providerId": "codex",
+  "title": "这个文件中的前三个图片中的公式不像是Latex常用的字体，而且有点小，请你修复",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789099921293,
+  "lastActivityAt": 1789109480808,
+  "sessionId": "01a08eaa-5095-7f70-adf5-b9967e511651",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a08eaa-5095-7f70-adf5-b9967e511651",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/11/rollout-2026-09-11T12-12-01-01a08eaa-5095-7f70-adf5-b9967e511651.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
+  "usage": {
+    "inputTokens": 98566,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 97664,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 98566,
+    "percentage": 12,
+    "model": "gpt-6-astra"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789192155110-c36z0em9b",
+  "providerId": "codex",
+  "title": "@07-MultiModal/Video-MLLM/03-监督信号",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789192155122,
+  "lastActivityAt": 1789193919499,
+  "sessionId": "01a09429-b17c-7ed3-b82d-2ca93aa0f0eb",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09429-b17c-7ed3-b82d-2ca93aa0f0eb",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T13-49-15-01a09429-b17c-7ed3-b82d-2ca93aa0f0eb.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/03-自监督表征学习-监督信号从哪里来.md",
+  "usage": {
+    "inputTokens": 101858,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 91008,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 101858,
+    "percentage": 12,
+    "model": "gpt-6-astra"
+  }
+}

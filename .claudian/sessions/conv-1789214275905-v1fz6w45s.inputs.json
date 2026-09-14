@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789214275905-v1fz6w45s",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789214275931-6nd9xpl",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789214275901-mfsdhgw",
+      "timestamp": 1789214275901,
+      "rawDisplayText": "$drawio:drawio 使用drawio给本文制作一个框架图，导出svg并插入到文章开头",
+      "canonicalText": "$drawio:drawio 使用drawio给本文制作一个框架图，导出svg并插入到文章开头",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/03-表征学习心智模型-数据质量、规模与训练目标.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "f29a7ca007cf13b8045aa9ef8bfe9e2a6193b0283e088cdc16b0446b99db3bd4",
+      "providerUserMessageId": "01a0957b-39f2-7d60-8d80-0fd14d8445e1",
+      "providerAssistantMessageId": "01a0957b-39f2-7d60-8d80-0fd14d8445e1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789214909011-9u183jg",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789214909005-9vawjqy",
+      "timestamp": 1789214909005,
+      "rawDisplayText": "继续",
+      "canonicalText": "继续",
+      "images": [],
+      "contentDigest": "65f454414e2fda4840658901f9399831363ad75712ba36b930b5ad393f72f7b7",
+      "providerUserMessageId": "01a09585-21d1-7020-9314-f8fc07f17bda",
+      "providerAssistantMessageId": "msg_0d7aecbdb55f0237016aa5415cad1487d0aaf7f3e36a750d4c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789215127524-hfaxy7i",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789215127514-0nqaxp8",
+      "timestamp": 1789215127514,
+      "rawDisplayText": "$drawio:drawio  @07-MultiModal/Video-MLLM/03-监督信号.md 同样的，使用drawio给这个文档画一个框架图然后导出svg插入",
+      "canonicalText": "$drawio:drawio  @07-MultiModal/Video-MLLM/03-监督信号.md 同样的，使用drawio给这个文档画一个框架图然后导出svg插入",
+      "images": [],
+      "contentDigest": "2fb86cef135e117f2e170c74ce991e1ffcda1f35a73a276a6b5a6d95452df458",
+      "providerUserMessageId": "01a09588-3824-7413-afed-73ca0e711fdb",
+      "providerAssistantMessageId": "msg_0d7aecbdb55f0237016aa5427e1d1887d0a3a7e2e57172b8ca"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789216435522-gdo8etq",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789216435512-gzu7iow",
+      "timestamp": 1789216435512,
+      "rawDisplayText": "$drawio:drawio @07-MultiModal/Video-MLLM/RoadMap.md 使用drawio给这个文档画一个框架图然后导出svg插入",
+      "canonicalText": "$drawio:drawio @07-MultiModal/Video-MLLM/RoadMap.md 使用drawio给这个文档画一个框架图然后导出svg插入",
+      "images": [],
+      "contentDigest": "511549be4b4145e7014b1a438c5161ed36e182cf6cd2720af4510e97a6e6baf7",
+      "providerUserMessageId": "01a0959c-2d8a-76b0-a840-2bdcaab25e7f",
+      "providerAssistantMessageId": "msg_0d7aecbdb55f0237016aa548730a7c87d080b40e221ee2106e"
+    }
+  ]
+}

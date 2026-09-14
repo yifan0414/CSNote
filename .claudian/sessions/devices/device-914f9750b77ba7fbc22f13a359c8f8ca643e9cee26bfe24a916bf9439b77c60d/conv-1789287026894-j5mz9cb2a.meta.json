@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789287026894-j5mz9cb2a",
+  "providerId": "pi",
+  "title": "你审阅一遍这个文章，公式符号是否统一一致，是否正确",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789287026911,
+  "lastActivityAt": 1789287570741,
+  "sessionId": "01a099d1-51aa-73b7-80b0-6264adf5679b",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-13T08-10-27-115Z_01a099d1-51aa-73b7-80b0-6264adf5679b.jsonl",
+    "sessionId": "01a099d1-51aa-73b7-80b0-6264adf5679b"
+  },
+  "linkedContentPath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 85128,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 85128,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 9
+  }
+}

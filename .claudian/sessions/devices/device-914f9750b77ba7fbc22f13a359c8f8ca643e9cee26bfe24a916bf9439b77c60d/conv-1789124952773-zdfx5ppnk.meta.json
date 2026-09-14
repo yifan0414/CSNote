@@ -1,0 +1,11 @@
+{
+  "id": "conv-1789124952773-zdfx5ppnk",
+  "providerId": "pi",
+  "title": "/skill:excalidraw-generator 帮我根据_assets/images/seq...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789124952783,
+  "lastActivityAt": 1789125296948,
+  "sessionId": null,
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "linkedContentPath": "06-LLM/03-Transformer/从 Seq2Seq 到 Attention 再到 Transformer.md"
+}

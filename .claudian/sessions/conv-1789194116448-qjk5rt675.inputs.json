@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789194116448-qjk5rt675",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789194116474-lsk7m29",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789194116444-ntu0i6t",
+      "timestamp": 1789194116444,
+      "rawDisplayText": "按照这个文章的组织内容给我新建一个SigLIP的文档",
+      "canonicalText": "按照这个文章的组织内容给我新建一个SigLIP的文档",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "0d1d62fb96834d3fa8b963327014dcbb9dfa375a4c329c796d540538fe349857",
+      "providerUserMessageId": "01a09447-9e4b-7b93-ad88-dc31aa888df5",
+      "providerAssistantMessageId": "msg_0759fcab47af8295016aa4f3bc294087d0ab2dcc1fc15f9395"
+    }
+  ]
+}

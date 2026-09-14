@@ -13,6 +13,7 @@ tags:
   - study-notes
 status: evergreen
 created: 2026-09-03
+updated: 2026-09-11
 ---
 
 > [!summary] 一句话主线
@@ -37,13 +38,15 @@ created: 2026-09-03
 
 这条路线可以压缩成一个问题：**模型应该把信息压缩后再使用，还是保留信息、在需要时检索？**
 
-| 阶段 | 信息载体 | 访问方式 | 主要收益 | 新瓶颈 |
-| --- | --- | --- | --- | --- |
-| RNN | 当前 hidden state $h_t$ | 沿时间顺序传递 | 能处理变长序列 | 长距离依赖、无法并行 |
-| Seq2Seq | 单个向量 $v=h_T$ | 先压缩，再生成 | 统一变长输入与输出 | fixed-vector bottleneck |
-| Bahdanau Attention | 全部 encoder states $[h_1,\ldots,h_T]$ | decoder 按步检索 | 不必把信息提前压成一个向量 | encoder、decoder 仍是 RNN |
-| Self-Attention | 全部 token 表示 | 序列内部按内容寻址 | 任意位置直接通信 | 注意力计算通常为 $O(T^2)$ |
-| Transformer | 多层上下文化表示 | Self-Attention + FFN | 高并行、短信息路径 | 长上下文成本、位置表示等 |
+![[_assets/images/seq2seq-attention-transformer-evolution.drawio.svg|400]]
+
+| 阶段                 | 信息载体                                 | 访问方式                 | 主要收益          | 新瓶颈                     |
+| ------------------ | ------------------------------------ | -------------------- | ------------- | ----------------------- |
+| RNN                | 当前 hidden state $h_t$                | 沿时间顺序传递              | 能处理变长序列       | 长距离依赖、无法并行              |
+| Seq2Seq            | 单个向量 $v=h_T$                         | 先压缩，再生成              | 统一变长输入与输出     | fixed-vector bottleneck |
+| Bahdanau Attention | 全部 encoder states $[h_1,\ldots,h_T]$ | decoder 按步检索         | 不必把信息提前压成一个向量 | encoder、decoder 仍是 RNN  |
+| Self-Attention     | 全部 token 表示                          | 序列内部按内容寻址            | 任意位置直接通信      | 注意力计算通常为 $O(T^2)$       |
+| Transformer        | 多层上下文化表示                             | Self-Attention + FFN | 高并行、短信息路径     | 长上下文成本、位置表示等            |
 
 三个关键公式：
 

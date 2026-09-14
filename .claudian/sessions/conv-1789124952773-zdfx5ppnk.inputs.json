@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789124952773-zdfx5ppnk",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789124952814-lmurbrc",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789124952769-6if7pel",
+      "timestamp": 1789124952769,
+      "rawDisplayText": "/skill:excalidraw-generator 帮我根据_assets/images/seq2seq-attention-transformer-evolution.drawio.svg 生成一个excalidraw框架图",
+      "canonicalText": "/skill:excalidraw-generator 帮我根据_assets/images/seq2seq-attention-transformer-evolution.drawio.svg 生成一个excalidraw框架图",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/从 Seq2Seq 到 Attention 再到 Transformer.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "85009b8c24a2b86ea687706348ac4e049c4be2c54d702a713b933017ab171af2"
+    }
+  ]
+}

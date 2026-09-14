@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789194116448-qjk5rt675",
+  "providerId": "codex",
+  "title": "按照这个文章的组织内容给我新建一个SigLIP的文档",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789194116455,
+  "lastActivityAt": 1789195200119,
+  "sessionId": "01a09447-9de3-7e61-84cf-4c42e9369f2e",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09447-9de3-7e61-84cf-4c42e9369f2e",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T14-21-56-01a09447-9de3-7e61-84cf-4c42e9369f2e.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
+  "usage": {
+    "inputTokens": 107661,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 106496,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 107661,
+    "percentage": 13,
+    "model": "gpt-6-astra"
+  }
+}

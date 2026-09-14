@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "prepared_at": "2026-09-12T06:40:43.051097+00:00",
+  "input": "2201.12086",
+  "arxiv_id": "2201.12086",
+  "base_id": "2201.12086",
+  "safe_arxiv_id": "2201.12086",
+  "safe_base_id": "2201.12086",
+  "abs_url": "https://arxiv.org/abs/2201.12086",
+  "pdf_url": "https://arxiv.org/pdf/2201.12086.pdf",
+  "src_url": "https://arxiv.org/src/2201.12086",
+  "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation",
+  "raw_title": "",
+  "obsidian_title": "arxiv-2201.12086",
+  "paper_dir": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/07-MultiModal/Video-MLLM",
+  "note_path": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/07-MultiModal/Video-MLLM/BLIP：从图文对齐到理解、生成与数据自举.md",
+  "assets_dir": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/_assets/images",
+  "pdf_asset_path": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/07-MultiModal/Video-MLLM/assets/paper_2201.12086.pdf",
+  "pdf_asset_link": "[[07-MultiModal/Video-MLLM/assets/paper_2201.12086.pdf]]",
+  "manifest_path": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/07-MultiModal/Video-MLLM/.read-paper-2201.12086.json",
+  "cache_root": "/Users/yifan/.cache/arxiv",
+  "source_archive": "/Users/yifan/.cache/arxiv/src-archives/2201.12086.src",
+  "pdf_cache": "/Users/yifan/.cache/arxiv/pdf/2201.12086.pdf",
+  "project_dir": "/Users/yifan/.cache/arxiv/src/2201.12086",
+  "entrypoint": "/Users/yifan/.cache/arxiv/src/2201.12086/main.tex",
+  "source_cache_status": "downloaded",
+  "pdf_cache_status": "downloaded",
+  "archive_format": "tar",
+  "note_state": "new",
+  "warnings": [],
+  "image_assets": [
+    "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/_assets/images/BLIP-2201.12086-01-med-architecture.png",
+    "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/_assets/images/BLIP-2201.12086-02-capfilt-ablation.png",
+    "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/_assets/images/BLIP-2201.12086-03-retrieval-results.png"
+  ],
+  "validation_profile": {
+    "structure": "User-requested CLIP-style numbered Chinese explanatory sections, instead of generic English paper-summary sections",
+    "paths": "Vault-root wikilinks; images in _assets/images per user AGENTS.md",
+    "visuals": "Verified original Figure 2 and Tables 1 and 5; user-compliant descriptive filenames",
+    "status": "passed",
+    "validator": "/Users/yifan/.cache/blip-note-verification/validate_vault_note.py"
+  }
+}

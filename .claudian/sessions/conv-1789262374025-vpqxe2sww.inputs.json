@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789262374025-vpqxe2sww",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789262374045-jva5h5e",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789262374019-jg39mrg",
+      "timestamp": 1789262374019,
+      "rawDisplayText": "你根据这个文档的组织形式给我写一篇GPT1的文档",
+      "canonicalText": "你根据这个文档的组织形式给我写一篇GPT1的文档",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/BLIP-2：用Q-Former连接冻结视觉编码器与大语言模型.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "d6a2cb7a1bd35daec97dc8befc38f87d9993dc665e58b85099f3ef7b98d50467",
+      "providerUserMessageId": "01a09859-2547-7113-8eca-2854a275646f",
+      "providerAssistantMessageId": "msg_0c8e7aead38a8b90016aa60056df9887d0ab204ff72b592356"
+    }
+  ]
+}

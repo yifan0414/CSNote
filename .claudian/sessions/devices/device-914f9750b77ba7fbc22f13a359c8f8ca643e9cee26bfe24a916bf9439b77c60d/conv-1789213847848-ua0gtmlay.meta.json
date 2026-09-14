@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789213847848-ua0gtmlay",
+  "providerId": "codex",
+  "title": "我觉得本文比 @07-MultiModal/Video-MLLM/03-自监督表征学习-监督信号从哪...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789213847858,
+  "lastActivityAt": 1789214036447,
+  "sessionId": "01a09574-b3a2-7591-a7d4-0164c4d9b22d",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09574-b3a2-7591-a7d4-0164c4d9b22d",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T19-50-48-01a09574-b3a2-7591-a7d4-0164c4d9b22d.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/03-监督信号.md",
+  "usage": {
+    "inputTokens": 38815,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 36096,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 38815,
+    "percentage": 5,
+    "model": "gpt-6-astra"
+  }
+}

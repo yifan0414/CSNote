@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789195112025-xe98cefcg",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789195112045-jbtn7v9",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789195112019-w9totfu",
+      "timestamp": 1789195112019,
+      "rawDisplayText": "按照这个文章的组织内容给我新建一个DINO的文档",
+      "canonicalText": "按照这个文章的组织内容给我新建一个DINO的文档",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "e619db343bd01138b5923d2b36e5872165bf289bc2a65d5d25f010478afda03f",
+      "providerUserMessageId": "01a09457-18cd-7a73-b17c-7354069c4822",
+      "providerAssistantMessageId": "msg_09da91b4f856f78c016aa4f6a8252c87d0ad6495ba652734d0"
+    }
+  ]
+}

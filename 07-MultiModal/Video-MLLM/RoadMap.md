@@ -11,12 +11,14 @@ tags:
 type: learning-roadmap
 status: active
 created: 2026-08-15
-updated: 2026-09-09
+updated: 2026-09-12
 sources_verified: 2026-08-15
 estimated_duration: 10 weeks
 ---
 
 # Video MLLM 学习路线
+
+![[_assets/images/video-mllm-01-learning-roadmap.drawio.svg|900]]
 
 > [!abstract] 最终目标
 > 从“会调用多模态模型”进阶到“能沿 forward pass 定位视觉 token、解释计算成本，并独立设计和评估视频压缩方法”。
@@ -36,19 +38,6 @@ estimated_duration: 10 weeks
 > 3. 模态在哪里融合，信息在哪里丢失？
 > 4. 哪些位置可以压缩？
 > 5. 压缩后具体节省哪一段计算和显存？
-
-~~~mermaid
-flowchart LR
-    A[Transformer] --> B[ViT]
-    B --> C[CLIP / SigLIP]
-    C --> D[BLIP / BLIP-2]
-    D --> E[LLaVA]
-    E --> F[LLaVA-OneVision]
-    F --> G[Forward Trace]
-    G --> H[Profiling]
-    H --> I[Video / Token Compression]
-    I --> J[Efficiency Research]
-~~~
 
 ## 快速导航
 
@@ -123,7 +112,7 @@ flowchart LR
 
 ## 阶段 0：准备与前置检查
 
-**预计用时**：0.5-1 天  
+**预计用时**：$0.5$--$1$ 天  
 **阶段目标**：确认自己能够无障碍阅读 Transformer 和 PyTorch 的 forward。
 
 ### 参考资料与具体范围
@@ -152,14 +141,14 @@ flowchart LR
 - 完整 NLP 历史。
 
 > [!success] 阶段验收
-> - [ ] 看到 `x.shape = [2, 196, 768]` 时，能立即说明 batch=2、tokens=196、hidden=768。
+> - [ ] 看到 `x.shape = [2, 196, 768]` 时，能立即说明 batch 为 $2$、tokens 为 $196$、hidden 为 $768$。
 > - [ ] 看到 `Linear(768, 3072)` 时，能判断输出 shape。
 
 ---
 
 ## 阶段 1：Transformer
 
-**预计用时**：4-6 天  
+**预计用时**：$4$--$6$ 天  
 **学习入口**：CS224N 的 NN Basics、Language Models / RNN、Transformers，以及 Assignment 3 的核心部分。[[#R1|R1]] [[#R2|R2]]
 
 ### CS224N Winter 2026 官方核验
@@ -173,7 +162,7 @@ flowchart LR
 | --- | --- | --- | --- |
 | 2026-01-13 | Backpropagation and Neural Network Basics | [Slides](https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture03-neuralnets.pdf) · [Notes](https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes03-neuralnets.pdf) | Vectorization、计算图、Linear / MLP、activation、反向传播、参数与 shape |
 | 2026-01-15 | Language Models and RNNs | [Slides](https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture04-rnnlm.pdf) · [Notes](https://web.stanford.edu/class/cs224n/readings/cs224n-2019-notes05-LM_RNN.pdf) | Autoregressive LM、RNN 串行依赖、vanishing gradient；LSTM 只看动机 |
-| 2026-01-20 | Transformers | [Slides](https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture05-transformers.pdf) · [Notes](https://web.stanford.edu/class/cs224n/readings/cs224n-self-attention-transformers-2023_draft.pdf) | Q / K / V、scaled dot-product attention、multi-head、mask、position、Transformer block |
+| 2026-01-20 | Transformers | [Slides](https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture05-transformers.pdf) · [Notes](https://web.stanford.edu/class/cs224n/readings/cs224n-self-attention-transformers-2023_draft.pdf) | $Q$ / $K$ / $V$、scaled dot-product attention、multi-head、mask、position、Transformer block |
 | 2026-01-16 | PyTorch Tutorial Session | [Official Colab](https://colab.research.google.com/drive/1Pz8b_h-W9zIBk1p2e6v-YFYThG1NkYeS?usp=sharing) | Module、tensor 操作和训练循环；不熟 PyTorch 时必做 |
 
 **配套论文和讲义**
@@ -196,7 +185,7 @@ flowchart LR
 **Assignment 2（选做）**
 
 - 官方材料：[Handout](https://web.stanford.edu/class/cs224n/assignments_w26/a2.pdf) · [Code](https://web.stanford.edu/class/cs224n/assignments_w26/a2.zip)
-- 题目组成：Q1 Understanding Word2Vec（20 分）、Q2 Neural Networks Optimization（8 分，Adam + Dropout）、Q3 Neural Transition-Based Dependency Parsing（40 分）。
+- 题目组成：Q1 Understanding Word2Vec（$20$ 分）、Q2 Neural Networks Optimization（$8$ 分，Adam + Dropout）、Q3 Neural Transition-Based Dependency Parsing（$40$ 分）。
 - [ ] 只完成 Q2 的 Adam 与 Dropout。
 - [ ] PyTorch 不熟时阅读 Q3(e) 的网络训练部分；dependency parsing 其余题目不作为前置。
 
@@ -207,11 +196,11 @@ flowchart LR
 
 | 部分 | 官方题目 | 具体内容 | 路线要求 |
 | --- | --- | --- | --- |
-| Q1，14 分 | Attention Exploration | Attention copying、同时聚合两个 value、single-head 的不稳定性、multi-head 的收益 | 全做 |
-| Q2，6 分 | Position Embeddings Exploration | 无位置编码时的 permutation equivariance、sinusoidal position embedding | 全做 |
-| Q3(a)，20 分 | Coding a Transformer from Scratch | 依次实现 MLP、CausalAttention、DecoderBlock、Transformer.forward、greedy generate | 全做并打印 shape |
-| Q3(b)，10 分 | Training | 实现 batch loss，训练 100 batches，提交 loss 和 gradient norm 曲线 | 全做 |
-| Q3(c)，9 分 bonus | Speed up Learning | 修改 learning rate、optimizer 或架构，比较 100 steps 后 loss | 选做 |
+| Q1，$14$ 分 | Attention Exploration | Attention copying、同时聚合两个 value、single-head 的不稳定性、multi-head 的收益 | 全做 |
+| Q2，$6$ 分 | Position Embeddings Exploration | 无位置编码时的 permutation equivariance、sinusoidal position embedding | 全做 |
+| Q3(a)，$20$ 分 | Coding a Transformer from Scratch | 依次实现 MLP、CausalAttention、DecoderBlock、Transformer.forward、greedy generate | 全做并打印 shape |
+| Q3(b)，$10$ 分 | Training | 实现 batch loss，训练 $100$ batches，提交 loss 和 gradient norm 曲线 | 全做 |
+| Q3(c)，$9$ 分 bonus | Speed up Learning | 修改 learning rate、optimizer 或架构，比较 $100$ steps 后 loss | 选做 |
 
 ### Day 1：神经网络最低基础
 
@@ -231,7 +220,7 @@ flowchart LR
 
 ### Day 3-4：精学 Self-Attention
 
-设输入为 $X\in\mathbb{R}^{B\times N\times D}$：
+设输入 $X$ 的 shape 为 $[B,N,D]$：
 
 $$
 Q=XW_Q,\qquad K=XW_K,\qquad V=XW_V
@@ -246,17 +235,17 @@ $$
 当 head 数为 $H$ 且 $D=Hd_h$ 时：
 
 $$
-Q,K,V\in\mathbb{R}^{B\times H\times N\times d_h}
+\operatorname{shape}(Q)=\operatorname{shape}(K)=\operatorname{shape}(V)=[B,H,N,d_h]
 $$
 
 $$
-QK^\top\in\mathbb{R}^{B\times H\times N\times N}
+\operatorname{shape}(QK^\top)=[B,H,N,N]
 $$
 
 | 节点 | Shape |
 | --- | --- |
 | 输入 $X$ | $[B,N,D]$ |
-| Q / K / V projection | $[B,N,D]$ |
+| $Q$ / $K$ / $V$ projection | $[B,N,D]$ |
 | 拆分多头 | $[B,H,N,d_h]$ |
 | Attention score | $[B,H,N,N]$ |
 | 加权后的 context | $[B,H,N,d_h]$ |
@@ -290,18 +279,18 @@ $$
 - [ ] 对 $N\in\{64,128,256,512\}$ 做简单耗时实验并记录增长趋势。
 
 > [!success] 阶段验收
-> 给定 $X=[2,196,768]$ 且 heads=12：
+> 给定 $\operatorname{shape}(X)=[2,196,768]$ 且 head 数为 $12$：
 > - [ ] 推出 $d_h=64$。
-> - [ ] 推出 $Q/K/V=[2,12,196,64]$。
-> - [ ] 推出 $QK^\top=[2,12,196,196]$。
+> - [ ] 推出 $\operatorname{shape}(Q)=\operatorname{shape}(K)=\operatorname{shape}(V)=[2,12,196,64]$。
+> - [ ] 推出 $\operatorname{shape}(QK^\top)=[2,12,196,196]$。
 > - [ ] 推出 attention 输出合并后为 $[2,196,768]$。
-> - [ ] 说明 $N$ 从 196 降到 98 后，attention score 元素数为什么变为原来的 $1/4$。
+> - [ ] 说明 $N$ 从 $196$ 降到 $98$ 后，attention score 元素数为什么变为原来的 $1/4$。
 
 ---
 
 ## 阶段 2：ViT
 
-**预计用时**：3-4 天  
+**预计用时**：$3$--$4$ 天  
 **核心资料**：*An Image is Worth 16x16 Words*。[[#R3|R3]]
 
 ### 参考资料与精读范围
@@ -318,7 +307,7 @@ $$
 
 ### 核心结构
 
-对于图像 $I\in\mathbb{R}^{H\times W\times C}$ 与 patch size $P$：
+对于 shape 为 $[H,W,C]$ 的图像 $I$ 与 patch size $P$：
 
 $$
 N_{\text{patch}}=\frac{H}{P}\cdot\frac{W}{P}
@@ -327,7 +316,7 @@ $$
 经过 patch projection 后：
 
 $$
-X_0\in\mathbb{R}^{B\times N_{\text{patch}}\times D}
+\operatorname{shape}(X_0)=[B,N_{\text{patch}},D]
 $$
 
 如果模型使用一个 [CLS] token，进入 Transformer 的序列长度为 $N_{\text{patch}}+1$。
@@ -346,7 +335,7 @@ Image [B, 3, H, W]
 ### 学习任务
 
 - [ ] 能根据 $H$、$W$ 和 $P$ 计算 patch token 数。
-- [ ] 理解 patch embedding 与 Conv2d(kernel=P, stride=P) 的等价关系。
+- [ ] 理解 patch embedding 与 `Conv2d(kernel=P, stride=P)` 的等价关系。
 - [ ] 理解普通 ViT block 通常保持 token 数 $N$ 不变。
 - [ ] 区分 CLS / global embedding 与 patch-level features。
 - [ ] 解释为何中间层 pruning 与 ViT 全部运行后再 pruning 的计算收益不同。
@@ -360,11 +349,11 @@ Image [B, 3, H, W]
 
 | 节点 | 必须记录 | 需要回答的问题 |
 | --- | --- | --- |
-| Pixels | $B,C,H,W$ | 分辨率如何影响 $N$？ |
-| Patch embedding | $B,N,D$ | Patch size 如何影响 $N$？ |
-| ViT block $k$ | $B,N,D$ | $N$ 是否变化？ |
-| Last hidden | $B,N,D$ | Patch features 在哪里被取出？ |
-| Global representation | $B,D$ | Pooling 丢失了什么粒度？ |
+| Pixels | $[B,C,H,W]$ | 分辨率如何影响 $N$？ |
+| Patch embedding | $[B,N,D]$ | Patch size 如何影响 $N$？ |
+| ViT block $k$ | $[B,N,D]$ | $N$ 是否变化？ |
+| Last hidden | $[B,N,D]$ | Patch features 在哪里被取出？ |
+| Global representation | $[B,D]$ | Pooling 丢失了什么粒度？ |
 
 > [!success] 阶段验收
 > - [ ] 给定任意 ViT 配置，仅凭 $H$、$W$、patch size 和是否含 CLS，就能预测 token 数。
@@ -374,7 +363,7 @@ Image [B, 3, H, W]
 
 ## 阶段 3：CLIP
 
-**预计用时**：3-4 天  
+**预计用时**：$3$--$4$ 天  
 **核心资料**：CLIP 原始论文。[[#R4|R4]]
 
 ### 参考资料与精读范围
@@ -426,7 +415,7 @@ Text  → Text Encoder   → Global Text Embedding  ┘
 - [ ] 手动复现 encode_image / encode_text → normalize → dot product。
 - [ ] 绕过最终 global pooling，提取 vision tower 的 patch hidden states。
 - [ ] 比较最后层与倒数第二层 patch features。
-- [ ] 对一个 8 帧视频计算每帧与 query 的相似度并排序。
+- [ ] 对一个 $8$ 帧视频计算每帧与 query 的相似度并排序。
 - [ ] 选择其中一帧，说明 frame score 为什么不能直接给出 patch importance。
 - [ ] 产出一个最小 CLIP frame scorer 和一份 global-vs-local 对比笔记。
 
@@ -434,7 +423,7 @@ Text  → Text Encoder   → Global Text Embedding  ┘
 
 ## 阶段 4：SigLIP
 
-**预计用时**：2-3 天  
+**预计用时**：$2$--$3$ 天  
 **核心资料**：SigLIP 原始论文。[[#R5|R5]]
 
 SigLIP 保留图像与文本双编码器的整体结构，但使用 pairwise sigmoid loss，不依赖 CLIP 式的全局 softmax normalization。
@@ -468,7 +457,7 @@ SigLIP 保留图像与文本双编码器的整体结构，但使用 pairwise sig
 
 ## 阶段 5：BLIP 与 BLIP-2
 
-**预计用时**：4-5 天  
+**预计用时**：$4$--$5$ 天  
 **核心资料**：BLIP 与 BLIP-2 原始论文。[[#R6|R6]] [[#R7|R7]]
 
 ### 参考资料与精读范围
@@ -477,12 +466,12 @@ SigLIP 保留图像与文本双编码器的整体结构，但使用 pairwise sig
 | --- | --- | --- | --- |
 | 必读 | [BLIP 原始论文](https://arxiv.org/abs/2201.12086) | Figure 2、§3 Method、§3.1 Model Architecture | 画出 image encoder、image-grounded text encoder / decoder，区分 ITC、ITM、LM 的 attention mask 和输出 |
 | 选读 | BLIP §3.2 Captioning and Filtering | CapFilt 的 captioner、filter 和数据清洗流程 | 只理解它为何改善预训练数据，不复现 |
-| 必读 | [BLIP-2 原始论文](https://arxiv.org/abs/2301.12597) | Figure 1-3、§3.1 Q-Former、§3.2 Representation Learning、§3.3 Generative Learning | 写出 32 queries、cross-attention、三种第一阶段目标和连接 frozen LLM 的第二阶段 |
+| 必读 | [BLIP-2 原始论文](https://arxiv.org/abs/2301.12597) | Figure 1-3、§3.1 Q-Former、§3.2 Representation Learning、§3.3 Generative Learning | 写出 $32$ queries、cross-attention、三种第一阶段目标和连接 frozen LLM 的第二阶段 |
 | 实践 | [Salesforce LAVIS 官方仓库](https://github.com/salesforce/LAVIS) | BLIP / BLIP-2 model configs、predict / generate examples | 找到 Q-Former、query_tokens、vision encoder 和 LLM projection |
 | 查阅 | [Hugging Face BLIP-2 Docs](https://huggingface.co/docs/transformers/model_doc/blip-2) | Blip2QFormerModel、Blip2VisionModel、Blip2ForConditionalGeneration | 用标准接口输出 hidden states 并注册 hook |
 
 > [!note] BLIP-2 必须读清的数字
-> 原论文 §3.1 使用 32 个、维度 768 的 queries；示例 frozen image features 为 $257\times1024$，Q-Former 输出为 $32\times768$。这些数字用于理解固定瓶颈，不代表所有实现都必须使用相同配置。
+> 原论文 §3.1 使用 $32$ 个、维度 $768$ 的 queries；示例 frozen image features 的 shape 为 $[257,1{,}024]$，Q-Former 输出的 shape 为 $[32,768]$。这些数字用于理解固定瓶颈，不代表所有实现都必须使用相同配置。
 
 ### BLIP：从对齐到跨模态交互
 
@@ -499,10 +488,10 @@ SigLIP 保留图像与文本双编码器的整体结构，但使用 pairwise sig
 
 ### BLIP-2：精读 Q-Former
 
-设 vision encoder 输出：
+设 vision encoder 输出为 $Z$，其 shape 为：
 
 $$
-Z\in\mathbb{R}^{B\times N_v\times D_v}
+\operatorname{shape}(Z)=[B,N_v,D_v]
 $$
 
 Q-Former 使用固定数量 $M$ 个 latent queries：
@@ -520,7 +509,7 @@ Learnable Queries → Query Self-Attention     ┘
 ~~~
 
 - [ ] 理解 learnable queries 不是来自输入图像的 patch tokens。
-- [ ] 理解 cross-attention 中 Q 来自 queries，K / V 来自 image features。
+- [ ] 理解 cross-attention 中 $Q$ 来自 queries，$K$ / $V$ 来自 image features。
 - [ ] 理解固定数量 latent queries 为什么构成信息瓶颈。
 - [ ] 区分 Q-Former resampling、hard token pruning 和 token merging。
 
@@ -532,13 +521,13 @@ Learnable Queries → Query Self-Attention     ┘
 - [ ] 写一份 Top-k pruning / token merging / Q-Former resampling 对比表。
 
 > [!success] 阶段验收
-> - [ ] 看到 resampler / latent queries / query tokens 时，能立即指出 query 数、K / V 来源、输出 token 数和压缩位置。
+> - [ ] 看到 resampler / latent queries / query tokens 时，能立即指出 query 数、$K$ / $V$ 来源、输出 token 数和压缩位置。
 
 ---
 
 ## 阶段 6：LLaVA
 
-**预计用时**：3-4 天  
+**预计用时**：$3$--$4$ 天  
 **核心资料**：LLaVA 原始论文。[[#R8|R8]]
 
 ### 参考资料与精读范围
@@ -565,9 +554,9 @@ Image
 ### 模态桥接
 
 $$
-Z_v\in\mathbb{R}^{B\times N_v\times D_v}
+\underbrace{Z_v}_{[B,N_v,D_v]}
 \xrightarrow{\text{Projector}}
-\widetilde{Z}_v\in\mathbb{R}^{B\times N_v\times D_l}
+\underbrace{\widetilde{Z}_v}_{[B,N_v,D_l]}
 $$
 
 Projector 通常负责将 feature dimension 从 $D_v$ 映射到 $D_l$，并不必然减少视觉 token 数 $N_v$。
@@ -583,7 +572,7 @@ Projector 通常负责将 feature dimension 从 $D_v$ 映射到 $D_l$，并不�
 
 ### 代码实践
 
-- [ ] 输入 1 张图和 1 个问题，完成一次 multimodal forward。
+- [ ] 输入 $1$ 张图和 $1$ 个问题，完成一次 multimodal forward。
 - [ ] 在 vision tower 输出处记录 $[B,N_v,D_v]$。
 - [ ] 在 projector 后记录 $[B,N_v,D_l]$。
 - [ ] 找到 visual embeddings 与 text embeddings 拼接或替换特殊 image token 的代码。
@@ -591,7 +580,7 @@ Projector 通常负责将 feature dimension 从 $D_v$ 映射到 $D_l$，并不�
 - [ ] 比较纯文本与图像 + 文本的 prefill 时间。
 
 > [!warning] 必须形成的判断
-> 如果 vision encoder 已经处理完 576 个 token，之后才 prune 到 128，就不会节省已经发生的 vision tower 计算。它主要减少 projector 后续、LLM prefill 和 KV cache 成本。若在 ViT 中间层降到 128，才会进一步节省后续 vision blocks。
+> 如果 vision encoder 已经处理完 $576$ 个 token，之后才 prune 到 $128$，就不会节省已经发生的 vision tower 计算。它主要减少 projector 后续、LLM prefill 和 KV cache 成本。若在 ViT 中间层降到 $128$，才会进一步节省后续 vision blocks。
 
 > [!success] 阶段验收
 > - [ ] 能定位 vision tower → projector → LLM 的完整代码路径。
@@ -601,7 +590,7 @@ Projector 通常负责将 feature dimension 从 $D_v$ 映射到 $D_l$，并不�
 
 ## 阶段 7：LLaVA-OneVision
 
-**预计用时**：5-7 天  
+**预计用时**：$5$--$7$ 天  
 **阶段定位**：主目标模型  
 **核心资料**：LLaVA-OneVision 原始论文。[[#R9|R9]]
 
@@ -641,7 +630,7 @@ Video
   → Generation
 ~~~
 
-论文写到：SO400M 对 $384\times384$ 输入产生 729 个视觉 token；视频帧经过 vision encoder 后再进行 $2\times2$ bilinear interpolation，文中描述为 196 tokens / frame，并最多采样 32 帧。论文同一部分的 maximum 表达与 196 tokens / frame 存在文字不一致，因此实际研究必须以当前代码 trace 的 shape 为准，而不是死背乘法结果。[[#R9|R9]]
+论文写到：SO400M 对 $384\times384$ 输入产生 $729$ 个视觉 token；视频帧经过 vision encoder 后再进行 $2\times2$ bilinear interpolation，文中描述为 $196$ tokens / frame，并最多采样 $32$ 帧。论文同一部分的 maximum 表达与 $196$ tokens / frame 存在文字不一致，因此实际研究必须以当前代码 trace 的 shape 为准，而不是死背乘法结果。[[#R9|R9]]
 
 - [ ] 标出 frame sampling、vision encoding、spatial reduction、projector 和 packing 的位置。
 - [ ] 写出每一步的预期 token 数与 feature dimension。
@@ -672,13 +661,13 @@ Video
 
 | 阶段 | 建议记录格式 | 核心问题 |
 | --- | --- | --- |
-| Frames | $T\times H\times W$ | $T$ 在哪里决定？ |
-| Vision input | $T\times N_0\times D_v$ | $N_0$ 与分辨率 / patch 的关系？ |
-| Vision output | $T\times N_1\times D_v$ | $N_1$ 是否等于 $N_0$？ |
-| Spatial reduction | $T\times N_2\times D_v$ | $N_1\rightarrow N_2$ 如何发生？ |
-| Projector | $T\times N_2\times D_l$ | 是否只改变 $D$？ |
+| Frames | $[T,H,W]$ | $T$ 在哪里决定？ |
+| Vision input | $[T,N_0,D_v]$ | $N_0$ 与分辨率 / patch 的关系？ |
+| Vision output | $[T,N_1,D_v]$ | $N_1$ 是否等于 $N_0$？ |
+| Spatial reduction | $[T,N_2,D_v]$ | $N_1\rightarrow N_2$ 如何发生？ |
+| Projector | $[T,N_2,D_l]$ | 是否只改变 $D$？ |
 | LLM prefix | $N_{\text{video}}+N_{\text{text}}$ | 总 context 多长？ |
-| KV cache | $L\times H\times N\times d_h$ | 视觉 token 占用多少？ |
+| KV cache | $[L,H,N,d_h]$ | 视觉 token 占用多少？ |
 
 - [ ] 保存完整 shape trace。
 - [ ] 保存 visual token 在最终 LLM sequence 中的位置。
@@ -692,7 +681,7 @@ Video
 
 ## 阶段 8：代码追踪与性能剖析
 
-**预计用时**：4-5 天  
+**预计用时**：$4$--$5$ 天  
 **阶段目标**：把“知道架构”升级为“知道成本在哪里”。
 
 ### 参考资料与具体范围
@@ -742,11 +731,11 @@ $$
 
 | 变量 | 建议档位 | 重点观察 |
 | --- | --- | --- |
-| Frames $T$ | 4 / 8 / 16 / 32 | Vision 成本如何随 $T$ 增长 |
+| Frames $T$ | $4$ / $8$ / $16$ / $32$ | Vision 成本如何随 $T$ 增长 |
 | Tokens / frame | 原始 / $1/2$ / $1/4$ | Prefill 如何变化 |
 | Text length | 短 / 中 / 长 | 视觉 token 在总 context 中的占比 |
 | Compression position | Frame / post-vision / mid-ViT | 各自节省哪一段 |
-| Batch | 1 / 2（显存允许时） | 吞吐与峰值显存 |
+| Batch | $1$ / $2$（显存允许时） | 吞吐与峰值显存 |
 
 ### 工具顺序
 
@@ -810,7 +799,7 @@ $$
 - [ ] 比较是否在相同 token / FLOPs / resolution budget 下进行？
 
 > [!important] 研究判断
-> 看到“减少 80% visual tokens”时，先确认压缩发生在 encoder 前还是后，再分析 vision tower 占比、prefill / decode 比例，以及 kernel、padding 和 batch 效应。Token 减少 80% 不等于端到端时间减少 80%。
+> 看到“减少 $80\%$ visual tokens”时，先确认压缩发生在 encoder 前还是后，再分析 vision tower 占比、prefill / decode 比例，以及 kernel、padding 和 batch 效应。Token 减少 $80\%$ 不等于端到端时间减少 $80\%$。
 
 ---
 
@@ -836,7 +825,7 @@ $$
 **官方材料**：[作业说明视频](https://youtu.be/rXfp9Yo5HwU) · [HW3 PDF](https://speech.ee.ntu.edu.tw/~hylee/ml/ml2026-course-data/hw3.pdf) · [官方 Colab](https://colab.research.google.com/drive/1vZNo6_PlaP2fvMqr3g5KoQA0rN79m24O?usp=sharing)
 
 > [!info] 官网核验结果
-> HW3 共 20 道选择题，每题 0.5 分：Q1-Q10 为论文阅读，Q11-Q20 为填补 Colab 中 TODO 后分析实验。作业说明要求先看 [2025 第 3 讲：解剖大型语言模型](https://www.youtube.com/watch?v=8iFvM7WUUs8)，提交入口是 NTU COOL；自学者可直接使用公开 PDF 和 Colab。
+> HW3 共 $20$ 道选择题，每题 $0.5$ 分：Q1-Q10 为论文阅读，Q11-Q20 为填补 Colab 中 TODO 后分析实验。作业说明要求先看 [2025 第 3 讲：解剖大型语言模型](https://www.youtube.com/watch?v=8iFvM7WUUs8)，提交入口是 NTU COOL；自学者可直接使用公开 PDF 和 Colab。
 
 **Q1-Q10 论文阅读**
 
@@ -869,9 +858,9 @@ $$
 | 项目 | 官网作业内容 |
 | --- | --- |
 | Task | 训练 decoder-only Transformer 做 next-token prediction |
-| Data | 792 张 $20\times20$ Pokémon 小图，每个 pixel 是 token，共 167 个颜色类别 |
-| Split | Train 632 / Validation 80 / Test 80 |
-| Test | 给定图像前 60%，生成剩余部分 |
+| Data | $792$ 张 $20\times20$ Pokémon 小图，每个 pixel 是 token，共 $167$ 个颜色类别 |
+| Split | Train $632$ / Validation $80$ / Test $80$ |
+| Test | 给定图像前 $60\%$，生成剩余部分 |
 | Metric | FID + Pokémon Detection Rate |
 | Baseline | GPT-2 simple；调 epoch / LR / heads / embedding 的 medium；Llama / Mistral strong |
 
@@ -959,7 +948,7 @@ $$
 
 ## 10 周执行计划
 
-默认每周学习 6 天，每天 2.5-3 小时；第 7 天休息或补缺。完成标准是通过阶段验收，不是看完指定页数。
+默认每周学习 $6$ 天，每天 $2.5$--$3$ 小时；第 $7$ 天休息或补缺。完成标准是通过阶段验收，不是看完指定页数。
 
 | 周次 | 主题 | 主要任务 | 周末产物 |
 | --- | --- | --- | --- |
@@ -997,9 +986,9 @@ $$
 - [ ] W10：完成系统课程精选内容与 Capstone。
 
 > [!example]- 其他节奏
-> **6 周压缩版**：Transformer + ViT / CLIP + SigLIP / BLIP-2 / LLaVA + OneVision 论文 / OneVision trace + profiling / Compression + inference。仅适合每天投入 4-5 小时且 PyTorch 基础较熟的情况。
+> **$6$ 周压缩版**：Transformer + ViT / CLIP + SigLIP / BLIP-2 / LLaVA + OneVision 论文 / OneVision trace + profiling / Compression + inference。仅适合每天投入 $4$--$5$ 小时且 PyTorch 基础较熟的情况。
 >
-> **14 周稳健版**：为前 8 周的每个阶段增加 2-3 天代码阅读与复盘，并在系统部分增加 GPU、kernel 和 FlashAttention 实践。
+> **$14$ 周稳健版**：为前 $8$ 周的每个阶段增加 $2$--$3$ 天代码阅读与复盘，并在系统部分增加 GPU、kernel 和 FlashAttention 实践。
 
 ---
 
@@ -1014,7 +1003,7 @@ $$
 
 ### ViT
 
-- [ ] $224\times224$、patch size 为 16 时有多少 patch？
+- [ ] $224\times224$、patch size 为 $16$ 时有多少 patch？
 - [ ] CLS / global representation 与 patch hidden states 有什么区别？
 - [ ] 在哪一层 prune 才能节省后续 vision blocks？
 
@@ -1028,7 +1017,7 @@ $$
 ### BLIP 与 BLIP-2
 
 - [ ] ITC 与 ITM 的 scorer 含义为什么不同？
-- [ ] Q-Former 的 Q / K / V 分别来自哪里？
+- [ ] Q-Former 的 $Q$ / $K$ / $V$ 分别来自哪里？
 - [ ] 固定 query 数为什么是一种信息瓶颈？
 
 ### LLaVA 与 OneVision
@@ -1050,7 +1039,7 @@ $$
 
 ## 研究型 Capstone
 
-**输入建议**：一个 30-60 秒且事件变化明显的视频。  
+**输入建议**：一个 $30$--$60$ 秒且事件变化明显的视频。  
 **目标**：证明自己能够对模型内部进行可解释、可测量的干预，而不是刷 benchmark。
 
 ### A. Baseline Trace
@@ -1199,4 +1188,4 @@ $$
 ---
 
 > [!quote] 路线完成后的下一步
-> 不要立即再学一门完整课程。选择 3-5 篇 visual-token / video-compression 论文，用同一套 OneVision profiler 复现它们的压缩位置、token budget、answer quality 和真实 latency。
+> 不要立即再学一门完整课程。选择 $3$--$5$ 篇 visual-token / video-compression 论文，用同一套 OneVision profiler 复现它们的压缩位置、token budget、answer quality 和真实 latency。

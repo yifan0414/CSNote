@@ -23,7 +23,31 @@
             }
           },
           {
-            "id": "6bc092d6c9aa3da0",
+            "id": "144a7602e8546daa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "07-MultiModal/Video-MLLM/SigLIP2：从全局图文对齐到多粒度视觉表征.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "SigLIP2：从全局图文对齐到多粒度视觉表征"
+            }
+          },
+          {
+            "id": "a3164f11efdb05e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -45,9 +69,33 @@
               "icon": "lucide-file",
               "title": "transformer计算图与反向传播"
             }
+          },
+          {
+            "id": "b3b436bf2b224bcb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06-LLM/01-数学基础/01-线性代数与微积分/梯度与方向导数：怎样描述多变量函数的局部变化.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "梯度与方向导数：怎样描述多变量函数的局部变化"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -81,7 +129,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "egoschema",
+                "query": "tag:llm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -106,7 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 304.92578125
+    "width": 243.921875
   },
   "right": {
     "id": "8815071129bdee48",
@@ -196,8 +244,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
-                "followCursor": false,
+                "file": "06-LLM/01-数学基础/01-线性代数与微积分/梯度与方向导数：怎样描述多变量函数的局部变化.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -215,28 +263,16 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1788948022419-kuvhzr6",
-                      "conversationId": "conv-1788948037651-1hpxmty9h"
-                    },
-                    {
-                      "tabId": "tab-1788998585802-8taljvu",
-                      "conversationId": "conv-1788998637513-yw4ckzr4a"
-                    },
-                    {
-                      "tabId": "tab-1788999699556-dy44yvc",
-                      "conversationId": "conv-1788999707882-acxxw0g1i"
-                    },
-                    {
-                      "tabId": "tab-1789087511785-ruzyck9",
-                      "conversationId": "conv-1789087547703-layhne2bp"
-                    },
-                    {
-                      "tabId": "tab-1789087558154-yjvr74w",
+                      "tabId": "tab-1789288682048-2hdr8oj",
                       "conversationId": null,
                       "draftModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910"
+                    },
+                    {
+                      "tabId": "tab-1789299966162-r1oc4bz",
+                      "conversationId": "conv-1789299981186-tqbs883d7"
                     }
                   ],
-                  "activeTabId": "tab-1789087511785-ruzyck9"
+                  "activeTabId": "tab-1789299966162-r1oc4bz"
                 }
               },
               "icon": "bot",
@@ -248,7 +284,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 397.09765625
+    "width": 464.1171875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -271,58 +307,58 @@
       "fix-math:Current file": false
     }
   },
-  "active": "6bc092d6c9aa3da0",
+  "active": "b3b436bf2b224bcb",
   "lastOpenFiles": [
-    "科研/科研入门指南：如何做科研与写论文.md",
+    "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
     "06-LLM/03-Transformer/transformer计算图与反向传播.md",
+    "07-MultiModal/Video-MLLM/DINO：从多视图自蒸馏到视觉语义空间.md",
+    "06-LLM/03-Transformer/05-Attention.md",
+    "06-LLM/03-Transformer/00-分词.md",
+    "06-LLM/01-数学基础/03-最优化/梯度下降与 SGD：从损失变化到批量参数更新.md",
+    "06-LLM/04-训练与推理/PyTorch 损失归约与梯度累积.md",
+    "06-LLM/04-训练与推理/权重共享.md",
+    "06-LLM/04-训练与推理/多GPU训练过程.md",
+    "06-LLM/03-Transformer/从 Seq2Seq 到 Attention 再到 Transformer.md",
+    "06-LLM/03-Transformer/GPT-3：从模型规模化到上下文少样本学习.md",
+    "06-LLM/02-模型基础/从线性模型到多层感知机.md",
+    "06-LLM/02-模型基础/高斯朴素贝叶斯：从类别分布到分类.md",
+    "06-LLM/02-模型基础/人工神经网络训练过程.canvas",
+    "06-LLM/01-数学基础/01-线性代数与微积分/行列式与体积缩放.md",
+    "06-LLM/01-数学基础/01-线性代数与微积分/梯度与方向导数：怎样描述多变量函数的局部变化.md",
+    "06-LLM/01-数学基础/01-线性代数与微积分/两层神经网络的反向传播推导.md",
+    "06-LLM/01-数学基础/01-线性代数与微积分/矩阵微分与求导技巧.md",
+    "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md",
+    "_assets/images/transformer-04-Attention局部VJP.svg",
+    "_assets/images/transformer-03-FFN局部VJP.svg",
+    "_assets/images/transformer-01-前向与局部VJP总览.svg",
+    "_assets/images/transformer-04-Attention局部VJP.png",
+    "_assets/images/transformer-03-FFN局部VJP.png",
+    "_assets/images/transformer-01-前向与局部VJP总览.png",
+    "06-LLM/03-Transformer/transformer-VJP.md",
+    "07-MultiModal/Video-MLLM/RoadMap.md",
+    "06-LLM/01-数学基础/01-线性代数与微积分/VJP：把输出端的梯度搬回输入端.md",
+    "01-Project/NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md",
+    "_assets/images/gpt-3-01-in-context-few-shot.drawio.svg",
+    "_assets/images/gpt-3-01-in-context-few-shot.drawio",
+    "07-MultiModal/Video-MLLM/BLIP-2：用Q-Former连接冻结视觉编码器与大语言模型.md",
+    "06-LLM/03-Transformer/GPT-1：从生成式预训练到语言理解微调.md",
+    "_assets/images/gpt-1-06-pretraining-and-auxiliary-lm-ablation.png",
+    "_assets/images/gpt-1-05-similarity-classification-and-glue.png",
+    "_assets/images/gpt-1-04-story-cloze-and-race.png",
+    "06-LLM/03-Transformer/assets/paper_2005.14165.pdf",
+    "_assets/images/gpt-2-01-language-model-zero-shot.drawio",
+    "06-LLM/03-Transformer/assets/paper_gpt2_2019.pdf",
+    "_assets/images/gpt-1-06-pretraining-finetuning.drawio",
+    "06-LLM/03-Transformer/assets/paper_gpt1_2018.pdf",
+    "06-LLM/03-Transformer/assets",
+    "07-MultiModal/Video-MLLM/BLIP：从图文对齐到理解、生成与数据自举.md",
+    "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
+    "Paper/Papers.base",
+    "07-MultiModal/Video-MLLM/assets/paper_2301.12597.pdf",
+    "_assets/images/video-mllm-01-learning-roadmap.drawio",
     "06-LLM/03-Transformer/transformer-04-Attention反向白板.canvas",
-    "_assets/images/transformer-04-Attention反向传播.png",
-    "_assets/images/transformer-03-FFN反向传播.png",
-    "_assets/images/transformer-02-残差分流与汇合.png",
     "06-LLM/03-Transformer/transformer-03-FFN反向白板.canvas",
     "06-LLM/03-Transformer/transformer-02-残差分流与汇合.canvas",
-    "06-LLM/03-Transformer/06-transformer.md",
-    "_assets/images/transformer-01-计算图与反向传播.png",
-    "_assets/images/ChatGPT Image 2026年9月10日 07_50_36.png",
-    "06-LLM/03-Transformer/transformer计算图与反向传播公式推导.md",
-    "_assets/images/Codex 图像 2026年9月10日 07_39_45.png",
-    "06-LLM/03-Transformer/Codex 图像 2026年9月10日 07_39_45.png",
-    "_assets/images/transformer-backprop-02-block-attention.png",
-    "_assets/images/transformer-backprop-01-forward-backward.png",
-    "_assets/scripts/gen_transformer_backprop_whiteboard.py",
-    "_assets/scripts",
-    "06-LLM/01-数学基础/01-线性代数与微积分/矩阵微分与求导技巧.md",
-    "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
-    "06-LLM/01-数学基础/01-线性代数与微积分/两层神经网络的反向传播推导.md",
-    "06-LLM/03-Transformer/05-Attention.md",
-    "06-LLM/01-数学基础/02-概率统计与信息论/交叉熵：从概率预测到分类梯度.md",
-    "06-LLM/03-Transformer/从 Seq2Seq 到 Attention 再到 Transformer.md",
-    "06-LLM/03-Transformer/02-RNN.md",
-    "06-LLM/03-Transformer/01-词向量.md",
-    "06-LLM/01-数学基础/02-概率统计与信息论/损失函数的概率解释.md",
-    "06-LLM/91-问题/为什么sigmoid函数容易梯度消失.md",
-    "_assets/images/loss-01-unified-view.svg",
-    "06-LLM/91-问题/神经网络应用待整理.md",
-    "06-LLM/91-问题/损失函数和优化器的选择.md",
-    "06-LLM/91-问题/为什么小权重比大权重更好.md",
-    "06-LLM/91-问题/为什么首先使用的不是relu，而是sigmoid.md",
-    "06-LLM/02-模型基础/CNN：卷积计算与特征学习.md",
-    "06-LLM/02-模型基础/线性回归：最小二乘与参数求解.md",
-    "06-LLM/02-模型基础/高斯朴素贝叶斯：从类别分布到分类.md",
-    "06-LLM/02-模型基础/从线性模型到多层感知机.md",
-    "06-LLM/01-数学基础/02-概率统计与信息论/KL 散度：定义、性质与方向.md",
-    "06-LLM/01-数学基础/02-概率统计与信息论/交叉熵系统整理.md",
-    "06-LLM/01-基础/概率与损失/最大似然MLE.md",
-    "06-LLM/01-基础/概率与损失",
-    "06-LLM/01-基础",
-    "06-LLM/01-数学/交叉熵系统整理.md",
-    "06-LLM/01-数学",
-    "06-LLM/02-模型基础/人工神经网络训练过程.canvas",
-    "06-LLM/02-模型基础",
-    "06-LLM/01-数学基础/03-最优化",
-    "06-LLM/01-数学基础/01-线性代数与微积分",
-    "06-LLM/01-数学基础/02-概率统计与信息论",
-    "06-LLM/01-数学基础",
     "06-LLM/01-基础/模型/人工神经网络训练过程.canvas",
     "06-LLM/02-机器学习基础/人工神经网络训练过程.canvas",
     "Paper/Video Understanding 论文分类总结.canvas",

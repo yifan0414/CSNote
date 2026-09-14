@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789195112025-xe98cefcg",
+  "providerId": "codex",
+  "title": "按照这个文章的组织内容给我新建一个DINO的文档",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789195112032,
+  "lastActivityAt": 1789195945995,
+  "sessionId": "01a09456-ceba-7633-89b6-159cac2bd96e",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09456-ceba-7633-89b6-159cac2bd96e",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T14-38-32-01a09456-ceba-7633-89b6-159cac2bd96e.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
+  "usage": {
+    "inputTokens": 78955,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 76928,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 78955,
+    "percentage": 10,
+    "model": "gpt-6-astra"
+  }
+}

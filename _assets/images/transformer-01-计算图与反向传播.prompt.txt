@@ -1,0 +1,71 @@
+Mode: built-in image_gen
+
+Use case: scientific-educational.
+Completely redraw the FIRST referenced image, an INCORRECT Transformer forward/backward graph, according to the exact specification below. Do NOT preserve its arrows, layout, formulas, whiteboard or handwriting. SECOND reference is only visual STYLE inspiration: white background, navy headers, red residual bypasses, blue computational branches, purple gradient accumulation. Crisp professional typeset Chinese and large LaTeX-style serif fractions. Generate a very high resolution portrait/near-square scientific overview, approximately 2400x2700, spacious. Accuracy and readability over density.
+
+Title: “Transformer 计算图与反向传播”
+Subtitle: “Pre-LN · 单头 Attention · 省略输出投影，取 d_v = d”
+Two vertical panels: LEFT ~42% width “前向：沿依赖计算”; RIGHT ~58% width “反向：分支回传，梯度汇合”. Thin separator. No decorative icons or sketches.
+Forward arrows BLUE, residual bypass RED, gradient accumulation nodes PURPLE.
+Use complete partial-derivative notation everywhere; no G, g, Jacobian J, LNBack abbreviations.
+
+LEFT PANEL exact graph, top to bottom:
+1 node X
+2 node “LN₁” with output label tilde X
+3 fork from tilde X into three separate parallel nodes “Q = tilde X W_Q”, “K = tilde X W_K”, “V = tilde X W_V”.
+4 ONLY Q and K arrows converge to node “R = QKᵀ”. V must NOT connect to R, S or A. V routes down the far right of this left panel to O below.
+5 R → node “S = R / √d_k”
+6 S → node “A = softmax(S)” with small label “按行”
+7 A and V BOTH feed node “O = AV”.
+8 O goes to circular + node followed by state node “Y₁ = X + O”. A RED bypass originates at the ORIGINAL X and runs down far left into this first + node. It bypasses LN₁ and all Attention computation, NOT from tilde X.
+9 Y₁ → node “Z = LN₂(Y₁)”
+10 Z → “M = ZW₁ + b₁”
+11 M → “H = φ(M)”
+12 H → “F = HW₂ + b₂”
+13 F goes to second circular + node and output state “Y = Y₁ + F”. RED bypass originates at Y₁ (after first addition, before LN₂), routes around LN₂ and FFN, enters this second + node.
+Spacing uniform, arrows do not run through text or boxes. All paths unambiguously directed.
+
+RIGHT PANEL top to bottom gradient flow, constrained graph:
+At top purple node “已知 ∂L/∂Y”.
+Fork at this node into:
+RED left narrow bypass node “直接贡献” containing (∂L/∂Y₁)|direct = ∂L/∂Y. Red path bypasses the whole FFN backward subpanel and terminates at PURPLE accumulation node A below. NOT at final X.
+BLUE main node ∂L/∂F = ∂L/∂Y.
+Blue main chain with one arrow each:
+∂L/∂F node → node “输出线性层” with ∂L/∂H = (∂L/∂F)W₂ᵀ
+→ node “激活” with ∂L/∂M = (∂L/∂H) ⊙ φ′(M)
+→ node “输入线性层” with ∂L/∂Z = (∂L/∂M)W₁ᵀ
+→ node “穿过 LN₂” with output (∂L/∂Y₁)|FFN.
+This last node blue arrow enters purple accumulation node A:
+“A  在 Y₁ 汇合”
+equation ∂L/∂Y₁ = ∂L/∂Y + (∂L/∂Y₁)|FFN.
+Both FFN completed branch and RED Y₁ direct bypass enter A. Only A emits next stage upstream.
+
+A then forks:
+RED far-right bypass node “直接贡献” containing (∂L/∂X)|direct = ∂L/∂Y₁. This red arrow bypasses ALL attention reverse work and LN₁, terminates only at final purple node C.
+BLUE main node ∂L/∂O = ∂L/∂Y₁.
+This BLUE node forks into TWO independent branches:
+Left branch node ∂L/∂A = (∂L/∂O)Vᵀ.
+Right Value node ∂L/∂V = Aᵀ(∂L/∂O).
+A-gradient branch continues through node “Softmax 逐行反传” with output ∂L/∂S.
+Then node “缩放” with ∂L/∂R = (1/√d_k)(∂L/∂S).
+Then fork to two nodes:
+∂L/∂Q = (∂L/∂R)K
+∂L/∂K = (∂L/∂R)ᵀQ.
+These Q and K gradients and independently held Value gradient all flow into purple node B below. Value bypasses Softmax and scaling; NEVER connect V gradient to R, S, Q or K.
+Purple node B:
+“B  在 tilde X 汇合”
+Large two-line equation
+∂L/∂tilde X = (∂L/∂Q)W_Qᵀ + (∂L/∂K)W_Kᵀ
+              + (∂L/∂V)W_Vᵀ.
+Only B proceeds via blue arrow to node “穿过 LN₁” with output (∂L/∂X)|Attn.
+That node feeds final purple node C:
+“C  在 X 汇合”
+∂L/∂X = ∂L/∂Y₁ + (∂L/∂X)|Attn.
+RED X-direct bypass from after A also enters C. No line from FFN directly enters C.
+
+Important: do NOT draw any parameter-gradient node within this graph. No ∂L/∂W in main flow. Parameter gradients are separate outputs, not chain dependencies. In a bottom FOOTNOTE spanning both panels write:
+“参数梯度在各线性层分别计算，不串入输入梯度主链；偏置与 LayerNorm 参数梯度见正文。”
+Another concise footnote: “红色直通路径只在对应输入处汇合；Value 路径不经过 Softmax。”
+These footnotes explain why parameter formulas are omitted in this overview; do not add separate formulas or boxes for parameters.
+Keep all Chinese legible. Every restriction bar direct / FFN / Attn belongs to the ENTIRE gradient fraction. Use stacked math fractions with generous height. Actual dependency-arrow accuracy is highest priority, especially V skipping scoring, both forward residual origins, FFN merge at Y₁ before Attention, three-way merge at tilde X BEFORE LN₁, and final residual merge at X AFTER LN₁.
+

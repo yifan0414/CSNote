@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789299981186-tqbs883d7",
+  "providerId": "codex",
+  "title": "你觉得这个笔记写的清晰吗",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789299981191,
+  "lastActivityAt": 1789303918354,
+  "sessionId": "01a09a96-fc18-7e23-a468-0ed9280d3ce9",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09a96-fc18-7e23-a468-0ed9280d3ce9",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/13/rollout-2026-09-13T19-46-21-01a09a96-fc18-7e23-a468-0ed9280d3ce9.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+  "usage": {
+    "inputTokens": 114849,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 114560,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 114849,
+    "percentage": 14,
+    "model": "gpt-6-astra"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789125540984-s0vnhx5fp",
+  "providerId": "pi",
+  "title": "/skill:excalidraw-generator  你直接生成一个这个文件的excalidra...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789125540988,
+  "lastActivityAt": 1789126432431,
+  "sessionId": "01a09031-3d1e-7603-ab20-226e033adbfb",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-11T11-19-01-150Z_01a09031-3d1e-7603-ab20-226e033adbfb.jsonl",
+    "sessionId": "01a09031-3d1e-7603-ab20-226e033adbfb"
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 212325,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 212325,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 21
+  }
+}

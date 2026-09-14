@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789109606227-637i8c5dt",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789109606253-d231ppc",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789109606223-w3rtyd1",
+      "timestamp": 1789109606223,
+      "rawDisplayText": "你觉得这个笔记写的怎么样",
+      "canonicalText": "你觉得这个笔记写的怎么样",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/transformer计算图与反向传播.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "23772328ec8d92e274194eb3a3fccd9e7b218cab60c81fc7fcc7c8de7c3b1a5d",
+      "providerUserMessageId": "01a08f3e-192d-71a1-a341-199ab6d49a45",
+      "providerAssistantMessageId": "msg_046a298c5b0d1af0016aa3a5ea03a487d0ab1eda1a7a177ba1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789109834476-1rjnxmd",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789109834470-txe1mwp",
+      "timestamp": 1789109834470,
+      "rawDisplayText": "你帮我修改下吧，我觉得现在确实有点难读",
+      "canonicalText": "你帮我修改下吧，我觉得现在确实有点难读",
+      "images": [],
+      "contentDigest": "fe735eeade80faddeab8ae8f570c65a1cb28dad487faee2baba36f63fe9f75ba",
+      "providerUserMessageId": "01a08f41-9330-7ec2-858e-12739c7f7ea0",
+      "providerAssistantMessageId": "msg_046a298c5b0d1af0016aa3a7160e1487d0bb50cd2bc9d0b6eb"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789110261276-3dvz3la",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789110261266-hru6ejy",
+      "timestamp": 1789110261266,
+      "rawDisplayText": "你不要简化为G，还是使用偏微分形式，还有就是1.1还有1.2的公式罗列有点太拥挤，请你使用更好的形式呈现、2残差要和3FFN还有4Attention并列吗，3和4的计算图放到开头",
+      "canonicalText": "你不要简化为G，还是使用偏微分形式，还有就是1.1还有1.2的公式罗列有点太拥挤，请你使用更好的形式呈现、2残差要和3FFN还有4Attention并列吗，3和4的计算图放到开头",
+      "images": [],
+      "contentDigest": "801cab181ae99c7aca151102e17359b94357d0f53e55b4d5d950bbf1658acbd1",
+      "providerUserMessageId": "01a08f48-1659-7142-b97f-2fa7d1c43e26",
+      "providerAssistantMessageId": "msg_046a298c5b0d1af0016aa3a88f9c6087d09888f7d60d44cc85"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789110571514-572yri1",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789110571504-cphjgej",
+      "timestamp": 1789110571504,
+      "rawDisplayText": "你不要假设读者有高深的微积分知识，还有就是不要有附录，附录中的折叠callout放到正文应该放的位置。最好正文每个概念要介绍清楚是为什么，是什么，去干什么，要有逻辑",
+      "canonicalText": "你不要假设读者有高深的微积分知识，还有就是不要有附录，附录中的折叠callout放到正文应该放的位置。最好正文每个概念要介绍清楚是为什么，是什么，去干什么，要有逻辑",
+      "images": [],
+      "contentDigest": "eba199cf3d6dd693cebea87e6e1397e855f4fafe167faf8e268b4d596a46067d",
+      "providerUserMessageId": "01a08f4c-d234-7050-8b05-5c9faeb2108a",
+      "providerAssistantMessageId": "msg_046a298c5b0d1af0016aa3aa9624b887d08885a580d9e79231"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789110990009-iuibcj6",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1789110989907-qm47zir",
+      "timestamp": 1789110989907,
+      "rawDisplayText": "关键在于你要区分两个概念：\n\n> \\[\n> \\left.\\frac{\\partial L}{\\partial Y_1}\\right|_{\\text{direct}}\n> \\]\n> 不是 \\(Y_1\\) 的**最终总梯度**，而只是「\\(Y_1\\) 直接经过加法节点影响 \\(Y\\)」这一条路径贡献的梯度。\n\n真正的前向关系其实是：\n\n\\[\nF=\\operatorname{FFN}(\\operatorname{LN}(Y_1))\n\\]\n\n然后：\n\n\\[\n\\boxed{Y=Y_1+F}\n\\]\n\n所以更完整地看：\n\n\\[\n\\boxed{\nY\n=\nY_1\n+\n\\operatorname{FFN}(\\operatorname{LN}(Y_1))\n}\n\\]\n\n这说明 \\(Y_1\\) 有 **两条路**影响 \\(Y\\)。\n\n第一条是直接：\n\n\\[\nY_1\\rightarrow Y\n\\]\n\n第二条是绕过 FFN：\n\n\\[\nY_1\n\\rightarrow\n\\operatorname{LN}\n\\rightarrow\n\\operatorname{FFN}\n\\rightarrow\nF\n\\rightarrow\nY\n\\]\n\n所以最后求：\n\n\\[\n\\frac{\\partial L}{\\partial Y_1}\n\\]\n\n时，必须把这两条路的梯度加起来。\n\n---\n\n## 1. 先用一个最简单的标量例子\n\n假设：\n\n\\[\nb=f(a)\n\\]\n\n然后：\n\n\\[\ny=a+b\n\\]\n\n其实就是：\n\n\\[\ny=a+f(a)\n\\]\n\n假设 loss：\n\n\\[\nL=L(y)\n\\]\n\n现在求：\n\n\\[\n\\frac{\\partial L}{\\partial a}\n\\]\n\n\\(a\\) 有两条路径。\n\n直接路径：\n\n\\[\na\\rightarrow y\\rightarrow L\n\\]\n\n间接路径：\n\n\\[\na\\rightarrow b\\rightarrow y\\rightarrow L\n\\]\n\n所以：\n\n\\[\n\\frac{\\partial L}{\\partial a}\n=\n\\underbrace{\n\\frac{\\partial L}{\\partial y}\n\\frac{\\partial y}{\\partial a}\n}_{\\text{直接路径}}\n+\n\\underbrace{\n\\frac{\\partial L}{\\partial y}\n\\frac{\\partial y}{\\partial b}\n\\frac{\\partial b}{\\partial a}\n}_{\\text{间接路径}}\n\\]\n\n现在分别算。\n\n因为：\n\n\\[\ny=a+b\n\\]\n\n如果暂时把 \\(b\\) 看成独立变量，那么：\n\n\\[\n\\frac{\\partial y}{\\partial a}=1\n\\]\n\n所以直接路径：\n\n\\[\n\\boxed{\n\\left.\n\\frac{\\partial L}{\\partial a}\n\\right|_{\\text{direct}}\n=\n\\frac{\\partial L}{\\partial y}\n}\n\\]\n\n同时：\n\n\\[\n\\frac{\\partial y}{\\partial b}=1\n\\]\n\n所以：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial b}\n=\n\\frac{\\partial L}{\\partial y}\n}\n\\]\n\n这就是所谓：\n\n> **加法节点把上游梯度原样送给两个输入。**\n\n但 \\(b=f(a)\\)，所以：\n\n\\[\n\\frac{\\partial L}{\\partial b}\n\\]\n\n还要继续往回：\n\n\\[\n\\frac{\\partial L}{\\partial a}\n\\Big|_{\\text{through }b}\n=\n\\frac{\\partial L}{\\partial b}\n\\frac{\\partial b}{\\partial a}\n\\]\n\n于是最终：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial a}\n=\n\\frac{\\partial L}{\\partial y}\n+\n\\frac{\\partial L}{\\partial b}\n\\frac{\\partial b}{\\partial a}\n}\n\\]\n\n又因为：\n\n\\[\n\\frac{\\partial L}{\\partial b}\n=\n\\frac{\\partial L}{\\partial y}\n\\]\n\n所以：\n\n\\[\n\\frac{\\partial L}{\\partial a}\n=\n\\frac{\\partial L}{\\partial y}\n+\n\\frac{\\partial L}{\\partial y}\n\\frac{\\partial b}{\\partial a}\n\\]\n\n这就是 Residual 的本质。\n\n---\n\n# 2. 回到 Transformer\n\n对应关系就是：\n\n\\[\na\\leftrightarrow Y_1\n\\]\n\n\\[\nb\\leftrightarrow F\n\\]\n\n\\[\ny\\leftrightarrow Y\n\\]\n\n因此：\n\n\\[\nY=Y_1+F\n\\]\n\n在这个**加法节点本身**：\n\n\\[\n\\frac{\\partial Y}{\\partial Y_1}=I\n\\]\n\n以及：\n\n\\[\n\\frac{\\partial Y}{\\partial F}=I\n\\]\n\n这里的 \\(I\\) 是单位矩阵，因为现在 \\(Y,Y_1,F\\) 都是矩阵/向量。\n\n---\n\n## 3. 为什么\n\n\\[\n\\frac{\\partial L}{\\partial F}\n=\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n？\n\n链式法则：\n\n\\[\n\\frac{\\partial L}{\\partial F}\n=\n\\frac{\\partial Y}{\\partial F}^{T}\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n而：\n\n\\[\nY=Y_1+F\n\\]\n\n所以：\n\n\\[\n\\frac{\\partial Y}{\\partial F}=I\n\\]\n\n因此：\n\n\\[\n\\frac{\\partial L}{\\partial F}\n=\nI^T\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n单位矩阵转置还是自己：\n\n\\[\nI^T=I\n\\]\n\n于是：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial F}\n=\n\\frac{\\partial L}{\\partial Y}\n}\n\\]\n\n直觉也非常简单：\n\n> \\(F\\) 增加多少，\\(Y\\) 就增加多少，所以梯度完全不被缩放。\n\n---\n\n# 4. 为什么 direct 路径也是\n\n\\[\n\\frac{\\partial L}{\\partial Y_1}\n=\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n？\n\n注意这里准确地说应该写：\n\n\\[\n\\boxed{\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{direct}}\n}\n\\]\n\n因为只考虑：\n\n\\[\nY_1\\rightarrow Y\n\\]\n\n这一条直接路径。\n\n链式法则：\n\n\\[\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{direct}}\n=\n\\frac{\\partial Y}{\\partial Y_1}^{T}\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n在：\n\n\\[\nY=Y_1+F\n\\]\n\n这个加法节点里，暂时把 \\(F\\) 当作另一个输入：\n\n\\[\n\\frac{\\partial Y}{\\partial Y_1}=I\n\\]\n\n因此：\n\n\\[\n\\boxed{\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{direct}}\n=\n\\frac{\\partial L}{\\partial Y}\n}\n\\]\n\n---\n\n# 5. 但为什么这还不是 \\(Y_1\\) 的最终梯度？\n\n因为：\n\n\\[\nF\n\\]\n\n不是凭空来的。\n\n实际上：\n\n\\[\nF=f(Y_1)\n\\]\n\n也就是：\n\n\\[\nF\n=\n\\operatorname{FFN}(\\operatorname{LN}(Y_1))\n\\]\n\n所以 \\(Y_1\\) 还有另外一条路径：\n\n\\[\nY_1\\rightarrow F\\rightarrow Y\\rightarrow L\n\\]\n\n因此：\n\n\\[\n\\frac{\\partial L}{\\partial F}\n\\]\n\n还需要继续穿过整个 FFN。\n\n最后得到：\n\n\\[\n\\boxed{\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{FFN}}\n}\n\\]\n\n这时候才把两条路加起来：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial Y_1}\n=\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{direct}}\n+\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{FFN}}\n}\n\\]\n\n由于第一项：\n\n\\[\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{direct}}\n=\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n所以：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial Y_1}\n=\n\\frac{\\partial L}{\\partial Y}\n+\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{FFN}}\n}\n\\]\n\n---\n\n# 6. 最紧凑地看，其实就是这个公式\n\n如果直接把：\n\n\\[\nF=f(Y_1)\n\\]\n\n代进去：\n\n\\[\nY=Y_1+f(Y_1)\n\\]\n\n那么对 \\(Y_1\\) 求导：\n\n\\[\n\\frac{\\partial Y}{\\partial Y_1}\n=\nI+\n\\frac{\\partial f(Y_1)}{\\partial Y_1}\n\\]\n\n所以：\n\n\\[\n\\frac{\\partial L}{\\partial Y_1}\n=\n\\left(\nI+\n\\frac{\\partial f(Y_1)}{\\partial Y_1}\n\\right)^T\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n展开：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial Y_1}\n=\n\\underbrace{\n\\frac{\\partial L}{\\partial Y}\n}_{\\text{Residual 直通}}\n+\n\\underbrace{\n\\left(\n\\frac{\\partial f(Y_1)}{\\partial Y_1}\n\\right)^T\n\\frac{\\partial L}{\\partial Y}\n}_{\\text{FFN 路径}}\n}\n\\]\n\n这就是 Residual 反向传播最本质的数学表达。\n\n所以你看到：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial F}\n=\n\\frac{\\partial L}{\\partial Y}\n}\n\\]\n\n不要理解成“\\(F\\) 和 \\(Y\\) 是同一个东西”。\n\n它的意思只是：\n\n> **因为 \\(Y=Y_1+F\\) 是一个加法，所以当梯度经过这个加法节点向后传播时，上游梯度 \\(\\partial L/\\partial Y\\) 被原样复制给两个输入 \\(Y_1\\) 和 \\(F\\)。随后 \\(F\\) 那份梯度还要继续穿过 FFN，最终再回到 \\(Y_1\\)。**\n\n这个“**先复制，再沿两条路径传播，最后在 \\(Y_1\\) 汇合相加**”就是理解 Residual 反向传播的关键。\n参考这个，补充下Residual 反向传播",
+      "canonicalText": "关键在于你要区分两个概念：\n\n> \\[\n> \\left.\\frac{\\partial L}{\\partial Y_1}\\right|_{\\text{direct}}\n> \\]\n> 不是 \\(Y_1\\) 的**最终总梯度**，而只是「\\(Y_1\\) 直接经过加法节点影响 \\(Y\\)」这一条路径贡献的梯度。\n\n真正的前向关系其实是：\n\n\\[\nF=\\operatorname{FFN}(\\operatorname{LN}(Y_1))\n\\]\n\n然后：\n\n\\[\n\\boxed{Y=Y_1+F}\n\\]\n\n所以更完整地看：\n\n\\[\n\\boxed{\nY\n=\nY_1\n+\n\\operatorname{FFN}(\\operatorname{LN}(Y_1))\n}\n\\]\n\n这说明 \\(Y_1\\) 有 **两条路**影响 \\(Y\\)。\n\n第一条是直接：\n\n\\[\nY_1\\rightarrow Y\n\\]\n\n第二条是绕过 FFN：\n\n\\[\nY_1\n\\rightarrow\n\\operatorname{LN}\n\\rightarrow\n\\operatorname{FFN}\n\\rightarrow\nF\n\\rightarrow\nY\n\\]\n\n所以最后求：\n\n\\[\n\\frac{\\partial L}{\\partial Y_1}\n\\]\n\n时，必须把这两条路的梯度加起来。\n\n---\n\n## 1. 先用一个最简单的标量例子\n\n假设：\n\n\\[\nb=f(a)\n\\]\n\n然后：\n\n\\[\ny=a+b\n\\]\n\n其实就是：\n\n\\[\ny=a+f(a)\n\\]\n\n假设 loss：\n\n\\[\nL=L(y)\n\\]\n\n现在求：\n\n\\[\n\\frac{\\partial L}{\\partial a}\n\\]\n\n\\(a\\) 有两条路径。\n\n直接路径：\n\n\\[\na\\rightarrow y\\rightarrow L\n\\]\n\n间接路径：\n\n\\[\na\\rightarrow b\\rightarrow y\\rightarrow L\n\\]\n\n所以：\n\n\\[\n\\frac{\\partial L}{\\partial a}\n=\n\\underbrace{\n\\frac{\\partial L}{\\partial y}\n\\frac{\\partial y}{\\partial a}\n}_{\\text{直接路径}}\n+\n\\underbrace{\n\\frac{\\partial L}{\\partial y}\n\\frac{\\partial y}{\\partial b}\n\\frac{\\partial b}{\\partial a}\n}_{\\text{间接路径}}\n\\]\n\n现在分别算。\n\n因为：\n\n\\[\ny=a+b\n\\]\n\n如果暂时把 \\(b\\) 看成独立变量，那么：\n\n\\[\n\\frac{\\partial y}{\\partial a}=1\n\\]\n\n所以直接路径：\n\n\\[\n\\boxed{\n\\left.\n\\frac{\\partial L}{\\partial a}\n\\right|_{\\text{direct}}\n=\n\\frac{\\partial L}{\\partial y}\n}\n\\]\n\n同时：\n\n\\[\n\\frac{\\partial y}{\\partial b}=1\n\\]\n\n所以：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial b}\n=\n\\frac{\\partial L}{\\partial y}\n}\n\\]\n\n这就是所谓：\n\n> **加法节点把上游梯度原样送给两个输入。**\n\n但 \\(b=f(a)\\)，所以：\n\n\\[\n\\frac{\\partial L}{\\partial b}\n\\]\n\n还要继续往回：\n\n\\[\n\\frac{\\partial L}{\\partial a}\n\\Big|_{\\text{through }b}\n=\n\\frac{\\partial L}{\\partial b}\n\\frac{\\partial b}{\\partial a}\n\\]\n\n于是最终：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial a}\n=\n\\frac{\\partial L}{\\partial y}\n+\n\\frac{\\partial L}{\\partial b}\n\\frac{\\partial b}{\\partial a}\n}\n\\]\n\n又因为：\n\n\\[\n\\frac{\\partial L}{\\partial b}\n=\n\\frac{\\partial L}{\\partial y}\n\\]\n\n所以：\n\n\\[\n\\frac{\\partial L}{\\partial a}\n=\n\\frac{\\partial L}{\\partial y}\n+\n\\frac{\\partial L}{\\partial y}\n\\frac{\\partial b}{\\partial a}\n\\]\n\n这就是 Residual 的本质。\n\n---\n\n# 2. 回到 Transformer\n\n对应关系就是：\n\n\\[\na\\leftrightarrow Y_1\n\\]\n\n\\[\nb\\leftrightarrow F\n\\]\n\n\\[\ny\\leftrightarrow Y\n\\]\n\n因此：\n\n\\[\nY=Y_1+F\n\\]\n\n在这个**加法节点本身**：\n\n\\[\n\\frac{\\partial Y}{\\partial Y_1}=I\n\\]\n\n以及：\n\n\\[\n\\frac{\\partial Y}{\\partial F}=I\n\\]\n\n这里的 \\(I\\) 是单位矩阵，因为现在 \\(Y,Y_1,F\\) 都是矩阵/向量。\n\n---\n\n## 3. 为什么\n\n\\[\n\\frac{\\partial L}{\\partial F}\n=\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n？\n\n链式法则：\n\n\\[\n\\frac{\\partial L}{\\partial F}\n=\n\\frac{\\partial Y}{\\partial F}^{T}\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n而：\n\n\\[\nY=Y_1+F\n\\]\n\n所以：\n\n\\[\n\\frac{\\partial Y}{\\partial F}=I\n\\]\n\n因此：\n\n\\[\n\\frac{\\partial L}{\\partial F}\n=\nI^T\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n单位矩阵转置还是自己：\n\n\\[\nI^T=I\n\\]\n\n于是：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial F}\n=\n\\frac{\\partial L}{\\partial Y}\n}\n\\]\n\n直觉也非常简单：\n\n> \\(F\\) 增加多少，\\(Y\\) 就增加多少，所以梯度完全不被缩放。\n\n---\n\n# 4. 为什么 direct 路径也是\n\n\\[\n\\frac{\\partial L}{\\partial Y_1}\n=\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n？\n\n注意这里准确地说应该写：\n\n\\[\n\\boxed{\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{direct}}\n}\n\\]\n\n因为只考虑：\n\n\\[\nY_1\\rightarrow Y\n\\]\n\n这一条直接路径。\n\n链式法则：\n\n\\[\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{direct}}\n=\n\\frac{\\partial Y}{\\partial Y_1}^{T}\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n在：\n\n\\[\nY=Y_1+F\n\\]\n\n这个加法节点里，暂时把 \\(F\\) 当作另一个输入：\n\n\\[\n\\frac{\\partial Y}{\\partial Y_1}=I\n\\]\n\n因此：\n\n\\[\n\\boxed{\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{direct}}\n=\n\\frac{\\partial L}{\\partial Y}\n}\n\\]\n\n---\n\n# 5. 但为什么这还不是 \\(Y_1\\) 的最终梯度？\n\n因为：\n\n\\[\nF\n\\]\n\n不是凭空来的。\n\n实际上：\n\n\\[\nF=f(Y_1)\n\\]\n\n也就是：\n\n\\[\nF\n=\n\\operatorname{FFN}(\\operatorname{LN}(Y_1))\n\\]\n\n所以 \\(Y_1\\) 还有另外一条路径：\n\n\\[\nY_1\\rightarrow F\\rightarrow Y\\rightarrow L\n\\]\n\n因此：\n\n\\[\n\\frac{\\partial L}{\\partial F}\n\\]\n\n还需要继续穿过整个 FFN。\n\n最后得到：\n\n\\[\n\\boxed{\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{FFN}}\n}\n\\]\n\n这时候才把两条路加起来：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial Y_1}\n=\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{direct}}\n+\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{FFN}}\n}\n\\]\n\n由于第一项：\n\n\\[\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{direct}}\n=\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n所以：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial Y_1}\n=\n\\frac{\\partial L}{\\partial Y}\n+\n\\left.\n\\frac{\\partial L}{\\partial Y_1}\n\\right|_{\\text{FFN}}\n}\n\\]\n\n---\n\n# 6. 最紧凑地看，其实就是这个公式\n\n如果直接把：\n\n\\[\nF=f(Y_1)\n\\]\n\n代进去：\n\n\\[\nY=Y_1+f(Y_1)\n\\]\n\n那么对 \\(Y_1\\) 求导：\n\n\\[\n\\frac{\\partial Y}{\\partial Y_1}\n=\nI+\n\\frac{\\partial f(Y_1)}{\\partial Y_1}\n\\]\n\n所以：\n\n\\[\n\\frac{\\partial L}{\\partial Y_1}\n=\n\\left(\nI+\n\\frac{\\partial f(Y_1)}{\\partial Y_1}\n\\right)^T\n\\frac{\\partial L}{\\partial Y}\n\\]\n\n展开：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial Y_1}\n=\n\\underbrace{\n\\frac{\\partial L}{\\partial Y}\n}_{\\text{Residual 直通}}\n+\n\\underbrace{\n\\left(\n\\frac{\\partial f(Y_1)}{\\partial Y_1}\n\\right)^T\n\\frac{\\partial L}{\\partial Y}\n}_{\\text{FFN 路径}}\n}\n\\]\n\n这就是 Residual 反向传播最本质的数学表达。\n\n所以你看到：\n\n\\[\n\\boxed{\n\\frac{\\partial L}{\\partial F}\n=\n\\frac{\\partial L}{\\partial Y}\n}\n\\]\n\n不要理解成“\\(F\\) 和 \\(Y\\) 是同一个东西”。\n\n它的意思只是：\n\n> **因为 \\(Y=Y_1+F\\) 是一个加法，所以当梯度经过这个加法节点向后传播时，上游梯度 \\(\\partial L/\\partial Y\\) 被原样复制给两个输入 \\(Y_1\\) 和 \\(F\\)。随后 \\(F\\) 那份梯度还要继续穿过 FFN，最终再回到 \\(Y_1\\)。**\n\n这个“**先复制，再沿两条路径传播，最后在 \\(Y_1\\) 汇合相加**”就是理解 Residual 反向传播的关键。\n参考这个，补充下Residual 反向传播",
+      "images": [],
+      "contentDigest": "20fba7b8dd22c903e645b4a256fedab8ce8521035e09e0197d068476e12e99ba",
+      "providerUserMessageId": "01a08f53-34f2-7483-b2bb-7474fba2a5c7",
+      "providerAssistantMessageId": "msg_046a298c5b0d1af0016aa3ab4b459087d0b10030d9e1932940"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789111343531-7eyrn3b",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1789111343528-lctui6t",
+      "timestamp": 1789111343528,
+      "rawDisplayText": "你现在重新根据现在的正文内容生成一下![[_assets/images/transformer-02-残差分流与汇合-大公式.png|900]]",
+      "canonicalText": "你现在重新根据现在的正文内容生成一下![[_assets/images/transformer-02-残差分流与汇合-大公式.png|900]]",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
+          "mode": "selection",
+          "selectedText": "![[_assets/images/transformer-02-残差分流与汇合-大公式.png|900]]",
+          "lineCount": 1,
+          "startLine": 290
+        }
+      },
+      "images": [],
+      "contentDigest": "583f6003eccbfb6ec5bf763bbc4d0924242af6f097cc8682e012f333bf15d8dd",
+      "providerUserMessageId": "01a08f58-9a5b-7f60-95fe-2df7efedb4e8",
+      "providerAssistantMessageId": "msg_046a298c5b0d1af0016aa3ad2274c487d0a53dd2acc4043a7a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789113257721-o7d6wt0",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1789113257708-dn81vpb",
+      "timestamp": 1789113257708,
+      "rawDisplayText": "![[_assets/images/transformer-01-计算图与反向传播.png|900]] 你这个重新生成，现在的不正确",
+      "canonicalText": "![[_assets/images/transformer-01-计算图与反向传播.png|900]] 你这个重新生成，现在的不正确",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
+          "mode": "selection",
+          "selectedText": "![[_assets/images/transformer-01-计算图与反向传播.png|900]]",
+          "lineCount": 1,
+          "startLine": 136
+        }
+      },
+      "images": [],
+      "contentDigest": "9fc36d4d2716f60ca2ded921024fe7dbe4aabcd869f6cfe70d7e460f0d6b367d",
+      "providerUserMessageId": "01a08f75-cf3d-7113-8f4f-44bbb875ab0c",
+      "providerAssistantMessageId": "msg_046a298c5b0d1af0016aa3b4debe5887d080f9724d5be1cd2b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789113663926-0ku5j3h",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1789113663915-nckef6f",
+      "timestamp": 1789113663915,
+      "rawDisplayText": "什么叫做省略输出投影",
+      "canonicalText": "什么叫做省略输出投影",
+      "images": [],
+      "contentDigest": "76d4b8a56bcbe89870ef7f3c8ce214ed30c2fa5a8fde220fbafe66639aad98bc",
+      "providerUserMessageId": "01a08f7c-01f1-7b71-ac95-c35129059ef0",
+      "providerAssistantMessageId": "msg_046a298c5b0d1af0016aa3b54cb88887d0944c374eb2fb2811"
+    }
+  ]
+}

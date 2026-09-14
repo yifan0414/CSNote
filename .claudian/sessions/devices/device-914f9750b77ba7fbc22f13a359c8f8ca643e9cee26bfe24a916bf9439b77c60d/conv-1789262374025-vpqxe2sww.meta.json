@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789262374025-vpqxe2sww",
+  "providerId": "codex",
+  "title": "你根据这个文档的组织形式给我写一篇GPT1的文档",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789262374030,
+  "lastActivityAt": 1789263960407,
+  "sessionId": "01a09859-24ea-7731-b5a6-90c039fab248",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09859-24ea-7731-b5a6-90c039fab248",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/13/rollout-2026-09-13T09-19-34-01a09859-24ea-7731-b5a6-90c039fab248.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/BLIP-2：用Q-Former连接冻结视觉编码器与大语言模型.md",
+  "usage": {
+    "inputTokens": 123735,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 122112,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 123735,
+    "percentage": 15,
+    "model": "gpt-6-astra"
+  }
+}

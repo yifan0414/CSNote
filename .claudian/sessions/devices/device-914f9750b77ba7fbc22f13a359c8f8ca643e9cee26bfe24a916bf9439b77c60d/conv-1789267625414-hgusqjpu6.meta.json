@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789267625414-hgusqjpu6",
+  "providerId": "codex",
+  "title": "$drawio:drawio 使用drawio给这篇文章画一个框架图并插入svg",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789267625421,
+  "lastActivityAt": 1789269816124,
+  "sessionId": "01a098a9-4bc0-70b0-9d91-d1aae228740c",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a098a9-4bc0-70b0-9d91-d1aae228740c",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/13/rollout-2026-09-13T10-47-06-01a098a9-4bc0-70b0-9d91-d1aae228740c.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/GPT-1：从生成式预训练到语言理解微调.md",
+  "usage": {
+    "inputTokens": 199943,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 197248,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 199943,
+    "percentage": 24,
+    "model": "gpt-6-astra"
+  }
+}

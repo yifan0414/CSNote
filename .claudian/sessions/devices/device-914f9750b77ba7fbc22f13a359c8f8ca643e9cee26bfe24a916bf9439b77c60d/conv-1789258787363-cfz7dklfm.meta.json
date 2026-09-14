@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789258787363-cfz7dklfm",
+  "providerId": "codex",
+  "title": "可以把这三个词先拆开理解，再放回 CLIP 里。它们其实不是同一层面的概念：",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789258787367,
+  "lastActivityAt": 1789259129482,
+  "sessionId": "01a09822-6a64-7301-af8a-152cb562db07",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09822-6a64-7301-af8a-152cb562db07",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/13/rollout-2026-09-13T08-19-47-01a09822-6a64-7301-af8a-152cb562db07.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
+  "usage": {
+    "inputTokens": 42969,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 41088,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 42969,
+    "percentage": 5,
+    "model": "gpt-6-astra"
+  }
+}

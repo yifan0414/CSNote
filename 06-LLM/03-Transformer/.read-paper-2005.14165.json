@@ -1,0 +1,270 @@
+{
+  "version": 2,
+  "prepared_at": "2026-09-13T04:14:13.272425+00:00",
+  "input": "https://arxiv.org/abs/2005.14165",
+  "arxiv_id": "2005.14165",
+  "base_id": "2005.14165",
+  "safe_arxiv_id": "2005.14165",
+  "safe_base_id": "2005.14165",
+  "abs_url": "https://arxiv.org/abs/2005.14165",
+  "pdf_url": "https://arxiv.org/pdf/2005.14165.pdf",
+  "src_url": "https://arxiv.org/src/2005.14165",
+  "title": "Language Models are Few-Shot Learners",
+  "raw_title": "Language Models are Few-Shot Learners",
+  "obsidian_title": "Language Models are Few-Shot Learners",
+  "paper_dir": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/06-LLM/03-Transformer",
+  "note_path": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/06-LLM/03-Transformer/GPT-3：从模型规模化到上下文少样本学习.md",
+  "assets_dir": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/_assets/images",
+  "pdf_asset_path": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/06-LLM/03-Transformer/assets/paper_2005.14165.pdf",
+  "pdf_asset_link": "[[06-LLM/03-Transformer/assets/paper_2005.14165.pdf]]",
+  "manifest_path": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/06-LLM/03-Transformer/.read-paper-2005.14165.json",
+  "cache_root": "/Users/yifan/.cache/arxiv",
+  "source_archive": "/Users/yifan/.cache/arxiv/src-archives/2005.14165.src",
+  "pdf_cache": "/Users/yifan/.cache/arxiv/pdf/2005.14165.pdf",
+  "project_dir": "/Users/yifan/.cache/arxiv/src/2005.14165",
+  "entrypoint": "/Users/yifan/.cache/arxiv/src/2005.14165/main.tex",
+  "source_cache_status": "downloaded",
+  "pdf_cache_status": "downloaded",
+  "archive_format": "tar",
+  "note_state": "managed",
+  "warnings": [],
+  "pdf_assets_dir": "/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/06-LLM/03-Transformer/assets",
+  "asset_path_policy": "Vault AGENTS.md: all image originals in _assets/images; PDF remains in sibling assets.",
+  "visual_assets": [
+    {
+      "file": "gpt-3-01-in-context-few-shot.drawio.svg",
+      "type": "pipeline",
+      "format": "svg",
+      "source": "author-created GPT-3 framework based on paper; style reference: gpt-2-01-language-model-zero-shot.drawio.svg",
+      "math_enabled": true,
+      "editable_xml_embedded": true,
+      "embedded_in_note": true,
+      "verified_dimensions": [
+        1410,
+        1264
+      ],
+      "visually_verified": true
+    },
+    {
+      "file": "gpt-3-01-2005.14165-meta-learning.png",
+      "type": "paper_original_reference",
+      "source": "figures/metalearning.png",
+      "verified_dimensions": [
+        4772,
+        2020
+      ],
+      "visually_verified": true,
+      "embedded_in_note": false
+    },
+    {
+      "file": "gpt-3-02-2005.14165-model-config.png",
+      "type": "configuration_table",
+      "table": "Table 2.1",
+      "pdf_page": 8,
+      "bbox_points": [
+        64,
+        68,
+        548,
+        221
+      ],
+      "bbox_pixels": [
+        311,
+        330,
+        2353,
+        744
+      ],
+      "verified_dimensions": [
+        2353,
+        744
+      ],
+      "visually_verified": true
+    },
+    {
+      "file": "gpt-3-03-2005.14165-training-mixture.png",
+      "type": "configuration_table",
+      "table": "Table 2.2",
+      "pdf_page": 9,
+      "bbox_points": [
+        64,
+        364,
+        548,
+        518
+      ],
+      "bbox_pixels": [
+        311,
+        1769,
+        2353,
+        749
+      ],
+      "verified_dimensions": [
+        2353,
+        749
+      ],
+      "visually_verified": true
+    },
+    {
+      "file": "gpt-3-04-2005.14165-cloze-completion.png",
+      "type": "experiment_table",
+      "table": "Table 3.2",
+      "pdf_page": 12,
+      "bbox_points": [
+        64,
+        68,
+        548,
+        201
+      ],
+      "bbox_pixels": [
+        311,
+        330,
+        2353,
+        647
+      ],
+      "verified_dimensions": [
+        2353,
+        647
+      ],
+      "visually_verified": true
+    },
+    {
+      "file": "gpt-3-05-2005.14165-closed-book-qa.png",
+      "type": "experiment_table",
+      "table": "Table 3.3",
+      "pdf_page": 13,
+      "bbox_points": [
+        64,
+        68,
+        548,
+        204
+      ],
+      "bbox_pixels": [
+        311,
+        330,
+        2353,
+        662
+      ],
+      "verified_dimensions": [
+        2353,
+        662
+      ],
+      "visually_verified": true
+    },
+    {
+      "file": "gpt-3-06-2005.14165-translation.png",
+      "type": "experiment_table",
+      "table": "Table 3.4",
+      "pdf_page": 15,
+      "bbox_points": [
+        64,
+        110,
+        548,
+        312
+      ],
+      "bbox_pixels": [
+        311,
+        534,
+        2353,
+        982
+      ],
+      "verified_dimensions": [
+        2353,
+        982
+      ],
+      "visually_verified": true
+    },
+    {
+      "file": "gpt-3-07-2005.14165-reading-comprehension.png",
+      "type": "experiment_table",
+      "table": "Table 3.7",
+      "pdf_page": 18,
+      "bbox_points": [
+        64,
+        68,
+        548,
+        175
+      ],
+      "bbox_pixels": [
+        311,
+        330,
+        2353,
+        521
+      ],
+      "verified_dimensions": [
+        2353,
+        521
+      ],
+      "visually_verified": true
+    },
+    {
+      "file": "gpt-3-08-2005.14165-superglue.png",
+      "type": "experiment_table",
+      "table": "Table 3.8",
+      "pdf_page": 19,
+      "bbox_points": [
+        64,
+        480,
+        548,
+        670
+      ],
+      "bbox_pixels": [
+        311,
+        2333,
+        2353,
+        924
+      ],
+      "verified_dimensions": [
+        2353,
+        924
+      ],
+      "visually_verified": true
+    },
+    {
+      "file": "gpt-3-09-2005.14165-arithmetic.png",
+      "type": "experiment_table",
+      "table": "Table 3.9",
+      "pdf_page": 23,
+      "bbox_points": [
+        64,
+        68,
+        548,
+        172
+      ],
+      "bbox_pixels": [
+        311,
+        330,
+        2353,
+        506
+      ],
+      "verified_dimensions": [
+        2353,
+        506
+      ],
+      "visually_verified": true
+    },
+    {
+      "file": "gpt-3-10-2005.14165-in-context-scaling.png",
+      "type": "analysis",
+      "source": "graphs/img/in_context_learning.png",
+      "verified_dimensions": [
+        3392,
+        1888
+      ],
+      "visually_verified": true
+    }
+  ],
+  "source_reading": "TeX-first; all substantive main sections and appendices inspected",
+  "validation_policy": "Bundled validator plus vault-root Obsidian path resolution and manifest-based experiment-table recognition; required by vault AGENTS.md.",
+  "validated_on": "2026-09-13",
+  "validation_status": "passed",
+  "validation_details": {
+    "stock_path_convention": "incompatible with required vault-root image convention; corrected only in task-local adapter",
+    "semantic_checks": "passed",
+    "math_and_typography": "passed",
+    "image_count": 10,
+    "experiment_table_count": 6,
+    "callout_count": 22,
+    "pipeline_format": "editable draw.io SVG",
+    "pipeline_math": "math=1; LaTeX rendered and visually checked",
+    "diagram_reference": "gpt-2-01-language-model-zero-shot.drawio.svg",
+    "original_pipeline_png": "retained as a non-embedded paper reference"
+  }
+}

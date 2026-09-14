@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789191314818-uw6o0gtu3",
+  "providerId": "codex",
+  "title": "对比学习（Contrastive Learning）本质上不是一种网络结构，而是一种**训练目标 /...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789191314840,
+  "lastActivityAt": 1789192108738,
+  "sessionId": "01a0941c-de57-7d72-afbd-348ecb566c8b",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a0941c-de57-7d72-afbd-348ecb566c8b",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T13-35-15-01a0941c-de57-7d72-afbd-348ecb566c8b.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/RoadMap.md",
+  "usage": {
+    "inputTokens": 84545,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 82048,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 84545,
+    "percentage": 10,
+    "model": "gpt-6-astra"
+  }
+}

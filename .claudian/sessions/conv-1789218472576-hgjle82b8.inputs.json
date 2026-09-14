@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789218472576-hgjle82b8",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789218472597-4s07zor",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789218472569-m60zzce",
+      "timestamp": 1789218472569,
+      "rawDisplayText": "根据这个文档的内容组织写一篇SigLIP2的md文档",
+      "canonicalText": "根据这个文档的内容组织写一篇SigLIP2的md文档",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/SigLIP：从逐对二分类到共享语义空间.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "92477ffbb4f1e17769cf734651e3a62b76a308db06edee3aa378dc2941e25d7c",
+      "providerUserMessageId": "01a095bb-432c-7bb0-a924-a14e336e5787",
+      "providerAssistantMessageId": "msg_0e4c001b80fce696016aa5522f10e487d094de89d64a5c6746"
+    }
+  ]
+}

@@ -16,6 +16,8 @@
   "embedUseExcalidrawFolder": false,
   "templateFilePath": "Excalidraw/Template.excalidraw",
   "scriptFolderPath": "Excalidraw/Scripts",
+  "allowJavaScriptFiles": false,
+  "storeScriptFilesAsJavaScript": false,
   "fontAssetsPath": "Excalidraw/CJK Fonts",
   "loadChineseFonts": false,
   "loadJapaneseFonts": false,
@@ -23,8 +25,6 @@
   "compress": true,
   "decompressForMDView": true,
   "onceOffCompressFlagReset": true,
-  "onceOffGPTVersionReset": true,
-  "autosave": true,
   "autosaveIntervalDesktop": 15000,
   "autosaveIntervalMobile": 10000,
   "drawingFilenamePrefix": "Drawing ",
@@ -21459,6 +21459,7 @@
       }
     }
   },
+  "markdownImageDeletionPreference": "ask",
   "scriptEngineSettings": {
     "ZoteroToExcalidraw": {
       "Zotero Library Path": {
@@ -21475,8 +21476,11 @@
       }
     }
   },
+  "autostartScripts": {},
+  "autostartScriptFailures": {},
   "previousRelease": "2.27.3",
   "showReleaseNotes": true,
+  "useDeclarativeSettings": true,
   "excalidrawMasteryPromoCollapsed": false,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
@@ -21484,7 +21488,9 @@
   "latexPreambleLocation": "preamble.sty",
   "taskboneEnabled": false,
   "taskboneAPIkey": "",
-  "pinnedScripts": [],
+  "pinnedScripts": [
+    "Excalidraw/Scripts/ZoteroToExcalidraw.md"
+  ],
   "sidepanelTabs": [],
   "customPens": [
     {
@@ -21836,11 +21842,6 @@
   "aiEnabled": true,
   "aiVerboseLogging": false,
   "aiProviderProfiles": {
-    "OpenAI": {
-      "provider": "openai",
-      "apiKey": "ex-obf:v1:AKMmqSyvMrU4uwCpJ4sBkhyEa7kc90PGXM5s1A7xXvVCvQaoDpEH7Cz7IQqiE9NK4GzxGtxf8y76O9VjiUroP/AG4E7+FQ==",
-      "baseURL": "https://api.feliks.top/v1"
-    },
     "Anthropic": {
       "provider": "anthropic",
       "apiKey": "",
@@ -21851,15 +21852,20 @@
       "apiKey": "",
       "baseURL": "https://generativelanguage.googleapis.com/v1beta"
     },
-    "xAI": {
-      "provider": "xai",
+    "OpenAI": {
+      "provider": "openai",
       "apiKey": "",
-      "baseURL": "https://api.x.ai/v1"
+      "baseURL": "https://api.openai.com/v1"
     },
     "OpenAI-compatible": {
       "provider": "openai-compatible",
       "apiKey": "",
       "baseURL": "https://api.openai.com/v1"
+    },
+    "xAI": {
+      "provider": "xai",
+      "apiKey": "",
+      "baseURL": "https://api.x.ai/v1"
     }
   },
   "aiTextModelConfigs": {
@@ -22102,6 +22108,7 @@
     }
   },
   "aiDefaultTextModel": "gpt-4.1",
+  "aiDefaultMultimodalModel": "gpt-5-mini",
   "aiDefaultImageGenerationModel": "dall-e-3",
   "aiDefaultMaxOutgoingTokens": 0,
   "aiDefaultMaxResponseTokens": 4096,
@@ -22426,12 +22433,8 @@
     "margin": "normal"
   },
   "disableContextMenu": false,
-  "allowJavaScriptFiles": false,
-  "storeScriptFilesAsJavaScript": false,
-  "markdownImageDeletionPreference": "ask",
-  "autostartScripts": {},
-  "autostartScriptFailures": {},
-  "useDeclarativeSettings": true,
+  "onceOffGPTVersionReset": true,
+  "autosave": true,
   "isDebugMode": false,
   "defaultTrayMode": false,
   "compactModeOnTablets": true,

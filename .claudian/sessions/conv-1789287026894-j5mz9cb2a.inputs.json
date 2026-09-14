@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789287026894-j5mz9cb2a",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789287026948-bcpe643",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789287026884-kup2h1q",
+      "timestamp": 1789287026884,
+      "rawDisplayText": "你审阅一遍这个文章，公式符号是否统一一致，是否正确",
+      "canonicalText": "你审阅一遍这个文章，公式符号是否统一一致，是否正确",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "7da45259359da841430ca4ebe8dc4699ef6a3d7bc2c559da720d04bb006e5569",
+      "providerAssistantMessageId": "012d21da",
+      "providerUserMessageId": "52671a7b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789287570752-cgegkdh",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789287570740-05vlfte",
+      "timestamp": 1789287570741,
+      "rawDisplayText": "我觉得目前写的很乱，你全名重构一下包括为什么不构造J，直接求算子等等",
+      "canonicalText": "我觉得目前写的很乱，你全名重构一下包括为什么不构造J，直接求算子等等",
+      "images": [],
+      "contentDigest": "6e22b4085893611238b9ce2e146b85ff313629bebfba1f9093f9aa29a661bb76",
+      "providerUserMessageId": "4ca0068b"
+    }
+  ]
+}

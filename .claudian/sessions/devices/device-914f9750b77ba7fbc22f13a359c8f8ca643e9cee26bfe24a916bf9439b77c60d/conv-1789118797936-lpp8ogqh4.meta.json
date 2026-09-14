@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789118797936-lpp8ogqh4",
+  "providerId": "pi",
+  "title": "/skill:drawio 使用drawio帮我画一个这个文档的流程图，然后导出为svg插入到正文中",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789118797949,
+  "lastActivityAt": 1789119333264,
+  "sessionId": "01a08fca-5a2a-7464-bfdd-e46512582299",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-11T09-26-38-378Z_01a08fca-5a2a-7464-bfdd-e46512582299.jsonl",
+    "sessionId": "01a08fca-5a2a-7464-bfdd-e46512582299"
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/从 Seq2Seq 到 Attention 再到 Transformer.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 60773,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 60773,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 6
+  }
+}

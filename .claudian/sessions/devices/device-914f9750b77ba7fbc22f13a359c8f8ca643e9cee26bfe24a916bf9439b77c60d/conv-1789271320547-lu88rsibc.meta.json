@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789271320547-lu88rsibc",
+  "providerId": "codex",
+  "title": "你可以给这个文章中间插入一些callout用于解释概念，比如为什么GPT1使用Post-LN，GPT...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789271320553,
+  "lastActivityAt": 1789283984307,
+  "sessionId": "01a098e1-a88b-7bd0-8b66-2eb775d6d0af",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a098e1-a88b-7bd0-8b66-2eb775d6d0af",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/13/rollout-2026-09-13T11-48-40-01a098e1-a88b-7bd0-8b66-2eb775d6d0af.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md",
+  "usage": {
+    "inputTokens": 387256,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 383232,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 387256,
+    "percentage": 47,
+    "model": "gpt-6-astra"
+  }
+}

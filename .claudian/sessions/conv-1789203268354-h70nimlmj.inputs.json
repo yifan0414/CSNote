@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789203268354-h70nimlmj",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789203268384-80h4h2x",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789203268350-j88o25x",
+      "timestamp": 1789203268350,
+      "rawDisplayText": "$drawio:drawio 使用draw给这个笔记画一个框架图，然后导出为svg插入到开头",
+      "canonicalText": "$drawio:drawio 使用draw给这个笔记画一个框架图，然后导出为svg插入到开头",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "8766e443c6753b74933e83192007a125f77ab27b513868e33a495f4c0a686f82",
+      "providerUserMessageId": "01a094d3-4407-7681-8d66-e161e1686d02",
+      "providerAssistantMessageId": "msg_0ceb5d727830a1f8016aa515d6dbbc87d09ac6b871ac7c0acc"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789204103393-95gi9y2",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789204103382-k13cynp",
+      "timestamp": 1789204103382,
+      "rawDisplayText": "$drawio:drawio @07-MultiModal/Video-MLLM/BLIP：从图文对齐到理解、生成与数据自举.md 同样的，你使用drawio给这个文章生成框架图并插入笔记",
+      "canonicalText": "$drawio:drawio @07-MultiModal/Video-MLLM/BLIP：从图文对齐到理解、生成与数据自举.md 同样的，你使用drawio给这个文章生成框架图并插入笔记",
+      "images": [],
+      "contentDigest": "41101568e23e3377041fb9e2b52c039650bbc3e79bcacaa0e58e065a052ca9fe",
+      "providerUserMessageId": "01a094e0-00f0-7e71-8201-a79572a96b97",
+      "providerAssistantMessageId": "msg_0ceb5d727830a1f8016aa517df77c487d09e2aa78a31fb7232"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789204517939-aa051pd",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789204517924-t3n27ll",
+      "timestamp": 1789204517924,
+      "rawDisplayText": "$drawio:drawio @07-MultiModal/Video-MLLM/DINO：从多视图自蒸馏到视觉语义空间.md  同样的，你使用drawio给这个文章生成框架图并插入笔记",
+      "canonicalText": "$drawio:drawio @07-MultiModal/Video-MLLM/DINO：从多视图自蒸馏到视觉语义空间.md  同样的，你使用drawio给这个文章生成框架图并插入笔记",
+      "images": [],
+      "contentDigest": "50a7fbc85611393f00fe5e5ae6f38a2fc181fc928c0d89a39caa8dd3a3a771e3",
+      "providerUserMessageId": "01a094e6-5446-72e3-aa88-66e1ff72acc9",
+      "providerAssistantMessageId": "msg_0ceb5d727830a1f8016aa51a1bad6487d0a34ffaaac8cd84b4"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789205117222-x91e6et",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789205117214-jtntu1k",
+      "timestamp": 1789205117214,
+      "rawDisplayText": "请问这三个的drawio的原始文件在哪",
+      "canonicalText": "请问这三个的drawio的原始文件在哪",
+      "images": [],
+      "contentDigest": "5dace93b1b14f26ae6fd2e92eed78c33d4b018a7ccc0bffabad57587cb76e9bf",
+      "providerUserMessageId": "01a094ef-7935-7f31-8b18-0adf397786f4",
+      "providerAssistantMessageId": "msg_0ceb5d727830a1f8016aa51aa4e94487d0b2ae0e4ad33b43a8"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789205656383-rp4cdtt",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1789205656374-nwbdilv",
+      "timestamp": 1789205656374,
+      "rawDisplayText": "$drawio:drawio  同样的，你使用drawio给这个文章生成框架图并插入笔记 @07-MultiModal/Video-MLLM/SigLIP：从逐对二分类到共享语义空间.md",
+      "canonicalText": "$drawio:drawio  同样的，你使用drawio给这个文章生成框架图并插入笔记 @07-MultiModal/Video-MLLM/SigLIP：从逐对二分类到共享语义空间.md",
+      "images": [],
+      "contentDigest": "e4c0d2dcc9749bba47b1eb613bcef77d227f761489d42c40cc305e45eba563e9",
+      "providerUserMessageId": "01a094f7-b34c-7ac3-a4d8-39df63a75a84",
+      "providerAssistantMessageId": "msg_0ceb5d727830a1f8016aa51dcf2d6087d0989a637a180fc09c"
+    }
+  ]
+}

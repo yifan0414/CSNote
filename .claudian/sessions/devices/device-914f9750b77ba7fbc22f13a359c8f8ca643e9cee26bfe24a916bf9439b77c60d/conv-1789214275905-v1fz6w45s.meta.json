@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789214275905-v1fz6w45s",
+  "providerId": "codex",
+  "title": "$drawio:drawio 使用drawio给本文制作一个框架图，导出svg并插入到文章开头",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789214275911,
+  "lastActivityAt": 1789216886447,
+  "sessionId": "01a0957b-3998-7773-88c4-7dd0c27e5f2c",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a0957b-3998-7773-88c4-7dd0c27e5f2c",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T19-57-56-01a0957b-3998-7773-88c4-7dd0c27e5f2c.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/03-表征学习心智模型-数据质量、规模与训练目标.md",
+  "usage": {
+    "inputTokens": 153362,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 151424,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 153362,
+    "percentage": 19,
+    "model": "gpt-6-astra"
+  }
+}

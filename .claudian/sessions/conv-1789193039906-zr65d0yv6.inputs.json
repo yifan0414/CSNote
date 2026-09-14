@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789193039906-zr65d0yv6",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789193039940-cn65r8u",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789193039902-wahl479",
+      "timestamp": 1789193039902,
+      "rawDisplayText": "整理下这个文章的内容，合并相似的，但不要丢失内容，组织的更有逻辑和易读",
+      "canonicalText": "整理下这个文章的内容，合并相似的，但不要丢失内容，组织的更有逻辑和易读",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/03-clip.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "2d5b59390a090661e9147a8032c34b40b0f480da0fb2b974dcbfc73cac49aa28",
+      "providerUserMessageId": "01a09437-70c7-71a0-9723-1abe572b0532",
+      "providerAssistantMessageId": "msg_02ab43b1e559afd3016aa4ed6b897c87d0a776e5e758a3795b"
+    }
+  ]
+}

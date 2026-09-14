@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789299981186-tqbs883d7",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789299981256-odgzgca",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789299981176-afgw9ss",
+      "timestamp": 1789299981176,
+      "rawDisplayText": "你觉得这个笔记写的清晰吗",
+      "canonicalText": "你觉得这个笔记写的清晰吗",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "1ef59db50f9c4b51b6eba9db29d986c8484fc386534109aa5bee469e47b970f4",
+      "providerUserMessageId": "01a09a96-fd03-71c3-856c-688dd0bd414e",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa68dcfc1e087d096814563d226ea01"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789300295762-m45p1pj",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789300295751-6cc229c",
+      "timestamp": 1789300295751,
+      "rawDisplayText": "帮我优化下吧，这篇文章要面向仅仅具备基础数学知识的读者，所以要清晰易懂",
+      "canonicalText": "帮我优化下吧，这篇文章要面向仅仅具备基础数学知识的读者，所以要清晰易懂",
+      "images": [],
+      "contentDigest": "9c280277b8e239cd1a02c98a70e995e5defd58a975fe406b915d94930881f6a6",
+      "providerUserMessageId": "01a09a9b-c8bd-7fd3-a332-785a5bcc80e5",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa69155e5f487d0a3e39906a2838a88"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789301881318-po0knsa",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789301881306-28jd4xb",
+      "timestamp": 1789301881306,
+      "rawDisplayText": "你这里也没写为什么出现雅克比的转置呀",
+      "canonicalText": "你这里也没写为什么出现雅克比的转置呀",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+          "mode": "selection",
+          "selectedText": "5. 反向传播：为什么会出现雅可比的转置\n雅可比在前向计算中回答：\n\n输入稍微变化，输出会怎样变化？\n\n神经网络训练中的反向传播则要回答相反方向的问题：\n\n输出的变化会让损失改变多少，这种敏感度怎样传回输入？\n\n设 ，最终得到一个标量损失 。本文把梯度写成列向量，并记：\n\n \n \n 表示损失对各个输出分量的敏感度，常被称为传到当前算子的上游梯度。\n\n输出位移满足：\n\n损失变化满足：\n\n将第一式代入第二式：\n\n与 \n 比较一阶变化的系数，得到：\n\n \n \n因此可以用一张对称的图景记忆：\n\n输入位移       -- 乘 J -->    输出位移\n输入敏感度     <-- 乘 Jᵀ --    输出敏感度\n前向用  传播“变化”，反向用  传播“敏感度”。\n\n5.1 VJP：不必先造出完整雅可比\n反向传播真正需要的是：\n\n这个组合通常称为 VJP（vector-Jacobian product）。采用列向量梯度时，它写成 \n；采用行向量记法时，同一计算写成 \n。\n\n关键点是：自动微分通常不会先构造完整的 ，再做矩阵乘法，而是直接计算这个乘积。\n\n例如  时，完整雅可比有  个元素，但反向传播最终只需要一个  维结果。直接计算 VJP 可以避免存储大量不会单独使用的偏导数。\n\n最简单的神经网络层\n设：\n\n这个函数对  的雅可比就是 ，所以：\n\n \n \n前向用  把输入变成输出，反向用  把损失敏感度传回输入。\n\n矩阵输入的常用结果：\n若：\n\n已知与  同形的上游梯度 ，则：\n\n \n \n这两个公式都可以直接通过元素求导得到，也可以用矩阵微分推出。完整算例见 两层神经网络的反向传播推导。\n\n5.2 在 Transformer 中怎样出现\nTransformer 的反向传播没有使用新的微积分规则，只是沿计算图反复应用 VJP：\n\n、、 都使用线性层的反向公式；三条支路传回  的梯度需要相加。\n对每一行的 softmax，前向雅可比是一个  矩阵，但实现会直接计算它与上游梯度的乘积，而不会显式构造矩阵。若把整个注意力矩阵视为一个变量，总雅可比会更大。\n对残差连接 ，梯度既沿直接路径原样传回，也会经过  的路径传回，最后将两部分相加。\n逐算子的完整推导见 transformer计算图与反向传播。初次学习雅可比时，只需先掌握“前向乘 、反向乘 ”这一核心关系。",
+          "lineCount": 68
+        }
+      },
+      "images": [],
+      "contentDigest": "a0a40aea55ca16b005e097041721d76e5568c18d3d23748a0406bb7fd1d035c9",
+      "providerUserMessageId": "01a09ab3-fa60-7583-accd-188465c5ee06",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa69532d6c487d081bf17ff06b756e4"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789302340185-pwgj2t0",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789302340175-ip2pl0f",
+      "timestamp": 1789302340175,
+      "rawDisplayText": "一般来说，再反向传播过程中，求矩阵梯度都是使用trace技巧直接求VJP吧？",
+      "canonicalText": "一般来说，再反向传播过程中，求矩阵梯度都是使用trace技巧直接求VJP吧？",
+      "images": [],
+      "contentDigest": "2f299cc18bf0078dc5568ac4e572c3d55482c82af135e897e3973744d1e8979d",
+      "providerUserMessageId": "01a09aba-fa9b-7fb1-8e53-9a7e5e992496",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa696634c8c87d09bf6774f0d217757"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789302535218-rcghdb4",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1789302535209-usdmkkn",
+      "timestamp": 1789302535209,
+      "rawDisplayText": "这两种情况的详细对比分析，你要写到这个文档中，特别是逐元素算子、广播、求和：直接按元素或按形状分析。可以使用大矩阵更为直观",
+      "canonicalText": "这两种情况的详细对比分析，你要写到这个文档中，特别是逐元素算子、广播、求和：直接按元素或按形状分析。可以使用大矩阵更为直观",
+      "images": [],
+      "contentDigest": "c4fbc21e8b6332d6dee380d225f497fa29d15072027384eb04f2de479e29810a",
+      "providerUserMessageId": "01a09abd-f47d-7aa1-aaa7-421acc8b3279",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa69928946c87d0b16c501721b54d5f"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789303185411-tgtyh1f",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1789303185399-f5y4d2o",
+      "timestamp": 1789303185399,
+      "rawDisplayText": "你这里步骤跨的太大了，看不懂，写详细点",
+      "canonicalText": "你这里步骤跨的太大了，看不懂，写详细点",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+          "mode": "selection",
+          "selectedText": "再用 trace 核对一次。微分为：\n\n所以：\n\n \n因此再次得到：\n\n \n",
+          "lineCount": 9
+        }
+      },
+      "images": [],
+      "contentDigest": "7bb9b4183bbdb699c9209604a3f7e84ae944e1d4dad8670c624bdf60302d4b86",
+      "providerUserMessageId": "01a09ac7-e05a-73c3-839d-e5b65a11e299",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa69a26783887d0a7c9db0d3da404a4"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789303392605-t0r8sr3",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1789303392597-dhqhwt2",
+      "timestamp": 1789303392597,
+      "rawDisplayText": "这里为什么要这样写，不是这几微分就可以了吗",
+      "canonicalText": "这里为什么要这样写，不是这几微分就可以了吗",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+          "mode": "selection",
+          "selectedText": "先求输出微分 。 前向公式是：\n\n现在让  变成 ，同时让  变成 。新的输出为：\n\n \n两边减去原来的 ，得到：\n\n",
+          "lineCount": 8
+        }
+      },
+      "images": [],
+      "contentDigest": "25030bd9ab03541058a6a2a6f35fdfaed0dd274a0f54c1aae7a45352bbfe5583",
+      "providerUserMessageId": "01a09acb-09a0-7d92-bdfa-612541244276",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa69a6606a487d0bb951d7454720bf6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789303415266-1tc7uke",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1789303415260-0mf24wl",
+      "timestamp": 1789303415260,
+      "rawDisplayText": "你改动下",
+      "canonicalText": "你改动下",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+          "mode": "selection",
+          "selectedText": "先求输出微分 。 前向公式是：\n\n现在让  变成 ，同时让  变成 。新的输出为：\n\n \n两边减去原来的 ，得到：\n\n",
+          "lineCount": 8
+        }
+      },
+      "images": [],
+      "contentDigest": "96571ebea02bc895a7fcd88a15261e8c9694df9511e7ef5e22661998c962c1ac",
+      "providerUserMessageId": "01a09acb-6224-7831-9e32-1724c4190696",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa69a9c25c087d0bebec2addb08536b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789303536300-vk88im2",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1789303536289-kq8w25k",
+      "timestamp": 1789303536289,
+      "rawDisplayText": "这里也要按照展开详细点",
+      "canonicalText": "这里也要按照展开详细点",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+          "mode": "selection",
+          "selectedText": "用 trace 也能得到相同结果。先求微分：\n\n代入矩阵内积：\n\n \n于是同样读出 。",
+          "lineCount": 6
+        }
+      },
+      "images": [],
+      "contentDigest": "d7f3d5746537cab139f5c153ef46dc61d05ae5e52b5c7e5d9d4df09cb64b343d",
+      "providerUserMessageId": "01a09acd-3aee-7d10-adf5-5cc50a85524e",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa69b413d7487d0a27da8aacc93915d"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789303633452-etlt5cf",
+      "userTurnOrdinal": 10,
+      "state": "accepted",
+      "localMessageId": "msg-1789303633442-5p7odcd",
+      "timestamp": 1789303633442,
+      "rawDisplayText": "这里也写成大矩阵形式",
+      "canonicalText": "这里也写成大矩阵形式",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+          "mode": "selection",
+          "selectedText": "按元素也能推导。矩阵乘法写成：\n\n \n固定一个输入元素 。它只影响第  行的输出，而且在  中的系数为 ，因此：\n\n \n \n固定一个参数元素 。它会影响第  列的所有输出，而且在  中的系数为 ，因此：\n\n \n \n",
+          "lineCount": 12
+        }
+      },
+      "images": [],
+      "contentDigest": "033045d0293f0d55b04cffa57bae2139aa1085c569a537a9bee7bad4348a5d4b",
+      "providerUserMessageId": "01a09ace-b66d-7103-be76-4880313a0238",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa69bccb62c87d0a13d4aa64ab85301"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789303811928-celk3cb",
+      "userTurnOrdinal": 11,
+      "state": "accepted",
+      "localMessageId": "msg-1789303811918-k1u3ijm",
+      "timestamp": 1789303811918,
+      "rawDisplayText": "目前内容写的比较好，但是组织的有点乱，特别是5.5很多内容，但是按trace和按元素目前也没有分割线或者小标题",
+      "canonicalText": "目前内容写的比较好，但是组织的有点乱，特别是5.5很多内容，但是按trace和按元素目前也没有分割线或者小标题",
+      "images": [],
+      "contentDigest": "d80077005c6667bd5a46a757a5c6aaac7735caf238d487f96237f3a1a9f69330",
+      "providerUserMessageId": "01a09ad1-6f98-79f1-ab74-3dc95e52a5b1",
+      "providerAssistantMessageId": "msg_040f4f22a8dff033016aa69c6a241087d0a577acf00d3f8d8b"
+    }
+  ]
+}

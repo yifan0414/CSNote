@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789267625414-hgusqjpu6",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789267625438-vhj6y11",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789267625407-ftwygd9",
+      "timestamp": 1789267625407,
+      "rawDisplayText": "$drawio:drawio 使用drawio给这篇文章画一个框架图并插入svg",
+      "canonicalText": "$drawio:drawio 使用drawio给这篇文章画一个框架图并插入svg",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/GPT-1：从生成式预训练到语言理解微调.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "f3ce331928722bfe0e30fbae6b11d30d810417e610524974419eef7112f75753",
+      "providerUserMessageId": "01a098a9-4c6d-7ac3-8d24-3af60e70eab4",
+      "providerAssistantMessageId": "msg_0f6d6632e8aa387d016aa6120b05a487d0af778c97802f0bef"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789268519515-xngsotq",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789268519505-z0ojhco",
+      "timestamp": 1789268519505,
+      "rawDisplayText": "你根据这个文章的组织形式创建一个新的GPT2文档",
+      "canonicalText": "你根据这个文章的组织形式创建一个新的GPT2文档",
+      "images": [],
+      "contentDigest": "6ab39069b2a9facf2d0d6047e63c4526669aa796bf6a108b4f01e981994caf72",
+      "providerUserMessageId": "01a098b6-ea69-7e82-b161-51892083874c",
+      "providerAssistantMessageId": "msg_0f6d6632e8aa387d016aa617345cb887d09c099ec578c2f1bd"
+    }
+  ]
+}

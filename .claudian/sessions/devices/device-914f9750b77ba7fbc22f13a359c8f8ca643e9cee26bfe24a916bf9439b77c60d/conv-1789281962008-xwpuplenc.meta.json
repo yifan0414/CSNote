@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789281962008-xwpuplenc",
+  "providerId": "pi",
+  "title": "你审阅下这个文档，逻辑是否清晰易懂",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789281962010,
+  "lastActivityAt": 1789284668086,
+  "sessionId": "01a09984-09d7-70e0-a657-6153b4ea7a2b",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-13T06-46-02-456Z_01a09984-09d7-70e0-a657-6153b4ea7a2b.jsonl",
+    "sessionId": "01a09984-09d7-70e0-a657-6153b4ea7a2b"
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 296688,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 296688,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 30
+  }
+}

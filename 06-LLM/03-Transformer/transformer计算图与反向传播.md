@@ -1,595 +1,596 @@
 ---
-updated: 2026-09-10
+updated: 2026-09-13
 ---
 
 # Transformer 计算图与反向传播
 
-反向传播并不是把前向公式倒着读，而是**沿依赖关系逐节点传递梯度，并在共享输入处累加不同路径的贡献**。本文先明确残差节点的规则，再从输出 $Y$ 出发，依次穿过 FFN 和 Self-Attention，最后得到输入 $X$ 的梯度。
+**Transformer 的反向传播，就是每个算子用自己的局部 VJP，把输出梯度传回输入；多条路径回到同一个变量时，再将贡献相加。**
 
-正文保留计算顺序、关键结论和路径之间的关系；每节的折叠 callout 给出完整的局部推导。计算图采用高清图片，公式已通过数学排版引擎渲染，可点击图片放大查看。
+本文先固定前向模型，再介绍推导 VJP 所需的 trace 技巧，最后从 Block 输出一路推回输入。每一步都按同一个顺序阅读：**前向是什么 → 微分怎么写 → 如何读出输入梯度。** 参数梯度在经过对应算子时一起得到。
 
-## 1. 先明确前向模型和反向目标
+## 1. 固定前向模型与反向目标
 
-本文沿用草稿中的简化 **Pre-LN、单头 Attention** 模型。前向先经过 Attention 残差子层，再经过 FFN 残差子层：
+采用 **Pre-LN、单头 Attention**，省略 mask、dropout 和多头拼接。主线与配图一致，暂不含 Attention 输出投影；第 4.6 节补上它。令序列长度为 $n$，模型维度为 $d$，Query / Key 维度为 $d_k$，FFN 中间维度为 $d_{ff}$。由于直接做残差相加，主线取 Value 维度 $d_v=d$。
 
-$$
-\begin{aligned}
-\tilde X&=\operatorname{LayerNorm}(X),
-&Q&=\tilde XW_Q,\quad K=\tilde XW_K,\quad V=\tilde XW_V,\\
-R&=QK^\top,
-&S&=R/\sqrt{d_k},\quad A=\operatorname{softmax}(S),\\
-O&=AV,
-&Y_1&=X+O,\\
-Z&=\operatorname{LayerNorm}(Y_1),
-&M&=ZW_1+b_1,\\
-H&=\phi(M),
-&F&=HW_2+b_2,\quad Y=Y_1+F.
-\end{aligned}
-$$
+### 1.1 完整前向
 
-全文直接使用偏导数形式：$L$ 是标量损失，$\dfrac{\partial L}{\partial U}$ 与变量 $U$ 的形状相同；$\left.\dfrac{\partial L}{\partial U}\right|_{\text{branch}}$ 表示某一支路对 $U$ 的梯度贡献。
-
-$n$ 表示序列长度，$d$ 表示模型维度，$d_{ff}$ 表示 FFN 中间维度，$d_k$、$d_v$ 分别表示 Key 和 Value 的维度。由于这里直接令 $O=AV$ 并与 $X$ 相加，取 $d_v=d$，从而 $X,Y_1,Y\in\mathbb{R}^{n\times d}$。
-
-> [!info]- 模型边界与 Jacobian 记法
-> 本文不展开多头拼接、输出投影、mask 和 dropout；偏置保留在前向中，但不推导其参数梯度。两处 LayerNorm 均保留整体 Jacobian 形式，不展开内部及仿射参数求导。
->
-> $J_f(U)^\top\dfrac{\partial L}{\partial f(U)}$ 是展平后的 Jacobian–向量乘积简写：严格操作为先将矩阵梯度向量化，乘以转置 Jacobian，再恢复输入形状。$\operatorname{tr}$ 表示迹，$\odot$ 表示逐元素乘法。
-
-## 2. 残差节点：分出去的梯度，还要在输入处加回来
-
-先看靠近输出的残差 $Y=Y_1+F$。**加法节点将上游梯度原样传给两个输入**，因此 $\dfrac{\partial L}{\partial F}=\dfrac{\partial L}{\partial Y}$，直接支路也收到 $\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{direct}}=\dfrac{\partial L}{\partial Y}$。
-
-但 $F$ 又依赖 $Y_1$：它由 $Y_1$ 经过 LayerNorm 和 FFN 计算得到。所以直接支路的贡献只是暂存结果，必须等 FFN 支路返回后再相加。一般地，若 $Y=U+f(U)$，则：
-
-$$
-\boxed{\dfrac{\partial L}{\partial U}=\dfrac{\partial L}{\partial Y}+J_f(U)^\top \dfrac{\partial L}{\partial Y}.}
-$$
-
-这解释了反向传播中两种看似相反的操作：**前向相加的节点在反向分流；前向被多个算子共用的变量在反向接收各路贡献之和。**
-
-![[_assets/images/transformer-02-残差分流与汇合.png|900]]
-
-> [!note]- 推导｜标量加法、矩阵加法与局部偏导
-> 设 $y=a+b$，损失为 $L=L(y)$。先计算局部偏导，再应用链式法则：
->
-> $$
-> \begin{aligned}
-> \dfrac{\partial y}{\partial a}&=1,
-> &\dfrac{\partial y}{\partial b}&=1,\\
-> \dfrac{\partial L}{\partial a}
-> &=\dfrac{\partial L}{\partial y}\dfrac{\partial y}{\partial a}
-> =\dfrac{\partial L}{\partial y},
-> &\dfrac{\partial L}{\partial b}
-> &=\dfrac{\partial L}{\partial y}\dfrac{\partial y}{\partial b}
-> =\dfrac{\partial L}{\partial y}.
-> \end{aligned}
-> $$
->
-> 推广到 $Y=Y_1+F$，其中 $Y,Y_1,F\in\mathbb{R}^{n\times d}$。逐元素有：
->
-> $$
-> \begin{aligned}
-> Y_{ij}&=(Y_1)_{ij}+F_{ij}\\
-> \dfrac{\partial Y_{ij}}{\partial(Y_1)_{ij}}&=1\\
-> \dfrac{\partial Y_{ij}}{\partial F_{ij}}&=1.
-> \end{aligned}
-> $$
->
-> 其他位置的局部偏导为零，所以每个元素只接收相同位置的上游梯度：
->
-> $$
-> \begin{aligned}
-> \left.\dfrac{\partial L}{\partial(Y_1)_{ij}}\right|_{\text{direct}}
-> &=\dfrac{\partial L}{\partial Y_{ij}},\\
-> \dfrac{\partial L}{\partial F_{ij}}&=\dfrac{\partial L}{\partial Y_{ij}}.
-> \end{aligned}
-> $$
->
-> 把元素重新组成矩阵，得到 $\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{direct}}=\dfrac{\partial L}{\partial Y}$、$\dfrac{\partial L}{\partial F}=\dfrac{\partial L}{\partial Y}$。以展平后的 Jacobian 表示，就是 $\dfrac{\partial Y}{\partial Y_1}=I$、$\dfrac{\partial Y}{\partial F}=I$。这里求的是**输出对输入**的局部偏导，不能用反方向的 $\dfrac{\partial Y_1}{\partial Y}$ 替代。
->
-> 若 $F=f(Y_1)$，则前向存在 $Y_1\to Y\to L$ 与 $Y_1\to F\to Y\to L$ 两条路径。第二条路径先得到 $\dfrac{\partial L}{\partial F}=\dfrac{\partial L}{\partial Y}$，再沿 $F\to H\to M\to Z\to Y_1$ 反传。因此：
->
-> $$
-> \begin{aligned}
-> \dfrac{\partial L}{\partial Y_1}
-> &=\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{direct}}+\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{FFN}}\\
-> &=\dfrac{\partial L}{\partial Y}+J_f(Y_1)^\top \dfrac{\partial L}{\partial Y}.
-> \end{aligned}
-> $$
->
-> $\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{direct}}=\dfrac{\partial L}{\partial Y}$ 只描述加法节点分出的那一份贡献，不是 $Y_1$ 的最终总梯度。
-
-## 3. 先完成 FFN：从输出梯度回到中间状态
-
-从 $Y=Y_1+F$ 分流后，我们暂存直接贡献 $\dfrac{\partial L}{\partial Y}$，沿 $F\to H\to M\to Z\to Y_1$ 逐步回传。每个线性层都产生两类结果：一类是继续向前一节点传播的**输入梯度**，另一类是用于更新权重的**参数梯度**。
-
-![[_assets/images/transformer-03-FFN反向传播.png|900]]
-
-### 3.1 输出线性层：同时求输入梯度与权重梯度
-
-对于 $F=HW_2+b_2$，已知 $\dfrac{\partial L}{\partial F}=\dfrac{\partial L}{\partial Y}$。沿输入方向回传要右乘 $W_2^\top$；对权重求导则使用前向保存的 $H$：
+Attention 子层先归一化，再计算注意力，最后加回输入：
 
 $$
 \begin{aligned}
-\dfrac{\partial L}{\partial H}&=\dfrac{\partial L}{\partial F}W_2^\top=\dfrac{\partial L}{\partial Y}W_2^\top\\
-\dfrac{\partial L}{\partial W_2}&=H^\top \dfrac{\partial L}{\partial F}=H^\top \dfrac{\partial L}{\partial Y}.
+\tilde X&=\operatorname{LN}_1(X),\\[4pt]
+Q&=\tilde XW_Q,\qquad K=\tilde XW_K,\qquad V=\tilde XW_V,\\[4pt]
+R&=QK^\top,\qquad S=R/\sqrt{d_k},\\[4pt]
+A&=\operatorname{softmax}(S),\\[4pt]
+O&=AV,\\[4pt]
+Y_1&=X+O.
 \end{aligned}
 $$
 
-这两个转置的位置不是记忆规则，而是将损失微分整理成标准迹形式后的结果。
+Softmax 沿每行计算：$A_{ij}$ 是第 $i$ 个 token 汇总第 $j$ 个 token 内容时的权重。
 
-> [!note]- 推导｜输出线性层对输入 $H$ 的梯度
-> $H\in\mathbb{R}^{n\times d_{ff}}$，$W_2\in\mathbb{R}^{d_{ff}\times d}$，$F\in\mathbb{R}^{n\times d}$。偏置固定时，$F=HW_2+b_2$ 的微分为：
->
-> $$
-> dF=(dH)W_2+H(dW_2).
-> $$
->
-> 先固定 $W_2$、只改变 $H$，于是 $dF=(dH)W_2$。矩阵梯度通过损失的微分定义：
->
-> $$
-> \begin{aligned}
-> dL
-> &=\operatorname{tr}(\left(\dfrac{\partial L}{\partial F}\right)^\top  dF)\\
-> &=\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial F}\right)^\top (dH)W_2\bigr)\\
-> &=\operatorname{tr}\bigl(W_2\left(\dfrac{\partial L}{\partial F}\right)^\top  dH\bigr).
-> \end{aligned}
-> $$
->
-> 最后一步使用迹的循环性质 $\operatorname{tr}(ABC)=\operatorname{tr}(CAB)$。与标准形式 $dL=\operatorname{tr}(\left(\dfrac{\partial L}{\partial H}\right)^\top  dH)$ 比较，再转置：
->
-> $$
-> \begin{aligned}
-> \left(\dfrac{\partial L}{\partial H}\right)^\top &=W_2\left(\dfrac{\partial L}{\partial F}\right)^\top ,\\
-> \dfrac{\partial L}{\partial H}&=\dfrac{\partial L}{\partial F}W_2^\top,\\
-> \dfrac{\partial L}{\partial F}=\dfrac{\partial L}{\partial Y}\quad&\Longrightarrow\quad \dfrac{\partial L}{\partial H}=\dfrac{\partial L}{\partial Y}W_2^\top.
-> \end{aligned}
-> $$
-
-> [!note]- 推导｜输出线性层对参数 $W_2$ 的梯度
-> 仍从 $dF=(dH)W_2+H(dW_2)$ 出发。这次固定 $H$，只改变 $W_2$，于是 $dF=H(dW_2)$：
->
-> $$
-> dL=\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial F}\right)^\top  H(dW_2)\bigr).
-> $$
->
-> 与 $dL=\operatorname{tr}(\left(\dfrac{\partial L}{\partial W_2}\right)^\top  dW_2)$ 比较，得到：
->
-> $$
-> \begin{aligned}
-> \left(\dfrac{\partial L}{\partial W_2}\right)^\top &=\left(\dfrac{\partial L}{\partial F}\right)^\top  H,\\
-> \dfrac{\partial L}{\partial W_2}&=H^\top \dfrac{\partial L}{\partial F},\\
-> \dfrac{\partial L}{\partial F}=\dfrac{\partial L}{\partial Y}\quad&\Longrightarrow\quad \dfrac{\partial L}{\partial W_2}=H^\top \dfrac{\partial L}{\partial Y}.
-> \end{aligned}
-> $$
->
-> 这份梯度用于更新参数；$\dfrac{\partial L}{\partial H}$ 则继续沿计算图向输入传播，两者来自同一个乘积微分的不同项。
-
-### 3.2 激活与输入线性层：沿主链继续回传
-
-$H=\phi(M)$ 是逐元素激活，因此只需把 $\dfrac{\partial L}{\partial H}$ 与局部导数逐元素相乘。随后穿过 $M=ZW_1+b_1$，再次应用线性层规则：
+FFN 子层对每个 token 独立变换特征，再加回子层输入：
 
 $$
 \begin{aligned}
-\dfrac{\partial L}{\partial M}&=\dfrac{\partial L}{\partial H}\odot\phi'(M),\\
-\dfrac{\partial L}{\partial Z}&=\dfrac{\partial L}{\partial M}W_1^\top,\qquad
-\dfrac{\partial L}{\partial W_1}=Z^\top \dfrac{\partial L}{\partial M}.
+Z&=\operatorname{LN}_2(Y_1),\\[4pt]
+M&=ZW_1+b_1,\\[4pt]
+H&=\phi(M),\\[4pt]
+F&=HW_2+b_2,\\[4pt]
+Y&=Y_1+F.
 \end{aligned}
 $$
 
-此时拿到的是 $Z$ 的梯度，而不是 $Y_1$ 的梯度：两者之间还有一层 LayerNorm。
+$\phi$ 是逐元素激活，偏置沿 token 维广播。两处 LayerNorm 各有自己的仿射参数。
 
-> [!note]- 推导｜逐元素激活与链式代入
-> 由于 $H=\phi(M)$ 是逐元素操作，对任意位置有：
+> [!note]- 形状速查
+> 梯度与其所属变量同形状。全文用 $\mathbb{R}^{\cdots}$ 表示形状，省略 batch 维。
 >
-> $$
-> \begin{aligned}
-> H_{ij}&=\phi(M_{ij})\\
-> \dfrac{\partial H_{ij}}{\partial M_{ij}}&=\phi'(M_{ij}).
-> \end{aligned}
-> $$
->
-> 应用链式法则，再把各元素组成矩阵：
->
-> $$
-> \begin{aligned}
-> \dfrac{\partial L}{\partial M_{ij}}
-> &=\dfrac{\partial L}{\partial H_{ij}}\phi'(M_{ij}),\\
-> \dfrac{\partial L}{\partial M}&=\dfrac{\partial L}{\partial H}\odot\phi'(M)\\
-> &=(\dfrac{\partial L}{\partial F}W_2^\top)\odot\phi'(M)\\
-> &=(\dfrac{\partial L}{\partial Y}W_2^\top)\odot\phi'(M).
-> \end{aligned}
-> $$
->
-> 这里 $\odot$ 是逐元素乘法，不是矩阵乘法。
+> | 变量 | 形状 |
+> | --- | --- |
+> | $X,\tilde X,Y_1,Z,V,O,F,Y$ | $\mathbb{R}^{n\times d}$ |
+> | $Q,K$ | $\mathbb{R}^{n\times d_k}$ |
+> | $R,S,A$ | $\mathbb{R}^{n\times n}$ |
+> | $M,H$ | $\mathbb{R}^{n\times d_{ff}}$ |
+> | $W_Q,W_K$ | $\mathbb{R}^{d\times d_k}$ |
+> | $W_V$ | $\mathbb{R}^{d\times d}$ |
+> | $W_1,W_2$ | $\mathbb{R}^{d\times d_{ff}}$、$\mathbb{R}^{d_{ff}\times d}$ |
+> | $b_1,b_2$ | $\mathbb{R}^{d_{ff}}$、$\mathbb{R}^{d}$ |
 
-> [!note]- 推导｜输入线性层的输入梯度、参数梯度及展开式
-> 固定偏置，$M=ZW_1+b_1$ 给出 $dM=(dZ)W_1+Z(dW_1)$。分别收集两项，并对第一项使用迹的循环性质：
->
-> $$
-> \begin{aligned}
-> dL
-> &=\operatorname{tr}(\left(\dfrac{\partial L}{\partial M}\right)^\top  dM)\\
-> &=\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial M}\right)^\top (dZ)W_1\bigr)
->  +\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial M}\right)^\top  Z(dW_1)\bigr)\\
-> &=\operatorname{tr}\bigl(W_1\left(\dfrac{\partial L}{\partial M}\right)^\top  dZ\bigr)
->  +\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial M}\right)^\top  Z\,dW_1\bigr).
-> \end{aligned}
-> $$
->
-> 与 $\operatorname{tr}(\left(\dfrac{\partial L}{\partial Z}\right)^\top  dZ)+\operatorname{tr}(\left(\dfrac{\partial L}{\partial W_1}\right)^\top  dW_1)$ 比较、分别转置：
->
-> $$
-> \begin{aligned}
-> \left(\dfrac{\partial L}{\partial Z}\right)^\top &=W_1\left(\dfrac{\partial L}{\partial M}\right)^\top ,
-> &\dfrac{\partial L}{\partial Z}&=\dfrac{\partial L}{\partial M}W_1^\top,\\
-> \left(\dfrac{\partial L}{\partial W_1}\right)^\top &=\left(\dfrac{\partial L}{\partial M}\right)^\top  Z,
-> &\dfrac{\partial L}{\partial W_1}&=Z^\top \dfrac{\partial L}{\partial M}.
-> \end{aligned}
-> $$
->
-> 这与 $F=HW_2$ 的推导完全对应。代入上一节的 $\dfrac{\partial L}{\partial M}$，保留完整的链式展开：
->
-> $$
-> \begin{aligned}
-> \dfrac{\partial L}{\partial Z}&=\bigl[(\dfrac{\partial L}{\partial Y}W_2^\top)\odot\phi'(M)\bigr]W_1^\top,\\
-> \dfrac{\partial L}{\partial W_1}&=Z^\top\bigl[(\dfrac{\partial L}{\partial Y}W_2^\top)\odot\phi'(M)\bigr].
-> \end{aligned}
-> $$
+### 1.2 反向从哪里开始，到哪里结束？
 
-### 3.3 穿过 LayerNorm，完成第一次梯度汇合
+后续网络已经传回 $\dfrac{\partial L}{\partial Y}$，其中 $L$ 是标量损失。我们要先穿过 FFN 子层得到完整的 $\dfrac{\partial L}{\partial Y_1}$，再穿过 Attention 子层得到 $\dfrac{\partial L}{\partial X}$，同时得到各参数的梯度。
 
-将 $\dfrac{\partial L}{\partial Z}$ 经过 $Z=\operatorname{LayerNorm}(Y_1)$ 反传，才得到 FFN 支路对 $Y_1$ 的贡献。然后加上从残差节点直接传来的 $\dfrac{\partial L}{\partial Y}$：
+> [!example]- 完整计算图
+> ![[_assets/images/transformer-01-前向与局部VJP总览.svg|900]]
+
+## 2. 推导工具：通过 trace 读出局部 VJP
+
+### 2.1 VJP 要做什么？
+
+对当前算子 $T=f(U)$，已知输出梯度 $\dfrac{\partial L}{\partial T}$，计算经这个算子传回 $U$ 的梯度贡献，就是它的局部 VJP。如果 $U$ 还有其他使用路径，需要累加这些路径的贡献，才得到总梯度 $\dfrac{\partial L}{\partial U}$。在当前前向取值固定时，记传入的输出梯度为 $v$：
+
+$$
+\boxed{\operatorname{VJP}_f(v)=J_f(U)^\top v.}
+$$
+
+这里采用列向量梯度约定，矩阵变量需先展平理解该式，再将结果恢复为输入形状。**实际推导可以直接使用矩阵微分，无需构造 Jacobian。** 正文用完整偏导数表示梯度，只在通用规则中使用 $v$。
+
+### 2.2 为什么 trace 中能读出梯度？
+
+对矩阵 $U$，损失的一阶微分就是各元素的“梯度乘变化量”之和：
+
+$$
+\mathrm{d}L
+=\sum_{i,j}\frac{\partial L}{\partial U_{ij}}\,\mathrm{d}U_{ij}
+=\operatorname{tr}\!\left[
+\left(\frac{\partial L}{\partial U}\right)^\top\mathrm{d}U
+\right].
+$$
+
+$\operatorname{tr}$ 是方阵对角元素之和；$\operatorname{tr}(B^\top\mathrm{d}U)=\sum_{i,j}B_{ij}\mathrm{d}U_{ij}$，只是将逐元素内积写成矩阵形式。$\mathrm{d}U$ 是微小变化，$\partial L/\partial U$ 是梯度，两者含义不同。
+
+因此，只要将损失微分整理为下面的标准形式，就能读出梯度：
 
 $$
 \boxed{
-\begin{aligned}
-\dfrac{\partial L}{\partial Y_1}&=\dfrac{\partial L}{\partial Y}+\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{FFN}}\\
-\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{FFN}}&=J_{\operatorname{LayerNorm}}(Y_1)^\top \dfrac{\partial L}{\partial Z}.
-\end{aligned}
+\mathrm{d}L=\operatorname{tr}(B^\top\mathrm{d}U)
+\quad\Longrightarrow\quad
+\frac{\partial L}{\partial U}=B.
 }
 $$
 
-**只有这个汇合后的 $\dfrac{\partial L}{\partial Y_1}$，才是下一阶段 Attention 子层的上游梯度。** 不能只使用 FFN 支路返回的部分，也不能在穿过 LayerNorm 之前提前相加。
+该等式须对任意 $\mathrm{d}U$ 成立。注意读出的是 $B$，不是 $B^\top$。多个输入时，分别整理出每个输入的微分项。
 
-> [!note]- 推导｜穿过 LayerNorm，再累加直接残差贡献
-> 前向 $Z=\operatorname{LayerNorm}(Y_1)$，所以 FFN 支路返回的梯度为：
+### 2.3 只需掌握这些整理规则
+
+乘法与转置的微分为：
+
+$$
+\mathrm{d}(UW)=\mathrm{d}U\,W+U\,\mathrm{d}W,
+\qquad
+\mathrm{d}(U^\top)=(\mathrm{d}U)^\top.
+$$
+
+在维度相容时，trace 可以拆开求和、循环移位，也可以对整体转置：
+
+$$
+\begin{aligned}
+\operatorname{tr}(C+D)&=\operatorname{tr}(C)+\operatorname{tr}(D),\\[4pt]
+\operatorname{tr}(ABC)&=\operatorname{tr}(BCA)=\operatorname{tr}(CAB),\\[4pt]
+\operatorname{tr}(C)&=\operatorname{tr}(C^\top),\qquad (AB)^\top=B^\top A^\top.
+\end{aligned}
+$$
+
+循环移位不能任意交换因子顺序。处理输入的转置时，常用：
+
+$$
+\operatorname{tr}(B\,\mathrm{d}U^\top)
+=\operatorname{tr}(B^\top\mathrm{d}U).
+$$
+
+后面始终重复同一个过程：**写输出微分 → 代入损失微分 → 整理成输入微分的标准形式 → 读出梯度。** trace 是推导工具，backward 实际执行的是化简后的公式。
+
+> [!note]- 为什么 trace 读出的结果就是 $J^\top v$？
+> 用 $\operatorname{vec}$ 表示按固定顺序展平矩阵，前向微分满足：
 >
 > $$
-> \left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{FFN}}=J_{\operatorname{LayerNorm}}(Y_1)^\top \dfrac{\partial L}{\partial Z}.
+> \operatorname{vec}(\mathrm{d}T)=J_f(U)\operatorname{vec}(\mathrm{d}U).
 > $$
 >
-> 这表示 $\dfrac{\partial L}{\partial Z}$ 仍须穿过 LayerNorm 才能成为对 $Y_1$ 的贡献，不能直接把 $\dfrac{\partial L}{\partial Z}$ 与 $\dfrac{\partial L}{\partial Y}$ 相加。另一条直接路径早已得到 $\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{direct}}=\dfrac{\partial L}{\partial Y}$，现在两者才在同一变量处汇合：
+> 将输出梯度 $v$ 与输出微分配对：
 >
 > $$
 > \begin{aligned}
-> \dfrac{\partial L}{\partial Y_1}
-> &=\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{direct}}+\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{FFN}}\\
-> &=\dfrac{\partial L}{\partial Y}+\left.\dfrac{\partial L}{\partial Y_1}\right|_{\text{FFN}}\\
-> &=\dfrac{\partial L}{\partial Y}+J_{\operatorname{LayerNorm}}(Y_1)^\top \dfrac{\partial L}{\partial Z}.
+> \mathrm{d}L
+> &=\operatorname{vec}(v)^\top J_f(U)\operatorname{vec}(\mathrm{d}U)\\[4pt]
+> &=\left[J_f(U)^\top\operatorname{vec}(v)\right]^\top\operatorname{vec}(\mathrm{d}U).
 > \end{aligned}
 > $$
 >
-> LayerNorm 在这里仍作为整体函数，其内部求导不在本稿范围内。
+> 而 $\operatorname{tr}(B^\top\mathrm{d}U)=\operatorname{vec}(B)^\top\operatorname{vec}(\mathrm{d}U)$，所以 $\operatorname{vec}(B)=J_f(U)^\top\operatorname{vec}(v)$。trace 推导直接求出了这个乘积。
 
-## 4. 再完成 Attention：处理权重支路与 Value 支路
+## 3. FFN 反向：从 $Y$ 回到 $Y_1$
 
-现在回到前一个残差 $Y_1=X+O$。同样先分流：$\dfrac{\partial L}{\partial O}=\dfrac{\partial L}{\partial Y_1}$ 进入 Attention，$\left.\dfrac{\partial L}{\partial X}\right|_{\text{direct}}=\dfrac{\partial L}{\partial Y_1}$ 暂存，等待稍后在 $X$ 汇合。
+![[_assets/images/transformer-03-FFN局部VJP.svg|900]]
 
-Attention 内部不是一条直线。$O=AV$ 首先分出 $A$、$V$ 两条路径：**$A$ 路径穿过 Softmax、缩放和 $QK^\top$，再分出 $Q$、$K$；$V$ 路径不经过这些算子。** 最后 $Q$、$K$、$V$ 三路都回到共同输入 $\tilde X$。
+### 3.1 残差加法：分别向两个输入原样回传
 
-![[_assets/images/transformer-04-Attention反向传播.png|900]]
+前向 $Y=Y_1+F$，因此：
 
-> [!note]- 推导｜第一个残差节点的局部梯度
-> 前向 $Y_1=X+O$ 与 $Y=Y_1+F$ 具有相同的加法结构。在该节点内将两个输入视为独立输入：
->
-> $$
-> \begin{aligned}
-> \dfrac{\partial Y_1}{\partial X}&=I\\
-> \dfrac{\partial Y_1}{\partial O}&=I.
-> \end{aligned}
-> $$
->
-> 因此：
->
-> $$
-> \begin{aligned}
-> \left.\dfrac{\partial L}{\partial X}\right|_{\text{direct}}&=\dfrac{\partial L}{\partial Y_1}\\
-> \dfrac{\partial L}{\partial O}&=\dfrac{\partial L}{\partial Y_1}.
-> \end{aligned}
-> $$
->
-> 直接贡献暂时保留；$\dfrac{\partial L}{\partial O}$ 则穿过 Attention 和第一层 LayerNorm 后，才产生 $\left.\dfrac{\partial L}{\partial X}\right|_{\text{Attn}}$。
+$$
+\mathrm{d}Y=\mathrm{d}Y_1+\mathrm{d}F,
+$$
 
-### 4.1 加权求和：从 $O$ 分出 $A$ 和 $V$ 的梯度
+$$
+\mathrm{d}L
+=\operatorname{tr}\!\left[\left(\frac{\partial L}{\partial Y}\right)^\top\mathrm{d}Y_1\right]
++\operatorname{tr}\!\left[\left(\frac{\partial L}{\partial Y}\right)^\top\mathrm{d}F\right].
+$$
 
-对 $O=AV$ 使用乘积微分，可以同时得到注意力权重和 Value 的梯度：
+分别读出加法节点对两个输入的贡献：
 
 $$
 \boxed{
-\begin{aligned}
-\dfrac{\partial L}{\partial A}&=\dfrac{\partial L}{\partial O}V^\top\\
-\dfrac{\partial L}{\partial V}&=A^\top \dfrac{\partial L}{\partial O}.
-\end{aligned}
+\frac{\partial L}{\partial F}=\frac{\partial L}{\partial Y},
+\qquad
+\left.\frac{\partial L}{\partial Y_1}\right|_{\text{direct}}
+=\frac{\partial L}{\partial Y}.
 }
 $$
 
-$\dfrac{\partial L}{\partial V}$ 已可以进入 Value 投影的反向传播；接下来先沿 $\dfrac{\partial L}{\partial A}$ 继续，计算决定注意力权重的打分梯度。
+**先保留对 $Y_1$ 的直接贡献，另一份梯度继续穿过 FFN。** 此时还没得到 $Y_1$ 的总梯度，因为 $F$ 也依赖 $Y_1$。加法的局部 VJP 是 $(v,v)$，两个输入都收到完整梯度，不是各拿一半。
 
-> [!note]- 推导｜$O=AV$ 的微分及 $A$、$V$ 两个梯度
-> 设 $A\in\mathbb{R}^{n\times n}$、$V\in\mathbb{R}^{n\times d_v}$，则 $O\in\mathbb{R}^{n\times d_v}$。由乘积微分：
->
-> $$
-> dO=d(AV)=(dA)V+A(dV).
-> $$
->
-> 代入损失的微分，并展开两项：
->
-> $$
-> \begin{aligned}
-> dL
-> &=\operatorname{tr}(\left(\dfrac{\partial L}{\partial O}\right)^\top  dO)\\
-> &=\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial O}\right)^\top [(dA)V+A(dV)]\bigr)\\
-> &=\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial O}\right)^\top (dA)V\bigr)
->  +\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial O}\right)^\top  A(dV)\bigr).
-> \end{aligned}
-> $$
->
-> **先求 $A$ 的梯度。** 第一项要整理为 $\operatorname{tr}(\left(\dfrac{\partial L}{\partial A}\right)^\top  dA)$。利用 $\operatorname{tr}(ABC)=\operatorname{tr}(CAB)$：
->
-> $$
-> \begin{aligned}
-> \operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial O}\right)^\top (dA)V\bigr)
-> &=\operatorname{tr}\bigl(V\left(\dfrac{\partial L}{\partial O}\right)^\top  dA\bigr),\\
-> \left(\dfrac{\partial L}{\partial A}\right)^\top &=V\left(\dfrac{\partial L}{\partial O}\right)^\top ,\\
-> \dfrac{\partial L}{\partial A}&=\dfrac{\partial L}{\partial O}V^\top.
-> \end{aligned}
-> $$
->
-> **再求 $V$ 的梯度。** 第二项直接与 $\operatorname{tr}(\left(\dfrac{\partial L}{\partial V}\right)^\top  dV)$ 比较：
->
-> $$
-> \begin{aligned}
-> \operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial O}\right)^\top  A(dV)\bigr)
-> &=\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial V}\right)^\top  dV\bigr),\\
-> \left(\dfrac{\partial L}{\partial V}\right)^\top &=\left(\dfrac{\partial L}{\partial O}\right)^\top  A,\\
-> \dfrac{\partial L}{\partial V}&=A^\top \dfrac{\partial L}{\partial O}.
-> \end{aligned}
-> $$
->
-> 因此 $O=AV$ 的反向结果同时包含 $\dfrac{\partial L}{\partial A}=\dfrac{\partial L}{\partial O}V^\top$ 与 $\dfrac{\partial L}{\partial V}=A^\top \dfrac{\partial L}{\partial O}$，不能只沿 $A$ 一路继续而丢掉 $V$ 的贡献。
+### 3.2 输出线性层：完整示范 trace 推导
 
-### 4.2 Softmax 与缩放：从注意力权重回到原始打分
-
-Softmax 按行归一化，同一行元素通过分母互相耦合。因此，与 FFN 中的逐元素激活不同，不能只乘一个逐元素导数。对第 $i$ 行（用列向量表示），其反向为：
+前向 $F=HW_2+b_2$。先固定偏置 $b_2$，即令 $\mathrm{d}b_2=0$，只求关于 $H,W_2$ 的局部梯度：
 
 $$
-\dfrac{\partial L}{\partial\mathbf s_i}
-=\bigl[\operatorname{diag}(\mathbf a_i)-\mathbf a_i\mathbf a_i^\top\bigr]\dfrac{\partial L}{\partial\mathbf a_i}.
+\mathrm{d}F=\mathrm{d}H\,W_2+H\,\mathrm{d}W_2.
 $$
 
-逐行得到 $\dfrac{\partial L}{\partial S}$ 后，再穿过 $S=R/\sqrt{d_k}$，得到 $\dfrac{\partial L}{\partial R}=\dfrac{\partial L}{\partial S}/\sqrt{d_k}$。至此才回到未缩放的点积打分 $R$。
+代入损失微分，将 $\mathrm{d}H$ 和 $\mathrm{d}W_2$ 分别整理到末尾：
 
-> [!note]- 推导｜按行 Softmax 的 Jacobian 与反向传播
-> 将第 $i$ 行写成列向量 $\mathbf s_i=[s_{i1},\ldots,s_{in}]^\top$，并令 $\mathbf a_i=\operatorname{softmax}(\mathbf s_i)$。每个元素为：
->
-> $$
-> a_{ij}=\dfrac{e^{s_{ij}}}{\sum_{k=1}^{n}e^{s_{ik}}}.
-> $$
->
-> $a_{i1}$ 不仅依赖 $s_{i1}$，还通过分母依赖同一行所有其他元素，因此不能像逐元素激活那样只保留对角导数。记 $D_i=\sum_k e^{s_{ik}}$，商法则给出：
->
-> $$
-> \begin{aligned}
-> \dfrac{\partial a_{ij}}{\partial s_{i\ell}}
-> &=\dfrac{\delta_{j\ell}e^{s_{ij}}D_i-e^{s_{ij}}e^{s_{i\ell}}}{D_i^2}\\
-> &=a_{ij}\delta_{j\ell}-a_{ij}a_{i\ell}.
-> \end{aligned}
-> $$
->
-> 其中 $\delta_{j\ell}$ 为 Kronecker delta。把所有元素组成 Jacobian：
->
-> $$
-> J_i=\dfrac{\partial\mathbf a_i}{\partial\mathbf s_i}
-> =\operatorname{diag}(\mathbf a_i)-\mathbf a_i\mathbf a_i^\top.
-> $$
->
-> 分别对行向量对应的列表示求损失的偏导。向量链式法则先给出 $\dfrac{\partial L}{\partial\mathbf s_i}=J_i^\top\dfrac{\partial L}{\partial\mathbf a_i}$；由于 $J_i^\top=J_i$，于是：
->
-> $$
-> \begin{aligned}
-> \dfrac{\partial L}{\partial\mathbf s_i}
-> &=\bigl[\operatorname{diag}(\mathbf a_i)-\mathbf a_i\mathbf a_i^\top\bigr]\dfrac{\partial L}{\partial\mathbf a_i}\\
-> &=\mathbf a_i\odot\dfrac{\partial L}{\partial\mathbf a_i}
->  -\mathbf a_i(\mathbf a_i^\top\dfrac{\partial L}{\partial\mathbf a_i}).
-> \end{aligned}
-> $$
->
-> 逐行计算后恢复矩阵排列，即得到 $\dfrac{\partial L}{\partial S}$。
+$$
+\begin{aligned}
+\mathrm{d}L
+&=\operatorname{tr}\!\left[\left(\frac{\partial L}{\partial F}\right)^\top\mathrm{d}H\,W_2\right]
++\operatorname{tr}\!\left[\left(\frac{\partial L}{\partial F}\right)^\top H\,\mathrm{d}W_2\right]\\[6pt]
+&=\operatorname{tr}\!\left[W_2\left(\frac{\partial L}{\partial F}\right)^\top\mathrm{d}H\right]
++\operatorname{tr}\!\left[\left(H^\top\frac{\partial L}{\partial F}\right)^\top\mathrm{d}W_2\right]\\[6pt]
+&=\operatorname{tr}\!\left[\left(\frac{\partial L}{\partial F}W_2^\top\right)^\top\mathrm{d}H\right]
++\operatorname{tr}\!\left[\left(H^\top\frac{\partial L}{\partial F}\right)^\top\mathrm{d}W_2\right].
+\end{aligned}
+$$
 
-> [!note]- 推导｜缩放因子如何传到梯度中
-> $d_k$ 是固定维度。由 $S=R/\sqrt{d_k}$ 得 $dS=dR/\sqrt{d_k}$。代入损失微分：
->
-> $$
-> \begin{aligned}
-> dL
-> &=\operatorname{tr}(\left(\dfrac{\partial L}{\partial S}\right)^\top  dS)\\
-> &=\operatorname{tr}\left(\left(\dfrac{\partial L}{\partial S}\right)^\top \dfrac{1}{\sqrt{d_k}}dR\right)\\
-> &=\operatorname{tr}\left[\left(\dfrac{\frac{\partial L}{\partial S}}{\sqrt{d_k}}\right)^\top dR\right].
-> \end{aligned}
-> $$
->
-> 与 $dL=\operatorname{tr}(\left(\dfrac{\partial L}{\partial R}\right)^\top  dR)$ 比较，得到 $\dfrac{\partial L}{\partial R}=\dfrac{\partial L}{\partial S}/\sqrt{d_k}$。
-
-### 4.3 点积打分：从 $R$ 分出 $Q$ 和 $K$ 的梯度
-
-对 $R=QK^\top$ 求导，关键是保留前向中 $K$ 的转置关系：
+读出输入梯度与权重梯度：
 
 $$
 \boxed{
-\begin{aligned}
-\dfrac{\partial L}{\partial Q}&=\dfrac{\partial L}{\partial R}K\\
-\dfrac{\partial L}{\partial K}&=\left(\dfrac{\partial L}{\partial R}\right)^\top  Q.
-\end{aligned}
+\frac{\partial L}{\partial H}=\frac{\partial L}{\partial F}W_2^\top,
+\qquad
+\frac{\partial L}{\partial W_2}=H^\top\frac{\partial L}{\partial F}.
 }
 $$
 
-现在 $\dfrac{\partial L}{\partial Q}$、$\dfrac{\partial L}{\partial K}$ 和此前得到的 $\dfrac{\partial L}{\partial V}$ 都已就绪。它们分别回传到各自的投影权重，同时向同一个输入 $\tilde X$ 提供梯度贡献。
-
-> [!note]- 推导｜$QK^\top$ 的乘积微分及 $Q$、$K$ 梯度中的转置
-> 从 $R=QK^\top$ 出发，先应用乘积法则，再使用转置与微分可交换的性质：
->
-> $$
-> \begin{aligned}
-> dR&=d(QK^\top)\\
-> &=(dQ)K^\top+Q\,d(K^\top),\\
-> d(K^\top)&=(dK)^\top,\\
-> dR&=(dQ)K^\top+Q(dK)^\top.
-> \end{aligned}
-> $$
->
-> 代入 $dL=\operatorname{tr}(\left(\dfrac{\partial L}{\partial R}\right)^\top  dR)$，分开两项：
->
-> $$
-> dL=\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial R}\right)^\top (dQ)K^\top\bigr)
-> +\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial R}\right)^\top  Q(dK)^\top\bigr).
-> $$
->
-> **对 $Q$ 求梯度。** 固定 $K$，第一项利用迹的循环性质变形：
->
-> $$
-> \begin{aligned}
-> dL\big|_{dK=0}
-> &=\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial R}\right)^\top (dQ)K^\top\bigr)\\
-> &=\operatorname{tr}\bigl(K^\top \left(\dfrac{\partial L}{\partial R}\right)^\top  dQ\bigr)\\
-> &=\operatorname{tr}\bigl((\dfrac{\partial L}{\partial R}K)^\top dQ\bigr).
-> \end{aligned}
-> $$
->
-> 其中 $K^\top \left(\dfrac{\partial L}{\partial R}\right)^\top =(\dfrac{\partial L}{\partial R}K)^\top$。与标准形式 $\operatorname{tr}(\left(\dfrac{\partial L}{\partial Q}\right)^\top  dQ)$ 比较，得到 $\dfrac{\partial L}{\partial Q}=\dfrac{\partial L}{\partial R}K$。
->
-> **对 $K$ 求梯度。** 固定 $Q$，第二项使用 $\operatorname{tr}(B(dK)^\top)=\operatorname{tr}(B^\top dK)$：
->
-> $$
-> \begin{aligned}
-> dL\big|_{dQ=0}
-> &=\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial R}\right)^\top  Q(dK)^\top\bigr)\\
-> &=\operatorname{tr}\bigl((\left(\dfrac{\partial L}{\partial R}\right)^\top  Q)^\top dK\bigr).
-> \end{aligned}
-> $$
->
-> 与 $\operatorname{tr}(\left(\dfrac{\partial L}{\partial K}\right)^\top  dK)$ 比较，得到 $\dfrac{\partial L}{\partial K}=\left(\dfrac{\partial L}{\partial R}\right)^\top  Q$。这里转置的是 $\dfrac{\partial L}{\partial R}$，来源是前向中 $K$ 以 $K^\top$ 的形式参与乘法。
-
-### 4.4 投影层：参数分别求导，输入贡献三路相加
-
-$Q$、$K$、$V$ 都是对 $\tilde X$ 的线性投影，所以仍使用已经在 FFN 中推导过的线性层规则。权重各有自己的梯度：
+再固定 $H,W_2$，单独改变偏置。由于偏置沿 token 维广播，有 $\mathrm{d}F_{ij}=\mathrm{d}(b_2)_j$，因此：
 
 $$
-\begin{aligned}
-\dfrac{\partial L}{\partial W_Q}&=\tilde X^\top \dfrac{\partial L}{\partial Q}\\
-\dfrac{\partial L}{\partial W_K}&=\tilde X^\top \dfrac{\partial L}{\partial K}\\
-\dfrac{\partial L}{\partial W_V}&=\tilde X^\top \dfrac{\partial L}{\partial V}.
-\end{aligned}
+\mathrm{d}L
+=\sum_j\left(\sum_{i=1}^{n}\frac{\partial L}{\partial F_{ij}}\right)\mathrm{d}(b_2)_j.
 $$
 
-但输入是共享的，必须把三路贡献相加：
+偏置 $(b_2)_j$ 被所有 token 共享，读出的梯度沿 token 维累加：
 
 $$
-\boxed{\dfrac{\partial L}{\partial \tilde X}=\dfrac{\partial L}{\partial Q}W_Q^\top+\dfrac{\partial L}{\partial K}W_K^\top+\dfrac{\partial L}{\partial V}W_V^\top.}
+\frac{\partial L}{\partial(b_2)_j}
+=\sum_{i=1}^{n}\frac{\partial L}{\partial F_{ij}}.
 $$
 
-这就是“前向一分为三，反向三路相加”。特别要注意，Value 支路虽然绕过了 Softmax，仍然必须出现在这个总和中。
-
-> [!note]- 推导｜$Q$、$K$、$V$ 投影的参数梯度与输入贡献
-> 前向 $\tilde X=\operatorname{LayerNorm}(X)$，且 $Q=\tilde XW_Q$、$K=\tilde XW_K$、$V=\tilde XW_V$。对 $Q$ 路径，乘积微分为：
->
-> $$
-> dQ=(d\tilde X)W_Q+\tilde X(dW_Q).
-> $$
->
-> 与 FFN 线性层相同，代入迹形式并循环移位：
->
-> $$
-> \begin{aligned}
-> dL\big|_{Q\text{ 路径}}
-> &=\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial Q}\right)^\top (d\tilde X)W_Q\bigr)
-> +\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial Q}\right)^\top \tilde X(dW_Q)\bigr)\\
-> &=\operatorname{tr}\bigl(W_Q\left(\dfrac{\partial L}{\partial Q}\right)^\top  d\tilde X\bigr)
-> +\operatorname{tr}\bigl(\left(\dfrac{\partial L}{\partial Q}\right)^\top \tilde X\,dW_Q\bigr).
-> \end{aligned}
-> $$
->
-> 比较微分系数并转置，得到 $\dfrac{\partial L}{\partial W_Q}=\tilde X^\top \dfrac{\partial L}{\partial Q}$ 与 $\left.\dfrac{\partial L}{\partial \tilde X}\right|_{Q}=\dfrac{\partial L}{\partial Q}W_Q^\top$。对另外两条路径分别应用同一规则：
->
-> $$
-> \begin{aligned}
-> Q=\tilde XW_Q:&\quad \dfrac{\partial L}{\partial W_Q}=\tilde X^\top \dfrac{\partial L}{\partial Q},
-> &&\left.\dfrac{\partial L}{\partial \tilde X}\right|_{Q}=\dfrac{\partial L}{\partial Q}W_Q^\top,\\
-> K=\tilde XW_K:&\quad \dfrac{\partial L}{\partial W_K}=\tilde X^\top \dfrac{\partial L}{\partial K},
-> &&\left.\dfrac{\partial L}{\partial \tilde X}\right|_{K}=\dfrac{\partial L}{\partial K}W_K^\top,\\
-> V=\tilde XW_V:&\quad \dfrac{\partial L}{\partial W_V}=\tilde X^\top \dfrac{\partial L}{\partial V},
-> &&\left.\dfrac{\partial L}{\partial \tilde X}\right|_{V}=\dfrac{\partial L}{\partial V}W_V^\top.
-> \end{aligned}
-> $$
->
-> 前向中同一个 $\tilde X$ 被三条路径共同使用，因此反向不能任选一条，而要相加：
->
-> $$
-> \begin{aligned}
-> \dfrac{\partial L}{\partial \tilde X}
-> &=\left.\dfrac{\partial L}{\partial \tilde X}\right|_{Q}+\left.\dfrac{\partial L}{\partial \tilde X}\right|_{K}+\left.\dfrac{\partial L}{\partial \tilde X}\right|_{V}\\
-> &=\dfrac{\partial L}{\partial Q}W_Q^\top+\dfrac{\partial L}{\partial K}W_K^\top+\dfrac{\partial L}{\partial V}W_V^\top.
-> \end{aligned}
-> $$
-
-### 4.5 回到 $X$：穿过 LayerNorm，再加上直接残差
-
-三路在 $\tilde X$ 汇合后，一起穿过第一层 LayerNorm，形成 $\left.\dfrac{\partial L}{\partial X}\right|_{\text{Attn}}$。最后与本节开头暂存的直接贡献相加：
+这一推导给出后面反复使用的矩阵乘法规则：
 
 $$
 \boxed{
-\begin{aligned}
-\dfrac{\partial L}{\partial X}&=\dfrac{\partial L}{\partial Y_1}+\left.\dfrac{\partial L}{\partial X}\right|_{\text{Attn}}\\
-\left.\dfrac{\partial L}{\partial X}\right|_{\text{Attn}}&=J_{\operatorname{LayerNorm}}(X)^\top \dfrac{\partial L}{\partial \tilde X}.
-\end{aligned}
+T=UW
+\quad\Longrightarrow\quad
+\operatorname{VJP}_{(U,W)\mapsto UW}(v)
+=(vW^\top,\;U^\top v).
 }
 $$
 
-到这里，从输出 $Y$ 到输入 $X$ 的反向传播才完整结束。
+**一次 VJP 可以返回多个输入的梯度。** 参数梯度留给优化器，特征输入的梯度继续向前传播。
 
-> [!note]- 推导｜第一层 LayerNorm 与最后一次残差累加
-> 前向 $\tilde X=\operatorname{LayerNorm}(X)$，其反向把已经汇合的 $\dfrac{\partial L}{\partial \tilde X}$ 变成 Attention 支路对 $X$ 的贡献：
->
-> $$
-> \left.\dfrac{\partial L}{\partial X}\right|_{\text{Attn}}=J_{\operatorname{LayerNorm}}(X)^\top \dfrac{\partial L}{\partial \tilde X}.
-> $$
->
-> 最初的 $Y_1=X+O$ 还分出了 $\left.\dfrac{\partial L}{\partial X}\right|_{\text{direct}}=\dfrac{\partial L}{\partial Y_1}$。因此最后的总梯度为：
+### 3.3 激活与输入线性层：继续回到 $Z$
+
+前向 $H=\phi(M)$，由于激活逐元素作用：
+
+$$
+\mathrm{d}H=\phi'(M)\odot\mathrm{d}M.
+$$
+
+将它与输出梯度逐元素配对，就得到：
+
+$$
+\boxed{\frac{\partial L}{\partial M}
+=\frac{\partial L}{\partial H}\odot\phi'(M).}
+$$
+
+接着，前向 $M=ZW_1+b_1$ 与第 3.2 节结构相同，直接复用线性层规则：
+
+$$
+\begin{aligned}
+\frac{\partial L}{\partial Z}&=\frac{\partial L}{\partial M}W_1^\top,\\[4pt]
+\frac{\partial L}{\partial W_1}&=Z^\top\frac{\partial L}{\partial M},\\[4pt]
+\frac{\partial L}{\partial(b_1)_j}&=\sum_{i=1}^{n}\frac{\partial L}{\partial M_{ij}}.
+\end{aligned}
+$$
+
+### 3.4 LayerNorm 与汇合：得到完整的 $Y_1$ 梯度
+
+前向 $Z=\operatorname{LN}_2(Y_1)$。当前只有对 $Z$ 的梯度，还要穿过 LayerNorm 才能回到 $Y_1$：
+
+$$
+\left.\frac{\partial L}{\partial Y_1}\right|_{\text{FFN}}
+=\operatorname{VJP}_{\operatorname{LN}_2}\!\left(\frac{\partial L}{\partial Z}\right).
+$$
+
+这里的 LayerNorm VJP 指关于特征输入的梯度；第 5 节统一推导具体公式与仿射参数梯度。现在将这份贡献与第 3.1 节保留的直接贡献相加：
+
+$$
+\boxed{
+\frac{\partial L}{\partial Y_1}
+=\frac{\partial L}{\partial Y}
++\operatorname{VJP}_{\operatorname{LN}_2}\!\left(\frac{\partial L}{\partial Z}\right).
+}
+$$
+
+**梯度必须回到同一个变量才能相加。** $\partial L/\partial Z$ 即使与 $\partial L/\partial Y_1$ 同形状，也不能跳过 LayerNorm 直接相加。下一节使用的是这里已经汇合完整的 $\partial L/\partial Y_1$。
+
+> [!example]- 残差路径：加法处回传，共同输入处累加
+> ![[_assets/images/transformer-02-残差分流与汇合-大公式.png|900]]
+
+## 4. Attention 反向：从 $Y_1$ 回到 $X$
+
+![[_assets/images/transformer-04-Attention局部VJP.svg|900]]
+
+### 4.1 残差加法：保留直接贡献，进入 Attention
+
+前向 $Y_1=X+O$。复用加法的 VJP：
+
+$$
+\frac{\partial L}{\partial O}=\frac{\partial L}{\partial Y_1},
+\qquad
+\left.\frac{\partial L}{\partial X}\right|_{\text{direct}}
+=\frac{\partial L}{\partial Y_1}.
+$$
+
+保留对 $X$ 的直接贡献，接下来计算 Attention 分支贡献。
+
+### 4.2 加权求和：同时得到 $A$ 与 $V$ 的梯度
+
+前向 $O=AV$，微分为：
+
+$$
+\mathrm{d}O=\mathrm{d}A\,V+A\,\mathrm{d}V.
+$$
+
+与第 3.2 节一样，将微分代入 trace 并整理：
+
+$$
+\mathrm{d}L
+=\operatorname{tr}\!\left[\left(\frac{\partial L}{\partial O}V^\top\right)^\top\mathrm{d}A\right]
++\operatorname{tr}\!\left[\left(A^\top\frac{\partial L}{\partial O}\right)^\top\mathrm{d}V\right].
+$$
+
+因此：
+
+$$
+\boxed{
+\frac{\partial L}{\partial A}=\frac{\partial L}{\partial O}V^\top,
+\qquad
+\frac{\partial L}{\partial V}=A^\top\frac{\partial L}{\partial O}.
+}
+$$
+
+**这次分叉不是复制梯度，而是矩阵乘法的 VJP 返回分别对应两个输入的结果。** 对 $V$ 的梯度直接进入 Value 投影；下面先沿 $A$ 路径继续。Value 路径不经过 Softmax 或 Query–Key 点积。
+
+### 4.3 Softmax：从整行权重的梯度回到打分
+
+前向 $A=\operatorname{softmax}(S)$，按行计算。为清楚展示微分，取任意一行，将其写成列向量 $a=\operatorname{softmax}(s)$。由 $a_j=e^{s_j}/\sum_k e^{s_k}$ 可得：
+
+$$
+\mathrm{d}a_j
+=a_j\left(\mathrm{d}s_j-\sum_k a_k\,\mathrm{d}s_k\right),
+$$
+
+即：
+
+$$
+\mathrm{d}a=a\odot\mathrm{d}s-a(a^\top\mathrm{d}s).
+$$
+
+将输出梯度与微分配对，整理出 $\mathrm{d}s$：
+
+$$
+\begin{aligned}
+\mathrm{d}L
+&=\left(\frac{\partial L}{\partial a}\right)^\top\mathrm{d}a\\[4pt]
+&=\left[
+ a\odot\frac{\partial L}{\partial a}
+-a\left(a^\top\frac{\partial L}{\partial a}\right)
+\right]^\top\mathrm{d}s.
+\end{aligned}
+$$
+
+因此，恢复为矩阵逐行计算的公式是：
+
+$$
+\boxed{
+\frac{\partial L}{\partial S_{ij}}
+=A_{ij}\left(
+\frac{\partial L}{\partial A_{ij}}
+-\sum_{k=1}^{n}A_{ik}\frac{\partial L}{\partial A_{ik}}
+\right).
+}
+$$
+
+**一个打分影响整行权重，所以要减去整行梯度的加权和。** 实现只需逐行求和与逐元素运算。这就是 $J_{\operatorname{softmax}}^\top v$ 的化简结果，和矩阵乘法一样属于局部 VJP。
+
+> [!note]- 一个自检性质
+> 每行 $\partial L/\partial S$ 的元素之和为零。因为给一行全部打分加上相同常数，不会改变 Softmax 输出。
+
+### 4.4 缩放与点积：回到 $Q$ 与 $K$
+
+前向 $S=R/\sqrt{d_k}$，维度 $d_k$ 固定，因此：
+
+$$
+\mathrm{d}S=\frac{\mathrm{d}R}{\sqrt{d_k}},
+\qquad
+\boxed{\frac{\partial L}{\partial R}
+=\frac{1}{\sqrt{d_k}}\frac{\partial L}{\partial S}.}
+$$
+
+接着，前向 $R=QK^\top$，微分为：
+
+$$
+\mathrm{d}R=\mathrm{d}Q\,K^\top+Q\,\mathrm{d}K^\top.
+$$
+
+对 Query 的项，循环移动 $K^\top$；对 Key 的项，用第 2.3 节处理输入转置的规则：
+
+$$
+\begin{aligned}
+\operatorname{tr}\!\left[\left(\frac{\partial L}{\partial R}\right)^\top\mathrm{d}Q\,K^\top\right]
+&=\operatorname{tr}\!\left[\left(\frac{\partial L}{\partial R}K\right)^\top\mathrm{d}Q\right],\\[6pt]
+\operatorname{tr}\!\left[\left(\frac{\partial L}{\partial R}\right)^\top Q\,\mathrm{d}K^\top\right]
+&=\operatorname{tr}\!\left[\left(\left(\frac{\partial L}{\partial R}\right)^\top Q\right)^\top\mathrm{d}K\right].
+\end{aligned}
+$$
+
+读出：
+
+$$
+\boxed{
+\frac{\partial L}{\partial Q}=\frac{\partial L}{\partial R}K,
+\qquad
+\frac{\partial L}{\partial K}=\left(\frac{\partial L}{\partial R}\right)^\top Q.
+}
+$$
+
+加上第 4.2 节保留的 Value 梯度，现在三个投影的输出梯度都已得到。
+
+### 4.5 投影、LayerNorm 与残差：完成两次汇合
+
+前向 $Q=\tilde XW_Q$、$K=\tilde XW_K$、$V=\tilde XW_V$。各自使用线性层的 VJP，向共同输入 $\tilde X$ 返回一份贡献：
+
+$$
+\left.\frac{\partial L}{\partial\tilde X}\right|_Q
+=\frac{\partial L}{\partial Q}W_Q^\top,
+\quad
+\left.\frac{\partial L}{\partial\tilde X}\right|_K
+=\frac{\partial L}{\partial K}W_K^\top,
+\quad
+\left.\frac{\partial L}{\partial\tilde X}\right|_V
+=\frac{\partial L}{\partial V}W_V^\top.
+$$
+
+**第一次汇合：在 $\tilde X$ 处累加三个投影的贡献。**
+
+$$
+\boxed{
+\frac{\partial L}{\partial\tilde X}
+=\frac{\partial L}{\partial Q}W_Q^\top
++\frac{\partial L}{\partial K}W_K^\top
++\frac{\partial L}{\partial V}W_V^\top.
+}
+$$
+
+各权重的梯度分别为：
+
+$$
+\frac{\partial L}{\partial W_Q}=\tilde X^\top\frac{\partial L}{\partial Q},
+\qquad
+\frac{\partial L}{\partial W_K}=\tilde X^\top\frac{\partial L}{\partial K},
+\qquad
+\frac{\partial L}{\partial W_V}=\tilde X^\top\frac{\partial L}{\partial V}.
+$$
+
+前向 $\tilde X=\operatorname{LN}_1(X)$，因此 Attention 分支继续返回：
+
+$$
+\left.\frac{\partial L}{\partial X}\right|_{\text{Attn}}
+=\operatorname{VJP}_{\operatorname{LN}_1}\!\left(\frac{\partial L}{\partial\tilde X}\right).
+$$
+
+**第二次汇合：在 $X$ 处加上第 4.1 节保留的残差贡献。**
+
+$$
+\boxed{
+\frac{\partial L}{\partial X}
+=\frac{\partial L}{\partial Y_1}
++\operatorname{VJP}_{\operatorname{LN}_1}\!\left(\frac{\partial L}{\partial\tilde X}\right).
+}
+$$
+
+到这里，整个 Block 的输入梯度已计算完整。
+
+### 4.6 如果 Attention 还有输出投影
+
+含输出投影时，前向将 $Y_1=X+O$ 换成：
+
+$$
+O_{\text{proj}}=OW_O,
+\qquad Y_1=X+O_{\text{proj}}.
+$$
+
+反向将第 4.1 节的 Attention 分支入口改为 $O_{\text{proj}}$，再经过一次线性层 VJP；此时 $\partial L/\partial O$ 由下面的第二式计算：
+
+$$
+\begin{aligned}
+\frac{\partial L}{\partial O_{\text{proj}}}&=\frac{\partial L}{\partial Y_1},\\[4pt]
+\frac{\partial L}{\partial O}&=\frac{\partial L}{\partial O_{\text{proj}}}W_O^\top,\\[4pt]
+\frac{\partial L}{\partial W_O}&=O^\top\frac{\partial L}{\partial O_{\text{proj}}}.
+\end{aligned}
+$$
+
+随后从第 4.2 节继续。此时可取 $V,O\in\mathbb{R}^{n\times d_v}$，并相应令 $W_V\in\mathbb{R}^{d\times d_v}$、$W_O\in\mathbb{R}^{d_v\times d}$，由输出投影保证残差两端同形状。残差直接贡献仍是 $\partial L/\partial Y_1$。
+
+## 5. 补全 LayerNorm 的局部 VJP
+
+前面两次用到 LayerNorm，现在统一给出它的具体公式。**每次只在当前 token 的特征维内计算，且两层分别使用自己的输入统计量与参数。**
+
+取一个 token 的特征为列向量 $x\in\mathbb{R}^{d}$，局部前向为：
+
+$$
+\begin{aligned}
+\mu&=\frac{1}{d}\sum_{j=1}^{d}x_j,
+\qquad \sigma^2=\frac{1}{d}\sum_{j=1}^{d}(x_j-\mu)^2,\\[4pt]
+\hat x&=\frac{x-\mu\mathbf 1}{\sqrt{\sigma^2+\epsilon}},
+\qquad z=\gamma\odot\hat x+\beta.
+\end{aligned}
+$$
+
+$\epsilon>0$ 固定，$\gamma,\beta\in\mathbb{R}^{d}$ 是仿射参数。先穿过仿射变换：
+
+$$
+\frac{\partial L}{\partial\hat x}
+=\frac{\partial L}{\partial z}\odot\gamma.
+$$
+
+再穿过标准化，得到：
+
+$$
+\boxed{
+\frac{\partial L}{\partial x}
+=\frac{1}{\sqrt{\sigma^2+\epsilon}}
+\left[
+\frac{\partial L}{\partial\hat x}
+-\operatorname{mean}\!\left(\frac{\partial L}{\partial\hat x}\right)\mathbf 1
+-\hat x\,\operatorname{mean}\!\left(\hat x\odot\frac{\partial L}{\partial\hat x}\right)
+\right].
+}
+$$
+
+$\operatorname{mean}$ 只对当前 token 的 $d$ 个特征求平均。括号内三项依次对应：直接改变分子的影响、均值变化的修正、方差变化的修正。
+
+> [!note]- 从微分读出 LayerNorm 的 VJP
+> 固定仿射参数，标准化部分的微分为：
 >
 > $$
 > \begin{aligned}
-> \dfrac{\partial L}{\partial X}
-> &=\left.\dfrac{\partial L}{\partial X}\right|_{\text{direct}}+\left.\dfrac{\partial L}{\partial X}\right|_{\text{Attn}}\\
-> &=\dfrac{\partial L}{\partial Y_1}+\left.\dfrac{\partial L}{\partial X}\right|_{\text{Attn}}\\
-> &=\dfrac{\partial L}{\partial Y_1}+J_{\operatorname{LayerNorm}}(X)^\top
-> \bigl(\dfrac{\partial L}{\partial Q}W_Q^\top+\dfrac{\partial L}{\partial K}W_K^\top+\dfrac{\partial L}{\partial V}W_V^\top\bigr).
+> \mathrm{d}\mu&=\frac{1}{d}\mathbf 1^\top\mathrm{d}x,\\[4pt]
+> \mathrm{d}\sigma^2&=\frac{2}{d}(x-\mu\mathbf 1)^\top\mathrm{d}x,\\[4pt]
+> \mathrm{d}\hat x
+> &=\frac{1}{\sqrt{\sigma^2+\epsilon}}
+> \left[\mathrm{d}x-\frac{\mathbf 1^\top\mathrm{d}x}{d}\mathbf 1
+> -\hat x\frac{\hat x^\top\mathrm{d}x}{d}\right].
 > \end{aligned}
 > $$
 >
-> 这一步之后，本文简化 Block 的输入梯度计算才结束。
+> 代入 $\mathrm{d}L=(\partial L/\partial\hat x)^\top\mathrm{d}\hat x$，将所有项整理成关于 $\mathrm{d}x$ 的内积：
+>
+> $$
+> \mathrm{d}L
+> =\left\{\frac{1}{\sqrt{\sigma^2+\epsilon}}
+> \left[
+> \frac{\partial L}{\partial\hat x}
+> -\frac{\mathbf 1^\top(\partial L/\partial\hat x)}{d}\mathbf 1
+> -\hat x\frac{\hat x^\top(\partial L/\partial\hat x)}{d}
+> \right]\right\}^\top\mathrm{d}x.
+> $$
+>
+> 读出大括号中的向量，就是正文的输入梯度。这里仍然没有构造 Jacobian。
 
-## 5. 回看整条反向链
+最后，仿射参数被各 token 共享。恢复 token 索引 $i$ 后：
 
-整个过程可以按三个层次理解：**局部算子决定梯度如何变换，分支依赖决定梯度去往哪里，共享输入决定梯度在哪里累加。** FFN 主要是一条连续主链；Attention 则先分出 Value 路径，再从打分路径分出 Query 和 Key，最后重新汇合。
+$$
+\frac{\partial L}{\partial\gamma_j}
+=\sum_{i=1}^{n}\frac{\partial L}{\partial z_{ij}}\hat x_{ij},
+\qquad
+\frac{\partial L}{\partial\beta_j}
+=\sum_{i=1}^{n}\frac{\partial L}{\partial z_{ij}}.
+$$
 
-检查推导时，最重要的不是孤立记住某个转置，而是确认以下几次累加都没有遗漏：
+## 6. 回看计算图：局部回传与路径累加
 
-- 在 $Y_1$：直接残差贡献与 FFN 支路贡献相加。
-- 在 $\tilde X$：$Q$、$K$、$V$ 三条投影路径的输入贡献相加。
-- 在 $X$：直接残差贡献与 Attention 支路贡献相加。
+整篇推导只用了两种动作：
 
-参数梯度在经过相应线性层时分别产生，不参与这些输入节点的累加。掌握这条组织逻辑后，矩阵微分、迹的循环变换和 Jacobian 链式法则就都落在了明确的计算位置上。
+- **算子内部做 VJP：** 由输出梯度计算各输入梯度。加法返回 $(v,v)$，矩阵乘法返回 $(vW^\top,U^\top v)$，Softmax 和 LayerNorm 使用各自的化简公式。
+- **共同变量处做累加：** 将这个变量经不同使用路径得到的贡献相加，得到它的总梯度，再继续向前传播。
 
-> [!example]- 原始计算图参考
-> ![[_assets/images/transformer-01-计算图与反向传播.png|900]]
+主线中，特征梯度有三处关键汇合：
+
+| 共同变量 | 需要相加的贡献 |
+| --- | --- |
+| $Y_1$ | FFN 分支经过 $\operatorname{LN}_2$ 的贡献，加残差直接贡献 |
+| $\tilde X$ | Query、Key、Value 三个投影的贡献 |
+| $X$ | Attention 分支经过 $\operatorname{LN}_1$ 的贡献，加残差直接贡献 |
+
+固定分支参数，将完整分支记为 $f$，残差子层 $U\mapsto U+f(U)$ 的整体 VJP 为：
+
+$$
+\boxed{\operatorname{VJP}_{U\mapsto U+f(U)}(v)
+=v+\operatorname{VJP}_f(v).}
+$$
+
+分支内部的“大 VJP”由前面逐步推导的局部 VJP 组合而成。显式写成 $J^\top v$，或化简为矩阵乘法、求和与逐元素运算，表达的都是同一个输出梯度到输入梯度的映射。

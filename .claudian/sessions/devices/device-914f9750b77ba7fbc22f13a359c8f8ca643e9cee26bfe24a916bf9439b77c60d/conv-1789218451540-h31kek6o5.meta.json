@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789218451540-h31kek6o5",
+  "providerId": "codex",
+  "title": "根据这个文章的内容组织写一篇BLIP2的md文档",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789218451551,
+  "lastActivityAt": 1789219390809,
+  "sessionId": "01a095ba-f27a-7661-9b43-43823fb3f7f2",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a095ba-f27a-7661-9b43-43823fb3f7f2",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T21-07-32-01a095ba-f27a-7661-9b43-43823fb3f7f2.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/BLIP：从图文对齐到理解、生成与数据自举.md",
+  "usage": {
+    "inputTokens": 119652,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 117376,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 119652,
+    "percentage": 14,
+    "model": "gpt-6-astra"
+  }
+}

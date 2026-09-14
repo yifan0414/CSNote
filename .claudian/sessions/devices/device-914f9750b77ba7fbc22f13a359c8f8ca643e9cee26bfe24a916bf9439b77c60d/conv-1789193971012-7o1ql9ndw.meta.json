@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789193971012-7o1ql9ndw",
+  "providerId": "codex",
+  "title": "可以把这三个量理解成决定“模型最后学会看什么”的三根主轴：",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789193971030,
+  "lastActivityAt": 1789194944634,
+  "sessionId": "01a09445-65c3-7791-9e49-99c9115b4439",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09445-65c3-7791-9e49-99c9115b4439",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T14-19-31-01a09445-65c3-7791-9e49-99c9115b4439.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
+  "usage": {
+    "inputTokens": 93502,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 91776,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 93502,
+    "percentage": 11,
+    "model": "gpt-6-astra"
+  }
+}

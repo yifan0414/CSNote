@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789203268354-h70nimlmj",
+  "providerId": "codex",
+  "title": "$drawio:drawio 使用draw给这个笔记画一个框架图，然后导出为svg插入到开头",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789203268366,
+  "lastActivityAt": 1789205970789,
+  "sessionId": "01a094d3-4375-7b82-b89f-35ddbf1a3e75",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a094d3-4375-7b82-b89f-35ddbf1a3e75",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T16-54-28-01a094d3-4375-7b82-b89f-35ddbf1a3e75.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
+  "usage": {
+    "inputTokens": 169913,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 169216,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 169913,
+    "percentage": 21,
+    "model": "gpt-6-astra"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789288011570-5m4iw6yob",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789288011647-ophrlsm",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789288011564-i5f4zhr",
+      "timestamp": 1789288011564,
+      "rawDisplayText": "你把这个文章的符号表示变成 @06-LLM/03-Transformer/transformer计算图与反向传播.md 中的，内容不要动",
+      "canonicalText": "你把这个文章的符号表示变成 @06-LLM/03-Transformer/transformer计算图与反向传播.md 中的，内容不要动",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/transformer-VJP.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "c90dd664f3d6797943090a2d9f04218a8764cdd732276c00a7cb8ac74c28cb5f",
+      "providerAssistantMessageId": "35851015",
+      "providerUserMessageId": "fc8baa39"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789288257288-n6sa0f2",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789288257278-v76l3cj",
+      "timestamp": 1789288257278,
+      "rawDisplayText": "你把VJP latex使用蓝色颜色",
+      "canonicalText": "你把VJP latex使用蓝色颜色",
+      "images": [],
+      "contentDigest": "497a797045c0853f85695b7055db2f25f96118022e1176b8fd2aa93b0856f0c0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789288274238-u88kgg3",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789288274237-i5xppad",
+      "timestamp": 1789288274237,
+      "rawDisplayText": "你把是VJP的部分用蓝色标明",
+      "canonicalText": "你把是VJP的部分用蓝色标明",
+      "images": [],
+      "contentDigest": "a695602e68a82f6f42cd2f217d96e625f68ea60c485e6fee50cabae5affbaee8",
+      "providerAssistantMessageId": "95f82eb7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789288366697-73y2g8t",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789288366689-v1yo3a2",
+      "timestamp": 1789288366689,
+      "rawDisplayText": "局部VJP也要变蓝",
+      "canonicalText": "局部VJP也要变蓝",
+      "images": [],
+      "contentDigest": "4d4ad9f05b167f2ca8657d7c3f21439b439a04963d4ab7e56381762f6cd3b785",
+      "providerAssistantMessageId": "de8620f5"
+    }
+  ]
+}

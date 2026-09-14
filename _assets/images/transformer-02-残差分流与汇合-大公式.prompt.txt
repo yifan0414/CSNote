@@ -1,0 +1,29 @@
+Mode: built-in image_gen
+
+Use case: scientific-educational.
+Regenerate the referenced Chinese educational residual-backpropagation diagram to match the revised lesson. The reference is STYLE ONLY: clean white background, restrained navy headings, red direct branch, blue FFN branch, purple total gradient, rounded rectangular boxes and thin clear arrows, large serif typeset math. Replace its generic U/f(U)/Jacobian content completely with the following specific Y_1, F, Y lesson. This is a polished high-resolution bitmap for an Obsidian note displayed at 900px wide, so minimize prose and make all equations very large and readable. Landscape-to-near-square canvas around 1800x1500, ample whitespace, no overlap. Chinese text must be exact, mathematical fractions stacked like LaTeX, not slash fractions. No G gradient abbreviations, no Jacobian J, no I matrix.
+
+TITLE: “残差反向传播：分流、回传、汇合”
+SUBTITLE: “直接路径的贡献 ≠ 最终总梯度”
+
+LAYOUT: top compact forward overview spanning width; below a large reverse-flow diagram occupying most of canvas; bottom wide final equation box.
+TOP FORWARD OVERVIEW title “前向：同一个 Y₁ 有两条路径”
+Draw a real directed graph left to right: source node Y_1 on left; blue main path from source through node “LN” then node “FFN” then node F then into a circular + node near right; + node to output node Y. A separate red bypass arrow starts at SAME source Y_1, goes above LN/FFN/F and into SAME + node. Red label “直接路径”; blue label “FFN 路径”. Under this overview typeset F = FFN(LN(Y_1)) and Y = Y_1 + F on separate spaced parts. Do not use arrow from F back into LN in forward panel.
+
+MAIN PANEL title “反向：先原样传回，再分别传播”
+At top center a purple upstream box label “已知输出梯度” and large ∂L/∂Y.
+Two outgoing arrows from this upstream box: red arrow to left branch box; blue arrow to right branch box. Place a short shared annotation between them: “加法节点：两份都原样传回，不是各分一半”.
+LEFT BOX light red label “① 直接贡献：先记下” and large equation \left.\frac{\partial L}{\partial Y_1}\right|_{\mathrm{direct}}=\frac{\partial L}{\partial Y}.
+Small note inside below “这还不是总梯度”.
+RIGHT BOX light blue label “① 传到 F” and large equation \frac{\partial L}{\partial F}=\frac{\partial L}{\partial Y}.
+From RIGHT box ONLY, arrow downward to second BLUE box labeled “② 继续穿过 FFN 和 LN”. In this second box show reverse dependency sequence F → H → M → Z → Y_1. Caption “每经过一层，应用链式法则”. Under that, show large resulting branch contribution \left.\frac{\partial L}{\partial Y_1}\right|_{\mathrm{FFN}}. This second blue box represents the completed branch including LayerNorm, not just FFN.
+LEFT direct box has a red bypass arrow that stays outside all blue boxes and runs down to bottom final purple box. The completed BLUE contribution box has a blue downward arrow into that SAME bottom purple box. Both arrows must point INTO final total. Never connect red direct contribution through LN/FFN.
+BOTTOM PURPLE BOX title “③ 在 Y₁ 处汇合：两路相加才是总梯度”. Large centered equation on two aligned lines:
+\frac{\partial L}{\partial Y_1}
+= \left.\frac{\partial L}{\partial Y_1}\right|_{\mathrm{direct}}
++ \left.\frac{\partial L}{\partial Y_1}\right|_{\mathrm{FFN}}
+= \frac{\partial L}{\partial Y}
++ \left.\frac{\partial L}{\partial Y_1}\right|_{\mathrm{FFN}}.
+Use proper two lines, align equals signs. Full ∂L/∂Y_1 on first line only, second line begins =. Both branch terms need explicit vertical restriction bar with subscript direct or FFN.
+FOOTNOTE below final box: “相等的是加法节点传回的梯度，不是 F、Y₁、Y 的数值。”
+Keep text concise exactly as specified, no decorative illustration, no watermarks, ensure every arrow and label is mathematically consistent. Clear hierarchy and generous spacing are more important than matching old layout.

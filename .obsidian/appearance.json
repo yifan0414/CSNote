@@ -23,7 +23,8 @@
     "maple-basic-linked-colors",
     "font",
     "code",
-    "properties-transparent-hover"
+    "properties-transparent-hover",
+    "maple-macos-sidebar-fix"
   ],
   "textFontFamily": "Georgia,Source Han Serif SC VF,Songti SC,LXGW WenKai,苹方-简,Open Sans,STSong,Maple Mono NF CN,Bookerly",
   "interfaceFontFamily": "Georgia,Source Han Serif SC VF,Maple Mono NF CN,Open Sans,苹方-简,Inter,Bookerly",

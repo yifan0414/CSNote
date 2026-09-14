@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789213847848-ua0gtmlay",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789213848013-hij3wbe",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789213847840-3zp6cph",
+      "timestamp": 1789213847840,
+      "rawDisplayText": "我觉得本文比 @07-MultiModal/Video-MLLM/03-自监督表征学习-监督信号从哪里来.md 写的好，你觉得呢",
+      "canonicalText": "我觉得本文比 @07-MultiModal/Video-MLLM/03-自监督表征学习-监督信号从哪里来.md 写的好，你觉得呢",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/03-监督信号.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "45d13e6a9113497e5fba8fad0f6a0808f042c035b5cca3058f8f394fad6a46cd",
+      "providerUserMessageId": "01a09574-b482-7d82-8a6a-5afa68ce6452",
+      "providerAssistantMessageId": "msg_0f1b4573159cee2a016aa53d3f48c487d0b0366b878c1a7b07"
+    }
+  ]
+}

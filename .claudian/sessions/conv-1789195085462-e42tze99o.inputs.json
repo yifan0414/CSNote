@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789195085462-e42tze99o",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789195085502-hpkpiw8",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789195085459-ddkxy8y",
+      "timestamp": 1789195085459,
+      "rawDisplayText": "按照这个文章的组织内容给我新建一个BLIP的文档",
+      "canonicalText": "按照这个文章的组织内容给我新建一个BLIP的文档",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "04174f151f96e02544f3b87968ee89826c20d7e5cb016e927aa62032b69f2438",
+      "providerUserMessageId": "01a09456-68c1-7c42-81d4-3c0eab08bf7f",
+      "providerAssistantMessageId": "msg_06dc26c816147c43016aa4f718b29c87d088525adf615f7a51"
+    }
+  ]
+}

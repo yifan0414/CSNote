@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789288011570-5m4iw6yob",
+  "providerId": "pi",
+  "title": "你把这个文章的符号表示变成 @06-LLM/03-Transformer/transformer计算...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789288011576,
+  "lastActivityAt": 1789288382151,
+  "sessionId": "01a099e0-5826-74ae-8be5-91affe0a3043",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-13T08-26-51-814Z_01a099e0-5826-74ae-8be5-91affe0a3043.jsonl",
+    "sessionId": "01a099e0-5826-74ae-8be5-91affe0a3043"
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/transformer-VJP.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 60552,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 60552,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 6
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789281962008-xwpuplenc",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789281962069-ggw97br",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789281962006-ijzsl3p",
+      "timestamp": 1789281962006,
+      "rawDisplayText": "你审阅下这个文档，逻辑是否清晰易懂",
+      "canonicalText": "你审阅下这个文档，逻辑是否清晰易懂",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "344be67583d4c56f6e87ed57eb4582ae5e8f85fd3f8b88bd672d951ace6cf4ce",
+      "providerAssistantMessageId": "b6f286b4",
+      "providerUserMessageId": "6b976d01"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789282167709-kmzfloq",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789282167702-20bb2ia",
+      "timestamp": 1789282167702,
+      "rawDisplayText": "你帮我重构下，不要大改内容，主要是重构位置和呈现方式，不要有免责声明，这是笔记不是论文，保留gpt-2-01-language-model-zero-shot.drawio.svg",
+      "canonicalText": "你帮我重构下，不要大改内容，主要是重构位置和呈现方式，不要有免责声明，这是笔记不是论文，保留gpt-2-01-language-model-zero-shot.drawio.svg",
+      "images": [],
+      "contentDigest": "61daf879a88dc31d57fdd7d2983ab3105fe8afc267a56c19e8d7dfdddf054eca",
+      "providerUserMessageId": "b7ba11a4",
+      "providerAssistantMessageId": "bc794276"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789282490424-clzu2cv",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789282490420-cpu484x",
+      "timestamp": 1789282490420,
+      "rawDisplayText": "那你现在审校下 @06-LLM/03-Transformer/GPT-1：从生成式预训练到语言理解微调.md",
+      "canonicalText": "那你现在审校下 @06-LLM/03-Transformer/GPT-1：从生成式预训练到语言理解微调.md",
+      "images": [],
+      "contentDigest": "522230ea4897b119e9192a973dde93ace711cbfcf37f1acb37b61c92d4f0d8cc",
+      "providerAssistantMessageId": "7ff7c804"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789282931507-jkz69je",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789282931497-qyy7p7r",
+      "timestamp": 1789282931497,
+      "rawDisplayText": "你帮我重构下吧",
+      "canonicalText": "你帮我重构下吧",
+      "images": [],
+      "contentDigest": "2fb30abd58798123dc336c88f3b5f552b6f992273848d21ea8ae3a92daae85b7",
+      "providerAssistantMessageId": "f15fe0b9"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789283998539-v0ncm1s",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1789283998529-d1h9v48",
+      "timestamp": 1789283998529,
+      "rawDisplayText": "梯度不要这样写，写成偏导数形式",
+      "canonicalText": "梯度不要这样写，写成偏导数形式",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md",
+          "mode": "selection",
+          "selectedText": "先把分支合写成 ，则：\n\n \n这里  表示 Jacobian， 是恒等矩阵。令  为从上层传来的梯度。本文统一把梯度写成列向量，因此反向传播的 VJP 写成 ；若采用行向量记法，同一运算写成 。\n\n \n \n沿恒等主干直接传回\n  \n \n \n经过分支后传回\n \n \n这正是残差加法的反向规则：\n\n上游梯度到达加号，分别传给主干输入和分支输出。\n主干是恒等映射，所以原样收到 。\n分支先经过  的反向，再经过 LN 的反向，最后在共同输入  处与主干梯度相加：\n“梯度高速公路”指的就是第一项：它不必先经过 Attention、FFN 或这一子层的 LN，便能到达前一层。 关键不是 LN 的导数变得完美了，而是梯度不再只有穿过这些变换这一条路。",
+          "lineCount": 20
+        }
+      },
+      "images": [],
+      "contentDigest": "575c89779a8ec5cbb9dc42f9f20ebb810c64884654d612d5fc9f3d6a87670332",
+      "providerAssistantMessageId": "89e1e1f0"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789284243819-lkyt2hp",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1789284243808-vryd3vz",
+      "timestamp": 1789284243808,
+      "rawDisplayText": "按照列向量形式给出，这应该是比较常见的吧",
+      "canonicalText": "按照列向量形式给出，这应该是比较常见的吧",
+      "images": [],
+      "contentDigest": "99c3e0aaf7da4a0a3bd73084bf311b73469d43a4fb170cb51520f20f03932fea",
+      "providerAssistantMessageId": "e84b089b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789284285432-923d4rb",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1789284285428-ohn4vm8",
+      "timestamp": 1789284285428,
+      "rawDisplayText": "参数更新处仍用 （只在隐藏层之间用偏导）",
+      "canonicalText": "参数更新处仍用 （只在隐藏层之间用偏导）",
+      "images": [],
+      "contentDigest": "788edb3219600c4080d4029292d75074678d02771b879dba5414429e64599ab6",
+      "providerAssistantMessageId": "a90bb4cf"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789284372049-86f4aij",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1789284372002-ga9epkz",
+      "timestamp": 1789284372002,
+      "rawDisplayText": "3. Transformer 中最简单的例子：线性层\n假设：\n\\[\nY=XW.\n\\]如果逐元素写：\n\\[\nY_{ij}\n=\n\\sum_k X_{ik}W_{kj}.\n\\]现在后面传来：\n\\[\nG_Y\n=\n\\frac{\\partial\\mathcal L}{\\partial Y}.\n\\]我们来看某个 \\(X_{ab}\\)。\n链式法则：\n\\[\n\\frac{\\partial\\mathcal L}{\\partial X_{ab}}\n=\n\\sum_{i,j}\n\\frac{\\partial\\mathcal L}{\\partial Y_{ij}}\n\\frac{\\partial Y_{ij}}{\\partial X_{ab}}.\n\\]由于：\n\\[\nY_{ij}=\\sum_kX_{ik}W_{kj},\n\\]有：\n\\[\n\\frac{\\partial Y_{ij}}{\\partial X_{ab}}\n=\n\\begin{cases}\nW_{bj}, & i=a\\\\\n0,&i\\neq a\n\\end{cases}\n\\]所以：\n\\[\n\\frac{\\partial\\mathcal L}{\\partial X_{ab}}\n=\n\\sum_j\n\\frac{\\partial\\mathcal L}{\\partial Y_{aj}}\nW_{bj}.\n\\]\n\n我之前是这样写的",
+      "canonicalText": "3. Transformer 中最简单的例子：线性层\n假设：\n\\[\nY=XW.\n\\]如果逐元素写：\n\\[\nY_{ij}\n=\n\\sum_k X_{ik}W_{kj}.\n\\]现在后面传来：\n\\[\nG_Y\n=\n\\frac{\\partial\\mathcal L}{\\partial Y}.\n\\]我们来看某个 \\(X_{ab}\\)。\n链式法则：\n\\[\n\\frac{\\partial\\mathcal L}{\\partial X_{ab}}\n=\n\\sum_{i,j}\n\\frac{\\partial\\mathcal L}{\\partial Y_{ij}}\n\\frac{\\partial Y_{ij}}{\\partial X_{ab}}.\n\\]由于：\n\\[\nY_{ij}=\\sum_kX_{ik}W_{kj},\n\\]有：\n\\[\n\\frac{\\partial Y_{ij}}{\\partial X_{ab}}\n=\n\\begin{cases}\nW_{bj}, & i=a\\\\\n0,&i\\neq a\n\\end{cases}\n\\]所以：\n\\[\n\\frac{\\partial\\mathcal L}{\\partial X_{ab}}\n=\n\\sum_j\n\\frac{\\partial\\mathcal L}{\\partial Y_{aj}}\nW_{bj}.\n\\]\n\n我之前是这样写的",
+      "images": [],
+      "contentDigest": "b87c1768c2f323fbf27e152c68af3dcba25c2a2122a209b8f2807946d94c8255",
+      "providerAssistantMessageId": "f2ee5036"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789284437044-9gln9y9",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1789284437034-slpv8x5",
+      "timestamp": 1789284437034,
+      "rawDisplayText": "我的意思是符号能不能改成这样",
+      "canonicalText": "我的意思是符号能不能改成这样",
+      "images": [],
+      "contentDigest": "bb955b4149df2a8e6a21f5ebb3006af0c4e59aef897ee7ec7f1d8549fe22a266",
+      "providerAssistantMessageId": "a37974ff"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789284537785-05hmp5t",
+      "userTurnOrdinal": 10,
+      "state": "accepted",
+      "localMessageId": "msg-1789284537775-8d2dr9h",
+      "timestamp": 1789284537775,
+      "rawDisplayText": "我不是说让你逐元素 ，我的意思是符号符号符号！！！",
+      "canonicalText": "我不是说让你逐元素 ，我的意思是符号符号符号！！！",
+      "images": [],
+      "contentDigest": "2d838883e9f6832754b912190b5b419b99670ad47a927773f15ae522ca7503d5",
+      "providerAssistantMessageId": "80bfcd55"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789284625197-tv7lkvs",
+      "userTurnOrdinal": 11,
+      "state": "accepted",
+      "localMessageId": "msg-1789284625184-1ticfku",
+      "timestamp": 1789284625184,
+      "rawDisplayText": "我的意思是按照Transformer的管理，不是对X求导吗，为什么这里是r",
+      "canonicalText": "我的意思是按照Transformer的管理，不是对X求导吗，为什么这里是r",
+      "images": [],
+      "contentDigest": "7d43bee3c9f92a7aba6db3ad627c7dae9022977d354aa0dddbf3fe7f93eafe17",
+      "providerAssistantMessageId": "e259e021"
+    }
+  ]
+}

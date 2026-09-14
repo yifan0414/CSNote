@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789118797936-lpp8ogqh4",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789118798009-17i7d0d",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789118797931-210dene",
+      "timestamp": 1789118797931,
+      "rawDisplayText": "/skill:drawio 使用drawio帮我画一个这个文档的流程图，然后导出为svg插入到正文中",
+      "canonicalText": "/skill:drawio 使用drawio帮我画一个这个文档的流程图，然后导出为svg插入到正文中",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/从 Seq2Seq 到 Attention 再到 Transformer.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "73af1289161445e1cab878881ccfd99e676c6f7f5a6e5008c98072a60591e84e",
+      "providerAssistantMessageId": "ae748950",
+      "providerUserMessageId": "9c8a1dda"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789119114077-7o0qugc",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789119114069-c7z9pss",
+      "timestamp": 1789119114069,
+      "rawDisplayText": "你数学公式要正确渲染啊",
+      "canonicalText": "你数学公式要正确渲染啊",
+      "images": [],
+      "contentDigest": "af402dd97ffd73532b9f658cf02526cde58883397715bc5b9fa9ff4df2e39f79",
+      "providerAssistantMessageId": "33f3016f",
+      "providerUserMessageId": "ff01ff87"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789119304584-pr3tq78",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789119304574-y1s2llz",
+      "timestamp": 1789119304574,
+      "rawDisplayText": "你写到AGENTS.md中，使用drawio生成图时，公式要使用LaTeX格式",
+      "canonicalText": "你写到AGENTS.md中，使用drawio生成图时，公式要使用LaTeX格式",
+      "images": [],
+      "contentDigest": "fc00d70942c410bc3a19ea294a4a9168f3fb6bda7fe8c1f4f267ae2e760c8d76",
+      "providerAssistantMessageId": "69318c58",
+      "providerUserMessageId": "aea7052f"
+    }
+  ]
+}

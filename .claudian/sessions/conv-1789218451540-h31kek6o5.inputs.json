@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789218451540-h31kek6o5",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789218451686-n9jxwgx",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789218451533-gku630z",
+      "timestamp": 1789218451533,
+      "rawDisplayText": "根据这个文章的内容组织写一篇BLIP2的md文档",
+      "canonicalText": "根据这个文章的内容组织写一篇BLIP2的md文档",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/BLIP：从图文对齐到理解、生成与数据自举.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "1a553af7a6a5b54c4ab80ecfa406d8e4e090fa49cba1abd25bf8264da97ffac1",
+      "providerUserMessageId": "01a095bb-3242-7e60-8e33-351350bd97cd",
+      "providerAssistantMessageId": "msg_0f9016a9fecb0132016aa5523840b887d09fd48180d71330d8"
+    }
+  ]
+}

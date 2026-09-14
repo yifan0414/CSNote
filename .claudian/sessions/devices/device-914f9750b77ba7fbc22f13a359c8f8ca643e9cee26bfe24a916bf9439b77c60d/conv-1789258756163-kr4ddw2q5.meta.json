@@ -1,0 +1,18 @@
+{
+  "id": "conv-1789258756163-kr4ddw2q5",
+  "providerId": "codex",
+  "title": "可以把这三个词先拆开理解，再放回 CLIP 里。它们其实不是同一层面的概念：",
+  "titleGenerationStatus": "pending",
+  "createdAt": 1789258756174,
+  "lastActivityAt": 1789258760926,
+  "sessionId": "01a09821-f3a5-76c2-9387-0791fbf5fca3",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09821-f3a5-76c2-9387-0791fbf5fca3",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/13/rollout-2026-09-13T08-19-17-01a09821-f3a5-76c2-9387-0791fbf5fca3.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md"
+}

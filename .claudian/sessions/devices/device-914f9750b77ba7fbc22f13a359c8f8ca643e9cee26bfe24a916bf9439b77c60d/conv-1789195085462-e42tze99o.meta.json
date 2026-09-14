@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789195085462-e42tze99o",
+  "providerId": "codex",
+  "title": "按照这个文章的组织内容给我新建一个BLIP的文档",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789195085472,
+  "lastActivityAt": 1789196057525,
+  "sessionId": "01a09456-6835-7ab2-93f6-34f1a03f34ab",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09456-6835-7ab2-93f6-34f1a03f34ab",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T14-38-05-01a09456-6835-7ab2-93f6-34f1a03f34ab.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
+  "usage": {
+    "inputTokens": 119940,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 119424,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 119940,
+    "percentage": 14,
+    "model": "gpt-6-astra"
+  }
+}

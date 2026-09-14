@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789286293657-90pf8voeb",
+  "providerId": "pi",
+  "title": "可以。这次我完全按照你现在已经接受的 **矩阵微分 + trace** 路线，从头把 VJP 串起来...",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789286293666,
+  "lastActivityAt": 1789286963550,
+  "sessionId": "01a099c6-216c-7310-be6c-5afc0458663a",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-13T07-58-13-869Z_01a099c6-216c-7310-be6c-5afc0458663a.jsonl",
+    "sessionId": "01a099c6-216c-7310-be6c-5afc0458663a"
+  },
+  "linkedContentPath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 157647,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 157647,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 16
+  }
+}

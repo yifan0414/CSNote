@@ -1,0 +1,18 @@
+{
+  "id": "conv-1789262340933-tju6q9ljq",
+  "providerId": "codex",
+  "title": "你根据这个文档的组织形式给我写一篇GPT1的文档",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789262340943,
+  "lastActivityAt": 1789262364073,
+  "sessionId": "01a09858-a51b-7752-935d-0a15b7e05b51",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09858-a51b-7752-935d-0a15b7e05b51",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/13/rollout-2026-09-13T09-19-01-01a09858-a51b-7752-935d-0a15b7e05b51.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/BLIP：从图文对齐到理解、生成与数据自举.md"
+}

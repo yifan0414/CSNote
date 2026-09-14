@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789193039906-zr65d0yv6",
+  "providerId": "codex",
+  "title": "整理下这个文章的内容，合并相似的，但不要丢失内容，组织的更有逻辑和易读",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789193039914,
+  "lastActivityAt": 1789193582492,
+  "sessionId": "01a09437-3094-7c53-b6a5-1585062cac56",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09437-3094-7c53-b6a5-1585062cac56",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/12/rollout-2026-09-12T14-04-00-01a09437-3094-7c53-b6a5-1585062cac56.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
+  "usage": {
+    "inputTokens": 63247,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 59264,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 63247,
+    "percentage": 8,
+    "model": "gpt-6-astra"
+  }
+}

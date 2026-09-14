@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789125540984-s0vnhx5fp",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789125541002-7f76rqu",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789125540978-7aoi0cd",
+      "timestamp": 1789125540978,
+      "rawDisplayText": "/skill:excalidraw-generator  你直接生成一个这个文件的excalidraw框架图",
+      "canonicalText": "/skill:excalidraw-generator  你直接生成一个这个文件的excalidraw框架图",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/transformer计算图与反向传播.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "0b3e33a954c055fb334a457b4c54da82187ac08c91cb8bfa0dab7e8b78471e24",
+      "providerAssistantMessageId": "5e679adc"
+    }
+  ]
+}

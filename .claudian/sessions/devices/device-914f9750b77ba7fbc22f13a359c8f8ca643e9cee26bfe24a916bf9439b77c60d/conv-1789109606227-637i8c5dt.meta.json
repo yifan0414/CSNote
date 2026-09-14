@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789109606227-637i8c5dt",
+  "providerId": "codex",
+  "title": "你觉得这个笔记写的怎么样",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789109606235,
+  "lastActivityAt": 1789113689941,
+  "sessionId": "01a08f3e-18b1-78a3-a5a1-7646d504108d",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a08f3e-18b1-78a3-a5a1-7646d504108d",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/11/rollout-2026-09-11T14-53-26-01a08f3e-18b1-78a3-a5a1-7646d504108d.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
+  "usage": {
+    "inputTokens": 107524,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 107264,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 107524,
+    "percentage": 13,
+    "model": "gpt-6-astra"
+  }
+}

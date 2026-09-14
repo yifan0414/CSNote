@@ -1,0 +1,11 @@
+/* Maple: keep the collapsed left-sidebar toggle clear of macOS window controls.
+ * Reserve space in the tab bar so the toggle and tabs move together.
+ * Applies only to the main window with an integrated title bar, outside fullscreen.
+ * Disable this snippet to restore the theme's original layout.
+ */
+body.mod-macos.is-hidden-frameless:not(.is-fullscreen):not(.is-popout-window)
+  .workspace:not(.is-left-sidedock-open)
+  .mod-root .workspace-tabs.mod-top
+  > .workspace-tab-header-container:has(> .sidebar-toggle-button.mod-left) {
+  padding-left: calc(80px + var(--size-4-2, 8px)) !important;
+}

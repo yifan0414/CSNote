@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789284829618-a74khmpgb",
+  "providerId": "pi",
+  "title": "VJP 在 Transformer 里可以理解成一句话：",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789284829627,
+  "lastActivityAt": 1789286094791,
+  "sessionId": "01a099af-cb14-7119-af17-4217dade3ba6",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-13T07-33-49-973Z_01a099af-cb14-7119-af17-4217dade3ba6.jsonl",
+    "sessionId": "01a099af-cb14-7119-af17-4217dade3ba6"
+  },
+  "linkedContentPath": "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 48362,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 48362,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 5
+  }
+}
