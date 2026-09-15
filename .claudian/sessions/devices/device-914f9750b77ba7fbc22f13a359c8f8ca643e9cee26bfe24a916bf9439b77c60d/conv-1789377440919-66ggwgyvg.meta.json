@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789377440919-66ggwgyvg",
+  "providerId": "codex",
+  "title": "def hidden_state_to_token(self, hidden_state):",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789377440936,
+  "lastActivityAt": 1789377699518,
+  "sessionId": "01a09f34-ef50-71d0-a4f5-e3ae22d62317",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09f34-ef50-71d0-a4f5-e3ae22d62317",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/14/rollout-2026-09-14T17-17-21-01a09f34-ef50-71d0-a4f5-e3ae22d62317.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
+  "usage": {
+    "inputTokens": 28382,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 27904,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 28382,
+    "percentage": 3,
+    "model": "gpt-6-astra"
+  }
+}

@@ -76,7 +76,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-LLM/01-数学基础/01-线性代数与微积分/梯度与方向导数：怎样描述多变量函数的局部变化.md",
+                "file": "科研/科研入门指南：如何做科研与写论文.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -91,7 +91,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "梯度与方向导数：怎样描述多变量函数的局部变化"
+              "title": "科研入门指南：如何做科研与写论文"
             }
           }
         ],
@@ -244,7 +244,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06-LLM/01-数学基础/01-线性代数与微积分/梯度与方向导数：怎样描述多变量函数的局部变化.md",
+                "file": "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -263,16 +263,15 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789288682048-2hdr8oj",
-                      "conversationId": null,
-                      "draftModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910"
+                      "tabId": "tab-1789433266175-8jph94d",
+                      "conversationId": "conv-1789433268221-ity7i5sx0"
                     },
                     {
-                      "tabId": "tab-1789299966162-r1oc4bz",
-                      "conversationId": "conv-1789299981186-tqbs883d7"
+                      "tabId": "tab-1789433274493-72mv1ch",
+                      "conversationId": "conv-1789433280863-qvq5d58wm"
                     }
                   ],
-                  "activeTabId": "tab-1789299966162-r1oc4bz"
+                  "activeTabId": "tab-1789433274493-72mv1ch"
                 }
               },
               "icon": "bot",
@@ -307,14 +306,25 @@
       "fix-math:Current file": false
     }
   },
-  "active": "b3b436bf2b224bcb",
+  "active": "79401acdc1ccd015",
   "lastOpenFiles": [
-    "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+    "AGENTS.md",
+    "README.md",
+    "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md",
     "06-LLM/03-Transformer/transformer计算图与反向传播.md",
-    "07-MultiModal/Video-MLLM/DINO：从多视图自蒸馏到视觉语义空间.md",
-    "06-LLM/03-Transformer/05-Attention.md",
-    "06-LLM/03-Transformer/00-分词.md",
+    "06-LLM/03-Transformer/06-transformer.md",
+    "06-LLM/01-数学基础/03-最优化/从 SGD 到 AdamW：一步一步理解动量、自适应缩放与权重衰减.md",
     "06-LLM/01-数学基础/03-最优化/梯度下降与 SGD：从损失变化到批量参数更新.md",
+    "06-LLM/01-数学基础/03-最优化/学习率与调度策略.md",
+    "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
+    "06-LLM/03-Transformer/00-分词.md",
+    "06-LLM/03-Transformer/01-词向量.md",
+    "06-LLM/03-Transformer/dive-to-attention/dive-to-attention.md",
+    "07-MultiModal/Video-MLLM/CLIPDraw：指导图像生成.md",
+    "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
+    "07-MultiModal/Video-MLLM/DINO：从多视图自蒸馏到视觉语义空间.md",
+    "06-LLM/01-数学基础/01-线性代数与微积分/梯度与方向导数：怎样描述多变量函数的局部变化.md",
+    "06-LLM/03-Transformer/05-Attention.md",
     "06-LLM/04-训练与推理/PyTorch 损失归约与梯度累积.md",
     "06-LLM/04-训练与推理/权重共享.md",
     "06-LLM/04-训练与推理/多GPU训练过程.md",
@@ -324,24 +334,15 @@
     "06-LLM/02-模型基础/高斯朴素贝叶斯：从类别分布到分类.md",
     "06-LLM/02-模型基础/人工神经网络训练过程.canvas",
     "06-LLM/01-数学基础/01-线性代数与微积分/行列式与体积缩放.md",
-    "06-LLM/01-数学基础/01-线性代数与微积分/梯度与方向导数：怎样描述多变量函数的局部变化.md",
     "06-LLM/01-数学基础/01-线性代数与微积分/两层神经网络的反向传播推导.md",
-    "06-LLM/01-数学基础/01-线性代数与微积分/矩阵微分与求导技巧.md",
-    "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md",
     "_assets/images/transformer-04-Attention局部VJP.svg",
     "_assets/images/transformer-03-FFN局部VJP.svg",
     "_assets/images/transformer-01-前向与局部VJP总览.svg",
     "_assets/images/transformer-04-Attention局部VJP.png",
     "_assets/images/transformer-03-FFN局部VJP.png",
     "_assets/images/transformer-01-前向与局部VJP总览.png",
-    "06-LLM/03-Transformer/transformer-VJP.md",
-    "07-MultiModal/Video-MLLM/RoadMap.md",
-    "06-LLM/01-数学基础/01-线性代数与微积分/VJP：把输出端的梯度搬回输入端.md",
-    "01-Project/NJUICS/lecture/L7 链接与加载选讲/可重定位文件格式视图.md",
     "_assets/images/gpt-3-01-in-context-few-shot.drawio.svg",
     "_assets/images/gpt-3-01-in-context-few-shot.drawio",
-    "07-MultiModal/Video-MLLM/BLIP-2：用Q-Former连接冻结视觉编码器与大语言模型.md",
-    "06-LLM/03-Transformer/GPT-1：从生成式预训练到语言理解微调.md",
     "_assets/images/gpt-1-06-pretraining-and-auxiliary-lm-ablation.png",
     "_assets/images/gpt-1-05-similarity-classification-and-glue.png",
     "_assets/images/gpt-1-04-story-cloze-and-race.png",
@@ -351,8 +352,6 @@
     "_assets/images/gpt-1-06-pretraining-finetuning.drawio",
     "06-LLM/03-Transformer/assets/paper_gpt1_2018.pdf",
     "06-LLM/03-Transformer/assets",
-    "07-MultiModal/Video-MLLM/BLIP：从图文对齐到理解、生成与数据自举.md",
-    "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
     "Paper/Papers.base",
     "07-MultiModal/Video-MLLM/assets/paper_2301.12597.pdf",
     "_assets/images/video-mllm-01-learning-roadmap.drawio",

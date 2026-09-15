@@ -4,7 +4,6 @@
   "obsidian-copy-block-link",
   "dataview",
   "darlal-switcher-plus",
-  "quickadd",
   "templater-obsidian",
   "obsidian-tasks-plugin",
   "pdf-plus",
@@ -18,5 +17,7 @@
   "realclaudian",
   "fix-math",
   "easy-typing-obsidian",
-  "excalidraw-extras"
+  "excalidraw-extras",
+  "editing-toolbar",
+  "papers"
 ]

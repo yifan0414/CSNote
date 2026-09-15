@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789377440919-66ggwgyvg",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789377441006-zmww8b8",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789377440895-y7ws6ba",
+      "timestamp": 1789377440895,
+      "rawDisplayText": "def hidden_state_to_token(self, hidden_state):\n    \"\"\"\n    GPT-2 uses weight tying with the input word embeddings. The logits are the dot product between output hidden states\n    and the word embedding weights:\n\n      return hidden_state(s) * E^T\n    \"\"\"\n    # 复用输入词嵌入权重，与词表中每个 token 的向量做点积。\n    # [..., hidden_size] @ [hidden_size, vocab_size] -> [..., vocab_size]。\n    # 返回未归一化的 logits，可同时处理单个位置或整个序列。\n    return hidden_state @ self.word_embedding.weight.T\n\n这个在文档中有表现吗",
+      "canonicalText": "def hidden_state_to_token(self, hidden_state):\n    \"\"\"\n    GPT-2 uses weight tying with the input word embeddings. The logits are the dot product between output hidden states\n    and the word embedding weights:\n\n      return hidden_state(s) * E^T\n    \"\"\"\n    # 复用输入词嵌入权重，与词表中每个 token 的向量做点积。\n    # [..., hidden_size] @ [hidden_size, vocab_size] -> [..., vocab_size]。\n    # 返回未归一化的 logits，可同时处理单个位置或整个序列。\n    return hidden_state @ self.word_embedding.weight.T\n\n这个在文档中有表现吗",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/transformer计算图与反向传播.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "f55cd740bca48fb540c2da8a01b8eedb883791e23eb814fbb174a957ed60350a",
+      "providerUserMessageId": "01a09f34-efd1-7880-a208-9705097fcc9d",
+      "providerAssistantMessageId": "msg_0354e6755e6c4601016aa7bc1e795087d0bc35b91bf7f87aca"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789377612563-1x0uwa0",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789377612556-k2dc8mv",
+      "timestamp": 1789377612556,
+      "rawDisplayText": "为什么要有词表投影这一步",
+      "canonicalText": "为什么要有词表投影这一步",
+      "images": [],
+      "contentDigest": "2b08b18d54ba7d782d1e9262ff6e2fd9685f01f72d8182bea306bfbf184fa233",
+      "providerUserMessageId": "01a09f37-8b1e-7da2-985b-f1c10c58ed8d",
+      "providerAssistantMessageId": "msg_0354e6755e6c4601016aa7bc5156ec87d0b97244ba94842185"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789377660806-zyz2gyt",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789377660799-fr32i16",
+      "timestamp": 1789377660799,
+      "rawDisplayText": "是QKV中的V吗",
+      "canonicalText": "是QKV中的V吗",
+      "images": [],
+      "contentDigest": "074637172b2c9eb97f74ab2837ae3e48c89641dea5d4356929bcdff50a6bcd12",
+      "providerUserMessageId": "01a09f38-4791-7d40-9d06-544cddeb8f57",
+      "providerAssistantMessageId": "msg_0354e6755e6c4601016aa7bc809cb087d0baf385ff8f6038da"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789377684588-jg6nl9d",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789377684582-k043dkg",
+      "timestamp": 1789377684582,
+      "rawDisplayText": "这个E也是要学习的吗",
+      "canonicalText": "这个E也是要学习的吗",
+      "images": [],
+      "contentDigest": "7a8d3e92153f2966f9e6a0dc8ae24c64c8f7dc7a775cf6b6d210b0374a709561",
+      "providerUserMessageId": "01a09f38-a477-70b2-b25b-c90fef3bb2aa",
+      "providerAssistantMessageId": "msg_0354e6755e6c4601016aa7bc9bf13087d0b9dd1c3ab2fc8a91"
+    }
+  ]
+}

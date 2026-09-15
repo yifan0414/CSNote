@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789378346492-hsh00exwd",
+  "providerId": "codex",
+  "title": "GPT-2最后产出的是什么",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789378346496,
+  "lastActivityAt": 1789378488064,
+  "sessionId": "01a09f42-be9b-7cf3-bbbc-667f3f49e603",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09f42-be9b-7cf3-bbbc-667f3f49e603",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/14/rollout-2026-09-14T17-32-26-01a09f42-be9b-7cf3-bbbc-667f3f49e603.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md",
+  "usage": {
+    "inputTokens": 23793,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 23793,
+    "percentage": 3,
+    "model": "gpt-6-astra"
+  }
+}

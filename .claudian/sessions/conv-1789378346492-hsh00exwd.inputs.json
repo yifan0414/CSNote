@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789378346492-hsh00exwd",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789378346523-ww06lcm",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789378346489-fy7pfct",
+      "timestamp": 1789378346489,
+      "rawDisplayText": "GPT-2最后产出的是什么",
+      "canonicalText": "GPT-2最后产出的是什么",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "4452b38364de1b1f86f38af6bbec0a32ae14051a862278493bb85ce265e853de",
+      "providerUserMessageId": "01a09f42-bf0f-71d3-8726-ab47c9de1080",
+      "providerAssistantMessageId": "msg_014fc491d5852e4f016aa7bfaa523c87d08ffd2d01e066d6d6"
+    }
+  ]
+}

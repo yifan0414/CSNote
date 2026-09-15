@@ -1,5 +1,5 @@
 {
-  "lastVersion": "4.1.3",
+  "lastVersion": "4.1.4",
   "aestheticStyle": "custom",
   "positionStyle": "top",
   "menuCommands": [
@@ -356,7 +356,7 @@
   "cMenuBackgroundColor": "#d2cbff",
   "autohide": false,
   "Iscentered": false,
-  "custom_bg1": "#FFB78B8C",
+  "custom_bg1": "#7034108C",
   "custom_bg2": "#CDF4698C",
   "custom_bg3": "#A0CCF68C",
   "custom_bg4": "#F0A7D88C",
@@ -374,7 +374,7 @@
   "viewTypeSettings": {},
   "appearanceByStyle": {
     "top": {
-      "toolbarBackgroundColor": "#ECEBEB",
+      "toolbarBackgroundColor": "#F3F3F7",
       "toolbarIconColor": "#4A5568",
       "toolbarIconSize": 18,
       "aestheticStyle": "custom"
@@ -398,13 +398,13 @@
       "aestheticStyle": "default"
     }
   },
-  "toolbarBackgroundColor": "#ECEBEB",
+  "toolbarBackgroundColor": "#F3F3F7",
   "toolbarIconColor": "#4A5568",
   "toolbarIconSize": 18,
   "useCurrentLineForRegex": false,
   "ai": {
     "enabled": false,
-    "showAIContextMenu": true,
+    "showAIContextMenu": false,
     "consentAccepted": false,
     "onboardingShown": true,
     "providerMode": "pkmer-first",

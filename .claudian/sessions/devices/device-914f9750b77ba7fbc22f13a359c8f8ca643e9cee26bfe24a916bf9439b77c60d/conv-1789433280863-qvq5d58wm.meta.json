@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789433280863-qvq5d58wm",
+  "providerId": "pi",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789433280868,
+  "lastActivityAt": 1789433283990,
+  "sessionId": "01a0a288-fa6b-7425-b328-6f9baa9d52b1",
+  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "providerState": {
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-15T00-48-01-132Z_01a0a288-fa6b-7425-b328-6f9baa9d52b1.jsonl",
+    "sessionId": "01a0a288-fa6b-7425-b328-6f9baa9d52b1"
+  },
+  "linkedContentPath": "AGENTS.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 7361,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 7361,
+    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+    "percentage": 1
+  }
+}

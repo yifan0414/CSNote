@@ -352,7 +352,7 @@
   "maple-basic@@color-modify-bg-light": false,
   "maple-basic@@color-active-light": "color-active-default-light",
   "maple-editor@@setting-editor-letter-spacing": 0,
-  "maple-basic@@setting-accent-h-light": 200,
+  "maple-basic@@setting-accent-h-light": 235,
   "maple-editor@@heading-color-style": "heading-color-accent",
   "maple-editor@@hr-enable": false,
   "maple-editor@@pdf-export-default-hr": true,

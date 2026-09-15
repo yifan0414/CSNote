@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789433268221-ity7i5sx0",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789433268330-tfh9lvq",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789433268210-gag0jql",
+      "timestamp": 1789433268210,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "linkedContent": {
+          "path": "AGENTS.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "01a0a288-c9f8-7ae3-9fad-bf57156125a3",
+      "providerAssistantMessageId": "msg_0491e8cf1a2032af016aa89628803487d0be80946b701a7ba4"
+    }
+  ]
+}

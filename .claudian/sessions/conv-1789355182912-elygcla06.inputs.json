@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789355182912-elygcla06",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789355182994-byixi8c",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789355182905-2q534tx",
+      "timestamp": 1789355182905,
+      "rawDisplayText": "你审阅一下这个文章",
+      "canonicalText": "你审阅一下这个文章",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/01-数学基础/03-最优化/从 SGD 到 AdamW：动量与自适应优化.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "8ee5a423f61930092d4f379fcdb9502de0d67f50b9c8f4310685544081b64541",
+      "providerUserMessageId": "01a09de1-4d03-7b50-b741-4ada5006068d",
+      "providerAssistantMessageId": "msg_095008fc47ea3cf4016aa76563720087d0af10be864c325958"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789355455622-t3qcfgh",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789355455613-sq1cay0",
+      "timestamp": 1789355455613,
+      "rawDisplayText": "你先把2 和 3 给我补充了，其他的不用变",
+      "canonicalText": "你先把2 和 3 给我补充了，其他的不用变",
+      "images": [],
+      "contentDigest": "5b359896fedab37e7925b7b144a6cfbcfb55fa7b528b8a79ee523b207fe58e97",
+      "providerUserMessageId": "01a09de5-74ce-70f2-bf2f-ab4bcd7df914",
+      "providerAssistantMessageId": "msg_095008fc47ea3cf4016aa766013a8487d0b0ce1075a7a9dec3"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789357898191-xuapjn8",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789357898189-s2x08yf",
+      "timestamp": 1789357898189,
+      "rawDisplayText": "为什么固定让\\Delta\\theta=-\\eta g,\\qquad \\eta>0.",
+      "canonicalText": "为什么固定让\\Delta\\theta=-\\eta g,\\qquad \\eta>0.",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/03-最优化/从 SGD 到 AdamW：动量与自适应优化.md",
+          "mode": "selection",
+          "selectedText": "想让右边为负，一个自然的选择是让  与  异号：\n\n于是 。这里的  叫学习率，控制一次更新的大小。",
+          "lineCount": 3
+        }
+      },
+      "images": [],
+      "contentDigest": "47ca060fee0257fb9060f004ca25bbe4d633b4bac1d4a8b140aea939642a1040",
+      "providerUserMessageId": "01a09e0a-baaa-7812-8336-680ea93a737f",
+      "providerAssistantMessageId": "msg_095008fc47ea3cf4016aa76f4defd487d0b9727d8d7b37f869"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789359127792-q8sz4in",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789359127788-hxu92a9",
+      "timestamp": 1789359127788,
+      "rawDisplayText": "这是什么意思",
+      "canonicalText": "这是什么意思",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/03-最优化/从 SGD 到 AdamW：一步一步理解动量、自适应缩放与权重衰减.md",
+          "mode": "selection",
+          "selectedText": "11.1 新问题：只拟合训练数据，还可能希望限制参数大小\n有时除了降低数据损失，还希望对过大的参数施加惩罚。最简单的一个选择是平方惩罚。\n\n对单个参数：\n\n \n对多个参数，就是把各参数的平方相加。常用缩写 \n，所以也叫  正则化。\n\n平方惩罚的梯度是 ：参数为正时，负梯度把它往小推；参数为负时，把它往大推，都是朝零收缩。\n\n这里的惩罚表达了一种偏好，不保证参数越小、预测就一定越好。\n\n11.2 在普通 SGD 中，加入平方惩罚等价于直接收缩\n对不带动量的普通 SGD，将梯度换成 ：\n\n \n它恰好等于“先让参数乘一个收缩系数，再做数据梯度更新”。当  时，这个系数位于  与  之间。\n\n例如 、，参数会先乘 。这类直接收缩操作叫 weight decay（权重衰减）。",
+          "lineCount": 20
+        }
+      },
+      "images": [],
+      "contentDigest": "cc6b521dbbf3cc8a167273dc1277fa3a9e28cb741855d91beeef6aa43cd86029",
+      "providerUserMessageId": "01a09e1d-7d8b-79b1-a97e-dd13b41b0eca",
+      "providerAssistantMessageId": "msg_095008fc47ea3cf4016aa7741d553887d093fbb70ddb543434"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789359229182-3wwnu24",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1789359229180-3t3znq7",
+      "timestamp": 1789359229180,
+      "rawDisplayText": "为什么不会进入",
+      "canonicalText": "为什么不会进入",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/03-最优化/从 SGD 到 AdamW：一步一步理解动量、自适应缩放与权重衰减.md",
+          "mode": "selection",
+          "selectedText": "一个直接的办法是：\n\n只用数据损失的梯度  计算 Adam 的  及其修正值。\n另外对参数施加独立的乘法衰减。\n按常见实现的系数约定：\n\n \n这就是 AdamW：Adam + 解耦的权重衰减。在这种设计中，权重衰减不会累积进方向和平方记录。PyTorch AdamW 文档",
+          "lineCount": 8
+        }
+      },
+      "images": [],
+      "contentDigest": "b34faaa0ece1ddff276f3b130c1fa89648adaca6b82e12063486ea21810e5a81",
+      "providerUserMessageId": "01a09e1f-09a6-7462-a553-b94b32c6eb2f",
+      "providerAssistantMessageId": "msg_095008fc47ea3cf4016aa77487796c87d08d84fead34ee15e5"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789362512588-b4jcihy",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1789362512577-susaok6",
+      "timestamp": 1789362512577,
+      "rawDisplayText": "为什么要做这个除法，对之后的更新有影响吗",
+      "canonicalText": "为什么要做这个除法，对之后的更新有影响吗",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/01-数学基础/03-最优化/从 SGD 到 AdamW：一步一步理解动量、自适应缩放与权重衰减.md",
+          "mode": "selection",
+          "selectedText": "已有梯度的总权重是 \n。因此把它除掉，使真实观测的权重和重新变为 ：\n\n \n平方记录同理：\n\n \n",
+          "lineCount": 8
+        }
+      },
+      "images": [],
+      "contentDigest": "c622d05dad40c744bb58cba084382679f0df0e31569bb9b488f425303954f36d",
+      "providerUserMessageId": "01a09e51-2311-7283-8d24-29b8da610cec",
+      "providerAssistantMessageId": "msg_095008fc47ea3cf4016aa781543fe487d0b346e2171c364d79"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789362613530-rwkphxc",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1789362613519-hyiskv5",
+      "timestamp": 1789362613519,
+      "rawDisplayText": "为什么标准Adam不把修正后的写回历史记录",
+      "canonicalText": "为什么标准Adam不把修正后的写回历史记录",
+      "images": [],
+      "contentDigest": "bcddc01024d9070a61b1e38c11dc4728a5128b043eaf366ba042a4afeafb9611",
+      "providerUserMessageId": "01a09e52-ad63-73e3-b8bf-496446955295",
+      "providerAssistantMessageId": "msg_095008fc47ea3cf4016aa781b97fcc87d0acaf3964fce4d595"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789368430539-jt0b5mj",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1789368430524-ar1mxmr",
+      "timestamp": 1789368430524,
+      "rawDisplayText": "# 使用原始学习率 alpha：p = p * (1 - alpha * weight_decay)。\n                if group[\"weight_decay\"] != 0.0:\n                    p.data.add_(p.data, alpha=-alpha * group[\"weight_decay\"]) 这一步在正文哪个公式",
+      "canonicalText": "# 使用原始学习率 alpha：p = p * (1 - alpha * weight_decay)。\n                if group[\"weight_decay\"] != 0.0:\n                    p.data.add_(p.data, alpha=-alpha * group[\"weight_decay\"]) 这一步在正文哪个公式",
+      "images": [],
+      "contentDigest": "38c4c938480618be9f71b346ac15e39ac270fd8201c4fc7b8277a6c857ad06cf",
+      "providerUserMessageId": "01a09eab-7099-7f43-b97f-c86cee167991",
+      "providerAssistantMessageId": "msg_095008fc47ea3cf4016aa79874dec887d09230690ce06b4c19"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789368472653-ocluh53",
+      "userTurnOrdinal": 9,
+      "state": "accepted",
+      "localMessageId": "msg-1789368472643-w34ud0u",
+      "timestamp": 1789368472643,
+      "rawDisplayText": "那第二项对应哪个代码",
+      "canonicalText": "那第二项对应哪个代码",
+      "images": [],
+      "contentDigest": "ac827c6e3344f5eece2700ad5e5477f42ce0e060649f8bf5f9037f1a34f0b4ca",
+      "providerUserMessageId": "01a09eac-1487-72d1-917e-993f4262a883",
+      "providerAssistantMessageId": "msg_095008fc47ea3cf4016aa7989f2a1c87d0b89b5e5e5e157449"
+    }
+  ]
+}

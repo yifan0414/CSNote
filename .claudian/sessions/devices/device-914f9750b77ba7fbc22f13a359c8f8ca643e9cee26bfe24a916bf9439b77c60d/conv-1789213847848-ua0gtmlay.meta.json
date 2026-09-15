@@ -14,7 +14,7 @@
     "transcriptRootPath": "/Users/yifan/.codex/sessions",
     "workspaceDependencyToolVersion": 1
   },
-  "linkedContentPath": "07-MultiModal/Video-MLLM/03-监督信号.md",
+  "linkedContentPath": "07-MultiModal/Video-MLLM/监督信号.md",
   "usage": {
     "inputTokens": 38815,
     "cacheCreationInputTokens": 0,

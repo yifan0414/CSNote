@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789355182912-elygcla06",
+  "providerId": "codex",
+  "title": "你审阅一下这个文章",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789355182921,
+  "lastActivityAt": 1789368485487,
+  "sessionId": "01a09de1-4c91-7291-8dec-28161c121770",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a09de1-4c91-7291-8dec-28161c121770",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/14/rollout-2026-09-14T11-06-23-01a09de1-4c91-7291-8dec-28161c121770.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "06-LLM/01-数学基础/03-最优化/从 SGD 到 AdamW：一步一步理解动量、自适应缩放与权重衰减.md",
+  "usage": {
+    "inputTokens": 68182,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 67712,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 68182,
+    "percentage": 8,
+    "model": "gpt-6-astra"
+  }
+}
