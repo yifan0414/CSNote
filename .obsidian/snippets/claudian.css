@@ -19,20 +19,59 @@
   padding-bottom: 0 !important;
 }
 
-/* Make the composer placeholder lighter than typed text. */
-.claudian-container textarea.claudian-input::placeholder {
+/* Claudian 2.3: retain the 2.2.6 composer typography in CodeMirror.
+   Scope to the chat composer so note editors and collaboration diffs are untouched. */
+body .claudian-container .claudian-input-wrapper .claudian-composer-editor {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+body .claudian-container .claudian-composer-editor .cm-editor,
+body .claudian-container .claudian-composer-editor .cm-scroller {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+body .claudian-container .claudian-composer-editor .cm-editor {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+body .claudian-container .claudian-composer-editor .cm-content {
+  padding: 8px 0 10px;
+  min-height: 60px;
+}
+
+body .claudian-container .claudian-composer-editor .cm-line {
+  padding: 0 10px;
+}
+
+/* Make both the legacy and CodeMirror placeholders lighter than typed text. */
+.claudian-container textarea.claudian-input::placeholder,
+body .claudian-container .claudian-composer-editor .cm-placeholder,
+body .claudian-container .claudian-composer-editor:empty::before {
   color: #8a8a8a !important;
   -webkit-text-fill-color: #8a8a8a !important;
   opacity: 1 !important;
 }
 
-/* Soften sent user-message bubbles; Claudian's default black overlay is too heavy. */
+/* In 2.3 the outer message also holds actions/timestamps: keep it unpainted. */
 body .claudian-container .claudian-message-user {
+  background: transparent !important;
+  border: 0;
+  box-shadow: none;
+}
+
+/* Apply the former soft bubble to the content only, without a second dark layer. */
+body .claudian-container .claudian-message-user > .claudian-message-content {
   background: var(--background-secondary) !important;
   border: 1px solid var(--background-modifier-border);
 }
 
-body.theme-light .claudian-container .claudian-message-user {
+body.theme-light .claudian-container .claudian-message-user > .claudian-message-content {
   background: color-mix(
     in srgb,
     var(--background-secondary) 70%,
@@ -40,7 +79,7 @@ body.theme-light .claudian-container .claudian-message-user {
   ) !important;
 }
 
-body.theme-dark .claudian-container .claudian-message-user {
+body.theme-dark .claudian-container .claudian-message-user > .claudian-message-content {
   background: color-mix(
     in srgb,
     var(--background-secondary) 82%,
@@ -120,4 +159,15 @@ body.code-theme .claudian-container .claudian-message-content .token:is(.propert
 
 body.code-theme .claudian-container .claudian-message-content .token:is(.comment, .prolog, .doctype, .cdata) {
   color: var(--code-comment);
+}
+
+/* CodeMirror uses zero-width images as caret buffers next to widgets.
+   Exempt them from the vault's centered block-image styling. */
+body .claudian-container .claudian-composer-editor img.cm-widgetBuffer {
+  display: inline !important;
+  margin: 0 !important;
+  width: 0 !important;
+  height: 1em !important;
+  padding: 0 !important;
+  border: 0 !important;
 }
