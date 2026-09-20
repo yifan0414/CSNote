@@ -97,6 +97,47 @@
   content: "·";
 }
 
+/* Capture workflow status: use the same compact badge shape as type/source. */
+.bases-view .capture-status-inbox {
+  background: var(--paper-base-yellow-bg);
+  color: var(--paper-base-yellow-fg);
+  border-color: color-mix(in srgb, var(--color-yellow) 32%, transparent);
+}
+
+.bases-view .capture-status-inbox::before {
+  content: "◷";
+}
+
+.bases-view .capture-status-processed {
+  background: var(--paper-base-green-bg);
+  color: var(--paper-base-green-fg);
+  border-color: color-mix(in srgb, var(--color-green) 28%, transparent);
+}
+
+.bases-view .capture-status-processed::before {
+  content: "✓";
+}
+
+.bases-view .capture-status-archive {
+  background: var(--paper-base-soft);
+  color: var(--paper-base-muted);
+  border-color: var(--paper-base-border);
+}
+
+.bases-view .capture-status-archive::before {
+  content: "□";
+}
+
+.bases-view .capture-status-unknown {
+  background: var(--paper-base-red-bg);
+  color: var(--paper-base-red-fg);
+  border-color: color-mix(in srgb, var(--color-red) 28%, transparent);
+}
+
+.bases-view .capture-status-unknown::before {
+  content: "?";
+}
+
 .bases-view .capture-type-tool {
   background: var(--paper-base-blue-bg);
   color: var(--paper-base-blue-fg);

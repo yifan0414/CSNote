@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789454465555-dcdbg7h0b",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789454465608-gpnr2u6",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789454465551-co8woji",
+      "timestamp": 1789454465551,
+      "rawDisplayText": "按照这个文件的组织方式，给我写一篇关于LLaVA的笔记",
+      "canonicalText": "按照这个文件的组织方式，给我写一篇关于LLaVA的笔记",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "16ef501323e93cec6d0d08864bd3294942f906846761c8ccefcbf6a6df0b8a44",
+      "providerUserMessageId": "01a0a3cc-6db4-7920-b4ec-71df968887cd",
+      "providerAssistantMessageId": "msg_0ab7b7de2dcd8202016aa8ea35f06087d09e3dea8af4e6f175"
+    }
+  ]
+}

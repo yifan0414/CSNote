@@ -14,7 +14,7 @@
     "transcriptRootPath": "/Users/yifan/.codex/sessions",
     "workspaceDependencyToolVersion": 1
   },
-  "linkedContentPath": "07-MultiModal/Video-MLLM/SigLIP：从逐对二分类到共享语义空间.md",
+  "linkedContentPath": "07-MultiModal/基础/03-SigLIP：从逐对二分类到共享语义空间.md",
   "usage": {
     "inputTokens": 123208,
     "cacheCreationInputTokens": 0,

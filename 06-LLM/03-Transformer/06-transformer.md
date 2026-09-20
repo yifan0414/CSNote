@@ -11,7 +11,7 @@ type: learning-note
 stage: 1
 status: active
 created: 2026-08-17
-updated: 2026-09-09
+updated: 2026-09-15
 ---
 
 > [!abstract] 学习目标
@@ -766,103 +766,19 @@ $$
 $$
 
 > [!note]- 概率论详细推导：为什么除以 $\sqrt{d_h}$？
-> **结论：**点积由 $d_h$ 个近似独立的随机量相加而成。独立随机量之和的方差按 $d_h$ 增长，因此标准差按 $\sqrt{d_h}$ 增长。除以 $\sqrt{d_h}$ 能将 logits 的方差恢复到 $O(1)$，避免 softmax 过早饱和。
+> **阅读主线：**先明确点积的随机变量模型，再用“求和如何改变方差”和“缩放如何改变方差”这两个性质算出合适的除数，最后解释它对 softmax 的意义。本文的 $d_h$ 就是常见记法中的 $d_k$，表示 query/key 的单头维度。
 >
-> ### 1. 概率论预备：独立随机变量之和
+> ### 1. 我们要稳定什么？先明确对象与假设
 >
-> 设 $X_1,\ldots,X_d$ 是随机变量，并令：
->
-> $$
-> S_d=\sum_{r=1}^{d}X_r.
-> $$
->
-> 期望具有线性性，不要求随机变量独立：
->
-> $$
-> \mathbb{E}[S_d]
-> =\mathbb{E}\left[\sum_{r=1}^{d}X_r\right]
-> =\sum_{r=1}^{d}\mathbb{E}[X_r].
-> $$
->
-> 方差的展开则包含协方差项：
->
-> $$
-> \begin{aligned}
-> \operatorname{Var}(S_d)
-> &=\mathbb{E}\left[
-> \left(\sum_{r=1}^{d}(X_r-\mathbb{E}[X_r])\right)^2
-> \right]\\
-> &=\sum_{r=1}^{d}\operatorname{Var}(X_r)
-> +2\sum_{1\le r<s\le d}\operatorname{Cov}(X_r,X_s).
-> \end{aligned}
-> $$
->
-> 若 $X_1,\ldots,X_d$ 相互独立，则任意 $r\ne s$ 都有：
->
-> $$
-> \operatorname{Cov}(X_r,X_s)
-> =\mathbb{E}[X_rX_s]-\mathbb{E}[X_r]\mathbb{E}[X_s]
-> =0.
-> $$
->
-> 因此，若这些变量还具有相同方差 $\sigma^2$：
->
-> $$
-> \operatorname{Var}(S_d)=d\sigma^2,\qquad
-> \operatorname{Std}(S_d)=\sqrt{d}\,\sigma.
-> $$
->
-> 例如，若 $X_1,\ldots,X_{100}$ 独立同分布且 $X_r\sim\mathcal{N}(0,1)$，正态变量之和仍然是正态变量，所以这里有精确结果：
->
-> $$
-> S_{100}=\sum_{r=1}^{100}X_r
-> \sim\mathcal{N}(0,100),
-> $$
->
-> $$
-> \operatorname{Std}(S_{100})=\sqrt{100}=10.
-> $$
->
-> $100$ 个单位尺度的随机波动相加后，典型大小约为 $10$，而不是 $100$。正负项之间会发生抵消，但总波动仍会随项数增加。
->
-> 这里的关键是：**方差相加，但标准差是方差的平方根**。当 $\mathbb{E}[S_d]=0$ 时，均方根正好等于标准差：
->
-> $$
-> \sqrt{\mathbb{E}[S_d^2]}
-> =\operatorname{Std}(S_d)
-> =\sqrt{d}\,\sigma.
-> $$
->
-> 所以“典型波动尺度”按 $\sqrt d$ 增长，而不是按 $d$ 增长。
->
-> ### 2. 随机游走直觉
->
-> 令每一步 $X_r$ 以相同概率取 $+1$ 或 $-1$。此时：
->
-> $$
-> \mathbb{E}[X_r]=0,\qquad
-> \operatorname{Var}(X_r)=1.
-> $$
->
-> 走 $d$ 步后的位置 $S_d=X_1+\cdots+X_d$ 满足：
->
-> $$
-> \mathbb{E}[S_d]=0,\qquad
-> \operatorname{Var}(S_d)=d,\qquad
-> \sqrt{\mathbb{E}[S_d^2]}=\sqrt d.
-> $$
->
-> 正负步长会互相抵消，所以走 $100$ 步后的典型距离约为 $10$，而不是 $100$。Attention 点积中的各维乘积相加具有相同的尺度规律。
->
-> ### 3. 把结论应用到 $q^\top k$
->
-> 对一个 query 和一个 key：
+> 对一个 query 向量 $q$ 和一个 key 向量 $k$，未缩放的 attention logit 是：
 >
 > $$
 > s=q^\top k=\sum_{r=1}^{d_h}q_rk_r.
 > $$
 >
-> 为了只研究维度带来的尺度变化，先作如下简化假设：
+> 这里要研究的不是某一次点积的具体值，而是：**当各分量的统计尺度保持不变、维度 $d_h$ 增大时，点积的波动会如何变化？**
+>
+> 为了单独研究维度的影响，先采用一个理想化模型：
 >
 > 1. 对每个坐标 $r$，$q_r$ 与 $k_r$ 相互独立；
 > 2. 不同坐标对 $(q_r,k_r)$ 之间相互独立；
@@ -873,15 +789,114 @@ $$
 > \operatorname{Var}(q_r)=\operatorname{Var}(k_r)=1.
 > $$
 >
-> 令每一维对点积的贡献为：
+> 令每一维对点积的贡献为 $Z_r=q_rk_r$，那么 $s=\sum_{r=1}^{d_h}Z_r$。后面的计算分为两步：**先算一个乘积项 $Z_r$ 的方差，再算所有乘积项之和的方差。**
+>
+> 这些假设不要求 $q_r$、$k_r$ 服从正态分布；真实模型也不一定严格满足它们，适用边界会在最后说明。
+>
+> ### 2. 概率基础：方差是什么，求和与缩放如何影响它？
+>
+> #### 2.1 方差衡量“偏离均值的平方”的平均值
+>
+> 设随机变量 $X$ 的方差有限，定义为：
 >
 > $$
-> Z_r=q_rk_r.
+> \operatorname{Var}(X)
+> =\mathbb{E}\left[(X-\mathbb{E}[X])^2\right]
+> =\mathbb{E}[X^2]-\bigl(\mathbb{E}[X]\bigr)^2.
 > $$
 >
-> ### 4. 逐步计算乘积 $Z_r=q_rk_r$ 的均值与方差
+> 标准差是方差的平方根：
 >
-> 因为 $q_r$ 与 $k_r$ 独立，乘积的期望可以拆开：
+> $$
+> \operatorname{Std}(X)=\sqrt{\operatorname{Var}(X)}.
+> $$
+>
+> **均值描述中心位置，标准差描述围绕中心的波动尺度。**方差的单位是原变量单位的平方，标准差才与原变量具有相同单位。
+>
+> 当 $\mathbb{E}[X]=0$ 时，均方根也等于标准差：
+>
+> $$
+> \sqrt{\mathbb{E}[X^2]}=\operatorname{Std}(X).
+> $$
+>
+> 因此后文用标准差描述点积的“典型大小”，并不意味着每一次点积都等于这个值。
+>
+> #### 2.2 求和：独立随机变量的方差相加
+>
+> 设 $S_d=\sum_{r=1}^{d}X_r$。期望具有线性性，**不要求独立**：
+>
+> $$
+> \mathbb{E}[S_d]
+> =\mathbb{E}\left[\sum_{r=1}^{d}X_r\right]
+> =\sum_{r=1}^{d}\mathbb{E}[X_r].
+> $$
+>
+> 方差则需要考虑不同变量之间的关联。展开平方可得：
+>
+> $$
+> \begin{aligned}
+> \operatorname{Var}(S_d)
+> &=\mathbb{E}\left[
+> \left(\sum_{r=1}^{d}(X_r-\mathbb{E}[X_r])\right)^2
+> \right]\\
+> &=\sum_{r=1}^{d}\operatorname{Var}(X_r)
+> +2\sum_{1\le r<t\le d}\operatorname{Cov}(X_r,X_t).
+> \end{aligned}
+> $$
+>
+> 若这些变量相互独立，则对于 $r\ne t$：
+>
+> $$
+> \operatorname{Cov}(X_r,X_t)
+> =\mathbb{E}[X_rX_t]-\mathbb{E}[X_r]\mathbb{E}[X_t]
+> =0.
+> $$
+>
+> 于是方差可以直接相加；若每项的方差都是 $\sigma^2$，则：
+>
+> $$
+> \boxed{
+> \operatorname{Var}(S_d)=d\sigma^2,\qquad
+> \operatorname{Std}(S_d)=\sqrt{d}\,\sigma.
+> }
+> $$
+>
+> 关键区别是：**方差按项数增长，标准差按项数的平方根增长。**严格来说，只要各项两两不相关，方差可加就成立；独立是这里使用的更强、也更直观的充分条件。
+>
+> #### 2.3 缩放：为什么除以 $a$，方差要除以 $a^2$？
+>
+> 把 $X$ 除以常数 $a\ne0$，由期望的线性性质，均值也会除以 $a$：
+>
+> $$
+> \mathbb{E}\left[\frac{X}{a}\right]=\frac{\mathbb{E}[X]}{a}.
+> $$
+>
+> 代入方差定义，逐步得到：
+>
+> $$
+> \begin{aligned}
+> \operatorname{Var}\left(\frac{X}{a}\right)
+> &=\mathbb{E}\left[\left(\frac{X}{a}-\frac{\mathbb{E}[X]}{a}\right)^2\right]\\
+> &=\mathbb{E}\left[\frac{1}{a^2}(X-\mathbb{E}[X])^2\right]\\
+> &=\frac{1}{a^2}\mathbb{E}\left[(X-\mathbb{E}[X])^2\right]\\
+> &=\frac{\operatorname{Var}(X)}{a^2}.
+> \end{aligned}
+> $$
+>
+> 直观上，**每个值到均值的距离变为原来的 $1/|a|$，距离的平方就变成原来的 $1/a^2$。**当 $a>1$ 时，就是距离缩小、方差按平方比例缩小。相应地：
+>
+> $$
+> \operatorname{Std}\left(\frac{X}{a}\right)
+> =\frac{\operatorname{Std}(X)}{|a|}.
+> $$
+>
+> 这条性质不需要独立性，也不需要正态分布，它直接来自方差的定义。
+>
+> ### 3. 应用到 attention：从单个乘积到完整点积
+>
+> #### 3.1 单个乘积项 $Z_r=q_rk_r$ 的均值与方差
+>
+> 因为同一坐标内的 $q_r$ 与 $k_r$ 独立，乘积的期望可以拆开：
 >
 > $$
 > \begin{aligned}
@@ -892,58 +907,34 @@ $$
 > \end{aligned}
 > $$
 >
-> 所以每一维的贡献有正有负，在总体上没有偏向。再由方差定义：
->
-> $$
-> \operatorname{Var}(Z_r)
-> =\mathbb{E}[Z_r^2]-\bigl(\mathbb{E}[Z_r]\bigr)^2.
-> $$
->
-> 代入 $Z_r=q_rk_r$ 和 $\mathbb{E}[Z_r]=0$：
+> 这表示每一维的贡献在平均意义下没有正负偏向。再计算方差：
 >
 > $$
 > \begin{aligned}
 > \operatorname{Var}(Z_r)
+> &=\mathbb{E}[Z_r^2]-\bigl(\mathbb{E}[Z_r]\bigr)^2\\
 > &=\mathbb{E}[q_r^2k_r^2]\\
 > &=\mathbb{E}[q_r^2]\mathbb{E}[k_r^2].
 > \end{aligned}
 > $$
 >
-> 最后一步仍然使用了 $q_r$ 与 $k_r$ 的独立性。又因为：
+> 最后一步仍然使用了 $q_r$ 与 $k_r$ 的独立性。根据第 2.1 小节的方差公式：
 >
 > $$
-> \mathbb{E}[X^2]
-> =\operatorname{Var}(X)+\bigl(\mathbb{E}[X]\bigr)^2,
+> \mathbb{E}[q_r^2]
+> =\operatorname{Var}(q_r)+\bigl(\mathbb{E}[q_r]\bigr)^2
+> =1+0^2=1,
 > $$
 >
-> 所以：
+> $k_r$ 同理，因此：
 >
 > $$
-> \mathbb{E}[q_r^2]=1+0^2=1,\qquad
-> \mathbb{E}[k_r^2]=1+0^2=1.
+> \boxed{\mathbb{E}[Z_r]=0,\qquad\operatorname{Var}(Z_r)=1.}
 > $$
 >
-> 因此每一维乘积的方差为：
+> #### 3.2 完整点积 $s=\sum_{r=1}^{d_h}Z_r$ 的均值与方差
 >
-> $$
-> \boxed{\operatorname{Var}(Z_r)=1}.
-> $$
->
-> 更一般地，若 $q_r$、$k_r$ 的方差分别是 $\sigma_q^2$、$\sigma_k^2$，且均值仍为 $0$，则：
->
-> $$
-> \operatorname{Var}(q_rk_r)=\sigma_q^2\sigma_k^2.
-> $$
->
-> ### 5. 计算完整点积的均值与方差
->
-> 点积就是这些逐维贡献之和：
->
-> $$
-> s=q^\top k=\sum_{r=1}^{d_h}Z_r.
-> $$
->
-> 先计算均值：
+> 首先，均值相加：
 >
 > $$
 > \mathbb{E}[s]
@@ -951,167 +942,208 @@ $$
 > =0.
 > $$
 >
-> 再计算方差。由于不同坐标对 $(q_r,k_r)$ 相互独立，$Z_r$ 之间也相互独立，交叉协方差项为 $0$：
+> 其次，不同坐标对 $(q_r,k_r)$ 相互独立，因此对应的 $Z_r$ 也相互独立，方差相加：
 >
 > $$
 > \begin{aligned}
 > \operatorname{Var}(s)
 > &=\operatorname{Var}\left(\sum_{r=1}^{d_h}Z_r\right)\\
 > &=\sum_{r=1}^{d_h}\operatorname{Var}(Z_r)\\
-> &=\sum_{r=1}^{d_h}1\\
-> &=d_h.
+> &=\sum_{r=1}^{d_h}1
+> =d_h.
 > \end{aligned}
 > $$
 >
-> 所以：
+> 所以未缩放点积的统计量是：
 >
 > $$
 > \boxed{
-> \begin{aligned}
-> \mathbb{E}[q^\top k]&=0,\\
-> \operatorname{Var}(q^\top k)&=d_h,\\
-> \operatorname{Std}(q^\top k)&=\sqrt{d_h}.
-> \end{aligned}
-> }.
+> \mathbb{E}[q^\top k]=0,\qquad
+> \operatorname{Var}(q^\top k)=d_h,\qquad
+> \operatorname{Std}(q^\top k)=\sqrt{d_h}.
+> }
 > $$
 >
-> 这并不是说 $q^\top k$ 恒等于 $\sqrt{d_h}$，而是说它围绕 $0$ 的**典型波动尺度**约为 $\sqrt{d_h}$。增大的是方差，不是均值。
+> **维度增大时，增长的是围绕 $0$ 的波动尺度，而不是均值。**也不能把这个结论理解为 $q^\top k$ 恒等于 $\sqrt{d_h}$。
 >
-> 若 $Z_r$ 满足中心极限定理所需的条件，那么当 $d_h$ 较大时：
+> #### 3.3 随机游走直觉：为什么不是按 $d_h$ 增长？
 >
-> $$
-> \frac{\sum_{r=1}^{d_h}Z_r}{\sqrt{d_h}}
-> \xrightarrow{d}\mathcal{N}(0,1),
-> $$
->
-> 因而可以近似写成：
+> 考虑独立的随机步长 $X_r$，每一步等概率取 $+1$ 或 $-1$：
 >
 > $$
-> q^\top k\approx\mathcal{N}(0,d_h).
+> \mathbb{E}[X_r]=0,\qquad\operatorname{Var}(X_r)=1.
 > $$
 >
-> 即使 $q_r$ 和 $k_r$ 本身服从标准正态分布，单个乘积 $q_rk_r$ 也不服从正态分布；这里的正态近似来自大量乘积项之和的中心极限定理。
+> 走 $d$ 步后，位置 $S_d=\sum_{r=1}^{d}X_r$ 满足：
 >
-> 不同维度下，未缩放点积的标准差为：
+> $$
+> \mathbb{E}[S_d]=0,\qquad
+> \operatorname{Var}(S_d)=d,\qquad
+> \sqrt{\mathbb{E}[S_d^2]}=\sqrt d.
+> $$
 >
-> | $d_h$ | $1$ | $16$ | $64$ | $128$ | $1024$ |
-> | ---: | ---: | ---: | ---: | ---: | ---: |
-> | $\operatorname{Std}(q^\top k)$ | $1$ | $4$ | $8$ | $\sqrt{128}\approx11.3$ | $32$ |
+> 走 $100$ 步，累计走过的路程是 $100$，但相对于起点的位移均方根只有 $10$，因为正负步长会互相抵消。Attention 点积也是带正负贡献的求和，而不是把每一项的绝对值累加，因此具有相同的平方根尺度规律。
 >
-> ### 6. 方差增大为什么会使 softmax 饱和？
+> 另一个例子是：若 $X_1,\ldots,X_{100}$ 独立且都服从 $\mathcal{N}(0,1)$，则正态变量之和仍为正态变量，有精确结果：
 >
-> softmax 对第 $i$ 个 logit 的定义为：
+> $$
+> S_{100}\sim\mathcal{N}(0,100),\qquad
+> \operatorname{Std}(S_{100})=10.
+> $$
+>
+> 这两个例子的分布不同，却有相同的方差增长规律，说明关键是独立性与各项方差，而不是是否服从正态分布。
+>
+> ### 4. 选择除数：为什么恰好是 $\sqrt{d_h}$？
+>
+> #### 4.1 从目标方差反推出除数
+>
+> 定义缩放后的 logit 为 $\widetilde{s}=s/a$，取正数 $a$。根据第 2.3 小节：
+>
+> $$
+> \operatorname{Var}(\widetilde{s})
+> =\frac{\operatorname{Var}(s)}{a^2}
+> =\frac{d_h}{a^2}.
+> $$
+>
+> 希望方差保持为 $1$，就需要：
+>
+> $$
+> \frac{d_h}{a^2}=1
+> \quad\Longrightarrow\quad
+> a^2=d_h
+> \quad\Longrightarrow\quad
+> \boxed{a=\sqrt{d_h}}.
+> $$
+>
+> 代入即可验证：
+>
+> $$
+> \operatorname{Var}\left(\frac{q^\top k}{\sqrt{d_h}}\right)
+> =\frac{d_h}{(\sqrt{d_h})^2}=1,\qquad
+> \operatorname{Std}\left(\frac{q^\top k}{\sqrt{d_h}}\right)=1.
+> $$
+>
+> **除数取的是原点积的标准差，而不是原点积的方差。**这是一种基于维度的方差尺度校正，不需要逐次计算实际 logits 的样本方差。
+>
+> #### 4.2 如果除以 $d_h$，会发生什么？
+>
+> 此时：
+>
+> $$
+> \operatorname{Var}\left(\frac{q^\top k}{d_h}\right)
+> =\frac{d_h}{d_h^2}=\frac{1}{d_h},\qquad
+> \operatorname{Std}\left(\frac{q^\top k}{d_h}\right)
+> =\frac{1}{\sqrt{d_h}}\longrightarrow0.
+> $$
+>
+> 这相当于对各维乘积取平均，会让零均值随机波动越来越小，而不是维持固定的波动尺度。三种选择可放在一起比较：
+>
+> | 处理方式 | 方差 | 标准差 | 随 $d_h$ 增大的趋势 |
+> | --- | --- | --- | --- |
+> | 不缩放：$q^\top k$ | $d_h$ | $\sqrt{d_h}$ | 波动越来越大 |
+> | 除以 $\sqrt{d_h}$ | $1$ | $1$ | 波动尺度保持不变 |
+> | 除以 $d_h$ | $1/d_h$ | $1/\sqrt{d_h}$ | 波动趋近于零 |
+>
+> 例如，不同维度下的标准差为：
+>
+> | $d_h$ | 未缩放 | 除以 $\sqrt{d_h}$ | 除以 $d_h$ |
+> | ---: | ---: | ---: | ---: |
+> | $1$ | $1$ | $1$ | $1$ |
+> | $16$ | $4$ | $1$ | $0.25$ |
+> | $64$ | $8$ | $1$ | $0.125$ |
+> | $128$ | $\sqrt{128}\approx11.3$ | $1$ | $1/\sqrt{128}\approx0.088$ |
+> | $1024$ | $32$ | $1$ | $0.03125$ |
+>
+> ### 5. 为什么要稳定这个尺度？看 softmax 的响应
+>
+> 对同一个 query，令 $s_i$ 表示它与第 $i$ 个 key 的 logit：
 >
 > $$
 > p_i=\frac{e^{s_i}}{\sum_j e^{s_j}}.
 > $$
 >
-> 当 logits 为 $[0.2,0.5,1.0]$ 时：
+> **softmax 对分数之间的差距敏感，而不是对共同的绝对偏移敏感。**给所有 logits 加同一个常数不会改变结果；把它们的差距整体放大，则通常会让分布更尖锐。
+>
+> #### 5.1 不缩放：分数差距可能过大，注意力过早变尖锐
+>
+> 例如：
 >
 > $$
 > \operatorname{softmax}([0.2,0.5,1.0])
 > \approx[0.22,0.30,0.48].
 > $$
 >
-> 若维度增大使相同的相对波动放大 $10$ 倍：
+> 若将这组分数整体放大 $10$ 倍：
 >
 > $$
 > \operatorname{softmax}([2,5,10])
 > \approx[0.0003,0.0067,0.9930].
 > $$
 >
-> 指数函数放大了 logits 的差距，使分布接近 one-hot。此时模型难以平滑地组合多个 value。softmax 的雅可比矩阵为：
+> 指数函数放大了分数差距，使分布接近 one-hot，难以平滑地组合多个 value。这里的例子是在展示尺度的作用，不是说增加维度会把每一个具体点积都精确放大同一倍数。
+>
+> softmax 的雅可比矩阵为：
 >
 > $$
 > \frac{\partial p_i}{\partial s_j}
-> =p_i(\delta_{ij}-p_j).
+> =p_i(\delta_{ij}-p_j),
 > $$
 >
-> 当各概率接近 $0$ 或 $1$ 时，雅可比矩阵中的多数元素接近 $0$，反向传播到 logits 的梯度容易变小。
+> 其中 $\delta_{ij}$ 在 $i=j$ 时为 $1$，否则为 $0$。当分布接近 one-hot 时，雅可比矩阵的元素接近 $0$，通过 attention 权重反向传播到 logits 的梯度容易受到抑制。
 >
-> ### 7. 严格推出除以 $\sqrt{d_h}$ 后的方差
+> #### 5.2 除以 $d_h$：随机分数差距过小，注意力趋于平坦
 >
-> 定义缩放后的分数：
+> 在前面的零均值、独立假设下，$s_i/d_h$ 的均值为 $0$、方差为 $1/d_h$，因此随着维度增大，它在均方意义下趋近于 $0$。
 >
-> $$
-> \widetilde{s}=\frac{q^\top k}{\sqrt{d_h}}.
-> $$
->
-> 对常数 $a$ 和随机变量 $X$：
->
-> $$
-> \begin{aligned}
-> \operatorname{Var}(aX)
-> &=\mathbb{E}\left[(aX-a\mathbb{E}[X])^2\right]\\
-> &=a^2\mathbb{E}\left[(X-\mathbb{E}[X])^2\right]\\
-> &=a^2\operatorname{Var}(X).
-> \end{aligned}
-> $$
->
-> 取 $a=1/\sqrt{d_h}$，得到：
->
-> $$
-> \begin{aligned}
-> \operatorname{Var}(\widetilde{s})
-> &=\operatorname{Var}\left(\frac{q^\top k}{\sqrt{d_h}}\right)\\
-> &=\frac{1}{d_h}\operatorname{Var}(q^\top k)\\
-> &=\frac{1}{d_h}\cdot d_h\\
-> &=1.
-> \end{aligned}
-> $$
->
-> 因此：
->
-> $$
-> \boxed{
-> \begin{aligned}
-> q^\top k&\approx\mathcal{N}(0,d_h),\\
-> \frac{q^\top k}{\sqrt{d_h}}&\approx\mathcal{N}(0,1).
-> \end{aligned}
-> }.
-> $$
->
-> 无论 $d_h$ 是 $64$、$128$ 还是 $256$，缩放后的 logits 都维持在相近的数值尺度。这是一种 **variance normalization（方差归一化）**。
->
-> ### 8. 为什么不是除以 $d_h$？
->
-> 若改为除以 $d_h$，则：
->
-> $$
-> \begin{aligned}
-> \operatorname{Var}\left(\frac{q^\top k}{d_h}\right)
-> &=\frac{1}{d_h^2}\operatorname{Var}(q^\top k)\\
-> &=\frac{1}{d_h},\\
-> \operatorname{Std}\left(\frac{q^\top k}{d_h}\right)
-> &=\frac{1}{\sqrt{d_h}}
-> \longrightarrow0.
-> \end{aligned}
-> $$
->
-> 随着 $d_h$ 增大，所有 logits 都趋近于 $0$，softmax 因而趋近于均匀分布：
+> 对于固定数量 $N_k$ 的可见 key，若每个分数都满足这一模型，分数之间的差距也趋近于零，softmax 因而趋近于均匀分布：
 >
 > $$
 > \left[\frac{1}{N_k},\frac{1}{N_k},\ldots,\frac{1}{N_k}\right].
 > $$
 >
-> 除以 $\sqrt{d_h}$ 恰好避免两个极端：既不会因 logits 尺度过大而太尖锐，也不会因尺度趋近于 $0$ 而太平坦。
+> 因此，除以 $\sqrt{d_h}$ 的作用是**消除维度本身带来的尺度漂移**，避免初始化附近仅因维度变化就过尖或过平；它不保证训练后的注意力一定具有某个固定的尖锐程度。
 >
-> 核心推导链条为：
+> ### 6. 适用边界：单位方差不等于标准正态，也不是实际模型的硬约束
+>
+> #### 6.1 正态近似只是补充解释，不是缩放推导的前提
+>
+> 前面关于方差的等式，在所列假设下直接成立，不需要中心极限定理。
+>
+> 如果进一步满足中心极限定理的条件，例如 $Z_r$ 独立同分布、均值为 $0$、方差为 $1$，那么当 $d_h$ 趋于无穷时：
 >
 > $$
-> \boxed{
-> \begin{gathered}
-> \operatorname{Var}(q_rk_r)=1\\
-> \Downarrow\\
-> \operatorname{Var}\left(\sum_{r=1}^{d_h}q_rk_r\right)=d_h\\
-> \Downarrow\\
-> \operatorname{Var}\left(\frac{q^\top k}{\sqrt{d_h}}\right)=1.
-> \end{gathered}
-> }.
+> \frac{\sum_{r=1}^{d_h}Z_r}{\sqrt{d_h}}
+> \xrightarrow{d}\mathcal{N}(0,1).
 > $$
 >
-> 缩放不会改变 tensor shape，只改变 score 的数值范围。实际模型中的 Q/K 分量不一定严格独立、零均值且单位方差，因此上述等式是用于解释设计动机的理想化推导；在存在相关性时，还会出现协方差项。但核心目的不变：抵消点积尺度随 head dimension 增长的趋势。
-
+> 因此，在维度足够大且近似适用时，可以描述为：
+>
+> $$
+> q^\top k\ \text{近似服从}\ \mathcal{N}(0,d_h),\qquad
+> \frac{q^\top k}{\sqrt{d_h}}\ \text{近似服从}\ \mathcal{N}(0,1).
+> $$
+>
+> 即使 $q_r$ 和 $k_r$ 各自服从标准正态分布，单个乘积 $q_rk_r$ 也不服从正态分布；这里的正态近似来自**大量乘积项之和**。不能仅凭均值为 $0$、方差为 $1$，就断言缩放后的分数服从标准正态分布。
+>
+> #### 6.2 真实模型中，缩放后的方差不一定严格为 $1$
+>
+> 若仍保持独立、零均值，但各分量方差改为 $\sigma_q^2$、$\sigma_k^2$，则同样的计算给出：
+>
+> $$
+> \operatorname{Var}(q_rk_r)=\sigma_q^2\sigma_k^2,
+> $$
+>
+> $$
+> \operatorname{Var}(q^\top k)=d_h\sigma_q^2\sigma_k^2,\qquad
+> \operatorname{Var}\left(\frac{q^\top k}{\sqrt{d_h}}\right)
+> =\sigma_q^2\sigma_k^2.
+> $$
+>
+> 可见，除以 $\sqrt{d_h}$ 抵消的是维度因子，不会自动消除 Q/K 自身的尺度。如果分量不再独立，还需要考虑乘积项之间的协方差；如果同一坐标的 $q_r$、$k_r$ 相关，单个乘积项的均值和方差也要重新计算。
+>
+> 实际 Q/K 是学习得到的表示，不一定严格独立、零均值或单位方差。这个推导用于解释设计动机，而不是要求模型在训练过程中始终满足理想统计条件。缩放不改变 tensor shape，也不计算或减去分数均值，只调整 logits 的数值尺度。
+>
+> **最后记住这条链：**单维乘积方差为 $1$ → $d_h$ 个独立项相加后方差为 $d_h$ → 标准差为 $\sqrt{d_h}$ → 除以这个标准差后方差恢复为 $1$。根号来自“方差包含平方”，而不是来自正态分布假设。
 
 ## 4.5 Softmax 的维度
 

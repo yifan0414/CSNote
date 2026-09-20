@@ -6,7 +6,7 @@
   "createdAt": 1788939515270,
   "lastActivityAt": 1788940206619,
   "sessionId": "01a0851a-b708-703c-a6e6-b710d3b1b7b7",
-  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "selectedModel": "pi:deepseek/deepseek-flash",
   "providerState": {
     "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-09T07-38-35-657Z_01a0851a-b708-703c-a6e6-b710d3b1b7b7.jsonl",
     "sessionId": "01a0851a-b708-703c-a6e6-b710d3b1b7b7"

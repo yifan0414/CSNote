@@ -14,7 +14,7 @@
     "transcriptRootPath": "/Users/yifan/.codex/sessions",
     "workspaceDependencyToolVersion": 1
   },
-  "linkedContentPath": "07-MultiModal/Video-MLLM/BLIP-2：用Q-Former连接冻结视觉编码器与大语言模型.md",
+  "linkedContentPath": "07-MultiModal/基础/06-BLIP-2：用Q-Former连接冻结视觉编码器与大语言模型.md",
   "usage": {
     "inputTokens": 123735,
     "cacheCreationInputTokens": 0,

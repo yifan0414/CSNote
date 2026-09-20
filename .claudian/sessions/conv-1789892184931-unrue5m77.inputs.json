@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789892184931-unrue5m77",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789892184966-v5mkqpp",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789892184917-4a1x8a6",
+      "timestamp": 1789892184917,
+      "rawDisplayText": "/skill:read-paper https://arxiv.org/pdf/2607.02927",
+      "canonicalText": "/skill:read-paper https://arxiv.org/pdf/2607.02927",
+      "images": [],
+      "contentDigest": "718152479fd3524e9daeacd3611b0b7ecf7487968e7a7669e26129f2944f9c37",
+      "providerAssistantMessageId": "36e5befe"
+    }
+  ]
+}

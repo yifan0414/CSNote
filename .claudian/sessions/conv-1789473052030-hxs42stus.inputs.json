@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789473052030-hxs42stus",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789473052129-f3cu79f",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789473052023-tm8h0tr",
+      "timestamp": 1789473052023,
+      "rawDisplayText": "你觉得这篇笔记写的和01-CLIP那篇那个号",
+      "canonicalText": "你觉得这篇笔记写的和01-CLIP那篇那个号",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/基础/03-SigLIP：从逐对二分类到共享语义空间.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "282368a5255aa8a3c591e7eea2cb52fb52e24ee064c8e207004165c739d46e2c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789473059803-5vu30hx",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789473059797-7u9d3ue",
+      "timestamp": 1789473059797,
+      "rawDisplayText": "你觉得这篇笔记写的和01-CLIP那篇那个好",
+      "canonicalText": "你觉得这篇笔记写的和01-CLIP那篇那个好",
+      "images": [],
+      "contentDigest": "c726ed252e2f8f585ed1aeaf7f40fb620825c8a89d6113da71af02a73f2f4862",
+      "providerUserMessageId": "01a0a4e8-33d8-7520-a91e-4c9b3805730c",
+      "providerAssistantMessageId": "msg_0d6d7aad879ba19b016aa93143dba087d0a0838a1a1a7c2112"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789473180691-jmlfz8p",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789473180682-fwe6qu6",
+      "timestamp": 1789473180682,
+      "rawDisplayText": "你按照CLIP那个笔记的组织方式，重新组织下这个笔记的内容",
+      "canonicalText": "你按照CLIP那个笔记的组织方式，重新组织下这个笔记的内容",
+      "images": [],
+      "contentDigest": "2ae107ceb412170677beaec84e809019bdf0beee1fbfaf4b4a2f56c4661e4ba7",
+      "providerUserMessageId": "01a0a4e9-d031-7503-b5af-8b1b5fe273d6",
+      "providerAssistantMessageId": "msg_0d6d7aad879ba19b016aa932cfaf8c87d0a992a08d4023aba2"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789473506025-osa3wxq",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789473506018-wqmnvzw",
+      "timestamp": 1789473506018,
+      "rawDisplayText": "你可以添加一些callout 作为补充内容说明，就像BLIP笔记一样",
+      "canonicalText": "你可以添加一些callout 作为补充内容说明，就像BLIP笔记一样",
+      "images": [],
+      "contentDigest": "49f9188d94e250012cdddd3d469765760c7f10e54d3e3353c563f4b9d07701fe",
+      "providerUserMessageId": "01a0a4ee-c319-7d90-90a3-457e8327a708",
+      "providerAssistantMessageId": "msg_0d6d7aad879ba19b016aa9334373c087d09fabf192e45cbdfe"
+    }
+  ]
+}

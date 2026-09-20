@@ -1,0 +1,19 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "claudian-execution-passive": {
+      "description": "Claudian passive execution agent.",
+      "mode": "primary",
+      "permission": {
+        "*": "deny",
+        "external_directory": "deny"
+      },
+      "prompt": "{file:/Users/yifan/Library/Mobile Documents/iCloud~md~obsidian/Documents/iCSNote/.claudian/opencode/metadata/system.md}"
+    },
+    "plan": {
+      "disable": true
+    }
+  },
+  "default_agent": "claudian-execution-passive",
+  "username": "yifan"
+}

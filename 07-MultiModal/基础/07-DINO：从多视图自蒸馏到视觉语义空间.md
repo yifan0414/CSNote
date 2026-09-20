@@ -7,7 +7,7 @@ updated: 2026-09-12
 
 > **DINO 用同一张图片的不同增强视图构造监督：教师网络对全局视图生成概率分布，学生网络从其他全局或局部视图预测这个分布；交叉熵只反向更新学生，教师由学生参数的 EMA 更新，并结合 centering 与 sharpening 避免表示塌缩。**
 
-本文讨论原始 **DINO（self-distillation with no labels）**，即 ICCV 2021 论文 [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294) 中的视觉自监督方法；不是后续的 [DINOv2](https://github.com/facebookresearch/dinov2)，也不是同名的 [DINO 目标检测模型](https://arxiv.org/abs/2203.03605)。组织方式沿用 [[07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md|CLIP 笔记]]。
+本文讨论原始 **DINO（self-distillation with no labels）**，即 ICCV 2021 论文 [Emerging Properties in Self-Supervised Vision Transformers](https://arxiv.org/abs/2104.14294) 中的视觉自监督方法；不是后续的 [DINOv2](https://github.com/facebookresearch/dinov2)，也不是同名的 [DINO 目标检测模型](https://arxiv.org/abs/2203.03605)。组织方式沿用 [[01-CLIP：从图文配对到共享语义空间|CLIP 笔记]]。
 
 理解 DINO，可以沿着四个问题展开：
 

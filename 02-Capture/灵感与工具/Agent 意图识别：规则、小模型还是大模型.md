@@ -1,6 +1,6 @@
 ---
 类型: idea
-状态: inbox
+status: unread
 来源: Bilibili
 网址: https://www.bilibili.com/video/BV1XRgG6JEtv/
 发现时间: 2026-08-24
@@ -9,6 +9,8 @@ tags:
   - Agent
   - 意图识别
   - LLM
+created: 2026-08-24
+updated: 2026-09-20
 aliases:
   - Agent 意图路由面试题
 ---
@@ -30,11 +32,11 @@ aliases:
 
 核心不是“哪个模型最准”，而是在准确率、延迟、成本、可维护性和错误执行风险之间取得平衡。
 
-## 30 秒回答
+## $30$ 秒回答
 
 > 我不会在规则、小模型和大模型之间只选一个，而会设计分层的混合路由。规则适合明确命令、权限限制和高风险动作；小模型处理标签稳定、调用量大的主流意图，成本低、延迟也更可控；大模型处理模糊表达、上下文依赖和长尾问题。路由结果还要经过置信度与风险门控：高置信度、低风险才直接执行；存在歧义就追问；退款、删除、转账等高风险工具即使识别置信度很高，也必须做参数校验、权限检查和用户确认。最终我会重点评估错误执行率、任务成功率、拒识率、P95 延迟和单次调用成本，而不只看意图分类准确率。
 
-## 2 分钟展开回答
+## $2$ 分钟展开回答
 
 ### 1. 为什么不能只使用规则？
 
@@ -196,3 +198,7 @@ aliases:
 - [Amazon Bedrock：工具调用前的用户确认](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-userconfirmation.html)
 - [Microsoft Agent Framework：人工审批工具调用](https://learn.microsoft.com/en-us/agent-framework/agents/tools/tool-approval)
 
+## 关联笔记
+
+- [[06-LLM/90-课程/CS224n/12-Agent-工具调用与-RAG|Agent、工具调用与 RAG]]：课程中的工具调用、记忆与评测背景。
+- [[02-Capture/灵感与工具/从 printf("Hello") 到 Agentic Model：上下文才是真正的关键|上下文与 Agent 行为]]：从运行环境理解意图判断所需的上下文。

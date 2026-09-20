@@ -1,8 +1,20 @@
 ---
-状态: inbox
+类型: idea
+status: read
+来源:
+网址:
+发现时间: 2026-05-04
 tags:
-创建时间: 2026-05-04 23:30
+  - C
+  - Linux
+  - 系统调用
+  - 缓冲区
+created: 2026-05-04
+updated: 2026-09-20
 ---
+
+# printf 的调用过程
+
 ```
 ╔══════════════════════════════════════════════════════════════════════════════════════════╗
 ║                   C 语言  printf()  完整调用链 — 从用户代码到硬件输出                    ║
@@ -104,18 +116,22 @@ tags:
 
 ---
 
-**8 层调用链说明：**
+**$8$ 层调用链说明：**
 
 | 层  | 关键函数                      | 所在位置                             |
 | --- | ----------------------------- | ------------------------------------ |
-| 1   | `printf(fmt, ...)`            | 用户代码                             |
-| 2   | `__printf` → `vfprintf`       | glibc stdio/printf.c                 |
-| 3   | `_IO_vfprintf_internal`       | glibc stdio/vfprintf-internal.c      |
-| 4   | `_IO_xsputn` / `_IO_do_write` | glibc libio（FILE 缓冲层）           |
-| 5   | `write()` syscall             | 用户态/内核态边界（Ring 3 → Ring 0） |
-| 6   | `sys_write` → `vfs_write`     | Linux 内核 fs/read_write.c           |
-| 7   | `tty_write` → 行规程 → 驱动   | Linux drivers/tty/                   |
-| 8   | 终端模拟器 → GPU → 显示器     | 硬件显示层                           |
+| $1$   | `printf(fmt, ...)`            | 用户代码                             |
+| $2$   | `__printf` → `vfprintf`       | glibc `stdio/printf.c`                 |
+| $3$   | `_IO_vfprintf_internal`       | glibc `stdio/vfprintf-internal.c`      |
+| $4$   | `_IO_xsputn` / `_IO_do_write` | glibc libio（FILE 缓冲层）           |
+| $5$   | `write()` syscall             | 用户态/内核态边界（Ring $3$ → Ring $0$） |
+| $6$   | `sys_write` → `vfs_write`     | Linux 内核 `fs/read_write.c`           |
+| $7$   | `tty_write` → 行规程 → 驱动   | Linux `drivers/tty/`                   |
+| $8$   | 终端模拟器 → GPU → 显示器     | 硬件显示层                           |
 
-关键边界是**第 4 层→第 5 层**：`\n` 或缓冲区满时才触发 `write()` 系统调用，这也是为什么 `printf` 不加 `\n` 有时看不到输出的根本原因。
+关键边界是**第 $4$ 层→第 $5$ 层**：`\n` 或缓冲区满时才触发 `write()` 系统调用，这也是为什么 `printf` 不加 `\n` 有时看不到输出的根本原因。
 
+## 关联笔记
+
+- [[01-Project/NJUICS/tutorial/PA3 穿越时空的旅程 批处理系统/3-3 用户程序和系统调用|用户程序和系统调用]]：操作系统课程中的用户程序执行与系统调用背景。
+- [[02-Capture/灵感与工具/从 printf("Hello") 到 Agentic Model：上下文才是真正的关键|从 printf 到 Agentic Model]]：从调用链继续讨论代码与运行上下文的关系。

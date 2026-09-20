@@ -1,0 +1,27 @@
+{
+  "id": "conv-1789435288490-r1m11psfd",
+  "providerId": "codex",
+  "title": "只回复 OK，不调用任何工具。",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789435288492,
+  "lastActivityAt": 1789453289746,
+  "sessionId": "01a0a2a7-9d0d-7783-8bec-c4b565432191",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a0a2a7-9d0d-7783-8bec-c4b565432191",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/15/rollout-2026-09-15T09-21-28-01a0a2a7-9d0d-7783-8bec-c4b565432191.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "usage": {
+    "inputTokens": 49662,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 43904,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 49662,
+    "percentage": 6,
+    "model": "gpt-6-astra"
+  }
+}

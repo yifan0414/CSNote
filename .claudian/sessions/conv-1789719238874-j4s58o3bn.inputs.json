@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789719238874-j4s58o3bn",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789719238979-m64d6y7",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789719238871-ev9c0f2",
+      "timestamp": 1789719238871,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/基础/04-SigLIP2：从全局图文对齐到多粒度视觉表征.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerUserMessageId": "01a0b394-6bd8-7d93-8eb0-1b61b088f2e5",
+      "providerAssistantMessageId": "01a0b394-5aa2-71d3-aad0-a9fffdd4a3e1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789719552855-h2vphhv",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789719552840-tl1lu89",
+      "timestamp": 1789719552840,
+      "rawDisplayText": "水电费",
+      "canonicalText": "水电费",
+      "images": [],
+      "contentDigest": "d5dd296540da135f2b25cb5ca816687f562ec37b00e4b238e1a7939e76bce73e",
+      "providerUserMessageId": "01a0b399-23b6-7272-969c-3b8c0bd90474"
+    }
+  ]
+}

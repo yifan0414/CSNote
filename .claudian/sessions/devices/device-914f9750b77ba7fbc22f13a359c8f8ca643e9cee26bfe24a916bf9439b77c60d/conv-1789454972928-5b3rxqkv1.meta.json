@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789454972928-5b3rxqkv1",
+  "providerId": "codex",
+  "title": "你现在带着我看这个笔记，我刚学了CLIP",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789454972938,
+  "lastActivityAt": 1789461793455,
+  "sessionId": "01a0a3d3-f9ba-7902-8ec8-3b0add31c49f",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a0a3d3-f9ba-7902-8ec8-3b0add31c49f",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/15/rollout-2026-09-15T14-49-33-01a0a3d3-f9ba-7902-8ec8-3b0add31c49f.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/基础/05-BLIP：从图文对齐到理解、生成与数据自举.md",
+  "usage": {
+    "inputTokens": 302477,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 301440,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 302477,
+    "percentage": 37,
+    "model": "gpt-6-astra"
+  }
+}

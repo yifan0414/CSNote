@@ -11,17 +11,8 @@
   "excludedTags": [],
   "mediaFolder": "",
   "systemPrompt": "",
-  "persistentExternalContextPaths": [],
-  "sharedEnvironmentVariables": "",
-  "envSnippets": [
-    {
-      "id": "snippet-1776972241287",
-      "name": "APIKEY",
-      "description": "",
-      "envVars": "API_KEY=sk-ea7659e2d41ae22ff0ebc35928a3639bfa7b98c906f8d9b4e77b99f15363a69c",
-      "scope": "shared"
-    }
-  ],
+  "sharedEnvironmentVariables": "http_proxy=http://127.0.0.1:7897\nhttps_proxy=http://127.0.0.1:7897\nall_proxy=http://127.0.0.1:7897",
+  "envSnippets": [],
   "customContextLimits": {},
   "customModelAliases": {},
   "keyboardNavigation": {
@@ -34,12 +25,12 @@
   "providerConfigs": {
     "claude": {
       "enabled": true,
+      "responseStyle": "Default",
       "safeMode": "acceptEdits",
       "cliPath": "",
       "cliPathsByHost": {},
       "loadUserSettings": true,
       "enableChrome": false,
-      "enableBangBash": false,
       "customModels": "",
       "defaultModel": "opus",
       "lastModel": "haiku",
@@ -88,7 +79,7 @@
               "description": "Maximum reasoning with automatic task delegation"
             }
           ],
-          "defaultReasoningEffort": "low",
+          "defaultReasoningEffort": "medium",
           "serviceTiers": [
             {
               "id": "priority",
@@ -280,10 +271,11 @@
         "gpt-5.6-luna"
       ],
       "enableUltraEffort": false,
+      "responseStyle": "pragmatic",
       "reasoningSummary": "auto",
       "environmentVariables": "",
       "environmentHash": "runtime-input:v1:057c24804ad623010ca5b002ba56803d48f10df435413e3607af64ec4ed75a93",
-      "catalogTimestamp": 1789434300720,
+      "catalogTimestamp": 1789789326270,
       "catalogFingerprint": "2:95579f03064f02198b402d1ef01afc5ae44cecdfcb3cb6402b77ba83d018d4d8",
       "installationMethodsByHost": {
         "yifanMac-mini": "native-windows",
@@ -369,6 +361,26 @@
         {
           "api": "openai-completions",
           "contextWindow": 1000000,
+          "encodedId": "pi:deepseek/deepseek-flash",
+          "id": "deepseek-flash",
+          "input": [
+            "text",
+            "image"
+          ],
+          "label": "DeepSeek V4.1 Flash",
+          "maxTokens": 384000,
+          "provider": "deepseek",
+          "reasoning": true,
+          "thinkingLevels": [
+            "off",
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        {
+          "api": "openai-completions",
+          "contextWindow": 1000000,
           "encodedId": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
           "id": "deepseek-v4.1-flash-expires-on-0910",
           "input": [
@@ -391,12 +403,10 @@
       "environmentHash": "runtime-input:v1:d39fce0aa5599822a0640cdb74a12db12219b72cbf4c28ce746af2758efac793",
       "environmentVariables": "",
       "modelAliases": {},
-      "preferredThinkingByModel": {
-        "pi:deepseek/deepseek-v4.1-flash-expires-on-0910": "high"
-      },
+      "preferredThinkingByModel": {},
       "toolMode": "all",
       "visibleModels": [
-        "pi:deepseek/deepseek-v4.1-flash-expires-on-0910"
+        "pi:deepseek/deepseek-flash"
       ]
     },
     "grok": {
@@ -407,7 +417,6 @@
       "environmentHash": "",
       "environmentVariables": "",
       "modelAliases": {},
-      "planBasePermissionMode": "normal",
       "preferredReasoningByModel": {},
       "visibleModels": null
     }
@@ -415,16 +424,16 @@
   "settingsProvider": "claude",
   "lastSelectedChatModel": {
     "providerId": "pi",
-    "model": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910"
+    "model": "pi:deepseek/deepseek-flash"
   },
   "savedProviderModel": {
     "claude": "haiku",
     "codex": "gpt-6-astra",
-    "pi": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910"
+    "pi": "pi:deepseek/deepseek-flash"
   },
   "savedProviderEffort": {
     "claude": "high",
-    "codex": "low",
+    "codex": "medium",
     "pi": "high"
   },
   "savedProviderServiceTier": {
@@ -440,7 +449,8 @@
   "lastCustomModel": "",
   "maxWarmAgentProcesses": 5,
   "enableAutoScroll": true,
-  "deferMathRenderingDuringStreaming": true,
+  "showMessageTimestamps": false,
+  "deferMathRenderingDuringStreaming": false,
   "expandFileEditsByDefault": false,
   "chatViewPlacement": "right-sidebar",
   "enableDualPane": true,
@@ -453,7 +463,6 @@
   "sessionManagerSort": "last-updated",
   "pinnedLinkedContentPaths": [],
   "hiddenProviderCommands": {},
-  "showMessageTimestamps": false,
   "maxTabs": 3,
   "tabBarPosition": "input"
 }

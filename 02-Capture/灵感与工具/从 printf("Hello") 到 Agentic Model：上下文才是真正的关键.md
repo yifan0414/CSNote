@@ -1,11 +1,19 @@
 ---
-状态: inbox
 类型: idea
+status: unread
 来源: thought
-网址:
+网址: null
+发现时间: 2026-04-25
 tags:
-创建时间: 2026-04-25 01:13
+  - Agent
+  - 上下文工程
+  - 软件工程
+  - C
+created: 2026-04-25
+updated: 2026-09-20
 ---
+
+# 从 printf 到 Agentic Model：上下文才是真正的关键
 
 ## 核心观点
 
@@ -194,7 +202,7 @@ int main() {
 
 这两件事共同揭示了一个关键词：
 
-# Context
+**Context**
 
 上下文不是附属信息，而是意义的一部分。
 
@@ -358,7 +366,7 @@ KNOWN_ISSUES.md
 
 可以在项目根目录放一个 `AGENTS.md`：
 
-```markdown
+````markdown
 # Project Guide for AI Agents
 
 ## Project Goal
@@ -414,11 +422,11 @@ python scripts/check_latency.py --config configs/latency.yaml
 - 某些视频数据路径依赖本地软链接。
 - `torchrun` 参数和单卡运行参数不同。
 - batch size 过大时容易出现 CUDA OOM。
-```
+````
+
 这样的文件对人类开发者有用，对 Agent 更有用。
 
 它相当于给 Agent 提供了项目的“编译环境”和“运行说明”。
-```
 
 ---
 
@@ -551,3 +559,8 @@ Context-centric
 最后可以用一句话概括：
 
 > **源码不是程序的全部，prompt 也不是模型行为的全部。真正决定结果的，是表达与上下文共同构成的系统。**
+
+## 关联笔记
+
+- [[02-Capture/灵感与工具/printf的调用过程|printf 的调用过程]]：传统代码依赖运行上下文的具体例子。
+- [[06-LLM/90-课程/CS224n/12-Agent-工具调用与-RAG|Agent、工具调用与 RAG]]：继续阅读记忆、工具与环境反馈的课程材料。

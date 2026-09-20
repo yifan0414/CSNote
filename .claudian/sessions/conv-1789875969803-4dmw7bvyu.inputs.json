@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789875969803-4dmw7bvyu",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789875969906-ns2ae41",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789875969796-vmaqho6",
+      "timestamp": 1789875969796,
+      "rawDisplayText": "hi",
+      "canonicalText": "hi",
+      "context": {
+        "linkedContent": {
+          "path": "06-LLM/03-Transformer/GPT-3：从模型规模化到上下文少样本学习.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "88de65a2615a366404fdfd86bc354f32929270ce50be0af4a2bb771e29bf83ef",
+      "providerAssistantMessageId": "f14ada0d"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789890802622-fxdd8rz0y",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789890802701-l2b59gp",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789890802607-841yomx",
+      "timestamp": 1789890802607,
+      "rawDisplayText": "/skill:read-paper https://arxiv.org/pdf/2605.18740",
+      "canonicalText": "/skill:read-paper https://arxiv.org/pdf/2605.18740",
+      "images": [],
+      "contentDigest": "6cb36914ba25354970e4fa52acec1747487a96842fbf510d2357246ca38adbcf",
+      "providerAssistantMessageId": "ff1fa8f3"
+    }
+  ]
+}

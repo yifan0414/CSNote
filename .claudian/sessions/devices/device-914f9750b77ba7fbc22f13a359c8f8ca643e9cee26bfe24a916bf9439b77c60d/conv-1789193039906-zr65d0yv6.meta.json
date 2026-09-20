@@ -14,7 +14,7 @@
     "transcriptRootPath": "/Users/yifan/.codex/sessions",
     "workspaceDependencyToolVersion": 1
   },
-  "linkedContentPath": "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
+  "linkedContentPath": "07-MultiModal/基础/01-CLIP：从图文配对到共享语义空间.md",
   "usage": {
     "inputTokens": 63247,
     "cacheCreationInputTokens": 0,

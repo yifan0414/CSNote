@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789473704392-xxrt6tdcf",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789473704424-viw97u7",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789473704385-e4my0s4",
+      "timestamp": 1789473704385,
+      "rawDisplayText": "你按照 @07-MultiModal/基础/05-BLIP：从图文对齐到理解、生成与数据自举.md 这个笔记的组织逻辑，重新组织下这个siglip2笔记，然后使用drawio画一个类似于BLIP笔记的框架图插入svg",
+      "canonicalText": "你按照 @07-MultiModal/基础/05-BLIP：从图文对齐到理解、生成与数据自举.md 这个笔记的组织逻辑，重新组织下这个siglip2笔记，然后使用drawio画一个类似于BLIP笔记的框架图插入svg",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/基础/04-SigLIP2：从全局图文对齐到多粒度视觉表征.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "06227c4b4f47bbffcd499cde9bf1e87db8855a9b8e25c7c806fe20379068542e",
+      "providerUserMessageId": "01a0a4f1-dbb3-7032-9c36-d5b1954105a3",
+      "providerAssistantMessageId": "msg_01d247ea601d4bf4016aa934ca68d487d09560ca30eee69d7b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789474063793-4exea38",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789474063784-13k04mg",
+      "timestamp": 1789474063784,
+      "rawDisplayText": "可以加入一些不同类型的callout在正文中作为补充说明，解释等等",
+      "canonicalText": "可以加入一些不同类型的callout在正文中作为补充说明，解释等等",
+      "images": [],
+      "contentDigest": "12530866ecfd6a055d0b6fb808372b543431cc4ffb3a44a15479711f95ec5e90",
+      "providerUserMessageId": "01a0a4f7-4611-75a3-b453-aa469dfbdfb0",
+      "providerAssistantMessageId": "msg_01d247ea601d4bf4016aa93565f9a487d0a0d366470055e132"
+    }
+  ]
+}

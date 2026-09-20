@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789720047073-3lg7t2lgv",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789720047101-7c31pmr",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789720047062-m7qcsu6",
+      "timestamp": 1789720047062,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/基础/04-SigLIP2：从全局图文对齐到多粒度视觉表征.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerAssistantMessageId": "e996efb6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789720052864-i2mkp15",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789720052860-dhw46p6",
+      "timestamp": 1789720052860,
+      "rawDisplayText": "这个文章讲过了什么",
+      "canonicalText": "这个文章讲过了什么",
+      "images": [],
+      "contentDigest": "e8c41ac6e1629f996a602ce8b71a13ae302d57970bc7f3b6bdfbeecabba5ed97",
+      "providerAssistantMessageId": "3d38fb68"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789720072501-bt9ubzq",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789720072494-qo1is38",
+      "timestamp": 1789720072494,
+      "rawDisplayText": "有公式吗",
+      "canonicalText": "有公式吗",
+      "images": [],
+      "contentDigest": "d4c386ea61372df915ea05ecb0f4242262385ead4ce6b57ac7c9fcaab5b73ccf",
+      "providerAssistantMessageId": "f5f8d175"
+    }
+  ]
+}

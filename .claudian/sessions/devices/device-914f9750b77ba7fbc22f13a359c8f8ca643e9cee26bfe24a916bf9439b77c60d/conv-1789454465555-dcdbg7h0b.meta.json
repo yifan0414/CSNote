@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789454465555-dcdbg7h0b",
+  "providerId": "codex",
+  "title": "按照这个文件的组织方式，给我写一篇关于LLaVA的笔记",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789454465565,
+  "lastActivityAt": 1789454904469,
+  "sessionId": "01a0a3cc-3ca8-7a91-9b33-56cf6ff285f2",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a0a3cc-3ca8-7a91-9b33-56cf6ff285f2",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/15/rollout-2026-09-15T14-41-06-01a0a3cc-3ca8-7a91-9b33-56cf6ff285f2.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/基础/01-CLIP：从图文配对到共享语义空间.md",
+  "usage": {
+    "inputTokens": 62033,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 60800,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 62033,
+    "percentage": 7,
+    "model": "gpt-6-astra"
+  }
+}

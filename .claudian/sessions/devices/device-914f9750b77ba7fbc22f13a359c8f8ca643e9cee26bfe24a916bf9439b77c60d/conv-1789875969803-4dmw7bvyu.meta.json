@@ -1,0 +1,26 @@
+{
+  "id": "conv-1789875969803-4dmw7bvyu",
+  "providerId": "pi",
+  "title": "hi",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789875969808,
+  "lastActivityAt": 1789875976847,
+  "sessionId": "01a0bceb-e0db-7300-b396-a3e07c204412",
+  "selectedModel": "pi:deepseek/deepseek-flash",
+  "providerState": {
+    "leafEntryId": "f14ada0d",
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-20T03-46-10-268Z_01a0bceb-e0db-7300-b396-a3e07c204412.jsonl",
+    "sessionId": "01a0bceb-e0db-7300-b396-a3e07c204412"
+  },
+  "linkedContentPath": "06-LLM/03-Transformer/GPT-3：从模型规模化到上下文少样本学习.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 9952,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 9952,
+    "model": "pi:deepseek/deepseek-flash",
+    "percentage": 1
+  }
+}

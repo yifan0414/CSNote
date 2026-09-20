@@ -1,0 +1,25 @@
+{
+  "id": "conv-1789890802622-fxdd8rz0y",
+  "providerId": "pi",
+  "title": "/skill:read-paper https://arxiv",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789890802633,
+  "lastActivityAt": 1789890961177,
+  "sessionId": "01a0bdce-34a2-7486-b7fb-f88092dd756a",
+  "selectedModel": "pi:deepseek/deepseek-flash",
+  "providerState": {
+    "leafEntryId": "ff1fa8f3",
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-20T07-53-22-850Z_01a0bdce-34a2-7486-b7fb-f88092dd756a.jsonl",
+    "sessionId": "01a0bdce-34a2-7486-b7fb-f88092dd756a"
+  },
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 71260,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 71260,
+    "model": "pi:deepseek/deepseek-flash",
+    "percentage": 7
+  }
+}

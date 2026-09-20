@@ -11,13 +11,13 @@
   "obsidian-latex-suite",
   "file-explorer-plus",
   "obsidian-excalidraw-plugin",
-  "claudian",
   "tabs",
   "obsidian-style-settings",
-  "realclaudian",
   "fix-math",
   "easy-typing-obsidian",
   "excalidraw-extras",
   "editing-toolbar",
-  "papers"
+  "papers",
+  "realclaudian",
+  "capture-read-status"
 ]

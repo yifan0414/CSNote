@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789473704392-xxrt6tdcf",
+  "providerId": "codex",
+  "title": "你按照 @07-MultiModal/基础/05-BLIP：从图文对齐到理解、生成与数据自举",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789473704399,
+  "lastActivityAt": 1789474153207,
+  "sessionId": "01a0a4f1-ca5c-7a93-abdb-cef94c1c70b7",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a0a4f1-ca5c-7a93-abdb-cef94c1c70b7",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/15/rollout-2026-09-15T20-01-44-01a0a4f1-ca5c-7a93-abdb-cef94c1c70b7.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/基础/04-SigLIP2：从全局图文对齐到多粒度视觉表征.md",
+  "usage": {
+    "inputTokens": 83793,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 83793,
+    "percentage": 10,
+    "model": "gpt-6-astra"
+  }
+}

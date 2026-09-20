@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789473052030-hxs42stus",
+  "providerId": "codex",
+  "title": "你觉得这篇笔记写的和01-CLIP那篇那个号",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789473052038,
+  "lastActivityAt": 1789473607045,
+  "sessionId": "01a0a4e7-f42e-7623-bd0e-91e3b55931ea",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a0a4e7-f42e-7623-bd0e-91e3b55931ea",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/15/rollout-2026-09-15T19-50-59-01a0a4e7-f42e-7623-bd0e-91e3b55931ea.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/基础/03-SigLIP：从逐对二分类到共享语义空间.md",
+  "usage": {
+    "inputTokens": 94970,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 90624,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 94970,
+    "percentage": 11,
+    "model": "gpt-6-astra"
+  }
+}

@@ -6,6 +6,6 @@
   "createdAt": 1789124952783,
   "lastActivityAt": 1789125296948,
   "sessionId": null,
-  "selectedModel": "pi:deepseek/deepseek-v4.1-flash-expires-on-0910",
+  "selectedModel": "pi:deepseek/deepseek-flash",
   "linkedContentPath": "06-LLM/03-Transformer/从 Seq2Seq 到 Attention 再到 Transformer.md"
 }

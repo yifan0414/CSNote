@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789435288490-r1m11psfd",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789435288574-of4kaaz",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789435288485-wccs0ql",
+      "timestamp": 1789435288485,
+      "rawDisplayText": "只回复 OK，不调用任何工具。",
+      "canonicalText": "只回复 OK，不调用任何工具。",
+      "images": [],
+      "contentDigest": "74e625628a0bab6564d665234e276eb3adc38bb9a8377d8bd3415fa2c819f69a",
+      "providerUserMessageId": "01a0a2a7-bb5d-74f2-bc6f-548b8c6728e5",
+      "providerAssistantMessageId": "msg_015fe49f473131a8016aa89da356f487d0983a40611d8fef1a"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789435313588-s1ranl1",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789435313585-efsgo0t",
+      "timestamp": 1789435313585,
+      "rawDisplayText": "再测试一次，只回复 OK，不调用任何工具。",
+      "canonicalText": "再测试一次，只回复 OK，不调用任何工具。",
+      "images": [],
+      "contentDigest": "643d0ebaecd2d801ee3227a42edccc6629179cb2415879afd85a5029269d8652",
+      "providerUserMessageId": "01a0a2a7-fde8-7841-8a38-cd8145f6a5f7",
+      "providerAssistantMessageId": "msg_015fe49f473131a8016aa89db3c94c87d09ebb84ad4dbc3000"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789452816702-y2cbok0",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789452816689-dzhayy5",
+      "timestamp": 1789452816689,
+      "rawDisplayText": "一句话告诉我为什么transformer要除 sqrt(d_k)",
+      "canonicalText": "一句话告诉我为什么transformer要除 sqrt(d_k)",
+      "images": [],
+      "contentDigest": "d4cbe679d4fdf833d57b8f3d30616bd6b1614e2ae15fcccf659a0cd432673960",
+      "providerUserMessageId": "01a0a3b3-1294-7493-83e3-e0f1e1900690",
+      "providerAssistantMessageId": "msg_015fe49f473131a8016aa8e218eae887d0911af2aa5501b175"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789452840366-7ftoyor",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789452840357-msne7ad",
+      "timestamp": 1789452840357,
+      "rawDisplayText": "为什么是sqrt而不是d_k",
+      "canonicalText": "为什么是sqrt而不是d_k",
+      "images": [],
+      "contentDigest": "431a826baf9eeb8787e8db33689fe800f648907666659e0623c201555d7de11e",
+      "providerUserMessageId": "01a0a3b3-6dd6-77c2-a65b-48ef34a1be77",
+      "providerAssistantMessageId": "msg_015fe49f473131a8016aa8e22a317087d083cfa34d159535ae"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789452865215-pjwvf2k",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1789452865209-o3ok7cz",
+      "timestamp": 1789452865209,
+      "rawDisplayText": "为什么除以 sqrt(d_k) 才能让方差保持为1",
+      "canonicalText": "为什么除以 sqrt(d_k) 才能让方差保持为1",
+      "images": [],
+      "contentDigest": "044c4f4547028dfde6b4379aa063f4187ad1b5529a2165f980facb2033870e34",
+      "providerUserMessageId": "01a0a3b3-ceef-7c21-94ba-d960c3e224a9",
+      "providerAssistantMessageId": "msg_015fe49f473131a8016aa8e246106487d0a79bbe795f09c428"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789452912918-dt1kgls",
+      "userTurnOrdinal": 6,
+      "state": "accepted",
+      "localMessageId": "msg-1789452912916-0ka5857",
+      "timestamp": 1789452912916,
+      "rawDisplayText": "随机变量除以一个数，方差会除以这个数的平方 为什么",
+      "canonicalText": "随机变量除以一个数，方差会除以这个数的平方 为什么",
+      "images": [],
+      "contentDigest": "9dd7082365b3455a183146fb356d0905aa429db6cde1fbf700e967e26a297370",
+      "providerUserMessageId": "01a0a3b4-893a-7b53-851a-15af61bf1c55",
+      "providerAssistantMessageId": "msg_015fe49f473131a8016aa8e273046087d08d5d2b54b052d7f8"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789452962747-n6ymjr8",
+      "userTurnOrdinal": 7,
+      "state": "accepted",
+      "localMessageId": "msg-1789452962736-9d6tkkz",
+      "timestamp": 1789452962736,
+      "rawDisplayText": "@06-LLM/03-Transformer/06-transformer.md 将这个回答写到这个文件中",
+      "canonicalText": "@06-LLM/03-Transformer/06-transformer.md 将这个回答写到这个文件中",
+      "images": [],
+      "contentDigest": "8d6938e26b58409aaeb3e64342fc288743e0f8dca3451170be4ee0ca97219b4f",
+      "providerUserMessageId": "01a0a3b5-4bed-7912-b240-3e024c60b1f3",
+      "providerAssistantMessageId": "msg_015fe49f473131a8016aa8e2d07e5c87d0b30ff51bfafac5e1"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789453106421-hqgecro",
+      "userTurnOrdinal": 8,
+      "state": "accepted",
+      "localMessageId": "msg-1789453106412-bvzkm93",
+      "timestamp": 1789453106412,
+      "rawDisplayText": "目前这里写的有点乱和重复，请你整理下，不要大幅缩减内容，还是要尽量详细，但是要清晰有逻辑",
+      "canonicalText": "目前这里写的有点乱和重复，请你整理下，不要大幅缩减内容，还是要尽量详细，但是要清晰有逻辑",
+      "context": {
+        "editorSelection": {
+          "notePath": "06-LLM/03-Transformer/06-transformer.md",
+          "mode": "selection",
+          "selectedText": "> [!note]- 概率论详细推导：为什么除以 $\\sqrt{d_h}$？\n> **结论：**点积由 $d_h$ 个近似独立的随机量相加而成。独立随机量之和的方差按 $d_h$ 增长，因此标准差按 $\\sqrt{d_h}$ 增长。除以 $\\sqrt{d_h}$ 能将 logits 的方差恢复到 $O(1)$，避免 softmax 过早饱和。\n>\n> ### 1. 概率论预备：独立随机变量之和\n>\n> 设 $X_1,\\ldots,X_d$ 是随机变量，并令：\n>\n> $$\n> S_d=\\sum_{r=1}^{d}X_r.\n> $$\n>\n> 期望具有线性性，不要求随机变量独立：\n>\n> $$\n> \\mathbb{E}[S_d]\n> =\\mathbb{E}\\left[\\sum_{r=1}^{d}X_r\\right]\n> =\\sum_{r=1}^{d}\\mathbb{E}[X_r].\n> $$\n>\n> 方差的展开则包含协方差项：\n>\n> $$\n> \\begin{aligned}\n> \\operatorname{Var}(S_d)\n> &=\\mathbb{E}\\left[\n> \\left(\\sum_{r=1}^{d}(X_r-\\mathbb{E}[X_r])\\right)^2\n> \\right]\\\\\n> &=\\sum_{r=1}^{d}\\operatorname{Var}(X_r)\n> +2\\sum_{1\\le r<s\\le d}\\operatorname{Cov}(X_r,X_s).\n> \\end{aligned}\n> $$\n>\n> 若 $X_1,\\ldots,X_d$ 相互独立，则任意 $r\\ne s$ 都有：\n>\n> $$\n> \\operatorname{Cov}(X_r,X_s)\n> =\\mathbb{E}[X_rX_s]-\\mathbb{E}[X_r]\\mathbb{E}[X_s]\n> =0.\n> $$\n>\n> 因此，若这些变量还具有相同方差 $\\sigma^2$：\n>\n> $$\n> \\operatorname{Var}(S_d)=d\\sigma^2,\\qquad\n> \\operatorname{Std}(S_d)=\\sqrt{d}\\,\\sigma.\n> $$\n>\n> 例如，若 $X_1,\\ldots,X_{100}$ 独立同分布且 $X_r\\sim\\mathcal{N}(0,1)$，正态变量之和仍然是正态变量，所以这里有精确结果：\n>\n> $$\n> S_{100}=\\sum_{r=1}^{100}X_r\n> \\sim\\mathcal{N}(0,100),\n> $$\n>\n> $$\n> \\operatorname{Std}(S_{100})=\\sqrt{100}=10.\n> $$\n>\n> $100$ 个单位尺度的随机波动相加后，典型大小约为 $10$，而不是 $100$。正负项之间会发生抵消，但总波动仍会随项数增加。\n>\n> 这里的关键是：**方差相加，但标准差是方差的平方根**。当 $\\mathbb{E}[S_d]=0$ 时，均方根正好等于标准差：\n>\n> $$\n> \\sqrt{\\mathbb{E}[S_d^2]}\n> =\\operatorname{Std}(S_d)\n> =\\sqrt{d}\\,\\sigma.\n> $$\n>\n> 所以“典型波动尺度”按 $\\sqrt d$ 增长，而不是按 $d$ 增长。\n>\n> ### 2. 随机游走直觉\n>\n> 令每一步 $X_r$ 以相同概率取 $+1$ 或 $-1$。此时：\n>\n> $$\n> \\mathbb{E}[X_r]=0,\\qquad\n> \\operatorname{Var}(X_r)=1.\n> $$\n>\n> 走 $d$ 步后的位置 $S_d=X_1+\\cdots+X_d$ 满足：\n>\n> $$\n> \\mathbb{E}[S_d]=0,\\qquad\n> \\operatorname{Var}(S_d)=d,\\qquad\n> \\sqrt{\\mathbb{E}[S_d^2]}=\\sqrt d.\n> $$\n>\n> 正负步长会互相抵消，所以走 $100$ 步后的典型距离约为 $10$，而不是 $100$。Attention 点积中的各维乘积相加具有相同的尺度规律。\n>\n> ### 3. 把结论应用到 $q^\\top k$\n>\n> 对一个 query 和一个 key：\n>\n> $$\n> s=q^\\top k=\\sum_{r=1}^{d_h}q_rk_r.\n> $$\n>\n> 为了只研究维度带来的尺度变化，先作如下简化假设：\n>\n> 1. 对每个坐标 $r$，$q_r$ 与 $k_r$ 相互独立；\n> 2. 不同坐标对 $(q_r,k_r)$ 之间相互独立；\n> 3. 各分量均值为 $0$、方差为 $1$：\n>\n> $$\n> \\mathbb{E}[q_r]=\\mathbb{E}[k_r]=0,\\qquad\n> \\operatorname{Var}(q_r)=\\operatorname{Var}(k_r)=1.\n> $$\n>\n> 令每一维对点积的贡献为：\n>\n> $$\n> Z_r=q_rk_r.\n> $$\n>\n> ### 4. 逐步计算乘积 $Z_r=q_rk_r$ 的均值与方差\n>\n> 因为 $q_r$ 与 $k_r$ 独立，乘积的期望可以拆开：\n>\n> $$\n> \\begin{aligned}\n> \\mathbb{E}[Z_r]\n> &=\\mathbb{E}[q_rk_r]\\\\\n> &=\\mathbb{E}[q_r]\\mathbb{E}[k_r]\\\\\n> &=0.\n> \\end{aligned}\n> $$\n>\n> 所以每一维的贡献有正有负，在总体上没有偏向。再由方差定义：\n>\n> $$\n> \\operatorname{Var}(Z_r)\n> =\\mathbb{E}[Z_r^2]-\\bigl(\\mathbb{E}[Z_r]\\bigr)^2.\n> $$\n>\n> 代入 $Z_r=q_rk_r$ 和 $\\mathbb{E}[Z_r]=0$：\n>\n> $$\n> \\begin{aligned}\n> \\operatorname{Var}(Z_r)\n> &=\\mathbb{E}[q_r^2k_r^2]\\\\\n> &=\\mathbb{E}[q_r^2]\\mathbb{E}[k_r^2].\n> \\end{aligned}\n> $$\n>\n> 最后一步仍然使用了 $q_r$ 与 $k_r$ 的独立性。又因为：\n>\n> $$\n> \\mathbb{E}[X^2]\n> =\\operatorname{Var}(X)+\\bigl(\\mathbb{E}[X]\\bigr)^2,\n> $$\n>\n> 所以：\n>\n> $$\n> \\mathbb{E}[q_r^2]=1+0^2=1,\\qquad\n> \\mathbb{E}[k_r^2]=1+0^2=1.\n> $$\n>\n> 因此每一维乘积的方差为：\n>\n> $$\n> \\boxed{\\operatorname{Var}(Z_r)=1}.\n> $$\n>\n> 更一般地，若 $q_r$、$k_r$ 的方差分别是 $\\sigma_q^2$、$\\sigma_k^2$，且均值仍为 $0$，则：\n>\n> $$\n> \\operatorname{Var}(q_rk_r)=\\sigma_q^2\\sigma_k^2.\n> $$\n>\n> ### 5. 计算完整点积的均值与方差\n>\n> 点积就是这些逐维贡献之和：\n>\n> $$\n> s=q^\\top k=\\sum_{r=1}^{d_h}Z_r.\n> $$\n>\n> 先计算均值：\n>\n> $$\n> \\mathbb{E}[s]\n> =\\sum_{r=1}^{d_h}\\mathbb{E}[Z_r]\n> =0.\n> $$\n>\n> 再计算方差。由于不同坐标对 $(q_r,k_r)$ 相互独立，$Z_r$ 之间也相互独立，交叉协方差项为 $0$：\n>\n> $$\n> \\begin{aligned}\n> \\operatorname{Var}(s)\n> &=\\operatorname{Var}\\left(\\sum_{r=1}^{d_h}Z_r\\right)\\\\\n> &=\\sum_{r=1}^{d_h}\\operatorname{Var}(Z_r)\\\\\n> &=\\sum_{r=1}^{d_h}1\\\\\n> &=d_h.\n> \\end{aligned}\n> $$\n>\n> 所以：\n>\n> $$\n> \\boxed{\n> \\begin{aligned}\n> \\mathbb{E}[q^\\top k]&=0,\\\\\n> \\operatorname{Var}(q^\\top k)&=d_h,\\\\\n> \\operatorname{Std}(q^\\top k)&=\\sqrt{d_h}.\n> \\end{aligned}\n> }.\n> $$\n>\n> 这并不是说 $q^\\top k$ 恒等于 $\\sqrt{d_h}$，而是说它围绕 $0$ 的**典型波动尺度**约为 $\\sqrt{d_h}$。增大的是方差，不是均值。\n>\n> 若 $Z_r$ 满足中心极限定理所需的条件，那么当 $d_h$ 较大时：\n>\n> $$\n> \\frac{\\sum_{r=1}^{d_h}Z_r}{\\sqrt{d_h}}\n> \\xrightarrow{d}\\mathcal{N}(0,1),\n> $$\n>\n> 因而可以近似写成：\n>\n> $$\n> q^\\top k\\approx\\mathcal{N}(0,d_h).\n> $$\n>\n> 即使 $q_r$ 和 $k_r$ 本身服从标准正态分布，单个乘积 $q_rk_r$ 也不服从正态分布；这里的正态近似来自大量乘积项之和的中心极限定理。\n>\n> 不同维度下，未缩放点积的标准差为：\n>\n> | $d_h$ | $1$ | $16$ | $64$ | $128$ | $1024$ |\n> | ---: | ---: | ---: | ---: | ---: | ---: |\n> | $\\operatorname{Std}(q^\\top k)$ | $1$ | $4$ | $8$ | $\\sqrt{128}\\approx11.3$ | $32$ |\n>\n> ### 6. 方差增大为什么会使 softmax 饱和？\n>\n> softmax 对第 $i$ 个 logit 的定义为：\n>\n> $$\n> p_i=\\frac{e^{s_i}}{\\sum_j e^{s_j}}.\n> $$\n>\n> 当 logits 为 $[0.2,0.5,1.0]$ 时：\n>\n> $$\n> \\operatorname{softmax}([0.2,0.5,1.0])\n> \\approx[0.22,0.30,0.48].\n> $$\n>\n> 若维度增大使相同的相对波动放大 $10$ 倍：\n>\n> $$\n> \\operatorname{softmax}([2,5,10])\n> \\approx[0.0003,0.0067,0.9930].\n> $$\n>\n> 指数函数放大了 logits 的差距，使分布接近 one-hot。此时模型难以平滑地组合多个 value。softmax 的雅可比矩阵为：\n>\n> $$\n> \\frac{\\partial p_i}{\\partial s_j}\n> =p_i(\\delta_{ij}-p_j).\n> $$\n>\n> 当各概率接近 $0$ 或 $1$ 时，雅可比矩阵中的多数元素接近 $0$，反向传播到 logits 的梯度容易变小。\n>\n> ### 7. 严格推出除以 $\\sqrt{d_h}$ 后的方差\n>\n> 定义缩放后的分数：\n>\n> $$\n> \\widetilde{s}=\\frac{q^\\top k}{\\sqrt{d_h}}.\n> $$\n>\n> **为什么随机变量除以一个数，方差会除以这个数的平方？**\n>\n> 因为方差的定义就是**“与均值之差的平方”的平均值**。设随机变量 $X$ 的方差有限：\n>\n> $$\n> \\operatorname{Var}(X)=\\mathbb{E}\\left[(X-\\mathbb{E}[X])^2\\right].\n> $$\n>\n> 把 $X$ 除以常数 $a\\ne 0$，由期望的线性性质，均值也会除以 $a$，即 $\\mathbb{E}[X/a]=\\mathbb{E}[X]/a$，因此：\n>\n> $$\n> \\begin{aligned}\n> \\operatorname{Var}\\left(\\frac{X}{a}\\right)\n> &=\\mathbb{E}\\left[\\left(\\frac{X}{a}-\\frac{\\mathbb{E}[X]}{a}\\right)^2\\right]\\\\\n> &=\\frac{1}{a^2}\\mathbb{E}\\left[(X-\\mathbb{E}[X])^2\\right]\\\\\n> &=\\frac{\\operatorname{Var}(X)}{a^2}.\n> \\end{aligned}\n> $$\n>\n> 直观理解：**每个值到均值的距离变为原来的 $1/|a|$，距离的平方就变成原来的 $1/a^2$。**当 $a>1$ 时，就是距离缩小、方差按平方比例缩小。\n>\n> 取 $a=\\sqrt{d_h}$（这里的 $d_h$ 就是常见记法中的 $d_k$），得到：\n>\n> $$\n> \\begin{aligned}\n> \\operatorname{Var}(\\widetilde{s})\n> &=\\operatorname{Var}\\left(\\frac{q^\\top k}{\\sqrt{d_h}}\\right)\\\\\n> &=\\frac{1}{d_h}\\operatorname{Var}(q^\\top k)\\\\\n> &=\\frac{1}{d_h}\\cdot d_h\\\\\n> &=1.\n> \\end{aligned}\n> $$\n>\n> 因此：\n>\n> $$\n> \\boxed{\n> \\begin{aligned}\n> q^\\top k&\\approx\\mathcal{N}(0,d_h),\\\\\n> \\frac{q^\\top k}{\\sqrt{d_h}}&\\approx\\mathcal{N}(0,1).\n> \\end{aligned}\n> }.\n> $$\n>\n> 无论 $d_h$ 是 $64$、$128$ 还是 $256$，缩放后的 logits 都维持在相近的数值尺度。这是一种 **variance normalization（方差归一化）**。\n>\n> ### 8. 为什么不是除以 $d_h$？\n>\n> 若改为除以 $d_h$，则：\n>\n> $$\n> \\begin{aligned}\n> \\operatorname{Var}\\left(\\frac{q^\\top k}{d_h}\\right)\n> &=\\frac{1}{d_h^2}\\operatorname{Var}(q^\\top k)\\\\\n> &=\\frac{1}{d_h},\\\\\n> \\operatorname{Std}\\left(\\frac{q^\\top k}{d_h}\\right)\n> &=\\frac{1}{\\sqrt{d_h}}\n> \\longrightarrow0.\n> \\end{aligned}\n> $$\n>\n> 随着 $d_h$ 增大，所有 logits 都趋近于 $0$，softmax 因而趋近于均匀分布：\n>\n> $$\n> \\left[\\frac{1}{N_k},\\frac{1}{N_k},\\ldots,\\frac{1}{N_k}\\right].\n> $$\n>\n> 除以 $\\sqrt{d_h}$ 恰好避免两个极端：既不会因 logits 尺度过大而太尖锐，也不会因尺度趋近于 $0$ 而太平坦。\n>\n> 核心推导链条为：\n>\n> $$\n> \\boxed{\n> \\begin{gathered}\n> \\operatorname{Var}(q_rk_r)=1\\\\\n> \\Downarrow\\\\\n> \\operatorname{Var}\\left(\\sum_{r=1}^{d_h}q_rk_r\\right)=d_h\\\\\n> \\Downarrow\\\\\n> \\operatorname{Var}\\left(\\frac{q^\\top k}{\\sqrt{d_h}}\\right)=1.\n> \\end{gathered}\n> }.\n> $$\n>\n> 缩放不会改变 tensor shape，只改变 score 的数值范围。实际模型中的 Q/K 分量不一定严格独立、零均值且单位方差，因此上述等式是用于解释设计动机的理想化推导；在存在相关性时，还会出现协方差项。但核心目的不变：抵消点积尺度随 head dimension 增长的趋势。",
+          "lineCount": 356,
+          "startLine": 768
+        }
+      },
+      "images": [],
+      "contentDigest": "5028de92bfbb7008df8ceadef000830c8b408c51db025e4c9e883ca3a2099b27",
+      "providerUserMessageId": "01a0a3b7-7d2e-7a23-8505-8d75ba9a002d",
+      "providerAssistantMessageId": "msg_015fe49f473131a8016aa8e3e5ef2087d08c4154d68440dd78"
+    }
+  ]
+}

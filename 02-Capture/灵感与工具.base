@@ -6,79 +6,166 @@ formulas:
   url_button: if(note["网址"], link(note["网址"], if(note["来源"] && note["来源"].toString().lower() == "bilibili", icon("tv"), if(note["来源"] && note["来源"].toString().lower() == "youtube", icon("circle-play"), icon("external-link")))), "")
   type_view: if(note["类型"], html("<span class='paper-base-badge capture-type-" + note["类型"].toString().lower().replace("&", "and").replace(" ", "-") + "'>" + escapeHTML(note["类型"].toString()) + "</span>"), "")
   source_view: if(note["来源"], html("<span class='paper-base-badge capture-source-" + note["来源"].toString().lower().replace("&", "and").replace(" ", "-") + "'>" + escapeHTML(note["来源"].toString()) + "</span>"), "")
+  status_view: if(status == "read", html("<span class='paper-base-badge paper-status-read'>Read</span>"), if(status == "reading", html("<span class='paper-base-badge paper-status-reading'>Reading</span>"), if(status == "archived", html("<span class='paper-base-badge paper-status-archived'>Archived</span>"), html("<span class='paper-base-badge paper-status-unread'>Unread</span>"))))
 properties:
   file.name:
     displayName: 条目
   formula.type_view:
     displayName: 类型
-  状态:
-    displayName: 状态
   formula.source_view:
     displayName: 来源
   formula.url_button:
     displayName: 网址
-  发现时间:
-    displayName: 发现时间
-  tags:
+  note.发现时间:
+    displayName: 收集日期
+  note.tags:
     displayName: 标签
   file.mtime:
-    displayName: 更新
+    displayName: 文件更新
+  note.created:
+    displayName: 创建日期
+  note.updated:
+    displayName: 内容更新
+  formula.status_view:
+    displayName: 状态
+  note.status:
+    displayName: 修改状态
 views:
   - type: table
-    name: 收件箱
-    filters:
-      or:
-        - '!note["状态"]'
-        - note["状态"] == "inbox"
+    name: 全部
     order:
       - file.name
+      - formula.status_view
       - formula.type_view
       - formula.source_view
       - formula.url_button
       - tags
-      - file.mtime
+      - 发现时间
+      - updated
     sort:
-      - property: formula.source_view
+      - property: 发现时间
         direction: DESC
-      - property: formula.type_view
-        direction: DESC
+      - property: status
+        direction: ASC
+    columnSize:
+      formula.status_view: 103
+  - type: table
+    name: 收件箱
+    filters:
+      or:
+        - "!status"
+        - status == "unread"
+    order:
+      - file.name
+      - formula.status_view
+      - formula.type_view
+      - formula.source_view
+      - formula.url_button
+      - tags
+      - 发现时间
+      - updated
+    sort:
+      - property: 发现时间
+        direction: ASC
+      - property: file.name
+        direction: ASC
     columnSize:
       formula.source_view: 103
       formula.url_button: 71
       note.tags: 325
+      formula.status_view: 103
+  - type: table
+    name: 阅读中
+    filters: status == "reading"
+    order:
+      - file.name
+      - formula.status_view
+      - formula.type_view
+      - formula.source_view
+      - formula.url_button
+      - tags
+      - 发现时间
+      - updated
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: updated
+        direction: DESC
+    columnSize:
+      formula.status_view: 103
+  - type: table
+    name: 已读
+    filters: status == "read"
+    order:
+      - file.name
+      - formula.status_view
+      - formula.type_view
+      - formula.source_view
+      - formula.url_button
+      - tags
+      - 发现时间
+      - updated
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: updated
+        direction: DESC
+    columnSize:
+      formula.status_view: 103
   - type: table
     name: 工具
     filters:
       and:
         - note["类型"] == "tool"
-        - '!note["状态"] || note["状态"] != "archive"'
+        - '!status || status != "archived"'
     order:
       - file.name
-      - 状态
+      - formula.status_view
+      - formula.type_view
       - formula.source_view
       - formula.url_button
       - tags
-      - file.mtime
+      - 发现时间
+      - updated
+    sort:
+      - property: updated
+        direction: DESC
+    columnSize:
+      formula.status_view: 103
   - type: table
     name: 灵感
     filters:
       and:
         - note["类型"] == "idea"
-        - '!note["状态"] || note["状态"] != "archive"'
+        - '!status || status != "archived"'
     order:
       - file.name
-      - 状态
-      - formula.source_view
-      - formula.url_button
-      - tags
-      - file.mtime
-  - type: table
-    name: 归档
-    filters: note["状态"] == "archive"
-    order:
-      - file.name
+      - formula.status_view
       - formula.type_view
       - formula.source_view
       - formula.url_button
       - tags
-      - file.mtime
+      - 发现时间
+      - updated
+    sort:
+      - property: updated
+        direction: DESC
+    columnSize:
+      formula.status_view: 103
+  - type: table
+    name: 归档
+    filters: status == "archived"
+    order:
+      - file.name
+      - formula.status_view
+      - formula.type_view
+      - formula.source_view
+      - formula.url_button
+      - tags
+      - 发现时间
+      - updated
+    sort:
+      - property: updated
+        direction: DESC
+    columnSize:
+      formula.status_view: 103

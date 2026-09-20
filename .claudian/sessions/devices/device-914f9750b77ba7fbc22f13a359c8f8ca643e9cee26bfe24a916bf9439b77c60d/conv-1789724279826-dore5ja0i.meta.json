@@ -1,0 +1,26 @@
+{
+  "id": "conv-1789724279826-dore5ja0i",
+  "providerId": "pi",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789724279843,
+  "lastActivityAt": 1789798968779,
+  "sessionId": "01a0b3e1-4501-70bd-ada9-09cc884fdc76",
+  "selectedModel": "pi:deepseek/deepseek-flash",
+  "providerState": {
+    "leafEntryId": "65c7c994",
+    "sessionFile": "/Users/yifan/.pi/agent/sessions/--Users-yifan-Library-Mobile Documents-iCloud~md~obsidian-Documents-iCSNote--/2026-09-18T09-38-00-066Z_01a0b3e1-4501-70bd-ada9-09cc884fdc76.jsonl",
+    "sessionId": "01a0b3e1-4501-70bd-ada9-09cc884fdc76"
+  },
+  "linkedContentPath": "07-MultiModal/基础/04-SigLIP2：从全局图文对齐到多粒度视觉表征.md",
+  "usage": {
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextTokens": 13683,
+    "contextWindow": 1000000,
+    "contextWindowIsAuthoritative": true,
+    "inputTokens": 13683,
+    "model": "pi:deepseek/deepseek-flash",
+    "percentage": 1
+  }
+}

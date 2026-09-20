@@ -1,11 +1,19 @@
 ---
-状态: inbox
-类型:
-来源:
-网址:
+类型: tool
+status: unread
+来源: null
+网址: null
+发现时间: 2026-04-28
 tags:
-创建时间: 2026-04-28 02:00
+  - macOS
+  - MathJax
+  - 浏览器
+  - 用户脚本
+created: 2026-04-28
+updated: 2026-09-20
 ---
+
+# 解决 Mac 上浏览器 MathJax 渲染问题
 
 ```js
 // ==UserScript==

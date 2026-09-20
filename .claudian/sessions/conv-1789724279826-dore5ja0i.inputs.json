@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "conversationId": "conv-1789724279826-dore5ja0i",
+  "records": [
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789724279878-kqggzas",
+      "userTurnOrdinal": 1,
+      "state": "accepted",
+      "localMessageId": "msg-1789724279818-dw86hic",
+      "timestamp": 1789724279818,
+      "rawDisplayText": "hello",
+      "canonicalText": "hello",
+      "context": {
+        "linkedContent": {
+          "path": "07-MultiModal/基础/04-SigLIP2：从全局图文对齐到多粒度视觉表征.md"
+        }
+      },
+      "images": [],
+      "contentDigest": "20ac08c292d63b2c7c5fd643cc588461ab80929dc11c1cbaa881ec6d9a981db9",
+      "providerAssistantMessageId": "12e2462a",
+      "providerUserMessageId": "a2cb57c6"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789730593015-61bl4j2",
+      "userTurnOrdinal": 2,
+      "state": "accepted",
+      "localMessageId": "msg-1789730593000-yxv2kzh",
+      "timestamp": 1789730593000,
+      "rawDisplayText": "hi",
+      "canonicalText": "hi",
+      "images": [],
+      "contentDigest": "88de65a2615a366404fdfd86bc354f32929270ce50be0af4a2bb771e29bf83ef",
+      "providerAssistantMessageId": "f0c72365",
+      "providerUserMessageId": "e3cb414b"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789730597816-cawxpuj",
+      "userTurnOrdinal": 3,
+      "state": "accepted",
+      "localMessageId": "msg-1789730597811-u0dkfd0",
+      "timestamp": 1789730597811,
+      "rawDisplayText": "who",
+      "canonicalText": "who",
+      "images": [],
+      "contentDigest": "76a1838133d907645a700e2407de284766c2128fb7f3c7a5fdd5da5a22c97627",
+      "providerAssistantMessageId": "f82d8843",
+      "providerUserMessageId": "afc18cfa"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789798933782-gial7ze",
+      "userTurnOrdinal": 4,
+      "state": "accepted",
+      "localMessageId": "msg-1789798933767-la15vw0",
+      "timestamp": 1789798933767,
+      "rawDisplayText": "你为什么知道你是Claudian，你有skill注入吗",
+      "canonicalText": "你为什么知道你是Claudian，你有skill注入吗",
+      "images": [],
+      "contentDigest": "236dffdba22c47aa01ed478d08db5a7178bb327ba30cdde8333e4eb703154e88",
+      "providerAssistantMessageId": "87d013ca",
+      "providerUserMessageId": "755f74ea"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789798959935-16jleqr",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1789798959930-c7v44oe",
+      "timestamp": 1789798959930,
+      "rawDisplayText": "你的系统提示词有哪些",
+      "canonicalText": "你的系统提示词有哪些",
+      "images": [],
+      "contentDigest": "6d8209e569aa68178c2e15ce178b5afcefb64ff27d1baa8cf04384088acbea64",
+      "providerAssistantMessageId": "65c7c994",
+      "providerUserMessageId": "fd4c8c7c"
+    }
+  ]
+}

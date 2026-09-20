@@ -1,14 +1,23 @@
 ---
-类型: "idea"
-状态: "inbox"
-来源: "Bilibili"
-网址: "https://www.bilibili.com/video/BV1m5RmBSEkF"
+类型: idea
+status: read
+来源: Bilibili
+网址: https://www.bilibili.com/video/BV1m5RmBSEkF
 发现时间: 2026-08-24
-tags: ["注意力机制", "Softmax", "Transformer", "数值稳定性", "深度学习"]
-aliases: ["缩放点积注意力的温度", "Scaled Dot-Product Attention Scaling"]
+tags:
+  - 注意力机制
+  - Softmax
+  - Transformer
+  - 数值稳定性
+  - 深度学习
+created: 2026-08-24
+updated: 2026-09-20
+aliases:
+  - 缩放点积注意力的温度
+  - Scaled Dot-Product Attention Scaling
 ---
 
-# √dk 缩放如何控制注意力的 Softmax 温度
+# $\sqrt{d_k}$ 缩放如何控制注意力的 Softmax 温度
 
 ## 先说结论
 
@@ -33,7 +42,7 @@ $$
 点积维度 $d_k$ 越大，$S$ 的数值通常越容易变大。Softmax 又会指数化这些差距，于是一个并不夸张的 logit 差值，也可能被放大成几乎全有或全无的权重。这会带来两个相互关联的问题：
 
 - 前向传播中，某个位置过早垄断注意力，其他本可提供信息的 token 几乎不再参与加权平均。
-- 反向传播中，Softmax 进入饱和区后，概率接近 0 或 1，梯度也随之变小，优化更困难。
+- 反向传播中，Softmax 进入饱和区后，概率接近 $0$ 或 $1$，梯度也随之变小，优化更困难。
 
 ## 核心机制
 
@@ -50,7 +59,7 @@ $$
 
 因此，把注意力 logits 除以 $\sqrt{d_k}$，在形式上就是令 $T=\sqrt{d_k}$。
 
-### 2. 为什么尺度恰好是 √dk
+### 2. 为什么尺度恰好是 $\sqrt{d_k}$
 
 令一个查询和一个键的各维分量近似独立，并满足
 
@@ -65,7 +74,7 @@ $$
 q^\top k=\sum_{j=1}^{d_k}q_jk_j.
 $$
 
-在上述近似下，每一项 $q_jk_j$ 的方差约为 1，独立项求和后有
+在上述近似下，每一项 $q_jk_j$ 的方差约为 $1$，独立项求和后有
 
 $$
 \operatorname{Var}(q^\top k)\approx d_k,
@@ -79,11 +88,11 @@ $$
 \frac{q^\top k}{\sqrt{d_k}}
 $$
 
-的方差重新回到约 1。这样一来，改变每个头的维度时，Softmax 看到的输入尺度仍处于相近范围，不会仅因 $d_k$ 增大就自动变得更尖锐。
+的方差重新回到约 $1$。这样一来，改变每个头的维度时，Softmax 看到的输入尺度仍处于相近范围，不会仅因 $d_k$ 增大就自动变得更尖锐。
 
 ### 3. 一个最小数值例子
 
-若两个 logits 是 $[50,60]$，Softmax 只关心它们相差 10：
+若两个 logits 是 $[50,60]$，Softmax 只关心它们相差 $10$：
 
 $$
 \operatorname{softmax}([50,60])\approx[0.000045,0.999955].
@@ -142,3 +151,8 @@ $$
 ## 资料来源
 
 - [为什么除以 √dk 是在给注意力升温？](https://www.bilibili.com/video/BV1m5RmBSEkF)（温度定义 00:04；CLIP 对比 00:28；缩放点积注意力 00:53；算子融合 02:04）
+
+## 关联笔记
+
+- [[02-Capture/灵感与工具/为什么缩放点积注意力除以 √d_k|注意力缩放的方差推导]]：从方差增长说明缩放因子的来源。
+- [[06-LLM/03-Transformer/05-Attention|Attention：根据查询加权读取信息]]：把温度解释与注意力计算过程连接起来。

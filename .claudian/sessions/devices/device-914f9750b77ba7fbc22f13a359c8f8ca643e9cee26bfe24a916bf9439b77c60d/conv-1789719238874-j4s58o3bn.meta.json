@@ -1,0 +1,28 @@
+{
+  "id": "conv-1789719238874-j4s58o3bn",
+  "providerId": "codex",
+  "title": "hello",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1789719238875,
+  "lastActivityAt": 1789719554019,
+  "sessionId": "01a0b394-599f-7683-a0f1-f818f2e0ade0",
+  "selectedModel": "gpt-6-astra",
+  "providerState": {
+    "threadId": "01a0b394-599f-7683-a0f1-f818f2e0ade0",
+    "nativeConversationContextEstablished": true,
+    "sessionFilePath": "/Users/yifan/.codex/sessions/2026/09/18/rollout-2026-09-18T16-13-59-01a0b394-599f-7683-a0f1-f818f2e0ade0.jsonl",
+    "transcriptRootPath": "/Users/yifan/.codex/sessions",
+    "workspaceDependencyToolVersion": 1
+  },
+  "linkedContentPath": "07-MultiModal/基础/04-SigLIP2：从全局图文对齐到多粒度视觉表征.md",
+  "usage": {
+    "inputTokens": 15442,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 828400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 15442,
+    "percentage": 2,
+    "model": "gpt-6-astra"
+  }
+}

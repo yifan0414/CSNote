@@ -916,7 +916,7 @@ Figure 2 右侧追踪不同训练进度下的 zero-shot 启发式表现，观察
 - [官方 tokenizer](https://github.com/openai/finetune-transformer-lm/blob/master/text_utils.py)：清洗、spaCy、小写化与 BPE。
 - [基础词表](https://github.com/openai/finetune-transformer-lm/blob/master/model/encoder_bpe_40000.json)与[预训练参数形状](https://github.com/openai/finetune-transformer-lm/blob/master/model/params_shapes.json)：词表规模与基础参数量的核对来源。
 - 本地原论文：[[06-LLM/03-Transformer/assets/paper_gpt1_2018.pdf]]。
-- 结构参考：[[07-MultiModal/Video-MLLM/BLIP-2：用Q-Former连接冻结视觉编码器与大语言模型.md]]；后续对照：[[06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md|GPT-2 笔记]]。
+- 结构参考：[[06-BLIP-2：用Q-Former连接冻结视觉编码器与大语言模型]]；后续对照：[[06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md|GPT-2 笔记]]。
 
 <!-- READ_PAPER_GENERATED_END -->
 

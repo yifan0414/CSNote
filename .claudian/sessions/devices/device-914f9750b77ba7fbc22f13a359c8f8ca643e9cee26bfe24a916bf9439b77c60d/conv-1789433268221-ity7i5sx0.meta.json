@@ -4,7 +4,7 @@
   "title": "hello",
   "titleGenerationStatus": "failed",
   "createdAt": 1789433268235,
-  "lastActivityAt": 1789433385006,
+  "lastActivityAt": 1789435073212,
   "sessionId": "01a0a288-c990-7093-8894-c9f1b96ae23e",
   "selectedModel": "gpt-6-astra",
   "providerState": {
@@ -16,12 +16,12 @@
   },
   "linkedContentPath": "AGENTS.md",
   "usage": {
-    "inputTokens": 15816,
+    "inputTokens": 19679,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 0,
+    "cacheReadInputTokens": 17536,
     "contextWindow": 828400,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 15816,
+    "contextTokens": 19679,
     "percentage": 2,
     "model": "gpt-6-astra"
   }

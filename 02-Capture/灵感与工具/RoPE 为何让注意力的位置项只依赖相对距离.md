@@ -1,11 +1,19 @@
 ---
-类型: "idea"
-状态: "inbox"
-来源: "Bilibili"
-网址: "https://www.bilibili.com/video/BV1fFFDzsEt6"
+类型: idea
+status: unread
+来源: Bilibili
+网址: https://www.bilibili.com/video/BV1fFFDzsEt6
 发现时间: 2026-08-24
-tags: ["大语言模型", "注意力机制", "位置编码", "线性代数", "复数"]
-aliases: ["旋转位置编码"]
+tags:
+  - 大语言模型
+  - 注意力机制
+  - 位置编码
+  - 线性代数
+  - 复数
+created: 2026-08-24
+updated: 2026-09-20
+aliases:
+  - 旋转位置编码
 ---
 
 # RoPE 为何让注意力的位置项只依赖相对距离
@@ -140,3 +148,8 @@ RoPE 与正余弦位置编码也不只是用了相同的三角函数。关键差
 ## 资料来源
 
 - [20. RoPE 注意力的绝对位置无关性和欧拉公式有什么关系？](https://www.bilibili.com/video/BV1fFFDzsEt6)（关键推导约 01:02–02:40）
+
+## 关联笔记
+
+- [[06-LLM/03-Transformer/06-transformer|Transformer 基础知识与例题]]：把相对位置性质放回完整的 Transformer 结构中理解。
+- [[06-LLM/03-Transformer/05-Attention|Attention：根据查询加权读取信息]]：注意力读取机制与位置问题的基础。

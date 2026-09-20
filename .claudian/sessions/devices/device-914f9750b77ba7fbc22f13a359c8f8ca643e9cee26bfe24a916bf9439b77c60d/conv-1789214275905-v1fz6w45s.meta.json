@@ -14,7 +14,7 @@
     "transcriptRootPath": "/Users/yifan/.codex/sessions",
     "workspaceDependencyToolVersion": 1
   },
-  "linkedContentPath": "07-MultiModal/Video-MLLM/表征学习心智模型-数据质量、规模与训练目标.md",
+  "linkedContentPath": "07-MultiModal/基础/表征学习心智模型-数据质量、规模与训练目标.md",
   "usage": {
     "inputTokens": 153362,
     "cacheCreationInputTokens": 0,

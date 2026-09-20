@@ -23,12 +23,12 @@
             }
           },
           {
-            "id": "144a7602e8546daa",
+            "id": "15958186e4642716",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07-MultiModal/Video-MLLM/SigLIP2：从全局图文对齐到多粒度视觉表征.md",
+                "file": "Paper/raw/VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning/VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -43,59 +43,11 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "SigLIP2：从全局图文对齐到多粒度视觉表征"
-            }
-          },
-          {
-            "id": "a3164f11efdb05e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06-LLM/03-Transformer/transformer计算图与反向传播.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "transformer计算图与反向传播"
-            }
-          },
-          {
-            "id": "b3b436bf2b224bcb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "科研/科研入门指南：如何做科研与写论文.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "科研入门指南：如何做科研与写论文"
+              "title": "VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -244,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md",
+                "file": "Paper/raw/VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning/VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -254,7 +206,7 @@
             }
           },
           {
-            "id": "79401acdc1ccd015",
+            "id": "4c56ebb4b0519d83",
             "type": "leaf",
             "state": {
               "type": "claudian-view",
@@ -263,15 +215,19 @@
                   "version": 1,
                   "openTabs": [
                     {
-                      "tabId": "tab-1789433266175-8jph94d",
-                      "conversationId": "conv-1789433268221-ity7i5sx0"
+                      "tabId": "tab-1789875967348-tgzhdi7",
+                      "conversationId": "conv-1789875969803-4dmw7bvyu"
                     },
                     {
-                      "tabId": "tab-1789433274493-72mv1ch",
-                      "conversationId": "conv-1789433280863-qvq5d58wm"
+                      "tabId": "tab-1789890794748-619p6rv",
+                      "conversationId": "conv-1789890802622-fxdd8rz0y"
+                    },
+                    {
+                      "tabId": "tab-1789892177306-fr7xeat",
+                      "conversationId": "conv-1789892184931-unrue5m77"
                     }
                   ],
-                  "activeTabId": "tab-1789433274493-72mv1ch"
+                  "activeTabId": "tab-1789892177306-fr7xeat"
                 }
               },
               "icon": "bot",
@@ -283,10 +239,11 @@
       }
     ],
     "direction": "horizontal",
-    "width": 464.1171875
+    "width": 405.45703125
   },
   "left-ribbon": {
     "hiddenItems": {
+      "realclaudian:Open Claudian": false,
       "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "bases:新建数据库": false,
@@ -302,59 +259,57 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "realclaudian:Open Claudian": false,
       "fix-math:Current file": false
     }
   },
-  "active": "79401acdc1ccd015",
+  "active": "15958186e4642716",
   "lastOpenFiles": [
-    "AGENTS.md",
-    "README.md",
-    "06-LLM/03-Transformer/GPT-2：从语言建模到零样本任务迁移.md",
-    "06-LLM/03-Transformer/transformer计算图与反向传播.md",
-    "06-LLM/03-Transformer/06-transformer.md",
-    "06-LLM/01-数学基础/03-最优化/从 SGD 到 AdamW：一步一步理解动量、自适应缩放与权重衰减.md",
-    "06-LLM/01-数学基础/03-最优化/梯度下降与 SGD：从损失变化到批量参数更新.md",
-    "06-LLM/01-数学基础/03-最优化/学习率与调度策略.md",
-    "06-LLM/01-数学基础/01-线性代数与微积分/雅可比矩阵与局部线性化.md",
-    "06-LLM/03-Transformer/00-分词.md",
-    "06-LLM/03-Transformer/01-词向量.md",
-    "06-LLM/03-Transformer/dive-to-attention/dive-to-attention.md",
-    "07-MultiModal/Video-MLLM/CLIPDraw：指导图像生成.md",
-    "07-MultiModal/Video-MLLM/CLIP：从图文配对到共享语义空间.md",
-    "07-MultiModal/Video-MLLM/DINO：从多视图自蒸馏到视觉语义空间.md",
-    "06-LLM/01-数学基础/01-线性代数与微积分/梯度与方向导数：怎样描述多变量函数的局部变化.md",
-    "06-LLM/03-Transformer/05-Attention.md",
-    "06-LLM/04-训练与推理/PyTorch 损失归约与梯度累积.md",
-    "06-LLM/04-训练与推理/权重共享.md",
-    "06-LLM/04-训练与推理/多GPU训练过程.md",
-    "06-LLM/03-Transformer/从 Seq2Seq 到 Attention 再到 Transformer.md",
-    "06-LLM/03-Transformer/GPT-3：从模型规模化到上下文少样本学习.md",
-    "06-LLM/02-模型基础/从线性模型到多层感知机.md",
-    "06-LLM/02-模型基础/高斯朴素贝叶斯：从类别分布到分类.md",
-    "06-LLM/02-模型基础/人工神经网络训练过程.canvas",
-    "06-LLM/01-数学基础/01-线性代数与微积分/行列式与体积缩放.md",
-    "06-LLM/01-数学基础/01-线性代数与微积分/两层神经网络的反向传播推导.md",
-    "_assets/images/transformer-04-Attention局部VJP.svg",
-    "_assets/images/transformer-03-FFN局部VJP.svg",
-    "_assets/images/transformer-01-前向与局部VJP总览.svg",
-    "_assets/images/transformer-04-Attention局部VJP.png",
-    "_assets/images/transformer-03-FFN局部VJP.png",
-    "_assets/images/transformer-01-前向与局部VJP总览.png",
-    "_assets/images/gpt-3-01-in-context-few-shot.drawio.svg",
-    "_assets/images/gpt-3-01-in-context-few-shot.drawio",
-    "_assets/images/gpt-1-06-pretraining-and-auxiliary-lm-ablation.png",
-    "_assets/images/gpt-1-05-similarity-classification-and-glue.png",
-    "_assets/images/gpt-1-04-story-cloze-and-race.png",
-    "06-LLM/03-Transformer/assets/paper_2005.14165.pdf",
-    "_assets/images/gpt-2-01-language-model-zero-shot.drawio",
-    "06-LLM/03-Transformer/assets/paper_gpt2_2019.pdf",
-    "_assets/images/gpt-1-06-pretraining-finetuning.drawio",
-    "06-LLM/03-Transformer/assets/paper_gpt1_2018.pdf",
-    "06-LLM/03-Transformer/assets",
     "Paper/Papers.base",
-    "07-MultiModal/Video-MLLM/assets/paper_2301.12597.pdf",
-    "_assets/images/video-mllm-01-learning-roadmap.drawio",
+    "Paper/raw/VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning/VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning.md",
+    "02-Capture/灵感与工具/压缩即智能：Part1，重新发明熵.md",
+    "02-Capture/灵感与工具.base",
+    "_assets/images/重新发明熵-08-英语熵估计.png",
+    "_assets/images/重新发明熵-07-熵的面积.png",
+    "_assets/images/重新发明熵-06-猜字母实验.png",
+    "_assets/images/重新发明熵-05-条件信息量.png",
+    "_assets/images/重新发明熵-04-信息量.png",
+    "_assets/images/重新发明熵-03-随机噪声.png",
+    "_assets/images/重新发明熵-02-前缀空间.png",
+    "_assets/images/重新发明熵-01-平均码长.png",
+    "02-Capture/灵感与工具/printf的调用过程.md",
+    "02-Capture/灵感与工具/阅读状态验证-临时.md",
+    "02-Capture/灵感与工具/RoPE 为何让注意力的位置项只依赖相对距离.md",
+    "02-Capture/灵感与工具/为什么缩放点积注意力除以 √d_k.md",
+    "02-Capture/灵感与工具/√dk 缩放如何控制注意力的 Softmax 温度.md",
+    "02-Capture/README.md",
+    "_assets/images/服务器CPU下线-01-状态截图.png",
+    "02-Capture/灵感与工具/从 printf(\"Hello\") 到 Agentic Model：上下文才是真正的关键.md",
+    "02-Capture/灵感与工具/服务器下线 7、39CPU.md",
+    "02-Capture/灵感与工具/Codex 与 Obsidian.md",
+    "02-Capture/灵感与工具/Apple美区账号购买.md",
+    "02-Capture/灵感与工具/左耳朵耗子的话.md",
+    "02-Capture/灵感与工具/Agent 意图识别：规则、小模型还是大模型.md",
+    "Paper/raw/VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning/assets/pipeline_2607.02927.png",
+    "Paper/raw/VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning/assets/paper_2607.02927.pdf",
+    "Paper/raw/VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning/assets",
+    "Paper/raw/VideoSearcher - Empowering Video Deep Research with Multi-Tool Agentic Reasoning via Reinforcement Learning",
+    "02-Capture/Clippings/Untitled.md",
+    "02-Capture/Clippings/【算法竞赛】蓝桥杯Python组快速入门指南_蓝桥杯paython组填空题技巧-CSDN博客.md",
+    "02-Capture/Clippings/2012，改变人类命运的180天-36氪.md",
+    "02-Capture/Clippings/Taylor series - Wikipedia.md",
+    "02-Capture/Clippings/Paul Dickson – Obsidian Web Clipper + AI Capture & Summarise Web Content (📽️YouTube, Reddit, 📚Books & More).md",
+    "02-Capture/Clippings/Noteworthy AI Research Papers of 2024 (Part One).md",
+    "02-Capture/Clippings/对人工智能毫无了解，导师让看transformer和BERT的两篇论文。好几天了，基本没看懂，何解？ - 知乎.md",
+    "02-Capture/Clippings/深度学习把两篇论文的方法拼接在一起，效果实现了新的sota，可以发论文吗？.md",
+    "02-Capture/Clippings/数学公式提供.md",
+    "02-Capture/Clippings/输入与输出.md",
+    "07-MultiModal/基础/04-SigLIP2：从全局图文对齐到多粒度视觉表征.md",
+    "Paper/raw/Vision-OPD - Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation/assets/paper_2605.18740.pdf",
+    "Paper/raw/Vision-OPD - Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation/assets",
+    "Paper/raw/Vision-OPD - Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation",
+    "07-MultiModal/基础",
+    "_assets/images/llava-01-projector-instruction-framework.drawio",
+    "06-LLM/02-模型基础/人工神经网络训练过程.canvas",
     "06-LLM/03-Transformer/transformer-04-Attention反向白板.canvas",
     "06-LLM/03-Transformer/transformer-03-FFN反向白板.canvas",
     "06-LLM/03-Transformer/transformer-02-残差分流与汇合.canvas",

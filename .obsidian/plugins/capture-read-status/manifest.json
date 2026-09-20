@@ -1,0 +1,9 @@
+{
+  "id": "capture-read-status",
+  "name": "Capture & Papers 阅读状态",
+  "version": "1.1.0",
+  "minAppVersion": "1.4.4",
+  "description": "打开灵感与工具或 Papers Base 收录的论文笔记时，自动将 unread、reading 更新为 read。",
+  "author": "Local",
+  "isDesktopOnly": false
+}
